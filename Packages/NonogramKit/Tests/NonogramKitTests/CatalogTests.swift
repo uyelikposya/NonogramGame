@@ -34,10 +34,10 @@ final class PuzzleDecodingTests: XCTestCase {
 
     func testRejectsInvalidContent() {
         let invalid = [
-            #"{ "id": "x", "title": {}, "palette": { "a": "#000000" }, "pixels": ["ab"] }"#,
-            #"{ "id": "x", "title": {}, "palette": { "a": "#000000" }, "pixels": ["aa", "a"] }"#,
-            #"{ "id": "x", "title": {}, "palette": { "a": "red" }, "pixels": ["a"] }"#,
-            #"{ "id": "x", "title": {}, "palette": { "a": "#000000" }, "pixels": ["..."] }"#,
+            ##"{ "id": "x", "title": {}, "palette": { "a": "#000000" }, "pixels": ["ab"] }"##,
+            ##"{ "id": "x", "title": {}, "palette": { "a": "#000000" }, "pixels": ["aa", "a"] }"##,
+            ##"{ "id": "x", "title": {}, "palette": { "a": "red" }, "pixels": ["a"] }"##,
+            ##"{ "id": "x", "title": {}, "palette": { "a": "#000000" }, "pixels": ["..."] }"##,
         ]
         for json in invalid {
             XCTAssertThrowsError(try decode(json), json) { error in
@@ -61,9 +61,9 @@ final class CatalogTests: XCTestCase {
 
     static func chapter(_ id: String, puzzles: [String]) -> String {
         let items = puzzles.map {
-            #"{ "id": "\#($0)", "title": { "en": "P" }, "palette": { "a": "#000000" }, "pixels": ["a."] }"#
+            ##"{ "id": "\##($0)", "title": { "en": "P" }, "palette": { "a": "#000000" }, "pixels": ["a."] }"##
         }
-        return #"{ "schemaVersion": 1, "chapterID": "\#(id)", "puzzles": [\#(items.joined(separator: ","))] }"#
+        return ##"{ "schemaVersion": 1, "chapterID": "\##(id)", "puzzles": [\##(items.joined(separator: ","))] }"##
     }
 
     func load(files: [String: String]) throws -> LevelCatalog {
