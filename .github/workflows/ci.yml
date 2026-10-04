@@ -32,9 +32,7 @@ jobs:
         run: swift test
 
       - name: Xcode projesini üret
-        run: |
-          brew install xcodegen
-          xcodegen generate
+        run: ./ProjeyiAc.command
 
       - name: Uygulamayı derle ve test et
         run: |

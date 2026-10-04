@@ -11,10 +11,13 @@ iOS 17.2 simülatöründe çalıştırır (`.github/workflows/ci.yml`).
 Xcode projesi [XcodeGen](https://github.com/yonaskolb/XcodeGen) ile `project.yml`'den üretilir.
 
 ```bash
-brew install xcodegen
-xcodegen generate
-open PurrfectNonogram.xcodeproj
+git clone https://github.com/uyelikposya/NonogramGame
+cd NonogramGame
+./ProjeyiAc.command
 ```
+
+`ProjeyiAc.command` XcodeGen'i (Homebrew olmadan, Intel/Apple Silicon) `.tools/` içine indirir,
+`project.yml`'den Xcode projesini üretir ve açar. Finder'da çift tıklayarak da çalıştırılabilir.
 
 Testler:
 
