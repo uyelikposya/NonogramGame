@@ -26,6 +26,8 @@ final class CollectionRenderingTests: XCTestCase {
                     ForEach(breeds) { chapter in
                         BreedCardView(chapter: chapter, card: chapter.card!, style: .full)
                         BreedCardView(chapter: chapter, card: chapter.card!, style: .compact)
+                        BreedCardBackView(chapter: chapter, card: chapter.card!)
+                        FlippableBreedCard(chapter: chapter, card: chapter.card!)
                     }
                 }
             }
@@ -56,6 +58,20 @@ final class CollectionRenderingTests: XCTestCase {
             NavigationStack { HomeView() }
                 .environment(model)
                 .environment(Router())
+                .environment(\.appTheme, .default)
+        )
+    }
+
+    func testSettingsScreenRenders() {
+        let suffix = UUID().uuidString
+        show(
+            NavigationStack { SettingsView() }
+                .environment(AppModel(catalog: try! CatalogLoader.load(from: .main), progress: .inMemory()))
+                .environment(Router())
+                .environment(ThemeManager(defaults: UserDefaults(suiteName: "settings-theme-\(suffix)")!))
+                .environment(AudioManager(defaults: UserDefaults(suiteName: "settings-audio-\(suffix)")!))
+                .environment(AdCoordinator(service: NoAdService()))
+                .environment(StoreManager(defaults: UserDefaults(suiteName: "settings-store-\(suffix)")!))
                 .environment(\.appTheme, .default)
         )
     }

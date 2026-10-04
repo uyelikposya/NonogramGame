@@ -81,6 +81,17 @@ def write_wav(name, samples, peak=0.6):
         f.writeframes(data.tobytes())
 
 
+def card_unlocked():
+    """Kart kazanınca: parıltılı arpej + mutlu, çift 'mi-yaav' (ikincisi daha tiz ve uzun)."""
+    sparkle = mix(*[(at(i * 0.05), tone(f, 0.35, (1, 0.2), decay=0.12)) for i, f in enumerate([1318.5, 1568, 2093, 2637])])
+    return mix(
+        (0, 0.35 * sparkle),
+        (at(0.12), 0.8 * meow(0.22, 760)),
+        (at(0.38), meow(0.6, 560)),
+        (at(0.9), 0.3 * tone(2093, 0.6, (1, 0.15), decay=0.3)),
+    )
+
+
 def effects():
     write_wav("fill.wav", mix((0, tone(880, 0.09, (1, 0.4, 0.1), decay=0.03)), (0, 0.25 * noise(0.03, 0.008, 0.5))), 0.45)
     write_wav("cross.wav", mix((0, 0.8 * noise(0.05, 0.012, 0.35)), (0, tone(1320, 0.05, (1, 0.2), decay=0.012))), 0.35)
@@ -92,6 +103,8 @@ def effects():
     write_wav("solved.wav", mix((0, jingle), (at(0.42), 0.55 * meow())), 0.6)
     sad = mix(*[(at(i * 0.16), tone(f, 0.45, (1, 0.4), decay=0.2)) for i, f in enumerate([392, 349.23, 311.13])])
     write_wav("failed.wav", sad, 0.5)
+    write_wav("card.wav", card_unlocked(), 0.65)
+    write_wav("mew.wav", meow(0.18, 880), 0.3)
     write_wav("tap.wav", tone(1200, 0.04, (1, 0.2), decay=0.01), 0.25)
 
 

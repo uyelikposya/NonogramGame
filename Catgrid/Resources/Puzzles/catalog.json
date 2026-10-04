@@ -88,6 +88,10 @@
         "fact": {
           "en": "One of the most talkative breeds: Siamese love to 'chat' with their people.",
           "tr": "En konuşkan türlerden biri: insanlarıyla 'sohbet etmeyi' çok sever."
+        },
+        "about": {
+          "en": "One of the oldest recognized breeds, the Siamese is described in Thai manuscripts centuries old. Its dark 'points' come from a temperature-sensitive gene: cooler parts of the body grow darker fur. Siamese are social, vocal and dislike being left alone for long.",
+          "tr": "Tanınan en eski türlerden biri olan Siyam, yüzyıllık Tay el yazmalarında anlatılır. Koyu uçları sıcaklığa duyarlı bir genden gelir: vücudun serin bölgelerinde tüy koyulaşır. Sosyal ve sesli kedilerdir, uzun süre yalnız kalmayı sevmezler."
         }
       }
     },
@@ -154,6 +158,10 @@
         "fact": {
           "en": "Its round, smiling face is often said to have inspired the Cheshire Cat.",
           "tr": "Yuvarlak, gülümseyen yüzünün Cheshire Kedisi'ne ilham verdiği söylenir."
+        },
+        "about": {
+          "en": "Descended from the street cats of Britain, the breed was refined in the late 1800s and became famous for its blue-grey coat. It is sturdy, round-faced and calm, happy to be near its people without demanding constant attention.",
+          "tr": "İngiltere'nin sokak kedilerinden gelen tür, 1800'lerin sonunda geliştirildi ve mavi-gri tüyüyle ünlendi. Sağlam yapılı, yuvarlak yüzlü ve sakindir; sürekli ilgi istemeden insanlarının yakınında olmayı sever."
         }
       }
     },
@@ -221,6 +229,10 @@
         "fact": {
           "en": "Every Scottish Fold traces back to Susie, a farm cat found in Scotland in 1961.",
           "tr": "Tüm Scottish Fold'lar 1961'de İskoçya'da bir çiftlikte bulunan Susie adlı kediden gelir."
+        },
+        "about": {
+          "en": "The folded ears come from a natural mutation that affects cartilage. Kittens are born with straight ears that may fold within a few weeks. Because the same gene can cause joint problems, responsible breeders never pair two folded-ear cats.",
+          "tr": "Katlanmış kulaklar kıkırdağı etkileyen doğal bir mutasyondan gelir. Yavrular düz kulakla doğar, kulaklar birkaç haftada katlanabilir. Aynı gen eklem sorunlarına yol açabildiği için sorumlu üreticiler iki katlı kulaklı kediyi asla eşleştirmez."
         }
       }
     },
@@ -283,6 +295,10 @@
         "fact": {
           "en": "Persians have been prized in Europe for their long coats since the 1600s.",
           "tr": "İran kedileri uzun tüyleri nedeniyle 1600'lerden beri Avrupa'da çok değerlidir."
+        },
+        "about": {
+          "en": "Long-haired cats reached Europe from Persia and neighbouring regions in the 1600s. Today's Persian has a round head, short nose and a coat that needs daily brushing. It prefers a quiet home and is known as one of the most relaxed breeds.",
+          "tr": "Uzun tüylü kediler 1600'lerde İran ve çevresinden Avrupa'ya ulaştı. Bugünkü İran kedisinin yuvarlak başı, kısa burnu ve her gün taranması gereken tüyleri vardır. Sakin evleri sever ve en rahat türlerden biri olarak bilinir."
         }
       }
     },
@@ -350,6 +366,10 @@
         "fact": {
           "en": "Named for the way it goes limp like a rag doll when picked up.",
           "tr": "Adını, kucağa alınınca bez bebek gibi gevşemesinden alır."
+        },
+        "about": {
+          "en": "Developed in California in the 1960s, the Ragdoll is a large, blue-eyed colorpoint cat. It often follows people from room to room and tends to relax completely when held, which gave the breed its name.",
+          "tr": "1960'larda Kaliforniya'da geliştirilen Ragdoll, iri ve mavi gözlü, uçları koyu bir kedidir. Genellikle insanları odadan odaya takip eder ve kucağa alınınca tamamen gevşer; adı da buradan gelir."
         }
       }
     },
@@ -419,6 +439,10 @@
         "fact": {
           "en": "Its silver-tipped coat is so dense it stands out from the body.",
           "tr": "Gümüş uçlu tüyü o kadar yoğundur ki gövdeden kabarık durur."
+        },
+        "about": {
+          "en": "Said to come from the port of Arkhangelsk, the Russian Blue was shown in England in the 1870s. Its plush double coat looks silver because each hair is tipped with light grey. It is gentle and somewhat shy with strangers.",
+          "tr": "Arhangelsk limanından geldiği söylenen Rus Mavisi, 1870'lerde İngiltere'de sergilendi. Her tüyün ucu açık gri olduğundan yoğun çift kat tüyü gümüş gibi görünür. Nazik bir kedidir, yabancılara karşı biraz çekingendir."
         }
       }
     },
@@ -489,6 +513,10 @@
         "fact": {
           "en": "It looks like the cats of ancient Egyptian art, but genetics point to the Indian Ocean coast.",
           "tr": "Antik Mısır sanatındaki kedilere benzer, ama genetik çalışmalar Hint Okyanusu kıyılarını işaret eder."
+        },
+        "about": {
+          "en": "The Abyssinian's 'ticked' coat has bands of color on every hair, giving it a warm, shimmering look. Its true origin is debated, but it became established in Britain in the late 1800s. Abyssinians are athletic, curious and love to climb.",
+          "tr": "Habeş kedisinin kırçıllı tüyünde her telde renk bantları vardır; bu ona sıcak, parıltılı bir görünüm verir. Gerçek kökeni tartışmalıdır ama 1800'lerin sonunda İngiltere'de yerleşti. Atletik, meraklı ve tırmanmayı seven kedilerdir."
         }
       }
     },
@@ -556,6 +584,10 @@
         "fact": {
           "en": "Legend says a temple cat's paws turned white where they touched its dying priest.",
           "tr": "Efsaneye göre bir tapınak kedisinin, ölmekte olan rahibine dokunan patileri beyaza dönmüştür."
+        },
+        "about": {
+          "en": "Known as the 'Sacred Cat of Burma', the Birman has a silky colorpoint coat, deep blue eyes and pure white paws. The breed was developed in France in the early 1900s. Birmans are gentle, quiet companions.",
+          "tr": "'Burma'nın Kutsal Kedisi' olarak bilinen Birman'ın ipeksi tüyü, koyu mavi gözleri ve bembeyaz patileri vardır. Tür 1900'lerin başında Fransa'da geliştirildi. Nazik ve sessiz yol arkadaşlarıdır."
         }
       }
     },
@@ -627,6 +659,10 @@
         "fact": {
           "en": "Bred from domestic cats and the wild Asian leopard cat; many Bengals love water.",
           "tr": "Evcil kedilerle vahşi Asya leopar kedisinden geliştirildi; çoğu suyu çok sever."
+        },
+        "about": {
+          "en": "The Bengal was created by crossing domestic cats with the Asian leopard cat, and was recognized as a breed in the 1980s. Its spotted or marbled coat often has a glittering sheen. Bengals are very active and need plenty of play.",
+          "tr": "Bengal, evcil kedilerle Asya leopar kedisinin melezlenmesiyle oluşturuldu ve 1980'lerde tür olarak tanındı. Benekli ya da mermer desenli tüyü çoğu zaman parıldar. Çok hareketlidirler ve bol oyun isterler."
         }
       }
     },
@@ -696,6 +732,10 @@
         "fact": {
           "en": "Not truly bald: a fine peach fuzz covers its warm skin, and it needs regular baths.",
           "tr": "Aslında tamamen tüysüz değildir; sıcak teni ince bir tüyle kaplıdır ve düzenli banyo ister."
+        },
+        "about": {
+          "en": "The modern Sphynx began in Canada in 1966 with a hairless kitten born to a domestic cat. Without a full coat it loses heat quickly, so it seeks warm laps and sunny spots. Its skin needs regular washing to remove natural oils.",
+          "tr": "Modern Sfenks, 1966'da Kanada'da evcil bir kediden doğan tüysüz bir yavruyla başladı. Tüyü olmadığı için çabuk üşür; sıcak kucakları ve güneşli köşeleri arar. Derisindeki doğal yağlar nedeniyle düzenli yıkanması gerekir."
         }
       }
     },
@@ -762,6 +802,10 @@
         "fact": {
           "en": "One of the oldest natural breeds, treasured in Ankara for centuries; odd-colored eyes are common.",
           "tr": "En eski doğal türlerden biri, Ankara'da yüzyıllardır el üstünde tutulur; farklı renkte gözler sık görülür."
+        },
+        "about": {
+          "en": "A natural breed from central Anatolia, the Turkish Angora has a silky, single-layer coat and a long, plumed tail. White is the classic color, and odd-colored eyes are common. Angoras are lively, intelligent and very affectionate.",
+          "tr": "Orta Anadolu'nun doğal türü olan Ankara kedisinin ipeksi, tek katlı tüyü ve uzun, püsküllü kuyruğu vardır. Klasik rengi beyazdır; farklı renkte gözler sık görülür. Canlı, zeki ve çok sevecen kedilerdir."
         }
       }
     },
@@ -832,6 +876,10 @@
         "fact": {
           "en": "Norse legends tell of forest cats pulling the goddess Freya's chariot.",
           "tr": "İskandinav efsanelerinde tanrıça Freya'nın arabasını orman kedileri çeker."
+        },
+        "about": {
+          "en": "Adapted to cold Scandinavian forests, this large cat has a water-resistant double coat, a thick ruff and tufted ears. It is a skilled climber that can descend trees head-first. Despite its wild look, it is friendly and calm.",
+          "tr": "Soğuk İskandinav ormanlarına uyum sağlamış bu iri kedinin su geçirmez çift kat tüyü, gür yelesi ve püsküllü kulakları vardır. Ağaçlardan baş aşağı inebilen usta bir tırmanıcıdır. Vahşi görünüşüne rağmen arkadaş canlısı ve sakindir."
         }
       }
     },
@@ -904,6 +952,10 @@
         "fact": {
           "en": "Nicknamed 'the swimming cat' for its love of water.",
           "tr": "Suyu sevmesiyle 'yüzen kedi' olarak anılır."
+        },
+        "about": {
+          "en": "The breed developed around Lake Van in eastern Türkiye. Its classic pattern is a white body with colored markings on the head and tail. Its semi-long coat resists water, and many Vans enjoy playing in it. Note: the all-white odd-eyed 'Van kedisi' of Türkiye is a related local cat.",
+          "tr": "Tür, Doğu Anadolu'da Van Gölü çevresinde gelişti. Klasik deseni beyaz gövde ve başta, kuyrukta renkli lekelerdir. Yarı uzun tüyü su geçirmez, çoğu Van kedisi suyla oynamayı sever. Not: Türkiye'deki bembeyaz, farklı renkte gözlü Van kedisi akraba bir yerel kedidir."
         }
       }
     },
@@ -972,6 +1024,10 @@
         "fact": {
           "en": "One of the largest domestic breeds; males can weigh more than 8 kg.",
           "tr": "En iri evcil kedi türlerinden; erkekleri 8 kilonun üzerine çıkabilir."
+        },
+        "about": {
+          "en": "One of North America's oldest natural breeds, the Maine Coon was a working farm and ship cat. It has a shaggy, water-resistant coat, large paws and a long, bushy tail. It is gentle and playful, often called a 'gentle giant'.",
+          "tr": "Kuzey Amerika'nın en eski doğal türlerinden Maine Coon, çiftliklerde ve gemilerde çalışan bir kediydi. Gür ve su geçirmez tüyü, iri patileri ve uzun, kabarık kuyruğu vardır. Nazik ve oyunbazdır; çoğu zaman 'nazik dev' diye anılır."
         }
       }
     },
@@ -1038,6 +1094,10 @@
         "fact": {
           "en": "Often called 'a Persian in pajamas': the Persian look with an easy-care coat.",
           "tr": "'Pijamalı İran kedisi' diye anılır: İran kedisi görünümü, bakımı kolay tüy."
+        },
+        "about": {
+          "en": "Created in the 1950s–60s by crossing Persians with shorthaired cats, the Exotic keeps the Persian's sweet, flat face and calm nature. Its dense, plush coat is much easier to care for than a Persian's.",
+          "tr": "1950-60'larda İran kedilerinin kısa tüylü kedilerle melezlenmesiyle oluşturulan Egzotik, İran kedisinin tatlı, basık yüzünü ve sakin doğasını korur. Yoğun, peluş tüyünün bakımı İran kedisinden çok daha kolaydır."
         }
       }
     },
@@ -1107,6 +1167,10 @@
         "fact": {
           "en": "Modern Burmese descend from Wong Mau, a cat brought to the United States in 1930.",
           "tr": "Modern Burmalar, 1930'da ABD'ye getirilen Wong Mau adlı kediden gelir."
+        },
+        "about": {
+          "en": "The breed traces back to a single brown cat, Wong Mau, brought from Burma to the United States in 1930. Burmese are compact, heavier than they look, and have a glossy satin coat. They are famously people-oriented.",
+          "tr": "Tür, 1930'da Burma'dan ABD'ye getirilen kahverengi bir kedi olan Wong Mau'ya dayanır. Burmalar kompakt yapılıdır, göründüklerinden ağırdır ve parlak saten bir tüyleri vardır. İnsanlara son derece bağlı olmalarıyla ünlüdürler."
         }
       }
     },
@@ -1173,6 +1237,10 @@
         "fact": {
           "en": "A quiet French breed known for its 'smiling' face and copper eyes.",
           "tr": "'Gülümseyen' yüzü ve bakır rengi gözleriyle bilinen sessiz bir Fransız türü."
+        },
+        "about": {
+          "en": "A historic French breed with a blue-grey, water-repellent woolly coat and copper to orange eyes. Its rounded head and slightly narrow muzzle give it a 'smiling' expression. Chartreux are quiet, observant and loyal.",
+          "tr": "Mavi-gri, su itici yünümsü tüyü ve bakırdan turuncuya değişen gözleri olan tarihi bir Fransız türü. Yuvarlak başı ve hafif dar burnu ona 'gülümseyen' bir ifade verir. Sessiz, gözlemci ve sadık kedilerdir."
         }
       }
     },
@@ -1243,6 +1311,10 @@
         "fact": {
           "en": "One of the fastest house cats, said to sprint at around 48 km/h.",
           "tr": "En hızlı ev kedilerinden; saatte 48 km civarında koşabildiği söylenir."
+        },
+        "about": {
+          "en": "One of the few naturally spotted domestic breeds, the Egyptian Mau has gooseberry-green eyes and a loose flap of skin that lets it stretch its stride. The modern breed was developed from cats brought from Egypt in the 1950s.",
+          "tr": "Doğal benekli az sayıdaki evcil türden biri olan Mısır Mau'nun bektaşi üzümü yeşili gözleri ve adımını uzatmasını sağlayan gevşek bir deri kıvrımı vardır. Modern tür, 1950'lerde Mısır'dan getirilen kedilerden geliştirildi."
         }
       }
     },
@@ -1311,6 +1383,10 @@
         "fact": {
           "en": "Famous for being born without a tail; it runs with a rabbit-like hop.",
           "tr": "Kuyruksuz doğmasıyla ünlüdür; tavşan gibi seken bir koşusu vardır."
+        },
+        "about": {
+          "en": "Native to the Isle of Man, the Manx carries a natural gene for a short or missing tail. With longer hind legs and a rounded body, it moves with a rabbit-like hop. Manx cats are known as skilled hunters and loyal companions.",
+          "tr": "Man Adası'na özgü Manx, kısa ya da hiç olmayan kuyruk için doğal bir gen taşır. Uzun arka bacakları ve yuvarlak gövdesiyle tavşan gibi seker. Usta avcılar ve sadık dostlar olarak bilinirler."
         }
       }
     },
@@ -1381,6 +1457,10 @@
         "fact": {
           "en": "Bred to look like a miniature black panther, with copper eyes.",
           "tr": "Minyatür bir kara panter gibi görünmesi için geliştirildi; gözleri bakır rengidir."
+        },
+        "about": {
+          "en": "Developed in the United States in the 1950s from Burmese and black American Shorthairs, the Bombay has a jet-black, glossy coat and copper eyes. It loves warmth and company and is often described as dog-like.",
+          "tr": "1950'lerde ABD'de Burma ve siyah Amerikan Kısa Tüylü kedilerden geliştirilen Bombay'ın simsiyah, parlak tüyü ve bakır rengi gözleri vardır. Sıcaklığı ve birlikteliği sever; çoğu zaman köpek gibi diye anlatılır."
         }
       }
     },
@@ -1449,6 +1529,10 @@
         "fact": {
           "en": "Russia's national cat, with a thick triple coat for Siberian winters.",
           "tr": "Rusya'nın ulusal kedisi; Sibirya kışları için kalın, üç katlı tüyü vardır."
+        },
+        "about": {
+          "en": "A natural forest cat of Russia, the Siberian has a dense triple coat suited to harsh winters. It is strong and agile, and matures slowly over several years. Siberians are playful, affectionate and often enjoy water.",
+          "tr": "Rusya'nın doğal orman kedisi olan Sibirya kedisinin sert kışlara uygun yoğun, üç katlı tüyü vardır. Güçlü ve çeviktir, birkaç yılda yavaşça olgunlaşır. Oyunbaz, sevecen kedilerdir ve çoğu suyu sever."
         }
       }
     },
@@ -1519,6 +1603,10 @@
         "fact": {
           "en": "Huge ears and wavy fur earn it the nickname 'pixie cat'.",
           "tr": "Kocaman kulakları ve dalgalı tüyüyle 'peri kedisi' diye anılır."
+        },
+        "about": {
+          "en": "The Devon Rex began with a curly-coated kitten found in Devon, England, in 1960. Its short, wavy coat, huge low-set ears and large eyes give it an elfin look. It is mischievous, loves warmth and likes to perch on shoulders.",
+          "tr": "Devon Rex, 1960'ta İngiltere'nin Devon bölgesinde bulunan kıvırcık tüylü bir yavruyla başladı. Kısa dalgalı tüyü, alçakta duran kocaman kulakları ve iri gözleri ona peri gibi bir görünüm verir. Yaramazdır, sıcağı sever ve omuzlara tünemeyi sever."
         }
       }
     },
@@ -1589,6 +1677,10 @@
         "fact": {
           "en": "A Siamese cousin that comes in hundreds of colors and patterns.",
           "tr": "Siyam'ın kuzeni; yüzlerce renk ve desende görülür."
+        },
+        "about": {
+          "en": "A close relative of the Siamese, the Oriental Shorthair has the same slender body and large ears but comes in a huge range of solid colors and patterns. Most have green eyes. They are vocal, curious and deeply attached to their people.",
+          "tr": "Siyam'ın yakın akrabası olan Oryantal Kısa Tüylü, aynı ince gövdeye ve iri kulaklara sahiptir ama çok çeşitli düz renk ve desende görülür. Çoğunun gözleri yeşildir. Sesli, meraklı ve insanlarına derinden bağlıdırlar."
         }
       }
     },
@@ -1661,6 +1753,10 @@
         "fact": {
           "en": "The waving maneki-neko lucky cat figurines are modeled on this bobtailed breed.",
           "tr": "El sallayan maneki-neko şans kedisi biblolarına bu kısa kuyruklu tür örnek alınır."
+        },
+        "about": {
+          "en": "Bobtailed cats have lived in Japan for centuries and appear in old paintings and prints. Each Bobtail's short, pom-pom tail is unique. The tricolor 'mi-ke' pattern is especially prized. They are active, chatty and playful.",
+          "tr": "Kısa kuyruklu kediler yüzyıllardır Japonya'da yaşar ve eski resim ve baskılarda görülür. Her Bobtail'in ponpon gibi kısa kuyruğu kendine özgüdür. Üç renkli 'mi-ke' deseni özellikle değerlidir. Hareketli, konuşkan ve oyunbazdırlar."
         }
       }
     },
@@ -1729,6 +1825,10 @@
         "fact": {
           "en": "A long-haired Abyssinian, nicknamed the 'fox cat' for its bushy tail.",
           "tr": "Gür kuyruğu yüzünden 'tilki kedi' denen uzun tüylü bir Habeş kedisi."
+        },
+        "about": {
+          "en": "The Somali is the long-haired form of the Abyssinian, recognized as a separate breed in the late 1970s. Its ticked coat and full, bushy tail give it a fox-like look. Somalis are energetic, clever and endlessly curious.",
+          "tr": "Somali, Habeş kedisinin uzun tüylü biçimidir ve 1970'lerin sonunda ayrı bir tür olarak tanındı. Kırçıllı tüyü ve gür, kabarık kuyruğu ona tilki gibi bir görünüm verir. Enerjik, zeki ve bitmeyen bir merakla dolu kedilerdir."
         }
       }
     }

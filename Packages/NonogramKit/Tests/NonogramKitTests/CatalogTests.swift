@@ -56,7 +56,7 @@ final class CatalogTests: XCTestCase {
         { "id": "siamese", "kind": "breed", "title": { "en": "Siamese" }, "file": "siamese", "expectedPuzzleCount": 2,
           "portrait": { "palette": { "a": "#4A3B35" }, "pixels": ["a.a", "aaa"] },
           "card": { "number": 1, "rarity": "common", "origin": { "en": "Thailand" }, "lifespan": "15–20",
-                    "coat": { "en": "Short" }, "fact": { "en": "Talkative." },
+                    "coat": { "en": "Short" }, "fact": { "en": "Talkative." }, "about": { "en": "An old breed." },
                     "stats": { "energy": 5, "affection": 5, "playfulness": 5, "grooming": 1 } } },
         { "id": "persian", "kind": "breed", "title": { "en": "Persian" }, "file": "persian" }
       ]
@@ -100,6 +100,7 @@ final class CatalogTests: XCTestCase {
         XCTAssertEqual(siamese.card?.rarity, .common)
         XCTAssertEqual(siamese.card?.stats.energy, 5)
         XCTAssertEqual(siamese.card?.lifespan, "15–20")
+        XCTAssertEqual(siamese.card?.about?.translations["en"], "An old breed.")
         XCTAssertNil(catalog.chapters[0].card) // eğitimin kartı yok
     }
 

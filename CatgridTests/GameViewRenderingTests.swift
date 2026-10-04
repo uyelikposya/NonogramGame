@@ -62,6 +62,39 @@ final class GameViewRenderingTests: XCTestCase {
         XCTAssertTrue(viewModel.game.board.storage.contains { $0 != .blank })
     }
 
+    /// Tahtanın altındaki kedi kendi döngüsünde dolaşırken oyun oynanabilmeli.
+    func testCompanionCatAnimatesAlongsideBoard() throws {
+        let puzzle = Puzzle(id: "companion", pattern: ["#####", "#...#", "#...#", "#...#", "#####"])
+        let catalog = try LevelCatalog(chapters: [
+            Chapter(id: "siamese", kind: .breed, title: ["en": "Siamese"], expectedPuzzleCount: 1, puzzles: [puzzle]),
+        ])
+        let viewModel = GameViewModel(puzzle: puzzle, rules: .classic)
+        let root = NavigationStack {
+            GameView(viewModel: viewModel)
+        }
+        .environment(AppModel(catalog: catalog, progress: .inMemory()))
+        .environment(Router())
+        .environment(AudioManager(defaults: UserDefaults(suiteName: "companion-\(UUID().uuidString)")!))
+        .environment(AdCoordinator(service: NoAdService()))
+        .environment(\.appTheme, .default)
+
+        let window = UIWindow(frame: CGRect(x: 0, y: 0, width: 390, height: 844))
+        window.rootViewController = UIHostingController(rootView: root)
+        window.makeKeyAndVisible()
+        self.window = window
+        RunLoop.main.run(until: Date().addingTimeInterval(2))
+
+        // Kedinin önerdiği satır gerçekten ilerletilebilmeli
+        let hint = try XCTUnwrap(HintFinder.bestHint(board: viewModel.game.board, puzzle: puzzle))
+        XCTAssertEqual(hint.axis, .row)
+        for column in 0..<5 {
+            viewModel.dragBegan(at: GridPosition(row: hint.index, column: column))
+            viewModel.dragEnded()
+        }
+        RunLoop.main.run(until: Date().addingTimeInterval(0.5))
+        XCTAssertTrue(viewModel.game.isRowSatisfied(hint.index))
+    }
+
     /// Kullanıcı bildirimi: hata yapıp şekli tamamlayınca sonuç kartındaki "Süre · N hata" metni
     /// biçimlendirilirken çökme. Sonuç kartını gerçekten çizer.
     func testWinningAfterMistakesRendersResultCard() throws {

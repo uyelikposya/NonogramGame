@@ -8,8 +8,9 @@ struct HomeView: View {
     @Environment(\.appTheme) private var theme
 
     var body: some View {
+        // Tek ekrana sığacak kadar sıkı; çok küçük ekranlarda (iPhone SE) yine kaydırılabilir
         ScrollView {
-            VStack(spacing: 28) {
+            VStack(spacing: 20) {
                 header
                 continueCard
                 CollectionShelf()
@@ -27,8 +28,10 @@ struct HomeView: View {
                 }
                 .buttonStyle(SecondaryButtonStyle())
             }
-            .padding(20)
+            .padding(.horizontal, 20)
+            .padding(.bottom, 12)
         }
+        .scrollBounceBehavior(.basedOnSize)
         .themedScreen()
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
@@ -43,35 +46,38 @@ struct HomeView: View {
         }
     }
 
+    /// Uygulama simgesiyle aynı logo + oyunun adı.
     private var header: some View {
-        VStack(spacing: 12) {
-            Image(systemName: "cat.fill")
-                .font(.system(size: 56))
-                .foregroundStyle(theme.accent)
-                .frame(width: 112, height: 112)
-                .background(Circle().fill(theme.surfaceMuted))
+        HStack(spacing: 14) {
+            Image("AppLogo")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 76, height: 76)
+                .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
+                .shadow(color: .black.opacity(0.12), radius: 6, y: 3)
                 .accessibilityHidden(true)
 
-            VStack(spacing: 2) {
+            VStack(alignment: .leading, spacing: 2) {
                 Text(verbatim: "Catgrid Collection")
-                    .font(.largeTitle.bold())
+                    .font(.title.bold())
                     .foregroundStyle(theme.textPrimary)
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.7)
                 Text(verbatim: "Nonogram")
                     .font(.headline)
                     .foregroundStyle(theme.textSecondary)
             }
-
+            Spacer(minLength: 0)
         }
-        .padding(.top, 12)
     }
 
     @ViewBuilder
     private var continueCard: some View {
         if let puzzle = model.resumablePuzzle,
            let chapter = model.catalog.chapter(containing: puzzle.id) {
-            VStack(alignment: .leading, spacing: 16) {
+            VStack(alignment: .leading, spacing: 14) {
                 HStack(spacing: 14) {
-                    ChapterBadge(chapter: chapter, size: 52)
+                    ChapterBadge(chapter: chapter, size: 48)
                     VStack(alignment: .leading, spacing: 4) {
                         Text(verbatim: chapter.title.resolved)
                             .font(.headline)
@@ -94,7 +100,7 @@ struct HomeView: View {
                 .buttonStyle(PrimaryButtonStyle())
                 .accessibilityIdentifier("home.continue")
             }
-            .padding(20)
+            .padding(16)
             .card()
         } else {
             VStack(spacing: 8) {

@@ -42,6 +42,8 @@ struct RootView: View {
         .onChange(of: scenePhase) { _, phase in
             if phase == .active {
                 audio.resumeMusic()
+                // Abonelik bu arada bitmiş ya da yenilenmiş olabilir
+                Task { await store.refreshEntitlements() }
             } else if phase == .background {
                 audio.pauseMusic()
             }

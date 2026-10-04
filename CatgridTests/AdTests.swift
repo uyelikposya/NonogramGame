@@ -75,6 +75,32 @@ final class RemoveAdsTests: XCTestCase {
         XCTAssertTrue(navigated, "Reklam olmadan hemen devam edilmeli")
         XCTAssertEqual(service.interstitialsShown, 0)
     }
+
+    func testSubscriptionActiveUntilExpiration() {
+        let now = Date()
+        XCTAssertTrue(StoreManager.isActive(revocationDate: nil, expirationDate: now.addingTimeInterval(60), now: now))
+        XCTAssertFalse(StoreManager.isActive(revocationDate: nil, expirationDate: now.addingTimeInterval(-60), now: now))
+        XCTAssertFalse(StoreManager.isActive(revocationDate: now, expirationDate: now.addingTimeInterval(60), now: now))
+    }
+
+    @MainActor
+    func testCachedSubscriptionStateIsRestoredOnLaunch() throws {
+        let defaults = try XCTUnwrap(UserDefaults(suiteName: "Store-\(UUID().uuidString)"))
+        XCTAssertFalse(StoreManager(defaults: defaults).isAdsRemoved)
+        defaults.set(true, forKey: StoreManager.cacheKey)
+        XCTAssertTrue(StoreManager(defaults: defaults).isAdsRemoved)
+    }
+
+    func testSubscriptionProductsAreConfiguredLocally() throws {
+        // Simülatörde satın alma denemesi için .storekit dosyasında iki abonelik olmalı
+        let url = URL(fileURLWithPath: #filePath)
+            .deletingLastPathComponent().deletingLastPathComponent()
+            .appendingPathComponent("Catgrid/Resources/Catgrid.storekit")
+        let text = try String(contentsOf: url)
+        for id in StoreManager.productIDs {
+            XCTAssertTrue(text.contains(id), "\(id) .storekit dosyasında yok")
+        }
+    }
 }
 
 @MainActor

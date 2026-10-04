@@ -1,3 +1,4 @@
+import StoreKit
 import SwiftUI
 import UIKit
 
@@ -15,8 +16,11 @@ struct SettingsView: View {
     @Environment(\.appTheme) private var theme
     @Environment(\.colorScheme) private var colorScheme
     @Environment(\.openURL) private var openURL
+    @Environment(\.requestReview) private var requestReview
     @AppStorage(SettingsKeys.haptics) private var hapticsEnabled = true
     @State private var isConfirmingReset = false
+    @State private var isShowingPaywall = false
+    @State private var isManagingSubscription = false
 
     private let paletteColumns = [GridItem(.flexible(), spacing: 12), GridItem(.flexible(), spacing: 12)]
 
@@ -51,26 +55,25 @@ struct SettingsView: View {
                     .pickerStyle(.segmented)
                 }
 
-                section("Remove Ads") {
+                section("Ad-Free") {
                     VStack(alignment: .leading, spacing: 12) {
                         if store.isAdsRemoved {
-                            Label("Ads removed. Thank you for supporting Catgrid!", systemImage: "checkmark.seal.fill")
+                            Label("You're Ad-Free. Thank you for supporting Catgrid!", systemImage: "checkmark.seal.fill")
                                 .foregroundStyle(theme.success)
+                            subscriptionDetail
+                            Button("Manage Subscription") { isManagingSubscription = true }
+                                .buttonStyle(SecondaryButtonStyle())
                         } else {
-                            Text("Remove the ads between puzzles with a one-time purchase. Optional rewarded ads for extra paws stay available.")
+                            Text("Remove the ads between puzzles with a monthly or yearly subscription. Optional rewarded ads for extra paws stay available.")
                                 .font(.subheadline)
                                 .foregroundStyle(theme.textSecondary)
                             Button {
-                                Task { await store.purchaseRemoveAds() }
+                                isShowingPaywall = true
                             } label: {
-                                if let product = store.removeAdsProduct {
-                                    Text("Remove Ads – \(product.displayPrice)")
-                                } else {
-                                    Text("Remove Ads")
-                                }
+                                Label("Go Ad-Free", systemImage: "sparkles")
                             }
                             .buttonStyle(PrimaryButtonStyle())
-                            .disabled(store.removeAdsProduct == nil || store.isPurchasing)
+                            .accessibilityIdentifier("settings.adFree")
                         }
                         Button("Restore Purchases") {
                             Task { await store.restorePurchases() }
@@ -129,15 +132,6 @@ struct SettingsView: View {
                     }
                 }
 
-                if ads.isPrivacyOptionsRequired {
-                    section("Privacy") {
-                        Button("Privacy Settings") {
-                            Task { await ads.presentPrivacyOptions() }
-                        }
-                        .buttonStyle(SecondaryButtonStyle())
-                    }
-                }
-
                 section("Language") {
                     VStack(alignment: .leading, spacing: 12) {
                         Text("The game follows your device language. You can choose a different language just for this app in Settings.")
@@ -148,6 +142,26 @@ struct SettingsView: View {
                         }
                         .buttonStyle(SecondaryButtonStyle())
                     }
+                }
+
+                section("About") {
+                    VStack(spacing: 0) {
+                        linkRow("Rate Catgrid", icon: "star.fill") { requestReview() }
+                        Divider()
+                        linkRow("Support", icon: "questionmark.circle.fill") { openURL(AppLinks.support) }
+                        Divider()
+                        linkRow("Privacy Policy", icon: "hand.raised.fill") { openURL(AppLinks.privacyPolicy) }
+                        Divider()
+                        linkRow("Terms of Use", icon: "doc.text.fill") { openURL(AppLinks.termsOfUse) }
+                        if ads.isPrivacyOptionsRequired {
+                            Divider()
+                            linkRow("Ad Privacy Choices", icon: "slider.horizontal.3") {
+                                Task { await ads.presentPrivacyOptions() }
+                            }
+                        }
+                    }
+                    .padding(.horizontal, 16)
+                    .card(cornerRadius: 16)
                 }
 
                 if let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String {
@@ -161,6 +175,48 @@ struct SettingsView: View {
         }
         .themedScreen()
         .screenTitle("Settings")
+        .sheet(isPresented: $isShowingPaywall) {
+            AdFreePaywall()
+        }
+        .manageSubscriptionsSheet(isPresented: $isManagingSubscription)
+    }
+
+    @ViewBuilder
+    private var subscriptionDetail: some View {
+        let plan: LocalizedStringKey? = switch store.activeProductID ?? "" {
+        case StoreManager.yearlyProductID: "Yearly plan"
+        case StoreManager.monthlyProductID: "Monthly plan"
+        default: nil
+        }
+        if let plan {
+            Text(plan)
+                .font(.subheadline.bold())
+                .foregroundStyle(theme.textPrimary)
+        }
+        if !store.willAutoRenew, let end = store.expirationDate {
+            Text("Ends on \(end.formatted(date: .abbreviated, time: .omitted))")
+                .font(.subheadline)
+                .foregroundStyle(theme.textSecondary)
+        }
+    }
+
+    private func linkRow(_ title: LocalizedStringKey, icon: String, action: @escaping () -> Void) -> some View {
+        Button(action: action) {
+            HStack(spacing: 12) {
+                Image(systemName: icon)
+                    .foregroundStyle(theme.accent)
+                    .frame(width: 24)
+                Text(title)
+                    .foregroundStyle(theme.textPrimary)
+                Spacer()
+                Image(systemName: "chevron.right")
+                    .font(.caption.bold())
+                    .foregroundStyle(theme.textSecondary)
+            }
+            .frame(minHeight: 48)
+            .contentShape(Rectangle())
+        }
+        .buttonStyle(.plain)
     }
 
     private func volumeRow(

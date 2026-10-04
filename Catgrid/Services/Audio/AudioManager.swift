@@ -10,6 +10,10 @@ enum SoundEffect: String, CaseIterable {
     case solved
     case failed
     case tap
+    /// Bir türün tüm bulmacaları bitince, yeni kart kazanılınca.
+    case card
+    /// Oyun ekranındaki küçük kediye dokununca.
+    case mew
 }
 
 /// Arka plan müziği ve ses efektleri. Ayarlar (aç/kapa, seviye) kalıcıdır.

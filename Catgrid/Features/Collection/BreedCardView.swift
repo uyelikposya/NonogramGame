@@ -207,3 +207,136 @@ struct MysteryCardView: View {
         )
     }
 }
+
+/// Kartın arka yüzü: ansiklopedi tarzı tür bilgisi.
+@MainActor
+struct BreedCardBackView: View {
+    @Environment(\.appTheme) private var theme
+    let chapter: Chapter
+    let card: BreedCard
+
+    private var accent: Color { chapter.accentColor.map { Color($0) } ?? theme.accent }
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 14) {
+            HStack(spacing: 12) {
+                ChapterBadge(chapter: chapter, size: 52)
+                VStack(alignment: .leading, spacing: 2) {
+                    Text(verbatim: chapter.title.resolved)
+                        .font(.title3.bold())
+                        .foregroundStyle(theme.textPrimary)
+                    Text(verbatim: card.origin.resolved)
+                        .font(.subheadline)
+                        .foregroundStyle(theme.textSecondary)
+                }
+                Spacer(minLength: 0)
+                Text(verbatim: String(format: "#%02d", card.number))
+                    .font(.subheadline.monospacedDigit().bold())
+                    .foregroundStyle(theme.textSecondary)
+            }
+
+            Label("About the Breed", systemImage: "book.closed.fill")
+                .font(.headline)
+                .foregroundStyle(accent)
+
+            Text(verbatim: (card.about ?? card.fact).resolved)
+                .font(.callout)
+                .foregroundStyle(theme.textPrimary)
+                .lineSpacing(3)
+                .fixedSize(horizontal: false, vertical: true)
+
+            Divider()
+
+            VStack(alignment: .leading, spacing: 6) {
+                infoRow(icon: "hourglass", label: "Lifespan", value: Text("\(card.lifespan) years"))
+                infoRow(icon: "paintbrush.pointed.fill", label: "Coat", value: Text(verbatim: card.coat.resolved))
+            }
+            .font(.subheadline)
+
+            Spacer(minLength: 0)
+        }
+        .padding(18)
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+        .background(
+            RoundedRectangle(cornerRadius: 24, style: .continuous)
+                .fill(LinearGradient(colors: [theme.surface, accent.opacity(0.25)], startPoint: .top, endPoint: .bottom))
+        )
+        .overlay(
+            RoundedRectangle(cornerRadius: 24, style: .continuous)
+                .strokeBorder(
+                    LinearGradient(colors: card.rarity.frameColors, startPoint: .topLeading, endPoint: .bottomTrailing),
+                    lineWidth: 6
+                )
+        )
+        .shadow(color: card.rarity.frameColors[1].opacity(0.35), radius: 12, y: 4)
+        .accessibilityElement(children: .combine)
+    }
+
+    private func infoRow(icon: String, label: LocalizedStringKey, value: Text) -> some View {
+        HStack(alignment: .firstTextBaseline, spacing: 8) {
+            Image(systemName: icon)
+                .foregroundStyle(accent)
+                .frame(width: 20)
+            Text(label)
+                .foregroundStyle(theme.textSecondary)
+            Spacer(minLength: 8)
+            value
+                .foregroundStyle(theme.textPrimary)
+                .multilineTextAlignment(.trailing)
+        }
+    }
+}
+
+/// Dokununca 3B dönen kart: ön yüz kart, arka yüz tür bilgisi.
+///
+/// İki yüz de hep hiyerarşide durur; yalnızca açı ve görünürlük değişir. Boyut,
+/// büyük olan yüze göre belirlenir, böylece dönerken kart zıplamaz.
+@MainActor
+struct FlippableBreedCard: View {
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    let chapter: Chapter
+    let card: BreedCard
+    @State private var isFlipped = false
+
+    var body: some View {
+        ZStack {
+            BreedCardView(chapter: chapter, card: card)
+                .modifier(CardFaceFlip(angle: isFlipped ? 180 : 0, isBack: false))
+                .accessibilityHidden(isFlipped)
+            BreedCardBackView(chapter: chapter, card: card)
+                .modifier(CardFaceFlip(angle: isFlipped ? 180 : 0, isBack: true))
+                .accessibilityHidden(!isFlipped)
+        }
+        .contentShape(Rectangle())
+        .onTapGesture {
+            Haptics.selection()
+            if reduceMotion {
+                isFlipped.toggle()
+            } else {
+                withAnimation(.spring(duration: 0.6, bounce: 0.15)) { isFlipped.toggle() }
+            }
+        }
+        .accessibilityAddTraits(.isButton)
+        .accessibilityHint(Text("Tap to flip the card"))
+        .accessibilityIdentifier("card.flip")
+    }
+}
+
+/// Kartın bir yüzünü verilen açıya göre döndürür; yüz 90°'yi geçince görünmez olur.
+/// Açı animasyonla ara değerler aldığı için iki yüz hiçbir anda üst üste görünmez.
+private struct CardFaceFlip: ViewModifier, Animatable {
+    var angle: Double
+    let isBack: Bool
+
+    var animatableData: Double {
+        get { angle }
+        set { angle = newValue }
+    }
+
+    func body(content: Content) -> some View {
+        let isVisible = isBack ? angle >= 90 : angle < 90
+        content
+            .rotation3DEffect(.degrees(isBack ? angle - 180 : angle), axis: (x: 0, y: 1, z: 0), perspective: 0.5)
+            .opacity(isVisible ? 1 : 0)
+    }
+}

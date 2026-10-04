@@ -55,3 +55,26 @@ final class PuzzleSolverTests: XCTestCase {
         XCTAssertEqual(PuzzleSolver.countSolutions(rowClues: puzzle.rowClues, columnClues: puzzle.columnClues), 2)
     }
 }
+
+final class HintFinderTests: XCTestCase {
+    private let puzzle = Puzzle(id: "hint", pattern: ["#####", "#...#", "#...#", "#...#", "#####"])
+
+    func testEmptyBoardPointsAtFullLine() {
+        let board = Matrix<CellState>(rows: 5, columns: 5, repeating: .blank)
+        let hint = HintFinder.bestHint(board: board, puzzle: puzzle)
+        XCTAssertEqual(hint, HintFinder.Hint(axis: .row, index: 0, newCells: 5))
+    }
+
+    func testSkipsLinesAlreadyDone() {
+        var game = NonogramGame(puzzle: puzzle, rules: .relaxed)
+        for column in 0..<5 { game.mark(.filled, at: GridPosition(row: 0, column: column)) }
+        let hint = HintFinder.bestHint(board: game.board, puzzle: puzzle)
+        XCTAssertNotNil(hint)
+        XCTAssertFalse(hint?.axis == .row && hint?.index == 0)
+    }
+
+    func testSolvedBoardHasNoHint() {
+        let board = puzzle.solution.map { $0 ? CellState.filled : .crossed }
+        XCTAssertNil(HintFinder.bestHint(board: board, puzzle: puzzle))
+    }
+}

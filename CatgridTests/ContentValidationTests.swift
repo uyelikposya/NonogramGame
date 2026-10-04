@@ -36,6 +36,8 @@ final class ContentValidationTests: XCTestCase {
             XCTAssertNotNil(breed.card, "\(breed.id) kartı yok")
             if let card = breed.card {
                 XCTAssertNotNil(card.fact.translations["tr"], "\(breed.id) kart bilgisi Türkçe değil")
+                XCTAssertNotNil(card.about?.translations["en"], "\(breed.id) kartının arka yüzü yok")
+                XCTAssertNotNil(card.about?.translations["tr"], "\(breed.id) kartının arka yüzü Türkçe değil")
                 for value in [card.stats.energy, card.stats.affection, card.stats.playfulness, card.stats.grooming] {
                     XCTAssertTrue((1...5).contains(value), "\(breed.id) puanı 1-5 dışında")
                 }
