@@ -27,6 +27,9 @@ jobs:
       - name: Bulmaca içeriğini doğrula
         run: python3 Tools/validate_puzzles.py
 
+      - name: Çeviri dosyalarını doğrula
+        run: python3 Tools/validate_strings.py
+
       - name: NonogramKit testleri
         working-directory: Packages/NonogramKit
         run: swift test

@@ -1,6 +1,34 @@
 {
   "sourceLanguage": "en",
   "strings": {
+    "%lld mistakes": {
+      "localizations": {
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld mistake"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld mistakes"
+                }
+              }
+            }
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld hata"
+          }
+        }
+      }
+    },
     "%lld of %lld puzzles solved": {
       "localizations": {
         "tr": {
@@ -135,6 +163,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Bölümlere Dön"
+          }
+        }
+      }
+    },
+    "Best %@": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En iyi %@"
           }
         }
       }
@@ -779,40 +817,12 @@
         }
       }
     },
-    "Time %@ · %lld mistakes": {
-      "localizations": {
-        "en": {
-          "variations": {
-            "plural": {
-              "one": {
-                "stringUnit": {
-                  "state": "translated",
-                  "value": "Time %@ · %lld mistake"
-                }
-              },
-              "other": {
-                "stringUnit": {
-                  "state": "translated",
-                  "value": "Time %@ · %lld mistakes"
-                }
-              }
-            }
-          }
-        },
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Süre %@ · %lld hata"
-          }
-        }
-      }
-    },
-    "Time %@ · Best %@": {
+    "Time %@": {
       "localizations": {
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Süre %@ · En iyi %@"
+            "value": "Süre %@"
           }
         }
       }

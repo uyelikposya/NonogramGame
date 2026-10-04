@@ -147,11 +147,17 @@ struct GameView: View {
 
     // MARK: - Sonuç
 
+    /// Her parça tek argümanlı ayrı bir çeviri anahtarıdır. Çoğul biçimli ("1 mistake / 2 mistakes")
+    /// bir anahtara ikinci argüman eklemek, Xcode'un çoğul kuralını yanlış argümana uygulamasına ve
+    /// sayının nesne gibi okunup çökmesine yol açıyordu (bkz. Tools/validate_strings.py).
     private func resultDetail(_ result: CompletionResult) -> Text {
-        let time = Text(formatDuration(result.elapsed))
+        let separator = Text(verbatim: " · ")
+        let time = Text("Time \(formatDuration(result.elapsed))")
         if let best = result.previousBest, !result.isNewBest {
-            return Text("Time \(time) · Best \(Text(formatDuration(best)))")
+            return time + separator + Text("Best \(formatDuration(best))")
         }
+        return time + separator + Text("\(result.mistakes) mistakes")
+    }
         return Text("Time \(time) · \(result.mistakes) mistakes")
     }
 
