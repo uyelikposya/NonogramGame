@@ -8,18 +8,22 @@ import NonogramKit
 final class GameViewModel {
     private(set) var game: NonogramGame
     var tool: MarkTool = .fill
-    /// Son hatalı kare; arayüz kısa bir sarsma/kırmızı yanıp sönme animasyonu için kullanır.
+    /// Son hatalı kare; arayüz kısa bir kırmızı yanıp sönme ve titreşim için kullanır.
     private(set) var lastMistake: GridPosition?
+    /// Parmağın altındaki kare; satırı ve sütunu vurgulanır.
+    private(set) var activeCell: GridPosition?
 
     /// Bulmaca çözülünce çağrılır (ilerleme kaydı, reklam sayacı).
     var onSolved: ((PuzzleCompletion) -> Void)?
 
+    private let rules: GameRules
     private var dragTarget: CellState?
     private var timerTask: Task<Void, Never>?
     private let now: () -> Date
 
     init(puzzle: Puzzle, rules: GameRules, now: @escaping () -> Date = { Date() }) {
         self.game = NonogramGame(puzzle: puzzle, rules: rules)
+        self.rules = rules
         self.now = now
     }
 
@@ -42,31 +46,46 @@ final class GameViewModel {
     }
 
     func dragMoved(to position: GridPosition) {
-        guard let target = dragTarget, game.board.contains(position) else { return }
+        guard game.board.contains(position) else { return }
+        if !isFinished { activeCell = position }
+        guard let target = dragTarget else { return }
         let current = game.board[position]
         // Silerken yalnızca aynı işaretleri, koyarken yalnızca boş kareleri etkile
         let applies = target == .blank ? current == tool.cellState : current == .blank
         guard applies else { return }
         handle(game.mark(target, at: position), at: position)
-        if isFinished { dragTarget = nil }
+        if isFinished {
+            dragTarget = nil
+            activeCell = nil
+        }
     }
 
     func dragEnded() {
         dragTarget = nil
+        activeCell = nil
     }
 
     func undo() {
         game.undo()
     }
 
+    /// Kaybedince "Tekrar Dene": tahtayı sıfırlar.
+    func restart() {
+        stop()
+        game = NonogramGame(puzzle: puzzle, rules: rules)
+        lastMistake = nil
+        activeCell = nil
+        start()
+    }
+
     // MARK: - Zamanlayıcı
 
     func start() {
-        guard timerTask == nil else { return }
+        guard timerTask == nil, !isFinished else { return }
         timerTask = Task { [weak self] in
             while !Task.isCancelled {
                 try? await Task.sleep(for: .seconds(1))
-                guard let self, !self.isFinished else { return }
+                guard let self, !Task.isCancelled, !self.isFinished else { return }
                 self.game.advanceTime(by: 1)
             }
         }
@@ -84,7 +103,6 @@ final class GameViewModel {
         case .mistake, .failed(.outOfMistakes):
             lastMistake = position
         case .solved:
-            stop()
             onSolved?(PuzzleCompletion(
                 puzzleID: puzzle.id,
                 completedAt: now(),
@@ -94,6 +112,6 @@ final class GameViewModel {
         default:
             break
         }
-        if case .failed = outcome { stop() }
+        if isFinished { stop() }
     }
 }

@@ -4,13 +4,15 @@ import SwiftUI
 @MainActor
 struct PurrfectNonogramApp: App {
     @State private var model = AppModel.live()
+    @State private var themeManager = ThemeManager()
+    @State private var router = Router()
 
     var body: some Scene {
         WindowGroup {
-            NavigationStack {
-                LevelListView()
-            }
-            .environment(model)
+            RootView()
+                .environment(model)
+                .environment(themeManager)
+                .environment(router)
         }
     }
 }

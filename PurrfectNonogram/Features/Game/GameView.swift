@@ -1,54 +1,152 @@
 import NonogramKit
 import SwiftUI
 
-/// Aşama 1 prototip oyun ekranı. Tasarım ve tema Aşama 2'de gelecek.
-struct GameView: View {
-    @State private var viewModel: GameViewModel
-    @Environment(\.dismiss) private var dismiss
-
-    init(puzzle: Puzzle, rules: GameRules, onSolved: @escaping (PuzzleCompletion) -> Void) {
-        let viewModel = GameViewModel(puzzle: puzzle, rules: rules)
-        viewModel.onSolved = onSolved
-        _viewModel = State(initialValue: viewModel)
-    }
+/// Rota hedefi: kimliğe göre bulmacayı bulur. `.id` sayesinde "Sonraki Bulmaca"da
+/// ViewModel sıfırdan oluşur.
+struct GameScreen: View {
+    @Environment(AppModel.self) private var model
+    let puzzleID: String
 
     var body: some View {
-        let game = viewModel.game
-        VStack(spacing: 20) {
-            statusBar(game)
+        if let puzzle = model.catalog.puzzle(withID: puzzleID) {
+            GameView(puzzle: puzzle, rules: model.catalog.rules(for: puzzle))
+                .id(puzzle.id)
+        } else {
+            ContentUnavailableView("Puzzle not found", systemImage: "questionmark.circle")
+                .themedScreen()
+        }
+    }
+}
+
+struct GameView: View {
+    @Environment(AppModel.self) private var model
+    @Environment(Router.self) private var router
+    @Environment(\.appTheme) private var theme
+    @AppStorage(SettingsKeys.haptics) private var hapticsEnabled = true
+
+    @State private var viewModel: GameViewModel
+    @State private var flashingCell: GridPosition?
+
+    init(puzzle: Puzzle, rules: GameRules) {
+        _viewModel = State(initialValue: GameViewModel(puzzle: puzzle, rules: rules))
+    }
+
+    private var game: NonogramGame { viewModel.game }
+
+    var body: some View {
+        VStack(spacing: 16) {
+            if let lesson = viewModel.puzzle.lesson, game.status == .playing {
+                LessonBanner(lesson: lesson)
+                    .transition(.move(edge: .top).combined(with: .opacity))
+            }
+
+            GameStatusBar(game: game)
 
             BoardView(
                 game: game,
+                activeCell: viewModel.activeCell,
+                flashingCell: flashingCell,
                 onDragBegan: { viewModel.dragBegan(at: $0) },
                 onDragMoved: { viewModel.dragMoved(to: $0) },
                 onDragEnded: { viewModel.dragEnded() }
             )
             .aspectRatio(1, contentMode: .fit)
-            .padding(.horizontal)
 
-            controls(game)
+            Spacer(minLength: 0)
+
+            if game.status == .playing {
+                GameControls(tool: $viewModel.tool, canUndo: game.canUndo) { viewModel.undo() }
+            }
         }
-        .padding(.vertical)
-        .navigationTitle(Text(verbatim: viewModel.puzzle.title.resolved))
-        .navigationBarTitleDisplayMode(.inline)
-        // Alta yerleşir ki çözüm sonrası ortaya çıkan görsel görünsün
-        .overlay(alignment: .bottom) { resultOverlay(game.status).padding() }
-        .animation(.spring, value: game.status)
-        .onAppear { viewModel.start() }
+        .padding(20)
+        .themedScreen()
+        .screenTitle(verbatim: game.status == .won ? viewModel.puzzle.title.resolved : "")
+        .overlay(alignment: .bottom) {
+            resultCard
+                .padding(20)
+        }
+        .animation(.spring(duration: 0.5), value: game.status)
+        .onAppear {
+            viewModel.onSolved = { model.record($0) }
+            viewModel.start()
+        }
         .onDisappear { viewModel.stop() }
-        .sensoryFeedback(.error, trigger: viewModel.lastMistake)
+        .onChange(of: game.mistakes) { _, newValue in
+            guard newValue > 0 else { return }
+            flashMistake()
+        }
+        .sensoryFeedback(.error, trigger: game.mistakes) { _, _ in hapticsEnabled }
+        .sensoryFeedback(.success, trigger: game.status) { _, newValue in hapticsEnabled && newValue == .won }
     }
 
-    private func statusBar(_ game: NonogramGame) -> some View {
+    private func flashMistake() {
+        withAnimation(.easeOut(duration: 0.1)) { flashingCell = viewModel.lastMistake }
+        Task {
+            try? await Task.sleep(for: .milliseconds(450))
+            withAnimation(.easeIn(duration: 0.3)) { flashingCell = nil }
+        }
+    }
+
+    // MARK: - Sonuç
+
+    @ViewBuilder
+    private var resultCard: some View {
+        switch game.status {
+        case .playing:
+            EmptyView()
+        case .won:
+            ResultCard(
+                icon: "pawprint.fill",
+                tint: theme.success,
+                title: "Purrfect!",
+                message: Text(verbatim: viewModel.puzzle.title.resolved)
+            ) {
+                if let next = model.nextPuzzle(after: viewModel.puzzle) {
+                    Button("Next Puzzle") { router.replaceTop(with: .game(puzzleID: next.id)) }
+                        .buttonStyle(PrimaryButtonStyle())
+                }
+                Button("Back to Levels") { router.pop() }
+                    .buttonStyle(SecondaryButtonStyle())
+            }
+            .transition(.move(edge: .bottom).combined(with: .opacity))
+        case .lost(let reason):
+            ResultCard(
+                icon: reason == .outOfTime ? "hourglass" : "heart.slash.fill",
+                tint: theme.mistake,
+                title: reason == .outOfTime ? "Time's up" : "Out of paws",
+                message: Text("Every cat lands on its feet. Give it another try!")
+            ) {
+                Button("Try Again") { viewModel.restart() }
+                    .buttonStyle(PrimaryButtonStyle())
+                Button("Back to Levels") { router.pop() }
+                    .buttonStyle(SecondaryButtonStyle())
+            }
+            .transition(.move(edge: .bottom).combined(with: .opacity))
+        }
+    }
+}
+
+// MARK: - Parçalar
+
+/// Kalan patiler (canlar) ve süre.
+struct GameStatusBar: View {
+    @Environment(\.appTheme) private var theme
+    let game: NonogramGame
+
+    var body: some View {
         HStack {
             if let limit = game.rules.mistakeLimit, game.rules.checksMoves {
-                HStack(spacing: 4) {
+                HStack(spacing: 6) {
                     ForEach(0..<limit, id: \.self) { index in
-                        Image(systemName: index < limit - game.mistakes ? "pawprint.fill" : "pawprint")
+                        let isAlive = index < limit - game.mistakes
+                        Image(systemName: "pawprint.fill")
+                            .foregroundStyle(isAlive ? theme.accent : theme.textSecondary.opacity(0.25))
+                            .scaleEffect(isAlive ? 1 : 0.85)
                     }
                 }
+                .animation(.spring, value: game.mistakes)
                 .accessibilityElement()
-                .accessibilityLabel(Text("\(game.remainingMistakes ?? 0) lives left"))
+                .accessibilityLabel(Text("\(game.remainingMistakes ?? 0) paws left"))
             }
             Spacer()
             Label {
@@ -57,55 +155,86 @@ struct GameView: View {
             } icon: {
                 Image(systemName: game.rules.timeLimit == nil ? "clock" : "hourglass")
             }
+            .foregroundStyle(isRunningOut ? theme.mistake : theme.textSecondary)
         }
         .font(.headline)
-        .padding(.horizontal)
     }
 
-    private func controls(_ game: NonogramGame) -> some View {
-        HStack(spacing: 16) {
-            Picker("Tool", selection: $viewModel.tool) {
-                Label("Fill", systemImage: "square.fill").tag(MarkTool.fill)
-                Label("Cross", systemImage: "xmark").tag(MarkTool.cross)
+    private var isRunningOut: Bool {
+        (game.remainingTime ?? .infinity) <= 10
+    }
+}
+
+/// Doldur / X aracı ve geri al.
+struct GameControls: View {
+    @Environment(\.appTheme) private var theme
+    @AppStorage(SettingsKeys.haptics) private var hapticsEnabled = true
+    @Binding var tool: MarkTool
+    let canUndo: Bool
+    let undo: () -> Void
+
+    var body: some View {
+        HStack(spacing: 14) {
+            toolButton(.fill, title: "Fill", systemImage: "square.fill")
+            toolButton(.cross, title: "Cross", systemImage: "xmark")
+
+            Button(action: undo) {
+                Image(systemName: "arrow.uturn.backward")
+                    .font(.title3.weight(.semibold))
+                    .frame(width: 56, height: 56)
+                    .background(Circle().fill(theme.surfaceMuted))
+                    .foregroundStyle(canUndo ? theme.textPrimary : theme.textSecondary.opacity(0.4))
             }
-            .pickerStyle(.segmented)
-
-            Button("Undo", systemImage: "arrow.uturn.backward") { viewModel.undo() }
-                .labelStyle(.iconOnly)
-                .disabled(!game.canUndo)
+            .buttonStyle(PressableButtonStyle())
+            .disabled(!canUndo)
+            .accessibilityLabel(Text("Undo"))
         }
-        .padding(.horizontal)
+        .sensoryFeedback(.selection, trigger: tool) { _, _ in hapticsEnabled }
     }
 
-    @ViewBuilder
-    private func resultOverlay(_ status: NonogramGame.Status) -> some View {
-        switch status {
-        case .playing:
-            EmptyView()
-        case .won:
-            resultCard(title: "Purrfect!", message: "Puzzle solved", button: "Continue") { dismiss() }
-        case .lost(let reason):
-            resultCard(
-                title: reason == .outOfTime ? "Time's up" : "Out of lives",
-                message: "Give it another try",
-                button: "Back to levels"
-            ) { dismiss() }
+    private func toolButton(_ value: MarkTool, title: LocalizedStringKey, systemImage: String) -> some View {
+        let isSelected = tool == value
+        return Button {
+            tool = value
+        } label: {
+            Label(title, systemImage: systemImage)
+                .font(.headline)
+                .frame(maxWidth: .infinity, minHeight: 56)
+                .background(Capsule().fill(isSelected ? theme.accent : theme.surfaceMuted))
+                .foregroundStyle(isSelected ? theme.onAccent : theme.textPrimary)
         }
+        .buttonStyle(PressableButtonStyle())
+        .accessibilityAddTraits(isSelected ? .isSelected : [])
     }
+}
 
-    private func resultCard(
-        title: LocalizedStringKey,
-        message: LocalizedStringKey,
-        button: LocalizedStringKey,
-        action: @escaping () -> Void
-    ) -> some View {
-        VStack(spacing: 12) {
-            Text(title).font(.title.bold())
-            Text(message).foregroundStyle(.secondary)
-            Button(button, action: action).buttonStyle(.borderedProminent)
+struct ResultCard<Actions: View>: View {
+    @Environment(\.appTheme) private var theme
+    let icon: String
+    let tint: Color
+    let title: LocalizedStringKey
+    let message: Text
+    @ViewBuilder let actions: () -> Actions
+
+    var body: some View {
+        VStack(spacing: 14) {
+            Image(systemName: icon)
+                .font(.title)
+                .foregroundStyle(tint)
+            Text(title)
+                .font(.title2.bold())
+                .foregroundStyle(theme.textPrimary)
+            message
+                .font(.subheadline)
+                .multilineTextAlignment(.center)
+                .foregroundStyle(theme.textSecondary)
+            VStack(spacing: 10) {
+                actions()
+            }
+            .padding(.top, 4)
         }
         .padding(24)
-        .background(.regularMaterial, in: .rect(cornerRadius: 24))
-        .transition(.scale.combined(with: .opacity))
+        .frame(maxWidth: 420)
+        .card()
     }
 }

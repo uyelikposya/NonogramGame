@@ -16,6 +16,24 @@ public struct Chapter: Identifiable, Hashable, Sendable {
     /// İçerik hazırlanırken eksik bölümleri raporlamak için (ör. 30).
     public let expectedPuzzleCount: Int
     public let puzzles: [Puzzle]
+
+    public init(
+        id: String,
+        kind: Kind,
+        title: LocalizedText,
+        subtitle: LocalizedText? = nil,
+        accentColor: RGBColor? = nil,
+        expectedPuzzleCount: Int,
+        puzzles: [Puzzle]
+    ) {
+        self.id = id
+        self.kind = kind
+        self.title = title
+        self.subtitle = subtitle
+        self.accentColor = accentColor
+        self.expectedPuzzleCount = expectedPuzzleCount
+        self.puzzles = puzzles
+    }
 }
 
 /// Uygulamadaki tüm bölümlerin oynanma sırasına göre dizilmiş hali.

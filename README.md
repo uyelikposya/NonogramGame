@@ -44,15 +44,17 @@ NonogramGame/
 │   │   └── Progression/    Progression (kilit kuralları), PuzzleCompletion
 │   └── Tests/NonogramKitTests/
 ├── PurrfectNonogram/
-│   ├── App/                PurrfectNonogramApp, AppModel (→ Aşama 2'de AppContainer + Router)
-│   ├── Core/               (Aşama 2) Theme/, Components/, Utilities/
+│   ├── App/                PurrfectNonogramApp, AppModel, Router (rotalar), RootView
+│   ├── Core/
+│   │   ├── Theme/          ThemePalette (4 palet × açık/koyu), AppTheme tokenları, ThemeManager, modifier'lar
+│   │   └── Components/     Buton stilleri, ProgressBar, ArtworkThumbnail
 │   ├── Features/
-│   │   ├── Home/           (Aşama 2) Ana ekran, "Devam Et"
-│   │   ├── Levels/         Bölüm/tür listesi (şimdilik prototip liste)
-│   │   ├── Game/           GameView, BoardView, GameViewModel
-│   │   ├── Tutorial/       (Aşama 2) Ders katmanı (TutorialLesson'a göre ipucu balonları)
-│   │   └── Settings/       (Aşama 2) Tema paleti, ses/titreşim, dil
-│   ├── Services/           (Aşama 3-4) Persistence/ (SwiftData), Ads/ (AdMob), Haptics/
+│   │   ├── Home/           Ana ekran: genel ilerleme, "Devam Et" kartı
+│   │   ├── Levels/         Tür kartları (ChaptersView), 30 bulmacalık ızgara (ChapterView)
+│   │   ├── Game/           GameView, BoardView (Canvas), GameViewModel
+│   │   ├── Tutorial/       LessonBanner + ders metinleri
+│   │   └── Settings/       Palet seçici, görünüm, titreşim, dil
+│   ├── Services/           (Aşama 3-4) Persistence/ (SwiftData), Ads/ (AdMob)
 │   └── Resources/
 │       ├── Puzzles/        catalog.json + bölüm başına bir JSON
 │       ├── Localizable.xcstrings, InfoPlist.xcstrings   (EN varsayılan, TR)
@@ -70,6 +72,13 @@ NonogramGame/
 | Basit ayarlar | `@AppStorage` | Tema paleti, ses, reklam sayacı |
 | Yerelleştirme | **String Catalog** (`.xcstrings`) | `Localizable.strings`'in Xcode 15+ halefi; derlemede `.strings`'e dönüşür, eksik çevirileri gösterir. İçerik adları JSON'da `{ "en", "tr" }` |
 | Reklam | Google Mobile Ads SDK (SPM) + UMP onayı | Aşama 4 |
+
+## Tema sistemi
+
+View'lar ham renk kullanmaz; `@Environment(\.appTheme)` üzerinden anlamsal tokenları okur
+(`background`, `surface`, `accent`, `cellFilled`, `cellCross`, `gridLineMajor`, `highlight`, `mistake`...).
+`RootView`, seçili `ThemePalette` ile pencerenin renk şemasından `AppTheme` üretip enjekte eder.
+Yeni palet eklemek: `ThemePalette`'e bir case ve iki `ThemeSpec` (açık/koyu) eklemek yeterli.
 
 ## Bulmaca veri modeli
 
@@ -145,9 +154,9 @@ Her türün 30. bulmacası o türün büyük portresi olabilir (bölüm finali).
 
 - [x] **Aşama 1 — Core Engine ve veri modeli**: NonogramKit, JSON şeması, çözücü/doğrulayıcı,
       kilit sistemi, örnek içerik (10 eğitim + 3 Siyam), prototip oyun ekranı, testler
-- [ ] **Aşama 2 — UI/UX ve temalar**: tasarım tokenları, palet sistemi (Pastel, Gece Mavisi, Kahve Tonları
-      + açık/koyu), ana ekran, tür kartları/bölüm haritası, oyun ekranı cilası (yakınlaştırma, satır vurgusu,
-      çözüm animasyonu), eğitim katmanı, ayarlar
+- [x] **Aşama 2 — UI/UX ve temalar**: 4 palet (Pastel, Gece Mavisi, Kahve Tonları, Matcha) × açık/koyu,
+      ana ekran, tür kartları ve bulmaca ızgarası, temalı tahta (satır/sütun vurgusu, hata yanıp sönmesi,
+      çözümde kedi resmi animasyonu), eğitim balonları, sonuç kartları, ayarlar, titreşim, EN/TR metinler
 - [ ] **Aşama 3 — Kalıcılık**: SwiftData (`PuzzleRecord`: tamamlanma, en iyi süre, `GameSnapshot`),
       yarım oyuna devam, istatistikler
 - [ ] **Aşama 4 — Reklam ve yerelleştirme**: AdMob SPM, UMP/GDPR-KVKK onayı, ATT, `AdService` protokolü,

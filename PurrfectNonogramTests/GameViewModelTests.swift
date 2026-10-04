@@ -60,4 +60,26 @@ struct GameViewModelTests {
         #expect(viewModel.lastMistake == position(2, 2))
         #expect(viewModel.game.mistakes == 1)
     }
+
+    @Test func tracksActiveCellWhileDragging() {
+        let viewModel = GameViewModel(puzzle: puzzle, rules: .classic)
+        viewModel.dragBegan(at: position(0, 0))
+        #expect(viewModel.activeCell == position(0, 0))
+        viewModel.dragEnded()
+        #expect(viewModel.activeCell == nil)
+    }
+
+    @Test func restartResetsLostGame() {
+        let viewModel = GameViewModel(puzzle: puzzle, rules: .classic)
+        viewModel.tap(position(1, 0))
+        viewModel.tap(position(1, 1))
+        viewModel.tap(position(1, 2))
+        #expect(viewModel.game.status == .lost(.outOfMistakes))
+
+        viewModel.restart()
+        #expect(viewModel.game.status == .playing)
+        #expect(viewModel.game.mistakes == 0)
+        #expect(viewModel.lastMistake == nil)
+        viewModel.stop()
+    }
 }
