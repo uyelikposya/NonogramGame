@@ -68,6 +68,7 @@ jobs:
           grep -E "error:|Test Case .* (passed|failed)|Executed|\*\* .* \*\*" xcodebuild.log || true
           if [ $STATUS -ne 0 ]; then
             echo "::error::xcodebuild başarısız (çıkış kodu $STATUS)"
-            tail -80 xcodebuild.log
+            grep -B2 -A6 -E "Undefined symbol|ld: |duplicate symbol" xcodebuild.log | head -120 || true
+            tail -40 xcodebuild.log
           fi
           exit $STATUS
