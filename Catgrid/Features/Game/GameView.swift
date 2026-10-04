@@ -38,7 +38,12 @@ struct GameView: View {
     @State private var completionResult: CompletionResult?
 
     init(puzzle: Puzzle, rules: GameRules, savedGame: GameSnapshot? = nil) {
-        _viewModel = State(initialValue: GameViewModel(puzzle: puzzle, rules: rules, savedGame: savedGame))
+        self.init(viewModel: GameViewModel(puzzle: puzzle, rules: rules, savedGame: savedGame))
+    }
+
+    /// Testler ekrandaki ViewModel'i doğrudan sürebilsin diye.
+    init(viewModel: GameViewModel) {
+        _viewModel = State(initialValue: viewModel)
     }
 
     private var game: NonogramGame { viewModel.game }

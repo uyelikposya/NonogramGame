@@ -74,8 +74,9 @@ jobs:
           fi
           exit $STATUS
 
-      # Intel Mac'lerde simülatör x86_64 çalışır; arayüz testini bu mimaride de çalıştır (Rosetta ile)
-      - name: Arayüz testi (Intel / x86_64 simülatör)
+      # Intel Mac'lerde simülatör x86_64 çalışır; birim testlerini bu mimaride de çalıştır (Rosetta ile).
+      # Arayüz otomasyonu Rosetta altında çok yavaş olduğu için burada yalnızca CatgridTests koşar.
+      - name: Birim testleri (Intel / x86_64 simülatör)
         if: always() && env.DEVICE_ID != ''
         run: |
           softwareupdate --install-rosetta --agree-to-license >/dev/null 2>&1 || true
@@ -84,7 +85,7 @@ jobs:
             -project Catgrid.xcodeproj \
             -scheme Catgrid \
             -destination "platform=iOS Simulator,id=$DEVICE_ID,arch=x86_64" \
-            -only-testing:CatgridUITests \
+            -only-testing:CatgridTests \
             CODE_SIGNING_ALLOWED=NO \
             > xcodebuild-x86.log 2>&1 || STATUS=$?
           grep -E "error:|Test Case .* (passed|failed)|Executed|\*\* .* \*\*|crash|EXC_" xcodebuild-x86.log || true
