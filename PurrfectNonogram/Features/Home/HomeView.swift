@@ -12,10 +12,17 @@ struct HomeView: View {
             VStack(spacing: 28) {
                 header
                 continueCard
-                Button {
-                    router.push(.chapters)
-                } label: {
-                    Label("All Levels", systemImage: "square.grid.2x2")
+                HStack(spacing: 12) {
+                    Button {
+                        router.push(.chapters)
+                    } label: {
+                        Label("All Levels", systemImage: "square.grid.2x2")
+                    }
+                    Button {
+                        router.push(.stats)
+                    } label: {
+                        Label("Statistics", systemImage: "chart.bar.fill")
+                    }
                 }
                 .buttonStyle(SecondaryButtonStyle())
             }
@@ -61,7 +68,7 @@ struct HomeView: View {
 
     @ViewBuilder
     private var continueCard: some View {
-        if let puzzle = model.progression.nextPlayable,
+        if let puzzle = model.resumablePuzzle,
            let chapter = model.catalog.chapter(containing: puzzle.id) {
             VStack(alignment: .leading, spacing: 16) {
                 HStack(spacing: 14) {
@@ -79,8 +86,11 @@ struct HomeView: View {
                 Button {
                     router.push(.game(puzzleID: puzzle.id))
                 } label: {
-                    let title: LocalizedStringKey = model.completedCount == 0 ? "Start Playing" : "Continue"
-                    Label(title, systemImage: "play.fill")
+                    let isResuming = model.progress.hasSavedGame(for: puzzle.id)
+                    let title: LocalizedStringKey = isResuming
+                        ? "Resume"
+                        : (model.completedCount == 0 ? "Start Playing" : "Continue")
+                    Label(title, systemImage: isResuming ? "arrow.clockwise" : "play.fill")
                 }
                 .buttonStyle(PrimaryButtonStyle())
             }

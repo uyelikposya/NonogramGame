@@ -5,6 +5,7 @@ enum Route: Hashable {
     case chapter(id: String)
     case game(puzzleID: String)
     case settings
+    case stats
 }
 
 /// Uygulama içi gezinme yığını. Ekranlar doğrudan `NavigationLink` yerine bunu kullanır

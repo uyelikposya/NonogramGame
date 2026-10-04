@@ -10,8 +10,12 @@ struct GameScreen: View {
 
     var body: some View {
         if let puzzle = model.catalog.puzzle(withID: puzzleID) {
-            GameView(puzzle: puzzle, rules: model.catalog.rules(for: puzzle))
-                .id(puzzle.id)
+            GameView(
+                puzzle: puzzle,
+                rules: model.catalog.rules(for: puzzle),
+                savedGame: model.progress.savedGame(for: puzzle.id)
+            )
+            .id(puzzle.id)
         } else {
             ContentUnavailableView("Puzzle not found", systemImage: "questionmark.circle")
                 .themedScreen()
@@ -24,13 +28,15 @@ struct GameView: View {
     @Environment(AppModel.self) private var model
     @Environment(Router.self) private var router
     @Environment(\.appTheme) private var theme
+    @Environment(\.scenePhase) private var scenePhase
     @AppStorage(SettingsKeys.haptics) private var hapticsEnabled = true
 
     @State private var viewModel: GameViewModel
     @State private var flashingCell: GridPosition?
+    @State private var completionResult: CompletionResult?
 
-    init(puzzle: Puzzle, rules: GameRules) {
-        _viewModel = State(initialValue: GameViewModel(puzzle: puzzle, rules: rules))
+    init(puzzle: Puzzle, rules: GameRules, savedGame: GameSnapshot? = nil) {
+        _viewModel = State(initialValue: GameViewModel(puzzle: puzzle, rules: rules, savedGame: savedGame))
     }
 
     private var game: NonogramGame { viewModel.game }
@@ -69,16 +75,39 @@ struct GameView: View {
         }
         .animation(.spring(duration: 0.5), value: game.status)
         .onAppear {
-            viewModel.onSolved = { model.record($0) }
+            viewModel.onSolved = { completionResult = model.record($0) }
             viewModel.start()
         }
-        .onDisappear { viewModel.stop() }
+        .onDisappear {
+            viewModel.stop()
+            persistProgress()
+        }
+        // Uygulama arka plana geçince (ve kapatılmadan önce) yarım oyun kaydedilir
+        .onChange(of: scenePhase) { _, phase in
+            switch phase {
+            case .active: viewModel.start()
+            default:
+                viewModel.stop()
+                persistProgress()
+            }
+        }
+        .onChange(of: game.status) { _, status in
+            if case .lost = status { persistProgress() }
+        }
         .onChange(of: game.mistakes) { _, newValue in
             guard newValue > 0 else { return }
             flashMistake()
         }
         .sensoryFeedback(.error, trigger: game.mistakes) { _, _ in hapticsEnabled }
         .sensoryFeedback(.success, trigger: game.status) { _, newValue in hapticsEnabled && newValue == .won }
+    }
+
+    private func persistProgress() {
+        if let snapshot = viewModel.snapshotToSave {
+            model.progress.saveGame(snapshot)
+        } else {
+            model.progress.clearSavedGame(for: viewModel.puzzle.id)
+        }
     }
 
     private func flashMistake() {
@@ -91,6 +120,14 @@ struct GameView: View {
 
     // MARK: - Sonuç
 
+    private func resultDetail(_ result: CompletionResult) -> Text {
+        let time = Text(formatDuration(result.elapsed))
+        if let best = result.previousBest, !result.isNewBest {
+            return Text("Time \(time) · Best \(Text(formatDuration(best)))")
+        }
+        return Text("Time \(time) · \(result.mistakes) mistakes")
+    }
+
     @ViewBuilder
     private var resultCard: some View {
         switch game.status {
@@ -101,7 +138,9 @@ struct GameView: View {
                 icon: "pawprint.fill",
                 tint: theme.success,
                 title: "Purrfect!",
-                message: Text(verbatim: viewModel.puzzle.title.resolved)
+                message: Text(verbatim: viewModel.puzzle.title.resolved),
+                detail: completionResult.map { resultDetail($0) },
+                badge: completionResult?.isNewBest == true ? "New best time!" : nil
             ) {
                 if let next = model.nextPuzzle(after: viewModel.puzzle) {
                     Button("Next Puzzle") { router.replaceTop(with: .game(puzzleID: next.id)) }
@@ -219,6 +258,8 @@ struct ResultCard<Actions: View>: View {
     let tint: Color
     let title: LocalizedStringKey
     let message: Text
+    var detail: Text?
+    var badge: LocalizedStringKey?
     @ViewBuilder let actions: () -> Actions
 
     var body: some View {
@@ -233,6 +274,19 @@ struct ResultCard<Actions: View>: View {
                 .font(.subheadline)
                 .multilineTextAlignment(.center)
                 .foregroundStyle(theme.textSecondary)
+            if let detail {
+                detail
+                    .font(.subheadline.monospacedDigit())
+                    .foregroundStyle(theme.textPrimary)
+            }
+            if let badge {
+                Label(badge, systemImage: "trophy.fill")
+                    .font(.caption.bold())
+                    .foregroundStyle(theme.onAccent)
+                    .padding(.horizontal, 12)
+                    .padding(.vertical, 6)
+                    .background(Capsule().fill(theme.success))
+            }
             VStack(spacing: 10) {
                 actions()
             }
@@ -242,4 +296,9 @@ struct ResultCard<Actions: View>: View {
         .frame(maxWidth: 420)
         .card()
     }
+}
+
+/// "1:05" biçiminde süre.
+func formatDuration(_ interval: TimeInterval) -> String {
+    Duration.seconds(interval.rounded()).formatted(.time(pattern: .minuteSecond))
 }

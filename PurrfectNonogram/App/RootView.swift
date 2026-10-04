@@ -16,6 +16,7 @@ struct RootView: View {
                     case .chapter(let id): ChapterView(chapterID: id)
                     case .game(let puzzleID): GameScreen(puzzleID: puzzleID)
                     case .settings: SettingsView()
+                    case .stats: StatsView()
                     }
                 }
         }

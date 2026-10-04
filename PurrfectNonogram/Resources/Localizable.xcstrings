@@ -99,6 +99,16 @@
         }
       }
     },
+    "All solved puzzles, best times and saved games will be deleted. This cannot be undone.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Çözülen tüm bulmacalar, en iyi süreler ve kayıtlı oyunlar silinecek. Bu işlem geri alınamaz."
+          }
+        }
+      }
+    },
     "Appearance": {
       "localizations": {
         "tr": {
@@ -109,12 +119,32 @@
         }
       }
     },
+    "Average": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ortalama"
+          }
+        }
+      }
+    },
     "Back to Levels": {
       "localizations": {
         "tr": {
           "stringUnit": {
             "state": "translated",
             "value": "Bölümlere Dön"
+          }
+        }
+      }
+    },
+    "Breeds": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Türler"
           }
         }
       }
@@ -225,6 +255,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Her kare hem bir satıra hem bir sütuna aittir. Birinden öğrendiğinle diğerini çöz."
+          }
+        }
+      }
+    },
+    "Fastest solve %@": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En hızlı çözüm %@"
           }
         }
       }
@@ -389,6 +429,16 @@
         }
       }
     },
+    "New best time!": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yeni rekor süre!"
+          }
+        }
+      }
+    },
     "New breeds are on their way.": {
       "localizations": {
         "tr": {
@@ -439,6 +489,26 @@
         }
       }
     },
+    "Perfect": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hatasız"
+          }
+        }
+      }
+    },
+    "Progress": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İlerleme"
+          }
+        }
+      }
+    },
     "Purrfect!": {
       "localizations": {
         "tr": {
@@ -465,6 +535,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Bulmaca %lld · %lld×%lld"
+          }
+        }
+      }
+    },
+    "Puzzle %lld, in progress": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bulmaca %lld, devam ediyor"
           }
         }
       }
@@ -509,6 +589,36 @@
         }
       }
     },
+    "Reset Progress": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İlerlemeyi Sıfırla"
+          }
+        }
+      }
+    },
+    "Reset all progress?": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tüm ilerleme sıfırlansın mı?"
+          }
+        }
+      }
+    },
+    "Resume": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kaldığın Yerden Devam Et"
+          }
+        }
+      }
+    },
     "Rows meet columns": {
       "localizations": {
         "tr": {
@@ -539,12 +649,32 @@
         }
       }
     },
+    "Solved": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Çözülen"
+          }
+        }
+      }
+    },
     "Start Playing": {
       "localizations": {
         "tr": {
           "stringUnit": {
             "state": "translated",
             "value": "Oynamaya Başla"
+          }
+        }
+      }
+    },
+    "Statistics": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İstatistikler"
           }
         }
       }
@@ -579,12 +709,60 @@
         }
       }
     },
+    "Time %@ · %lld mistakes": {
+      "localizations": {
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Time %@ · %lld mistake"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "Time %@ · %lld mistakes"
+                }
+              }
+            }
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Süre %@ · %lld hata"
+          }
+        }
+      }
+    },
+    "Time %@ · Best %@": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Süre %@ · En iyi %@"
+          }
+        }
+      }
+    },
     "Time's up": {
       "localizations": {
         "tr": {
           "stringUnit": {
             "state": "translated",
             "value": "Süre doldu"
+          }
+        }
+      }
+    },
+    "Total Time": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toplam Süre"
           }
         }
       }

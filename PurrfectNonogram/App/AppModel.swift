@@ -1,41 +1,34 @@
 import Foundation
 import NonogramKit
 
-/// Uygulama genelindeki durum: bölüm kataloğu ve ilerleme.
-/// Aşama 3'te ilerleme SwiftData'ya, reklam sayacı `AdService`'e taşınacak.
+/// Uygulama genelindeki durum: bölüm kataloğu ve oyuncu ilerlemesi.
 @MainActor
 @Observable
 final class AppModel {
-    static let completedKey = "progress.completedPuzzleIDs"
-
     let catalog: LevelCatalog
-    private(set) var completedIDs: Set<String> {
-        didSet { defaults.set(Array(completedIDs), forKey: Self.completedKey) }
-    }
+    let progress: ProgressStore
 
-    private let defaults: UserDefaults
-
-    init(catalog: LevelCatalog, defaults: UserDefaults = .standard) {
+    init(catalog: LevelCatalog, progress: ProgressStore) {
         self.catalog = catalog
-        self.defaults = defaults
-        self.completedIDs = Set(defaults.stringArray(forKey: Self.completedKey) ?? [])
+        self.progress = progress
     }
 
     static func live() -> AppModel {
         do {
-            return AppModel(catalog: try CatalogLoader.load(from: .main))
+            return AppModel(catalog: try CatalogLoader.load(from: .main), progress: try ProgressStore.live())
         } catch {
-            // Paketlenmiş içerik bozuksa geliştirme sırasında hemen fark edilsin
-            fatalError("Bölüm kataloğu yüklenemedi: \(error)")
+            // Paketlenmiş içerik veya veritabanı açılamıyorsa geliştirme sırasında hemen fark edilsin
+            fatalError("Uygulama başlatılamadı: \(error)")
         }
     }
 
     var progression: Progression {
-        Progression(catalog: catalog, completedIDs: completedIDs)
+        Progression(catalog: catalog, completedIDs: progress.completedIDs)
     }
 
-    func record(_ completion: PuzzleCompletion) {
-        completedIDs.insert(completion.puzzleID)
+    @discardableResult
+    func record(_ completion: PuzzleCompletion) -> CompletionResult {
+        progress.recordCompletion(completion)
     }
 
     // MARK: - Ekranlar için özetler
@@ -46,7 +39,8 @@ final class AppModel {
     }
 
     var completedCount: Int {
-        catalog.orderedPuzzles.filter { completedIDs.contains($0.id) }.count
+        let completed = progress.completedIDs
+        return catalog.orderedPuzzles.filter { completed.contains($0.id) }.count
     }
 
     func chapter(withID id: String) -> Chapter? {
@@ -60,5 +54,19 @@ final class AppModel {
 
     func nextPuzzle(after puzzle: Puzzle) -> Puzzle? {
         catalog.puzzle(after: puzzle.id)
+    }
+
+    /// Ana ekrandaki "Devam Et" hedefi: önce en son yarım bırakılan açık bulmaca, yoksa sıradaki.
+    var resumablePuzzle: Puzzle? {
+        let progression = progression
+        let inProgress = catalog.orderedPuzzles
+            .filter { progress.hasSavedGame(for: $0.id) && progression.isUnlocked($0.id) }
+            .max { (progress.record(for: $0.id)?.lastPlayedAt ?? .distantPast) < (progress.record(for: $1.id)?.lastPlayedAt ?? .distantPast) }
+        return inProgress ?? progression.nextPlayable
+    }
+
+    /// Ayarlardan ilerleme sıfırlanır.
+    func resetProgress() {
+        progress.resetAll()
     }
 }

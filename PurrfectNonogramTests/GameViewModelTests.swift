@@ -82,4 +82,28 @@ final class GameViewModelTests: XCTestCase {
         XCTAssertNil(viewModel.lastMistake)
         viewModel.stop()
     }
+
+    func testResumesFromSavedGame() {
+        let first = GameViewModel(puzzle: puzzle, rules: .classic)
+        first.tap(position(0, 0))
+        first.tap(position(2, 2)) // hata
+        let saved = first.snapshotToSave
+
+        let resumed = GameViewModel(puzzle: puzzle, rules: .classic, savedGame: saved)
+        XCTAssertEqual(resumed.game.board, first.game.board)
+        XCTAssertEqual(resumed.game.mistakes, 1)
+    }
+
+    func testNothingToSaveForUntouchedOrFinishedGame() {
+        let viewModel = GameViewModel(puzzle: puzzle, rules: .classic)
+        XCTAssertNil(viewModel.snapshotToSave)
+
+        viewModel.tap(position(0, 0))
+        XCTAssertNotNil(viewModel.snapshotToSave)
+
+        viewModel.tap(position(0, 1))
+        viewModel.tap(position(0, 2))
+        XCTAssertEqual(viewModel.game.status, .won)
+        XCTAssertNil(viewModel.snapshotToSave)
+    }
 }

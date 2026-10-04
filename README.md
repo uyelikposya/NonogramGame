@@ -59,9 +59,11 @@ NonogramGame/
 │   │   ├── Home/           Ana ekran: genel ilerleme, "Devam Et" kartı
 │   │   ├── Levels/         Tür kartları (ChaptersView), 30 bulmacalık ızgara (ChapterView)
 │   │   ├── Game/           GameView, BoardView (Canvas), GameViewModel
+│   │   ├── Stats/          İstatistik ekranı
 │   │   ├── Tutorial/       LessonBanner + ders metinleri
 │   │   └── Settings/       Palet seçici, görünüm, titreşim, dil
-│   ├── Services/           (Aşama 3-4) Persistence/ (SwiftData), Ads/ (AdMob)
+│   ├── Services/
+│   │   └── Persistence/    PuzzleRecord (@Model), ProgressStore (SwiftData önbellekli ilerleme)
 │   └── Resources/
 │       ├── Puzzles/        catalog.json + bölüm başına bir JSON
 │       ├── Localizable.xcstrings, InfoPlist.xcstrings   (EN varsayılan, TR)
@@ -164,8 +166,9 @@ Her türün 30. bulmacası o türün büyük portresi olabilir (bölüm finali).
 - [x] **Aşama 2 — UI/UX ve temalar**: 4 palet (Pastel, Gece Mavisi, Kahve Tonları, Matcha) × açık/koyu,
       ana ekran, tür kartları ve bulmaca ızgarası, temalı tahta (satır/sütun vurgusu, hata yanıp sönmesi,
       çözümde kedi resmi animasyonu), eğitim balonları, sonuç kartları, ayarlar, titreşim, EN/TR metinler
-- [ ] **Aşama 3 — Kalıcılık**: SwiftData (`PuzzleRecord`: tamamlanma, en iyi süre, `GameSnapshot`),
-      yarım oyuna devam, istatistikler
+- [x] **Aşama 3 — Kalıcılık**: SwiftData (`PuzzleRecord`: ilk çözüm, en iyi süre, en az hata, yarım oyun),
+      arka plana geçişte/ekrandan çıkışta otomatik kayıt, kaldığın yerden devam, "Yeni rekor!",
+      istatistik ekranı, ilerlemeyi sıfırlama, eski UserDefaults ilerlemesinin taşınması
 - [ ] **Aşama 4 — Reklam ve yerelleştirme**: AdMob SPM, UMP/GDPR-KVKK onayı, ATT, `AdService` protokolü,
       her 2 tamamlanan bulmacada bir geçiş reklamı, isteğe bağlı ödüllü reklam (ekstra can / ipucu),
       tüm metinlerin TR çevirisi

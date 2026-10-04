@@ -21,14 +21,24 @@ final class GameViewModel {
     private var timerTask: Task<Void, Never>?
     private let now: () -> Date
 
-    init(puzzle: Puzzle, rules: GameRules, now: @escaping () -> Date = { Date() }) {
-        self.game = NonogramGame(puzzle: puzzle, rules: rules)
+    /// - Parameter savedGame: Yarım kalan oyun; varsa tahta, hatalar ve süre buradan devam eder.
+    init(puzzle: Puzzle, rules: GameRules, savedGame: GameSnapshot? = nil, now: @escaping () -> Date = { Date() }) {
+        self.game = savedGame.map { NonogramGame(puzzle: puzzle, rules: rules, restoring: $0) }
+            ?? NonogramGame(puzzle: puzzle, rules: rules)
         self.rules = rules
         self.now = now
     }
 
     var puzzle: Puzzle { game.puzzle }
     var isFinished: Bool { game.status != .playing }
+
+    /// Kaydedilecek yarım oyun. Bitmiş ya da hiç dokunulmamış oyunda `nil`:
+    /// o durumda varsa eski kayıt silinmelidir.
+    var snapshotToSave: GameSnapshot? {
+        guard game.status == .playing else { return nil }
+        let hasProgress = game.mistakes > 0 || game.board.storage.contains { $0 != .blank }
+        return hasProgress ? game.snapshot : nil
+    }
 
     // MARK: - Dokunma ve sürükleme
 

@@ -38,7 +38,12 @@ struct ChapterView: View {
                             Button {
                                 router.push(.game(puzzleID: puzzle.id))
                             } label: {
-                                PuzzleTile(puzzle: puzzle, number: offset + 1, state: state)
+                                PuzzleTile(
+                                    puzzle: puzzle,
+                                    number: offset + 1,
+                                    state: state,
+                                    isInProgress: model.progress.hasSavedGame(for: puzzle.id)
+                                )
                             }
                             .buttonStyle(PressableButtonStyle())
                             .disabled(state == .locked)
@@ -72,6 +77,8 @@ struct PuzzleTile: View {
     let puzzle: Puzzle
     let number: Int
     let state: TileState
+    /// Yarım bırakılmış: köşede küçük bir rozet gösterilir.
+    var isInProgress = false
 
     var body: some View {
         let shape = RoundedRectangle(cornerRadius: 16, style: .continuous)
@@ -93,6 +100,15 @@ struct PuzzleTile: View {
         .aspectRatio(1, contentMode: .fit)
         .background(shape.fill(state == .playable ? theme.accent : theme.surface))
         .overlay(shape.strokeBorder(theme.separator, lineWidth: state == .locked ? 1 : 0))
+        .overlay(alignment: .topTrailing) {
+            if isInProgress && state != .locked {
+                Image(systemName: "hourglass.circle.fill")
+                    .font(.body)
+                    .symbolRenderingMode(.palette)
+                    .foregroundStyle(theme.onAccent, theme.textPrimary)
+                    .offset(x: 4, y: -4)
+            }
+        }
         .shadow(color: state == .locked ? .clear : theme.cardShadow, radius: 6, y: 2)
         .accessibilityElement()
         .accessibilityLabel(accessibilityText)
@@ -101,7 +117,7 @@ struct PuzzleTile: View {
     private var accessibilityText: Text {
         switch state {
         case .completed: Text("Puzzle \(number), solved: \(puzzle.title.resolved)")
-        case .playable: Text("Puzzle \(number)")
+        case .playable: isInProgress ? Text("Puzzle \(number), in progress") : Text("Puzzle \(number)")
         case .locked: Text("Puzzle \(number), locked")
         }
     }

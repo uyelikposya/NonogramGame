@@ -8,10 +8,12 @@ enum SettingsKeys {
 @MainActor
 struct SettingsView: View {
     @Environment(ThemeManager.self) private var themeManager
+    @Environment(AppModel.self) private var model
     @Environment(\.appTheme) private var theme
     @Environment(\.colorScheme) private var colorScheme
     @Environment(\.openURL) private var openURL
     @AppStorage(SettingsKeys.haptics) private var hapticsEnabled = true
+    @State private var isConfirmingReset = false
 
     private let paletteColumns = [GridItem(.flexible(), spacing: 12), GridItem(.flexible(), spacing: 12)]
 
@@ -52,6 +54,24 @@ struct SettingsView: View {
                     }
                     .padding(16)
                     .card(cornerRadius: 16)
+                }
+
+                section("Progress") {
+                    Button(role: .destructive) {
+                        isConfirmingReset = true
+                    } label: {
+                        Label("Reset Progress", systemImage: "trash")
+                            .font(.headline)
+                            .foregroundStyle(theme.mistake)
+                            .frame(maxWidth: .infinity, minHeight: 44)
+                    }
+                    .padding(8)
+                    .card(cornerRadius: 16)
+                    .confirmationDialog("Reset all progress?", isPresented: $isConfirmingReset, titleVisibility: .visible) {
+                        Button("Reset Progress", role: .destructive) { model.resetProgress() }
+                    } message: {
+                        Text("All solved puzzles, best times and saved games will be deleted. This cannot be undone.")
+                    }
                 }
 
                 section("Language") {
