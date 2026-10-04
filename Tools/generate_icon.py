@@ -9,6 +9,8 @@ from PIL import Image, ImageDraw, ImageFilter
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "Catgrid/Resources/Assets.xcassets/AppIcon.appiconset/AppIcon.png"
+# Ana sayfa başlığındaki logo: simgenin aynısı (uygulama içinde görüntü olarak kullanılır)
+LOGO = ROOT / "Catgrid/Resources/Assets.xcassets/AppLogo.imageset"
 SIZE = 1024
 SS = 4  # kenar yumuşatma için 4 kat büyük çizip küçültülür
 S = SIZE * SS
@@ -99,6 +101,13 @@ def main():
     img = img.resize((SIZE, SIZE), Image.LANCZOS)
     img.save(OUT)
     print(f"✓ {OUT.relative_to(ROOT)}")
+    LOGO.mkdir(exist_ok=True)
+    img.resize((360, 360), Image.LANCZOS).save(LOGO / "AppLogo.png")
+    (LOGO / "Contents.json").write_text(
+        '{\n  "images" : [\n    {\n      "filename" : "AppLogo.png",\n      "idiom" : "universal"\n    }\n  ],\n'
+        '  "info" : {\n    "author" : "xcode",\n    "version" : 1\n  }\n}\n'
+    )
+    print(f"✓ {LOGO.relative_to(ROOT)}")
 
 
 if __name__ == "__main__":

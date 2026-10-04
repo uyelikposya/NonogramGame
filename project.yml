@@ -36,6 +36,10 @@ targets:
       - path: Catgrid
         excludes:
           - Resources/Catgrid.storekit   # yalnızca Xcode'da yerel satın alma testi için
+          - Resources/PrivacyInfo.xcprivacy
+      # Apple'ın zorunlu gizlilik bildirimi; kaynak olarak pakete girmeli
+      - path: Catgrid/Resources/PrivacyInfo.xcprivacy
+        buildPhase: resources
     dependencies:
       - package: NonogramKit
       - package: GoogleMobileAds

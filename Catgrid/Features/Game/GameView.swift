@@ -37,6 +37,9 @@ struct GameView: View {
     @State private var completionResult: CompletionResult?
     /// Bu bulmacayla bir türün tümü çözüldüyse kazanılan kart.
     @State private var newCardChapter: Chapter?
+    /// Küçük kedinin o an söylediği (ipucu).
+    @State private var companionLine: CompanionLine?
+    @State private var companionLineID = 0
 
     init(puzzle: Puzzle, rules: GameRules, savedGame: GameSnapshot? = nil) {
         self.init(viewModel: GameViewModel(puzzle: puzzle, rules: rules, savedGame: savedGame))
@@ -62,13 +65,18 @@ struct GameView: View {
                 game: game,
                 activeCell: viewModel.activeCell,
                 flashingCell: flashingCell,
+                hint: companionHint,
                 onDragBegan: { viewModel.dragBegan(at: $0) },
                 onDragMoved: { viewModel.dragMoved(to: $0) },
                 onDragEnded: { viewModel.dragEnded() }
             )
             .aspectRatio(1, contentMode: .fit)
 
-            Spacer(minLength: 0)
+            // Tahtanın altındaki boşlukta dolaşan kedi; boşluk yoksa görünmez
+            CatCompanionView(line: companionLine, isActive: game.status == .playing) {
+                askCompanion()
+            }
+            .layoutPriority(-1)
 
             if game.status == .playing {
                 GameControls(tool: $viewModel.tool, canUndo: game.canUndo) { viewModel.undo() }
@@ -93,10 +101,13 @@ struct GameView: View {
                     Task {
                         try? await Task.sleep(for: .seconds(1.4))
                         newCardChapter = chapter
+                        audio.play(.card)
                     }
                 }
             }
             viewModel.onEvent = { event in
+                // Oyuncu hamle yapınca kedi susar
+                if companionLine != nil, event != .mistake { companionLine = nil }
                 audio.play(event.soundEffect)
                 Haptics.play(event)
             }
@@ -124,6 +135,25 @@ struct GameView: View {
         .onChange(of: game.mistakes) { _, newValue in
             guard newValue > 0 else { return }
             flashMistake()
+        }
+    }
+
+    private var companionHint: HintFinder.Hint? {
+        if case .hint(let hint) = companionLine { return hint }
+        return nil
+    }
+
+    /// Kediye dokununca: kesin hamle olan bir satır/sütunu gösterir, birkaç saniye sonra susar.
+    private func askCompanion() {
+        guard game.status == .playing else { return }
+        audio.play(.mew)
+        Haptics.selection()
+        companionLine = HintFinder.bestHint(board: game.board, puzzle: viewModel.puzzle).map { .hint($0) } ?? .noHint
+        companionLineID += 1
+        let id = companionLineID
+        Task {
+            try? await Task.sleep(for: .seconds(6))
+            if companionLineID == id { companionLine = nil }
         }
     }
 

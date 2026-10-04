@@ -12,6 +12,8 @@ struct BoardView: View {
     var activeCell: GridPosition?
     /// Kısa süreliğine kırmızı yanıp sönen hatalı kare.
     var flashingCell: GridPosition?
+    /// Kedinin "şuna bak" dediği satır ya da sütun.
+    var hint: HintFinder.Hint?
     let onDragBegan: (GridPosition) -> Void
     let onDragMoved: (GridPosition) -> Void
     let onDragEnded: () -> Void
@@ -40,7 +42,7 @@ struct BoardView: View {
                             }
                         }
                         .frame(width: cell)
-                        .background(clueBackground(isActive: activeCell?.column == column))
+                        .background(clueBackground(isActive: activeCell?.column == column, isHinted: isHinted(.column, column)))
                         .foregroundStyle(clueColor(isSatisfied: game.isColumnSatisfied(column)))
                     }
                 }
@@ -53,7 +55,7 @@ struct BoardView: View {
                                 }
                             }
                             .frame(width: cell * CGFloat(rowClueSlots), height: cell, alignment: .trailing)
-                            .background(clueBackground(isActive: activeCell?.row == row))
+                            .background(clueBackground(isActive: activeCell?.row == row, isHinted: isHinted(.row, row)))
                             .foregroundStyle(clueColor(isSatisfied: game.isRowSatisfied(row)))
                         }
                     }
@@ -86,6 +88,7 @@ struct BoardView: View {
         let theme = theme
         let activeCell = activeCell
         let flashingCell = flashingCell
+        let hint = hint
 
         return Canvas { context, size in
             context.fill(Path(CGRect(origin: .zero, size: size)), with: .color(theme.surface))
@@ -135,6 +138,15 @@ struct BoardView: View {
                 context.fill(Path(roundedRect: rect, cornerRadius: cell * 0.16), with: .color(theme.mistake.opacity(0.55)))
             }
             Self.drawGridLines(in: context, size: size, cell: cell, rows: board.rows, columns: board.columns, theme: theme)
+            // İpucu çizgisi en üstte, kalın bir çerçeveyle
+            if let hint {
+                let rect = hint.axis == .row
+                    ? CGRect(x: 0, y: CGFloat(hint.index) * cell, width: size.width, height: cell)
+                    : CGRect(x: CGFloat(hint.index) * cell, y: 0, width: cell, height: size.height)
+                let frame = Path(roundedRect: rect.insetBy(dx: 1.5, dy: 1.5), cornerRadius: cell * 0.2)
+                context.fill(frame, with: .color(theme.accent.opacity(0.12)))
+                context.stroke(frame, with: .color(theme.accent), lineWidth: 3)
+            }
         }
         .frame(width: cell * CGFloat(board.columns), height: cell * CGFloat(board.rows))
         .clipShape(RoundedRectangle(cornerRadius: 6))
@@ -199,8 +211,13 @@ struct BoardView: View {
         isSatisfied ? theme.textSecondary.opacity(0.45) : theme.textPrimary
     }
 
-    private func clueBackground(isActive: Bool) -> some View {
-        RoundedRectangle(cornerRadius: 4).fill(isActive ? theme.highlight : .clear)
+    private func clueBackground(isActive: Bool, isHinted: Bool) -> some View {
+        RoundedRectangle(cornerRadius: 4)
+            .fill(isHinted ? theme.accent.opacity(0.3) : (isActive ? theme.highlight : .clear))
+    }
+
+    private func isHinted(_ axis: HintFinder.Axis, _ index: Int) -> Bool {
+        hint?.axis == axis && hint?.index == index
     }
 
     /// Aynı sayı tekrar edebildiği için konumla birlikte benzersiz kimlik üretilir.

@@ -137,22 +137,52 @@
         }
       }
     },
+    "About": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hakkında"
+          }
+        }
+      }
+    },
+    "About the Breed": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tür Hakkında"
+          }
+        }
+      }
+    },
+    "Ad Privacy Choices": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reklam Gizlilik Tercihleri"
+          }
+        }
+      }
+    },
+    "Ad-Free": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reklamsız"
+          }
+        }
+      }
+    },
     "Add to Collection": {
       "localizations": {
         "tr": {
           "stringUnit": {
             "state": "translated",
             "value": "Koleksiyona Ekle"
-          }
-        }
-      }
-    },
-    "Ads removed. Thank you for supporting Catgrid!": {
-      "localizations": {
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Reklamlar kaldırıldı. Catgrid'i desteklediğin için teşekkürler!"
           }
         }
       }
@@ -253,6 +283,26 @@
           "stringUnit": {
             "state": "translated",
             "value": "Kart Koleksiyonu"
+          }
+        }
+      }
+    },
+    "Cat helper": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yardımcı kedi"
+          }
+        }
+      }
+    },
+    "Catgrid Ad-Free": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Catgrid Reklamsız"
           }
         }
       }
@@ -377,6 +427,16 @@
         }
       }
     },
+    "Ends on %@": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bitiş: %@"
+          }
+        }
+      }
+    },
     "Energy": {
       "localizations": {
         "tr": {
@@ -487,6 +547,16 @@
         }
       }
     },
+    "Go Ad-Free": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reklamsız Ol"
+          }
+        }
+      }
+    },
     "Graduation": {
       "localizations": {
         "tr": {
@@ -577,6 +647,16 @@
         }
       }
     },
+    "Manage Subscription": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aboneliği Yönet"
+          }
+        }
+      }
+    },
     "Mark with X": {
       "localizations": {
         "tr": {
@@ -627,6 +707,16 @@
         }
       }
     },
+    "Monthly plan": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Aylık plan"
+          }
+        }
+      }
+    },
     "Music": {
       "localizations": {
         "tr": {
@@ -673,6 +763,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Sonraki Bulmaca"
+          }
+        }
+      }
+    },
+    "No ads between puzzles": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bulmacalar arasında reklam yok"
           }
         }
       }
@@ -737,22 +837,12 @@
         }
       }
     },
-    "Privacy": {
+    "Privacy Policy": {
       "localizations": {
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Gizlilik"
-          }
-        }
-      }
-    },
-    "Privacy Settings": {
-      "localizations": {
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Gizlilik Ayarları"
+            "value": "Gizlilik Politikası"
           }
         }
       }
@@ -767,12 +857,42 @@
         }
       }
     },
+    "Psst! Look at column %lld.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pıst! %lld. sütuna bak."
+          }
+        }
+      }
+    },
+    "Psst! Look at row %lld.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pıst! %lld. satıra bak."
+          }
+        }
+      }
+    },
     "Purrfect!": {
       "localizations": {
         "tr": {
           "stringUnit": {
             "state": "translated",
             "value": "Mırr-ükemmel!"
+          }
+        }
+      }
+    },
+    "Purr… I can't spot a sure move. Check your marks!": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mırr… kesin bir hamle göremiyorum. İşaretlerini kontrol et!"
           }
         }
       }
@@ -857,42 +977,22 @@
         }
       }
     },
-    "Remove Ads": {
+    "Rate Catgrid": {
       "localizations": {
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Reklamları Kaldır"
+            "value": "Catgrid'i Değerlendir"
           }
         }
       }
     },
-    "Remove Ads – %@": {
+    "Remove the ads between puzzles with a monthly or yearly subscription. Optional rewarded ads for extra paws stay available.": {
       "localizations": {
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Reklamları Kaldır – %@"
-          }
-        }
-      }
-    },
-    "Remove the ads between puzzles with a one-time purchase. Optional rewarded ads for extra paws stay available.": {
-      "localizations": {
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Bulmacalar arasındaki reklamları tek seferlik bir satın almayla kaldır. Ekstra pati için isteğe bağlı ödüllü reklamlar kullanılabilir kalır."
-          }
-        }
-      }
-    },
-    "Reset Progress": {
-      "localizations": {
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "İlerlemeyi Sıfırla"
+            "value": "Bulmacalar arasındaki reklamları aylık ya da yıllık abonelikle kaldır. Ekstra pati için isteğe bağlı ödüllü reklamlar kullanılabilir kalır."
           }
         }
       }
@@ -903,6 +1003,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Tüm ilerleme sıfırlansın mı?"
+          }
+        }
+      }
+    },
+    "Reset Progress": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İlerlemeyi Sıfırla"
           }
         }
       }
@@ -923,6 +1033,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Kaldığın Yerden Devam Et"
+          }
+        }
+      }
+    },
+    "Rewarded ads for extra paws stay optional": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ekstra pati için ödüllü reklamlar isteğe bağlı kalır"
           }
         }
       }
@@ -1017,6 +1137,26 @@
         }
       }
     },
+    "Support": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Destek"
+          }
+        }
+      }
+    },
+    "Support new cat breeds and puzzles": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yeni kedi türlerine ve bulmacalara destek ol"
+          }
+        }
+      }
+    },
     "Switch to the X tool to mark squares you know are empty. It keeps your thinking tidy.": {
       "localizations": {
         "tr": {
@@ -1027,12 +1167,52 @@
         }
       }
     },
+    "Tap for a hint": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İpucu için dokun"
+          }
+        }
+      }
+    },
+    "Tap the card to flip it": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kartı çevirmek için üstüne dokun"
+          }
+        }
+      }
+    },
     "Tap to fill": {
       "localizations": {
         "tr": {
           "stringUnit": {
             "state": "translated",
             "value": "Doldurmak için dokun"
+          }
+        }
+      }
+    },
+    "Tap to flip the card": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kartı çevirmek için dokun"
+          }
+        }
+      }
+    },
+    "Terms of Use": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kullanım Koşulları"
           }
         }
       }
@@ -1147,6 +1327,16 @@
         }
       }
     },
+    "Yearly plan": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yıllık plan"
+          }
+        }
+      }
+    },
     "You know all the rules. Solve this one on your own!": {
       "localizations": {
         "tr": {
@@ -1173,6 +1363,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Tüm bulmacaları çözdün!"
+          }
+        }
+      }
+    },
+    "You're Ad-Free. Thank you for supporting Catgrid!": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reklamsızsın. Catgrid'e destek olduğun için teşekkürler!"
           }
         }
       }

@@ -4,32 +4,90 @@
 
   ],
   "products" : [
-    {
-      "displayPrice" : "2.99",
-      "familyShareable" : false,
-      "internalID" : "5E2B7C41",
-      "localizations" : [
-        {
-          "description" : "Removes the ads shown between puzzles. Optional rewarded ads stay available.",
-          "displayName" : "Remove Ads",
-          "locale" : "en_US"
-        },
-        {
-          "description" : "Bulmacalar arasındaki reklamları kaldırır. İsteğe bağlı ödüllü reklamlar kullanılabilir kalır.",
-          "displayName" : "Reklamları Kaldır",
-          "locale" : "tr"
-        }
-      ],
-      "productID" : "com.catgridcollection.nonogram.removeads",
-      "referenceName" : "Remove Ads",
-      "type" : "NonConsumable"
-    }
+
   ],
   "settings" : {
 
   },
   "subscriptionGroups" : [
+    {
+      "id" : "8F3A6B21",
+      "localizations" : [
+        {
+          "description" : "",
+          "displayName" : "Catgrid Ad-Free",
+          "locale" : "en_US"
+        },
+        {
+          "description" : "",
+          "displayName" : "Catgrid Reklamsız",
+          "locale" : "tr"
+        }
+      ],
+      "name" : "Ad-Free",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
 
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "11.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "6D2E9A41",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "No ads between puzzles for a whole year.",
+              "displayName" : "Ad-Free Yearly",
+              "locale" : "en_US"
+            },
+            {
+              "description" : "Bir yıl boyunca bulmacalar arasında reklam yok.",
+              "displayName" : "Yıllık Reklamsız",
+              "locale" : "tr"
+            }
+          ],
+          "productID" : "com.catgridcollection.nonogram.adfree.yearly",
+          "recurringSubscriptionPeriod" : "P1Y",
+          "referenceName" : "Ad-Free Yearly",
+          "subscriptionGroupID" : "8F3A6B21",
+          "type" : "RecurringSubscription"
+        },
+        {
+          "adHocOffers" : [
+
+          ],
+          "codeOffers" : [
+
+          ],
+          "displayPrice" : "1.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "4B7C1E52",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "No ads between puzzles, renewed every month.",
+              "displayName" : "Ad-Free Monthly",
+              "locale" : "en_US"
+            },
+            {
+              "description" : "Bulmacalar arasında reklam yok, her ay yenilenir.",
+              "displayName" : "Aylık Reklamsız",
+              "locale" : "tr"
+            }
+          ],
+          "productID" : "com.catgridcollection.nonogram.adfree.monthly",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "Ad-Free Monthly",
+          "subscriptionGroupID" : "8F3A6B21",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    }
   ],
   "version" : {
     "major" : 2,

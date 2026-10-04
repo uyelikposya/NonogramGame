@@ -90,8 +90,11 @@ struct CardDetailSheet: View {
                     .padding(.top, 8)
                 }
                 if let card = chapter.card {
-                    BreedCardView(chapter: chapter, card: card)
+                    FlippableBreedCard(chapter: chapter, card: card)
                         .frame(maxWidth: 360)
+                    Label("Tap the card to flip it", systemImage: "hand.tap.fill")
+                        .font(.footnote)
+                        .foregroundStyle(theme.textSecondary)
                 }
                 Button(isNewCard ? "Add to Collection" : "Close") { dismiss() }
                     .buttonStyle(PrimaryButtonStyle())
@@ -114,7 +117,7 @@ struct CollectionShelf: View {
     @Environment(\.appTheme) private var theme
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 12) {
+        VStack(alignment: .leading, spacing: 8) {
             HStack {
                 Text("Card Collection")
                     .font(.title3.bold())
@@ -132,14 +135,14 @@ struct CollectionShelf: View {
                                 router.push(.collection)
                             } label: {
                                 BreedCardView(chapter: chapter, card: card, style: .compact)
-                                    .frame(width: 120)
+                                    .frame(width: 104)
                             }
                             .buttonStyle(PressableButtonStyle())
                         }
                     }
                     if model.hasUnmetBreeds {
                         MysteryCardView()
-                            .frame(width: 120)
+                            .frame(width: 104)
                     }
                 }
                 .padding(.vertical, 6)
