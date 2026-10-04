@@ -13,9 +13,35 @@ public struct Chapter: Identifiable, Hashable, Sendable {
     public let subtitle: LocalizedText?
     /// Bölüm kartı ve kilit ekranında kullanılan vurgu rengi.
     public let accentColor: RGBColor?
-    /// İçerik hazırlanırken eksik bölümleri raporlamak için (ör. 30).
+    /// Planlanan bulmaca sayısı; katalogda belirtilmezse mevcut bulmaca sayısı.
     public let expectedPuzzleCount: Int
     public let puzzles: [Puzzle]
+    /// Tür listesinde ve koleksiyon kartında gösterilen piksel portre.
+    public let portrait: Matrix<RGBColor?>?
+    /// Tür tamamlanınca kazanılan kart; eğitimde yok.
+    public let card: BreedCard?
+
+    public init(
+        id: String,
+        kind: Kind,
+        title: LocalizedText,
+        subtitle: LocalizedText? = nil,
+        accentColor: RGBColor? = nil,
+        expectedPuzzleCount: Int,
+        puzzles: [Puzzle],
+        portrait: Matrix<RGBColor?>? = nil,
+        card: BreedCard? = nil
+    ) {
+        self.id = id
+        self.kind = kind
+        self.title = title
+        self.subtitle = subtitle
+        self.accentColor = accentColor
+        self.expectedPuzzleCount = expectedPuzzleCount
+        self.puzzles = puzzles
+        self.portrait = portrait
+        self.card = card
+    }
 }
 
 /// Uygulamadaki tüm bölümlerin oynanma sırasına göre dizilmiş hali.

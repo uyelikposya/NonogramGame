@@ -1,0 +1,278 @@
+{
+  "schemaVersion": 1,
+  "chapterID": "scottish-fold",
+  "puzzles": [
+    {
+      "id": "scottish-fold-001",
+      "title": {
+        "en": "Toe Beans",
+        "tr": "Pati Yastıkları"
+      },
+      "palette": {
+        "b": "#C9CDD2",
+        "n": "#D9A0A0"
+      },
+      "pixels": [
+        ".b.b.",
+        "nb.bn",
+        "bbbbb",
+        ".nnn.",
+        ".bnb."
+      ]
+    },
+    {
+      "id": "scottish-fold-002",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi"
+      },
+      "palette": {
+        "n": "#D9A0A0"
+      },
+      "pixels": [
+        "nnnnn",
+        "nnnnn",
+        "nnnnn",
+        ".nnn.",
+        "..n.."
+      ]
+    },
+    {
+      "id": "scottish-fold-003",
+      "title": {
+        "en": "Fish Snack",
+        "tr": "Balık Atıştırması"
+      },
+      "palette": {
+        "o": "#7FB3D5"
+      },
+      "pixels": [
+        ".oo..",
+        ".oooo",
+        "ooooo",
+        ".oo.."
+      ]
+    },
+    {
+      "id": "scottish-fold-004",
+      "title": {
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak"
+      },
+      "palette": {
+        "o": "#7FB3D5"
+      },
+      "pixels": [
+        "..ooo.",
+        ".ooooo",
+        ".oo.oo",
+        ".o.o.o",
+        "..ooo.",
+        "......"
+      ]
+    },
+    {
+      "id": "scottish-fold-005",
+      "title": {
+        "en": "Dinner Bowl",
+        "tr": "Mama Kabı"
+      },
+      "palette": {
+        "o": "#7FB3D5",
+        "p": "#B0B7BF",
+        "w": "#F2F2F2"
+      },
+      "pixels": [
+        ".pppp.",
+        "oppppo",
+        "oowwoo",
+        ".oooo."
+      ]
+    },
+    {
+      "id": "scottish-fold-006",
+      "title": {
+        "en": "Toy Mouse",
+        "tr": "Oyuncak Fare"
+      },
+      "palette": {
+        "n": "#D9A0A0",
+        "p": "#B0B7BF"
+      },
+      "pixels": [
+        "..n...",
+        ".ppp..",
+        ".pppp.",
+        "..pp.n"
+      ]
+    },
+    {
+      "id": "scottish-fold-007",
+      "title": {
+        "en": "Leftovers",
+        "tr": "Artıklar"
+      },
+      "palette": {
+        "p": "#B0B7BF"
+      },
+      "pixels": [
+        "..pp..",
+        "pppppp",
+        "p.ppp.",
+        "......"
+      ]
+    },
+    {
+      "id": "scottish-fold-008",
+      "title": {
+        "en": "Dinner Bowl",
+        "tr": "Mama Kabı"
+      },
+      "palette": {
+        "o": "#7FB3D5",
+        "p": "#B0B7BF",
+        "w": "#F2F2F2"
+      },
+      "pixels": [
+        "..pp..",
+        ".pppp.",
+        "oowwoo",
+        ".oooo."
+      ]
+    },
+    {
+      "id": "scottish-fold-009",
+      "title": {
+        "en": "Portrait",
+        "tr": "Portre"
+      },
+      "palette": {
+        "b": "#C9CDD2",
+        "d": "#6F767D",
+        "e": "#D9A441"
+      },
+      "pixels": [
+        "..bbb..",
+        ".bdbbb.",
+        "bbebebb",
+        "bbbbbbb",
+        "bbbbbbb",
+        ".bbbbb."
+      ]
+    },
+    {
+      "id": "scottish-fold-010",
+      "title": {
+        "en": "Fish Snack",
+        "tr": "Balık Atıştırması"
+      },
+      "palette": {
+        "o": "#7FB3D5"
+      },
+      "pixels": [
+        ".ooo..o",
+        "o.ooooo",
+        "ooooooo",
+        ".ooo..o"
+      ]
+    },
+    {
+      "id": "scottish-fold-011",
+      "title": {
+        "en": "Leftovers",
+        "tr": "Artıklar"
+      },
+      "palette": {
+        "p": "#B0B7BF"
+      },
+      "pixels": [
+        "..ppp..",
+        "ppppp.p",
+        "ppppp.p",
+        "..ppp.."
+      ]
+    },
+    {
+      "id": "scottish-fold-012",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi"
+      },
+      "palette": {
+        "n": "#D9A0A0",
+        "w": "#F2F2F2"
+      },
+      "pixels": [
+        ".nnnnn.",
+        "nwnnnnn",
+        "nnnnnnn",
+        ".nnnnn.",
+        ".nnnnn.",
+        "..nnn..",
+        "...n..."
+      ]
+    },
+    {
+      "id": "scottish-fold-013",
+      "title": {
+        "en": "Moon Gazer",
+        "tr": "Ay Seyri"
+      },
+      "palette": {
+        "b": "#C9CDD2",
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        "..yy...",
+        ".yy....",
+        ".yy....",
+        ".yyy...",
+        "byyyyy.",
+        "bbyyyy.",
+        "bb.b...",
+        "bbbb..."
+      ]
+    },
+    {
+      "id": "scottish-fold-014",
+      "title": {
+        "en": "Toe Beans",
+        "tr": "Pati Yastıkları"
+      },
+      "palette": {
+        "b": "#C9CDD2",
+        "n": "#D9A0A0"
+      },
+      "pixels": [
+        "..bbbb..",
+        "..nbbn..",
+        "bn....nb",
+        "bbbbbbbb",
+        ".bbbbbb.",
+        ".bnnnnb.",
+        ".bbnnnb.",
+        "..bbbb.."
+      ]
+    },
+    {
+      "id": "scottish-fold-015",
+      "title": {
+        "en": "Portrait",
+        "tr": "Portre"
+      },
+      "palette": {
+        "b": "#C9CDD2",
+        "e": "#D9A441"
+      },
+      "pixels": [
+        "..bbbb..",
+        ".bbbbbb.",
+        "bbebbebb",
+        "beebbeeb",
+        "bbbbbbbb",
+        ".bbbbbb.",
+        "..bbbb.."
+      ]
+    }
+  ]
+}

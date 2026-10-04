@@ -1,0 +1,1220 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "%@ years": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ yıl"
+          }
+        }
+      }
+    },
+    "%lld mistakes": {
+      "localizations": {
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld mistake"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld mistakes"
+                }
+              }
+            }
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld hata"
+          }
+        }
+      }
+    },
+    "%lld of %lld solved": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld / %lld çözüldü"
+          }
+        }
+      }
+    },
+    "%lld out of 5": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "5 üzerinden %lld"
+          }
+        }
+      }
+    },
+    "%lld paws left": {
+      "localizations": {
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld paw left"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "%lld paws left"
+                }
+              }
+            }
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld pati kaldı"
+          }
+        }
+      }
+    },
+    "1 1 1 means three separate blocks with at least one empty square between each of them.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "1 1 1, aralarında en az birer boş kare olan üç ayrı blok demektir."
+          }
+        }
+      }
+    },
+    "A 0 means the line has no filled squares at all.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0, o satırda hiç dolu kare olmadığı anlamına gelir."
+          }
+        }
+      }
+    },
+    "A filled square touching the edge tells you exactly where a block begins.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kenara değen dolu bir kare, bloğun tam olarak nerede başladığını söyler."
+          }
+        }
+      }
+    },
+    "A long block covers the middle of the line wherever it starts. Fill the squares every position shares.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uzun bir blok nereden başlarsa başlasın satırın ortasını kaplar. Her durumda dolu kalan kareleri doldur."
+          }
+        }
+      }
+    },
+    "A new cat awaits": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yeni bir kedi seni bekliyor"
+          }
+        }
+      }
+    },
+    "Add to Collection": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Koleksiyona Ekle"
+          }
+        }
+      }
+    },
+    "Ads removed. Thank you for supporting Catgrid!": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reklamlar kaldırıldı. Catgrid'i desteklediğin için teşekkürler!"
+          }
+        }
+      }
+    },
+    "Affection": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sevgi"
+          }
+        }
+      }
+    },
+    "All Levels": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tüm Bölümler"
+          }
+        }
+      }
+    },
+    "All solved puzzles, best times and saved games will be deleted. This cannot be undone.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Çözülen tüm bulmacalar, en iyi süreler ve kayıtlı oyunlar silinecek. Bu işlem geri alınamaz."
+          }
+        }
+      }
+    },
+    "Appearance": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Görünüm"
+          }
+        }
+      }
+    },
+    "Average": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ortalama"
+          }
+        }
+      }
+    },
+    "Back to Levels": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bölümlere Dön"
+          }
+        }
+      }
+    },
+    "Best %@": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En iyi %@"
+          }
+        }
+      }
+    },
+    "Breeds": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Türler"
+          }
+        }
+      }
+    },
+    "Breeds Collected": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toplanan Türler"
+          }
+        }
+      }
+    },
+    "Card Collection": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kart Koleksiyonu"
+          }
+        }
+      }
+    },
+    "Change Language": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dili Değiştir"
+          }
+        }
+      }
+    },
+    "Chapter not found": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bölüm bulunamadı"
+          }
+        }
+      }
+    },
+    "Close": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kapat"
+          }
+        }
+      }
+    },
+    "Coat": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tüy"
+          }
+        }
+      }
+    },
+    "Coffee": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kahve Tonları"
+          }
+        }
+      }
+    },
+    "Color Palette": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Renk Paleti"
+          }
+        }
+      }
+    },
+    "Coming soon": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Çok yakında"
+          }
+        }
+      }
+    },
+    "Common": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yaygın"
+          }
+        }
+      }
+    },
+    "Continue": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Devam Et"
+          }
+        }
+      }
+    },
+    "Cross": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Çarpı"
+          }
+        }
+      }
+    },
+    "Dark": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Koyu"
+          }
+        }
+      }
+    },
+    "Empty lines": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Boş satırlar"
+          }
+        }
+      }
+    },
+    "Energy": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enerji"
+          }
+        }
+      }
+    },
+    "Epic": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Destansı"
+          }
+        }
+      }
+    },
+    "Every cat lands on its feet. Give it another try!": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kediler hep dört ayak üstüne düşer. Bir daha dene!"
+          }
+        }
+      }
+    },
+    "Every square belongs to a row and a column. Use what one tells you to solve the other.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Her kare hem bir satıra hem bir sütuna aittir. Birinden öğrendiğinle diğerini çöz."
+          }
+        }
+      }
+    },
+    "Fastest solve %@": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "En hızlı çözüm %@"
+          }
+        }
+      }
+    },
+    "Fill": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Doldur"
+          }
+        }
+      }
+    },
+    "Find the overlap": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Çakışmayı bul"
+          }
+        }
+      }
+    },
+    "Finish all puzzles of a breed to win its card.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kartını kazanmak için bir türün tüm bulmacalarını bitir."
+          }
+        }
+      }
+    },
+    "From now on each wrong move costs a paw. Lose all three and the puzzle starts over.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bundan sonra her yanlış hamle bir patiye mal olur. Üçünü de kaybedersen bulmaca baştan başlar."
+          }
+        }
+      }
+    },
+    "Full lines": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tam satırlar"
+          }
+        }
+      }
+    },
+    "Gameplay": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oynanış"
+          }
+        }
+      }
+    },
+    "Graduation": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mezuniyet"
+          }
+        }
+      }
+    },
+    "Grooming": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bakım"
+          }
+        }
+      }
+    },
+    "Haptics": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Titreşim"
+          }
+        }
+      }
+    },
+    "Language": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dil"
+          }
+        }
+      }
+    },
+    "Legendary": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Efsanevi"
+          }
+        }
+      }
+    },
+    "Levels": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bölümler"
+          }
+        }
+      }
+    },
+    "Lifespan": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ömür"
+          }
+        }
+      }
+    },
+    "Light": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Açık"
+          }
+        }
+      }
+    },
+    "Locked": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kilitli"
+          }
+        }
+      }
+    },
+    "Mark with X": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "X ile işaretle"
+          }
+        }
+      }
+    },
+    "Match System": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sistemle Aynı"
+          }
+        }
+      }
+    },
+    "Matcha": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Matcha"
+          }
+        }
+      }
+    },
+    "Midnight Blue": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gece Mavisi"
+          }
+        }
+      }
+    },
+    "Mind your paws": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Patilerine dikkat"
+          }
+        }
+      }
+    },
+    "Music": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Müzik"
+          }
+        }
+      }
+    },
+    "New best time!": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yeni rekor süre!"
+          }
+        }
+      }
+    },
+    "New breeds are on their way.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yeni türler yolda."
+          }
+        }
+      }
+    },
+    "New card unlocked!": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yeni kart kazandın!"
+          }
+        }
+      }
+    },
+    "Next Puzzle": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sonraki Bulmaca"
+          }
+        }
+      }
+    },
+    "Numbers tell you how many squares in a line are filled. A 3 means three filled squares side by side. Tap a square to fill it.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sayılar bir satırda kaç karenin dolu olduğunu söyler. 3, yan yana üç dolu kare demektir. Doldurmak için bir kareye dokun."
+          }
+        }
+      }
+    },
+    "Origin": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Köken"
+          }
+        }
+      }
+    },
+    "Out of paws": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Patilerin bitti"
+          }
+        }
+      }
+    },
+    "Pastel": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pastel"
+          }
+        }
+      }
+    },
+    "Perfect": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hatasız"
+          }
+        }
+      }
+    },
+    "Playfulness": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oyunculuk"
+          }
+        }
+      }
+    },
+    "Privacy": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gizlilik"
+          }
+        }
+      }
+    },
+    "Privacy Settings": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gizlilik Ayarları"
+          }
+        }
+      }
+    },
+    "Progress": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İlerleme"
+          }
+        }
+      }
+    },
+    "Purrfect!": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Mırr-ükemmel!"
+          }
+        }
+      }
+    },
+    "Puzzle %lld": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bulmaca %lld"
+          }
+        }
+      }
+    },
+    "Puzzle %lld · %lld×%lld": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bulmaca %lld · %lld×%lld"
+          }
+        }
+      }
+    },
+    "Puzzle %lld, in progress": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bulmaca %lld, devam ediyor"
+          }
+        }
+      }
+    },
+    "Puzzle %lld, locked": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bulmaca %lld, kilitli"
+          }
+        }
+      }
+    },
+    "Puzzle %lld, solved: %@": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bulmaca %lld, çözüldü: %@"
+          }
+        }
+      }
+    },
+    "Puzzle board": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bulmaca tahtası"
+          }
+        }
+      }
+    },
+    "Puzzle not found": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bulmaca bulunamadı"
+          }
+        }
+      }
+    },
+    "Rare": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nadir"
+          }
+        }
+      }
+    },
+    "Remove Ads": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reklamları Kaldır"
+          }
+        }
+      }
+    },
+    "Remove Ads – %@": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reklamları Kaldır – %@"
+          }
+        }
+      }
+    },
+    "Remove the ads between puzzles with a one-time purchase. Optional rewarded ads for extra paws stay available.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bulmacalar arasındaki reklamları tek seferlik bir satın almayla kaldır. Ekstra pati için isteğe bağlı ödüllü reklamlar kullanılabilir kalır."
+          }
+        }
+      }
+    },
+    "Reset Progress": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İlerlemeyi Sıfırla"
+          }
+        }
+      }
+    },
+    "Reset all progress?": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tüm ilerleme sıfırlansın mı?"
+          }
+        }
+      }
+    },
+    "Restore Purchases": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Satın Alımları Geri Yükle"
+          }
+        }
+      }
+    },
+    "Resume": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kaldığın Yerden Devam Et"
+          }
+        }
+      }
+    },
+    "Rows meet columns": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Satırlar ve sütunlar"
+          }
+        }
+      }
+    },
+    "See All": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tümü"
+          }
+        }
+      }
+    },
+    "Settings": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ayarlar"
+          }
+        }
+      }
+    },
+    "Several blocks": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Birden fazla blok"
+          }
+        }
+      }
+    },
+    "Solved": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Çözülen"
+          }
+        }
+      }
+    },
+    "Sound": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ses"
+          }
+        }
+      }
+    },
+    "Sound Effects": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ses Efektleri"
+          }
+        }
+      }
+    },
+    "Start Playing": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oynamaya Başla"
+          }
+        }
+      }
+    },
+    "Statistics": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İstatistikler"
+          }
+        }
+      }
+    },
+    "Switch to the X tool to mark squares you know are empty. It keeps your thinking tidy.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Boş olduğunu bildiğin kareleri X aracıyla işaretle. Böylece kafan karışmaz."
+          }
+        }
+      }
+    },
+    "Tap to fill": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Doldurmak için dokun"
+          }
+        }
+      }
+    },
+    "The game follows your device language. You can choose a different language just for this app in Settings.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oyun cihazının dilini kullanır. Ayarlar'dan yalnızca bu uygulama için farklı bir dil seçebilirsin."
+          }
+        }
+      }
+    },
+    "Time %@": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Süre %@"
+          }
+        }
+      }
+    },
+    "Time's up": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Süre doldu"
+          }
+        }
+      }
+    },
+    "Total Time": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Toplam Süre"
+          }
+        }
+      }
+    },
+    "Try Again": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tekrar Dene"
+          }
+        }
+      }
+    },
+    "Undo": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geri Al"
+          }
+        }
+      }
+    },
+    "Use the edges": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kenarları kullan"
+          }
+        }
+      }
+    },
+    "Version %@": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sürüm %@"
+          }
+        }
+      }
+    },
+    "Watch an ad: +1 paw": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reklam izle: +1 pati"
+          }
+        }
+      }
+    },
+    "Watch an ad: +60 seconds": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reklam izle: +60 saniye"
+          }
+        }
+      }
+    },
+    "When a clue is as long as the line, the whole line is filled. Start there!": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İpucu satır kadar uzunsa satırın tamamı doludur. Oradan başla!"
+          }
+        }
+      }
+    },
+    "You know all the rules. Solve this one on your own!": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tüm kuralları biliyorsun. Bunu kendi başına çöz!"
+          }
+        }
+      }
+    },
+    "You solved every %@ puzzle.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ bulmacalarının hepsini çözdün."
+          }
+        }
+      }
+    },
+    "You solved every puzzle!": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tüm bulmacaları çözdün!"
+          }
+        }
+      }
+    },
+    "You've collected %lld cat breeds. There are still cats you haven't met!": {
+      "localizations": {
+        "en": {
+          "variations": {
+            "plural": {
+              "one": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "You've collected %lld cat breed. There are still cats you haven't met!"
+                }
+              },
+              "other": {
+                "stringUnit": {
+                  "state": "translated",
+                  "value": "You've collected %lld cat breeds. There are still cats you haven't met!"
+                }
+              }
+            }
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%lld kedi türü topladın. Hâlâ tanışmadığın kediler var!"
+          }
+        }
+      }
+    },
+    "You've met every cat. New breeds are on their way!": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tüm kedilerle tanıştın. Yeni türler yolda!"
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}

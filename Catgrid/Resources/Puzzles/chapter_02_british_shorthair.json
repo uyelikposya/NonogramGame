@@ -1,0 +1,278 @@
+{
+  "schemaVersion": 1,
+  "chapterID": "british-shorthair",
+  "puzzles": [
+    {
+      "id": "british-shorthair-001",
+      "title": {
+        "en": "Toe Beans",
+        "tr": "Pati Yastıkları"
+      },
+      "palette": {
+        "b": "#8E9AA6",
+        "n": "#6E7A86"
+      },
+      "pixels": [
+        ".b.b.",
+        "nb.bn",
+        "bbbbb",
+        ".nnn.",
+        ".bnb."
+      ]
+    },
+    {
+      "id": "british-shorthair-002",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi"
+      },
+      "palette": {
+        "n": "#6E7A86"
+      },
+      "pixels": [
+        "nnnnn",
+        "nnnnn",
+        "nnnnn",
+        ".nnn.",
+        "..n.."
+      ]
+    },
+    {
+      "id": "british-shorthair-003",
+      "title": {
+        "en": "Fish Snack",
+        "tr": "Balık Atıştırması"
+      },
+      "palette": {
+        "o": "#F2E8DC"
+      },
+      "pixels": [
+        ".oo..",
+        ".oooo",
+        "ooooo",
+        ".oo.."
+      ]
+    },
+    {
+      "id": "british-shorthair-004",
+      "title": {
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak"
+      },
+      "palette": {
+        "o": "#F2E8DC"
+      },
+      "pixels": [
+        "..ooo.",
+        ".ooo.o",
+        ".oo.oo",
+        "..oo.o",
+        "..ooo.",
+        "......"
+      ]
+    },
+    {
+      "id": "british-shorthair-005",
+      "title": {
+        "en": "Dinner Bowl",
+        "tr": "Mama Kabı"
+      },
+      "palette": {
+        "o": "#F2E8DC",
+        "p": "#C98B6B",
+        "w": "#DDE3E8"
+      },
+      "pixels": [
+        ".pppp.",
+        "oppppo",
+        "oowwoo",
+        ".oooo."
+      ]
+    },
+    {
+      "id": "british-shorthair-006",
+      "title": {
+        "en": "Leftovers",
+        "tr": "Artıklar"
+      },
+      "palette": {
+        "p": "#C98B6B"
+      },
+      "pixels": [
+        "......",
+        "p.pppp",
+        "pppppp",
+        "..pp.."
+      ]
+    },
+    {
+      "id": "british-shorthair-007",
+      "title": {
+        "en": "Leftovers",
+        "tr": "Artıklar"
+      },
+      "palette": {
+        "p": "#C98B6B"
+      },
+      "pixels": [
+        "...p..",
+        "p.pp.p",
+        "pppppp",
+        "..pp.."
+      ]
+    },
+    {
+      "id": "british-shorthair-008",
+      "title": {
+        "en": "Toy Mouse",
+        "tr": "Oyuncak Fare"
+      },
+      "palette": {
+        "n": "#6E7A86",
+        "p": "#C98B6B"
+      },
+      "pixels": [
+        "...n..",
+        "..ppp.",
+        ".pppp.",
+        "n..p.."
+      ]
+    },
+    {
+      "id": "british-shorthair-009",
+      "title": {
+        "en": "Portrait",
+        "tr": "Portre"
+      },
+      "palette": {
+        "b": "#8E9AA6",
+        "e": "#E8A33D"
+      },
+      "pixels": [
+        ".bbbb.b",
+        "bbbbbbb",
+        "bbebeeb",
+        "bbbbbbb",
+        ".bbbbb.",
+        "..bbb.."
+      ]
+    },
+    {
+      "id": "british-shorthair-010",
+      "title": {
+        "en": "Dinner Bowl",
+        "tr": "Mama Kabı"
+      },
+      "palette": {
+        "o": "#F2E8DC",
+        "p": "#C98B6B",
+        "w": "#DDE3E8"
+      },
+      "pixels": [
+        "..ppp..",
+        "ppppppp",
+        "oopppoo",
+        "oowwwoo",
+        ".ooooo."
+      ]
+    },
+    {
+      "id": "british-shorthair-011",
+      "title": {
+        "en": "Fish Snack",
+        "tr": "Balık Atıştırması"
+      },
+      "palette": {
+        "o": "#F2E8DC"
+      },
+      "pixels": [
+        ".ooo..o",
+        "o.ooooo",
+        "ooooooo",
+        ".ooo..o"
+      ]
+    },
+    {
+      "id": "british-shorthair-012",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi"
+      },
+      "palette": {
+        "n": "#6E7A86",
+        "w": "#DDE3E8"
+      },
+      "pixels": [
+        ".nnnnn.",
+        "nwnnnnn",
+        "nnnnnnn",
+        ".nnnnn.",
+        ".nnnnn.",
+        "..nnn..",
+        "...n..."
+      ]
+    },
+    {
+      "id": "british-shorthair-013",
+      "title": {
+        "en": "Moon Gazer",
+        "tr": "Ay Seyri"
+      },
+      "palette": {
+        "b": "#8E9AA6",
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        "..yy...",
+        ".yy....",
+        ".yy....",
+        ".yyy...",
+        "byyyyy.",
+        "bbyyyy.",
+        "bb.b...",
+        "bbbb..."
+      ]
+    },
+    {
+      "id": "british-shorthair-014",
+      "title": {
+        "en": "Toe Beans",
+        "tr": "Pati Yastıkları"
+      },
+      "palette": {
+        "b": "#8E9AA6",
+        "n": "#6E7A86"
+      },
+      "pixels": [
+        "..bbbb..",
+        "..nbbn..",
+        "bn....nb",
+        "bbbbbbbb",
+        ".bbbbbb.",
+        ".bnnnnb.",
+        ".bbnnnb.",
+        "..bbbb.."
+      ]
+    },
+    {
+      "id": "british-shorthair-015",
+      "title": {
+        "en": "Portrait",
+        "tr": "Portre"
+      },
+      "palette": {
+        "b": "#8E9AA6",
+        "e": "#E8A33D"
+      },
+      "pixels": [
+        "...bb...",
+        ".bbbbbbb",
+        "bbebbbbb",
+        "bbebbebb",
+        ".bbbbbbb",
+        ".bbbbbb.",
+        "...bb..."
+      ]
+    }
+  ]
+}

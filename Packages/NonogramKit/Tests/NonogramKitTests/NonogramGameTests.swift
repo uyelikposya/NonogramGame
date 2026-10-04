@@ -1,7 +1,7 @@
-import Testing
+import XCTest
 @testable import NonogramKit
 
-struct NonogramGameTests {
+final class NonogramGameTests: XCTestCase {
     /// Satırlar: [1], [3], [1]  —  ".#." / "###" / ".#."
     let plus = Puzzle(id: "plus", pattern: [".#.", "###", ".#."])
 
@@ -15,101 +15,101 @@ struct NonogramGameTests {
         }
     }
 
-    @Test func correctFillsWin() {
+    func testCorrectFillsWin() {
         var game = NonogramGame(puzzle: plus, rules: .classic)
         fillAll(&game)
-        #expect(game.status == .won)
-        #expect(game.mistakes == 0)
-        #expect(game.progress == 1)
+        XCTAssertEqual(game.status, .won)
+        XCTAssertEqual(game.mistakes, 0)
+        XCTAssertEqual(game.progress, 1)
     }
 
-    @Test func wrongFillIsMistakeAndLocksCorrection() {
+    func testWrongFillIsMistakeAndLocksCorrection() {
         var game = NonogramGame(puzzle: plus, rules: .classic)
-        #expect(game.toggle(at: position(0, 0), with: .fill) == .mistake)
-        #expect(game.board[position(0, 0)] == .crossed)
-        #expect(game.remainingMistakes == 2)
+        XCTAssertEqual(game.toggle(at: position(0, 0), with: .fill), .mistake)
+        XCTAssertEqual(game.board[position(0, 0)], .crossed)
+        XCTAssertEqual(game.remainingMistakes, 2)
         // Kilitli kare değiştirilemez
-        #expect(game.toggle(at: position(0, 0), with: .cross) == .ignored)
+        XCTAssertEqual(game.toggle(at: position(0, 0), with: .cross), .ignored)
     }
 
-    @Test func wrongCrossRevealsFilledCell() {
+    func testWrongCrossRevealsFilledCell() {
         var game = NonogramGame(puzzle: plus, rules: .classic)
-        #expect(game.toggle(at: position(1, 1), with: .cross) == .mistake)
-        #expect(game.board[position(1, 1)] == .filled)
+        XCTAssertEqual(game.toggle(at: position(1, 1), with: .cross), .mistake)
+        XCTAssertEqual(game.board[position(1, 1)], .filled)
     }
 
-    @Test func losesAfterMistakeLimit() {
+    func testLosesAfterMistakeLimit() {
         var game = NonogramGame(puzzle: plus, rules: .classic)
         game.mark(.filled, at: position(0, 0))
         game.mark(.filled, at: position(0, 2))
-        #expect(game.mark(.filled, at: position(2, 0)) == .failed(.outOfMistakes))
-        #expect(game.status == .lost(.outOfMistakes))
-        #expect(game.mark(.filled, at: position(1, 1)) == .ignored)
+        XCTAssertEqual(game.mark(.filled, at: position(2, 0)), .failed(.outOfMistakes))
+        XCTAssertEqual(game.status, .lost(.outOfMistakes))
+        XCTAssertEqual(game.mark(.filled, at: position(1, 1)), .ignored)
 
         game.revive()
-        #expect(game.status == .playing)
-        #expect(game.remainingMistakes == 1)
+        XCTAssertEqual(game.status, .playing)
+        XCTAssertEqual(game.remainingMistakes, 1)
     }
 
-    @Test func autoCrossesCompletedLine() {
+    func testAutoCrossesCompletedLine() {
         var game = NonogramGame(puzzle: plus, rules: .classic)
         game.mark(.filled, at: position(0, 1))
-        #expect(game.board[position(0, 0)] == .crossed)
-        #expect(game.board[position(0, 2)] == .crossed)
-        #expect(game.isRowSatisfied(0))
+        XCTAssertEqual(game.board[position(0, 0)], .crossed)
+        XCTAssertEqual(game.board[position(0, 2)], .crossed)
+        XCTAssertTrue(game.isRowSatisfied(0))
     }
 
-    @Test func undoRevertsMoveWithAutoCrosses() {
+    func testUndoRevertsMoveWithAutoCrosses() {
         var game = NonogramGame(puzzle: plus, rules: .classic)
         game.mark(.filled, at: position(0, 1))
-        #expect(game.undo())
-        #expect(game.board.storage.allSatisfy { $0 == .blank })
-        #expect(!game.canUndo)
+        XCTAssertTrue(game.undo())
+        XCTAssertTrue(game.board.storage.allSatisfy { $0 == .blank })
+        XCTAssertFalse(game.canUndo)
     }
 
-    @Test func toggleDoesNotOverwriteOtherMark() {
+    func testToggleDoesNotOverwriteOtherMark() {
         var game = NonogramGame(puzzle: plus, rules: GameRules(checksMoves: false))
         game.toggle(at: position(0, 0), with: .cross)
-        #expect(game.toggle(at: position(0, 0), with: .fill) == .ignored)
-        #expect(game.toggle(at: position(0, 0), with: .cross) == .changed)
-        #expect(game.board[position(0, 0)] == .blank)
+        XCTAssertEqual(game.toggle(at: position(0, 0), with: .fill), .ignored)
+        XCTAssertEqual(game.toggle(at: position(0, 0), with: .cross), .changed)
+        XCTAssertEqual(game.board[position(0, 0)], .blank)
     }
 
-    @Test func freeModeAllowsWrongMarksAndWinsOnClues() {
+    func testFreeModeAllowsWrongMarksAndWinsOnClues() {
         var game = NonogramGame(puzzle: plus, rules: GameRules(checksMoves: false, autoCrossCompletedLines: false))
-        #expect(game.mark(.filled, at: position(0, 0)) == .changed)
-        #expect(game.mistakes == 0)
+        XCTAssertEqual(game.mark(.filled, at: position(0, 0)), .changed)
+        XCTAssertEqual(game.mistakes, 0)
         game.mark(.blank, at: position(0, 0))
         fillAll(&game)
-        #expect(game.status == .won)
+        XCTAssertEqual(game.status, .won)
     }
 
-    @Test func timeLimitEndsGame() {
+    func testTimeLimitEndsGame() {
         var game = NonogramGame(puzzle: plus, rules: GameRules(timeLimit: 10))
         game.advanceTime(by: 6)
-        #expect(game.remainingTime == 4)
-        #expect(game.advanceTime(by: 6) == .failed(.outOfTime))
-        #expect(game.remainingTime == 0)
+        XCTAssertEqual(game.remainingTime, 4)
+        XCTAssertEqual(game.advanceTime(by: 6), .failed(.outOfTime))
+        XCTAssertEqual(game.remainingTime, 0)
     }
 
-    @Test func snapshotRestoresProgress() {
+    func testSnapshotRestoresProgress() {
         var game = NonogramGame(puzzle: plus, rules: .classic)
         game.mark(.filled, at: position(1, 0))
         game.mark(.filled, at: position(0, 0))
         game.advanceTime(by: 42)
 
         let restored = NonogramGame(puzzle: plus, rules: .classic, restoring: game.snapshot)
-        #expect(restored.board == game.board)
-        #expect(restored.mistakes == 1)
-        #expect(restored.elapsed == 42)
-        #expect(restored.lockedCells == [position(0, 0)])
+        XCTAssertEqual(restored.board, game.board)
+        XCTAssertEqual(restored.mistakes, 1)
+        XCTAssertEqual(restored.elapsed, 42)
+        XCTAssertEqual(restored.lockedCells, [position(0, 0)])
     }
 
-    @Test func snapshotForOtherPuzzleIsIgnored() {
+    func testSnapshotForOtherPuzzleIsIgnored() {
         var game = NonogramGame(puzzle: plus, rules: .classic)
         game.mark(.filled, at: position(1, 1))
         let other = Puzzle(id: "other", pattern: [".#.", "###", ".#."])
         let restored = NonogramGame(puzzle: other, rules: .classic, restoring: game.snapshot)
-        #expect(restored.board.storage.allSatisfy { $0 == .blank })
+        XCTAssertTrue(restored.board.storage.allSatisfy { $0 == .blank })
     }
 }

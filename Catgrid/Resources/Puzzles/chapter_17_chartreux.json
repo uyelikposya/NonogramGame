@@ -1,0 +1,364 @@
+{
+  "schemaVersion": 1,
+  "chapterID": "chartreux",
+  "puzzles": [
+    {
+      "id": "chartreux-001",
+      "title": {
+        "en": "Toe Beans",
+        "tr": "Pati Yastıkları"
+      },
+      "palette": {
+        "b": "#7F8C99",
+        "n": "#5E6A75"
+      },
+      "pixels": [
+        "...bb..bb...",
+        "...nnbbnn...",
+        ".b.bnbbnn.b.",
+        "bnb......bnb",
+        "bnb..bb..bnb",
+        ".bbbbbbbbbb.",
+        "..bbbbbbbb..",
+        "..bbnnnnbb..",
+        ".bbnnnnnnbb.",
+        "..bbnnnnbb..",
+        "..bbbnnnbb..",
+        "...bbbbbb..."
+      ]
+    },
+    {
+      "id": "chartreux-002",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi"
+      },
+      "palette": {
+        "n": "#5E6A75",
+        "w": "#D5DCE2"
+      },
+      "pixels": [
+        ".nnnn..nnnn.",
+        "nnnnnnnnnnnn",
+        "nnwwnnnnnnnn",
+        "nnnnnnnnnnnn",
+        "nnnnnnnnnnnn",
+        ".nnnnnnnnnn.",
+        "..nnnnnnnn..",
+        "...nnnnnn...",
+        "....nnnn....",
+        ".....nn.....",
+        ".....nn....."
+      ]
+    },
+    {
+      "id": "chartreux-003",
+      "title": {
+        "en": "Fish Snack",
+        "tr": "Balık Atıştırması"
+      },
+      "palette": {
+        "o": "#F2E8DC"
+      },
+      "pixels": [
+        "..oooo.....o",
+        ".ooooooo..oo",
+        "o..ooooooooo",
+        "oooooooooooo",
+        "oooooooooooo",
+        ".ooooooo..oo",
+        "..oooo.....o"
+      ]
+    },
+    {
+      "id": "chartreux-004",
+      "title": {
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak"
+      },
+      "palette": {
+        "o": "#F2E8DC"
+      },
+      "pixels": [
+        "......ooo....",
+        "....ooooooo..",
+        "...oo.oooooo.",
+        "...ooo.oo..o.",
+        "..oooo...ooo.",
+        "..ooo....oooo",
+        "..oo..oo.ooo.",
+        ".....oooo.oo.",
+        "....ooooooo..",
+        "...ooooooo...",
+        "o.o....o.....",
+        ".o..........."
+      ]
+    },
+    {
+      "id": "chartreux-005",
+      "title": {
+        "en": "Dinner Bowl",
+        "tr": "Mama Kabı"
+      },
+      "palette": {
+        "o": "#F2E8DC",
+        "p": "#C98B6B",
+        "w": "#D5DCE2"
+      },
+      "pixels": [
+        "....p..pp....",
+        "..ppppppppp..",
+        ".ppppppppppp.",
+        "oopppppppppoo",
+        "oooopppppoooo",
+        ".oowwwwwwwoo.",
+        ".oowwwwwwwoo.",
+        ".ooooooooooo.",
+        "..ooooooooo.."
+      ]
+    },
+    {
+      "id": "chartreux-006",
+      "title": {
+        "en": "Toy Mouse",
+        "tr": "Oyuncak Fare"
+      },
+      "palette": {
+        "n": "#5E6A75",
+        "p": "#C98B6B"
+      },
+      "pixels": [
+        "........pp...",
+        "......ppnn...",
+        "....ppppppp..",
+        "....pppppp.p.",
+        "...pppppppp..",
+        "n..nppppppp..",
+        ".nn..ppppp...",
+        "............."
+      ]
+    },
+    {
+      "id": "chartreux-007",
+      "title": {
+        "en": "Leftovers",
+        "tr": "Artıklar"
+      },
+      "palette": {
+        "p": "#C98B6B"
+      },
+      "pixels": [
+        "....p.p.p....",
+        ".pp.p.p.p...p",
+        "ppppppppppppp",
+        "ppppppppppppp",
+        ".pp.p.p.p...p",
+        "....p.p.p...."
+      ]
+    },
+    {
+      "id": "chartreux-008",
+      "title": {
+        "en": "Nap Time",
+        "tr": "Şekerleme"
+      },
+      "palette": {
+        "b": "#7F8C99"
+      },
+      "pixels": [
+        ".....bbbbbb...",
+        "bbbbbbbbbbbbb.",
+        "bbbbbbbbbbbbbb",
+        "bb...bbbbbbbbb",
+        ".bbbbbbbbbbbbb",
+        "..bbbbbbbbbbbb",
+        "....bbbbbbbbb.",
+        "....bbbbbbbb.."
+      ]
+    },
+    {
+      "id": "chartreux-009",
+      "title": {
+        "en": "Teacup Cat",
+        "tr": "Fincandaki Kedi"
+      },
+      "palette": {
+        "b": "#7F8C99",
+        "e": "#D98B2B",
+        "o": "#F2E8DC",
+        "p": "#C98B6B"
+      },
+      "pixels": [
+        "..b...........",
+        "..bbbbb.bb....",
+        ".bbbbbbbbb....",
+        ".bbbebbebb....",
+        "..bbebbeeb....",
+        "oobbbbbbbooo..",
+        "oooobbbooooooo",
+        ".pppppppppp.oo",
+        ".oooooooooooo.",
+        ".ooooooooo.o..",
+        ".ooooooooo...."
+      ]
+    },
+    {
+      "id": "chartreux-010",
+      "title": {
+        "en": "Sitting Pretty",
+        "tr": "Uslu Oturuş"
+      },
+      "palette": {
+        "b": "#7F8C99"
+      },
+      "pixels": [
+        "............",
+        ".....b....b.",
+        ".....bbbbbb.",
+        ".....bbbbbb.",
+        ".....bbbbbb.",
+        "......bbbb..",
+        "b...bbbbb...",
+        "bb.bbbbbbb..",
+        "b..bbbbbbb..",
+        "b..bbbbbbb..",
+        "b..bbbbbbb..",
+        "bb.bbbbbbb..",
+        ".bbbbbbbb...",
+        ".....bbbbb.."
+      ]
+    },
+    {
+      "id": "chartreux-011",
+      "title": {
+        "en": "Strut",
+        "tr": "Salınarak Yürüyüş"
+      },
+      "palette": {
+        "b": "#7F8C99"
+      },
+      "pixels": [
+        "............bb",
+        ".............b",
+        "bb..b........b",
+        "bbbbbb......bb",
+        "bbbbbbbbbbb.b.",
+        ".bbbbbbbbbbb..",
+        "...bbbbbbbbb..",
+        "....bbbbbbbb..",
+        "....b.bb.b.b..",
+        "....b.b..b.b..",
+        "...bb.b..b.b..",
+        "...b..b..b.b.."
+      ]
+    },
+    {
+      "id": "chartreux-012",
+      "title": {
+        "en": "If I Fits",
+        "tr": "Kutu Sevdası"
+      },
+      "palette": {
+        "b": "#7F8C99",
+        "e": "#D98B2B",
+        "o": "#F2E8DC",
+        "p": "#C98B6B"
+      },
+      "pixels": [
+        "....b.........",
+        "....bb.b.bb...",
+        "....bbbbbbb...",
+        "....bbbbebb...",
+        "....beebebb...",
+        "..oobbbbbbooo.",
+        ".ppoobbbbooopp",
+        "..ooooooooooo.",
+        "..oooooooooo..",
+        "..ooooooooooo.",
+        "..ooooooooooo.",
+        "..oooooooooo.."
+      ]
+    },
+    {
+      "id": "chartreux-013",
+      "title": {
+        "en": "Moon Gazer",
+        "tr": "Ay Seyri"
+      },
+      "palette": {
+        "b": "#7F8C99",
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        ".....yy......",
+        "...yyy.......",
+        "..yyyy.......",
+        "..yyyy.......",
+        "..yyyy.......",
+        ".yyyyy.......",
+        "..yyyyy......",
+        "..yyyyyy.....",
+        "bbyyyyyyyy.y.",
+        "bbbyyyyyyyy..",
+        "bbb.yyyyyy...",
+        ".bbb..b......",
+        "bbbb..b......",
+        "bbbb..b......",
+        ".bbbbb......."
+      ]
+    },
+    {
+      "id": "chartreux-014",
+      "title": {
+        "en": "Toe Beans",
+        "tr": "Pati Yastıkları"
+      },
+      "palette": {
+        "b": "#7F8C99",
+        "n": "#5E6A75"
+      },
+      "pixels": [
+        "....bb...bb....",
+        "...bnnb.bnnb...",
+        "...bnnb.bnnb...",
+        ".bb.bnb.bnb.bb.",
+        "bnnb.......bnnb",
+        "bnnb...b...bnnb",
+        "bnb.bbbbbbb.bnb",
+        "...bbbbbbbbb...",
+        "..bbbbbbbbbbb..",
+        "..bbbnnnnnbbb..",
+        "..bbnnnnnnnbb..",
+        "..bbnnnnnnnbb..",
+        "..bbbnnnnnbbb..",
+        "...bbbnnnbbb...",
+        ".....bbbbb....."
+      ]
+    },
+    {
+      "id": "chartreux-015",
+      "title": {
+        "en": "Portrait",
+        "tr": "Portre"
+      },
+      "palette": {
+        "b": "#7F8C99",
+        "e": "#D98B2B"
+      },
+      "pixels": [
+        ".b...bbbbbb..b.",
+        ".bbbbbbbbbbbbb.",
+        ".bbbbbbbbbbbbbb",
+        "bbbbbbbbbbbbbbb",
+        "bbbbebbbbbeebbb",
+        "bbbeeebbbeeebbb",
+        "bbbbeebbbbeebbb",
+        "bbbbbbbbbbbbbbb",
+        ".bbbbbbbbbbbbb.",
+        "..bbbbbbbbbbbb.",
+        "...bbbbbbbbb...",
+        "......bbbb....."
+      ]
+    }
+  ]
+}

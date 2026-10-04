@@ -1,0 +1,321 @@
+{
+  "schemaVersion": 1,
+  "chapterID": "bengal",
+  "puzzles": [
+    {
+      "id": "bengal-001",
+      "title": {
+        "en": "Toe Beans",
+        "tr": "Pati Yastıkları"
+      },
+      "palette": {
+        "b": "#E3A857",
+        "n": "#B5654A"
+      },
+      "pixels": [
+        "..bbbb..",
+        "..nbbn..",
+        "bn....nb",
+        "bbbbbbbb",
+        ".bbbbbb.",
+        ".bnnnnb.",
+        ".bbnnnb.",
+        "..bbbb.."
+      ]
+    },
+    {
+      "id": "bengal-002",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi"
+      },
+      "palette": {
+        "n": "#B5654A",
+        "w": "#F5E6C8"
+      },
+      "pixels": [
+        ".nnnnnn.",
+        "nwwnnnnn",
+        "nnnnnnnn",
+        ".nnnnnn.",
+        "..nnnn..",
+        "...nn...",
+        "...nn..."
+      ]
+    },
+    {
+      "id": "bengal-003",
+      "title": {
+        "en": "Fish Snack",
+        "tr": "Balık Atıştırması"
+      },
+      "palette": {
+        "o": "#3E7C4F"
+      },
+      "pixels": [
+        ".oooo..o",
+        "o.oooooo",
+        "oooooooo",
+        ".oooo..o"
+      ]
+    },
+    {
+      "id": "bengal-004",
+      "title": {
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak"
+      },
+      "palette": {
+        "o": "#3E7C4F"
+      },
+      "pixels": [
+        "..oooo...",
+        ".ooo.oo..",
+        "o....oo..",
+        "ooo..oo..",
+        "oo.oo.o..",
+        ".ooooo...",
+        "..ooooo..",
+        ".......oo"
+      ]
+    },
+    {
+      "id": "bengal-005",
+      "title": {
+        "en": "Dinner Bowl",
+        "tr": "Mama Kabı"
+      },
+      "palette": {
+        "o": "#3E7C4F",
+        "p": "#8C6A4A",
+        "w": "#F5E6C8"
+      },
+      "pixels": [
+        "...ppp...",
+        ".ppppppp.",
+        "opppppppo",
+        "oooowoooo",
+        ".ooooooo.",
+        ".ooooooo."
+      ]
+    },
+    {
+      "id": "bengal-006",
+      "title": {
+        "en": "Toy Mouse",
+        "tr": "Oyuncak Fare"
+      },
+      "palette": {
+        "n": "#B5654A",
+        "p": "#8C6A4A"
+      },
+      "pixels": [
+        "..np.....",
+        "..pppp...",
+        "p.pppp...",
+        ".pppppn..",
+        "..ppp..n."
+      ]
+    },
+    {
+      "id": "bengal-007",
+      "title": {
+        "en": "Leftovers",
+        "tr": "Artıklar"
+      },
+      "palette": {
+        "p": "#8C6A4A"
+      },
+      "pixels": [
+        "...pp....",
+        "pppppppp.",
+        "p..pp..p.",
+        "....p...."
+      ]
+    },
+    {
+      "id": "bengal-008",
+      "title": {
+        "en": "Portrait",
+        "tr": "Portre"
+      },
+      "palette": {
+        "b": "#E3A857",
+        "d": "#5A3A22",
+        "e": "#6FA04A"
+      },
+      "pixels": [
+        "..........",
+        "bbbbbbbbbb",
+        "bbbbbbbbbb",
+        "bbbbbbbbbb",
+        "bdeebbeebb",
+        "bdeebbeebb",
+        "bddbbbbbbb",
+        "bbbbbbbbbb",
+        ".bbbbbbbb.",
+        "..bbbbbb.."
+      ]
+    },
+    {
+      "id": "bengal-009",
+      "title": {
+        "en": "If I Fits",
+        "tr": "Kutu Sevdası"
+      },
+      "palette": {
+        "b": "#E3A857",
+        "e": "#6FA04A",
+        "o": "#3E7C4F",
+        "p": "#8C6A4A"
+      },
+      "pixels": [
+        "..........",
+        "..bb..bb..",
+        "..bbbbbb..",
+        "..beeeeb..",
+        ".obbbbbbo.",
+        "ppoobboopp",
+        ".oooooooo.",
+        ".oooooooo.",
+        ".oooooooo."
+      ]
+    },
+    {
+      "id": "bengal-010",
+      "title": {
+        "en": "Nap Time",
+        "tr": "Şekerleme"
+      },
+      "palette": {
+        "b": "#E3A857",
+        "d": "#5A3A22"
+      },
+      "pixels": [
+        "....bb....",
+        "bbbbbbbbb.",
+        "bbbbbbddbb",
+        ".bbbbbdbbb",
+        "..bbbbdbbb",
+        "...bbbbbb."
+      ]
+    },
+    {
+      "id": "bengal-011",
+      "title": {
+        "en": "Sitting Pretty",
+        "tr": "Uslu Oturuş"
+      },
+      "palette": {
+        "b": "#E3A857",
+        "d": "#5A3A22"
+      },
+      "pixels": [
+        "........",
+        "bbbbb...",
+        "bbbbb...",
+        ".bbb....",
+        "..bbb...",
+        ".bbdbb.b",
+        ".bbddb.b",
+        ".bbdbb.b",
+        ".bbbbbbb",
+        ".bbbb..."
+      ]
+    },
+    {
+      "id": "bengal-012",
+      "title": {
+        "en": "If I Fits",
+        "tr": "Kutu Sevdası"
+      },
+      "palette": {
+        "b": "#E3A857",
+        "e": "#6FA04A",
+        "o": "#3E7C4F",
+        "p": "#8C6A4A"
+      },
+      "pixels": [
+        "..........",
+        "...b...b..",
+        "...bbbbb..",
+        "...bebeb..",
+        "..obbbbbo.",
+        ".poobboopp",
+        ".oooooooo.",
+        ".oooooooo.",
+        "..ooooooo."
+      ]
+    },
+    {
+      "id": "bengal-013",
+      "title": {
+        "en": "Moon Gazer",
+        "tr": "Ay Seyri"
+      },
+      "palette": {
+        "b": "#E3A857",
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        "...yyy....",
+        "..yyy.....",
+        "..yyy.....",
+        ".yyyy.....",
+        ".yyyy.....",
+        "..yyyy....",
+        "bbyyyyyyy.",
+        "bb.yyyyy..",
+        ".bb..b....",
+        "bbbb.b....",
+        ".bbbb....."
+      ]
+    },
+    {
+      "id": "bengal-014",
+      "title": {
+        "en": "Toe Beans",
+        "tr": "Pati Yastıkları"
+      },
+      "palette": {
+        "b": "#E3A857",
+        "n": "#B5654A"
+      },
+      "pixels": [
+        "...bb.bb...",
+        "..bnnbnnb..",
+        "bbbbb.bnbbb",
+        "bnb.....bnb",
+        "bnbbbbbbbnb",
+        "..bbbbbbb..",
+        "..bbnnnbb..",
+        ".bbnnnnnbb.",
+        ".bbnnnnnbb.",
+        "..bbnnnbb..",
+        "...bbbbb..."
+      ]
+    },
+    {
+      "id": "bengal-015",
+      "title": {
+        "en": "Strut",
+        "tr": "Salınarak Yürüyüş"
+      },
+      "palette": {
+        "b": "#E3A857",
+        "d": "#5A3A22"
+      },
+      "pixels": [
+        "...........",
+        ".......b..b",
+        ".......bbbb",
+        ".bbbbbbbbbb",
+        "..bbddbbbb.",
+        "..bbbdbb...",
+        "..bb..bb...",
+        "..b...bb...",
+        "..b.b......"
+      ]
+    }
+  ]
+}

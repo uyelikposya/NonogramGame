@@ -1,0 +1,325 @@
+{
+  "schemaVersion": 1,
+  "chapterID": "birman",
+  "puzzles": [
+    {
+      "id": "birman-001",
+      "title": {
+        "en": "Toe Beans",
+        "tr": "Pati Yastıkları"
+      },
+      "palette": {
+        "n": "#D9A0A0",
+        "w": "#FBF8F3"
+      },
+      "pixels": [
+        "..wwww..",
+        "..nwwn..",
+        "wn....nw",
+        "wwwwwwww",
+        ".wwwwww.",
+        ".wnnnnw.",
+        ".wwnnnw.",
+        "..wwww.."
+      ]
+    },
+    {
+      "id": "birman-002",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi"
+      },
+      "palette": {
+        "n": "#D9A0A0",
+        "w": "#FBF8F3"
+      },
+      "pixels": [
+        ".nnnnnn.",
+        "nwwnnnnn",
+        "nnnnnnnn",
+        ".nnnnnn.",
+        "..nnnn..",
+        "...nn...",
+        "...nn..."
+      ]
+    },
+    {
+      "id": "birman-003",
+      "title": {
+        "en": "Fish Snack",
+        "tr": "Balık Atıştırması"
+      },
+      "palette": {
+        "o": "#C9A227"
+      },
+      "pixels": [
+        ".oooo..o",
+        "o.oooooo",
+        "oooooooo",
+        ".oooo..o"
+      ]
+    },
+    {
+      "id": "birman-004",
+      "title": {
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak"
+      },
+      "palette": {
+        "o": "#C9A227"
+      },
+      "pixels": [
+        "..oooo...",
+        ".ooo.oo..",
+        "o....oo..",
+        "ooo..oo..",
+        "oo.oo.o..",
+        ".ooooo...",
+        "..ooooo..",
+        ".......oo"
+      ]
+    },
+    {
+      "id": "birman-005",
+      "title": {
+        "en": "Dinner Bowl",
+        "tr": "Mama Kabı"
+      },
+      "palette": {
+        "o": "#C9A227",
+        "p": "#9AA5B1",
+        "w": "#FBF8F3"
+      },
+      "pixels": [
+        "...ppp...",
+        ".ppppppp.",
+        "opppppppo",
+        "oooowoooo",
+        ".ooooooo.",
+        ".ooooooo."
+      ]
+    },
+    {
+      "id": "birman-006",
+      "title": {
+        "en": "Toy Mouse",
+        "tr": "Oyuncak Fare"
+      },
+      "palette": {
+        "n": "#D9A0A0",
+        "p": "#9AA5B1"
+      },
+      "pixels": [
+        "..pp.....",
+        "..pppp...",
+        "..pppp...",
+        ".pppppn.n",
+        "...p...n."
+      ]
+    },
+    {
+      "id": "birman-007",
+      "title": {
+        "en": "Leftovers",
+        "tr": "Artıklar"
+      },
+      "palette": {
+        "p": "#9AA5B1"
+      },
+      "pixels": [
+        "....pp...",
+        ".pppppppp",
+        ".p..pp..p",
+        "........."
+      ]
+    },
+    {
+      "id": "birman-008",
+      "title": {
+        "en": "Portrait",
+        "tr": "Portre"
+      },
+      "palette": {
+        "b": "#F2E6D3",
+        "d": "#6B5544",
+        "e": "#3F7FCF",
+        "w": "#FBF8F3"
+      },
+      "pixels": [
+        ".d......d.",
+        ".dbbbbbbd.",
+        ".dbbbbbbd.",
+        ".bbeddebb.",
+        ".beeddeeb.",
+        "bbbdwwdbbb",
+        "bbbwwwwbbb",
+        "...wwww..."
+      ]
+    },
+    {
+      "id": "birman-009",
+      "title": {
+        "en": "White Gloves",
+        "tr": "Beyaz Eldivenler"
+      },
+      "palette": {
+        "b": "#F2E6D3",
+        "w": "#FBF8F3"
+      },
+      "pixels": [
+        "..bb..bbb.",
+        ".bbbbbbbbb",
+        "bbbbbbbbbb",
+        "bbbbbbbbbb",
+        "bbbbbbbbbb",
+        "bbbbbbbbbb",
+        ".bwwb.bww.",
+        ".wwwwwww.w",
+        ".wwwwwww.w",
+        ".wwww.www."
+      ]
+    },
+    {
+      "id": "birman-010",
+      "title": {
+        "en": "Nap Time",
+        "tr": "Şekerleme"
+      },
+      "palette": {
+        "b": "#F2E6D3",
+        "d": "#6B5544"
+      },
+      "pixels": [
+        "....dbb...",
+        "ddbddbbbb.",
+        "d...dbbbbb",
+        ".bbbbbbbbd",
+        "..bbbbbbdd",
+        "..ddddddd."
+      ]
+    },
+    {
+      "id": "birman-011",
+      "title": {
+        "en": "If I Fits",
+        "tr": "Kutu Sevdası"
+      },
+      "palette": {
+        "b": "#F2E6D3",
+        "d": "#6B5544",
+        "e": "#3F7FCF",
+        "o": "#C9A227",
+        "p": "#9AA5B1"
+      },
+      "pixels": [
+        "..........",
+        "..dd..dd..",
+        "..ddbbdd..",
+        "..beeeeb..",
+        ".obbbbbbo.",
+        "ppoobboopp",
+        ".oooooooo.",
+        ".oooooooo.",
+        ".oooooooo."
+      ]
+    },
+    {
+      "id": "birman-012",
+      "title": {
+        "en": "If I Fits",
+        "tr": "Kutu Sevdası"
+      },
+      "palette": {
+        "b": "#F2E6D3",
+        "d": "#6B5544",
+        "e": "#3F7FCF",
+        "o": "#C9A227",
+        "p": "#9AA5B1"
+      },
+      "pixels": [
+        "..........",
+        "..dd..d...",
+        "..ddbbdd..",
+        "..bebebb..",
+        ".obbbbboo.",
+        "ppoobboopp",
+        ".oooooooo.",
+        ".oooooooo.",
+        ".oooooooo."
+      ]
+    },
+    {
+      "id": "birman-013",
+      "title": {
+        "en": "Moon Gazer",
+        "tr": "Ay Seyri"
+      },
+      "palette": {
+        "b": "#F2E6D3",
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        "...yyy....",
+        "..yyy.....",
+        "..yyy.....",
+        ".yyyy.....",
+        ".yyyy.....",
+        "..yyyy....",
+        "bbyyyyyyy.",
+        "bb.yyyyy..",
+        ".bb..b....",
+        "bbbb.b....",
+        ".bbbb....."
+      ]
+    },
+    {
+      "id": "birman-014",
+      "title": {
+        "en": "Toe Beans",
+        "tr": "Pati Yastıkları"
+      },
+      "palette": {
+        "n": "#D9A0A0",
+        "w": "#FBF8F3"
+      },
+      "pixels": [
+        "...ww.ww...",
+        "..wnnwnnw..",
+        "wwwww.wnwww",
+        "wnw.....wnw",
+        "wnwwwwwwwnw",
+        "..wwwwwww..",
+        "..wwnnnww..",
+        ".wwnnnnnww.",
+        ".wwnnnnnww.",
+        "..wwnnnww..",
+        "...wwwww..."
+      ]
+    },
+    {
+      "id": "birman-015",
+      "title": {
+        "en": "Sitting Pretty",
+        "tr": "Uslu Oturuş"
+      },
+      "palette": {
+        "b": "#F2E6D3",
+        "d": "#6B5544",
+        "w": "#FBF8F3"
+      },
+      "pixels": [
+        "d...d....",
+        "ddbdd....",
+        "ddbdd....",
+        ".bdbb....",
+        ".bdb.....",
+        "..bbbb.dd",
+        ".bbbbb.dd",
+        ".bbbbbbdd",
+        ".bbbbbbdd",
+        "..bbbbddd",
+        ".wwww.d.."
+      ]
+    }
+  ]
+}

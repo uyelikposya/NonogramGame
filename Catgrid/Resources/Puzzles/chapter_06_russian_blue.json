@@ -1,0 +1,314 @@
+{
+  "schemaVersion": 1,
+  "chapterID": "russian-blue",
+  "puzzles": [
+    {
+      "id": "russian-blue-001",
+      "title": {
+        "en": "Toe Beans",
+        "tr": "Pati Yastıkları"
+      },
+      "palette": {
+        "b": "#8FA3B5",
+        "n": "#6E8090"
+      },
+      "pixels": [
+        "..b.b..",
+        "bbn.nbb",
+        "nn.b.nn",
+        ".bbbbb.",
+        ".bnnnb.",
+        ".bnnnb.",
+        "..bbb.."
+      ]
+    },
+    {
+      "id": "russian-blue-002",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi"
+      },
+      "palette": {
+        "n": "#6E8090",
+        "w": "#DCE3EA"
+      },
+      "pixels": [
+        ".nnnnn.",
+        "nwnnnnn",
+        "nnnnnnn",
+        ".nnnnn.",
+        ".nnnnn.",
+        "..nnn..",
+        "...n..."
+      ]
+    },
+    {
+      "id": "russian-blue-003",
+      "title": {
+        "en": "Fish Snack",
+        "tr": "Balık Atıştırması"
+      },
+      "palette": {
+        "o": "#5C6B7A"
+      },
+      "pixels": [
+        ".ooo..o",
+        "o.ooooo",
+        "ooooooo",
+        ".ooo..o"
+      ]
+    },
+    {
+      "id": "russian-blue-004",
+      "title": {
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak"
+      },
+      "palette": {
+        "o": "#5C6B7A"
+      },
+      "pixels": [
+        ".oooo...",
+        "o.oo.o..",
+        "oo..ooo.",
+        "oo.o.o..",
+        ".oooo...",
+        "..ooo...",
+        "......o."
+      ]
+    },
+    {
+      "id": "russian-blue-005",
+      "title": {
+        "en": "Dinner Bowl",
+        "tr": "Mama Kabı"
+      },
+      "palette": {
+        "o": "#5C6B7A",
+        "p": "#B8C4CF",
+        "w": "#DCE3EA"
+      },
+      "pixels": [
+        "..pppp..",
+        ".pppppp.",
+        "ooppppoo",
+        ".owwwwo.",
+        ".oooooo."
+      ]
+    },
+    {
+      "id": "russian-blue-006",
+      "title": {
+        "en": "If I Fits",
+        "tr": "Kutu Sevdası"
+      },
+      "palette": {
+        "b": "#8FA3B5",
+        "e": "#59B36B",
+        "o": "#5C6B7A",
+        "p": "#B8C4CF"
+      },
+      "pixels": [
+        "........",
+        "..b..b..",
+        "..bbbb..",
+        "..beeb..",
+        ".pobboop",
+        ".oooooo.",
+        ".oooooo.",
+        ".oooooo."
+      ]
+    },
+    {
+      "id": "russian-blue-007",
+      "title": {
+        "en": "Leftovers",
+        "tr": "Artıklar"
+      },
+      "palette": {
+        "p": "#B8C4CF"
+      },
+      "pixels": [
+        "...ppp..",
+        "pppppppp",
+        "p..ppppp",
+        "....pp.."
+      ]
+    },
+    {
+      "id": "russian-blue-008",
+      "title": {
+        "en": "Moon Gazer",
+        "tr": "Ay Seyri"
+      },
+      "palette": {
+        "b": "#8FA3B5",
+        "y": "#F1E3A0"
+      },
+      "pixels": [
+        "..yy...",
+        ".yy....",
+        ".yy....",
+        ".yyy...",
+        "byyyyy.",
+        "bbyyyy.",
+        "bb.b...",
+        "bbbb..."
+      ]
+    },
+    {
+      "id": "russian-blue-009",
+      "title": {
+        "en": "Toy Mouse",
+        "tr": "Oyuncak Fare"
+      },
+      "palette": {
+        "n": "#6E8090",
+        "p": "#B8C4CF"
+      },
+      "pixels": [
+        ".....pn..",
+        "...pppp..",
+        "..ppppp..",
+        "n.nppppp.",
+        ".n...p..."
+      ]
+    },
+    {
+      "id": "russian-blue-010",
+      "title": {
+        "en": "Sitting Pretty",
+        "tr": "Uslu Oturuş"
+      },
+      "palette": {
+        "b": "#8FA3B5"
+      },
+      "pixels": [
+        ".......",
+        "bb.bb..",
+        "bbbbb..",
+        ".bbb...",
+        "..bb...",
+        ".bbbb.b",
+        ".bbbbbb",
+        ".bbbbbb",
+        "..bbbb."
+      ]
+    },
+    {
+      "id": "russian-blue-011",
+      "title": {
+        "en": "Portrait",
+        "tr": "Portre"
+      },
+      "palette": {
+        "b": "#8FA3B5",
+        "e": "#59B36B"
+      },
+      "pixels": [
+        ".........",
+        "bb.....bb",
+        "bbbbbbbbb",
+        "bbbbbbbbb",
+        ".bebbbeb.",
+        "bbeebeebb",
+        ".bbbbbbb.",
+        ".bbbbbbb.",
+        "..bbbbb.."
+      ]
+    },
+    {
+      "id": "russian-blue-012",
+      "title": {
+        "en": "If I Fits",
+        "tr": "Kutu Sevdası"
+      },
+      "palette": {
+        "b": "#8FA3B5",
+        "e": "#59B36B",
+        "o": "#5C6B7A",
+        "p": "#B8C4CF"
+      },
+      "pixels": [
+        ".........",
+        "..b...b..",
+        "..bbbbb..",
+        "..bbbbb..",
+        "..bebeb..",
+        "ppobbbopp",
+        ".ooooooo.",
+        ".ooooooo.",
+        ".ooooooo."
+      ]
+    },
+    {
+      "id": "russian-blue-013",
+      "title": {
+        "en": "Moon Gazer",
+        "tr": "Ay Seyri"
+      },
+      "palette": {
+        "b": "#8FA3B5",
+        "y": "#F1E3A0"
+      },
+      "pixels": [
+        "...yy....",
+        "..yy.....",
+        ".yyy.....",
+        ".yyy.....",
+        ".yyyy....",
+        ".byyyyy..",
+        "bb.yyyyy.",
+        "bbb.yy...",
+        "bbb.b....",
+        ".bbbb...."
+      ]
+    },
+    {
+      "id": "russian-blue-014",
+      "title": {
+        "en": "Toe Beans",
+        "tr": "Pati Yastıkları"
+      },
+      "palette": {
+        "b": "#8FA3B5",
+        "n": "#6E8090"
+      },
+      "pixels": [
+        "...b..b...",
+        "..bnbbnb..",
+        "bbbb..bbbb",
+        "nnb....bnn",
+        "bbbbbbbbbb",
+        "..bbbbbb..",
+        ".bbnnnnbb.",
+        ".bbnnnnbb.",
+        "..bnnnnb..",
+        "...bbbb..."
+      ]
+    },
+    {
+      "id": "russian-blue-015",
+      "title": {
+        "en": "Portrait",
+        "tr": "Portre"
+      },
+      "palette": {
+        "b": "#8FA3B5",
+        "e": "#59B36B"
+      },
+      "pixels": [
+        "b........b",
+        "bb......bb",
+        "bbbbbbbbbb",
+        "bbbbbbbbbb",
+        ".bbbbbbbb.",
+        ".beebbeeb.",
+        ".bbebbebb.",
+        ".bbbbbbbb.",
+        ".bbbbbbbb.",
+        "...bbbb..."
+      ]
+    }
+  ]
+}

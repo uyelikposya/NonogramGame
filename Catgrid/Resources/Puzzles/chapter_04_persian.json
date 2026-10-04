@@ -1,0 +1,294 @@
+{
+  "schemaVersion": 1,
+  "chapterID": "persian",
+  "puzzles": [
+    {
+      "id": "persian-001",
+      "title": {
+        "en": "Toe Beans",
+        "tr": "Pati Yastıkları"
+      },
+      "palette": {
+        "b": "#EFE7DC",
+        "n": "#E8A3A8"
+      },
+      "pixels": [
+        ".bbbb.",
+        "bbnnbb",
+        "nbbbbn",
+        ".bnnb.",
+        ".bnnb.",
+        ".bbbb."
+      ]
+    },
+    {
+      "id": "persian-002",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi"
+      },
+      "palette": {
+        "n": "#E8A3A8",
+        "w": "#FBF8F3"
+      },
+      "pixels": [
+        "nnnnnn",
+        "nwnnnn",
+        "nnnnnn",
+        ".nnnn.",
+        "..nn..",
+        "..nn.."
+      ]
+    },
+    {
+      "id": "persian-003",
+      "title": {
+        "en": "Fish Snack",
+        "tr": "Balık Atıştırması"
+      },
+      "palette": {
+        "o": "#8E5BA8",
+        "p": "#E9C46A"
+      },
+      "pixels": [
+        ".ooo.o",
+        "oopooo",
+        "oopooo",
+        ".ooo.o"
+      ]
+    },
+    {
+      "id": "persian-004",
+      "title": {
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak"
+      },
+      "palette": {
+        "o": "#8E5BA8"
+      },
+      "pixels": [
+        "...ooo.",
+        "..o.ooo",
+        ".oo..oo",
+        "...oo.o",
+        "..oooo.",
+        "......."
+      ]
+    },
+    {
+      "id": "persian-005",
+      "title": {
+        "en": "Dinner Bowl",
+        "tr": "Mama Kabı"
+      },
+      "palette": {
+        "o": "#8E5BA8",
+        "p": "#E9C46A",
+        "w": "#FBF8F3"
+      },
+      "pixels": [
+        "..ppp..",
+        "ppppppp",
+        "oopppoo",
+        "oowwwoo",
+        ".ooooo."
+      ]
+    },
+    {
+      "id": "persian-006",
+      "title": {
+        "en": "Leftovers",
+        "tr": "Artıklar"
+      },
+      "palette": {
+        "p": "#E9C46A"
+      },
+      "pixels": [
+        "..ppp..",
+        "ppppp.p",
+        "ppppp.p",
+        "..ppp.."
+      ]
+    },
+    {
+      "id": "persian-007",
+      "title": {
+        "en": "Leftovers",
+        "tr": "Artıklar"
+      },
+      "palette": {
+        "p": "#E9C46A"
+      },
+      "pixels": [
+        "..pp...",
+        "ppppppp",
+        "p.pp.p.",
+        "......."
+      ]
+    },
+    {
+      "id": "persian-008",
+      "title": {
+        "en": "If I Fits",
+        "tr": "Kutu Sevdası"
+      },
+      "palette": {
+        "b": "#EFE7DC",
+        "e": "#3E8EDE",
+        "o": "#8E5BA8",
+        "p": "#E9C46A"
+      },
+      "pixels": [
+        "..b..b..",
+        "..bbbb..",
+        "..beeb..",
+        "pobbboo.",
+        ".oooooo.",
+        ".oooooo.",
+        ".oooooo."
+      ]
+    },
+    {
+      "id": "persian-009",
+      "title": {
+        "en": "Moon Gazer",
+        "tr": "Ay Seyri"
+      },
+      "palette": {
+        "b": "#EFE7DC",
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        "..yy...",
+        ".yy....",
+        ".yy....",
+        ".yyy...",
+        "byyyyy.",
+        "bbyyyy.",
+        "bb.b...",
+        "bbbb..."
+      ]
+    },
+    {
+      "id": "persian-010",
+      "title": {
+        "en": "Toy Mouse",
+        "tr": "Oyuncak Fare"
+      },
+      "palette": {
+        "n": "#E8A3A8",
+        "p": "#E9C46A"
+      },
+      "pixels": [
+        "..np....",
+        "..ppp...",
+        "..pppp..",
+        ".ppppp.n",
+        "...p..n."
+      ]
+    },
+    {
+      "id": "persian-011",
+      "title": {
+        "en": "Portrait",
+        "tr": "Portre"
+      },
+      "palette": {
+        "b": "#EFE7DC",
+        "e": "#3E8EDE"
+      },
+      "pixels": [
+        ".bbbbbb.",
+        ".bbbbbb.",
+        ".bebbeb.",
+        "bbbbbbbb",
+        "..bbbb.."
+      ]
+    },
+    {
+      "id": "persian-012",
+      "title": {
+        "en": "If I Fits",
+        "tr": "Kutu Sevdası"
+      },
+      "palette": {
+        "b": "#EFE7DC",
+        "e": "#3E8EDE",
+        "o": "#8E5BA8",
+        "p": "#E9C46A"
+      },
+      "pixels": [
+        "........",
+        "..bbbb..",
+        "..bbeb..",
+        ".obbbbo.",
+        "poooooo.",
+        ".oooooo.",
+        ".oooooo."
+      ]
+    },
+    {
+      "id": "persian-013",
+      "title": {
+        "en": "Moon Gazer",
+        "tr": "Ay Seyri"
+      },
+      "palette": {
+        "b": "#EFE7DC",
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        "....y...",
+        "....yy..",
+        "....yyy.",
+        "....yyy.",
+        "...yyyy.",
+        ".yyyyybb",
+        "..yyy.bb",
+        "...b.bbb",
+        "....bbb."
+      ]
+    },
+    {
+      "id": "persian-014",
+      "title": {
+        "en": "Toe Beans",
+        "tr": "Pati Yastıkları"
+      },
+      "palette": {
+        "b": "#EFE7DC",
+        "n": "#E8A3A8"
+      },
+      "pixels": [
+        "..bb.bb..",
+        "..nnbnn..",
+        "bb.b.b.bb",
+        "nn.bbb.nn",
+        ".bbbbbbb.",
+        ".bbnnnbb.",
+        ".bbnnnbb.",
+        ".bbnnnbb.",
+        "..bbbbb.."
+      ]
+    },
+    {
+      "id": "persian-015",
+      "title": {
+        "en": "Portrait",
+        "tr": "Portre"
+      },
+      "palette": {
+        "b": "#EFE7DC",
+        "e": "#3E8EDE"
+      },
+      "pixels": [
+        ".b.bbb.b.",
+        ".bbbbbbb.",
+        ".bebbbeb.",
+        "bbbbbbebb",
+        "bbbbbbbbb",
+        "..bbbbb.."
+      ]
+    }
+  ]
+}

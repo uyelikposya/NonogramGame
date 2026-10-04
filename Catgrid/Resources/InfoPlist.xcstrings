@@ -1,0 +1,38 @@
+{
+  "sourceLanguage": "en",
+  "version": "1.0",
+  "strings": {
+    "CFBundleDisplayName": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Catgrid"
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Catgrid"
+          }
+        }
+      }
+    },
+    "NSUserTrackingUsageDescription": {
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Your data will be used to show you more relevant ads. This keeps Catgrid free."
+          }
+        },
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Verilerin sana daha ilgili reklamlar göstermek için kullanılır. Bu sayede Catgrid ücretsiz kalır."
+          }
+        }
+      }
+    }
+  }
+}

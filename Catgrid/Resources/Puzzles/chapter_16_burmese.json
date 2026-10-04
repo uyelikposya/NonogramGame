@@ -1,0 +1,356 @@
+{
+  "schemaVersion": 1,
+  "chapterID": "burmese",
+  "puzzles": [
+    {
+      "id": "burmese-001",
+      "title": {
+        "en": "Toe Beans",
+        "tr": "Pati Yastıkları"
+      },
+      "palette": {
+        "b": "#6B4A35",
+        "n": "#8C5A4A"
+      },
+      "pixels": [
+        "...bb.bb...",
+        "..bnnbnnb..",
+        "bbbbb.bnbbb",
+        "bnb.....bnb",
+        "bnbbbbbbbnb",
+        "..bbbbbbb..",
+        "..bbnnnbb..",
+        ".bbnnnnnbb.",
+        ".bbnnnnnbb.",
+        "..bbnnnbb..",
+        "...bbbbb..."
+      ]
+    },
+    {
+      "id": "burmese-002",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi"
+      },
+      "palette": {
+        "n": "#8C5A4A",
+        "w": "#D9C2AE"
+      },
+      "pixels": [
+        ".nnnn.nnnn.",
+        "nnwnnnnnnnn",
+        "nnwwnnnnnnn",
+        "nnnnnnnnnnn",
+        ".nnnnnnnnn.",
+        ".nnnnnnnnn.",
+        "..nnnnnnn..",
+        "...nnnnn...",
+        "....nnn....",
+        ".....n....."
+      ]
+    },
+    {
+      "id": "burmese-003",
+      "title": {
+        "en": "Fish Snack",
+        "tr": "Balık Atıştırması"
+      },
+      "palette": {
+        "o": "#B5838D",
+        "p": "#C8B6A6"
+      },
+      "pixels": [
+        "..oooo....o",
+        ".ooopooo.oo",
+        "o.oopoooooo",
+        "oooopoooooo",
+        ".ooopooo.oo",
+        "..oooo....o"
+      ]
+    },
+    {
+      "id": "burmese-004",
+      "title": {
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak"
+      },
+      "palette": {
+        "o": "#B5838D"
+      },
+      "pixels": [
+        "..ooooo.....",
+        ".ooooooo....",
+        "o.oooo.oo...",
+        "oo....oooo..",
+        "oooo..oooo..",
+        "ooo..o.ooo..",
+        "ooo.ooo.o...",
+        ".o.ooooo....",
+        "..ooooooo...",
+        "....oo..oo..",
+        "..........oo"
+      ]
+    },
+    {
+      "id": "burmese-005",
+      "title": {
+        "en": "Dinner Bowl",
+        "tr": "Mama Kabı"
+      },
+      "palette": {
+        "o": "#B5838D",
+        "p": "#C8B6A6",
+        "w": "#D9C2AE"
+      },
+      "pixels": [
+        "....p.pp....",
+        "..pppppppp..",
+        ".pppppppppp.",
+        "ooppppppppoo",
+        "oooooooooooo",
+        ".oowwwwwwoo.",
+        ".oooooooooo.",
+        "..oooooooo.."
+      ]
+    },
+    {
+      "id": "burmese-006",
+      "title": {
+        "en": "Toy Mouse",
+        "tr": "Oyuncak Fare"
+      },
+      "palette": {
+        "n": "#8C5A4A",
+        "p": "#C8B6A6"
+      },
+      "pixels": [
+        "...pnp......",
+        "...pnppp....",
+        "..ppppppp...",
+        ".p.pppppp...",
+        "..ppppppp...",
+        "...ppppp.n.n",
+        "..........n."
+      ]
+    },
+    {
+      "id": "burmese-007",
+      "title": {
+        "en": "Leftovers",
+        "tr": "Artıklar"
+      },
+      "palette": {
+        "p": "#C8B6A6"
+      },
+      "pixels": [
+        "...p.p.p....",
+        ".ppppp.p...p",
+        "pppppppppppp",
+        "pppppppppppp",
+        ".ppppp.p...p",
+        "...p.p.p...."
+      ]
+    },
+    {
+      "id": "burmese-008",
+      "title": {
+        "en": "Nap Time",
+        "tr": "Şekerleme"
+      },
+      "palette": {
+        "b": "#6B4A35"
+      },
+      "pixels": [
+        "............",
+        "bbbbbbbbbb..",
+        "bbbbbbbbbbb.",
+        "bb..bbbbbbbb",
+        ".bbbbbbbbbbb",
+        "..bbbbbbbbbb",
+        "...bbbbbbbb.",
+        "...bbbbbbb.."
+      ]
+    },
+    {
+      "id": "burmese-009",
+      "title": {
+        "en": "Royal Cushion",
+        "tr": "Saray Minderi"
+      },
+      "palette": {
+        "b": "#6B4A35",
+        "n": "#8C5A4A",
+        "o": "#B5838D"
+      },
+      "pixels": [
+        ".............",
+        ".bb..bb......",
+        ".bbbbbb......",
+        ".bbbbbb......",
+        "..bnnbbbbb...",
+        "..bbbbbbbbb..",
+        ".bbbbbbbbbbb.",
+        ".bbbbbbbbbbb.",
+        "ooobbbbbbbooo",
+        "ooooooooooooo",
+        "ooooooooooooo"
+      ]
+    },
+    {
+      "id": "burmese-010",
+      "title": {
+        "en": "Sitting Pretty",
+        "tr": "Uslu Oturuş"
+      },
+      "palette": {
+        "b": "#6B4A35"
+      },
+      "pixels": [
+        ".....b.....",
+        "bb...b.....",
+        "bbbbbbb....",
+        "bbbbbbb....",
+        ".bbbbb.....",
+        "..bbbb.....",
+        "..bbbbb...b",
+        "..bbbbbb..b",
+        ".bbbbbbb..b",
+        ".bbbbbbb..b",
+        "..bbbbbb.bb",
+        "..bbbbbbbb.",
+        "..bbbb....."
+      ]
+    },
+    {
+      "id": "burmese-011",
+      "title": {
+        "en": "Strut",
+        "tr": "Salınarak Yürüyüş"
+      },
+      "palette": {
+        "b": "#6B4A35"
+      },
+      "pixels": [
+        "............b",
+        "b...b.......b",
+        "bbbbb.......b",
+        "bbbbbbbb...bb",
+        ".bbbbbbbbbbb.",
+        "..bbbbbbbbb..",
+        "...bbbbbbbb..",
+        "...bbbbbbbb..",
+        "...b.b..b.b..",
+        "...b.bb.b.b..",
+        "...b..b.b.b.."
+      ]
+    },
+    {
+      "id": "burmese-012",
+      "title": {
+        "en": "If I Fits",
+        "tr": "Kutu Sevdası"
+      },
+      "palette": {
+        "b": "#6B4A35",
+        "e": "#E5B53B",
+        "o": "#B5838D",
+        "p": "#C8B6A6"
+      },
+      "pixels": [
+        ".............",
+        "...b....b....",
+        "...bbbbbb....",
+        "...bbbbbbb...",
+        "...bebbeb....",
+        "...bbbbeb....",
+        ".poobbbbboop.",
+        "ppoooobooopp.",
+        ".oooooooooo..",
+        ".oooooooooo..",
+        ".oooooooooo..",
+        ".oooooooooo.."
+      ]
+    },
+    {
+      "id": "burmese-013",
+      "title": {
+        "en": "Moon Gazer",
+        "tr": "Ay Seyri"
+      },
+      "palette": {
+        "b": "#6B4A35",
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        "....yyy.....",
+        "...yyy......",
+        "..yyyy......",
+        "..yyyy......",
+        "..yyyy......",
+        "..yyyy......",
+        "..yyyyy.....",
+        "..yyyyyy....",
+        "bbbyyyyyyyy.",
+        "bb..yyyyyy..",
+        ".bbb..b.....",
+        "bbbb..b.....",
+        "bbbb..b.....",
+        ".bbbbb......"
+      ]
+    },
+    {
+      "id": "burmese-014",
+      "title": {
+        "en": "Toe Beans",
+        "tr": "Pati Yastıkları"
+      },
+      "palette": {
+        "b": "#6B4A35",
+        "n": "#8C5A4A"
+      },
+      "pixels": [
+        "....bb..bb....",
+        "...bnnbbnnb...",
+        "...bnnbbnnb...",
+        "bbbbbb..bbbbbb",
+        "bnn........nnb",
+        "bnn..bbbb..bnb",
+        ".bbbbbbbbbbbb.",
+        "..bbbbbbbbbb..",
+        "..bbbnnnnbbb..",
+        "..bbnnnnnnbb..",
+        "..bbnnnnnnbb..",
+        "..bbnnnnnnbb..",
+        "...bbbnnbbb...",
+        "....bbbbbb...."
+      ]
+    },
+    {
+      "id": "burmese-015",
+      "title": {
+        "en": "Portrait",
+        "tr": "Portre"
+      },
+      "palette": {
+        "b": "#6B4A35",
+        "e": "#E5B53B",
+        "n": "#8C5A4A"
+      },
+      "pixels": [
+        ".b..........b.",
+        ".b...bbbb...b.",
+        "bbbbbbbbbbbbbb",
+        "bbbbbbbbbbbbbb",
+        "bbbbbbbbbbbbbb",
+        "bbbebbbbbbebbb",
+        "bbbeebbbbeebbb",
+        "bbbeebbbbeebbb",
+        "bbbbbbbbbbbbbb",
+        "bbbbbbnnbbbbbb",
+        ".bbbbbbbbbbbb.",
+        "..bbbbbbbbbb..",
+        "....bbbbbb...."
+      ]
+    }
+  ]
+}

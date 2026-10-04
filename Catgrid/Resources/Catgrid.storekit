@@ -1,0 +1,38 @@
+{
+  "identifier" : "C47A9D10",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "2.99",
+      "familyShareable" : false,
+      "internalID" : "5E2B7C41",
+      "localizations" : [
+        {
+          "description" : "Removes the ads shown between puzzles. Optional rewarded ads stay available.",
+          "displayName" : "Remove Ads",
+          "locale" : "en_US"
+        },
+        {
+          "description" : "Bulmacalar arasındaki reklamları kaldırır. İsteğe bağlı ödüllü reklamlar kullanılabilir kalır.",
+          "displayName" : "Reklamları Kaldır",
+          "locale" : "tr"
+        }
+      ],
+      "productID" : "com.catgridcollection.nonogram.removeads",
+      "referenceName" : "Remove Ads",
+      "type" : "NonConsumable"
+    }
+  ],
+  "settings" : {
+
+  },
+  "subscriptionGroups" : [
+
+  ],
+  "version" : {
+    "major" : 2,
+    "minor" : 0
+  }
+}

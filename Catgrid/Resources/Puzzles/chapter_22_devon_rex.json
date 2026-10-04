@@ -1,0 +1,385 @@
+{
+  "schemaVersion": 1,
+  "chapterID": "devon-rex",
+  "puzzles": [
+    {
+      "id": "devon-rex-001",
+      "title": {
+        "en": "Toe Beans",
+        "tr": "Pati Yastıkları"
+      },
+      "palette": {
+        "b": "#C8B8A6",
+        "n": "#D9827A"
+      },
+      "pixels": [
+        "....bb..bb....",
+        "...bnnbbnnb...",
+        "...bnnbbnnb...",
+        "bbbbbb..bbbbbb",
+        "bnn........nnb",
+        "bnn..bbbb..bnb",
+        ".bbbbbbbbbbbb.",
+        "..bbbbbbbbbb..",
+        "..bbbnnnnbbb..",
+        "..bbnnnnnnbb..",
+        "..bbnnnnnnbb..",
+        "..bbnnnnnnbb..",
+        "...bbbnnbbb...",
+        "....bbbbbb...."
+      ]
+    },
+    {
+      "id": "devon-rex-002",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi"
+      },
+      "palette": {
+        "n": "#D9827A",
+        "w": "#EFE6DA"
+      },
+      "pixels": [
+        ".nnnnn..nnnnn.",
+        "nnnnnnnnnnnnnn",
+        "nnwwwnnnnnnnnn",
+        "nnnwnnnnnnnnnn",
+        "nnnnnnnnnnnnnn",
+        "nnnnnnnnnnnnnn",
+        ".nnnnnnnnnnnn.",
+        "..nnnnnnnnnn..",
+        "...nnnnnnnn...",
+        "....nnnnnn....",
+        ".....nnnn.....",
+        "......nn......",
+        "......nn......"
+      ]
+    },
+    {
+      "id": "devon-rex-003",
+      "title": {
+        "en": "Fish Snack",
+        "tr": "Balık Atıştırması"
+      },
+      "palette": {
+        "o": "#7A9E7E",
+        "p": "#F2C14E"
+      },
+      "pixels": [
+        "...oooo......o",
+        ".oooopooo...oo",
+        "oo.oopoooo.ooo",
+        "o..oopoooooooo",
+        "ooooopoooooooo",
+        "ooooopoooo.ooo",
+        ".oooopooo...oo",
+        "...oooo......o"
+      ]
+    },
+    {
+      "id": "devon-rex-004",
+      "title": {
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak"
+      },
+      "palette": {
+        "o": "#7A9E7E"
+      },
+      "pixels": [
+        "......ooooo...",
+        ".....ooooooo..",
+        "....oo.oooooo.",
+        "...oooo.oo..o.",
+        "...oooo...oooo",
+        "...ooo....oooo",
+        "...oo..oo.oooo",
+        "...o..oooo.oo.",
+        ".....oooooo.o.",
+        "....oooooooo..",
+        "...oo..ooo....",
+        ".ooo..........",
+        ".............."
+      ]
+    },
+    {
+      "id": "devon-rex-005",
+      "title": {
+        "en": "Dinner Bowl",
+        "tr": "Mama Kabı"
+      },
+      "palette": {
+        "o": "#7A9E7E",
+        "p": "#F2C14E",
+        "w": "#EFE6DA"
+      },
+      "pixels": [
+        "....pp.ppp....",
+        "..pppppppppp..",
+        ".pppppppppppp.",
+        "ooppppppppppoo",
+        "ooooppppppoooo",
+        ".oowwwwwwwwoo.",
+        ".oowwwwwwwwoo.",
+        ".oooooooooooo.",
+        "..oooooooooo.."
+      ]
+    },
+    {
+      "id": "devon-rex-006",
+      "title": {
+        "en": "Toy Mouse",
+        "tr": "Oyuncak Fare"
+      },
+      "palette": {
+        "n": "#D9827A",
+        "p": "#F2C14E"
+      },
+      "pixels": [
+        "...ppp........",
+        "...pnppp......",
+        "...pppppp.....",
+        ".p.ppppppp....",
+        "..pppppppp....",
+        "..ppppppppn..n",
+        "....ppppp..nn.",
+        ".............."
+      ]
+    },
+    {
+      "id": "devon-rex-007",
+      "title": {
+        "en": "Leftovers",
+        "tr": "Artıklar"
+      },
+      "palette": {
+        "p": "#F2C14E"
+      },
+      "pixels": [
+        "....p.p.pp....",
+        "..p.p.p.pp...p",
+        ".pp.p.p.pp..pp",
+        "pppppppppppppp",
+        ".pp.p.p.pp..pp",
+        "..p.p.p.pp...p",
+        "....p.p.pp...."
+      ]
+    },
+    {
+      "id": "devon-rex-008",
+      "title": {
+        "en": "Nap Time",
+        "tr": "Şekerleme"
+      },
+      "palette": {
+        "b": "#C8B8A6"
+      },
+      "pixels": [
+        "..............",
+        ".b....b.......",
+        "bbb..bbbbbb...",
+        "bbbbbbbbbbbbb.",
+        "bbbbbbbbbbbbbb",
+        ".bbbbbbbbbbbbb",
+        "..bbbbbbbbbbbb",
+        "...bbbbbbbbbbb",
+        "....bbbbbbbbb.",
+        "....bbbbbbbb.."
+      ]
+    },
+    {
+      "id": "devon-rex-009",
+      "title": {
+        "en": "Cozy Sweater",
+        "tr": "Sıcak Kazak"
+      },
+      "palette": {
+        "b": "#C8B8A6",
+        "e": "#D9A441",
+        "o": "#7A9E7E",
+        "p": "#F2C14E"
+      },
+      "pixels": [
+        ".............",
+        ".b.........b.",
+        "bbb..bbb..bbb",
+        "bbbbbbbbbbbbb",
+        "bbbbbbbbbbbbb",
+        "bbbbbbbbbbbbb",
+        ".bbbebbbebbb.",
+        ".bbe.bbbeebb.",
+        ".bbeebbbeebb.",
+        ".bbbbbbbbbbb.",
+        ".bbbbbbbbbbb.",
+        "..bbbbbbbbb..",
+        ".ooooooooooo.",
+        ".ppppppppppp.",
+        ".ooooooooooo."
+      ]
+    },
+    {
+      "id": "devon-rex-010",
+      "title": {
+        "en": "Sitting Pretty",
+        "tr": "Uslu Oturuş"
+      },
+      "palette": {
+        "b": "#C8B8A6"
+      },
+      "pixels": [
+        ".......b....",
+        ".b....bb....",
+        "bbb...bb....",
+        "bbbbbbbb....",
+        "bbbbbbbb....",
+        "..bbbbb.....",
+        "..bbbb......",
+        "...bbbbb....",
+        "...bbbbbb..b",
+        "..bbbbbbb..b",
+        "..bbbbbbb..b",
+        "..bbbbbbb..b",
+        "..bbbbbbb.bb",
+        "...bbbbbbbb.",
+        "...bbbb....."
+      ]
+    },
+    {
+      "id": "devon-rex-011",
+      "title": {
+        "en": "Strut",
+        "tr": "Salınarak Yürüyüş"
+      },
+      "palette": {
+        "b": "#C8B8A6"
+      },
+      "pixels": [
+        ".b......b....b.",
+        "b.......bb...bb",
+        "b.......bbbbbbb",
+        "bb......bbbbbbb",
+        ".bbbbbbbbbbbbbb",
+        "..bbbbbbbbbbb..",
+        "..bbbbbbbbb....",
+        "...bbbbbbb.....",
+        "..bbb..bbbb....",
+        "..bbb..b.bb....",
+        "..b.bb.b..b....",
+        "..b....b..b...."
+      ]
+    },
+    {
+      "id": "devon-rex-012",
+      "title": {
+        "en": "If I Fits",
+        "tr": "Kutu Sevdası"
+      },
+      "palette": {
+        "b": "#C8B8A6",
+        "e": "#D9A441",
+        "o": "#7A9E7E",
+        "p": "#F2C14E"
+      },
+      "pixels": [
+        "....b......b...",
+        "....b......b...",
+        "...bbb....bb...",
+        "...bbbbbbbbbb..",
+        "...bbbbbbbbbb..",
+        "....bbebbebb...",
+        "....bbebbebb...",
+        "..ooobbbbbboop.",
+        ".ppooobbbbooopp",
+        "..oooooooooooo.",
+        "...............",
+        "..oooooooooooo.",
+        "..oooooooooooo.",
+        "..ooooooooooo.."
+      ]
+    },
+    {
+      "id": "devon-rex-013",
+      "title": {
+        "en": "Moon Gazer",
+        "tr": "Ay Seyri"
+      },
+      "palette": {
+        "b": "#C8B8A6",
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        "......y......",
+        "......yyy....",
+        ".......yyy...",
+        ".......yyyy..",
+        ".......yyyy..",
+        ".......yyyy..",
+        "......yyyyy..",
+        ".....yyyyyy..",
+        ".yyyyyyyyybbb",
+        "..yyyyyyyybbb",
+        "...yyyyy..bbb",
+        "......b..bbb.",
+        "......b..bbbb",
+        "......b..bbb.",
+        ".......bbbbb."
+      ]
+    },
+    {
+      "id": "devon-rex-014",
+      "title": {
+        "en": "Toe Beans",
+        "tr": "Pati Yastıkları"
+      },
+      "palette": {
+        "b": "#C8B8A6",
+        "n": "#D9827A"
+      },
+      "pixels": [
+        "....bb...bb....",
+        "...bnnb.bnnb...",
+        "...bnnb.bnnb...",
+        ".bb.bnb.bnb.bb.",
+        "bnnb.......bnnb",
+        "bnnb...b...bnnb",
+        "bnb.bbbbbbb.bnb",
+        "...bbbbbbbbb...",
+        "..bbbbbbbbbbb..",
+        "..bbbnnnnnbbb..",
+        "..bbnnnnnnnbb..",
+        "..bbnnnnnnnbb..",
+        "..bbbnnnnnbbb..",
+        "...bbbnnnbbb...",
+        ".....bbbbb....."
+      ]
+    },
+    {
+      "id": "devon-rex-015",
+      "title": {
+        "en": "Portrait",
+        "tr": "Portre"
+      },
+      "palette": {
+        "b": "#C8B8A6",
+        "e": "#D9A441",
+        "n": "#D9827A"
+      },
+      "pixels": [
+        "...............",
+        ".............b.",
+        ".bb.........bb.",
+        ".bbb...b....bb.",
+        ".bbbbbbbbbbbbb.",
+        ".bbbbbbbbbbbbbb",
+        ".bbbbbbbbbbbbbb",
+        "..bbbebbbbebb..",
+        "..bbe.bbbe.ebb.",
+        "..bbeebbbeebbb.",
+        "..bbbbbbbbbbbb.",
+        "..bbbbbnbbbbb..",
+        "...bbbbbbbbbb..",
+        "....bbbbbbbb...",
+        ".....bbbbb....."
+      ]
+    }
+  ]
+}

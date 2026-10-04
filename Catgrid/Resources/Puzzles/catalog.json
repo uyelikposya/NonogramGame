@@ -1,0 +1,1736 @@
+{
+  "schemaVersion": 1,
+  "defaultRules": {
+    "checksMoves": true,
+    "mistakeLimit": 3,
+    "timeLimitSeconds": null,
+    "autoCrossCompletedLines": true
+  },
+  "chapters": [
+    {
+      "id": "tutorial",
+      "kind": "tutorial",
+      "title": {
+        "en": "Kitten School",
+        "tr": "Yavru Okulu"
+      },
+      "subtitle": {
+        "en": "Learn the rules",
+        "tr": "Kuralları öğren"
+      },
+      "accentColor": "#F4A6A0",
+      "file": "tutorial"
+    },
+    {
+      "id": "siamese",
+      "kind": "breed",
+      "title": {
+        "en": "Siamese",
+        "tr": "Siyam"
+      },
+      "subtitle": {
+        "en": "Blue eyes and dark points",
+        "tr": "Mavi gözler ve koyu uçlar"
+      },
+      "accentColor": "#C9A27E",
+      "file": "chapter_01_siamese",
+      "portrait": {
+        "palette": {
+          "b": "#F2E3CF",
+          "d": "#4A3B35",
+          "e": "#5B9BD5",
+          "n": "#D99A9A"
+        },
+        "pixels": [
+          ".d....................d.",
+          ".dd..................dd.",
+          ".ddd................ddd.",
+          ".ddd................ddd.",
+          ".dddd....bbbbbb....dddd.",
+          "dddddd.bbbbbbbbbb.dddddd",
+          "dddddbbbbbbbbbbbbbbddddd",
+          "ddddbbbbbbbbbbbbbbbbdddd",
+          "dddbbbbbbbbbbbbbbbbbbddd",
+          "ddbbbbbbbbbbbbbbbbbbbbdd",
+          "..bbbbbbbbddddbbbbbbbb..",
+          "..bbbbeeeddddddeeebbbb..",
+          ".bbbbbe.eeddddee.eebbbb.",
+          ".bbbbbe.eeddddee.eebbbb.",
+          ".bbbbbe.edddddde.ebbbbb.",
+          "..bbbbddddddddddddbbbb..",
+          "..bbbbddddddddddddbbbb..",
+          "..bbbbdddddnndddddbbbb..",
+          "...bbbbddddddddddbbbb...",
+          "....bbbddddddddddbbb....",
+          ".....bbbddddddddbbb.....",
+          "......bbbbddddbbbb......",
+          "........bbbbbbbb........"
+        ]
+      },
+      "card": {
+        "number": 1,
+        "rarity": "common",
+        "origin": {
+          "en": "Thailand",
+          "tr": "Tayland"
+        },
+        "lifespan": "15–20",
+        "coat": {
+          "en": "Short, colorpoint",
+          "tr": "Kısa, uçları koyu"
+        },
+        "stats": {
+          "energy": 5,
+          "affection": 5,
+          "playfulness": 5,
+          "grooming": 1
+        },
+        "fact": {
+          "en": "One of the most talkative breeds: Siamese love to 'chat' with their people.",
+          "tr": "En konuşkan türlerden biri: insanlarıyla 'sohbet etmeyi' çok sever."
+        }
+      }
+    },
+    {
+      "id": "british-shorthair",
+      "kind": "breed",
+      "title": {
+        "en": "British Shorthair",
+        "tr": "British Shorthair"
+      },
+      "subtitle": {
+        "en": "Round, plush and calm",
+        "tr": "Yuvarlak, peluş ve sakin"
+      },
+      "accentColor": "#8A9BA8",
+      "file": "chapter_02_british_shorthair",
+      "portrait": {
+        "palette": {
+          "b": "#8E9AA6",
+          "e": "#E8A33D",
+          "n": "#6E7A86"
+        },
+        "pixels": [
+          "..b.......bbbb.......b..",
+          ".bbb...bbbbbbbbbb...bbb.",
+          ".bbbbbbbbbbbbbbbbbbbbbb.",
+          ".bbbbbbbbbbbbbbbbbbbbbb.",
+          ".bbbbbbbbbbbbbbbbbbbbbb.",
+          "bbbbbbbbbbbbbbbbbbbbbbbb",
+          "bbbbbbbbbbbbbbbbbbbbbbbb",
+          "bbbbbbeebbbbbbbbeebbbbbb",
+          "bbbbbe.eebbbbbbee.ebbbbb",
+          "bbbbbe..ebbbbbbee.ebbbbb",
+          "bbbbbe..ebbbbbbee.ebbbbb",
+          "bbbbbeeebbbbbbbbeeebbbbb",
+          "bbbbbbbbbbbbbbbbbbbbbbbb",
+          "bbbbbbbbbbbnnbbbbbbbbbbb",
+          ".bbbbbbbbbbnnbbbbbbbbbb.",
+          "..bbbbbbbbbbbbbbbbbbbb..",
+          "..bbbbbbbbbbbbbbbbbbbb..",
+          "....bbbbbbbbbbbbbbbb....",
+          ".....bbbbbbbbbbbbbb.....",
+          "........bbbbbbbb........"
+        ]
+      },
+      "card": {
+        "number": 2,
+        "rarity": "common",
+        "origin": {
+          "en": "United Kingdom",
+          "tr": "Birleşik Krallık"
+        },
+        "lifespan": "12–17",
+        "coat": {
+          "en": "Short, dense, plush",
+          "tr": "Kısa, yoğun, peluş"
+        },
+        "stats": {
+          "energy": 2,
+          "affection": 3,
+          "playfulness": 2,
+          "grooming": 2
+        },
+        "fact": {
+          "en": "Its round, smiling face is often said to have inspired the Cheshire Cat.",
+          "tr": "Yuvarlak, gülümseyen yüzünün Cheshire Kedisi'ne ilham verdiği söylenir."
+        }
+      }
+    },
+    {
+      "id": "scottish-fold",
+      "kind": "breed",
+      "title": {
+        "en": "Scottish Fold",
+        "tr": "Scottish Fold"
+      },
+      "subtitle": {
+        "en": "Folded ears, owl-like face",
+        "tr": "Katlanmış kulaklar, baykuş yüzü"
+      },
+      "accentColor": "#D8B48A",
+      "file": "chapter_03_scottish_fold",
+      "portrait": {
+        "palette": {
+          "b": "#C9CDD2",
+          "d": "#6F767D",
+          "e": "#D9A441",
+          "n": "#D9A0A0"
+        },
+        "pixels": [
+          ".......bbbbbbbbbb.......",
+          ".....bbbbbbbbbbbbbb.....",
+          "...bbbbddbbddbbbdbbbb...",
+          "..bbbbbddbbddbbbdbbbbb..",
+          "..bbbbbddbbddbbbdbbbbb..",
+          ".bbbbbbddbbddbbbdbbbbbb.",
+          "bbbbbbbddbbddbbbdbbbbbbb",
+          "bbbbbeeebbbddbbbeeebbbbb",
+          "bbbbbe..ebbbbbbee.ebbbbb",
+          "bbbbbe..ebbbbbbee.ebbbbb",
+          "bbbbbe.eebbbbbbee.ebbbbb",
+          "bbbbbbeebbbbbbbbeebbbbbb",
+          "bbbbbbbbbbbbbbbbbbbbbbbb",
+          "bbbbbbbbbbbnnbbbbbbbbbbb",
+          ".bbbbbbbbbbbbbbbbbbbbbb.",
+          "..bbbbbbbbbbbbbbbbbbbb..",
+          "..bbbbbbbbbbbbbbbbbbbb..",
+          "....bbbbbbbbbbbbbbbb....",
+          ".....bbbbbbbbbbbbbb.....",
+          "........bbbbbbbb........"
+        ]
+      },
+      "card": {
+        "number": 3,
+        "rarity": "common",
+        "origin": {
+          "en": "Scotland",
+          "tr": "İskoçya"
+        },
+        "lifespan": "11–15",
+        "coat": {
+          "en": "Short or long",
+          "tr": "Kısa ya da uzun"
+        },
+        "stats": {
+          "energy": 3,
+          "affection": 4,
+          "playfulness": 3,
+          "grooming": 2
+        },
+        "fact": {
+          "en": "Every Scottish Fold traces back to Susie, a farm cat found in Scotland in 1961.",
+          "tr": "Tüm Scottish Fold'lar 1961'de İskoçya'da bir çiftlikte bulunan Susie adlı kediden gelir."
+        }
+      }
+    },
+    {
+      "id": "persian",
+      "kind": "breed",
+      "title": {
+        "en": "Persian",
+        "tr": "İran Kedisi"
+      },
+      "subtitle": {
+        "en": "Long coat and flat face",
+        "tr": "Uzun tüyler ve basık yüz"
+      },
+      "accentColor": "#E8C9D0",
+      "file": "chapter_04_persian",
+      "portrait": {
+        "palette": {
+          "b": "#EFE7DC",
+          "e": "#3E8EDE",
+          "n": "#E8A3A8"
+        },
+        "pixels": [
+          "....b.....bbbb.....b....",
+          "...bb..bbbbbbbbbb..bb...",
+          "...bbbbbbbbbbbbbbbbbb...",
+          "...bbbbbbbbbbbbbbbbbb...",
+          "...bbbbbbbbbbbbbbbbbb...",
+          "...bbbbbbbbbbbbbbbbbb...",
+          "..bbbbbeebbbbbbeebbbbb..",
+          "..bbbbe.eebbbbee.ebbbb..",
+          "..bbbbe.ebbbbbbe.ebbbb..",
+          "bbbbbbbeebbbbbbbebbbbbbb",
+          "bbbbbbbbbbbbbbbbbbbbbbbb",
+          "bbbbbbbbbbbnnbbbbbbbbbbb",
+          "bbb.bbbbbbbbbbbbbbbb.bbb",
+          ".b...bbbbbbbbbbbbbb...b.",
+          "......bbbbbbbbbbbb......",
+          "........bbbbbbbb........"
+        ]
+      },
+      "card": {
+        "number": 4,
+        "rarity": "common",
+        "origin": {
+          "en": "Iran (Persia)",
+          "tr": "İran"
+        },
+        "lifespan": "12–17",
+        "coat": {
+          "en": "Long and silky",
+          "tr": "Uzun ve ipeksi"
+        },
+        "stats": {
+          "energy": 1,
+          "affection": 4,
+          "playfulness": 2,
+          "grooming": 5
+        },
+        "fact": {
+          "en": "Persians have been prized in Europe for their long coats since the 1600s.",
+          "tr": "İran kedileri uzun tüyleri nedeniyle 1600'lerden beri Avrupa'da çok değerlidir."
+        }
+      }
+    },
+    {
+      "id": "ragdoll",
+      "kind": "breed",
+      "title": {
+        "en": "Ragdoll",
+        "tr": "Ragdoll"
+      },
+      "subtitle": {
+        "en": "Goes limp when held",
+        "tr": "Kucakta gevşeyip kalır"
+      },
+      "accentColor": "#A9C3DB",
+      "file": "chapter_05_ragdoll",
+      "portrait": {
+        "palette": {
+          "b": "#F4EEE6",
+          "d": "#8B7765",
+          "e": "#4F86C6",
+          "n": "#E2A3A3",
+          "w": "#FBF8F3"
+        },
+        "pixels": [
+          "....d..............d....",
+          "...dd..............dd...",
+          "...ddd..bbbbbbbb..ddd...",
+          "...dddbbbbbbbbbbbbddd...",
+          "...ddbbbbbbbbbbbbbbdd...",
+          "..ddbbbbbbbbbbbbbbbbdd..",
+          "..dbbbbbbbbbbbbbbbbbbd..",
+          "...bbbbbbbddddbbbbbbb...",
+          "...bbbbeeddddddeebbbb...",
+          "..bbbbee.eddddee.ebbbb..",
+          "..bbbbee.eddddee.ebbbb..",
+          ".bbbbbbeeddddddeebbbbbb.",
+          "bbbbbbbddddddddddbbbbbbb",
+          "bbbbbbbddwwnnwwddbbbbbbb",
+          "bbbbbbbdwwwwwwwwdbbbbbbb",
+          "bbb.bbbwwwwwwwwwwbbb.bbb",
+          ".....bbwwwwwwwwwwbb.....",
+          "......bbwwwwwwwwbb......",
+          "........bwwwwwwb........"
+        ]
+      },
+      "card": {
+        "number": 5,
+        "rarity": "common",
+        "origin": {
+          "en": "United States",
+          "tr": "ABD"
+        },
+        "lifespan": "12–17",
+        "coat": {
+          "en": "Semi-long, silky",
+          "tr": "Yarı uzun, ipeksi"
+        },
+        "stats": {
+          "energy": 2,
+          "affection": 5,
+          "playfulness": 3,
+          "grooming": 3
+        },
+        "fact": {
+          "en": "Named for the way it goes limp like a rag doll when picked up.",
+          "tr": "Adını, kucağa alınınca bez bebek gibi gevşemesinden alır."
+        }
+      }
+    },
+    {
+      "id": "russian-blue",
+      "kind": "breed",
+      "title": {
+        "en": "Russian Blue",
+        "tr": "Rus Mavisi"
+      },
+      "subtitle": {
+        "en": "Silver-blue coat, green eyes",
+        "tr": "Gümüş mavi tüy, yeşil gözler"
+      },
+      "accentColor": "#7D93A8",
+      "file": "chapter_06_russian_blue",
+      "portrait": {
+        "palette": {
+          "b": "#8FA3B5",
+          "e": "#59B36B",
+          "n": "#6E8090"
+        },
+        "pixels": [
+          ".b....................b.",
+          ".bb..................bb.",
+          ".bbb................bbb.",
+          ".bbb................bbb.",
+          ".bbbb....bbbbbb....bbbb.",
+          "bbbbbb.bbbbbbbbbb.bbbbbb",
+          "bbbbbbbbbbbbbbbbbbbbbbbb",
+          "bbbbbbbbbbbbbbbbbbbbbbbb",
+          "bbbbbbbbbbbbbbbbbbbbbbbb",
+          "bbbbbbbbbbbbbbbbbbbbbbbb",
+          "..bbbbbbbbbbbbbbbbbbbb..",
+          "..bbbbeeebbbbbbeeebbbb..",
+          ".bbbbbe.eebbbbee.eebbbb.",
+          ".bbbbbe.eebbbbee.eebbbb.",
+          ".bbbbbe.ebbbbbbe.ebbbbb.",
+          "..bbbbbbbbbbbbbbbbbbbb..",
+          "..bbbbbbbbbbbbbbbbbbbb..",
+          "..bbbbbbbbbnnbbbbbbbbb..",
+          "...bbbbbbbbbbbbbbbbbb...",
+          "....bbbbbbbbbbbbbbbb....",
+          ".....bbbbbbbbbbbbbb.....",
+          "......bbbbbbbbbbbb......",
+          "........bbbbbbbb........"
+        ]
+      },
+      "card": {
+        "number": 6,
+        "rarity": "common",
+        "origin": {
+          "en": "Russia",
+          "tr": "Rusya"
+        },
+        "lifespan": "15–20",
+        "coat": {
+          "en": "Short, dense double coat",
+          "tr": "Kısa, yoğun çift kat"
+        },
+        "stats": {
+          "energy": 3,
+          "affection": 3,
+          "playfulness": 3,
+          "grooming": 1
+        },
+        "fact": {
+          "en": "Its silver-tipped coat is so dense it stands out from the body.",
+          "tr": "Gümüş uçlu tüyü o kadar yoğundur ki gövdeden kabarık durur."
+        }
+      }
+    },
+    {
+      "id": "abyssinian",
+      "kind": "breed",
+      "title": {
+        "en": "Abyssinian",
+        "tr": "Habeş Kedisi"
+      },
+      "subtitle": {
+        "en": "Ticked coat and big ears",
+        "tr": "Kırçıllı tüy ve iri kulaklar"
+      },
+      "accentColor": "#C47F4F",
+      "file": "chapter_07_abyssinian",
+      "portrait": {
+        "palette": {
+          "b": "#C47F4F",
+          "d": "#8C5532",
+          "e": "#9CB84A",
+          "n": "#C9705A"
+        },
+        "pixels": [
+          ".b....................b.",
+          ".bb..................bb.",
+          ".bbb................bbb.",
+          ".bbb................bbb.",
+          ".bbbb....bbbbbb....bbbb.",
+          "bbbbbb.bbbbbbbbbb.bbbbbb",
+          "bbbbbbbbbbddddbbbbbbbbbb",
+          "bbbbbbbbbddddddbbbbbbbbb",
+          "bbbbbbbbddddddddbbbbbbbb",
+          "bbbbbbbbbddddddbbbbbbbbb",
+          "..bbbbbbbbddddbbbbbbbb..",
+          "..bbbbeeebbbbbbeeebbbb..",
+          ".bbbbbe.eebbbbee.eebbbb.",
+          ".bbbbbe.eebbbbee.eebbbb.",
+          ".bbbbbe.ebbbbbbe.ebbbbb.",
+          "..bbbbbbbbbbbbbbbbbbbb..",
+          "..bbbbbbbbbbbbbbbbbbbb..",
+          "..bbbbbbbbbnnbbbbbbbbb..",
+          "...bbbbbbbbbbbbbbbbbb...",
+          "....bbbbbbbbbbbbbbbb....",
+          ".....bbbbbbbbbbbbbb.....",
+          "......bbbbbbbbbbbb......",
+          "........bbbbbbbb........"
+        ]
+      },
+      "card": {
+        "number": 7,
+        "rarity": "common",
+        "origin": {
+          "en": "Named after Abyssinia (Ethiopia)",
+          "tr": "Adını Habeşistan'dan (Etiyopya) alır"
+        },
+        "lifespan": "12–15",
+        "coat": {
+          "en": "Short, ticked",
+          "tr": "Kısa, kırçıllı"
+        },
+        "stats": {
+          "energy": 5,
+          "affection": 4,
+          "playfulness": 5,
+          "grooming": 1
+        },
+        "fact": {
+          "en": "It looks like the cats of ancient Egyptian art, but genetics point to the Indian Ocean coast.",
+          "tr": "Antik Mısır sanatındaki kedilere benzer, ama genetik çalışmalar Hint Okyanusu kıyılarını işaret eder."
+        }
+      }
+    },
+    {
+      "id": "birman",
+      "kind": "breed",
+      "title": {
+        "en": "Birman",
+        "tr": "Birman"
+      },
+      "subtitle": {
+        "en": "Sacred cat with white gloves",
+        "tr": "Beyaz eldivenli kutsal kedi"
+      },
+      "accentColor": "#E3D3B8",
+      "file": "chapter_08_birman",
+      "portrait": {
+        "palette": {
+          "b": "#F2E6D3",
+          "d": "#6B5544",
+          "e": "#3F7FCF",
+          "n": "#D9A0A0",
+          "w": "#FBF8F3"
+        },
+        "pixels": [
+          "....d..............d....",
+          "...dd..............dd...",
+          "...ddd..bbbbbbbb..ddd...",
+          "...dddbbbbbbbbbbbbddd...",
+          "...ddbbbbbbbbbbbbbbdd...",
+          "..ddbbbbbbbbbbbbbbbbdd..",
+          "..dbbbbbbbbbbbbbbbbbbd..",
+          "...bbbbbbbddddbbbbbbb...",
+          "...bbbbeeddddddeebbbb...",
+          "..bbbbee.eddddee.ebbbb..",
+          "..bbbbee.eddddee.ebbbb..",
+          ".bbbbbbeeddddddeebbbbbb.",
+          "bbbbbbbddddddddddbbbbbbb",
+          "bbbbbbbddwwnnwwddbbbbbbb",
+          "bbbbbbbdwwwwwwwwdbbbbbbb",
+          "bbb.bbbwwwwwwwwwwbbb.bbb",
+          ".....bbwwwwwwwwwwbb.....",
+          "......bbwwwwwwwwbb......",
+          "........bwwwwwwb........"
+        ]
+      },
+      "card": {
+        "number": 8,
+        "rarity": "common",
+        "origin": {
+          "en": "Myanmar (Burma)",
+          "tr": "Myanmar (Burma)"
+        },
+        "lifespan": "12–16",
+        "coat": {
+          "en": "Semi-long, white gloves",
+          "tr": "Yarı uzun, beyaz eldivenli"
+        },
+        "stats": {
+          "energy": 2,
+          "affection": 5,
+          "playfulness": 3,
+          "grooming": 3
+        },
+        "fact": {
+          "en": "Legend says a temple cat's paws turned white where they touched its dying priest.",
+          "tr": "Efsaneye göre bir tapınak kedisinin, ölmekte olan rahibine dokunan patileri beyaza dönmüştür."
+        }
+      }
+    },
+    {
+      "id": "bengal",
+      "kind": "breed",
+      "title": {
+        "en": "Bengal",
+        "tr": "Bengal"
+      },
+      "subtitle": {
+        "en": "Wild rosettes, loves to climb",
+        "tr": "Vahşi benekler, tırmanmayı sever"
+      },
+      "accentColor": "#D99A3E",
+      "file": "chapter_09_bengal",
+      "portrait": {
+        "palette": {
+          "b": "#E3A857",
+          "d": "#5A3A22",
+          "e": "#6FA04A",
+          "n": "#B5654A"
+        },
+        "pixels": [
+          ".bb..................bb.",
+          ".bb..................bb.",
+          ".bbb.....bbbbbb.....bbb.",
+          ".bbbb.bbbbbbbbbbbb.bbbb.",
+          ".bbbbbbbbbbbbbbbbbbbbbb.",
+          "bbbbbbbbbbbbbbbbbbbbbbbb",
+          "bbbbbbbbbbbbbbbbbbbbbbbb",
+          "bbbbbbbbbbbbbbbbbbbbbbbb",
+          "bbbbbbbbbbbbbbbbbbbbbbbb",
+          ".bbbbbbbbbbbbbbbbbbbbbb.",
+          "bbbdbbeebbbbbbbbeebbbbbb",
+          "bbddde..edbbbbbee.ebbbbb",
+          "bbbdde..edbbbbbee.ebbbbb",
+          "bbbdde..ebbbbbbee.ebbbbb",
+          "bbbbdeeebbbbbbbbeeebbbbb",
+          "bbbdddbbbbbbbbbbbbbbbbbb",
+          "bbbdddbbbbbbbbbbbbbbbbbb",
+          ".bbbbbbbbbbnnbbbbbbbbbb.",
+          ".bbbbbbbbbbbbbbbbbbbbbb.",
+          "..bbbbbbbbbbbbbbbbbbbb..",
+          "...bbbbbbbbbbbbbbbbbb...",
+          "....bbbbbbbbbbbbbbbb....",
+          ".....bbbbbbbbbbbbbb.....",
+          "........bbbbbbbb........"
+        ]
+      },
+      "card": {
+        "number": 9,
+        "rarity": "rare",
+        "origin": {
+          "en": "United States",
+          "tr": "ABD"
+        },
+        "lifespan": "12–16",
+        "coat": {
+          "en": "Short, spotted or marbled",
+          "tr": "Kısa, benekli ya da mermer desenli"
+        },
+        "stats": {
+          "energy": 5,
+          "affection": 3,
+          "playfulness": 5,
+          "grooming": 1
+        },
+        "fact": {
+          "en": "Bred from domestic cats and the wild Asian leopard cat; many Bengals love water.",
+          "tr": "Evcil kedilerle vahşi Asya leopar kedisinden geliştirildi; çoğu suyu çok sever."
+        }
+      }
+    },
+    {
+      "id": "sphynx",
+      "kind": "breed",
+      "title": {
+        "en": "Sphynx",
+        "tr": "Sfenks"
+      },
+      "subtitle": {
+        "en": "Hairless and always warm",
+        "tr": "Tüysüz ve hep sıcacık"
+      },
+      "accentColor": "#E7B9A5",
+      "file": "chapter_10_sphynx",
+      "portrait": {
+        "palette": {
+          "b": "#E9B8A7",
+          "e": "#7FB069",
+          "n": "#D9827A"
+        },
+        "pixels": [
+          ".b....................b.",
+          ".bb..................bb.",
+          ".bbb................bbb.",
+          ".bbb................bbb.",
+          ".bbbb....bbbbbb....bbbb.",
+          "bbbbbb.bbbbbbbbbb.bbbbbb",
+          "bbbbbbbbbbbbbbbbbbbbbbbb",
+          "bbbbbbbbbbbbbbbbbbbbbbbb",
+          "bbbbbbbbbbbbbbbbbbbbbbbb",
+          "bbbbbbbbbbbbbbbbbbbbbbbb",
+          "..bbbbbbbbbbbbbbbbbbbb..",
+          "..bbbbeeebbbbbbeeebbbb..",
+          ".bbbbbe.eebbbbee.eebbbb.",
+          ".bbbbbe.eebbbbee.eebbbb.",
+          ".bbbbbe.ebbbbbbe.ebbbbb.",
+          "..bbbbbbbbbbbbbbbbbbbb..",
+          "..bbbbbbbbbbbbbbbbbbbb..",
+          "..bbbbbbbbbnnbbbbbbbbb..",
+          "...bbbbbbbbbbbbbbbbbb...",
+          "....bbbbbbbbbbbbbbbb....",
+          ".....bbbbbbbbbbbbbb.....",
+          "......bbbbbbbbbbbb......",
+          "........bbbbbbbb........"
+        ]
+      },
+      "card": {
+        "number": 10,
+        "rarity": "rare",
+        "origin": {
+          "en": "Canada",
+          "tr": "Kanada"
+        },
+        "lifespan": "8–14",
+        "coat": {
+          "en": "Hairless (fine peach fuzz)",
+          "tr": "Tüysüz (ince şeftali tüyü)"
+        },
+        "stats": {
+          "energy": 4,
+          "affection": 5,
+          "playfulness": 4,
+          "grooming": 3
+        },
+        "fact": {
+          "en": "Not truly bald: a fine peach fuzz covers its warm skin, and it needs regular baths.",
+          "tr": "Aslında tamamen tüysüz değildir; sıcak teni ince bir tüyle kaplıdır ve düzenli banyo ister."
+        }
+      }
+    },
+    {
+      "id": "turkish-angora",
+      "kind": "breed",
+      "title": {
+        "en": "Turkish Angora",
+        "tr": "Ankara Kedisi"
+      },
+      "subtitle": {
+        "en": "Snow white, often odd-eyed",
+        "tr": "Kar beyazı, çoğu zaman ela-mavi göz"
+      },
+      "accentColor": "#F0E6DA",
+      "file": "chapter_11_turkish_angora",
+      "portrait": {
+        "palette": {
+          "b": "#ECE8E1",
+          "e": "#4F86C6",
+          "f": "#E1B33F",
+          "n": "#F2A3B0"
+        },
+        "pixels": [
+          "....b..............b....",
+          "...bb..............bb...",
+          "...bbb..bbbbbbbb..bbb...",
+          "...bbbbbbbbbbbbbbbbbb...",
+          "...bbbbbbbbbbbbbbbbbb...",
+          "..bbbbbbbbbbbbbbbbbbbb..",
+          "..bbbbbbbbbbbbbbbbbbbb..",
+          "...bbbbbbbbbbbbbbbbbb...",
+          "...bbbbeebbbbbbffbbbb...",
+          "..bbbbee.ebbbbff.fbbbb..",
+          "..bbbbee.ebbbbff.fbbbb..",
+          ".bbbbbbeebbbbbbffbbbbbb.",
+          "bbbbbbbbbbbbbbbbbbbbbbbb",
+          "bbbbbbbbbbbnnbbbbbbbbbbb",
+          "bbbbbbbbbbbbbbbbbbbbbbbb",
+          "bbb.bbbbbbbbbbbbbbbb.bbb",
+          ".....bbbbbbbbbbbbbb.....",
+          "......bbbbbbbbbbbb......",
+          "........bbbbbbbb........"
+        ]
+      },
+      "card": {
+        "number": 11,
+        "rarity": "rare",
+        "origin": {
+          "en": "Türkiye (Ankara)",
+          "tr": "Türkiye (Ankara)"
+        },
+        "lifespan": "12–18",
+        "coat": {
+          "en": "Semi-long, silky",
+          "tr": "Yarı uzun, ipeksi"
+        },
+        "stats": {
+          "energy": 4,
+          "affection": 4,
+          "playfulness": 5,
+          "grooming": 2
+        },
+        "fact": {
+          "en": "One of the oldest natural breeds, treasured in Ankara for centuries; odd-colored eyes are common.",
+          "tr": "En eski doğal türlerden biri, Ankara'da yüzyıllardır el üstünde tutulur; farklı renkte gözler sık görülür."
+        }
+      }
+    },
+    {
+      "id": "norwegian-forest",
+      "kind": "breed",
+      "title": {
+        "en": "Norwegian Forest",
+        "tr": "Norveç Orman Kedisi"
+      },
+      "subtitle": {
+        "en": "Thick coat for snowy woods",
+        "tr": "Karlı ormanlar için kalın tüy"
+      },
+      "accentColor": "#8C7A5B",
+      "file": "chapter_12_norwegian_forest",
+      "portrait": {
+        "palette": {
+          "b": "#B07A4A",
+          "d": "#6B4528",
+          "e": "#8DB04A",
+          "n": "#B5654A",
+          "w": "#F3EDE4"
+        },
+        "pixels": [
+          "...d................d...",
+          "...d................d...",
+          "........................",
+          "...bb..............bb...",
+          "...bbb............bbb...",
+          "...bbb..bbbbbbbb..bbb...",
+          "...bbbbbbbbbbbbbbbbbb...",
+          "...bbbbbdbbbdbbdbbbbb...",
+          "..bbbbbbdbbbdbbdbbbbbb..",
+          "..bbbbbbdbbbdbbdbbbbbb..",
+          "...bbbbbdbbbdbbdbbbbb...",
+          "...bbbbeebbbbbbeebbbb...",
+          "..bbbbee.ebbbbee.ebbbb..",
+          "..bbbbee.ebbbbee.ebbbb..",
+          ".bbbbbbeebbbbbbeebbbbbb.",
+          "bbbbbbbbbbbbbbbbbbbbbbbb",
+          "bbbbbbbbbwwnnwwbbbbbbbbb",
+          "bbbbbbbbwwwwwwwwbbbbbbbb",
+          "bbb.bbbwwwwwwwwwwbbb.bbb",
+          ".....bbwwwwwwwwwwbb.....",
+          "......bbwwwwwwwwbb......",
+          "........bwwwwwwb........"
+        ]
+      },
+      "card": {
+        "number": 12,
+        "rarity": "rare",
+        "origin": {
+          "en": "Norway",
+          "tr": "Norveç"
+        },
+        "lifespan": "12–16",
+        "coat": {
+          "en": "Long, water-resistant double coat",
+          "tr": "Uzun, su geçirmez çift kat"
+        },
+        "stats": {
+          "energy": 3,
+          "affection": 4,
+          "playfulness": 3,
+          "grooming": 3
+        },
+        "fact": {
+          "en": "Norse legends tell of forest cats pulling the goddess Freya's chariot.",
+          "tr": "İskandinav efsanelerinde tanrıça Freya'nın arabasını orman kedileri çeker."
+        }
+      }
+    },
+    {
+      "id": "turkish-van",
+      "kind": "breed",
+      "title": {
+        "en": "Turkish Van",
+        "tr": "Van Kedisi"
+      },
+      "subtitle": {
+        "en": "The cat that loves to swim",
+        "tr": "Yüzmeyi seven kedi"
+      },
+      "accentColor": "#C9B27C",
+      "file": "chapter_13_turkish_van",
+      "portrait": {
+        "palette": {
+          "b": "#EFE9E0",
+          "d": "#C2683A",
+          "e": "#E1B33F",
+          "f": "#4F86C6",
+          "n": "#E8A3A8"
+        },
+        "pixels": [
+          ".dd..................dd.",
+          ".dd..................dd.",
+          ".ddddddd.bbbbbb.ddddddd.",
+          ".ddddddddbbbbbbdddddddd.",
+          ".dddddddddbbbbddddddddd.",
+          "ddddddddddbbbbdddddddddd",
+          "dddddddddddbbbdddddddddd",
+          "ddddddddddbbbbdddddddddd",
+          "ddddddddddbbbbdddddddddd",
+          ".bdddddddbbbbbbdddddddb.",
+          "bbbddeeebbbbbbbbfffddbbb",
+          "bbbbbe..ebbbbbbff.fbbbbb",
+          "bbbbbe..ebbbbbbff.fbbbbb",
+          "bbbbbe..ebbbbbbff.fbbbbb",
+          "bbbbbeeebbbbbbbbfffbbbbb",
+          "bbbbbbbbbbbbbbbbbbbbbbbb",
+          "bbbbbbbbbbbbbbbbbbbbbbbb",
+          ".bbbbbbbbbbnnbbbbbbbbbb.",
+          ".bbbbbbbbbbbbbbbbbbbbbb.",
+          "..bbbbbbbbbbbbbbbbbbbb..",
+          "...bbbbbbbbbbbbbbbbbb...",
+          "....bbbbbbbbbbbbbbbb....",
+          ".....bbbbbbbbbbbbbb.....",
+          "........bbbbbbbb........"
+        ]
+      },
+      "card": {
+        "number": 13,
+        "rarity": "rare",
+        "origin": {
+          "en": "Türkiye (Lake Van)",
+          "tr": "Türkiye (Van Gölü)"
+        },
+        "lifespan": "12–17",
+        "coat": {
+          "en": "Semi-long, water-resistant",
+          "tr": "Yarı uzun, su geçirmez"
+        },
+        "stats": {
+          "energy": 5,
+          "affection": 3,
+          "playfulness": 5,
+          "grooming": 2
+        },
+        "fact": {
+          "en": "Nicknamed 'the swimming cat' for its love of water.",
+          "tr": "Suyu sevmesiyle 'yüzen kedi' olarak anılır."
+        }
+      }
+    },
+    {
+      "id": "maine-coon",
+      "kind": "breed",
+      "title": {
+        "en": "Maine Coon",
+        "tr": "Maine Coon"
+      },
+      "subtitle": {
+        "en": "Gentle giant with lynx tufts",
+        "tr": "Vaşak püsküllü nazik dev"
+      },
+      "accentColor": "#7A5C45",
+      "file": "chapter_14_maine_coon",
+      "portrait": {
+        "palette": {
+          "b": "#8A6A4E",
+          "d": "#4E3A2A",
+          "e": "#C9A53F",
+          "n": "#A0624A",
+          "w": "#EFE6DA"
+        },
+        "pixels": [
+          "...d................d...",
+          "...d................d...",
+          "........................",
+          "...bb..............bb...",
+          "...bbb....bbbb....bbb...",
+          "...bbb.bbbbbbbbbb.bbb...",
+          "...bbbbbdbbbdbbdbbbbb...",
+          "...bbbbbdbbbdbbdbbbbb...",
+          "..bbbbbbdbbbdbbdbbbbbb..",
+          "..bbbbbbdbbbdbbdbbbbbb..",
+          "..bbbbbeebbbbbbeebbbbb..",
+          "..bbbbe.eebbbbee.ebbbb..",
+          "..bbbbe.ebbbbbbe.ebbbb..",
+          "bbbbbbbeebbbbbbbebbbbbbb",
+          "bbbbbbbbbbwnnwbbbbbbbbbb",
+          "bbbbbbbbwwwnnwwwbbbbbbbb",
+          "bbb.bbbwwwwwwwwwwbbb.bbb",
+          ".b...bbwwwwwwwwwwbb...b.",
+          "......bbwwwwwwwwbb......",
+          "........bwwwwwwb........"
+        ]
+      },
+      "card": {
+        "number": 14,
+        "rarity": "rare",
+        "origin": {
+          "en": "United States (Maine)",
+          "tr": "ABD (Maine)"
+        },
+        "lifespan": "12–15",
+        "coat": {
+          "en": "Long, shaggy",
+          "tr": "Uzun, gür"
+        },
+        "stats": {
+          "energy": 3,
+          "affection": 4,
+          "playfulness": 4,
+          "grooming": 3
+        },
+        "fact": {
+          "en": "One of the largest domestic breeds; males can weigh more than 8 kg.",
+          "tr": "En iri evcil kedi türlerinden; erkekleri 8 kilonun üzerine çıkabilir."
+        }
+      }
+    },
+    {
+      "id": "exotic-shorthair",
+      "kind": "breed",
+      "title": {
+        "en": "Exotic Shorthair",
+        "tr": "Egzotik Kısa Tüylü"
+      },
+      "subtitle": {
+        "en": "A teddy bear in cat form",
+        "tr": "Kedi kılığında oyuncak ayı"
+      },
+      "accentColor": "#B58E6E",
+      "file": "chapter_15_exotic_shorthair",
+      "portrait": {
+        "palette": {
+          "b": "#E8B26A",
+          "d": "#C47A2C",
+          "e": "#B5652A",
+          "n": "#D98A7A"
+        },
+        "pixels": [
+          "..b.......bbbb.......b..",
+          "..bb..bbbbbbbbbbbb..bb..",
+          ".bbbbbbdbbbbbbbbdbbbbbb.",
+          ".bbbbbbddbbddbbbdbbbbbb.",
+          ".bbbbbbddbbddbbbdbbbbbb.",
+          ".bbbbbbddbbddbbbdbbbbbb.",
+          ".bbbbbbddbbddbbbdbbbbbb.",
+          "bbbbbbeebbbddbbbeebbbbbb",
+          "bbbbbee.ebbbbbbee.ebbbbb",
+          "bbbbbee.ebbbbbbee.ebbbbb",
+          "bbbbbeeeebbbbbbeeeebbbbb",
+          "bbbbbbbbbbbbbbbbbbbbbbbb",
+          "bbbbbbbbbbbbbbbbbbbbbbbb",
+          ".bbbbbbbbbbnnbbbbbbbbbb.",
+          "..bbbbbbbbbbbbbbbbbbbb..",
+          "..bbbbbbbbbbbbbbbbbbbb..",
+          "....bbbbbbbbbbbbbbbb....",
+          ".....bbbbbbbbbbbbbb.....",
+          ".......bbbbbbbbbb......."
+        ]
+      },
+      "card": {
+        "number": 15,
+        "rarity": "rare",
+        "origin": {
+          "en": "United States",
+          "tr": "ABD"
+        },
+        "lifespan": "12–15",
+        "coat": {
+          "en": "Short, plush",
+          "tr": "Kısa, peluş"
+        },
+        "stats": {
+          "energy": 2,
+          "affection": 4,
+          "playfulness": 3,
+          "grooming": 2
+        },
+        "fact": {
+          "en": "Often called 'a Persian in pajamas': the Persian look with an easy-care coat.",
+          "tr": "'Pijamalı İran kedisi' diye anılır: İran kedisi görünümü, bakımı kolay tüy."
+        }
+      }
+    },
+    {
+      "id": "burmese",
+      "kind": "breed",
+      "title": {
+        "en": "Burmese",
+        "tr": "Burma Kedisi"
+      },
+      "subtitle": {
+        "en": "Satin coat, golden eyes",
+        "tr": "Saten tüy, altın gözler"
+      },
+      "accentColor": "#6B4A35",
+      "file": "chapter_16_burmese",
+      "portrait": {
+        "palette": {
+          "b": "#6B4A35",
+          "e": "#E5B53B",
+          "n": "#8C5A4A"
+        },
+        "pixels": [
+          ".bb..................bb.",
+          ".bb..................bb.",
+          ".bbb.....bbbbbb.....bbb.",
+          ".bbb..bbbbbbbbbbbb..bbb.",
+          ".bbbbbbbbbbbbbbbbbbbbbb.",
+          "bbbbbbbbbbbbbbbbbbbbbbbb",
+          "bbbbbbbbbbbbbbbbbbbbbbbb",
+          "bbbbbbbbbbbbbbbbbbbbbbbb",
+          "bbbbbbbbbbbbbbbbbbbbbbbb",
+          "bbbbbbbbbbbbbbbbbbbbbbbb",
+          "bbbbbe.eebbbbbbee.ebbbbb",
+          "bbbbbe..ebbbbbbee.ebbbbb",
+          "bbbbbe..ebbbbbbee.ebbbbb",
+          "bbbbbe.eebbbbbbee.ebbbbb",
+          "bbbbbbebbbbbbbbbbebbbbbb",
+          "bbbbbbbbbbbbbbbbbbbbbbbb",
+          "bbbbbbbbbbbnnbbbbbbbbbbb",
+          ".bbbbbbbbbbbbbbbbbbbbbb.",
+          "..bbbbbbbbbbbbbbbbbbbb..",
+          "...bbbbbbbbbbbbbbbbbb...",
+          "....bbbbbbbbbbbbbbbb....",
+          ".....bbbbbbbbbbbbbb.....",
+          "........bbbbbbbb........"
+        ]
+      },
+      "card": {
+        "number": 16,
+        "rarity": "rare",
+        "origin": {
+          "en": "Myanmar (Burma)",
+          "tr": "Myanmar (Burma)"
+        },
+        "lifespan": "12–16",
+        "coat": {
+          "en": "Short, satin",
+          "tr": "Kısa, saten"
+        },
+        "stats": {
+          "energy": 4,
+          "affection": 5,
+          "playfulness": 4,
+          "grooming": 1
+        },
+        "fact": {
+          "en": "Modern Burmese descend from Wong Mau, a cat brought to the United States in 1930.",
+          "tr": "Modern Burmalar, 1930'da ABD'ye getirilen Wong Mau adlı kediden gelir."
+        }
+      }
+    },
+    {
+      "id": "chartreux",
+      "kind": "breed",
+      "title": {
+        "en": "Chartreux",
+        "tr": "Chartreux"
+      },
+      "subtitle": {
+        "en": "Blue-grey with a gentle smile",
+        "tr": "Gülümseyen mavi-gri kedi"
+      },
+      "accentColor": "#7F8C99",
+      "file": "chapter_17_chartreux",
+      "portrait": {
+        "palette": {
+          "b": "#7F8C99",
+          "e": "#D98B2B",
+          "n": "#5E6A75"
+        },
+        "pixels": [
+          "..b.......bbbb.......b..",
+          ".bbb...bbbbbbbbbb...bbb.",
+          ".bbbbbbbbbbbbbbbbbbbbbb.",
+          ".bbbbbbbbbbbbbbbbbbbbbb.",
+          ".bbbbbbbbbbbbbbbbbbbbbb.",
+          "bbbbbbbbbbbbbbbbbbbbbbbb",
+          "bbbbbbbbbbbbbbbbbbbbbbbb",
+          "bbbbbbeebbbbbbbbeebbbbbb",
+          "bbbbbe.eebbbbbbee.ebbbbb",
+          "bbbbbe..ebbbbbbee.ebbbbb",
+          "bbbbbe..ebbbbbbee.ebbbbb",
+          "bbbbbeeebbbbbbbbeeebbbbb",
+          "bbbbbbbbbbbbbbbbbbbbbbbb",
+          "bbbbbbbbbbbnnbbbbbbbbbbb",
+          ".bbbbbbbbbbnnbbbbbbbbbb.",
+          "..bbbbbbbbbbbbbbbbbbbb..",
+          "..bbbbbbbbbbbbbbbbbbbb..",
+          "....bbbbbbbbbbbbbbbb....",
+          ".....bbbbbbbbbbbbbb.....",
+          "........bbbbbbbb........"
+        ]
+      },
+      "card": {
+        "number": 17,
+        "rarity": "epic",
+        "origin": {
+          "en": "France",
+          "tr": "Fransa"
+        },
+        "lifespan": "12–15",
+        "coat": {
+          "en": "Short, woolly",
+          "tr": "Kısa, yünümsü"
+        },
+        "stats": {
+          "energy": 2,
+          "affection": 4,
+          "playfulness": 3,
+          "grooming": 2
+        },
+        "fact": {
+          "en": "A quiet French breed known for its 'smiling' face and copper eyes.",
+          "tr": "'Gülümseyen' yüzü ve bakır rengi gözleriyle bilinen sessiz bir Fransız türü."
+        }
+      }
+    },
+    {
+      "id": "egyptian-mau",
+      "kind": "breed",
+      "title": {
+        "en": "Egyptian Mau",
+        "tr": "Mısır Mau"
+      },
+      "subtitle": {
+        "en": "Natural spots, a born sprinter",
+        "tr": "Doğal benekler, doğuştan koşucu"
+      },
+      "accentColor": "#C9CBC4",
+      "file": "chapter_18_egyptian_mau",
+      "portrait": {
+        "palette": {
+          "b": "#C9CBC4",
+          "d": "#4D4A44",
+          "e": "#8DBF4A",
+          "n": "#B87F72"
+        },
+        "pixels": [
+          ".b....................b.",
+          ".bb..................bb.",
+          ".bbb................bbb.",
+          ".bbb................bbb.",
+          ".bbbb....bbbbbb....bbbb.",
+          "bbbbbb.bbbbbbbbbb.bbbbbb",
+          "bbbbbbbbbbbbbbbbbbbbbbbb",
+          "bbbbbbbbbbbbbbbbbbbbbbbb",
+          "bbbbbbbbbbbbbbbbbbbbbbbb",
+          "bbbbbbbbbbbbbbddbbbbbbbb",
+          "..bbbbbbbbbbbbddbbbbbb..",
+          "..bbbbeeebbbbbbeeebbbb..",
+          ".bbbbbe.eebbbbee.eebbbb.",
+          ".bbbbbe.eebbbbee.eebbbb.",
+          ".bbbbbe.ebbbbbbe.ebbbbb.",
+          "..bbbbbbbbbbbbddebbbbb..",
+          "..bbbbbbbbbbbbddbbbbbb..",
+          "..bbbbbbbbbnnbbbbbbbbb..",
+          "...bbbbddbbbddbbbbbbb...",
+          "....bbbddbbbddbbbbbb....",
+          ".....bbbbbbbbbbbbbb.....",
+          "......bbbbbbbbbbbb......",
+          "........bbbbbbbb........"
+        ]
+      },
+      "card": {
+        "number": 18,
+        "rarity": "epic",
+        "origin": {
+          "en": "Egypt",
+          "tr": "Mısır"
+        },
+        "lifespan": "12–15",
+        "coat": {
+          "en": "Short, naturally spotted",
+          "tr": "Kısa, doğal benekli"
+        },
+        "stats": {
+          "energy": 5,
+          "affection": 4,
+          "playfulness": 4,
+          "grooming": 1
+        },
+        "fact": {
+          "en": "One of the fastest house cats, said to sprint at around 48 km/h.",
+          "tr": "En hızlı ev kedilerinden; saatte 48 km civarında koşabildiği söylenir."
+        }
+      }
+    },
+    {
+      "id": "manx",
+      "kind": "breed",
+      "title": {
+        "en": "Manx",
+        "tr": "Manx"
+      },
+      "subtitle": {
+        "en": "The tailless cat of the Isle of Man",
+        "tr": "Man Adası'nın kuyruksuz kedisi"
+      },
+      "accentColor": "#D9A066",
+      "file": "chapter_19_manx",
+      "portrait": {
+        "palette": {
+          "b": "#D9A066",
+          "d": "#9C6233",
+          "e": "#C9A53F",
+          "n": "#C9705A"
+        },
+        "pixels": [
+          "..b..................b..",
+          ".bb..................bb.",
+          ".bbb....bbbbbbbb....bbb.",
+          ".bbbbbbbbbbbbbbbbbbbbbb.",
+          ".bbbbbbdbbbddbbbdbbbbbb.",
+          ".bbbbbbddbbddbbbdbbbbbb.",
+          "bbbbbbbddbbddbbbdbbbbbbb",
+          "bbbbbbbddbbddbbbdbbbbbbb",
+          "bbbbbbbddbbddbbbdbbbbbbb",
+          "bbbbbeeeebbbdbbeeeebbbbb",
+          "bbbbbe..ebbbbbbee.ebbbbb",
+          "bbbbbe..ebbbbbbee.ebbbbb",
+          "bbbbbeeeebbbbbbbeeebbbbb",
+          "bbbbbbbbbbbbbbbbbbbbbbbb",
+          "bbbbbbbbbbbnnbbbbbbbbbbb",
+          ".bbbbbbbbbbnnbbbbbbbbbb.",
+          ".bbbbbbbbbbbbbbbbbbbbbb.",
+          "..bbbbbbbbbbbbbbbbbbbb..",
+          "....bbbbbbbbbbbbbbbb....",
+          ".....bbbbbbbbbbbbbb.....",
+          ".......bbbbbbbbbb......."
+        ]
+      },
+      "card": {
+        "number": 19,
+        "rarity": "epic",
+        "origin": {
+          "en": "Isle of Man",
+          "tr": "Man Adası"
+        },
+        "lifespan": "8–14",
+        "coat": {
+          "en": "Short or long",
+          "tr": "Kısa ya da uzun"
+        },
+        "stats": {
+          "energy": 3,
+          "affection": 4,
+          "playfulness": 4,
+          "grooming": 2
+        },
+        "fact": {
+          "en": "Famous for being born without a tail; it runs with a rabbit-like hop.",
+          "tr": "Kuyruksuz doğmasıyla ünlüdür; tavşan gibi seken bir koşusu vardır."
+        }
+      }
+    },
+    {
+      "id": "bombay",
+      "kind": "breed",
+      "title": {
+        "en": "Bombay",
+        "tr": "Bombay"
+      },
+      "subtitle": {
+        "en": "A pocket-sized panther",
+        "tr": "Cep boyu bir panter"
+      },
+      "accentColor": "#2B2A2E",
+      "file": "chapter_20_bombay",
+      "portrait": {
+        "palette": {
+          "b": "#2B2A2E",
+          "e": "#D9822B",
+          "n": "#4A4148"
+        },
+        "pixels": [
+          ".bb..................bb.",
+          ".bb..................bb.",
+          ".bbb.....bbbbbb.....bbb.",
+          ".bbbb.bbbbbbbbbbbb.bbbb.",
+          ".bbbbbbbbbbbbbbbbbbbbbb.",
+          "bbbbbbbbbbbbbbbbbbbbbbbb",
+          "bbbbbbbbbbbbbbbbbbbbbbbb",
+          "bbbbbbbbbbbbbbbbbbbbbbbb",
+          "bbbbbbbbbbbbbbbbbbbbbbbb",
+          ".bbbbbbbbbbbbbbbbbbbbbb.",
+          "bbbbbbeebbbbbbbbeebbbbbb",
+          "bbbbbe..ebbbbbbee.ebbbbb",
+          "bbbbbe..ebbbbbbee.ebbbbb",
+          "bbbbbe..ebbbbbbee.ebbbbb",
+          "bbbbbeeebbbbbbbbeeebbbbb",
+          "bbbbbbbbbbbbbbbbbbbbbbbb",
+          "bbbbbbbbbbbbbbbbbbbbbbbb",
+          ".bbbbbbbbbbnnbbbbbbbbbb.",
+          ".bbbbbbbbbbbbbbbbbbbbbb.",
+          "..bbbbbbbbbbbbbbbbbbbb..",
+          "...bbbbbbbbbbbbbbbbbb...",
+          "....bbbbbbbbbbbbbbbb....",
+          ".....bbbbbbbbbbbbbb.....",
+          "........bbbbbbbb........"
+        ]
+      },
+      "card": {
+        "number": 20,
+        "rarity": "epic",
+        "origin": {
+          "en": "United States",
+          "tr": "ABD"
+        },
+        "lifespan": "12–16",
+        "coat": {
+          "en": "Short, glossy black",
+          "tr": "Kısa, parlak siyah"
+        },
+        "stats": {
+          "energy": 3,
+          "affection": 5,
+          "playfulness": 4,
+          "grooming": 1
+        },
+        "fact": {
+          "en": "Bred to look like a miniature black panther, with copper eyes.",
+          "tr": "Minyatür bir kara panter gibi görünmesi için geliştirildi; gözleri bakır rengidir."
+        }
+      }
+    },
+    {
+      "id": "siberian",
+      "kind": "breed",
+      "title": {
+        "en": "Siberian",
+        "tr": "Sibirya Kedisi"
+      },
+      "subtitle": {
+        "en": "Triple coat for Siberian winters",
+        "tr": "Sibirya kışına üç kat tüy"
+      },
+      "accentColor": "#A58B6F",
+      "file": "chapter_21_siberian",
+      "portrait": {
+        "palette": {
+          "b": "#A58B6F",
+          "d": "#5E4B3A",
+          "e": "#8DB04A",
+          "n": "#B5654A",
+          "w": "#F1EBE2"
+        },
+        "pixels": [
+          "...d................d...",
+          "...d................d...",
+          "........................",
+          "...bb..............bb...",
+          "...bbb....bbbb....bbb...",
+          "...bbb.bbbbbbbbbb.bbb...",
+          "...bbbbbdbbbdbbdbbbbb...",
+          "...bbbbbdbbbdbbdbbbbb...",
+          "..bbbbbbdbbbdbbdbbbbbb..",
+          "..bbbbbbdbbbdbbdbbbbbb..",
+          "..bbbbbeebbbbbbeebbbbb..",
+          "..bbbbe.eebbbbee.ebbbb..",
+          "..bbbbe.ebbbbbbe.ebbbb..",
+          "bbbbbbbeebbbbbbbebbbbbbb",
+          "bbbbbbbbbbwnnwbbbbbbbbbb",
+          "bbbbbbbbwwwnnwwwbbbbbbbb",
+          "bbb.bbbwwwwwwwwwwbbb.bbb",
+          ".b...bbwwwwwwwwwwbb...b.",
+          "......bbwwwwwwwwbb......",
+          "........bwwwwwwb........"
+        ]
+      },
+      "card": {
+        "number": 21,
+        "rarity": "epic",
+        "origin": {
+          "en": "Russia",
+          "tr": "Rusya"
+        },
+        "lifespan": "11–18",
+        "coat": {
+          "en": "Long, triple coat",
+          "tr": "Uzun, üç katlı"
+        },
+        "stats": {
+          "energy": 4,
+          "affection": 5,
+          "playfulness": 4,
+          "grooming": 3
+        },
+        "fact": {
+          "en": "Russia's national cat, with a thick triple coat for Siberian winters.",
+          "tr": "Rusya'nın ulusal kedisi; Sibirya kışları için kalın, üç katlı tüyü vardır."
+        }
+      }
+    },
+    {
+      "id": "devon-rex",
+      "kind": "breed",
+      "title": {
+        "en": "Devon Rex",
+        "tr": "Devon Rex"
+      },
+      "subtitle": {
+        "en": "Pixie ears and wavy fur",
+        "tr": "Peri kulakları ve dalgalı tüy"
+      },
+      "accentColor": "#C8B8A6",
+      "file": "chapter_22_devon_rex",
+      "portrait": {
+        "palette": {
+          "b": "#C8B8A6",
+          "e": "#D9A441",
+          "n": "#D9827A"
+        },
+        "pixels": [
+          ".b....................b.",
+          ".bb..................bb.",
+          ".bbb................bbb.",
+          ".bbb................bbb.",
+          ".bbbb.....bbbb.....bbbb.",
+          ".bbbbb.bbbbbbbbbb.bbbbb.",
+          "bbbbbbbbbbbbbbbbbbbbbbbb",
+          "bbbbbbbbbbbbbbbbbbbbbbbb",
+          "bbbbbbbbbbbbbbbbbbbbbbbb",
+          "bbbbbbbbbbbbbbbbbbbbbbbb",
+          "b.bbbbbbbbbbbbbbbbbbbb.b",
+          "..bbbbbebbbbbbbbebbbbb..",
+          "..bbbbe.ebbbbbbe.ebbbb..",
+          "..bbbbe.eebbbbee.ebbbb..",
+          "..bbbbe.eebbbbee.ebbbb..",
+          "..bbbbeeebbbbbbeeebbbb..",
+          "..bbbbbbbbbbbbbbbbbbbb..",
+          "..bbbbbbbbbnnbbbbbbbbb..",
+          "...bbbbbbbbnnbbbbbbbb...",
+          "...bbbbbbbbbbbbbbbbbb...",
+          "....bbbbbbbbbbbbbbbb....",
+          ".....bbbbbbbbbbbbbb.....",
+          "......bbbbbbbbbbbb......",
+          "........bbbbbbbb........"
+        ]
+      },
+      "card": {
+        "number": 22,
+        "rarity": "epic",
+        "origin": {
+          "en": "England (Devon)",
+          "tr": "İngiltere (Devon)"
+        },
+        "lifespan": "9–15",
+        "coat": {
+          "en": "Short, wavy",
+          "tr": "Kısa, dalgalı"
+        },
+        "stats": {
+          "energy": 5,
+          "affection": 5,
+          "playfulness": 5,
+          "grooming": 1
+        },
+        "fact": {
+          "en": "Huge ears and wavy fur earn it the nickname 'pixie cat'.",
+          "tr": "Kocaman kulakları ve dalgalı tüyüyle 'peri kedisi' diye anılır."
+        }
+      }
+    },
+    {
+      "id": "oriental-shorthair",
+      "kind": "breed",
+      "title": {
+        "en": "Oriental Shorthair",
+        "tr": "Oryantal Kısa Tüylü"
+      },
+      "subtitle": {
+        "en": "Sleek, talkative, all ears",
+        "tr": "İnce, konuşkan, kocaman kulaklı"
+      },
+      "accentColor": "#3F7A5A",
+      "file": "chapter_23_oriental_shorthair",
+      "portrait": {
+        "palette": {
+          "b": "#3F7A5A",
+          "e": "#8BC34A",
+          "n": "#9C6B5A"
+        },
+        "pixels": [
+          ".b....................b.",
+          ".bb..................bb.",
+          ".bbb................bbb.",
+          ".bbb................bbb.",
+          ".bbbb.....bbbb.....bbbb.",
+          ".bbbbb.bbbbbbbbbb.bbbbb.",
+          "bbbbbbbbbbbbbbbbbbbbbbbb",
+          "bbbbbbbbbbbbbbbbbbbbbbbb",
+          "bbbbbbbbbbbbbbbbbbbbbbbb",
+          "bbbbbbbbbbbbbbbbbbbbbbbb",
+          "b.bbbbbbbbbbbbbbbbbbbb.b",
+          "..bbbbbeebbbbbbeebbbbb..",
+          "..bbbbe.eebbbbee.ebbbb..",
+          "..bbbbe.eebbbbee.ebbbb..",
+          "..bbbbe.eebbbbee.ebbbb..",
+          "..bbbbeeebbbbbbeeebbbb..",
+          "..bbbbbbbbbbbbbbbbbbbb..",
+          "..bbbbbbbbbnnbbbbbbbbb..",
+          "...bbbbbbbbnnbbbbbbbb...",
+          "...bbbbbbbbbbbbbbbbbb...",
+          "....bbbbbbbbbbbbbbbb....",
+          ".....bbbbbbbbbbbbbb.....",
+          "......bbbbbbbbbbbb......",
+          "........bbbbbbbb........"
+        ]
+      },
+      "card": {
+        "number": 23,
+        "rarity": "legendary",
+        "origin": {
+          "en": "Thailand & United Kingdom",
+          "tr": "Tayland ve Birleşik Krallık"
+        },
+        "lifespan": "12–15",
+        "coat": {
+          "en": "Short, fine",
+          "tr": "Kısa, ince"
+        },
+        "stats": {
+          "energy": 5,
+          "affection": 5,
+          "playfulness": 5,
+          "grooming": 1
+        },
+        "fact": {
+          "en": "A Siamese cousin that comes in hundreds of colors and patterns.",
+          "tr": "Siyam'ın kuzeni; yüzlerce renk ve desende görülür."
+        }
+      }
+    },
+    {
+      "id": "japanese-bobtail",
+      "kind": "breed",
+      "title": {
+        "en": "Japanese Bobtail",
+        "tr": "Japon Bobtail"
+      },
+      "subtitle": {
+        "en": "Pom-pom tail, calico luck",
+        "tr": "Ponpon kuyruk, üç renkli şans"
+      },
+      "accentColor": "#F5F1EA",
+      "file": "chapter_24_japanese_bobtail",
+      "portrait": {
+        "palette": {
+          "b": "#F5F1EA",
+          "d": "#E08A3C",
+          "e": "#D9A441",
+          "k": "#2E2A2B",
+          "n": "#E59AA0"
+        },
+        "pixels": [
+          ".bb..................bb.",
+          ".bb..................bb.",
+          ".bbb.....bbbbbb.....bbb.",
+          ".bbbb.bbbbbbbbbbbb.bbbb.",
+          ".bbbbbbbbbbbbbbbbbbbbbb.",
+          "bbbbbbbbbbbbbbbbbbbbbbbb",
+          "bbbbdddddbbbbbbbbbbbbbbb",
+          "bbdddddddddbbbbbbbbbbbbb",
+          "bbdddddddddbbbbbbbbbbbbb",
+          ".bdddddddddbbbbbbbbbbbb.",
+          "bbddddeedddbbbbbeebbbbbb",
+          "bbbdde..edbbbbbee.ebbbbb",
+          "bbbbee..ebbbbbbee.ebbbbb",
+          "bbbbbe..ebbbbkkee.ekbbbb",
+          "bbbbbeeebbbbbkkkeeekkbbb",
+          "bbbbbbbbbbbbbkkkkkkkkbbb",
+          "bbbbbbbbbbbbbkkkkkkkkbbb",
+          ".bbbbbbbbbbnnbkkkkkkbbb.",
+          ".bbbbbbbbbbbbbbkkkbbbbb.",
+          "..bbbbbbbbbbbbbbbbbbbb..",
+          "...bbbbbbbbbbbbbbbbbb...",
+          "....bbbbbbbbbbbbbbbb....",
+          ".....bbbbbbbbbbbbbb.....",
+          "........bbbbbbbb........"
+        ]
+      },
+      "card": {
+        "number": 24,
+        "rarity": "legendary",
+        "origin": {
+          "en": "Japan",
+          "tr": "Japonya"
+        },
+        "lifespan": "15–18",
+        "coat": {
+          "en": "Short or long, often calico",
+          "tr": "Kısa ya da uzun, çoğu üç renkli"
+        },
+        "stats": {
+          "energy": 4,
+          "affection": 4,
+          "playfulness": 5,
+          "grooming": 1
+        },
+        "fact": {
+          "en": "The waving maneki-neko lucky cat figurines are modeled on this bobtailed breed.",
+          "tr": "El sallayan maneki-neko şans kedisi biblolarına bu kısa kuyruklu tür örnek alınır."
+        }
+      }
+    },
+    {
+      "id": "somali",
+      "kind": "breed",
+      "title": {
+        "en": "Somali",
+        "tr": "Somali"
+      },
+      "subtitle": {
+        "en": "The fox cat with a bushy tail",
+        "tr": "Gür kuyruklu tilki kedi"
+      },
+      "accentColor": "#C8743F",
+      "file": "chapter_25_somali",
+      "portrait": {
+        "palette": {
+          "b": "#C8743F",
+          "d": "#8C4A24",
+          "e": "#9CB84A",
+          "n": "#C9705A"
+        },
+        "pixels": [
+          "..b..................b..",
+          "..bb................bb..",
+          "..bb................bb..",
+          "..bbb..............bbb..",
+          "..bbbb..bbbbbbbb..bbbb..",
+          ".bbbbbbbbbbbbbbbbbbbbbb.",
+          ".bbbbbbbbddddddbbbbbbbb.",
+          ".bbbbbbbbddddddbbbbbbbb.",
+          ".bbbbbbbbddddddbbbbbbbb.",
+          "...bbbbbbbddddbbbbbbb...",
+          "...bbbbeebbbbbbeebbbb...",
+          "..bbbbee.ebbbbee.ebbbb..",
+          "..bbbbee.ebbbbee.ebbbb..",
+          ".bbbbbbeebbbbbbeebbbbbb.",
+          "bbbbbbbbbbbbbbbbbbbbbbbb",
+          "bbbbbbbbbbbnnbbbbbbbbbbb",
+          "bbbbbbbbbbbbbbbbbbbbbbbb",
+          "bbb.bbbbbbbbbbbbbbbb.bbb",
+          ".....bbbbbbbbbbbbbb.....",
+          "......bbbbbbbbbbbb......",
+          "........bbbbbbbb........"
+        ]
+      },
+      "card": {
+        "number": 25,
+        "rarity": "legendary",
+        "origin": {
+          "en": "North America",
+          "tr": "Kuzey Amerika"
+        },
+        "lifespan": "12–16",
+        "coat": {
+          "en": "Semi-long, ticked",
+          "tr": "Yarı uzun, kırçıllı"
+        },
+        "stats": {
+          "energy": 5,
+          "affection": 4,
+          "playfulness": 5,
+          "grooming": 2
+        },
+        "fact": {
+          "en": "A long-haired Abyssinian, nicknamed the 'fox cat' for its bushy tail.",
+          "tr": "Gür kuyruğu yüzünden 'tilki kedi' denen uzun tüylü bir Habeş kedisi."
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,374 @@
+{
+  "schemaVersion": 1,
+  "chapterID": "bombay",
+  "puzzles": [
+    {
+      "id": "bombay-001",
+      "title": {
+        "en": "Toe Beans",
+        "tr": "Pati Yastıkları"
+      },
+      "palette": {
+        "b": "#2B2A2E",
+        "n": "#4A4148"
+      },
+      "pixels": [
+        "...bbb.bbb...",
+        "...bnb.bnb...",
+        ".b.bnb.bnb.b.",
+        "bbb.b...b.bbb",
+        "bnb.......bnb",
+        "bnb.bbbbb.bnb",
+        "..bbbbbbbbb..",
+        "..bbbnnnbbb..",
+        "..bbnnnnnbb..",
+        "..bbnnnnnbb..",
+        "..bbnnnnnbb..",
+        "...bbnnnbb...",
+        "....bbbbb...."
+      ]
+    },
+    {
+      "id": "bombay-002",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi"
+      },
+      "palette": {
+        "n": "#4A4148",
+        "w": "#55525A"
+      },
+      "pixels": [
+        ".nnnnn.nnnnn.",
+        "nnnnnnnnnnnnn",
+        "nnwwnnnnnnnnn",
+        "nnnnnnnnnnnnn",
+        "nnnnnnnnnnnnn",
+        ".nnnnnnnnnnn.",
+        "..nnnnnnnnn..",
+        "..nnnnnnnnn..",
+        "...nnnnnnn...",
+        "....nnnnn....",
+        ".....nnn.....",
+        "......n......"
+      ]
+    },
+    {
+      "id": "bombay-003",
+      "title": {
+        "en": "Fish Snack",
+        "tr": "Balık Atıştırması"
+      },
+      "palette": {
+        "o": "#5C6B7A",
+        "p": "#8E8A93"
+      },
+      "pixels": [
+        "...oooo.....o",
+        ".oooopooo..oo",
+        "o..oopooooooo",
+        "oo.oopooooooo",
+        "ooooopooooooo",
+        ".oooopooo..oo",
+        "...oooo.....o"
+      ]
+    },
+    {
+      "id": "bombay-004",
+      "title": {
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak"
+      },
+      "palette": {
+        "o": "#5C6B7A"
+      },
+      "pixels": [
+        ".....ooooo...",
+        "....ooooooo..",
+        "...oo.oooo.o.",
+        "..oooo.o...o.",
+        "..oooo..oooo.",
+        "..ooo.oo.ooo.",
+        "..oo.ooo.ooo.",
+        "....ooooo.oo.",
+        "...oooooooo..",
+        "...o.ooooo...",
+        "ooo..........",
+        "............."
+      ]
+    },
+    {
+      "id": "bombay-005",
+      "title": {
+        "en": "Dinner Bowl",
+        "tr": "Mama Kabı"
+      },
+      "palette": {
+        "o": "#5C6B7A",
+        "p": "#8E8A93",
+        "w": "#55525A"
+      },
+      "pixels": [
+        "....pp.ppp....",
+        "..pppppppppp..",
+        ".pppppppppppp.",
+        "ooppppppppppoo",
+        "ooooppppppoooo",
+        ".oowwwwwwwwoo.",
+        ".oowwwwwwwwoo.",
+        ".oooooooooooo.",
+        "..oooooooooo.."
+      ]
+    },
+    {
+      "id": "bombay-006",
+      "title": {
+        "en": "Toy Mouse",
+        "tr": "Oyuncak Fare"
+      },
+      "palette": {
+        "n": "#4A4148",
+        "p": "#8E8A93"
+      },
+      "pixels": [
+        "........pnp...",
+        "......ppnnp...",
+        "....ppppppp...",
+        "....ppppppp.p.",
+        "....pppppppp..",
+        "n..npppppppp..",
+        ".nn..ppppp....",
+        ".............."
+      ]
+    },
+    {
+      "id": "bombay-007",
+      "title": {
+        "en": "Leftovers",
+        "tr": "Artıklar"
+      },
+      "palette": {
+        "p": "#8E8A93"
+      },
+      "pixels": [
+        "....p.p.pp....",
+        "..p.p.p.pp...p",
+        ".pp.p.p.pp..pp",
+        "pppppppppppppp",
+        ".pp.p.p.pp..pp",
+        "..p.p.p.pp...p",
+        "....p.p.pp...."
+      ]
+    },
+    {
+      "id": "bombay-008",
+      "title": {
+        "en": "Portrait",
+        "tr": "Portre"
+      },
+      "palette": {
+        "b": "#2B2A2E",
+        "e": "#D9822B"
+      },
+      "pixels": [
+        ".b..........b.",
+        ".b...bbbb...b.",
+        "bbbbbbbbbbbbbb",
+        "bbbbbbbbbbbbbb",
+        "bbbbbbbbbbbbbb",
+        "bbbbbbbbbbbbbb",
+        "bbbeebbbbeebbb",
+        "bbbeebbbbeebbb",
+        "bbbeebbbbeebbb",
+        "bbbbbbbbbbbbbb",
+        ".bbbbbbbbbbbb.",
+        ".bbbbbbbbbbbb.",
+        "..bbbbbbbbbb..",
+        "....bbbbbb...."
+      ]
+    },
+    {
+      "id": "bombay-009",
+      "title": {
+        "en": "Silver Night",
+        "tr": "Gümüş Gece"
+      },
+      "palette": {
+        "b": "#2B2A2E",
+        "y": "#F1E3A0"
+      },
+      "pixels": [
+        "......yy......",
+        "y....yyy......",
+        "....yyy.......",
+        "....yyy.......",
+        "...yyyy.......",
+        "...yyyyy......",
+        "...yyyyyy.....",
+        "....yyyyyy....",
+        "..bbyyyyyyyyy.",
+        "..bb..yyyyyy..",
+        "..bbb...y.....",
+        "..bbbb..b.....",
+        "..bbbb.b.....y",
+        "...bbbbb.....y"
+      ]
+    },
+    {
+      "id": "bombay-010",
+      "title": {
+        "en": "Nap Time",
+        "tr": "Şekerleme"
+      },
+      "palette": {
+        "b": "#2B2A2E"
+      },
+      "pixels": [
+        ".....b........",
+        "bb.b.bbbbbb...",
+        "bbbbbbbbbbbbb.",
+        "bbbbbbbbbbbbbb",
+        ".bbbbbbbbbbbbb",
+        ".bbbbbbbbbbbbb",
+        "...bbbbbbbbbbb",
+        "....bbbbbbbbb.",
+        "....bbbbbbbb.."
+      ]
+    },
+    {
+      "id": "bombay-011",
+      "title": {
+        "en": "Sitting Pretty",
+        "tr": "Uslu Oturuş"
+      },
+      "palette": {
+        "b": "#2B2A2E"
+      },
+      "pixels": [
+        ".....b.....",
+        "bb...b.....",
+        "bbbbbbb....",
+        "bbbbbbb....",
+        ".bbbbb.....",
+        ".bbbb......",
+        "...bbbb....",
+        "..bbbbbb..b",
+        "..bbbbbb..b",
+        ".bbbbbbbb.b",
+        ".bbbbbbb..b",
+        "..bbbbbb.bb",
+        "..bbbbbbbb.",
+        "..bbbb....."
+      ]
+    },
+    {
+      "id": "bombay-012",
+      "title": {
+        "en": "If I Fits",
+        "tr": "Kutu Sevdası"
+      },
+      "palette": {
+        "b": "#2B2A2E",
+        "e": "#D9822B",
+        "o": "#5C6B7A",
+        "p": "#8E8A93"
+      },
+      "pixels": [
+        "....b......b...",
+        "....bb....bb...",
+        "....bbbbbbbb...",
+        "....bbbbbbbb...",
+        "....bbebbebb...",
+        "....bbebbebb...",
+        "..oobbbbbbbooo.",
+        ".ppooobbbbooopp",
+        "..oooooooooooo.",
+        "..oooooooooooo.",
+        "..oooooooooooo.",
+        "..oooooooooooo.",
+        "..oooooooooooo."
+      ]
+    },
+    {
+      "id": "bombay-013",
+      "title": {
+        "en": "Moon Gazer",
+        "tr": "Ay Seyri"
+      },
+      "palette": {
+        "b": "#2B2A2E",
+        "y": "#F1E3A0"
+      },
+      "pixels": [
+        ".....yy......",
+        "...yyy.......",
+        "...yyy.......",
+        "..yyyy.......",
+        "..yyyy.......",
+        "..yyyy.......",
+        "..yyyyy......",
+        "..yyyyyy.....",
+        "bbbyyyyyyyyy.",
+        "bbb.yyyyyyy..",
+        ".bb..yyyy....",
+        ".bbb..b......",
+        "bbbbb.b......",
+        ".bbbbbb......",
+        ".bbbb........"
+      ]
+    },
+    {
+      "id": "bombay-014",
+      "title": {
+        "en": "Toe Beans",
+        "tr": "Pati Yastıkları"
+      },
+      "palette": {
+        "b": "#2B2A2E",
+        "n": "#4A4148"
+      },
+      "pixels": [
+        "....bb...bb....",
+        "...bnnb.bnnb...",
+        "...bnnb.bnnb...",
+        ".bb.bnb.bnb.bb.",
+        "bnnb.......bnnb",
+        "bnnb...b...bnnb",
+        "bnb.bbbbbbb.bnb",
+        "...bbbbbbbbb...",
+        "..bbbbbbbbbbb..",
+        "..bbbnnnnnbbb..",
+        "..bbnnnnnnnbb..",
+        "..bbnnnnnnnbb..",
+        "..bbbnnnnnbbb..",
+        "...bbbnnnbbb...",
+        ".....bbbbb....."
+      ]
+    },
+    {
+      "id": "bombay-015",
+      "title": {
+        "en": "Strut",
+        "tr": "Salınarak Yürüyüş"
+      },
+      "palette": {
+        "b": "#2B2A2E"
+      },
+      "pixels": [
+        "...............",
+        "bb.............",
+        "b........b..b..",
+        "b.......bbbbbb.",
+        ".b....b.bbbbbb.",
+        ".bbbbbbbbbbbb..",
+        "..bbbbbbbbbb...",
+        "..bbbbbbbbb....",
+        "..bbbbbbbb.....",
+        "..bbb..b.b.....",
+        "..b.b..b.b.....",
+        "..b.b..b.bb....",
+        "..b....b......."
+      ]
+    }
+  ]
+}

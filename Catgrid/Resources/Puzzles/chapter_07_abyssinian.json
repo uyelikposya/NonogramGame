@@ -1,0 +1,319 @@
+{
+  "schemaVersion": 1,
+  "chapterID": "abyssinian",
+  "puzzles": [
+    {
+      "id": "abyssinian-001",
+      "title": {
+        "en": "Toe Beans",
+        "tr": "Pati Yastıkları"
+      },
+      "palette": {
+        "b": "#C47F4F",
+        "n": "#C9705A"
+      },
+      "pixels": [
+        "..b.b..",
+        "bbn.nbb",
+        "nn.b.nn",
+        ".bbbbb.",
+        ".bnnnb.",
+        ".bnnnb.",
+        "..bbb.."
+      ]
+    },
+    {
+      "id": "abyssinian-002",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi"
+      },
+      "palette": {
+        "n": "#C9705A",
+        "w": "#F2D7B6"
+      },
+      "pixels": [
+        ".nnnnn.",
+        "nwnnnnn",
+        "nnnnnnn",
+        ".nnnnn.",
+        ".nnnnn.",
+        "..nnn..",
+        "...n..."
+      ]
+    },
+    {
+      "id": "abyssinian-003",
+      "title": {
+        "en": "Fish Snack",
+        "tr": "Balık Atıştırması"
+      },
+      "palette": {
+        "o": "#E0B66A"
+      },
+      "pixels": [
+        ".ooo..o",
+        "o.ooooo",
+        "ooooooo",
+        ".ooo..o"
+      ]
+    },
+    {
+      "id": "abyssinian-004",
+      "title": {
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak"
+      },
+      "palette": {
+        "o": "#E0B66A"
+      },
+      "pixels": [
+        "...oooo.",
+        "..o.oo.o",
+        ".ooo..oo",
+        ".oo.o.oo",
+        "...ooooo",
+        "..ooooo.",
+        "oo......"
+      ]
+    },
+    {
+      "id": "abyssinian-005",
+      "title": {
+        "en": "Dinner Bowl",
+        "tr": "Mama Kabı"
+      },
+      "palette": {
+        "o": "#E0B66A",
+        "p": "#7D5A44",
+        "w": "#F2D7B6"
+      },
+      "pixels": [
+        "..pppp..",
+        ".pppppp.",
+        "ooppppoo",
+        ".owwwwo.",
+        ".oooooo."
+      ]
+    },
+    {
+      "id": "abyssinian-006",
+      "title": {
+        "en": "If I Fits",
+        "tr": "Kutu Sevdası"
+      },
+      "palette": {
+        "b": "#C47F4F",
+        "e": "#9CB84A",
+        "o": "#E0B66A",
+        "p": "#7D5A44"
+      },
+      "pixels": [
+        "........",
+        ".bb..b..",
+        ".bbbbb..",
+        "..bbeb..",
+        "pobbboo.",
+        "ooooooo.",
+        "ooooooo.",
+        "ooooooo."
+      ]
+    },
+    {
+      "id": "abyssinian-007",
+      "title": {
+        "en": "Leftovers",
+        "tr": "Artıklar"
+      },
+      "palette": {
+        "p": "#7D5A44"
+      },
+      "pixels": [
+        "...ppp..",
+        "pppppppp",
+        "p..pppp.",
+        ".....p.."
+      ]
+    },
+    {
+      "id": "abyssinian-008",
+      "title": {
+        "en": "Portrait",
+        "tr": "Portre"
+      },
+      "palette": {
+        "b": "#C47F4F",
+        "d": "#8C5532",
+        "e": "#9CB84A"
+      },
+      "pixels": [
+        "b......b",
+        "bb.bb.bb",
+        "bbbddbbb",
+        "bbbddbbb",
+        "bbebbebb",
+        ".bbbbbb.",
+        ".bbbbbb.",
+        "..bbbb.."
+      ]
+    },
+    {
+      "id": "abyssinian-009",
+      "title": {
+        "en": "Moon Gazer",
+        "tr": "Ay Seyri"
+      },
+      "palette": {
+        "b": "#C47F4F",
+        "y": "#E9C46A"
+      },
+      "pixels": [
+        "....y...",
+        "....yy..",
+        "....yyy.",
+        "....yyy.",
+        "...yyyy.",
+        ".yyyyybb",
+        "..yy..bb",
+        "...b.bbb",
+        "....bbb."
+      ]
+    },
+    {
+      "id": "abyssinian-010",
+      "title": {
+        "en": "Nap Time",
+        "tr": "Şekerleme"
+      },
+      "palette": {
+        "b": "#C47F4F",
+        "d": "#8C5532"
+      },
+      "pixels": [
+        "....b....",
+        "bb.bbbb..",
+        "bbbbbdbbb",
+        ".bbbbbbbb",
+        "..bbbbbbb",
+        "...bbbbb."
+      ]
+    },
+    {
+      "id": "abyssinian-011",
+      "title": {
+        "en": "Sitting Pretty",
+        "tr": "Uslu Oturuş"
+      },
+      "palette": {
+        "b": "#C47F4F",
+        "d": "#8C5532"
+      },
+      "pixels": [
+        ".......",
+        "bb.bb..",
+        "bbbbb..",
+        ".bbb...",
+        "..bb...",
+        ".bbdb.b",
+        ".bbbbbb",
+        ".bbbbbb",
+        "..bbbb."
+      ]
+    },
+    {
+      "id": "abyssinian-012",
+      "title": {
+        "en": "If I Fits",
+        "tr": "Kutu Sevdası"
+      },
+      "palette": {
+        "b": "#C47F4F",
+        "e": "#9CB84A",
+        "o": "#E0B66A",
+        "p": "#7D5A44"
+      },
+      "pixels": [
+        ".........",
+        "..b...b..",
+        "..bbbbb..",
+        "..bbbbb..",
+        "..bebeb..",
+        "ppobbbopp",
+        ".ooooooo.",
+        ".ooooooo.",
+        ".ooooooo."
+      ]
+    },
+    {
+      "id": "abyssinian-013",
+      "title": {
+        "en": "Moon Gazer",
+        "tr": "Ay Seyri"
+      },
+      "palette": {
+        "b": "#C47F4F",
+        "y": "#E9C46A"
+      },
+      "pixels": [
+        "...yy....",
+        "..yy.....",
+        ".yyy.....",
+        ".yyy.....",
+        ".yyyy....",
+        ".byyyyy..",
+        "bb.yyyyy.",
+        "bbb.yy...",
+        "bbb.b....",
+        ".bbbb...."
+      ]
+    },
+    {
+      "id": "abyssinian-014",
+      "title": {
+        "en": "Toe Beans",
+        "tr": "Pati Yastıkları"
+      },
+      "palette": {
+        "b": "#C47F4F",
+        "n": "#C9705A"
+      },
+      "pixels": [
+        "...b..b...",
+        "..bnbbnb..",
+        "bbbb..bbbb",
+        "nnb....bnn",
+        "bbbbbbbbbb",
+        "..bbbbbb..",
+        ".bbnnnnbb.",
+        ".bbnnnnbb.",
+        "..bnnnnb..",
+        "...bbbb..."
+      ]
+    },
+    {
+      "id": "abyssinian-015",
+      "title": {
+        "en": "Ancient Grace",
+        "tr": "Kadim Zarafet"
+      },
+      "palette": {
+        "b": "#C47F4F",
+        "d": "#8C5532",
+        "o": "#E0B66A",
+        "y": "#E9C46A"
+      },
+      "pixels": [
+        ".........",
+        "....bbb..",
+        "....bbb..",
+        "....bb...",
+        "....yy...",
+        "....bbb..",
+        "...bbbb.d",
+        ".oobbbb.d",
+        ".oobbbb.d",
+        "oooobbdd."
+      ]
+    }
+  ]
+}

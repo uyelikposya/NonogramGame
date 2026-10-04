@@ -1,0 +1,359 @@
+{
+  "schemaVersion": 1,
+  "chapterID": "turkish-van",
+  "puzzles": [
+    {
+      "id": "turkish-van-001",
+      "title": {
+        "en": "Toe Beans",
+        "tr": "Pati Yastıkları"
+      },
+      "palette": {
+        "b": "#EFE9E0",
+        "n": "#E8A3A8"
+      },
+      "pixels": [
+        "...b..b...",
+        "..bnbbnb..",
+        "bbbb..bbbb",
+        "nnb....bnn",
+        "bbbbbbbbbb",
+        "..bbbbbb..",
+        ".bbnnnnbb.",
+        ".bbnnnnbb.",
+        "..bnnnnb..",
+        "...bbbb..."
+      ]
+    },
+    {
+      "id": "turkish-van-002",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi"
+      },
+      "palette": {
+        "n": "#E8A3A8",
+        "w": "#FBF8F3"
+      },
+      "pixels": [
+        ".nnnnnnnn.",
+        "nnwnnnnnnn",
+        "nnwnnnnnnn",
+        "nnnnnnnnnn",
+        ".nnnnnnnn.",
+        "..nnnnnn..",
+        "...nnnn...",
+        "....nn....",
+        "....nn...."
+      ]
+    },
+    {
+      "id": "turkish-van-003",
+      "title": {
+        "en": "Fish Snack",
+        "tr": "Balık Atıştırması"
+      },
+      "palette": {
+        "o": "#E07A5F",
+        "p": "#9AA5B1"
+      },
+      "pixels": [
+        "..oooo...o",
+        "o.oopoo.oo",
+        "o.oopooooo",
+        "oooopoo.oo",
+        "..oooo...o"
+      ]
+    },
+    {
+      "id": "turkish-van-004",
+      "title": {
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak"
+      },
+      "palette": {
+        "o": "#E07A5F"
+      },
+      "pixels": [
+        "...ooo.....",
+        ".ooooooo...",
+        "o.ooo.oo...",
+        "oo...oooo..",
+        "ooo...ooo..",
+        "ooo.oo.oo..",
+        "oo.oooo....",
+        ".ooooooo...",
+        "..oooo.o...",
+        "........ooo"
+      ]
+    },
+    {
+      "id": "turkish-van-005",
+      "title": {
+        "en": "Dinner Bowl",
+        "tr": "Mama Kabı"
+      },
+      "palette": {
+        "o": "#E07A5F",
+        "p": "#9AA5B1",
+        "w": "#FBF8F3"
+      },
+      "pixels": [
+        "...ppppp...",
+        ".ppppppppp.",
+        "opppppppppo",
+        "ooopppppooo",
+        ".owwwwwwwo.",
+        ".ooooooooo.",
+        ".ooooooooo."
+      ]
+    },
+    {
+      "id": "turkish-van-006",
+      "title": {
+        "en": "If I Fits",
+        "tr": "Kutu Sevdası"
+      },
+      "palette": {
+        "b": "#EFE9E0",
+        "d": "#C2683A",
+        "e": "#E1B33F",
+        "f": "#4F86C6",
+        "o": "#E07A5F",
+        "p": "#9AA5B1"
+      },
+      "pixels": [
+        "...........",
+        "..dd...d...",
+        "..ddbbdd...",
+        "..bbbbbb...",
+        "..bbfbeb...",
+        "poobbbboop.",
+        ".ooooooooo.",
+        ".ooooooooo.",
+        ".ooooooooo.",
+        ".ooooooooo."
+      ]
+    },
+    {
+      "id": "turkish-van-007",
+      "title": {
+        "en": "Leftovers",
+        "tr": "Artıklar"
+      },
+      "palette": {
+        "p": "#9AA5B1"
+      },
+      "pixels": [
+        "...p.p.p...",
+        ".p.p.p.p..p",
+        "ppppppppppp",
+        ".p.p.p.p..p",
+        "...p.p.p..."
+      ]
+    },
+    {
+      "id": "turkish-van-008",
+      "title": {
+        "en": "Nap Time",
+        "tr": "Şekerleme"
+      },
+      "palette": {
+        "b": "#EFE9E0",
+        "d": "#C2683A"
+      },
+      "pixels": [
+        "............",
+        "ddbbdbbbbb..",
+        "ddbdddbbbbb.",
+        "d....dbbbbbb",
+        ".bbbbbbbbbbb",
+        "..bbbbbbbbdd",
+        "...bbbbbbbd.",
+        "...ddddddd.."
+      ]
+    },
+    {
+      "id": "turkish-van-009",
+      "title": {
+        "en": "Lake Swimmer",
+        "tr": "Göl Yüzücüsü"
+      },
+      "palette": {
+        "b": "#EFE9E0",
+        "d": "#C2683A",
+        "e": "#E1B33F",
+        "f": "#4F86C6",
+        "u": "#4A90C2"
+      },
+      "pixels": [
+        "..d......d..",
+        "..dddbbddd..",
+        "..dddbbddd..",
+        "..bdebbfdb..",
+        "..bbebbfbb..",
+        "..bbbbbbbb..",
+        "...bbbbbb...",
+        ".uuubuubuuu.",
+        "u..uu..uu..u",
+        "uuuuuuuuuuuu"
+      ]
+    },
+    {
+      "id": "turkish-van-010",
+      "title": {
+        "en": "Sitting Pretty",
+        "tr": "Uslu Oturuş"
+      },
+      "palette": {
+        "b": "#EFE9E0",
+        "d": "#C2683A"
+      },
+      "pixels": [
+        "..........",
+        "dd.bdd....",
+        "dddbdd....",
+        "dbbbbd....",
+        ".bbbb.....",
+        "..bbbb....",
+        "..bbbbb..d",
+        ".bbbbbbb.d",
+        ".bbbbbbb.d",
+        ".bbbbbb..d",
+        "..bbbbbdd.",
+        "..bbbb.d.."
+      ]
+    },
+    {
+      "id": "turkish-van-011",
+      "title": {
+        "en": "Strut",
+        "tr": "Salınarak Yürüyüş"
+      },
+      "palette": {
+        "b": "#EFE9E0",
+        "d": "#C2683A"
+      },
+      "pixels": [
+        "..........d.",
+        "d..d......d.",
+        "ddbdd.....d.",
+        "ddbddbbb..d.",
+        ".bbbbbbbbd..",
+        "...bbbbbbb..",
+        "...bbbbbbb..",
+        "...b.b.b.b..",
+        "...b.b.b.b..",
+        ".....b.b.b.."
+      ]
+    },
+    {
+      "id": "turkish-van-012",
+      "title": {
+        "en": "If I Fits",
+        "tr": "Kutu Sevdası"
+      },
+      "palette": {
+        "b": "#EFE9E0",
+        "d": "#C2683A",
+        "e": "#E1B33F",
+        "f": "#4F86C6",
+        "o": "#E07A5F",
+        "p": "#9AA5B1"
+      },
+      "pixels": [
+        "............",
+        "...d....d...",
+        "...ddbbdd...",
+        "...dbbbbd...",
+        "...bfbeeb...",
+        "...bbbbbb...",
+        "ppoobbbboop.",
+        ".oooooooooo.",
+        ".ooooooooo..",
+        ".oooooooooo.",
+        ".oooooooooo."
+      ]
+    },
+    {
+      "id": "turkish-van-013",
+      "title": {
+        "en": "Moon Gazer",
+        "tr": "Ay Seyri"
+      },
+      "palette": {
+        "b": "#EFE9E0",
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        "....yy.....",
+        "...yyy.....",
+        "..yyy......",
+        "..yyy......",
+        ".yyyy......",
+        ".yyyyy.....",
+        "..yyyyy....",
+        "bbyyyyyyyy.",
+        "bb.yyyyyy..",
+        ".bb..yy....",
+        "bbbb.b.....",
+        "bbbb.b.....",
+        ".bbbbb....."
+      ]
+    },
+    {
+      "id": "turkish-van-014",
+      "title": {
+        "en": "Toe Beans",
+        "tr": "Pati Yastıkları"
+      },
+      "palette": {
+        "b": "#EFE9E0",
+        "n": "#E8A3A8"
+      },
+      "pixels": [
+        "...bbb.bbb...",
+        "...bnb.bnb...",
+        ".b.bnb.bnb.b.",
+        "bbb.b...b.bbb",
+        "bnb.......bnb",
+        "bnb.bbbbb.bnb",
+        "..bbbbbbbbb..",
+        "..bbbnnnbbb..",
+        "..bbnnnnnbb..",
+        "..bbnnnnnbb..",
+        "..bbnnnnnbb..",
+        "...bbnnnbb...",
+        "....bbbbb...."
+      ]
+    },
+    {
+      "id": "turkish-van-015",
+      "title": {
+        "en": "Portrait",
+        "tr": "Portre"
+      },
+      "palette": {
+        "b": "#EFE9E0",
+        "d": "#C2683A",
+        "e": "#E1B33F",
+        "f": "#4F86C6"
+      },
+      "pixels": [
+        ".d.........dd",
+        ".ddddbbbddddd",
+        "ddddddbbddddd",
+        "ddddddbbddddd",
+        "dddddbbbddddd",
+        "bbdffbbbeedbb",
+        "bbbffbbbeeebb",
+        "bbbffbbbbebbb",
+        "bbbbbbbbbbbbb",
+        ".bbbbbbbbbbbb",
+        "..bbbbbbbbbb.",
+        "...bbbbbbbb..",
+        ".....bbbb...."
+      ]
+    }
+  ]
+}

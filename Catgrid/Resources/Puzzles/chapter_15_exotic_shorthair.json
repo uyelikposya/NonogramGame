@@ -1,0 +1,359 @@
+{
+  "schemaVersion": 1,
+  "chapterID": "exotic-shorthair",
+  "puzzles": [
+    {
+      "id": "exotic-shorthair-001",
+      "title": {
+        "en": "Toe Beans",
+        "tr": "Pati Yastıkları"
+      },
+      "palette": {
+        "b": "#E8B26A",
+        "n": "#D98A7A"
+      },
+      "pixels": [
+        "...bb.bb...",
+        "..bnnbnnb..",
+        "bbbbb.bnbbb",
+        "bnb.....bnb",
+        "bnbbbbbbbnb",
+        "..bbbbbbb..",
+        "..bbnnnbb..",
+        ".bbnnnnnbb.",
+        ".bbnnnnnbb.",
+        "..bbnnnbb..",
+        "...bbbbb..."
+      ]
+    },
+    {
+      "id": "exotic-shorthair-002",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi"
+      },
+      "palette": {
+        "n": "#D98A7A",
+        "w": "#F7E7CF"
+      },
+      "pixels": [
+        ".nnnn.nnnn.",
+        "nnwnnnnnnnn",
+        "nnwwnnnnnnn",
+        "nnnnnnnnnnn",
+        ".nnnnnnnnn.",
+        ".nnnnnnnnn.",
+        "..nnnnnnn..",
+        "...nnnnn...",
+        "....nnn....",
+        ".....n....."
+      ]
+    },
+    {
+      "id": "exotic-shorthair-003",
+      "title": {
+        "en": "Fish Snack",
+        "tr": "Balık Atıştırması"
+      },
+      "palette": {
+        "o": "#7A9E7E",
+        "p": "#E9C46A"
+      },
+      "pixels": [
+        "..oooo....o",
+        ".ooopooo.oo",
+        "o.oopoooooo",
+        "oooopoooooo",
+        ".ooopooo.oo",
+        "..oooo....o"
+      ]
+    },
+    {
+      "id": "exotic-shorthair-004",
+      "title": {
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak"
+      },
+      "palette": {
+        "o": "#7A9E7E"
+      },
+      "pixels": [
+        "..ooooo.....",
+        ".ooooooo....",
+        "o.oooo.oo...",
+        "oo....oooo..",
+        "oooo..oooo..",
+        "ooo..o.ooo..",
+        "ooo.ooo.o...",
+        ".o.ooooo....",
+        "..ooooooo...",
+        "....oo..oo..",
+        "..........oo"
+      ]
+    },
+    {
+      "id": "exotic-shorthair-005",
+      "title": {
+        "en": "Dinner Bowl",
+        "tr": "Mama Kabı"
+      },
+      "palette": {
+        "o": "#7A9E7E",
+        "p": "#E9C46A",
+        "w": "#F7E7CF"
+      },
+      "pixels": [
+        "....p.pp....",
+        "..pppppppp..",
+        ".pppppppppp.",
+        "ooppppppppoo",
+        "oooooooooooo",
+        ".oowwwwwwoo.",
+        ".oooooooooo.",
+        "..oooooooo.."
+      ]
+    },
+    {
+      "id": "exotic-shorthair-006",
+      "title": {
+        "en": "If I Fits",
+        "tr": "Kutu Sevdası"
+      },
+      "palette": {
+        "b": "#E8B26A",
+        "e": "#B5652A",
+        "o": "#7A9E7E",
+        "p": "#E9C46A"
+      },
+      "pixels": [
+        "...b....b...",
+        "...bbbbbb...",
+        "...bbbbbb...",
+        "...beebeb...",
+        "..obbbbbbo..",
+        "ppoobbbboopp",
+        ".oooooooooo.",
+        "............",
+        ".oooooooooo.",
+        ".oooooooooo."
+      ]
+    },
+    {
+      "id": "exotic-shorthair-007",
+      "title": {
+        "en": "Leftovers",
+        "tr": "Artıklar"
+      },
+      "palette": {
+        "p": "#E9C46A"
+      },
+      "pixels": [
+        "...p.p.p....",
+        ".ppppp.p...p",
+        "pppppppppppp",
+        "pppppppppppp",
+        ".ppppp.p...p",
+        "...p.p.p...."
+      ]
+    },
+    {
+      "id": "exotic-shorthair-008",
+      "title": {
+        "en": "Portrait",
+        "tr": "Portre"
+      },
+      "palette": {
+        "b": "#E8B26A",
+        "d": "#C47A2C",
+        "e": "#B5652A"
+      },
+      "pixels": [
+        ".....bb...b.",
+        ".bbbbbbbbbb.",
+        ".bbbdbdbdbb.",
+        ".bbebbbbebbb",
+        "bbbeebbbeebb",
+        ".bbbbbbbbbbb",
+        ".bbbbbbbbbb.",
+        "..bbbbbbbb..",
+        "....bbbb...."
+      ]
+    },
+    {
+      "id": "exotic-shorthair-009",
+      "title": {
+        "en": "Teddy Face",
+        "tr": "Oyuncak Ayı Yüzü"
+      },
+      "palette": {
+        "b": "#E8B26A",
+        "d": "#C47A2C",
+        "e": "#B5652A",
+        "w": "#F7E7CF"
+      },
+      "pixels": [
+        ".b..bbbbbb.b.",
+        ".bbbdbbbbdbbb",
+        ".bbbdbbbbdbbb",
+        ".bbbebbbbebbb",
+        "bbbeebbbeeebb",
+        "bbbeebbbbebbb",
+        ".bbbbbwwbbbbb",
+        ".bbbbwwwwbbb.",
+        "..bbbbwwbbb..",
+        ".....bbbb...."
+      ]
+    },
+    {
+      "id": "exotic-shorthair-010",
+      "title": {
+        "en": "Nap Time",
+        "tr": "Şekerleme"
+      },
+      "palette": {
+        "b": "#E8B26A",
+        "d": "#C47A2C"
+      },
+      "pixels": [
+        ".....bbbbb...",
+        "bbbbbbdbbdbb.",
+        "bbbbbbdbbdbbb",
+        "bb...bbbbbbbb",
+        ".bbbbbbbbbbbd",
+        "..bbbbbbbbbdd",
+        "...bbbbbbbdd.",
+        "...dddddddd.."
+      ]
+    },
+    {
+      "id": "exotic-shorthair-011",
+      "title": {
+        "en": "Sitting Pretty",
+        "tr": "Uslu Oturuş"
+      },
+      "palette": {
+        "b": "#E8B26A",
+        "d": "#C47A2C"
+      },
+      "pixels": [
+        ".....b.....",
+        "bbbbbb.....",
+        "bbbbbbb....",
+        ".bbbbb.....",
+        ".bbbbb.....",
+        "...bbbb....",
+        "..bbdddb..d",
+        "..bbdddb..d",
+        ".bbbbbbb..d",
+        ".bbbbbbb..d",
+        "..bbbbbb.dd",
+        "..bbbbbbdd.",
+        "..bbbb....."
+      ]
+    },
+    {
+      "id": "exotic-shorthair-012",
+      "title": {
+        "en": "Strut",
+        "tr": "Salınarak Yürüyüş"
+      },
+      "palette": {
+        "b": "#E8B26A",
+        "d": "#C47A2C"
+      },
+      "pixels": [
+        "............d",
+        "............d",
+        "bbbbb.......d",
+        "bbbbbbbb...dd",
+        ".bbbbbddbbdd.",
+        "..bbbbbbbbb..",
+        "...bbbbbbbb..",
+        "...bbbbbbbb..",
+        "...b.b..b.b..",
+        "...b.bb.b.b..",
+        "...b..b.b.b.."
+      ]
+    },
+    {
+      "id": "exotic-shorthair-013",
+      "title": {
+        "en": "If I Fits",
+        "tr": "Kutu Sevdası"
+      },
+      "palette": {
+        "b": "#E8B26A",
+        "e": "#B5652A",
+        "o": "#7A9E7E",
+        "p": "#E9C46A"
+      },
+      "pixels": [
+        "....b.....b...",
+        "....bbbbbbb...",
+        "....bbbbbbb...",
+        "....bbebebb...",
+        "....beebeeb...",
+        "..oobbbbbbboo.",
+        ".ppoobbbbooopp",
+        "..ooooooooooo.",
+        "..............",
+        "..ooooooooooo.",
+        "..ooooooooooo.",
+        "..ooooooooooo."
+      ]
+    },
+    {
+      "id": "exotic-shorthair-014",
+      "title": {
+        "en": "Moon Gazer",
+        "tr": "Ay Seyri"
+      },
+      "palette": {
+        "b": "#E8B26A",
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        "....yyy.....",
+        "...yyy......",
+        "..yyyy......",
+        "..yyyy......",
+        "..yyyy......",
+        "..yyyy......",
+        "..yyyyy.....",
+        "..yyyyyy....",
+        "bbbyyyyyyyy.",
+        "bb..yyyyyy..",
+        ".bbb..b.....",
+        "bbbb..b.....",
+        "bbbb..b.....",
+        ".bbbbb......"
+      ]
+    },
+    {
+      "id": "exotic-shorthair-015",
+      "title": {
+        "en": "Royal Cushion",
+        "tr": "Saray Minderi"
+      },
+      "palette": {
+        "b": "#E8B26A",
+        "n": "#D98A7A",
+        "o": "#7A9E7E",
+        "p": "#E9C46A"
+      },
+      "pixels": [
+        "..b...b.......",
+        ".bbbbbb.......",
+        ".bbbbbb.......",
+        ".bbbbbbbb.....",
+        "..bbnbbbbbbb..",
+        ".bbbbbbbbbbbb.",
+        ".bbbbbbbbbbbb.",
+        ".obbbbbbbbbbo.",
+        "ooobbbbbbbbooo",
+        "pppppppppppppp",
+        "oooooooooooooo"
+      ]
+    }
+  ]
+}

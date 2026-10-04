@@ -11,3 +11,4 @@ build/
 .DS_Store
 Ninni/Resources/Info.plist
 __pycache__/
+.tools/

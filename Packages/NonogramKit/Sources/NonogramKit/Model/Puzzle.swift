@@ -30,7 +30,7 @@ public enum TutorialLesson: String, Codable, Sendable, CaseIterable {
 /// `.` boş kare, diğer her karakter `palette`teki bir renk ve dolu karedir.
 /// İpuçları saklanmaz, çözümden hesaplanır; böylece veri ile ipucu asla çelişmez.
 public struct Puzzle: Identifiable, Sendable {
-    public static let emptyPixel: Character = "."
+    public static let emptyPixel: Character = PixelArt.emptyPixel
 
     public let id: String
     public let title: LocalizedText
@@ -89,35 +89,11 @@ extension Puzzle: Decodable {
         let paletteHex = try container.decode([String: String].self, forKey: .palette)
         let pixels = try container.decode([String].self, forKey: .pixels)
 
-        func corrupted(_ message: String, _ key: CodingKeys) -> DecodingError {
-            .dataCorruptedError(forKey: key, in: container, debugDescription: "\(id): \(message)")
-        }
-
-        var palette: [Character: RGBColor] = [:]
-        for (key, hex) in paletteHex {
-            guard key.count == 1, let symbol = key.first, symbol != Self.emptyPixel else {
-                throw corrupted("palet anahtarı tek karakter olmalı ve '.' olamaz: \(key)", .palette)
-            }
-            guard let color = RGBColor(hex: hex) else {
-                throw corrupted("geçersiz renk \(hex)", .palette)
-            }
-            palette[symbol] = color
-        }
-
-        let cells = try pixels.map { (line: String) throws -> [RGBColor?] in
-            try line.map { (symbol: Character) throws -> RGBColor? in
-                if symbol == Self.emptyPixel { return nil }
-                guard let color = palette[symbol] else {
-                    throw corrupted("palette olmayan piksel '\(symbol)'", .pixels)
-                }
-                return color
-            }
-        }
-        guard let artwork = Matrix(cells) else {
-            throw corrupted("pixels boş olamaz ve tüm satırlar aynı uzunlukta olmalı", .pixels)
-        }
-        guard artwork.storage.contains(where: { $0 != nil }) else {
-            throw corrupted("en az bir dolu kare olmalı", .pixels)
+        let artwork: Matrix<RGBColor?>
+        do {
+            artwork = try PixelArt.artwork(palette: paletteHex, pixels: pixels)
+        } catch {
+            throw DecodingError.dataCorruptedError(forKey: .pixels, in: container, debugDescription: "\(id): \(error)")
         }
 
         self.init(

@@ -1,0 +1,96 @@
+name: CI
+
+# Geliştiricinin ortamıyla aynı derleyici: Xcode 15.2 (Swift 5.9, iOS 17.2 SDK).
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: macos-14
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Xcode 15.2'yi seç
+        run: |
+          ls -d /Applications/Xcode*.app
+          sudo xcode-select -s /Applications/Xcode_15.2.app
+          xcodebuild -version
+          swift --version
+
+      - name: Bulmaca içeriğini doğrula
+        run: python3 Tools/validate_puzzles.py
+
+      - name: Çeviri dosyalarını doğrula
+        run: python3 Tools/validate_strings.py
+
+      - name: NonogramKit testleri
+        working-directory: Packages/NonogramKit
+        run: swift test
+
+      - name: Xcode projesini üret
+        run: ./ProjeyiAc.command
+
+      - name: Uygulamayı derle ve test et
+        run: |
+          xcrun simctl list runtimes
+          # Xcode 15.2 yalnızca iOS 17.0–17.2 simülatörlerini çalıştırabilir
+          DEVICE_ID=$(xcrun simctl list devices available -j | python3 -c '
+          import json, sys
+          data = json.load(sys.stdin)["devices"]
+          runtimes = sorted((r for r in data if r.split(".")[-1] in ("iOS-17-2", "iOS-17-0", "iOS-17-0-1")), reverse=True)
+          for runtime in runtimes:
+              for device in data[runtime]:
+                  if device["name"].startswith("iPhone"):
+                      print(device["udid"]); sys.exit()
+          ')
+          if [ -n "$DEVICE_ID" ]; then
+            echo "Simülatör: $DEVICE_ID"
+            ACTION=test
+            DESTINATION="id=$DEVICE_ID"
+          else
+            echo "::warning::iOS 17 simülatörü yok; testler çalışmadan yalnızca derleniyor"
+            ACTION=build-for-testing
+            DESTINATION="generic/platform=iOS Simulator"
+          fi
+
+          STATUS=0
+          xcodebuild $ACTION \
+            -project Catgrid.xcodeproj \
+            -scheme Catgrid \
+            -destination "$DESTINATION" \
+            CODE_SIGNING_ALLOWED=NO \
+            > xcodebuild.log 2>&1 || STATUS=$?
+
+          grep -E "error:|Test Case .* (passed|failed)|Executed|\*\* .* \*\*|crash|EXC_" xcodebuild.log || true
+          echo "DEVICE_ID=$DEVICE_ID" >> "$GITHUB_ENV"
+          if [ $STATUS -ne 0 ]; then
+            echo "::error::xcodebuild başarısız (çıkış kodu $STATUS)"
+            grep -B2 -A6 -E "Undefined symbol|ld: |duplicate symbol" xcodebuild.log | head -120 || true
+            tail -40 xcodebuild.log
+          fi
+          exit $STATUS
+
+      # Intel Mac'lerde simülatör x86_64 çalışır; birim testlerini bu mimaride de çalıştır (Rosetta ile).
+      # Arayüz otomasyonu Rosetta altında çok yavaş olduğu için burada yalnızca CatgridTests koşar.
+      - name: Birim testleri (Intel / x86_64 simülatör)
+        if: always() && env.DEVICE_ID != ''
+        run: |
+          softwareupdate --install-rosetta --agree-to-license >/dev/null 2>&1 || true
+          STATUS=0
+          xcodebuild test \
+            -project Catgrid.xcodeproj \
+            -scheme Catgrid \
+            -destination "platform=iOS Simulator,id=$DEVICE_ID,arch=x86_64" \
+            -only-testing:CatgridTests \
+            CODE_SIGNING_ALLOWED=NO \
+            > xcodebuild-x86.log 2>&1 || STATUS=$?
+          grep -E "error:|Test Case .* (passed|failed)|Executed|\*\* .* \*\*|crash|EXC_" xcodebuild-x86.log || true
+          if [ $STATUS -ne 0 ]; then tail -60 xcodebuild-x86.log; fi
+          exit $STATUS

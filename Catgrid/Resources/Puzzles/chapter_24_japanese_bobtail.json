@@ -1,0 +1,399 @@
+{
+  "schemaVersion": 1,
+  "chapterID": "japanese-bobtail",
+  "puzzles": [
+    {
+      "id": "japanese-bobtail-001",
+      "title": {
+        "en": "Toe Beans",
+        "tr": "Pati Yastıkları"
+      },
+      "palette": {
+        "b": "#F5F1EA",
+        "n": "#E59AA0"
+      },
+      "pixels": [
+        "....bb...bb....",
+        "...bnnb.bnnb...",
+        "...bnnb.bnnb...",
+        ".bb.bnb.bnb.bb.",
+        "bnnb.......bnnb",
+        "bnnb...b...bnnb",
+        "bnb.bbbbbbb.bnb",
+        "...bbbbbbbbb...",
+        "..bbbbbbbbbbb..",
+        "..bbbnnnnnbbb..",
+        "..bbnnnnnnnbb..",
+        "..bbnnnnnnnbb..",
+        "..bbbnnnnnbbb..",
+        "...bbbnnnbbb...",
+        ".....bbbbb....."
+      ]
+    },
+    {
+      "id": "japanese-bobtail-002",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi"
+      },
+      "palette": {
+        "n": "#E59AA0",
+        "w": "#FFFFFF"
+      },
+      "pixels": [
+        "..nnnnn.nnnnn..",
+        ".nnnnnnnnnnnnn.",
+        "nnnwwnnnnnnnnnn",
+        "nnnwwnnnnnnnnnn",
+        "nnnnnnnnnnnnnnn",
+        "nnnnnnnnnnnnnnn",
+        ".nnnnnnnnnnnnn.",
+        "..nnnnnnnnnnn..",
+        "...nnnnnnnnn...",
+        "...nnnnnnnnn...",
+        "....nnnnnnn....",
+        ".....nnnnn.....",
+        "......nnn......",
+        ".......n......."
+      ]
+    },
+    {
+      "id": "japanese-bobtail-003",
+      "title": {
+        "en": "Fish Snack",
+        "tr": "Balık Atıştırması"
+      },
+      "palette": {
+        "o": "#D1495B",
+        "p": "#9AA5B1"
+      },
+      "pixels": [
+        "...ooooo......o",
+        ".ooooopooo...oo",
+        "oo.ooopoooo.ooo",
+        "oo.ooopoooooooo",
+        "oooooopoooooooo",
+        "oooooopoooo.ooo",
+        ".ooooopooo...oo",
+        "...ooooo......o"
+      ]
+    },
+    {
+      "id": "japanese-bobtail-004",
+      "title": {
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak"
+      },
+      "palette": {
+        "o": "#D1495B"
+      },
+      "pixels": [
+        "......oooooo...",
+        ".....oooooooo..",
+        "....oo..oooooo.",
+        "...oooo.ooo..o.",
+        "...ooooo...oooo",
+        "...oooo...ooooo",
+        "...ooo..o..oooo",
+        "...oo..ooo.oooo",
+        "...o..ooooo.oo.",
+        ".....ooooooooo.",
+        "....ooooooooo..",
+        "...oo..oooo....",
+        "oooo...........",
+        "..............."
+      ]
+    },
+    {
+      "id": "japanese-bobtail-005",
+      "title": {
+        "en": "Dinner Bowl",
+        "tr": "Mama Kabı"
+      },
+      "palette": {
+        "o": "#D1495B",
+        "p": "#9AA5B1",
+        "w": "#FFFFFF"
+      },
+      "pixels": [
+        ".....p..pp.....",
+        "...ppppppppp...",
+        ".ppppppppppppp.",
+        ".ppppppppppppp.",
+        "ooopppppppppooo",
+        "ooooooooooooooo",
+        ".oowwwwwwwwwoo.",
+        ".ooooooooooooo.",
+        "..ooooooooooo..",
+        "..ooooooooooo.."
+      ]
+    },
+    {
+      "id": "japanese-bobtail-006",
+      "title": {
+        "en": "Toy Mouse",
+        "tr": "Oyuncak Fare"
+      },
+      "palette": {
+        "n": "#E59AA0",
+        "p": "#9AA5B1"
+      },
+      "pixels": [
+        ".........pp....",
+        "........pnnp...",
+        ".....ppppppp...",
+        "....ppppppppp..",
+        "....pppppppp.p.",
+        "....ppppppppp..",
+        "n..nnpppppppp..",
+        ".nnn..ppppp....",
+        ".nn............"
+      ]
+    },
+    {
+      "id": "japanese-bobtail-007",
+      "title": {
+        "en": "Leftovers",
+        "tr": "Artıklar"
+      },
+      "palette": {
+        "p": "#9AA5B1"
+      },
+      "pixels": [
+        "....pp.p.p.....",
+        "..p.pp.p.p....p",
+        ".pp.pp.p.p...pp",
+        "ppppppppppppppp",
+        ".pp.pp.p.p...pp",
+        "..p.pp.p.p....p",
+        "....pp.p.p....."
+      ]
+    },
+    {
+      "id": "japanese-bobtail-008",
+      "title": {
+        "en": "Nap Time",
+        "tr": "Şekerleme"
+      },
+      "palette": {
+        "b": "#F5F1EA",
+        "d": "#E08A3C",
+        "k": "#2E2A2B"
+      },
+      "pixels": [
+        "......b........",
+        ".b...bbbbbbb...",
+        "bbbbbbbbbbbbbb.",
+        "bbbbbddddbbbbbb",
+        "bb....ddbbbbbbb",
+        ".bbbbbbbbbkkkbb",
+        "..bbbbbbbbbkbdd",
+        "...bbbbbbbbbbdd",
+        ".....bbbbbbb..."
+      ]
+    },
+    {
+      "id": "japanese-bobtail-009",
+      "title": {
+        "en": "Lucky Cat",
+        "tr": "Şans Kedisi"
+      },
+      "palette": {
+        "b": "#F5F1EA",
+        "d": "#E08A3C",
+        "e": "#D9A441",
+        "k": "#2E2A2B",
+        "n": "#E59AA0",
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        "...........",
+        "bb.....bbbb",
+        "bbbbbbbbbbb",
+        "bdddbbbbbbb",
+        "bdddbbbbbbb",
+        "bbeebeebbbb",
+        ".bbbbkkbbb.",
+        ".bbbbbbbbb.",
+        ".nnnynnbb..",
+        "bbbbybbbb..",
+        "bbbbbbbbb..",
+        "bbyyyyybb..",
+        "bbyyyyybb..",
+        ".bbbybbb...",
+        "..bbbbb...."
+      ]
+    },
+    {
+      "id": "japanese-bobtail-010",
+      "title": {
+        "en": "Sitting Pretty",
+        "tr": "Uslu Oturuş"
+      },
+      "palette": {
+        "b": "#F5F1EA",
+        "d": "#E08A3C",
+        "k": "#2E2A2B"
+      },
+      "pixels": [
+        "....b....b.",
+        "....b...bb.",
+        "....bbbbbb.",
+        "...bbbbbbb.",
+        "....bbbbbb.",
+        ".....bbbb..",
+        "...bbbbb...",
+        "..bbbbbb...",
+        "..bbbddbb..",
+        ".bbbbddbb..",
+        ".bbkkbbbb..",
+        ".dbkbbbbb..",
+        "ddbbbbbb...",
+        "dd.bbbbb...",
+        ".......b..."
+      ]
+    },
+    {
+      "id": "japanese-bobtail-011",
+      "title": {
+        "en": "Strut",
+        "tr": "Salınarak Yürüyüş"
+      },
+      "palette": {
+        "b": "#F5F1EA",
+        "d": "#E08A3C",
+        "k": "#2E2A2B"
+      },
+      "pixels": [
+        ".....b.........",
+        ".b...b.........",
+        "bbbbbbb........",
+        "bbbbbbb.b......",
+        "bbbbbbbbbbbbbdd",
+        "..bbbbdddbbbbb.",
+        "....bbbbbbkkbb.",
+        "....bbbbbbbbb..",
+        "....bbbbbbbbbb.",
+        "....bb.b..bbbb.",
+        "....b..b..b.bb.",
+        "....b..b..b.bb.",
+        "....b..b..b..b."
+      ]
+    },
+    {
+      "id": "japanese-bobtail-012",
+      "title": {
+        "en": "If I Fits",
+        "tr": "Kutu Sevdası"
+      },
+      "palette": {
+        "b": "#F5F1EA",
+        "e": "#D9A441",
+        "o": "#D1495B",
+        "p": "#9AA5B1"
+      },
+      "pixels": [
+        "....b..........",
+        "....bb....b....",
+        "....bbbbbbbb...",
+        "....bbbbbbbb...",
+        "....bbebbeb....",
+        "....bbebbebb...",
+        "..oobbbbbbboop.",
+        ".ppooobbbbooppp",
+        "..oooooooooooo.",
+        "..ooooooooooo..",
+        "..oooooooooooo.",
+        "..oooooooooooo.",
+        "..oooooooooooo."
+      ]
+    },
+    {
+      "id": "japanese-bobtail-013",
+      "title": {
+        "en": "Moon Gazer",
+        "tr": "Ay Seyri"
+      },
+      "palette": {
+        "b": "#F5F1EA",
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        ".....yy......",
+        "...yyy.......",
+        "...yyy.......",
+        "..yyyy.......",
+        "..yyyy.......",
+        "..yyyy.......",
+        "..yyyyy......",
+        "..yyyyyy.....",
+        "bbbyyyyyyyyy.",
+        "bbbyyyyyyyy..",
+        ".bb..yyyy....",
+        ".bbb..b......",
+        "bbbbb.b......",
+        "bbbb..b......",
+        ".bbbb........"
+      ]
+    },
+    {
+      "id": "japanese-bobtail-014",
+      "title": {
+        "en": "Toe Beans",
+        "tr": "Pati Yastıkları"
+      },
+      "palette": {
+        "b": "#F5F1EA",
+        "n": "#E59AA0"
+      },
+      "pixels": [
+        "...............",
+        "....bbb..bbb...",
+        "....bnnbbnnb...",
+        "..b.bnn.bnnb.b.",
+        ".bnb.bb..bb.bnb",
+        ".bnn.......bnnb",
+        ".bnb.bbbbbb.bnb",
+        "....bbbbbbbb...",
+        "...bbbbbbbbbb..",
+        "...bbbnnnnbbb..",
+        "...bbnnnnnnbb..",
+        "...bbnnnnnnbb..",
+        "...bbbnnnnbb...",
+        "....bbbbbbbb...",
+        ".......bb......"
+      ]
+    },
+    {
+      "id": "japanese-bobtail-015",
+      "title": {
+        "en": "Portrait",
+        "tr": "Portre"
+      },
+      "palette": {
+        "b": "#F5F1EA",
+        "d": "#E08A3C",
+        "e": "#D9A441",
+        "k": "#2E2A2B",
+        "n": "#E59AA0"
+      },
+      "pixels": [
+        ".b...........b.",
+        ".b....bbb....b.",
+        "bbbbbbbbbbbbbbb",
+        "bbbbbbbbbbbbbbb",
+        "bbddddbbbbbbbbb",
+        "bddddddbbbbbbbb",
+        "bdddeddbbbebbbb",
+        "bbde.ebbbe.ebbb",
+        "bbbe.ebbke.ekbb",
+        "bbbbebbbkkekkbb",
+        "bbbbbbbnkkkkkbb",
+        ".bbbbbbbbkkkbb.",
+        "..bbbbbbbbbbb..",
+        "...bbbbbbbbb...",
+        "....bbbbbbb...."
+      ]
+    }
+  ]
+}

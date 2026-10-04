@@ -1,0 +1,357 @@
+{
+  "schemaVersion": 1,
+  "chapterID": "maine-coon",
+  "puzzles": [
+    {
+      "id": "maine-coon-001",
+      "title": {
+        "en": "Toe Beans",
+        "tr": "Pati Yastıkları"
+      },
+      "palette": {
+        "b": "#8A6A4E",
+        "n": "#A0624A"
+      },
+      "pixels": [
+        "...b..b...",
+        "..bnbbnb..",
+        "bbbb..bbbb",
+        "nnb....bnn",
+        "bbbbbbbbbb",
+        "..bbbbbb..",
+        ".bbnnnnbb.",
+        ".bbnnnnbb.",
+        "..bnnnnb..",
+        "...bbbb..."
+      ]
+    },
+    {
+      "id": "maine-coon-002",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi"
+      },
+      "palette": {
+        "n": "#A0624A",
+        "w": "#EFE6DA"
+      },
+      "pixels": [
+        ".nnnnnnnn.",
+        "nnwnnnnnnn",
+        "nnwnnnnnnn",
+        "nnnnnnnnnn",
+        ".nnnnnnnn.",
+        "..nnnnnn..",
+        "...nnnn...",
+        "....nn....",
+        "....nn...."
+      ]
+    },
+    {
+      "id": "maine-coon-003",
+      "title": {
+        "en": "Fish Snack",
+        "tr": "Balık Atıştırması"
+      },
+      "palette": {
+        "o": "#6B4F3A",
+        "p": "#C8B6A6"
+      },
+      "pixels": [
+        "..oooo...o",
+        "o.oopoo.oo",
+        "o.oopooooo",
+        "oooopoo.oo",
+        "..oooo...o"
+      ]
+    },
+    {
+      "id": "maine-coon-004",
+      "title": {
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak"
+      },
+      "palette": {
+        "o": "#6B4F3A"
+      },
+      "pixels": [
+        ".....ooo...",
+        "....oooooo.",
+        "...oo.ooo.o",
+        "..oooo...oo",
+        "..ooo...ooo",
+        "..oo..o.ooo",
+        "....oooo.oo",
+        "...ooooooo.",
+        "...o.oooo..",
+        "ooo........"
+      ]
+    },
+    {
+      "id": "maine-coon-005",
+      "title": {
+        "en": "Dinner Bowl",
+        "tr": "Mama Kabı"
+      },
+      "palette": {
+        "o": "#6B4F3A",
+        "p": "#C8B6A6",
+        "w": "#EFE6DA"
+      },
+      "pixels": [
+        "...ppppp...",
+        ".ppppppppp.",
+        "opppppppppo",
+        "ooopppppooo",
+        ".owwwwwwwo.",
+        ".ooooooooo.",
+        ".ooooooooo."
+      ]
+    },
+    {
+      "id": "maine-coon-006",
+      "title": {
+        "en": "Mighty Tail",
+        "tr": "Görkemli Kuyruk"
+      },
+      "palette": {
+        "b": "#8A6A4E",
+        "d": "#4E3A2A"
+      },
+      "pixels": [
+        "..........",
+        "b...b.....",
+        "bbbbb..d..",
+        "bbbbb..dd.",
+        ".bbb...ddd",
+        ".bbbb...dd",
+        ".bbdbb..dd",
+        ".bbbbb..bd",
+        ".bbbbbddbd",
+        ".bbbbddbd.",
+        "...b.dd..."
+      ]
+    },
+    {
+      "id": "maine-coon-007",
+      "title": {
+        "en": "Leftovers",
+        "tr": "Artıklar"
+      },
+      "palette": {
+        "p": "#C8B6A6"
+      },
+      "pixels": [
+        "...p.p.p...",
+        ".p.p.p.p..p",
+        "ppppppppppp",
+        ".p.p.p.p..p",
+        "...p.p.p..."
+      ]
+    },
+    {
+      "id": "maine-coon-008",
+      "title": {
+        "en": "Portrait",
+        "tr": "Portre"
+      },
+      "palette": {
+        "b": "#8A6A4E",
+        "d": "#4E3A2A",
+        "e": "#C9A53F",
+        "n": "#A0624A",
+        "w": "#EFE6DA"
+      },
+      "pixels": [
+        "............",
+        "..b.........",
+        "..b..bbb.bb.",
+        "..bbbbdbbbb.",
+        ".bbbbbdbbbb.",
+        ".bbeebbbebb.",
+        ".bbeebbbebbb",
+        "bbbbbwnwbbbb",
+        "bbbbwwwwwbbb",
+        "...bwwwww..."
+      ]
+    },
+    {
+      "id": "maine-coon-009",
+      "title": {
+        "en": "Mighty Tail",
+        "tr": "Görkemli Kuyruk"
+      },
+      "palette": {
+        "b": "#8A6A4E",
+        "d": "#4E3A2A"
+      },
+      "pixels": [
+        "...........",
+        "b...b......",
+        "bb..b..dd..",
+        "bbbbb..ddd.",
+        "bbbbb...ddd",
+        ".bbbb....dd",
+        "..bbbb...bd",
+        ".bbddbb..dd",
+        ".bbbbbb.dbd",
+        ".bbbbbbddbd",
+        "..bbbbdbdd.",
+        ".....ddd..."
+      ]
+    },
+    {
+      "id": "maine-coon-010",
+      "title": {
+        "en": "Nap Time",
+        "tr": "Şekerleme"
+      },
+      "palette": {
+        "b": "#8A6A4E",
+        "d": "#4E3A2A"
+      },
+      "pixels": [
+        "............",
+        "....b.......",
+        "bb..bbbbb...",
+        "bbbbbbbbbbb.",
+        "bb..bbbbbbbb",
+        ".bbbbbbbbbbd",
+        "..bbbbbbbbdd",
+        "...dddbbbdd.",
+        "...ddddddd.."
+      ]
+    },
+    {
+      "id": "maine-coon-011",
+      "title": {
+        "en": "Sitting Pretty",
+        "tr": "Uslu Oturuş"
+      },
+      "palette": {
+        "b": "#8A6A4E",
+        "d": "#4E3A2A"
+      },
+      "pixels": [
+        ".........",
+        "b...b....",
+        "bbbbb....",
+        "bbbbb....",
+        "bbbbb....",
+        ".bbb.....",
+        "..bbbb.dd",
+        ".bbddb.dd",
+        ".bbbbbbdd",
+        ".bbbbbbdd",
+        ".bbbbbddd",
+        ".bbbb.d.."
+      ]
+    },
+    {
+      "id": "maine-coon-012",
+      "title": {
+        "en": "Strut",
+        "tr": "Salınarak Yürüyüş"
+      },
+      "palette": {
+        "b": "#8A6A4E",
+        "d": "#4E3A2A"
+      },
+      "pixels": [
+        "..........d.",
+        "b.........d.",
+        "bb.bb.....dd",
+        "bbbbb.....d.",
+        "bbbbbbbbbdd.",
+        ".bbbbbbbbd..",
+        "...bbbbbb...",
+        "...bbbbbb...",
+        "...b.b.b.b..",
+        "...b.b.b.b..",
+        "............"
+      ]
+    },
+    {
+      "id": "maine-coon-013",
+      "title": {
+        "en": "If I Fits",
+        "tr": "Kutu Sevdası"
+      },
+      "palette": {
+        "b": "#8A6A4E",
+        "e": "#C9A53F",
+        "o": "#6B4F3A",
+        "p": "#C8B6A6"
+      },
+      "pixels": [
+        ".............",
+        "....b....b...",
+        "....b....b...",
+        "...bbbbbbb...",
+        "...bbbbbbb...",
+        "...bbebeeb...",
+        "....bebbeb...",
+        ".poobbbbboop.",
+        ".ppoooboooopp",
+        "..oooooooooo.",
+        "..oooooooooo.",
+        "..oooooooooo.",
+        "..oooooooooo."
+      ]
+    },
+    {
+      "id": "maine-coon-014",
+      "title": {
+        "en": "Moon Gazer",
+        "tr": "Ay Seyri"
+      },
+      "palette": {
+        "b": "#8A6A4E",
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        "....yy.....",
+        "...yyy.....",
+        "..yyy......",
+        "..yyy......",
+        ".yyyy......",
+        ".yyyyy.....",
+        "..yyyyy....",
+        "bbyyyyyyyy.",
+        "bb.yyyyyy..",
+        ".bb..yy....",
+        "bbbb.b.....",
+        "bbbb.b.....",
+        ".bbbbb....."
+      ]
+    },
+    {
+      "id": "maine-coon-015",
+      "title": {
+        "en": "Forest Guardian",
+        "tr": "Orman Bekçisi"
+      },
+      "palette": {
+        "b": "#8A6A4E",
+        "d": "#4E3A2A",
+        "g": "#2F6B3B",
+        "o": "#6B4F3A"
+      },
+      "pixels": [
+        "............",
+        "........gg..",
+        "........gg..",
+        "b...b..gggg.",
+        "bbbbb..gggg.",
+        "bbbbb..gggg.",
+        ".bbb...gggg.",
+        "..bbb..dggg.",
+        ".bbddb.ddgg.",
+        ".bbbbbgddgg.",
+        ".bbbbbgddggg",
+        ".bbbbbddoo..",
+        ".bbbbdd.oo.."
+      ]
+    }
+  ]
+}

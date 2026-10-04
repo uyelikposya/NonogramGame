@@ -1,0 +1,302 @@
+{
+  "schemaVersion": 1,
+  "chapterID": "ragdoll",
+  "puzzles": [
+    {
+      "id": "ragdoll-001",
+      "title": {
+        "en": "Toe Beans",
+        "tr": "Pati Yastıkları"
+      },
+      "palette": {
+        "n": "#E2A3A3",
+        "w": "#FBF8F3"
+      },
+      "pixels": [
+        ".wwww.",
+        "wwnnww",
+        "nwwwwn",
+        ".wnnw.",
+        ".wnnw.",
+        ".wwww."
+      ]
+    },
+    {
+      "id": "ragdoll-002",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi"
+      },
+      "palette": {
+        "n": "#E2A3A3",
+        "w": "#FBF8F3"
+      },
+      "pixels": [
+        "nnnnnn",
+        "nwnnnn",
+        "nnnnnn",
+        ".nnnn.",
+        "..nn..",
+        "..nn.."
+      ]
+    },
+    {
+      "id": "ragdoll-003",
+      "title": {
+        "en": "Fish Snack",
+        "tr": "Balık Atıştırması"
+      },
+      "palette": {
+        "o": "#B5838D",
+        "p": "#9AA5B1"
+      },
+      "pixels": [
+        ".ooo.o",
+        "oopooo",
+        "oopooo",
+        ".ooo.o"
+      ]
+    },
+    {
+      "id": "ragdoll-004",
+      "title": {
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak"
+      },
+      "palette": {
+        "o": "#B5838D"
+      },
+      "pixels": [
+        "...ooo.",
+        "..o.ooo",
+        ".oo..oo",
+        "...oooo",
+        "..oooo.",
+        ".o....."
+      ]
+    },
+    {
+      "id": "ragdoll-005",
+      "title": {
+        "en": "Dinner Bowl",
+        "tr": "Mama Kabı"
+      },
+      "palette": {
+        "o": "#B5838D",
+        "p": "#9AA5B1",
+        "w": "#FBF8F3"
+      },
+      "pixels": [
+        "..ppp..",
+        "ppppppp",
+        "oopppoo",
+        "oowwwoo",
+        ".ooooo."
+      ]
+    },
+    {
+      "id": "ragdoll-006",
+      "title": {
+        "en": "Leftovers",
+        "tr": "Artıklar"
+      },
+      "palette": {
+        "p": "#9AA5B1"
+      },
+      "pixels": [
+        "..ppp..",
+        "ppppp.p",
+        "ppppp.p",
+        "..ppp.."
+      ]
+    },
+    {
+      "id": "ragdoll-007",
+      "title": {
+        "en": "Leftovers",
+        "tr": "Artıklar"
+      },
+      "palette": {
+        "p": "#9AA5B1"
+      },
+      "pixels": [
+        ".......",
+        "p.pppp.",
+        "pppppp.",
+        "..ppp.."
+      ]
+    },
+    {
+      "id": "ragdoll-008",
+      "title": {
+        "en": "If I Fits",
+        "tr": "Kutu Sevdası"
+      },
+      "palette": {
+        "b": "#F4EEE6",
+        "d": "#8B7765",
+        "e": "#4F86C6",
+        "o": "#B5838D",
+        "p": "#9AA5B1"
+      },
+      "pixels": [
+        "........",
+        "..dbbd..",
+        "..bbeb..",
+        ".obbbbo.",
+        "poooooo.",
+        ".oooooo.",
+        ".oooooo."
+      ]
+    },
+    {
+      "id": "ragdoll-009",
+      "title": {
+        "en": "Moon Gazer",
+        "tr": "Ay Seyri"
+      },
+      "palette": {
+        "b": "#F4EEE6",
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        "..yy...",
+        ".yy....",
+        ".yy....",
+        ".yyy...",
+        "byyyyy.",
+        "bbyyyy.",
+        "bb.b...",
+        "bbbb..."
+      ]
+    },
+    {
+      "id": "ragdoll-010",
+      "title": {
+        "en": "Portrait",
+        "tr": "Portre"
+      },
+      "palette": {
+        "b": "#F4EEE6",
+        "d": "#8B7765",
+        "e": "#4F86C6",
+        "w": "#FBF8F3"
+      },
+      "pixels": [
+        ".d....d.",
+        ".dbbbbd.",
+        ".beddeb.",
+        "bbeddeb.",
+        "bbbwwbbb",
+        "...ww..."
+      ]
+    },
+    {
+      "id": "ragdoll-011",
+      "title": {
+        "en": "Dinner Bowl",
+        "tr": "Mama Kabı"
+      },
+      "palette": {
+        "o": "#B5838D",
+        "p": "#9AA5B1",
+        "w": "#FBF8F3"
+      },
+      "pixels": [
+        "..pppp..",
+        ".pppppp.",
+        "ooppppoo",
+        ".owwwwo.",
+        ".oooooo."
+      ]
+    },
+    {
+      "id": "ragdoll-012",
+      "title": {
+        "en": "If I Fits",
+        "tr": "Kutu Sevdası"
+      },
+      "palette": {
+        "b": "#F4EEE6",
+        "d": "#8B7765",
+        "o": "#B5838D",
+        "p": "#9AA5B1"
+      },
+      "pixels": [
+        "........",
+        "..dbdd..",
+        "..bbbb..",
+        "..bbbb..",
+        "poobbop.",
+        "ooooooo.",
+        "ooooooo."
+      ]
+    },
+    {
+      "id": "ragdoll-013",
+      "title": {
+        "en": "Moon Gazer",
+        "tr": "Ay Seyri"
+      },
+      "palette": {
+        "b": "#F4EEE6",
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        "...yy...",
+        "..yy....",
+        ".yyy....",
+        ".yyy....",
+        "..yyy...",
+        "bbyyyyy.",
+        ".bb.y...",
+        "bbb.b...",
+        ".bbb...."
+      ]
+    },
+    {
+      "id": "ragdoll-014",
+      "title": {
+        "en": "Toe Beans",
+        "tr": "Pati Yastıkları"
+      },
+      "palette": {
+        "n": "#E2A3A3",
+        "w": "#FBF8F3"
+      },
+      "pixels": [
+        "..ww.ww..",
+        "..nnwnn..",
+        "ww.w.w.ww",
+        "nn.www.nn",
+        ".wwwwwww.",
+        ".wwnnnww.",
+        ".wwnnnww.",
+        ".wwnnnww.",
+        "..wwwww.."
+      ]
+    },
+    {
+      "id": "ragdoll-015",
+      "title": {
+        "en": "Portrait",
+        "tr": "Portre"
+      },
+      "palette": {
+        "b": "#F4EEE6",
+        "d": "#8B7765",
+        "e": "#4F86C6",
+        "w": "#FBF8F3"
+      },
+      "pixels": [
+        ".........",
+        ".dbbbbbd.",
+        ".bbbbbbb.",
+        ".beedeeb.",
+        "bbbdddbbb",
+        "bbbwwwbbb",
+        "..bwwwb.."
+      ]
+    }
+  ]
+}
