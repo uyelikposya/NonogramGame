@@ -31,7 +31,6 @@ struct GameView: View {
     @Environment(AdCoordinator.self) private var ads
     @Environment(\.appTheme) private var theme
     @Environment(\.scenePhase) private var scenePhase
-    @AppStorage(SettingsKeys.haptics) private var hapticsEnabled = true
 
     @State private var viewModel: GameViewModel
     @State private var flashingCell: GridPosition?
@@ -86,7 +85,10 @@ struct GameView: View {
                 completionResult = model.record(completion)
                 ads.puzzleCompleted(isTutorial: isTutorial)
             }
-            viewModel.onEvent = { audio.play($0.soundEffect) }
+            viewModel.onEvent = { event in
+                audio.play(event.soundEffect)
+                Haptics.play(event)
+            }
             viewModel.start()
         }
         .onDisappear {
@@ -109,8 +111,6 @@ struct GameView: View {
             guard newValue > 0 else { return }
             flashMistake()
         }
-        .sensoryFeedback(.error, trigger: game.mistakes) { _, _ in hapticsEnabled }
-        .sensoryFeedback(.success, trigger: game.status) { _, newValue in hapticsEnabled && newValue == .won }
     }
 
     private var isTutorial: Bool {
@@ -138,10 +138,10 @@ struct GameView: View {
     }
 
     private func flashMistake() {
-        withAnimation(.easeOut(duration: 0.1)) { flashingCell = viewModel.lastMistake }
+        flashingCell = viewModel.lastMistake
         Task {
             try? await Task.sleep(for: .milliseconds(450))
-            withAnimation(.easeIn(duration: 0.3)) { flashingCell = nil }
+            flashingCell = nil
         }
     }
 
@@ -252,7 +252,6 @@ struct GameStatusBar: View {
 @MainActor
 struct GameControls: View {
     @Environment(\.appTheme) private var theme
-    @AppStorage(SettingsKeys.haptics) private var hapticsEnabled = true
     @Binding var tool: MarkTool
     let canUndo: Bool
     let undo: () -> Void
@@ -273,12 +272,13 @@ struct GameControls: View {
             .disabled(!canUndo)
             .accessibilityLabel(Text("Undo"))
         }
-        .sensoryFeedback(.selection, trigger: tool) { _, _ in hapticsEnabled }
+
     }
 
     private func toolButton(_ value: MarkTool, title: LocalizedStringKey, systemImage: String) -> some View {
         let isSelected = tool == value
         return Button {
+            if tool != value { Haptics.selection() }
             tool = value
         } label: {
             Label(title, systemImage: systemImage)

@@ -62,15 +62,17 @@ struct BoardView: View {
             }
             .opacity(isSolved ? 0 : 1)
             .overlay {
-                // Çözülünce tahta kaybolur, yerine kedi resmi büyüyerek gelir
-                if isSolved {
-                    ArtworkThumbnail(artwork: puzzle.artwork)
-                        .padding(12)
-                        // Beyaz kediler açık zeminde kaybolmasın
-                        .background(RoundedRectangle(cornerRadius: 16).fill(theme.surfaceMuted))
-                        .padding(4)
-                        .transition(reduceMotion ? .opacity : .scale(scale: 0.6).combined(with: .opacity))
-                }
+                // Çözülünce tahta kaybolur, yerine kedi resmi büyüyerek gelir.
+                // Resim hep hiyerarşide durur, yalnızca görünürlüğü değişir: dokunma alanının
+                // altında görünüm eklenip çıkarılması iOS 17'de dokunma sistemini bozabiliyor.
+                ArtworkThumbnail(artwork: puzzle.artwork)
+                    .padding(12)
+                    // Beyaz kediler açık zeminde kaybolmasın
+                    .background(RoundedRectangle(cornerRadius: 16).fill(theme.surfaceMuted))
+                    .padding(4)
+                    .scaleEffect(isSolved || reduceMotion ? 1 : 0.6)
+                    .opacity(isSolved ? 1 : 0)
+                    .allowsHitTesting(false)
             }
             .animation(.spring(duration: 0.7), value: isSolved)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -83,6 +85,7 @@ struct BoardView: View {
         let board = game.board
         let theme = theme
         let activeCell = activeCell
+        let flashingCell = flashingCell
 
         return Canvas { context, size in
             context.fill(Path(CGRect(origin: .zero, size: size)), with: .color(theme.surface))
@@ -121,19 +124,19 @@ struct BoardView: View {
                     break
                 }
             }
+            // Hatalı kare de Canvas içinde çizilir (ayrı görünüm eklenmez)
+            if let flashing = flashingCell {
+                let rect = CGRect(
+                    x: CGFloat(flashing.column) * cell,
+                    y: CGFloat(flashing.row) * cell,
+                    width: cell,
+                    height: cell
+                )
+                context.fill(Path(roundedRect: rect, cornerRadius: cell * 0.16), with: .color(theme.mistake.opacity(0.55)))
+            }
             Self.drawGridLines(in: context, size: size, cell: cell, rows: board.rows, columns: board.columns, theme: theme)
         }
         .frame(width: cell * CGFloat(board.columns), height: cell * CGFloat(board.rows))
-        .overlay(alignment: .topLeading) {
-            if let flashing = flashingCell {
-                RoundedRectangle(cornerRadius: cell * 0.16)
-                    .fill(theme.mistake.opacity(0.55))
-                    .frame(width: cell, height: cell)
-                    .offset(x: CGFloat(flashing.column) * cell, y: CGFloat(flashing.row) * cell)
-                    .allowsHitTesting(false)
-                    .transition(.opacity)
-            }
-        }
         .clipShape(RoundedRectangle(cornerRadius: 6))
         .contentShape(Rectangle())
         .gesture(dragGesture(cell: cell))

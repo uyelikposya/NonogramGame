@@ -72,7 +72,8 @@ final class GameViewModel {
 
     func dragMoved(to position: GridPosition) {
         guard game.board.contains(position) else { return }
-        if !isFinished { activeCell = position }
+        // Aynı karede sürüklerken gözlemcileri boşuna tetikleme
+        if !isFinished, activeCell != position { activeCell = position }
         guard let target = dragTarget else { return }
         let current = game.board[position]
         // Silerken yalnızca aynı işaretleri, koyarken yalnızca boş kareleri etkile
@@ -87,7 +88,7 @@ final class GameViewModel {
 
     func dragEnded() {
         dragTarget = nil
-        activeCell = nil
+        if activeCell != nil { activeCell = nil }
     }
 
     func undo() {
