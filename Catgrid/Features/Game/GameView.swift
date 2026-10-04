@@ -158,8 +158,6 @@ struct GameView: View {
         }
         return time + separator + Text("\(result.mistakes) mistakes")
     }
-        return Text("Time \(time) · \(result.mistakes) mistakes")
-    }
 
     @ViewBuilder
     private var resultCard: some View {
