@@ -1,6 +1,16 @@
 {
   "sourceLanguage": "en",
   "strings": {
+    "%@ years": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ yıl"
+          }
+        }
+      }
+    },
     "%lld mistakes": {
       "localizations": {
         "en": {
@@ -29,22 +39,22 @@
         }
       }
     },
-    "%lld of %lld puzzles solved": {
-      "localizations": {
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "%lld / %lld bulmaca çözüldü"
-          }
-        }
-      }
-    },
     "%lld of %lld solved": {
       "localizations": {
         "tr": {
           "stringUnit": {
             "state": "translated",
             "value": "%lld / %lld çözüldü"
+          }
+        }
+      }
+    },
+    "%lld out of 5": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "5 üzerinden %lld"
           }
         }
       }
@@ -113,6 +123,46 @@
           "stringUnit": {
             "state": "translated",
             "value": "Uzun bir blok nereden başlarsa başlasın satırın ortasını kaplar. Her durumda dolu kalan kareleri doldur."
+          }
+        }
+      }
+    },
+    "A new cat awaits": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yeni bir kedi seni bekliyor"
+          }
+        }
+      }
+    },
+    "Add to Collection": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Koleksiyona Ekle"
+          }
+        }
+      }
+    },
+    "Ads removed. Thank you for supporting Catgrid!": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reklamlar kaldırıldı. Catgrid'i desteklediğin için teşekkürler!"
+          }
+        }
+      }
+    },
+    "Affection": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sevgi"
           }
         }
       }
@@ -197,6 +247,16 @@
         }
       }
     },
+    "Card Collection": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kart Koleksiyonu"
+          }
+        }
+      }
+    },
     "Change Language": {
       "localizations": {
         "tr": {
@@ -213,6 +273,26 @@
           "stringUnit": {
             "state": "translated",
             "value": "Bölüm bulunamadı"
+          }
+        }
+      }
+    },
+    "Close": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kapat"
+          }
+        }
+      }
+    },
+    "Coat": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tüy"
           }
         }
       }
@@ -243,6 +323,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Çok yakında"
+          }
+        }
+      }
+    },
+    "Common": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yaygın"
           }
         }
       }
@@ -283,6 +373,26 @@
           "stringUnit": {
             "state": "translated",
             "value": "Boş satırlar"
+          }
+        }
+      }
+    },
+    "Energy": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enerji"
+          }
+        }
+      }
+    },
+    "Epic": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Destansı"
           }
         }
       }
@@ -337,12 +447,12 @@
         }
       }
     },
-    "Finish a breed's puzzles to add your first cat to the collection.": {
+    "Finish all puzzles of a breed to win its card.": {
       "localizations": {
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "İlk kediyi koleksiyonuna eklemek için bir türün tüm bulmacalarını tamamla."
+            "value": "Kartını kazanmak için bir türün tüm bulmacalarını bitir."
           }
         }
       }
@@ -387,6 +497,16 @@
         }
       }
     },
+    "Grooming": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bakım"
+          }
+        }
+      }
+    },
     "Haptics": {
       "localizations": {
         "tr": {
@@ -407,12 +527,32 @@
         }
       }
     },
+    "Legendary": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Efsanevi"
+          }
+        }
+      }
+    },
     "Levels": {
       "localizations": {
         "tr": {
           "stringUnit": {
             "state": "translated",
             "value": "Bölümler"
+          }
+        }
+      }
+    },
+    "Lifespan": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ömür"
           }
         }
       }
@@ -517,6 +657,16 @@
         }
       }
     },
+    "New card unlocked!": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yeni kart kazandın!"
+          }
+        }
+      }
+    },
     "Next Puzzle": {
       "localizations": {
         "tr": {
@@ -533,6 +683,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Sayılar bir satırda kaç karenin dolu olduğunu söyler. 3, yan yana üç dolu kare demektir. Doldurmak için bir kareye dokun."
+          }
+        }
+      }
+    },
+    "Origin": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Köken"
           }
         }
       }
@@ -563,6 +723,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Hatasız"
+          }
+        }
+      }
+    },
+    "Playfulness": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oyunculuk"
           }
         }
       }
@@ -677,6 +847,46 @@
         }
       }
     },
+    "Rare": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nadir"
+          }
+        }
+      }
+    },
+    "Remove Ads": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reklamları Kaldır"
+          }
+        }
+      }
+    },
+    "Remove Ads – %@": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reklamları Kaldır – %@"
+          }
+        }
+      }
+    },
+    "Remove the ads between puzzles with a one-time purchase. Optional rewarded ads for extra paws stay available.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bulmacalar arasındaki reklamları tek seferlik bir satın almayla kaldır. Ekstra pati için isteğe bağlı ödüllü reklamlar kullanılabilir kalır."
+          }
+        }
+      }
+    },
     "Reset Progress": {
       "localizations": {
         "tr": {
@@ -697,6 +907,16 @@
         }
       }
     },
+    "Restore Purchases": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Satın Alımları Geri Yükle"
+          }
+        }
+      }
+    },
     "Resume": {
       "localizations": {
         "tr": {
@@ -713,6 +933,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Satırlar ve sütunlar"
+          }
+        }
+      }
+    },
+    "See All": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tümü"
           }
         }
       }
@@ -867,16 +1097,6 @@
         }
       }
     },
-    "Unmet cats": {
-      "localizations": {
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Henüz tanışmadığın kediler"
-          }
-        }
-      }
-    },
     "Use the edges": {
       "localizations": {
         "tr": {
@@ -933,6 +1153,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Tüm kuralları biliyorsun. Bunu kendi başına çöz!"
+          }
+        }
+      }
+    },
+    "You solved every %@ puzzle.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ bulmacalarının hepsini çözdün."
           }
         }
       }

@@ -12,6 +12,7 @@ struct HomeView: View {
             VStack(spacing: 28) {
                 header
                 continueCard
+                CollectionShelf()
                 HStack(spacing: 12) {
                     Button {
                         router.push(.chapters)
@@ -60,7 +61,6 @@ struct HomeView: View {
                     .foregroundStyle(theme.textSecondary)
             }
 
-            CollectionStrip()
         }
         .padding(.top, 12)
     }
@@ -124,59 +124,20 @@ struct ChapterBadge: View {
 
     var body: some View {
         let tint = chapter.accentColor.map { Color($0) } ?? theme.accent
-        Image(systemName: chapter.kind == .tutorial ? "graduationcap.fill" : "cat.fill")
-            .font(.system(size: size * 0.45))
-            .foregroundStyle(.white)
-            .frame(width: size, height: size)
-            .background(Circle().fill(tint.gradient))
-            .accessibilityHidden(true)
-    }
-}
-
-/// Toplanan kedi türleri. Toplam tür sayısı bilerek gösterilmez: yeni türler geldikçe
-/// koleksiyon büyür, oyuncuya "henüz tanışmadığın kediler var" denir.
-@MainActor
-struct CollectionStrip: View {
-    @Environment(AppModel.self) private var model
-    @Environment(\.appTheme) private var theme
-
-    var body: some View {
-        let collected = model.collectedBreeds
-        VStack(spacing: 10) {
-            Group {
-                if collected.isEmpty {
-                    Text("Finish a breed's puzzles to add your first cat to the collection.")
-                } else if model.hasUnmetBreeds {
-                    Text("You've collected \(collected.count) cat breeds. There are still cats you haven't met!")
-                } else {
-                    Text("You've met every cat. New breeds are on their way!")
-                }
+        ZStack {
+            Circle().fill(tint.opacity(0.3).gradient)
+            if let portrait = chapter.portrait {
+                // Türün piksel portresi
+                ArtworkThumbnail(artwork: portrait)
+                    .padding(size * 0.14)
+            } else {
+                Image(systemName: chapter.kind == .tutorial ? "graduationcap.fill" : "cat.fill")
+                    .font(.system(size: size * 0.45))
+                    .foregroundStyle(tint)
             }
-            .font(.subheadline)
-            .multilineTextAlignment(.center)
-            .foregroundStyle(theme.textSecondary)
-
-            ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 8) {
-                    ForEach(collected) { chapter in
-                        ChapterBadge(chapter: chapter, size: 40)
-                            .accessibilityLabel(Text(verbatim: chapter.title.resolved))
-                    }
-                    if model.hasUnmetBreeds {
-                        Image(systemName: "questionmark")
-                            .font(.headline)
-                            .foregroundStyle(theme.textSecondary)
-                            .frame(width: 40, height: 40)
-                            .background(Circle().strokeBorder(theme.separator, style: StrokeStyle(lineWidth: 2, dash: [4, 3])))
-                            .accessibilityLabel(Text("Unmet cats"))
-                    }
-                }
-                .padding(.horizontal, 4)
-            }
-            .fixedSize(horizontal: false, vertical: true)
         }
-        .padding(16)
-        .frame(maxWidth: .infinity)
-        .card(cornerRadius: 20)
+        .frame(width: size, height: size)
+        .accessibilityHidden(true)
     }
 }
+

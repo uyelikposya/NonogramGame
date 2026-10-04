@@ -1,0 +1,375 @@
+{
+  "schemaVersion": 1,
+  "chapterID": "egyptian-mau",
+  "puzzles": [
+    {
+      "id": "egyptian-mau-001",
+      "title": {
+        "en": "Toe Beans",
+        "tr": "Pati Yastıkları"
+      },
+      "palette": {
+        "b": "#C9CBC4",
+        "n": "#B87F72"
+      },
+      "pixels": [
+        "...bb..bb...",
+        "...nnbbnn...",
+        ".b.bnbbnn.b.",
+        "bnb......bnb",
+        "bnb..bb..bnb",
+        ".bbbbbbbbbb.",
+        "..bbbbbbbb..",
+        "..bbnnnnbb..",
+        ".bbnnnnnnbb.",
+        "..bbnnnnbb..",
+        "..bbbnnnbb..",
+        "...bbbbbb..."
+      ]
+    },
+    {
+      "id": "egyptian-mau-002",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi"
+      },
+      "palette": {
+        "n": "#B87F72",
+        "w": "#EDEDE6"
+      },
+      "pixels": [
+        ".nnnn..nnnn.",
+        "nnnnnnnnnnnn",
+        "nnwwnnnnnnnn",
+        "nnnnnnnnnnnn",
+        "nnnnnnnnnnnn",
+        ".nnnnnnnnnn.",
+        "..nnnnnnnn..",
+        "...nnnnnn...",
+        "....nnnn....",
+        ".....nn.....",
+        ".....nn....."
+      ]
+    },
+    {
+      "id": "egyptian-mau-003",
+      "title": {
+        "en": "Fish Snack",
+        "tr": "Balık Atıştırması"
+      },
+      "palette": {
+        "o": "#E0B66A"
+      },
+      "pixels": [
+        "..oooo.....o",
+        ".ooooooo..oo",
+        "o..ooooooooo",
+        "oooooooooooo",
+        "oooooooooooo",
+        ".ooooooo..oo",
+        "..oooo.....o"
+      ]
+    },
+    {
+      "id": "egyptian-mau-004",
+      "title": {
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak"
+      },
+      "palette": {
+        "o": "#E0B66A"
+      },
+      "pixels": [
+        "...oooo......",
+        ".oooooooo....",
+        "..oooo.oo....",
+        "oo....oooo...",
+        "oooo..oooo...",
+        "oooo.o.ooo...",
+        "ooo.ooo.oo...",
+        ".o.ooooo.....",
+        ".oooooooo....",
+        "...oooo.oo...",
+        ".........ooo.",
+        "............."
+      ]
+    },
+    {
+      "id": "egyptian-mau-005",
+      "title": {
+        "en": "Dinner Bowl",
+        "tr": "Mama Kabı"
+      },
+      "palette": {
+        "o": "#E0B66A",
+        "p": "#7D5A44",
+        "w": "#EDEDE6"
+      },
+      "pixels": [
+        "....p..pp....",
+        "..ppppppppp..",
+        ".ppppppppppp.",
+        "oopppppppppoo",
+        "oooopppppoooo",
+        ".oowwwwwwwoo.",
+        ".oowwwwwwwoo.",
+        ".ooooooooooo.",
+        "..ooooooooo.."
+      ]
+    },
+    {
+      "id": "egyptian-mau-006",
+      "title": {
+        "en": "Toy Mouse",
+        "tr": "Oyuncak Fare"
+      },
+      "palette": {
+        "n": "#B87F72",
+        "p": "#7D5A44"
+      },
+      "pixels": [
+        ".......pnp...",
+        "......ppnn...",
+        "....ppppppp..",
+        "....pppppp.p.",
+        "...pppppppp..",
+        "n..nppppppp..",
+        ".nn..ppppp...",
+        "............."
+      ]
+    },
+    {
+      "id": "egyptian-mau-007",
+      "title": {
+        "en": "Leftovers",
+        "tr": "Artıklar"
+      },
+      "palette": {
+        "p": "#7D5A44"
+      },
+      "pixels": [
+        "....p.p.p....",
+        ".pp.p.p.p...p",
+        "ppppppppppppp",
+        "ppppppppppppp",
+        ".pp.p.p.p...p",
+        "....p.p.p...."
+      ]
+    },
+    {
+      "id": "egyptian-mau-008",
+      "title": {
+        "en": "Portrait",
+        "tr": "Portre"
+      },
+      "palette": {
+        "b": "#C9CBC4",
+        "d": "#4D4A44",
+        "e": "#8DBF4A"
+      },
+      "pixels": [
+        ".b..........b.",
+        ".b..........b.",
+        "bbb..bbbb..bbb",
+        "bbbbbbbbbbbbbb",
+        "bbbbbbbbbbbbbb",
+        "bbbbbbbbddbbbb",
+        ".bbbebbbbebbb.",
+        ".bbeeebbeeebb.",
+        ".bbbebbbbebbb.",
+        ".bbbbbbbdbbbb.",
+        "..bbdbbdbbbb..",
+        "...bbbbbbbb...",
+        "....bbbbbb...."
+      ]
+    },
+    {
+      "id": "egyptian-mau-009",
+      "title": {
+        "en": "Ancient Grace",
+        "tr": "Kadim Zarafet"
+      },
+      "palette": {
+        "b": "#C9CBC4",
+        "d": "#4D4A44",
+        "o": "#E0B66A",
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        ".....b.......",
+        ".....bb.b....",
+        ".....bbbb....",
+        ".....b.bb....",
+        "......bbb....",
+        "......bbb....",
+        ".....byyy....",
+        ".....bbbb....",
+        ".....bbbbb..d",
+        "..o.bbbbbb..d",
+        "..oobbbbbb..d",
+        ".ooobbbbbb..d",
+        ".oooobbbbb.dd",
+        "oooooobbbdd.."
+      ]
+    },
+    {
+      "id": "egyptian-mau-010",
+      "title": {
+        "en": "Nap Time",
+        "tr": "Şekerleme"
+      },
+      "palette": {
+        "b": "#C9CBC4",
+        "d": "#4D4A44"
+      },
+      "pixels": [
+        "..............",
+        ".b....b.......",
+        "bbb..bbbbbb...",
+        "bbbbbbbdbbbbb.",
+        "bbbbbbbbbbddbb",
+        ".bbbbbddbbbbbb",
+        "..bbbbbbbbdbbb",
+        "...bbbbbbbbbbb",
+        "....bbbbbbbbb.",
+        "....bbbbbbbb.."
+      ]
+    },
+    {
+      "id": "egyptian-mau-011",
+      "title": {
+        "en": "Sitting Pretty",
+        "tr": "Uslu Oturuş"
+      },
+      "palette": {
+        "b": "#C9CBC4",
+        "d": "#4D4A44"
+      },
+      "pixels": [
+        "......b....",
+        "bb....b....",
+        "bbb..bb....",
+        "bbbbbbbb...",
+        "bbbbbbbb...",
+        "..bbbb.....",
+        "..bbbb.....",
+        "...bbbbb..b",
+        "..bbbdbb..b",
+        "..bbddbbb.b",
+        "..bbddbbb.b",
+        "..bbbbbb.bb",
+        "...bbbbbbb.",
+        "..bbbbb...."
+      ]
+    },
+    {
+      "id": "egyptian-mau-012",
+      "title": {
+        "en": "If I Fits",
+        "tr": "Kutu Sevdası"
+      },
+      "palette": {
+        "b": "#C9CBC4",
+        "e": "#8DBF4A",
+        "o": "#E0B66A",
+        "p": "#7D5A44"
+      },
+      "pixels": [
+        "...b......b...",
+        "...b.....bb...",
+        "...bb....bb...",
+        "..bbbbbbbbb...",
+        "...bbbbbbbb...",
+        "...bbebeebb...",
+        "..obbbbbbboo..",
+        "ppoobbbbboopp.",
+        ".oooooooooooo.",
+        "..oooooooooo..",
+        ".oooooooooooo.",
+        ".oooooooooooo.",
+        ".ooooooooooo.."
+      ]
+    },
+    {
+      "id": "egyptian-mau-013",
+      "title": {
+        "en": "Moon Gazer",
+        "tr": "Ay Seyri"
+      },
+      "palette": {
+        "b": "#C9CBC4",
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        "......yy.....",
+        ".......yy....",
+        ".......yyy...",
+        ".......yyyy..",
+        ".......yyyy..",
+        ".......yyyyy.",
+        ".......yyyy..",
+        "......yyyyy..",
+        ".y..yyyyyyy.b",
+        "..yyyyyyyybbb",
+        "...yyyyyy.bbb",
+        "......b..bbb.",
+        "......b..bbbb",
+        "......b..bbbb",
+        "......bbbbbb."
+      ]
+    },
+    {
+      "id": "egyptian-mau-014",
+      "title": {
+        "en": "Toe Beans",
+        "tr": "Pati Yastıkları"
+      },
+      "palette": {
+        "b": "#C9CBC4",
+        "n": "#B87F72"
+      },
+      "pixels": [
+        "....bb...bb....",
+        "...bnnb.bnnb...",
+        "...bnnb.bnnb...",
+        ".bb.bnb.bnb.bb.",
+        "bnnb.......bnnb",
+        "bnnb...b...bnnb",
+        "bnb.bbbbbbb.bnb",
+        "...bbbbbbbbb...",
+        "..bbbbbbbbbbb..",
+        "..bbbnnnnnbbb..",
+        "..bbnnnnnnnbb..",
+        "..bbnnnnnnnbb..",
+        "..bbbnnnnnbbb..",
+        "...bbbnnnbbb...",
+        ".....bbbbb....."
+      ]
+    },
+    {
+      "id": "egyptian-mau-015",
+      "title": {
+        "en": "Strut",
+        "tr": "Salınarak Yürüyüş"
+      },
+      "palette": {
+        "b": "#C9CBC4",
+        "d": "#4D4A44"
+      },
+      "pixels": [
+        ".b......b.....b",
+        ".b......bb...bb",
+        "bb......bbbbbbb",
+        ".b......bbbbbbb",
+        ".bb.bbbbbbbbbbb",
+        "..bbbbdddbbbb..",
+        "...bbbddbbb....",
+        "...bbbbbbbb....",
+        "...bbb..b.b....",
+        "...b.b..b.b....",
+        "...b.b.bb.b....",
+        ".....b....b...."
+      ]
+    }
+  ]
+}

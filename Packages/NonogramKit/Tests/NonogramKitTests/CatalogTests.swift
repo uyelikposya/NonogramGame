@@ -53,7 +53,11 @@ final class CatalogTests: XCTestCase {
       "schemaVersion": 1,
       "chapters": [
         { "id": "tutorial", "kind": "tutorial", "title": { "en": "School" }, "file": "tutorial", "expectedPuzzleCount": 2 },
-        { "id": "siamese", "kind": "breed", "title": { "en": "Siamese" }, "file": "siamese", "expectedPuzzleCount": 2 },
+        { "id": "siamese", "kind": "breed", "title": { "en": "Siamese" }, "file": "siamese", "expectedPuzzleCount": 2,
+          "portrait": { "palette": { "a": "#4A3B35" }, "pixels": ["a.a", "aaa"] },
+          "card": { "number": 1, "rarity": "common", "origin": { "en": "Thailand" }, "lifespan": "15–20",
+                    "coat": { "en": "Short" }, "fact": { "en": "Talkative." },
+                    "stats": { "energy": 5, "affection": 5, "playfulness": 5, "grooming": 1 } } },
         { "id": "persian", "kind": "breed", "title": { "en": "Persian" }, "file": "persian" }
       ]
     }
@@ -84,6 +88,19 @@ final class CatalogTests: XCTestCase {
         XCTAssertEqual(catalog.chapters.last?.expectedPuzzleCount, 0) // sayı belirtilmemiş
         XCTAssertEqual(catalog.puzzle(after: "t2")?.id, "s1")
         XCTAssertEqual(catalog.chapter(containing: "s2")?.id, "siamese")
+    }
+
+    func testDecodesBreedPortraitAndCard() throws {
+        let catalog = try sampleCatalog()
+        let siamese = catalog.chapters[1]
+        XCTAssertEqual(siamese.portrait?.rows, 2)
+        XCTAssertEqual(siamese.portrait?.columns, 3)
+        XCTAssertNil(siamese.portrait?[0, 1])
+        XCTAssertEqual(siamese.card?.number, 1)
+        XCTAssertEqual(siamese.card?.rarity, .common)
+        XCTAssertEqual(siamese.card?.stats.energy, 5)
+        XCTAssertEqual(siamese.card?.lifespan, "15–20")
+        XCTAssertNil(catalog.chapters[0].card) // eğitimin kartı yok
     }
 
     func testTutorialUsesRelaxedRules() throws {

@@ -61,6 +61,23 @@ final class AdCoordinatorTests: XCTestCase {
 }
 
 @MainActor
+final class RemoveAdsTests: XCTestCase {
+    func testPurchasedRemoveAdsSkipsInterstitials() async {
+        let service = NoAdService()
+        let policy = AdPolicy(defaults: UserDefaults(suiteName: "RemoveAds-\(UUID().uuidString)")!)
+        let coordinator = AdCoordinator(service: service, policy: policy)
+        coordinator.interstitialsDisabled = true
+
+        for _ in 0..<4 { coordinator.puzzleCompleted(isTutorial: false) }
+        var navigated = false
+        coordinator.continueAfterPuzzle { navigated = true }
+
+        XCTAssertTrue(navigated, "Reklam olmadan hemen devam edilmeli")
+        XCTAssertEqual(service.interstitialsShown, 0)
+    }
+}
+
+@MainActor
 final class AudioManagerTests: XCTestCase {
     func testPersistsSoundSettings() {
         let defaults = UserDefaults(suiteName: "AudioManagerTests-\(UUID().uuidString)")!

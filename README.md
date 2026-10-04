@@ -158,7 +158,12 @@ python3 Tools/validate_puzzles.py   # tüm bulmacaları doğrular
   türe özgü sahneler (Van kedisi gölde yüzer, Norveç orman kedisi çam ağacının yanında...).
 - Motifler vektör olarak çizilir, ızgaraya oturtulur ve **yalnızca tahmin gerektirmeden çözülebilen**
   bulmacalar seçilir. Aynı kod her zaman aynı bulmacaları üretir.
-- Zorluk tür sırasıyla artar: ilk tür 5x5–8x8, son türler 20x20. Her türde 15 bulmaca.
+- Zorluk tür sırasıyla artar: ilk tür 5x5–8x8, son türler 15x15. Her türde 15 bulmaca; şu an 25 tür.
+  En büyük boyut bilerek 15x15: telefonda yakınlaştırma gerektirmeden rahat oynanır (20x20 ve üstünü
+  sunan uygulamalar yakınlaştırma ekler; bu, sürükleyerek doldurmayla çakışır).
+- Her türün katalogda bir **piksel portresi** (tür listesi ve kart görseli) ve bir **koleksiyon kartı**
+  (köken, ömür, tüy, 1-5 karakter puanları, ilginç bilgi, nadirlik) vardır. Kart bilgileri `CARDS` içindedir.
+  Assets'e `card-<tür-id>` adlı lisanslı bir fotoğraf eklenirse kartta portre yerine o görünür.
 - **Yeni tür eklemek:** `BREEDS`'e bir giriş ekle, scripti çalıştır. Tür sayısı arayüzde sabit değildir;
   ana ekran toplam sayı yerine toplanan koleksiyonu gösterir.
 - Elle çizilen küçük bulmacalar `HANDMADE` içinde tutulur.
@@ -169,6 +174,16 @@ python3 Tools/validate_puzzles.py   # tüm bulmacaları doğrular
 Profesyonel seslerle değiştirmek için aynı dosya adlarını kullanmak yeterli. Ayarlar'da müzik ve efektler
 ayrı ayrı açılıp kapatılabilir ve seviyeleri ayarlanabilir. Ses oturumu `.ambient`: sessiz anahtara uyar,
 kullanıcının kendi müziğini kesmez.
+
+## Koleksiyon kartları
+
+Bir türün tüm bulmacaları çözülünce o türün kartı kazanılır ("Yeni kart kazandın!" penceresi). Kartlar ana
+sayfadaki rafta ve Kart Koleksiyonu ekranında görünür. Toplam tür sayısı bilerek gösterilmez; yeni türler
+geldikçe koleksiyon büyür. Nadirlik türün sırasına göre: Yaygın, Nadir, Destansı, Efsanevi.
+
+## Uygulama simgesi
+
+`Tools/generate_icon.py` (Pillow) pastel zemin üzerinde yavru kedi yüzü ve nonogram ızgarası çizer.
 
 ## Reklam ve gelir modeli
 
@@ -183,7 +198,10 @@ Uygulama ücretsiz; gelir Google AdMob'dan (SDK 11.5.0: Xcode 15.2 ile çalışa
   AB'de Ayarlar'da "Gizlilik Ayarları" görünür.
 - Mantık `AdPolicy`'de (test edilebilir), SDK `GoogleAdService`'te, ekranlar yalnızca `AdCoordinator`'ı kullanır.
 - Banner reklam bilerek yok: tahtada yanlış dokunmalara yol açar ve oyunu kalabalıklaştırır.
-- Önerilen sonraki adım: "Reklamları Kaldır" tek seferlik uygulama içi satın alma.
+- **Reklamları Kaldır** (StoreKit 2, tek seferlik, `com.catgridcollection.nonogram.removeads`): geçiş reklamlarını
+  kapatır, isteğe bağlı ödüllü reklam kalır. Ayarlar'da satın alma ve "Satın Alımları Geri Yükle".
+  Simülatörde `Catgrid/Resources/Catgrid.storekit` ile App Store Connect olmadan denenebilir.
+  Yayından önce aynı ürün kimliğiyle App Store Connect'te "Non-Consumable" ürün oluşturulmalı.
 
 **AdMob hesabı onaylanınca:**
 1. `project.yml` → `GADApplicationIdentifier` değerini kendi uygulama kimliğinle değiştir.

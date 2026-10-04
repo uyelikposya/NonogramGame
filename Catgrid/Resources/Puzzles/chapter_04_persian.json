@@ -13,14 +13,12 @@
         "n": "#E8A3A8"
       },
       "pixels": [
-        "..bbbb..",
-        "..nbbn..",
-        "bn....nb",
-        "bbbbbbbb",
-        ".bbbbbb.",
-        ".bnnnnb.",
-        ".bbnnnb.",
-        "..bbbb.."
+        ".bbbb.",
+        "bbnnbb",
+        "nbbbbn",
+        ".bnnb.",
+        ".bnnb.",
+        ".bbbb."
       ]
     },
     {
@@ -34,13 +32,12 @@
         "w": "#FBF8F3"
       },
       "pixels": [
-        ".nnnnnn.",
-        "nwwnnnnn",
-        "nnnnnnnn",
-        ".nnnnnn.",
-        "..nnnn..",
-        "...nn...",
-        "...nn..."
+        "nnnnnn",
+        "nwnnnn",
+        "nnnnnn",
+        ".nnnn.",
+        "..nn..",
+        "..nn.."
       ]
     },
     {
@@ -50,13 +47,14 @@
         "tr": "Balık Atıştırması"
       },
       "palette": {
-        "o": "#8E5BA8"
+        "o": "#8E5BA8",
+        "p": "#E9C46A"
       },
       "pixels": [
-        ".oooo..o",
-        "o.oooooo",
-        "oooooooo",
-        ".oooo..o"
+        ".ooo.o",
+        "oopooo",
+        "oopooo",
+        ".ooo.o"
       ]
     },
     {
@@ -69,14 +67,12 @@
         "o": "#8E5BA8"
       },
       "pixels": [
-        "..oooo...",
-        ".ooo.oo..",
-        "o....oo..",
-        "ooo..oo..",
-        "oo.oo.o..",
-        ".ooooo...",
-        "..ooooo..",
-        ".......oo"
+        "...ooo.",
+        "..o.ooo",
+        ".oo..oo",
+        "...oo.o",
+        "..oooo.",
+        "......."
       ]
     },
     {
@@ -91,35 +87,27 @@
         "w": "#FBF8F3"
       },
       "pixels": [
-        "...ppp...",
-        ".ppppppp.",
-        "opppppppo",
-        "oooowoooo",
-        ".ooooooo.",
-        ".ooooooo."
+        "..ppp..",
+        "ppppppp",
+        "oopppoo",
+        "oowwwoo",
+        ".ooooo."
       ]
     },
     {
       "id": "persian-006",
       "title": {
-        "en": "If I Fits",
-        "tr": "Kutu Sevdası"
+        "en": "Leftovers",
+        "tr": "Artıklar"
       },
       "palette": {
-        "b": "#EFE7DC",
-        "e": "#3E8EDE",
-        "o": "#8E5BA8",
         "p": "#E9C46A"
       },
       "pixels": [
-        "..b...b..",
-        "..bbbbb..",
-        "..bebeb..",
-        "..bbbeb..",
-        "poobbboop",
-        ".ooooooo.",
-        ".ooooooo.",
-        ".ooooooo."
+        "..ppp..",
+        "ppppp.p",
+        "ppppp.p",
+        "..ppp.."
       ]
     },
     {
@@ -132,76 +120,36 @@
         "p": "#E9C46A"
       },
       "pixels": [
-        "...pp....",
-        "ppppppppp",
-        "p..pp..p.",
-        "...pp...."
+        "..pp...",
+        "ppppppp",
+        "p.pp.p.",
+        "......."
       ]
     },
     {
       "id": "persian-008",
       "title": {
-        "en": "Nap Time",
-        "tr": "Şekerleme"
-      },
-      "palette": {
-        "b": "#EFE7DC"
-      },
-      "pixels": [
-        "b.bbbbbb..",
-        "bbbbbbbbb.",
-        "b..bbbbbb.",
-        ".bbbbbbbb.",
-        "..bbbbbbb.",
-        "..bbbbbb.."
-      ]
-    },
-    {
-      "id": "persian-009",
-      "title": {
-        "en": "Royal Cushion",
-        "tr": "Saray Minderi"
+        "en": "If I Fits",
+        "tr": "Kutu Sevdası"
       },
       "palette": {
         "b": "#EFE7DC",
+        "e": "#3E8EDE",
         "o": "#8E5BA8",
         "p": "#E9C46A"
       },
       "pixels": [
-        ".b..b.....",
-        ".bbbb.....",
-        ".bbbbbb...",
-        ".bbbbbbbb.",
-        ".bbbbbbbb.",
-        "obbbbbbbbo",
-        "oopbbbbpoo",
-        "oooooooooo"
+        "..b..b..",
+        "..bbbb..",
+        "..beeb..",
+        "pobbboo.",
+        ".oooooo.",
+        ".oooooo.",
+        ".oooooo."
       ]
     },
     {
-      "id": "persian-010",
-      "title": {
-        "en": "Sitting Pretty",
-        "tr": "Uslu Oturuş"
-      },
-      "palette": {
-        "b": "#EFE7DC"
-      },
-      "pixels": [
-        "....b....",
-        "bbbbb....",
-        "bbbbb....",
-        ".bbb.....",
-        "..bbbb.bb",
-        ".bbbbb.bb",
-        ".bbbbbbbb",
-        ".bbbbbbbb",
-        ".bbbbbbbb",
-        ".bbbb.b.."
-      ]
-    },
-    {
-      "id": "persian-011",
+      "id": "persian-009",
       "title": {
         "en": "Moon Gazer",
         "tr": "Ay Seyri"
@@ -211,16 +159,50 @@
         "y": "#F4D35E"
       },
       "pixels": [
-        "...yy....",
-        "..yy.....",
-        ".yyy.....",
-        ".yyy.....",
-        ".yyyy....",
-        ".byyyyy..",
-        "bb.yyyyy.",
-        "bbb.yy...",
-        "bbb.b....",
-        ".bbbb...."
+        "..yy...",
+        ".yy....",
+        ".yy....",
+        ".yyy...",
+        "byyyyy.",
+        "bbyyyy.",
+        "bb.b...",
+        "bbbb..."
+      ]
+    },
+    {
+      "id": "persian-010",
+      "title": {
+        "en": "Toy Mouse",
+        "tr": "Oyuncak Fare"
+      },
+      "palette": {
+        "n": "#E8A3A8",
+        "p": "#E9C46A"
+      },
+      "pixels": [
+        "..np....",
+        "..ppp...",
+        "..pppp..",
+        ".ppppp.n",
+        "...p..n."
+      ]
+    },
+    {
+      "id": "persian-011",
+      "title": {
+        "en": "Portrait",
+        "tr": "Portre"
+      },
+      "palette": {
+        "b": "#EFE7DC",
+        "e": "#3E8EDE"
+      },
+      "pixels": [
+        ".bbbbbb.",
+        ".bbbbbb.",
+        ".bebbeb.",
+        "bbbbbbbb",
+        "..bbbb.."
       ]
     },
     {
@@ -231,18 +213,18 @@
       },
       "palette": {
         "b": "#EFE7DC",
+        "e": "#3E8EDE",
         "o": "#8E5BA8",
         "p": "#E9C46A"
       },
       "pixels": [
-        "..........",
-        "..bbbbbb..",
-        "..bbbbbb..",
-        "..bbbbbb..",
-        "ppobbbbopp",
-        ".oooooooo.",
-        ".oooooooo.",
-        ".oooooooo."
+        "........",
+        "..bbbb..",
+        "..bbeb..",
+        ".obbbbo.",
+        "poooooo.",
+        ".oooooo.",
+        ".oooooo."
       ]
     },
     {
@@ -256,17 +238,15 @@
         "y": "#F4D35E"
       },
       "pixels": [
-        "...yyy....",
-        "..yyy.....",
-        "..yyy.....",
-        ".yyyy.....",
-        ".yyyy.....",
-        "..yyyy....",
-        "bbyyyyyyy.",
-        "bb.yyyyy..",
-        ".bb..b....",
-        "bbbb.b....",
-        ".bbbb....."
+        "....y...",
+        "....yy..",
+        "....yyy.",
+        "....yyy.",
+        "...yyyy.",
+        ".yyyyybb",
+        "..yyy.bb",
+        "...b.bbb",
+        "....bbb."
       ]
     },
     {
@@ -280,17 +260,15 @@
         "n": "#E8A3A8"
       },
       "pixels": [
-        "...bb.bb...",
-        "..bnnbnnb..",
-        "bbbbb.bnbbb",
-        "bnb.....bnb",
-        "bnbbbbbbbnb",
-        "..bbbbbbb..",
-        "..bbnnnbb..",
-        ".bbnnnnnbb.",
-        ".bbnnnnnbb.",
-        "..bbnnnbb..",
-        "...bbbbb..."
+        "..bb.bb..",
+        "..nnbnn..",
+        "bb.b.b.bb",
+        "nn.bbb.nn",
+        ".bbbbbbb.",
+        ".bbnnnbb.",
+        ".bbnnnbb.",
+        ".bbnnnbb.",
+        "..bbbbb.."
       ]
     },
     {
@@ -304,13 +282,12 @@
         "e": "#3E8EDE"
       },
       "pixels": [
-        "....bbb....",
-        ".bbbbbbbbb.",
-        ".bbbbbbbbb.",
-        ".bbebbbebb.",
-        "bbbbbbbbbbb",
-        "bbbbbbbbbbb",
-        "...bbbbb..."
+        ".b.bbb.b.",
+        ".bbbbbbb.",
+        ".bebbbeb.",
+        "bbbbbbebb",
+        "bbbbbbbbb",
+        "..bbbbb.."
       ]
     }
   ]

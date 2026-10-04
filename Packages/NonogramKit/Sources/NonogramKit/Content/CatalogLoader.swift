@@ -30,7 +30,9 @@ public enum CatalogLoader {
                 subtitle: entry.subtitle,
                 accentColor: entry.accentColor.flatMap(RGBColor.init(hex:)),
                 expectedPuzzleCount: entry.expectedPuzzleCount ?? puzzles.count,
-                puzzles: puzzles
+                puzzles: puzzles,
+                portrait: try entry.portrait?.artwork(),
+                card: entry.card
             )
         }
         return try LevelCatalog(chapters: chapters, defaultRules: manifest.defaultRules ?? .classic)
@@ -58,6 +60,8 @@ struct CatalogManifest: Decodable {
         let file: String
         /// İsteğe bağlı: içerik hazırlanırken planlanan sayı. Yoksa dosyadaki bulmaca sayısı kullanılır.
         let expectedPuzzleCount: Int?
+        let portrait: PixelArt.Payload?
+        let card: BreedCard?
     }
 
     let schemaVersion: Int

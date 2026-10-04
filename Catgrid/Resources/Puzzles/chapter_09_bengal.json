@@ -13,19 +13,14 @@
         "n": "#B5654A"
       },
       "pixels": [
-        "...bbb.bbb...",
-        "...bnb.bnb...",
-        ".b.bnb.bnb.b.",
-        "bbb.b...b.bbb",
-        "bnb.......bnb",
-        "bnb.bbbbb.bnb",
-        "..bbbbbbbbb..",
-        "..bbbnnnbbb..",
-        "..bbnnnnnbb..",
-        "..bbnnnnnbb..",
-        "..bbnnnnnbb..",
-        "...bbnnnbb...",
-        "....bbbbb...."
+        "..bbbb..",
+        "..nbbn..",
+        "bn....nb",
+        "bbbbbbbb",
+        ".bbbbbb.",
+        ".bnnnnb.",
+        ".bbnnnb.",
+        "..bbbb.."
       ]
     },
     {
@@ -39,18 +34,13 @@
         "w": "#F5E6C8"
       },
       "pixels": [
-        ".nnnnn.nnnnn.",
-        "nnnnnnnnnnnnn",
-        "nnwwnnnnnnnnn",
-        "nnnnnnnnnnnnn",
-        "nnnnnnnnnnnnn",
-        ".nnnnnnnnnnn.",
-        "..nnnnnnnnn..",
-        "..nnnnnnnnn..",
-        "...nnnnnnn...",
-        "....nnnnn....",
-        ".....nnn.....",
-        "......n......"
+        ".nnnnnn.",
+        "nwwnnnnn",
+        "nnnnnnnn",
+        ".nnnnnn.",
+        "..nnnn..",
+        "...nn...",
+        "...nn..."
       ]
     },
     {
@@ -60,17 +50,13 @@
         "tr": "Balık Atıştırması"
       },
       "palette": {
-        "o": "#3E7C4F",
-        "p": "#8C6A4A"
+        "o": "#3E7C4F"
       },
       "pixels": [
-        "...oooo.....o",
-        ".oooopooo..oo",
-        "o..oopooooooo",
-        "oo.oopooooooo",
-        "ooooopooooooo",
-        ".oooopooo..oo",
-        "...oooo.....o"
+        ".oooo..o",
+        "o.oooooo",
+        "oooooooo",
+        ".oooo..o"
       ]
     },
     {
@@ -83,19 +69,14 @@
         "o": "#3E7C4F"
       },
       "pixels": [
-        "..............",
-        "...oooooo.....",
-        "..oooooooo....",
-        ".o.oooo.ooo...",
-        ".oo.....ooo...",
-        ".oooo...oooo..",
-        ".oooo.o..ooo..",
-        ".ooo.ooo..o...",
-        ".oo.ooooo.....",
-        "..o.oooooo....",
-        "...oooooooo...",
-        ".....oo...oo.o",
-        "...........oo."
+        "..oooo...",
+        ".ooo.oo..",
+        "o....oo..",
+        "ooo..oo..",
+        "oo.oo.o..",
+        ".ooooo...",
+        "..ooooo..",
+        ".......oo"
       ]
     },
     {
@@ -110,43 +91,30 @@
         "w": "#F5E6C8"
       },
       "pixels": [
-        "....pp.ppp....",
-        "..pppppppppp..",
-        ".pppppppppppp.",
-        "ooppppppppppoo",
-        "ooooppppppoooo",
-        ".oowwwwwwwwoo.",
-        ".oowwwwwwwwoo.",
-        ".oooooooooooo.",
-        "..oooooooooo.."
+        "...ppp...",
+        ".ppppppp.",
+        "opppppppo",
+        "oooowoooo",
+        ".ooooooo.",
+        ".ooooooo."
       ]
     },
     {
       "id": "bengal-006",
       "title": {
-        "en": "If I Fits",
-        "tr": "Kutu Sevdası"
+        "en": "Toy Mouse",
+        "tr": "Oyuncak Fare"
       },
       "palette": {
-        "b": "#E3A857",
-        "e": "#6FA04A",
-        "o": "#3E7C4F",
+        "n": "#B5654A",
         "p": "#8C6A4A"
       },
       "pixels": [
-        "..............",
-        "....b....b....",
-        "...bbbbbbbb...",
-        "...bbbbbbbb...",
-        "...bbebbebb...",
-        "...bbebbebb...",
-        "..obbbbbbbbo..",
-        "ppoobbbbbboopp",
-        ".oooooooooooo.",
-        "..oooooooooo..",
-        ".oooooooooooo.",
-        ".oooooooooooo.",
-        ".oooooooooooo."
+        "..np.....",
+        "..pppp...",
+        "p.pppp...",
+        ".pppppn..",
+        "..ppp..n."
       ]
     },
     {
@@ -159,13 +127,10 @@
         "p": "#8C6A4A"
       },
       "pixels": [
-        "....p.p.pp....",
-        "..p.p.p.pp...p",
-        ".pp.p.p.pp..pp",
-        "pppppppppppppp",
-        ".pp.p.p.pp..pp",
-        "..p.p.p.pp...p",
-        "....p.p.pp...."
+        "...pp....",
+        "pppppppp.",
+        "p..pp..p.",
+        "....p...."
       ]
     },
     {
@@ -180,46 +145,40 @@
         "e": "#6FA04A"
       },
       "pixels": [
-        ".b..........b.",
-        ".b...bbbb...b.",
-        "bbbbbbbbbbbbbb",
-        "bbbbbbbbbbbbbb",
-        "bbbbbbbbbbbbbb",
-        "bbbbbbbbbbbbbb",
-        "bddeedbbbeebbb",
-        "bbdeeebbbeebbb",
-        "bbdeebbbbeebbb",
-        "bbdbbbbbbbbbbb",
-        ".bbbbbbbbbbbb.",
-        ".bbbbbbbbbbbb.",
-        "..bbbbbbbbbb..",
-        "....bbbbbb...."
+        "..........",
+        "bbbbbbbbbb",
+        "bbbbbbbbbb",
+        "bbbbbbbbbb",
+        "bdeebbeebb",
+        "bdeebbeebb",
+        "bddbbbbbbb",
+        "bbbbbbbbbb",
+        ".bbbbbbbb.",
+        "..bbbbbb.."
       ]
     },
     {
       "id": "bengal-009",
       "title": {
-        "en": "Jungle Prowl",
-        "tr": "Orman Avcısı"
+        "en": "If I Fits",
+        "tr": "Kutu Sevdası"
       },
       "palette": {
         "b": "#E3A857",
-        "d": "#5A3A22",
-        "g": "#3E8E41"
+        "e": "#6FA04A",
+        "o": "#3E7C4F",
+        "p": "#8C6A4A"
       },
       "pixels": [
-        "...............",
-        "..........g.g..",
-        ".b...b....gg.gg",
-        "bb..bb.....gg..",
-        "bbbbbb.....g...",
-        "bbbbbbbbbb.....",
-        ".bbbbbbbbdbb...",
-        "..bbbdbbddbbb..",
-        "..bbbdddddbbbb.",
-        "..bbbbdbdbbbbb.",
-        "...bbbbbbdbbb..",
-        ".....bbbbbb...."
+        "..........",
+        "..bb..bb..",
+        "..bbbbbb..",
+        "..beeeeb..",
+        ".obbbbbbo.",
+        "ppoobboopp",
+        ".oooooooo.",
+        ".oooooooo.",
+        ".oooooooo."
       ]
     },
     {
@@ -233,16 +192,12 @@
         "d": "#5A3A22"
       },
       "pixels": [
-        "...............",
-        ".b...bbbbbbb...",
-        "bbbbbbbbbbbbbb.",
-        "bbbbbbbbddbdbb.",
-        "bb...bbbbdbdbbb",
-        ".bbbbbbbddbdbbb",
-        "..bbbbbbbddbbbb",
-        "...bbbbbbdbbbb.",
-        "....bbbbbbbbbb.",
-        "....bbbbbbbbb.."
+        "....bb....",
+        "bbbbbbbbb.",
+        "bbbbbbddbb",
+        ".bbbbbdbbb",
+        "..bbbbdbbb",
+        "...bbbbbb."
       ]
     },
     {
@@ -256,21 +211,16 @@
         "d": "#5A3A22"
       },
       "pixels": [
-        "............",
-        ".....bb...bb",
-        ".....bbbbbbb",
-        ".....bbbbbbb",
-        ".....bbbbbbb",
-        "......bbbbb.",
-        "......bbbb..",
-        "bb..bbbbb...",
-        "bb.bbbdbbb..",
-        "bb.bbdbbbbb.",
-        "bb.bbbddbbb.",
-        "bb.bbdddbbb.",
-        ".bbbbbbbbb..",
-        "..bbbbbbbb..",
-        ".....bbbbb.."
+        "........",
+        "bbbbb...",
+        "bbbbb...",
+        ".bbb....",
+        "..bbb...",
+        ".bbdbb.b",
+        ".bbddb.b",
+        ".bbdbb.b",
+        ".bbbbbbb",
+        ".bbbb..."
       ]
     },
     {
@@ -286,19 +236,15 @@
         "p": "#8C6A4A"
       },
       "pixels": [
-        "....b.....b....",
-        "....b....bb....",
-        "...bbbbbbbb....",
-        "...bbbbbbbb....",
-        "....bebbebb....",
-        "...bbeebeeb....",
-        ".poobbbbbbboop.",
-        "pppoobbbbboopp.",
-        ".oooooooooooo..",
-        "..ooooooooooo..",
-        ".oooooooooooo..",
-        ".oooooooooooo..",
-        ".oooooooooooo.."
+        "..........",
+        "...b...b..",
+        "...bbbbb..",
+        "...bebeb..",
+        "..obbbbbo.",
+        ".poobboopp",
+        ".oooooooo.",
+        ".oooooooo.",
+        "..ooooooo."
       ]
     },
     {
@@ -312,22 +258,17 @@
         "y": "#F4D35E"
       },
       "pixels": [
-        ".....yyy......",
-        "....yyy.......",
-        "...yyyy.......",
-        "..yyyyy.......",
-        "..yyyyy.......",
-        "..yyyyy.......",
-        "..yyyyy.......",
-        "..yyyyyy......",
-        "..yyyyyyy.....",
-        "bbbyyyyyyyyyy.",
-        "bbb.yyyyyyyy..",
-        ".bb...yyyy....",
-        ".bbbb..b......",
-        "bbbbb..b......",
-        "bbbbb.bb......",
-        ".bbbbbb......."
+        "...yyy....",
+        "..yyy.....",
+        "..yyy.....",
+        ".yyyy.....",
+        ".yyyy.....",
+        "..yyyy....",
+        "bbyyyyyyy.",
+        "bb.yyyyy..",
+        ".bb..b....",
+        "bbbb.b....",
+        ".bbbb....."
       ]
     },
     {
@@ -341,22 +282,17 @@
         "n": "#B5654A"
       },
       "pixels": [
-        "....bbb..bbb....",
-        "....bnb..bnb....",
-        "...bnnnbbnnnb...",
-        ".bb.bnb..bnb.bb.",
-        "bbbb.b....b.bbbb",
-        "bnnb........bnnb",
-        "bnnb.bbbbbb.bnnb",
-        ".bbbbbbbbbbbbbb.",
-        "...bbbbbbbbbb...",
-        "..bbbbnnnnbbbb..",
-        "..bbbnnnnnnbbb..",
-        "..bbbnnnnnnbbb..",
-        "..bbbnnnnnnbbb..",
-        "...bbnnnnnnbb...",
-        "....bbbbbbbb....",
-        ".....bbbbbb....."
+        "...bb.bb...",
+        "..bnnbnnb..",
+        "bbbbb.bnbbb",
+        "bnb.....bnb",
+        "bnbbbbbbbnb",
+        "..bbbbbbb..",
+        "..bbnnnbb..",
+        ".bbnnnnnbb.",
+        ".bbnnnnnbb.",
+        "..bbnnnbb..",
+        "...bbbbb..."
       ]
     },
     {
@@ -370,20 +306,15 @@
         "d": "#5A3A22"
       },
       "pixels": [
-        ".b..............",
-        ".b..............",
-        ".b........b...bb",
-        ".b........bbbbbb",
-        ".bb.......bbbbbb",
-        "..b.bbbbbbbbbbbb",
-        "...bbbbddbbbbbb.",
-        "...bbddddbbbb...",
-        "...bbbbbdbbb....",
-        "...bbbbbbbbb....",
-        "...b.b...b.b....",
-        "...b.b..bb.b....",
-        "...b.bb.bb.b....",
-        "...b....b..b...."
+        "...........",
+        ".......b..b",
+        ".......bbbb",
+        ".bbbbbbbbbb",
+        "..bbddbbbb.",
+        "..bbbdbb...",
+        "..bb..bb...",
+        "..b...bb...",
+        "..b.b......"
       ]
     }
   ]

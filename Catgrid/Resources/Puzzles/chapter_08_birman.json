@@ -13,18 +13,14 @@
         "w": "#FBF8F3"
       },
       "pixels": [
-        "...ww..ww...",
-        "...nnwwnn...",
-        ".w.wnwwnn.w.",
-        "wnw......wnw",
-        "wnw..ww..wnw",
-        ".wwwwwwwwww.",
-        "..wwwwwwww..",
-        "..wwnnnnww..",
-        ".wwnnnnnnww.",
-        "..wwnnnnww..",
-        "..wwwnnnww..",
-        "...wwwwww..."
+        "..wwww..",
+        "..nwwn..",
+        "wn....nw",
+        "wwwwwwww",
+        ".wwwwww.",
+        ".wnnnnw.",
+        ".wwnnnw.",
+        "..wwww.."
       ]
     },
     {
@@ -38,17 +34,13 @@
         "w": "#FBF8F3"
       },
       "pixels": [
-        ".nnnn..nnnn.",
-        "nnnnnnnnnnnn",
-        "nnwwnnnnnnnn",
-        "nnnnnnnnnnnn",
-        "nnnnnnnnnnnn",
-        ".nnnnnnnnnn.",
-        "..nnnnnnnn..",
-        "...nnnnnn...",
-        "....nnnn....",
-        ".....nn.....",
-        ".....nn....."
+        ".nnnnnn.",
+        "nwwnnnnn",
+        "nnnnnnnn",
+        ".nnnnnn.",
+        "..nnnn..",
+        "...nn...",
+        "...nn..."
       ]
     },
     {
@@ -61,13 +53,10 @@
         "o": "#C9A227"
       },
       "pixels": [
-        "..oooo.....o",
-        ".ooooooo..oo",
-        "o..ooooooooo",
-        "oooooooooooo",
-        "oooooooooooo",
-        ".ooooooo..oo",
-        "..oooo.....o"
+        ".oooo..o",
+        "o.oooooo",
+        "oooooooo",
+        ".oooo..o"
       ]
     },
     {
@@ -80,18 +69,14 @@
         "o": "#C9A227"
       },
       "pixels": [
-        "......oooo...",
-        "....oooooooo.",
-        "....oo.oooo..",
-        "...oooo....oo",
-        "...oooo..oooo",
-        "...ooo.o.oooo",
-        "...oo.ooo.ooo",
-        ".....ooooo.o.",
-        "....oooooooo.",
-        "...oo.oooo...",
-        ".ooo.........",
-        "............."
+        "..oooo...",
+        ".ooo.oo..",
+        "o....oo..",
+        "ooo..oo..",
+        "oo.oo.o..",
+        ".ooooo...",
+        "..ooooo..",
+        ".......oo"
       ]
     },
     {
@@ -106,15 +91,12 @@
         "w": "#FBF8F3"
       },
       "pixels": [
-        "....p..pp....",
-        "..ppppppppp..",
-        ".ppppppppppp.",
-        "oopppppppppoo",
-        "oooopppppoooo",
-        ".oowwwwwwwoo.",
-        ".oowwwwwwwoo.",
-        ".ooooooooooo.",
-        "..ooooooooo.."
+        "...ppp...",
+        ".ppppppp.",
+        "opppppppo",
+        "oooowoooo",
+        ".ooooooo.",
+        ".ooooooo."
       ]
     },
     {
@@ -128,14 +110,11 @@
         "p": "#9AA5B1"
       },
       "pixels": [
-        "........pp...",
-        ".......pnn...",
-        ".....ppppp...",
-        "....pppppp.p.",
-        "...ppppppppp.",
-        "n..nppppppp..",
-        ".nn..ppppp...",
-        ".nn.........."
+        "..pp.....",
+        "..pppp...",
+        "..pppp...",
+        ".pppppn.n",
+        "...p...n."
       ]
     },
     {
@@ -148,12 +127,10 @@
         "p": "#9AA5B1"
       },
       "pixels": [
-        "....p.p.p....",
-        ".pp.p.p.p...p",
-        "ppppppppppppp",
-        "ppppppppppppp",
-        ".pp.p.p.p...p",
-        "....p.p.p...."
+        "....pp...",
+        ".pppppppp",
+        ".p..pp..p",
+        "........."
       ]
     },
     {
@@ -169,17 +146,14 @@
         "w": "#FBF8F3"
       },
       "pixels": [
-        "..d...........",
-        "..d...bb...d..",
-        "..dbbbbbbbbd..",
-        "..bbbbbbbbbb..",
-        "..bbbbddbbbb..",
-        "..bbeeddeebb..",
-        ".bbbeeddeebbb.",
-        "bbbbddddddbbbb",
-        "bbbbwwwwwwbbbb",
-        "...bwwwwwwb...",
-        "....bwwww....."
+        ".d......d.",
+        ".dbbbbbbd.",
+        ".dbbbbbbd.",
+        ".bbeddebb.",
+        ".beeddeeb.",
+        "bbbdwwdbbb",
+        "bbbwwwwbbb",
+        "...wwww..."
       ]
     },
     {
@@ -193,20 +167,16 @@
         "w": "#FBF8F3"
       },
       "pixels": [
-        "..bbb....bbb..",
-        ".bbbbb..bbbbb.",
-        "bbbbbbbbbbbbbb",
-        "bbbbbbbbbbbbbb",
-        "bbbbbbbbbbbbbb",
-        "bbbbbbbbbbbbbb",
-        "bbbbbbbbbbbbbb",
-        "bbbbbbbbbbbbbb",
-        ".bbbbbbbbbbbb.",
-        ".wwwww..wwwww.",
-        ".w.w.wwww.w.w.",
-        "ww.w.wwww.w.ww",
-        ".w.w.wwww.w.w.",
-        ".wwwww..wwwww."
+        "..bb..bbb.",
+        ".bbbbbbbbb",
+        "bbbbbbbbbb",
+        "bbbbbbbbbb",
+        "bbbbbbbbbb",
+        "bbbbbbbbbb",
+        ".bwwb.bww.",
+        ".wwwwwww.w",
+        ".wwwwwww.w",
+        ".wwww.www."
       ]
     },
     {
@@ -220,41 +190,37 @@
         "d": "#6B5544"
       },
       "pixels": [
-        ".....d........",
-        "dd.bddbbbbb...",
-        "dddbddbbbbbbb.",
-        "ddd.dddbbbbbb.",
-        ".bbbbbbbbbbbbd",
-        ".bbbbbbbbbbbdd",
-        "...bbbbbbbbdd.",
-        "...dddddddddd.",
-        "...ddddddddd.."
+        "....dbb...",
+        "ddbddbbbb.",
+        "d...dbbbbb",
+        ".bbbbbbbbd",
+        "..bbbbbbdd",
+        "..ddddddd."
       ]
     },
     {
       "id": "birman-011",
       "title": {
-        "en": "Strut",
-        "tr": "Salınarak Yürüyüş"
+        "en": "If I Fits",
+        "tr": "Kutu Sevdası"
       },
       "palette": {
         "b": "#F2E6D3",
         "d": "#6B5544",
-        "w": "#FBF8F3"
+        "e": "#3F7FCF",
+        "o": "#C9A227",
+        "p": "#9AA5B1"
       },
       "pixels": [
-        "............d.",
-        "............dd",
-        "dd..d.......dd",
-        "dddddd......dd",
-        "ddbdddbbbb.dd.",
-        ".bbbbbbbbbbd..",
-        "...bbbbbbbbb..",
-        "....wbwbbww...",
-        "....wwwbbww...",
-        "...ww.w..www..",
-        "...ww.w.wwww..",
-        "...w..w.w..w.."
+        "..........",
+        "..dd..dd..",
+        "..ddbbdd..",
+        "..beeeeb..",
+        ".obbbbbbo.",
+        "ppoobboopp",
+        ".oooooooo.",
+        ".oooooooo.",
+        ".oooooooo."
       ]
     },
     {
@@ -271,19 +237,15 @@
         "p": "#9AA5B1"
       },
       "pixels": [
-        "..............",
-        "....d....d....",
-        "...dddbbddd...",
-        "...dddbbddd...",
-        "...bbebbebb...",
-        "...bbebbebb...",
-        "..obbbbbbbbo..",
-        "ppoobbbbbboopp",
-        ".oooooooooooo.",
-        "..oooooooooo..",
-        ".oooooooooooo.",
-        ".oooooooooooo.",
-        ".oooooooooooo."
+        "..........",
+        "..dd..d...",
+        "..ddbbdd..",
+        "..bebebb..",
+        ".obbbbboo.",
+        "ppoobboopp",
+        ".oooooooo.",
+        ".oooooooo.",
+        ".oooooooo."
       ]
     },
     {
@@ -297,21 +259,17 @@
         "y": "#F4D35E"
       },
       "pixels": [
-        "......yy.....",
-        ".......yyy...",
-        ".......yyyy..",
-        ".......yyyy..",
-        ".......yyyy..",
-        ".......yyyy..",
-        "......yyyyy..",
-        ".....yyyyyy..",
-        ".yyyyyyyyybbb",
-        "..yyyyyyyybbb",
-        "...yyyyy..bbb",
-        "......b..bbb.",
-        "......b..bbbb",
-        "......b..bbbb",
-        ".......bbbbb."
+        "...yyy....",
+        "..yyy.....",
+        "..yyy.....",
+        ".yyyy.....",
+        ".yyyy.....",
+        "..yyyy....",
+        "bbyyyyyyy.",
+        "bb.yyyyy..",
+        ".bb..b....",
+        "bbbb.b....",
+        ".bbbb....."
       ]
     },
     {
@@ -325,21 +283,17 @@
         "w": "#FBF8F3"
       },
       "pixels": [
-        "....ww...ww....",
-        "...wnnw.wnnw...",
-        "...wnnw.wnnw...",
-        ".ww.wnw.wnw.ww.",
-        "wnnw.......wnnw",
-        "wnnw...w...wnnw",
-        "wnw.wwwwwww.wnw",
-        "...wwwwwwwww...",
-        "..wwwwwwwwwww..",
-        "..wwwnnnnnwww..",
-        "..wwnnnnnnnww..",
-        "..wwnnnnnnnww..",
-        "..wwwnnnnnwww..",
-        "...wwwnnnwww...",
-        ".....wwwww....."
+        "...ww.ww...",
+        "..wnnwnnw..",
+        "wwwww.wnwww",
+        "wnw.....wnw",
+        "wnwwwwwwwnw",
+        "..wwwwwww..",
+        "..wwnnnww..",
+        ".wwnnnnnww.",
+        ".wwnnnnnww.",
+        "..wwnnnww..",
+        "...wwwww..."
       ]
     },
     {
@@ -354,21 +308,17 @@
         "w": "#FBF8F3"
       },
       "pixels": [
-        ".d....d......",
-        ".d....d......",
-        "dddbbdd......",
-        "dddbdddd.....",
-        ".bdddbb......",
-        ".bdddb.......",
-        "..bbbbb....d.",
-        "...bbbbb...dd",
-        "..bbbbbbb..dd",
-        "..bbbbbbbb.dd",
-        ".bbbbbbbbb.dd",
-        "..bbbbbbbb.dd",
-        "..bbbbbbbdddd",
-        "..bbbbbbdddd.",
-        "..wwbww.dd..."
+        "d...d....",
+        "ddbdd....",
+        "ddbdd....",
+        ".bdbb....",
+        ".bdb.....",
+        "..bbbb.dd",
+        ".bbbbb.dd",
+        ".bbbbbbdd",
+        ".bbbbbbdd",
+        "..bbbbddd",
+        ".wwww.d.."
       ]
     }
   ]

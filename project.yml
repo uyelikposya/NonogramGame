@@ -34,6 +34,8 @@ targets:
     platform: iOS
     sources:
       - path: Catgrid
+        excludes:
+          - Resources/Catgrid.storekit   # yalnızca Xcode'da yerel satın alma testi için
     dependencies:
       - package: NonogramKit
       - package: GoogleMobileAds
@@ -89,6 +91,9 @@ targets:
 
 schemes:
   Catgrid:
+    run:
+      # App Store Connect'te ürün tanımlanmadan simülatörde satın almayı denemek için
+      storeKitConfiguration: Catgrid/Resources/Catgrid.storekit
     build:
       targets:
         Catgrid: all

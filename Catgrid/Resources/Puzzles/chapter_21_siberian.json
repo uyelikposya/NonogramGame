@@ -1,0 +1,389 @@
+{
+  "schemaVersion": 1,
+  "chapterID": "siberian",
+  "puzzles": [
+    {
+      "id": "siberian-001",
+      "title": {
+        "en": "Toe Beans",
+        "tr": "Pati Yastıkları"
+      },
+      "palette": {
+        "b": "#A58B6F",
+        "n": "#B5654A"
+      },
+      "pixels": [
+        "....bb..bb....",
+        "...bnnbbnnb...",
+        "...bnnbbnnb...",
+        "bbbbbb..bbbbbb",
+        "bnn........nnb",
+        "bnn..bbbb..bnb",
+        ".bbbbbbbbbbbb.",
+        "..bbbbbbbbbb..",
+        "..bbbnnnnbbb..",
+        "..bbnnnnnnbb..",
+        "..bbnnnnnnbb..",
+        "..bbnnnnnnbb..",
+        "...bbbnnbbb...",
+        "....bbbbbb...."
+      ]
+    },
+    {
+      "id": "siberian-002",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi"
+      },
+      "palette": {
+        "n": "#B5654A",
+        "w": "#F1EBE2"
+      },
+      "pixels": [
+        ".nnnnn..nnnnn.",
+        "nnnnnnnnnnnnnn",
+        "nnwwwnnnnnnnnn",
+        "nnnwnnnnnnnnnn",
+        "nnnnnnnnnnnnnn",
+        "nnnnnnnnnnnnnn",
+        ".nnnnnnnnnnnn.",
+        "..nnnnnnnnnn..",
+        "...nnnnnnnn...",
+        "....nnnnnn....",
+        ".....nnnn.....",
+        "......nn......",
+        "......nn......"
+      ]
+    },
+    {
+      "id": "siberian-003",
+      "title": {
+        "en": "Fish Snack",
+        "tr": "Balık Atıştırması"
+      },
+      "palette": {
+        "o": "#6B4F3A",
+        "p": "#C8B6A6"
+      },
+      "pixels": [
+        "...oooo......o",
+        ".oooopooo...oo",
+        "oo.oopoooo.ooo",
+        "o..oopoooooooo",
+        "ooooopoooooooo",
+        "ooooopoooo.ooo",
+        ".oooopooo...oo",
+        "...oooo......o"
+      ]
+    },
+    {
+      "id": "siberian-004",
+      "title": {
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak"
+      },
+      "palette": {
+        "o": "#6B4F3A"
+      },
+      "pixels": [
+        "..............",
+        "...ooooo......",
+        ".oooooo.oo....",
+        "...ooo..oo....",
+        "oo...o.oooo...",
+        "ooooo..oooo...",
+        "oooo.o..ooo...",
+        "ooo..oo..oo...",
+        ".oo.oooo......",
+        ".oooooooo.....",
+        "..oooooooo....",
+        ".....o....o.o.",
+        "...........oo."
+      ]
+    },
+    {
+      "id": "siberian-005",
+      "title": {
+        "en": "Dinner Bowl",
+        "tr": "Mama Kabı"
+      },
+      "palette": {
+        "o": "#6B4F3A",
+        "p": "#C8B6A6",
+        "w": "#F1EBE2"
+      },
+      "pixels": [
+        "....pp.ppp....",
+        "..pppppppppp..",
+        ".pppppppppppp.",
+        "ooppppppppppoo",
+        "ooooppppppoooo",
+        ".oowwwwwwwwoo.",
+        ".oowwwwwwwwoo.",
+        ".oooooooooooo.",
+        "..oooooooooo.."
+      ]
+    },
+    {
+      "id": "siberian-006",
+      "title": {
+        "en": "Toy Mouse",
+        "tr": "Oyuncak Fare"
+      },
+      "palette": {
+        "n": "#B5654A",
+        "p": "#C8B6A6"
+      },
+      "pixels": [
+        "...pnp........",
+        "...pnppp......",
+        "...ppppppp....",
+        ".p.ppppppp....",
+        "..pppppppp....",
+        "..ppppppppn..n",
+        "...pppppp..nn.",
+        ".............."
+      ]
+    },
+    {
+      "id": "siberian-007",
+      "title": {
+        "en": "Leftovers",
+        "tr": "Artıklar"
+      },
+      "palette": {
+        "p": "#C8B6A6"
+      },
+      "pixels": [
+        "....p.p.pp....",
+        "..p.p.p.pp...p",
+        ".pp.p.p.pp..pp",
+        "pppppppppppppp",
+        ".pp.p.p.pp..pp",
+        "..p.p.p.pp...p",
+        "....p.p.pp...."
+      ]
+    },
+    {
+      "id": "siberian-008",
+      "title": {
+        "en": "Mighty Tail",
+        "tr": "Görkemli Kuyruk"
+      },
+      "palette": {
+        "b": "#A58B6F",
+        "d": "#5E4B3A"
+      },
+      "pixels": [
+        "............",
+        ".b...b......",
+        ".b...b..dd..",
+        "bbbbbb..ddd.",
+        "bbbbbb..dddd",
+        ".bbbbb...ddd",
+        "..bbbb....dd",
+        "..bbbbb...dd",
+        "..bbddbb..dd",
+        ".bbbbbbb..bd",
+        ".bbbbbbb.dbd",
+        "..bbbbbddbdd",
+        "...bbbddbd..",
+        "......dd...."
+      ]
+    },
+    {
+      "id": "siberian-009",
+      "title": {
+        "en": "Forest Guardian",
+        "tr": "Orman Bekçisi"
+      },
+      "palette": {
+        "b": "#A58B6F",
+        "d": "#5E4B3A",
+        "g": "#2F6B3B",
+        "o": "#6B4F3A"
+      },
+      "pixels": [
+        "..........g...",
+        "..........g...",
+        ".........ggg..",
+        "b........ggg..",
+        "bb..b...gggg..",
+        "bbbbbb..ggggg.",
+        "bbbbbb..ggggg.",
+        ".bbbb...ggggg.",
+        "..bbb...dggg..",
+        "..bdbbb.ddggg.",
+        ".bbdbbb.ddggg.",
+        ".bbbbbbgddgggg",
+        ".bbbbbbgddgggg",
+        "..bbbbbdddo...",
+        ".bbbbbdd..o..."
+      ]
+    },
+    {
+      "id": "siberian-010",
+      "title": {
+        "en": "Nap Time",
+        "tr": "Şekerleme"
+      },
+      "palette": {
+        "b": "#A58B6F",
+        "d": "#5E4B3A"
+      },
+      "pixels": [
+        "......d........",
+        "...............",
+        ".b...bbbbb.....",
+        "bbbbbbbbbbbbb..",
+        "bbbbbbbdbbdbbb.",
+        "bb...bbbbbbbbb.",
+        ".bbbbbbbbbbbbbd",
+        "..bbbbbbbbbbbdd",
+        "...bbbbbbbbbdd.",
+        "...dddddddddd..",
+        "....ddddddddd.."
+      ]
+    },
+    {
+      "id": "siberian-011",
+      "title": {
+        "en": "Sitting Pretty",
+        "tr": "Uslu Oturuş"
+      },
+      "palette": {
+        "b": "#A58B6F",
+        "d": "#5E4B3A"
+      },
+      "pixels": [
+        "d..........",
+        ".....b.....",
+        "bb...b.....",
+        "bbbbbb.....",
+        "bbbbbb.....",
+        "bbbbbb.....",
+        ".bbbb......",
+        "..bbbb...d.",
+        "..bbddb..dd",
+        "..bbdddb.dd",
+        ".bbbbbbb.dd",
+        ".bbbbbbb.dd",
+        "..bbbbbbddd",
+        "..bbbbbddd.",
+        "..bbbb.dd.."
+      ]
+    },
+    {
+      "id": "siberian-012",
+      "title": {
+        "en": "Strut",
+        "tr": "Salınarak Yürüyüş"
+      },
+      "palette": {
+        "b": "#A58B6F",
+        "d": "#5E4B3A"
+      },
+      "pixels": [
+        "d............d.",
+        ".............dd",
+        "bb..bb.......dd",
+        "bbbbbb.......dd",
+        "bbbbbb......ddd",
+        ".bbbbbbdddbddd.",
+        "..bbbbbbbbbdd..",
+        "....bbbbbbbb...",
+        "....bbbbbbbb...",
+        "....b.b..b.b...",
+        "....b.b..b.b...",
+        "....b.b..b.b...",
+        "....b.b..b.b..."
+      ]
+    },
+    {
+      "id": "siberian-013",
+      "title": {
+        "en": "If I Fits",
+        "tr": "Kutu Sevdası"
+      },
+      "palette": {
+        "b": "#A58B6F",
+        "e": "#8DB04A",
+        "o": "#6B4F3A",
+        "p": "#C8B6A6"
+      },
+      "pixels": [
+        "...............",
+        "....b.....b....",
+        "....b.....b....",
+        "....bb...bb....",
+        "...bbbbbbbbb...",
+        "...bbbbbbbbb...",
+        "....beebeeb....",
+        "....beebeeb....",
+        ".poobbbbbbboop.",
+        "pppoobbbbbooppp",
+        ".ooooooooooooo.",
+        "..ooooooooooo..",
+        ".ooooooooooooo.",
+        ".ooooooooooooo.",
+        ".ooooooooooooo."
+      ]
+    },
+    {
+      "id": "siberian-014",
+      "title": {
+        "en": "Moon Gazer",
+        "tr": "Ay Seyri"
+      },
+      "palette": {
+        "b": "#A58B6F",
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        ".....yyy.....",
+        "......yyy....",
+        "......yyyy...",
+        ".......yyy...",
+        ".......yyyy..",
+        "......yyyyy..",
+        "......yyyyy..",
+        ".....yyyyy...",
+        ".yyyyyyyyybb.",
+        ".yyyyyyyy.bbb",
+        "...yyyyy..bb.",
+        ".....b..bbbb.",
+        ".....b..bbbb.",
+        ".....bb.bbbb.",
+        ".......bbbbb."
+      ]
+    },
+    {
+      "id": "siberian-015",
+      "title": {
+        "en": "Mighty Tail",
+        "tr": "Görkemli Kuyruk"
+      },
+      "palette": {
+        "b": "#A58B6F",
+        "d": "#5E4B3A"
+      },
+      "pixels": [
+        ".............",
+        ".....b.......",
+        "bb...b...d...",
+        "bbbbbb..ddd..",
+        "bbbbbb..dddd.",
+        "bbbbbb...ddd.",
+        ".bbbbb....ddd",
+        "..bbbb....dbd",
+        "..bbbbb...dbd",
+        ".bbbddbb..dbd",
+        ".bbbbbbb..dbd",
+        ".bbbbbbb.ddbd",
+        "..bbbbbddbbd.",
+        "..bbbbddbdd..",
+        ".......dd...."
+      ]
+    }
+  ]
+}

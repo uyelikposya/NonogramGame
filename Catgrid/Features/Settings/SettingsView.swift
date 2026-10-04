@@ -11,6 +11,7 @@ struct SettingsView: View {
     @Environment(AppModel.self) private var model
     @Environment(AudioManager.self) private var audio
     @Environment(AdCoordinator.self) private var ads
+    @Environment(StoreManager.self) private var store
     @Environment(\.appTheme) private var theme
     @Environment(\.colorScheme) private var colorScheme
     @Environment(\.openURL) private var openURL
@@ -48,6 +49,36 @@ struct SettingsView: View {
                         }
                     }
                     .pickerStyle(.segmented)
+                }
+
+                section("Remove Ads") {
+                    VStack(alignment: .leading, spacing: 12) {
+                        if store.isAdsRemoved {
+                            Label("Ads removed. Thank you for supporting Catgrid!", systemImage: "checkmark.seal.fill")
+                                .foregroundStyle(theme.success)
+                        } else {
+                            Text("Remove the ads between puzzles with a one-time purchase. Optional rewarded ads for extra paws stay available.")
+                                .font(.subheadline)
+                                .foregroundStyle(theme.textSecondary)
+                            Button {
+                                Task { await store.purchaseRemoveAds() }
+                            } label: {
+                                if let product = store.removeAdsProduct {
+                                    Text("Remove Ads – \(product.displayPrice)")
+                                } else {
+                                    Text("Remove Ads")
+                                }
+                            }
+                            .buttonStyle(PrimaryButtonStyle())
+                            .disabled(store.removeAdsProduct == nil || store.isPurchasing)
+                        }
+                        Button("Restore Purchases") {
+                            Task { await store.restorePurchases() }
+                        }
+                        .buttonStyle(SecondaryButtonStyle())
+                    }
+                    .padding(16)
+                    .card(cornerRadius: 16)
                 }
 
                 section("Sound") {

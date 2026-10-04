@@ -10,6 +10,9 @@ if [ -n "$(git status --porcelain --untracked-files=no)" ]; then
 fi
 
 echo "Yeni sürüm indiriliyor..."
-git pull --ff-only
+# Yayınlanan sürüm her zaman ana dalda (main)
+git fetch --quiet origin main
+git checkout --quiet main
+git pull --ff-only origin main
 
 ./ProjeyiAc.command

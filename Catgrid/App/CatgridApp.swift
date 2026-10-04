@@ -8,6 +8,7 @@ struct CatgridApp: App {
     @State private var router = Router()
     @State private var audio = AudioManager()
     @State private var ads = AdCoordinator.live()
+    @State private var store = StoreManager()
 
     var body: some Scene {
         WindowGroup {
@@ -17,6 +18,7 @@ struct CatgridApp: App {
                 .environment(router)
                 .environment(audio)
                 .environment(ads)
+                .environment(store)
         }
     }
 }

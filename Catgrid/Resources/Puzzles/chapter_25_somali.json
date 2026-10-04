@@ -1,0 +1,392 @@
+{
+  "schemaVersion": 1,
+  "chapterID": "somali",
+  "puzzles": [
+    {
+      "id": "somali-001",
+      "title": {
+        "en": "Toe Beans",
+        "tr": "Pati Yastıkları"
+      },
+      "palette": {
+        "b": "#C8743F",
+        "n": "#C9705A"
+      },
+      "pixels": [
+        "....bb...bb....",
+        "...bnnb.bnnb...",
+        "...bnnb.bnnb...",
+        ".bb.bnb.bnb.bb.",
+        "bnnb.......bnnb",
+        "bnnb...b...bnnb",
+        "bnb.bbbbbbb.bnb",
+        "...bbbbbbbbb...",
+        "..bbbbbbbbbbb..",
+        "..bbbnnnnnbbb..",
+        "..bbnnnnnnnbb..",
+        "..bbnnnnnnnbb..",
+        "..bbbnnnnnbbb..",
+        "...bbbnnnbbb...",
+        ".....bbbbb....."
+      ]
+    },
+    {
+      "id": "somali-002",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi"
+      },
+      "palette": {
+        "n": "#C9705A",
+        "w": "#F2D7B6"
+      },
+      "pixels": [
+        "..nnnnn.nnnnn..",
+        ".nnnnnnnnnnnnn.",
+        "nnnwwnnnnnnnnnn",
+        "nnnwwnnnnnnnnnn",
+        "nnnnnnnnnnnnnnn",
+        "nnnnnnnnnnnnnnn",
+        ".nnnnnnnnnnnnn.",
+        "..nnnnnnnnnnn..",
+        "...nnnnnnnnn...",
+        "...nnnnnnnnn...",
+        "....nnnnnnn....",
+        ".....nnnnn.....",
+        "......nnn......",
+        ".......n......."
+      ]
+    },
+    {
+      "id": "somali-003",
+      "title": {
+        "en": "Fish Snack",
+        "tr": "Balık Atıştırması"
+      },
+      "palette": {
+        "o": "#E0B66A",
+        "p": "#7D5A44"
+      },
+      "pixels": [
+        "...ooooo......o",
+        ".ooooopooo...oo",
+        "oo.ooopoooo.ooo",
+        "oo.ooopoooooooo",
+        "oooooopoooooooo",
+        "oooooopoooo.ooo",
+        ".ooooopooo...oo",
+        "...ooooo......o"
+      ]
+    },
+    {
+      "id": "somali-004",
+      "title": {
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak"
+      },
+      "palette": {
+        "o": "#E0B66A"
+      },
+      "pixels": [
+        "........o......",
+        ".....ooooooo...",
+        "....oo.oooooo..",
+        "...ooo..oooo.o.",
+        "...oooo.o...oo.",
+        "...oooo...oooo.",
+        "...ooo..o.oooo.",
+        "...oo..oo..ooo.",
+        "...o..oooo.ooo.",
+        ".....oooooo.o..",
+        "....oooooooo...",
+        "...oo.ooooo....",
+        "oooo...........",
+        "..o............"
+      ]
+    },
+    {
+      "id": "somali-005",
+      "title": {
+        "en": "Dinner Bowl",
+        "tr": "Mama Kabı"
+      },
+      "palette": {
+        "o": "#E0B66A",
+        "p": "#7D5A44",
+        "w": "#F2D7B6"
+      },
+      "pixels": [
+        ".....p..pp.....",
+        "...ppppppppp...",
+        ".ppppppppppppp.",
+        ".ppppppppppppp.",
+        "ooopppppppppooo",
+        "ooooooooooooooo",
+        ".oowwwwwwwwwoo.",
+        ".ooooooooooooo.",
+        "..ooooooooooo..",
+        "..ooooooooooo.."
+      ]
+    },
+    {
+      "id": "somali-006",
+      "title": {
+        "en": "Toy Mouse",
+        "tr": "Oyuncak Fare"
+      },
+      "palette": {
+        "n": "#C9705A",
+        "p": "#7D5A44"
+      },
+      "pixels": [
+        "....pp.........",
+        "....nnp........",
+        "....pnpppp.....",
+        "...pppppppp....",
+        ".pp.ppppppp....",
+        "...pppppppp....",
+        "...ppppppppn..n",
+        "....ppppp...nn.",
+        "..............."
+      ]
+    },
+    {
+      "id": "somali-007",
+      "title": {
+        "en": "Leftovers",
+        "tr": "Artıklar"
+      },
+      "palette": {
+        "p": "#7D5A44"
+      },
+      "pixels": [
+        "....pp.p.p.....",
+        "..p.pp.p.p....p",
+        ".pp.pp.p.p...pp",
+        "ppppppppppppppp",
+        ".pp.pp.p.p...pp",
+        "..p.pp.p.p....p",
+        "....pp.p.p....."
+      ]
+    },
+    {
+      "id": "somali-008",
+      "title": {
+        "en": "Portrait",
+        "tr": "Portre"
+      },
+      "palette": {
+        "b": "#C8743F",
+        "d": "#8C4A24",
+        "e": "#9CB84A",
+        "n": "#C9705A"
+      },
+      "pixels": [
+        ".b...........b.",
+        ".bb.........bb.",
+        ".bb...bbb...bb.",
+        ".bbbbbbbbbbbbb.",
+        ".bbbbbdddbbbbb.",
+        ".bbbbbdddbbbbb.",
+        "..bbeebbbeebb..",
+        ".bbbeebbbeebbb.",
+        "bbbbebbbbbebbbb",
+        "bbbbbbbnbbbbbbb",
+        "bbbbbbbbbbbbbbb",
+        "...bbbbbbbbb...",
+        ".....bbbbb....."
+      ]
+    },
+    {
+      "id": "somali-009",
+      "title": {
+        "en": "Mighty Tail",
+        "tr": "Görkemli Kuyruk"
+      },
+      "palette": {
+        "b": "#C8743F",
+        "d": "#8C4A24"
+      },
+      "pixels": [
+        "..............",
+        "bb....bb......",
+        "bb....bb..d...",
+        "bbbbbbbb.ddd..",
+        "bbbbbbbb..ddd.",
+        ".bbbbbb...dddd",
+        "..bbbb.....ddd",
+        "...bbbb....dbd",
+        "...bbdbb...dbd",
+        "..bbbdbbb..dbd",
+        "..bbbbbbb..dbd",
+        "..bbbbbbb.dbdd",
+        "..bbbbbbddbdd.",
+        "...bbbbddbdd..",
+        ".......ddd...."
+      ]
+    },
+    {
+      "id": "somali-010",
+      "title": {
+        "en": "Nap Time",
+        "tr": "Şekerleme"
+      },
+      "palette": {
+        "b": "#C8743F",
+        "d": "#8C4A24"
+      },
+      "pixels": [
+        "...............",
+        ".b....bb.......",
+        "bbb..bbbbbbb...",
+        "bbbbbbbbdddbb..",
+        "bbbbbbbbbbbbbb.",
+        ".bbbbbbbbbbbbbb",
+        "..bbbbbbbbbbbbb",
+        "....bbbbbbbbbbb",
+        "....bbbbbbbbbb.",
+        "....bbbbbbbbb.."
+      ]
+    },
+    {
+      "id": "somali-011",
+      "title": {
+        "en": "Sitting Pretty",
+        "tr": "Uslu Oturuş"
+      },
+      "palette": {
+        "b": "#C8743F",
+        "d": "#8C4A24"
+      },
+      "pixels": [
+        ".......b.....",
+        ".b.....b.....",
+        "bbb...bb.....",
+        "bbbbbbbbb....",
+        "bbbbbbbbb....",
+        "..bbbbb......",
+        "..bbbbb......",
+        "...bbbbb...bb",
+        "...bbbdbb..bb",
+        "..bbbbdbbb.bb",
+        "..bbbbbbbb.bb",
+        "..bbbbbbbb.bb",
+        "...bbbbbbbbbb",
+        "...bbbbbbbbb.",
+        "...bbbbb.bb.."
+      ]
+    },
+    {
+      "id": "somali-012",
+      "title": {
+        "en": "Strut",
+        "tr": "Salınarak Yürüyüş"
+      },
+      "palette": {
+        "b": "#C8743F",
+        "d": "#8C4A24"
+      },
+      "pixels": [
+        "......b......b.",
+        "bb...bb......bb",
+        "bbb..bb......bb",
+        "bbbbbbb......bb",
+        "bbbbbbbbbbb.bb.",
+        "..bbbbbbdbbbb..",
+        "....bbbbbbbbb..",
+        "....bbbbbbbb...",
+        "....bbbbbbbb...",
+        "....b.bb.bbb...",
+        "....b..b.bbbb..",
+        "....b..b.b..b.."
+      ]
+    },
+    {
+      "id": "somali-013",
+      "title": {
+        "en": "If I Fits",
+        "tr": "Kutu Sevdası"
+      },
+      "palette": {
+        "b": "#C8743F",
+        "e": "#9CB84A",
+        "o": "#E0B66A",
+        "p": "#7D5A44"
+      },
+      "pixels": [
+        "...............",
+        "....b......b...",
+        "...bb.....bb...",
+        "...bbb....bb...",
+        "...bbbbbbbbbb..",
+        "....bbbbbbbb...",
+        "....bbebeebb...",
+        "....bbebbebb...",
+        ".ppoobbbbbboop.",
+        ".ppoooobooooopp",
+        "..ooooooooooo..",
+        "..oooooooooooo.",
+        "..oooooooooooo.",
+        "..oooooooooooo."
+      ]
+    },
+    {
+      "id": "somali-014",
+      "title": {
+        "en": "Moon Gazer",
+        "tr": "Ay Seyri"
+      },
+      "palette": {
+        "b": "#C8743F",
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        "......yy.....",
+        "....yyy......",
+        "...yyyy......",
+        "...yyy.......",
+        "..yyyy.......",
+        "..yyyyy......",
+        "..yyyyy......",
+        "..yyyyyy.....",
+        "..byyyyyyy...",
+        "bbbyyyyyyyyy.",
+        ".bb..yyyyyy..",
+        ".bbb...b.....",
+        ".bbbb..b.....",
+        ".bbbb..b.....",
+        ".bbbbbb......"
+      ]
+    },
+    {
+      "id": "somali-015",
+      "title": {
+        "en": "Forest Guardian",
+        "tr": "Orman Bekçisi"
+      },
+      "palette": {
+        "b": "#C8743F",
+        "d": "#8C4A24",
+        "g": "#3E7C4F",
+        "o": "#E0B66A"
+      },
+      "pixels": [
+        "...........g...",
+        "...........g...",
+        "..........ggg..",
+        "bb....b...ggg..",
+        "bb...bb..gggg..",
+        "bbbbbbb..ggggg.",
+        "bbbbbbb..ggggg.",
+        "..bbbb...ggggg.",
+        "...bbb...bggg..",
+        "..bbbdbb.bbggg.",
+        "..bbbdbb.bbggg.",
+        "..bbbbbbgbbgggg",
+        "..bbbbbbgbbgggg",
+        "...bbbbbbbbo...",
+        "..bbbbbbb..o..."
+      ]
+    }
+  ]
+}

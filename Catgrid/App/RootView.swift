@@ -6,6 +6,7 @@ struct RootView: View {
     @Environment(ThemeManager.self) private var themeManager
     @Environment(AudioManager.self) private var audio
     @Environment(AdCoordinator.self) private var ads
+    @Environment(StoreManager.self) private var store
     @Environment(\.colorScheme) private var colorScheme
     @Environment(\.scenePhase) private var scenePhase
 
@@ -20,6 +21,7 @@ struct RootView: View {
                     case .game(let puzzleID): GameScreen(puzzleID: puzzleID)
                     case .settings: SettingsView()
                     case .stats: StatsView()
+                    case .collection: CollectionView()
                     }
                 }
         }
@@ -33,6 +35,10 @@ struct RootView: View {
         }
         // Onay formu, izleme izni ve reklam SDK'sı; ekran çizildikten sonra
         .task { await ads.start() }
+        .task { await store.start() }
+        .onChange(of: store.isAdsRemoved, initial: true) { _, removed in
+            ads.interstitialsDisabled = removed
+        }
         .onChange(of: scenePhase) { _, phase in
             if phase == .active {
                 audio.resumeMusic()

@@ -26,6 +26,9 @@ final class AdCoordinator {
         #endif
     }
 
+    /// "Reklamları Kaldır" satın alındıysa bölümler arası reklam gösterilmez.
+    var interstitialsDisabled = false
+
     var isRewardedReady: Bool { service.isRewardedReady }
     var isPrivacyOptionsRequired: Bool { service.isPrivacyOptionsRequired }
 
@@ -39,7 +42,7 @@ final class AdCoordinator {
 
     /// Sonuç kartından ayrılırken çağrılır: sırası geldiyse önce geçiş reklamı, sonra `action`.
     func continueAfterPuzzle(_ action: @escaping () -> Void) {
-        guard policy.isInterstitialDue(now: now()) else {
+        guard !interstitialsDisabled, policy.isInterstitialDue(now: now()) else {
             action()
             return
         }

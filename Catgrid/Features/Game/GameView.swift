@@ -35,6 +35,8 @@ struct GameView: View {
     @State private var viewModel: GameViewModel
     @State private var flashingCell: GridPosition?
     @State private var completionResult: CompletionResult?
+    /// Bu bulmacayla bir türün tümü çözüldüyse kazanılan kart.
+    @State private var newCardChapter: Chapter?
 
     init(puzzle: Puzzle, rules: GameRules, savedGame: GameSnapshot? = nil) {
         self.init(viewModel: GameViewModel(puzzle: puzzle, rules: rules, savedGame: savedGame))
@@ -82,8 +84,17 @@ struct GameView: View {
         .animation(.spring(duration: 0.5), value: game.status)
         .onAppear {
             viewModel.onSolved = { completion in
+                let chapter = model.catalog.chapter(containing: completion.puzzleID)
+                let wasCollected = chapter.map { model.isCollected($0) } ?? true
                 completionResult = model.record(completion)
                 ads.puzzleCompleted(isTutorial: isTutorial)
+                if let chapter, chapter.card != nil, !wasCollected, model.isCollected(chapter) {
+                    // Önce kedi resmi ortaya çıksın, sonra kart
+                    Task {
+                        try? await Task.sleep(for: .seconds(1.4))
+                        newCardChapter = chapter
+                    }
+                }
             }
             viewModel.onEvent = { event in
                 audio.play(event.soundEffect)
@@ -94,6 +105,9 @@ struct GameView: View {
         .onDisappear {
             viewModel.stop()
             persistProgress()
+        }
+        .sheet(item: $newCardChapter) { chapter in
+            CardDetailSheet(chapter: chapter, isNewCard: true)
         }
         // Uygulama arka plana geçince (ve kapatılmadan önce) yarım oyun kaydedilir
         .onChange(of: scenePhase) { _, phase in

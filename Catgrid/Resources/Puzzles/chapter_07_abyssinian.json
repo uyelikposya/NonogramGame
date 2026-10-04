@@ -13,17 +13,13 @@
         "n": "#C9705A"
       },
       "pixels": [
-        "...bb.bb...",
-        "..bnnbnnb..",
-        "bbbbb.bnbbb",
-        "bnb.....bnb",
-        "bnbbbbbbbnb",
-        "..bbbbbbb..",
-        "..bbnnnbb..",
-        ".bbnnnnnbb.",
-        ".bbnnnnnbb.",
-        "..bbnnnbb..",
-        "...bbbbb..."
+        "..b.b..",
+        "bbn.nbb",
+        "nn.b.nn",
+        ".bbbbb.",
+        ".bnnnb.",
+        ".bnnnb.",
+        "..bbb.."
       ]
     },
     {
@@ -37,16 +33,13 @@
         "w": "#F2D7B6"
       },
       "pixels": [
-        ".nnnn.nnnn.",
-        "nnwnnnnnnnn",
-        "nnwwnnnnnnn",
-        "nnnnnnnnnnn",
-        ".nnnnnnnnn.",
-        ".nnnnnnnnn.",
-        "..nnnnnnn..",
-        "...nnnnn...",
-        "....nnn....",
-        ".....n....."
+        ".nnnnn.",
+        "nwnnnnn",
+        "nnnnnnn",
+        ".nnnnn.",
+        ".nnnnn.",
+        "..nnn..",
+        "...n..."
       ]
     },
     {
@@ -56,16 +49,13 @@
         "tr": "Balık Atıştırması"
       },
       "palette": {
-        "o": "#E0B66A",
-        "p": "#7D5A44"
+        "o": "#E0B66A"
       },
       "pixels": [
-        "..oooo....o",
-        ".ooopooo.oo",
-        "o.oopoooooo",
-        "oooopoooooo",
-        ".ooopooo.oo",
-        "..oooo....o"
+        ".ooo..o",
+        "o.ooooo",
+        "ooooooo",
+        ".ooo..o"
       ]
     },
     {
@@ -78,17 +68,13 @@
         "o": "#E0B66A"
       },
       "pixels": [
-        "..ooooo.....",
-        ".ooooooo....",
-        "o.oooo.oo...",
-        "oo....oooo..",
-        "oooo..oooo..",
-        "ooo..o.ooo..",
-        "ooo.ooo.o...",
-        ".o.ooooo....",
-        "..ooooooo...",
-        "....oo..oo..",
-        "..........oo"
+        "...oooo.",
+        "..o.oo.o",
+        ".ooo..oo",
+        ".oo.o.oo",
+        "...ooooo",
+        "..ooooo.",
+        "oo......"
       ]
     },
     {
@@ -103,34 +89,34 @@
         "w": "#F2D7B6"
       },
       "pixels": [
-        "....p.pp....",
-        "..pppppppp..",
-        ".pppppppppp.",
-        "ooppppppppoo",
-        "oooooooooooo",
-        ".oowwwwwwoo.",
-        ".oooooooooo.",
-        "..oooooooo.."
+        "..pppp..",
+        ".pppppp.",
+        "ooppppoo",
+        ".owwwwo.",
+        ".oooooo."
       ]
     },
     {
       "id": "abyssinian-006",
       "title": {
-        "en": "Toy Mouse",
-        "tr": "Oyuncak Fare"
+        "en": "If I Fits",
+        "tr": "Kutu Sevdası"
       },
       "palette": {
-        "n": "#C9705A",
+        "b": "#C47F4F",
+        "e": "#9CB84A",
+        "o": "#E0B66A",
         "p": "#7D5A44"
       },
       "pixels": [
-        ".......pp...",
-        ".....ppnp...",
-        "...ppppppp..",
-        "...pppppp.p.",
-        "...ppppppp..",
-        "n.n.ppppp...",
-        ".n.........."
+        "........",
+        ".bb..b..",
+        ".bbbbb..",
+        "..bbeb..",
+        "pobbboo.",
+        "ooooooo.",
+        "ooooooo.",
+        "ooooooo."
       ]
     },
     {
@@ -143,12 +129,10 @@
         "p": "#7D5A44"
       },
       "pixels": [
-        "...p.p.p....",
-        ".ppppp.p...p",
-        "pppppppppppp",
-        "pppppppppppp",
-        ".ppppp.p...p",
-        "...p.p.p...."
+        "...ppp..",
+        "pppppppp",
+        "p..pppp.",
+        ".....p.."
       ]
     },
     {
@@ -163,45 +147,36 @@
         "e": "#9CB84A"
       },
       "pixels": [
-        "............",
-        "bb........bb",
-        "bbb.bbbb.bbb",
-        "bbbbbddbbbbb",
-        "bbbbddddbbbb",
-        ".bbeebbeebb.",
-        ".bbeebbeebb.",
-        ".bbbbbbbbbb.",
-        ".bbbbbbbbbb.",
-        "..bbbbbbbb..",
-        "...bbbbbb..."
+        "b......b",
+        "bb.bb.bb",
+        "bbbddbbb",
+        "bbbddbbb",
+        "bbebbebb",
+        ".bbbbbb.",
+        ".bbbbbb.",
+        "..bbbb.."
       ]
     },
     {
       "id": "abyssinian-009",
       "title": {
-        "en": "Ancient Grace",
-        "tr": "Kadim Zarafet"
+        "en": "Moon Gazer",
+        "tr": "Ay Seyri"
       },
       "palette": {
         "b": "#C47F4F",
-        "d": "#8C5532",
-        "o": "#E0B66A",
         "y": "#E9C46A"
       },
       "pixels": [
-        "........b...",
-        ".....bbbb...",
-        ".....bbbb...",
-        ".....bbbb...",
-        ".....bbb....",
-        ".....bbbb...",
-        ".....byyb...",
-        "....bbbbb...",
-        "....bbbbb..d",
-        "..o.bbbbbb.d",
-        ".ooobbbbb..d",
-        ".oooobbbb.dd",
-        "ooooobbb.d.."
+        "....y...",
+        "....yy..",
+        "....yyy.",
+        "....yyy.",
+        "...yyyy.",
+        ".yyyyybb",
+        "..yy..bb",
+        "...b.bbb",
+        "....bbb."
       ]
     },
     {
@@ -215,15 +190,12 @@
         "d": "#8C5532"
       },
       "pixels": [
-        "......b......",
-        "bb...bb......",
-        "bbbbbbbbbbb..",
-        "bbbbbbbddbbb.",
-        "bb...bbbbbbbb",
-        "..bbbbbbbbbbb",
-        "..bbbbbbbbbbb",
-        "....bbbbbbbb.",
-        "....bbbbbbb.."
+        "....b....",
+        "bb.bbbb..",
+        "bbbbbdbbb",
+        ".bbbbbbbb",
+        "..bbbbbbb",
+        "...bbbbb."
       ]
     },
     {
@@ -237,19 +209,15 @@
         "d": "#8C5532"
       },
       "pixels": [
-        "......b....",
-        "bb....b....",
-        "bbbb.bb....",
-        "bbbbbbbb...",
-        "bbbbbbb....",
-        "..bbbb.....",
-        "...bbbb....",
-        "..bbbdbb..b",
-        "..bbbdbb..b",
-        "..bbbbbbb.b",
-        "..bbbbbb..b",
-        "...bbbbbbb.",
-        "..bbbbb...."
+        ".......",
+        "bb.bb..",
+        "bbbbb..",
+        ".bbb...",
+        "..bb...",
+        ".bbdb.b",
+        ".bbbbbb",
+        ".bbbbbb",
+        "..bbbb."
       ]
     },
     {
@@ -265,19 +233,15 @@
         "p": "#7D5A44"
       },
       "pixels": [
-        "..b......b...",
-        "..bb....bb...",
-        "..bbb...bb...",
-        "..bbbbbbbb...",
-        "...bbbbbbb...",
-        "...beebebb...",
-        ".oobbbbbboo..",
-        "ppoobbbboopp.",
-        ".ooooooooooo.",
-        ".oooooooooo..",
-        ".ooooooooooo.",
-        ".ooooooooooo.",
-        ".oooooooooo.."
+        ".........",
+        "..b...b..",
+        "..bbbbb..",
+        "..bbbbb..",
+        "..bebeb..",
+        "ppobbbopp",
+        ".ooooooo.",
+        ".ooooooo.",
+        ".ooooooo."
       ]
     },
     {
@@ -291,20 +255,16 @@
         "y": "#E9C46A"
       },
       "pixels": [
-        "....yyy.....",
-        "...yyy......",
-        "..yyyy......",
-        "..yyyy......",
-        "..yyyy......",
-        "..yyyy......",
-        "..yyyyy.....",
-        "..yyyyyy....",
-        "bbbyyyyyyyy.",
-        "bb..yyyyyy..",
-        ".bbb..b.....",
-        "bbbb..b.....",
-        "bbbb..b.....",
-        ".bbbbb......"
+        "...yy....",
+        "..yy.....",
+        ".yyy.....",
+        ".yyy.....",
+        ".yyyy....",
+        ".byyyyy..",
+        "bb.yyyyy.",
+        "bbb.yy...",
+        "bbb.b....",
+        ".bbbb...."
       ]
     },
     {
@@ -318,44 +278,41 @@
         "n": "#C9705A"
       },
       "pixels": [
-        "....bb..bb....",
-        "...bnnbbnnb...",
-        "...bnnbbnnb...",
-        "bbbbbb..bbbbbb",
-        "bnn........nnb",
-        "bnn..bbbb..bnb",
-        ".bbbbbbbbbbbb.",
-        "..bbbbbbbbbb..",
-        "..bbbnnnnbbb..",
-        "..bbnnnnnnbb..",
-        "..bbnnnnnnbb..",
-        "..bbnnnnnnbb..",
-        "...bbbnnbbb...",
-        "....bbbbbb...."
+        "...b..b...",
+        "..bnbbnb..",
+        "bbbb..bbbb",
+        "nnb....bnn",
+        "bbbbbbbbbb",
+        "..bbbbbb..",
+        ".bbnnnnbb.",
+        ".bbnnnnbb.",
+        "..bnnnnb..",
+        "...bbbb..."
       ]
     },
     {
       "id": "abyssinian-015",
       "title": {
-        "en": "Strut",
-        "tr": "Salınarak Yürüyüş"
+        "en": "Ancient Grace",
+        "tr": "Kadim Zarafet"
       },
       "palette": {
-        "b": "#C47F4F"
+        "b": "#C47F4F",
+        "d": "#8C5532",
+        "o": "#E0B66A",
+        "y": "#E9C46A"
       },
       "pixels": [
-        ".b......b....b",
-        ".b......b...bb",
-        "b.......bb..bb",
-        ".b.....bbbbbbb",
-        ".bb.bbbbbbbbbb",
-        "..bbbbbbbbbb..",
-        "...bbbbbbbb...",
-        "...bbbbbbb....",
-        "...bb..b.b....",
-        "..bbb..b.b....",
-        "..bbb..b.b....",
-        ".......b.b...."
+        ".........",
+        "....bbb..",
+        "....bbb..",
+        "....bb...",
+        "....yy...",
+        "....bbb..",
+        "...bbbb.d",
+        ".oobbbb.d",
+        ".oobbbb.d",
+        "oooobbdd."
       ]
     }
   ]

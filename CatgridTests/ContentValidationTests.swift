@@ -22,10 +22,26 @@ final class ContentValidationTests: XCTestCase {
         }
     }
 
-    func testBoardsGrowUpTo20() {
+    /// Telefonda yakınlaştırmasız rahat oynanması için en büyük tahta 15x15.
+    func testBoardsGrowUpTo15() {
         let sides = catalog.orderedPuzzles.map { max($0.rows, $0.columns) }
-        XCTAssertEqual(sides.max(), 20)
+        XCTAssertEqual(sides.max(), 15)
         XCTAssertLessThanOrEqual(sides.first ?? 0, 5)
+    }
+
+    func testEveryBreedHasPortraitAndCard() {
+        let breeds = catalog.chapters.filter { $0.kind == .breed }
+        for breed in breeds {
+            XCTAssertNotNil(breed.portrait, "\(breed.id) portresi yok")
+            XCTAssertNotNil(breed.card, "\(breed.id) kartı yok")
+            if let card = breed.card {
+                XCTAssertNotNil(card.fact.translations["tr"], "\(breed.id) kart bilgisi Türkçe değil")
+                for value in [card.stats.energy, card.stats.affection, card.stats.playfulness, card.stats.grooming] {
+                    XCTAssertTrue((1...5).contains(value), "\(breed.id) puanı 1-5 dışında")
+                }
+            }
+        }
+        XCTAssertEqual(breeds.compactMap(\.card?.number), Array(1...breeds.count), "Kart numaraları sıralı olmalı")
     }
 
     func testEveryPuzzleHasUniqueLogicalSolution() {

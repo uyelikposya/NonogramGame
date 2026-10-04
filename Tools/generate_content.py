@@ -186,9 +186,27 @@ def coat(t, region, density=1.0):
         for _ in range(int(7 * density)):
             a, d = rng.uniform(0, 2 * math.pi), rng.uniform(0.15, 0.75)
             shapes.append(Ellipse(cx + math.cos(a) * rx * d, cy + math.sin(a) * ry * d, 0.045, 0.04, "d"))
+    if "patches" in pattern:
+        shapes.append(Ellipse(cx - rx * 0.45, cy - ry * 0.35, rx * 0.4, ry * 0.32, "d"))
+        shapes.append(Ellipse(cx + rx * 0.4, cy + ry * 0.2, rx * 0.35, ry * 0.3, "k"))
     if "ticked" in pattern:
         shapes.append(Ellipse(cx, cy - ry * 0.55, rx * 0.35, ry * 0.25, "d"))
     return shapes
+
+
+def tail(t, points, width, role):
+    """Türün kuyruğu: Manx'te hiç yok, Japon Bobtail'de kısa bir ponpon."""
+    kind = t.get("tail", "long")
+    if kind == "none":
+        return []
+    if kind == "bob":
+        (x0, y0), (x1, y1) = points[0], points[1]
+        return [Ellipse(x0 + (x1 - x0) * 0.3, y0 + (y1 - y0) * 0.3, width * 0.9, width * 0.9, role)]
+    return [Line(points, width, role)]
+
+
+def tail_role(t):
+    return "d" if any(p in t["pattern"] for p in ("points", "van", "tabby", "patches")) else "b"
 
 
 def eyes(t, y, gap, size, slit=True):
@@ -228,9 +246,8 @@ def sitting(t):
     shapes = [Ellipse(0.52, 0.7, 0.24, 0.25, "b")]
     shapes += [Ellipse(0.42, 0.33, 0.17, 0.15, "b")]
     shapes += [_shift(s, -0.08) for s in ears(t, 0.24, spread=0.09)]
-    tail_role = "d" if any(p in t["pattern"] for p in ("points", "van", "tabby")) else "b"
     tail_w = 0.13 if t.get("fluffy") else 0.08
-    shapes.append(Line([(0.74, 0.9), (0.9, 0.78), (0.88, 0.52)], tail_w, tail_role))
+    shapes += tail(t, [(0.74, 0.9), (0.9, 0.78), (0.88, 0.52)], tail_w, tail_role(t))
     paw_role = "w" if "mitts" in t["pattern"] else ("d" if "points" in t["pattern"] else "b")
     shapes += [Ellipse(x, 0.93, 0.07, 0.05, paw_role) for x in (0.38, 0.55)]
     shapes += coat(t, (0.55, 0.7, 0.2, 0.22))
@@ -242,8 +259,7 @@ def sitting(t):
 def sleeping(t):
     shapes = [Ellipse(0.55, 0.64, 0.38, 0.24, "b"), Ellipse(0.26, 0.6, 0.17, 0.16, "b")]
     shapes += [_shift(s, -0.24, 0.02) for s in ears(t, 0.5, spread=0.08)]
-    tail_role = "d" if any(p in t["pattern"] for p in ("points", "van", "tabby")) else "b"
-    shapes.append(Line([(0.9, 0.7), (0.75, 0.88), (0.3, 0.86)], 0.12 if t.get("fluffy") else 0.08, tail_role))
+    shapes += tail(t, [(0.9, 0.7), (0.75, 0.88), (0.3, 0.86)], 0.12 if t.get("fluffy") else 0.08, tail_role(t))
     shapes += [Line([(x - 0.04, 0.6), (x + 0.04, 0.6)], 0.035, CUT, FEATURE) for x in (0.2, 0.32)]
     shapes += coat(t, (0.58, 0.62, 0.3, 0.2))
     return shapes
@@ -319,12 +335,11 @@ def moon(t):
 
 
 def walking(t):
-    tail_role = "d" if any(p in t["pattern"] for p in ("points", "van", "tabby")) else "b"
     shapes = [Ellipse(0.52, 0.52, 0.3, 0.16, "b"), Ellipse(0.2, 0.4, 0.14, 0.13, "b")]
     shapes += [_shift(s, -0.3, 0.0) for s in ears(t, 0.32, spread=0.07)]
     leg = "w" if "mitts" in t["pattern"] else ("d" if "points" in t["pattern"] else "b")
     shapes += [Line([(x, 0.6), (x + dx, 0.9)], 0.07, leg) for x, dx in ((0.3, -0.03), (0.42, 0.03), (0.66, -0.03), (0.76, 0.03))]
-    shapes.append(Line([(0.8, 0.46), (0.94, 0.3), (0.9, 0.12)], 0.12 if t.get("fluffy") else 0.07, tail_role))
+    shapes += tail(t, [(0.8, 0.46), (0.94, 0.3), (0.9, 0.12)], 0.12 if t.get("fluffy") else 0.07, tail_role(t))
     shapes += coat(t, (0.55, 0.5, 0.24, 0.13))
     return shapes
 
@@ -411,12 +426,24 @@ def big_tail(t):
          Line([(0.62, 0.86), (0.84, 0.72), (0.86, 0.42)], 0.05, "b")] + coat(t, (0.42, 0.66, 0.2, 0.2))
 
 
+def lucky(t):
+    """Maneki-neko: kalkık patili şans kedisi, boynunda çan, önünde altın para."""
+    shapes = [Ellipse(0.5, 0.72, 0.26, 0.24, "b"), Ellipse(0.5, 0.38, 0.24, 0.2, "b")]
+    shapes += ears(t, 0.24, spread=0.13)
+    shapes += coat(t, (0.5, 0.38, 0.24, 0.2), 0.6)
+    shapes += [Line([(0.7, 0.62), (0.82, 0.36), (0.82, 0.18)], 0.1, "b"), Ellipse(0.82, 0.16, 0.07, 0.06, "b")]
+    shapes += eyes(t, 0.38, 0.09, 0.045, slit=False)
+    shapes += [Line([(0.32, 0.55), (0.68, 0.55)], 0.04, "n"), Ellipse(0.5, 0.59, 0.04, 0.04, "y", FEATURE),
+               Ellipse(0.5, 0.78, 0.13, 0.09, "y"), Line([(0.42, 0.78), (0.58, 0.78)], 0.03, "o", FEATURE)]
+    return shapes
+
+
 def teddy(t):
     return portrait({**t, "head_w": 0.42}) + [Ellipse(0.5, 0.74, 0.13, 0.08, "w")]
 
 
 # Bu boyuttan küçük ızgaralarda okunmayan motifler
-MIN_SIZE = dict(portrait=7, sitting=9, sleeping=9, walking=11, box=8, moon=8, teacup=9, owl=8, cushion=9,
+MIN_SIZE = dict(lucky=9, portrait=7, sitting=9, sleeping=9, walking=11, box=8, moon=8, teacup=9, owl=8, cushion=9,
                 bellyup=10, night=10, bastet=10, gloves=8, jungle=11, sweater=9, bow=10, forest=12,
                 swimming=9, bigtail=10, teddy=8)
 
@@ -448,6 +475,7 @@ MOTIFS = {
     "swimming": (swimming, "Lake Swimmer", "Göl Yüzücüsü"),
     "bigtail": (big_tail, "Mighty Tail", "Görkemli Kuyruk"),
     "teddy": (teddy, "Teddy Face", "Oyuncak Ayı Yüzü"),
+    "lucky": (lucky, "Lucky Cat", "Şans Kedisi"),
 }
 
 
@@ -525,6 +553,155 @@ BREEDS = [
          palette=dict(b="#E8B26A", d="#C47A2C", e="#B5652A", n="#D98A7A", w="#F7E7CF", o="#7A9E7E", p="#E9C46A", y="#F4D35E")),
 ]
 
+BREEDS += [
+    dict(id="burmese", fact=("Satin coat, golden eyes", "Saten tüy, altın gözler"),
+         ears="normal", pattern=[], head_w=0.38, specials=["cushion", "portrait"],
+         palette=dict(b="#6B4A35", d="#4F3526", e="#E5B53B", n="#8C5A4A", w="#D9C2AE", o="#B5838D", p="#C8B6A6")),
+    dict(id="chartreux", fact=("Blue-grey with a gentle smile", "Gülümseyen mavi-gri kedi"),
+         ears="small", pattern=[], head_w=0.4, specials=["teacup", "portrait"],
+         palette=dict(b="#7F8C99", d="#66727E", e="#D98B2B", n="#5E6A75", w="#D5DCE2", o="#F2E8DC", p="#C98B6B")),
+    dict(id="egyptian-mau", fact=("Natural spots, a born sprinter", "Doğal benekler, doğuştan koşucu"),
+         ears="large", pattern=["spots"], specials=["bastet", "walking"],
+         palette=dict(b="#C9CBC4", d="#4D4A44", e="#8DBF4A", n="#B87F72", w="#EDEDE6", o="#E0B66A", p="#7D5A44")),
+    dict(id="manx", fact=("The tailless cat of the Isle of Man", "Man Adası'nın kuyruksuz kedisi"),
+         ears="normal", pattern=["tabby"], tail="none", exclude=["bigtail"], head_w=0.4, specials=["sitting", "portrait"],
+         palette=dict(b="#D9A066", d="#9C6233", e="#C9A53F", n="#C9705A", w="#F5E6D0", o="#5B8FB9", p="#9AA5B1")),
+    dict(id="bombay", fact=("A pocket-sized panther", "Cep boyu bir panter"),
+         ears="normal", pattern=[], specials=["night", "walking"],
+         palette=dict(b="#2B2A2E", d="#1C1B1F", e="#D9822B", n="#4A4148", w="#55525A", o="#5C6B7A", p="#8E8A93", y="#F1E3A0")),
+    dict(id="siberian", fact=("Triple coat for Siberian winters", "Sibirya kışına üç kat tüy"),
+         ears="tufted", pattern=["tabby", "bib"], fluffy=True, head_w=0.4, specials=["forest", "bigtail"],
+         palette=dict(b="#A58B6F", d="#5E4B3A", e="#8DB04A", n="#B5654A", w="#F1EBE2", o="#6B4F3A", p="#C8B6A6", g="#2F6B3B")),
+    dict(id="devon-rex", fact=("Pixie ears and wavy fur", "Peri kulakları ve dalgalı tüy"),
+         ears="large", pattern=[], head_w=0.34, specials=["sweater", "portrait"],
+         palette=dict(b="#C8B8A6", d="#9C8B78", e="#D9A441", n="#D9827A", w="#EFE6DA", o="#7A9E7E", p="#F2C14E")),
+    dict(id="oriental-shorthair", fact=("Sleek, talkative, all ears", "İnce, konuşkan, kocaman kulaklı"),
+         ears="large", pattern=[], head_w=0.32, specials=["walking", "portrait"],
+         palette=dict(b="#3F7A5A", d="#2E5C43", e="#8BC34A", n="#9C6B5A", w="#CFE3D6", o="#E07A5F", p="#9AA5B1")),
+    dict(id="japanese-bobtail", fact=("Pom-pom tail, calico luck", "Ponpon kuyruk, üç renkli şans"),
+         ears="normal", pattern=["patches"], tail="bob", exclude=["bigtail"], specials=["lucky", "portrait"],
+         palette=dict(b="#F5F1EA", d="#E08A3C", k="#2E2A2B", e="#D9A441", n="#E59AA0", w="#FFFFFF", o="#D1495B", p="#9AA5B1")),
+    dict(id="somali", fact=("The fox cat with a bushy tail", "Gür kuyruklu tilki kedi"),
+         ears="large", pattern=["ticked"], fluffy=True, specials=["bigtail", "forest"],
+         palette=dict(b="#C8743F", d="#8C4A24", e="#9CB84A", n="#C9705A", w="#F2D7B6", o="#E0B66A", p="#7D5A44", g="#3E7C4F")),
+]
+
+# Koleksiyon kartı bilgileri. Puanlar 1-5: enerji, sevgi, oyunculuk, bakım ihtiyacı.
+# Kaynaklar türlerle ilgili genel kabul görmüş bilgiler; tartışmalı konularda temkinli ifade kullanıldı.
+CARDS = {
+    "siamese": (("Thailand", "Tayland"), "15–20", ("Short, colorpoint", "Kısa, uçları koyu"), (5, 5, 5, 1),
+                ("One of the most talkative breeds: Siamese love to 'chat' with their people.",
+                 "En konuşkan türlerden biri: insanlarıyla 'sohbet etmeyi' çok sever.")),
+    "british-shorthair": (("United Kingdom", "Birleşik Krallık"), "12–17", ("Short, dense, plush", "Kısa, yoğun, peluş"), (2, 3, 2, 2),
+                          ("Its round, smiling face is often said to have inspired the Cheshire Cat.",
+                           "Yuvarlak, gülümseyen yüzünün Cheshire Kedisi'ne ilham verdiği söylenir.")),
+    "scottish-fold": (("Scotland", "İskoçya"), "11–15", ("Short or long", "Kısa ya da uzun"), (3, 4, 3, 2),
+                      ("Every Scottish Fold traces back to Susie, a farm cat found in Scotland in 1961.",
+                       "Tüm Scottish Fold'lar 1961'de İskoçya'da bir çiftlikte bulunan Susie adlı kediden gelir.")),
+    "persian": (("Iran (Persia)", "İran"), "12–17", ("Long and silky", "Uzun ve ipeksi"), (1, 4, 2, 5),
+                ("Persians have been prized in Europe for their long coats since the 1600s.",
+                 "İran kedileri uzun tüyleri nedeniyle 1600'lerden beri Avrupa'da çok değerlidir.")),
+    "ragdoll": (("United States", "ABD"), "12–17", ("Semi-long, silky", "Yarı uzun, ipeksi"), (2, 5, 3, 3),
+                ("Named for the way it goes limp like a rag doll when picked up.",
+                 "Adını, kucağa alınınca bez bebek gibi gevşemesinden alır.")),
+    "russian-blue": (("Russia", "Rusya"), "15–20", ("Short, dense double coat", "Kısa, yoğun çift kat"), (3, 3, 3, 1),
+                     ("Its silver-tipped coat is so dense it stands out from the body.",
+                      "Gümüş uçlu tüyü o kadar yoğundur ki gövdeden kabarık durur.")),
+    "abyssinian": (("Named after Abyssinia (Ethiopia)", "Adını Habeşistan'dan (Etiyopya) alır"), "12–15", ("Short, ticked", "Kısa, kırçıllı"), (5, 4, 5, 1),
+                   ("It looks like the cats of ancient Egyptian art, but genetics point to the Indian Ocean coast.",
+                    "Antik Mısır sanatındaki kedilere benzer, ama genetik çalışmalar Hint Okyanusu kıyılarını işaret eder.")),
+    "birman": (("Myanmar (Burma)", "Myanmar (Burma)"), "12–16", ("Semi-long, white gloves", "Yarı uzun, beyaz eldivenli"), (2, 5, 3, 3),
+               ("Legend says a temple cat's paws turned white where they touched its dying priest.",
+                "Efsaneye göre bir tapınak kedisinin, ölmekte olan rahibine dokunan patileri beyaza dönmüştür.")),
+    "bengal": (("United States", "ABD"), "12–16", ("Short, spotted or marbled", "Kısa, benekli ya da mermer desenli"), (5, 3, 5, 1),
+               ("Bred from domestic cats and the wild Asian leopard cat; many Bengals love water.",
+                "Evcil kedilerle vahşi Asya leopar kedisinden geliştirildi; çoğu suyu çok sever.")),
+    "sphynx": (("Canada", "Kanada"), "8–14", ("Hairless (fine peach fuzz)", "Tüysüz (ince şeftali tüyü)"), (4, 5, 4, 3),
+               ("Not truly bald: a fine peach fuzz covers its warm skin, and it needs regular baths.",
+                "Aslında tamamen tüysüz değildir; sıcak teni ince bir tüyle kaplıdır ve düzenli banyo ister.")),
+    "turkish-angora": (("Türkiye (Ankara)", "Türkiye (Ankara)"), "12–18", ("Semi-long, silky", "Yarı uzun, ipeksi"), (4, 4, 5, 2),
+                       ("One of the oldest natural breeds, treasured in Ankara for centuries; odd-colored eyes are common.",
+                        "En eski doğal türlerden biri, Ankara'da yüzyıllardır el üstünde tutulur; farklı renkte gözler sık görülür.")),
+    "norwegian-forest": (("Norway", "Norveç"), "12–16", ("Long, water-resistant double coat", "Uzun, su geçirmez çift kat"), (3, 4, 3, 3),
+                         ("Norse legends tell of forest cats pulling the goddess Freya's chariot.",
+                          "İskandinav efsanelerinde tanrıça Freya'nın arabasını orman kedileri çeker.")),
+    "turkish-van": (("Türkiye (Lake Van)", "Türkiye (Van Gölü)"), "12–17", ("Semi-long, water-resistant", "Yarı uzun, su geçirmez"), (5, 3, 5, 2),
+                    ("Nicknamed 'the swimming cat' for its love of water.",
+                     "Suyu sevmesiyle 'yüzen kedi' olarak anılır.")),
+    "maine-coon": (("United States (Maine)", "ABD (Maine)"), "12–15", ("Long, shaggy", "Uzun, gür"), (3, 4, 4, 3),
+                   ("One of the largest domestic breeds; males can weigh more than 8 kg.",
+                    "En iri evcil kedi türlerinden; erkekleri 8 kilonun üzerine çıkabilir.")),
+    "exotic-shorthair": (("United States", "ABD"), "12–15", ("Short, plush", "Kısa, peluş"), (2, 4, 3, 2),
+                         ("Often called 'a Persian in pajamas': the Persian look with an easy-care coat.",
+                          "'Pijamalı İran kedisi' diye anılır: İran kedisi görünümü, bakımı kolay tüy.")),
+    "burmese": (("Myanmar (Burma)", "Myanmar (Burma)"), "12–16", ("Short, satin", "Kısa, saten"), (4, 5, 4, 1),
+                ("Modern Burmese descend from Wong Mau, a cat brought to the United States in 1930.",
+                 "Modern Burmalar, 1930'da ABD'ye getirilen Wong Mau adlı kediden gelir.")),
+    "chartreux": (("France", "Fransa"), "12–15", ("Short, woolly", "Kısa, yünümsü"), (2, 4, 3, 2),
+                  ("A quiet French breed known for its 'smiling' face and copper eyes.",
+                   "'Gülümseyen' yüzü ve bakır rengi gözleriyle bilinen sessiz bir Fransız türü.")),
+    "egyptian-mau": (("Egypt", "Mısır"), "12–15", ("Short, naturally spotted", "Kısa, doğal benekli"), (5, 4, 4, 1),
+                     ("One of the fastest house cats, said to sprint at around 48 km/h.",
+                      "En hızlı ev kedilerinden; saatte 48 km civarında koşabildiği söylenir.")),
+    "manx": (("Isle of Man", "Man Adası"), "8–14", ("Short or long", "Kısa ya da uzun"), (3, 4, 4, 2),
+             ("Famous for being born without a tail; it runs with a rabbit-like hop.",
+              "Kuyruksuz doğmasıyla ünlüdür; tavşan gibi seken bir koşusu vardır.")),
+    "bombay": (("United States", "ABD"), "12–16", ("Short, glossy black", "Kısa, parlak siyah"), (3, 5, 4, 1),
+               ("Bred to look like a miniature black panther, with copper eyes.",
+                "Minyatür bir kara panter gibi görünmesi için geliştirildi; gözleri bakır rengidir.")),
+    "siberian": (("Russia", "Rusya"), "11–18", ("Long, triple coat", "Uzun, üç katlı"), (4, 5, 4, 3),
+                 ("Russia's national cat, with a thick triple coat for Siberian winters.",
+                  "Rusya'nın ulusal kedisi; Sibirya kışları için kalın, üç katlı tüyü vardır.")),
+    "devon-rex": (("England (Devon)", "İngiltere (Devon)"), "9–15", ("Short, wavy", "Kısa, dalgalı"), (5, 5, 5, 1),
+                  ("Huge ears and wavy fur earn it the nickname 'pixie cat'.",
+                   "Kocaman kulakları ve dalgalı tüyüyle 'peri kedisi' diye anılır.")),
+    "oriental-shorthair": (("Thailand & United Kingdom", "Tayland ve Birleşik Krallık"), "12–15", ("Short, fine", "Kısa, ince"), (5, 5, 5, 1),
+                           ("A Siamese cousin that comes in hundreds of colors and patterns.",
+                            "Siyam'ın kuzeni; yüzlerce renk ve desende görülür.")),
+    "japanese-bobtail": (("Japan", "Japonya"), "15–18", ("Short or long, often calico", "Kısa ya da uzun, çoğu üç renkli"), (4, 4, 5, 1),
+                         ("The waving maneki-neko lucky cat figurines are modeled on this bobtailed breed.",
+                          "El sallayan maneki-neko şans kedisi biblolarına bu kısa kuyruklu tür örnek alınır.")),
+    "somali": (("North America", "Kuzey Amerika"), "12–16", ("Semi-long, ticked", "Yarı uzun, kırçıllı"), (5, 4, 5, 2),
+               ("A long-haired Abyssinian, nicknamed the 'fox cat' for its bushy tail.",
+                "Gür kuyruğu yüzünden 'tilki kedi' denen uzun tüylü bir Habeş kedisi.")),
+}
+
+TITLES = {
+    "burmese": ("Burmese", "Burma Kedisi"), "chartreux": ("Chartreux", "Chartreux"),
+    "egyptian-mau": ("Egyptian Mau", "Mısır Mau"), "manx": ("Manx", "Manx"), "bombay": ("Bombay", "Bombay"),
+    "siberian": ("Siberian", "Sibirya Kedisi"), "devon-rex": ("Devon Rex", "Devon Rex"),
+    "oriental-shorthair": ("Oriental Shorthair", "Oryantal Kısa Tüylü"),
+    "japanese-bobtail": ("Japanese Bobtail", "Japon Bobtail"), "somali": ("Somali", "Somali"),
+}
+
+
+def rarity(order):
+    return "common" if order <= 8 else "rare" if order <= 16 else "epic" if order <= 22 else "legendary"
+
+
+def card_json(breed, order):
+    (origin_en, origin_tr), lifespan, (coat_en, coat_tr), (energy, affection, play, grooming), (fact_en, fact_tr) = CARDS[breed["id"]]
+    return {
+        "number": order,
+        "rarity": rarity(order),
+        "origin": {"en": origin_en, "tr": origin_tr},
+        "lifespan": lifespan,
+        "coat": {"en": coat_en, "tr": coat_tr},
+        "stats": {"energy": energy, "affection": affection, "playfulness": play, "grooming": grooming},
+        "fact": {"en": fact_en, "tr": fact_tr},
+    }
+
+
+def portrait_json(breed):
+    """Tür listesi ve kart için büyük, çözülmesi gerekmeyen piksel portre."""
+    shapes = portrait({**breed, "size": 24})
+    box = bounds(shapes)
+    rows, cols = canvas_size(box, 24)
+    pixels = rasterize(shapes, box, rows, cols)
+    used = sorted({c for row in pixels for c in row if c != "."})
+    return {"palette": {role: breed["palette"][role] for role in used}, "pixels": pixels}
+
+
 # Türün paletinde olmayan sahne renkleri
 SCENE_COLORS = dict(g="#4E8F4A", u="#4A90C2", y="#F4D35E", w="#FBF8F3", o="#E07A5F", p="#9AA5B1")
 for _breed in BREEDS:
@@ -542,10 +719,13 @@ HANDMADE = {
 }
 
 
+MAX_SIZE = 15  # Telefonda yakınlaştırmasız rahat oynanan en büyük boyut
+
+
 def size_range(order):
-    """Tür sırasına göre ızgara boyutu: 5x5'ten başlayıp 20x20'ye çıkar."""
-    lo = min(20, 5 + round((order - 1) * 1.05))
-    hi = min(20, lo + 3)
+    """Tür sırasına göre ızgara boyutu: 5x5'ten başlayıp 15x15'e çıkar."""
+    lo = min(MAX_SIZE, 5 + int((order - 1) * 0.45))
+    hi = min(MAX_SIZE, lo + 3)
     return lo, hi
 
 
@@ -591,7 +771,8 @@ def generate_breed(breed, order):
         number = len(puzzles) + 1
         found = None
         # Plandaki motif bu boyutta okunmuyorsa ya da çözülemiyorsa en az kullanılan uygun motife geç
-        fallbacks = sorted(set(COMMON + breed["specials"]) - {motif}, key=lambda m: (usage.get(m, 0), m))
+        excluded = set(breed.get("exclude", []))
+        fallbacks = sorted(set(COMMON + breed["specials"]) - {motif} - excluded, key=lambda m: (usage.get(m, 0), m))
         for name in [motif] + fallbacks:
             if n < MIN_SIZE.get(name, 0):
                 continue
@@ -650,13 +831,16 @@ def main():
     for order, breed in enumerate(BREEDS, 1):
         entry = titles.get(breed["id"], {})
         file = f"chapter_{order:02d}_{breed['id'].replace('-', '_')}"
+        title = entry.get("title") or dict(zip(("en", "tr"), TITLES[breed["id"]]))
         chapters.append({
             "id": breed["id"],
             "kind": "breed",
-            "title": entry.get("title", {"en": breed["id"], "tr": breed["id"]}),
+            "title": title,
             "subtitle": {"en": breed["fact"][0], "tr": breed["fact"][1]},
             "accentColor": entry.get("accentColor", breed["palette"]["b"]),
             "file": file,
+            "portrait": portrait_json(breed),
+            "card": card_json(breed, order),
         })
         puzzles = generate_breed(breed, order)
         write_json(PUZZLES / f"{file}.json", {"schemaVersion": 1, "chapterID": breed["id"], "puzzles": puzzles})

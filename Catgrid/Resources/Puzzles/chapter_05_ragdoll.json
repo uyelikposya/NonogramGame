@@ -13,15 +13,12 @@
         "w": "#FBF8F3"
       },
       "pixels": [
-        "..ww.ww..",
-        "..nnwnn..",
-        "ww.w.w.ww",
-        "nn.www.nn",
-        ".wwwwwww.",
-        ".wwnnnww.",
-        ".wwnnnww.",
-        ".wwnnnww.",
-        "..wwwww.."
+        ".wwww.",
+        "wwnnww",
+        "nwwwwn",
+        ".wnnw.",
+        ".wnnw.",
+        ".wwww."
       ]
     },
     {
@@ -35,14 +32,12 @@
         "w": "#FBF8F3"
       },
       "pixels": [
-        ".nnn.nnn.",
-        "nwwnnnnnn",
-        "nnnnnnnnn",
-        "nnnnnnnnn",
-        ".nnnnnnn.",
-        "..nnnnn..",
-        "...nnn...",
-        "....n...."
+        "nnnnnn",
+        "nwnnnn",
+        "nnnnnn",
+        ".nnnn.",
+        "..nn..",
+        "..nn.."
       ]
     },
     {
@@ -56,11 +51,10 @@
         "p": "#9AA5B1"
       },
       "pixels": [
-        ".oooo...o",
-        "o.opoo.oo",
-        "o.opooooo",
-        "ooopoo.oo",
-        ".oooo...o"
+        ".ooo.o",
+        "oopooo",
+        "oopooo",
+        ".ooo.o"
       ]
     },
     {
@@ -73,15 +67,12 @@
         "o": "#B5838D"
       },
       "pixels": [
-        "....oooo..",
-        "...oooooo.",
-        "..ooo.o..o",
-        "..ooo..ooo",
-        "..oo.o.ooo",
-        "..o.ooo.oo",
-        "...oooooo.",
-        "...ooooo..",
-        "ooo......."
+        "...ooo.",
+        "..o.ooo",
+        ".oo..oo",
+        "...oooo",
+        "..oooo.",
+        ".o....."
       ]
     },
     {
@@ -96,32 +87,27 @@
         "w": "#FBF8F3"
       },
       "pixels": [
-        "...pppp...",
-        ".pppppppp.",
-        "oppppppppo",
-        "oooppppooo",
-        ".owwwwwwo.",
-        ".oooooooo.",
-        ".oooooooo."
+        "..ppp..",
+        "ppppppp",
+        "oopppoo",
+        "oowwwoo",
+        ".ooooo."
       ]
     },
     {
       "id": "ragdoll-006",
       "title": {
-        "en": "Toy Mouse",
-        "tr": "Oyuncak Fare"
+        "en": "Leftovers",
+        "tr": "Artıklar"
       },
       "palette": {
-        "n": "#E2A3A3",
         "p": "#9AA5B1"
       },
       "pixels": [
-        "...p......",
-        "..pnpp....",
-        "..ppppp...",
-        ".ppppppp..",
-        "..pppppn.n",
-        "...ppp..n."
+        "..ppp..",
+        "ppppp.p",
+        "ppppp.p",
+        "..ppp.."
       ]
     },
     {
@@ -134,105 +120,14 @@
         "p": "#9AA5B1"
       },
       "pixels": [
-        "...pp.p...",
-        ".p.pp.p..p",
-        "pppppppppp",
-        ".p.pp.p..p",
-        "...pp.p..."
+        ".......",
+        "p.pppp.",
+        "pppppp.",
+        "..ppp.."
       ]
     },
     {
       "id": "ragdoll-008",
-      "title": {
-        "en": "Nap Time",
-        "tr": "Şekerleme"
-      },
-      "palette": {
-        "b": "#F4EEE6",
-        "d": "#8B7765"
-      },
-      "pixels": [
-        "..........",
-        "ddbddbbbb.",
-        "d...dbbbbb",
-        ".bbbbbbbbd",
-        "..bbbbbbdd",
-        "..ddddddd."
-      ]
-    },
-    {
-      "id": "ragdoll-009",
-      "title": {
-        "en": "Floppy Hug",
-        "tr": "Gevşek Kucaklama"
-      },
-      "palette": {
-        "b": "#F4EEE6",
-        "d": "#8B7765",
-        "w": "#FBF8F3"
-      },
-      "pixels": [
-        "...w..w....",
-        "...b..b....",
-        "...b..b....",
-        ".bbbbbb....",
-        "bbbbbbbb...",
-        "bbbwwwwbb..",
-        "..bwwwwbdd.",
-        "...bbbb..d.",
-        "..........."
-      ]
-    },
-    {
-      "id": "ragdoll-010",
-      "title": {
-        "en": "Sitting Pretty",
-        "tr": "Uslu Oturuş"
-      },
-      "palette": {
-        "b": "#F4EEE6",
-        "d": "#8B7765",
-        "w": "#FBF8F3"
-      },
-      "pixels": [
-        "d...d....",
-        "ddbdd....",
-        "ddbdd....",
-        ".bdbb....",
-        ".bdb.....",
-        "..bbbb.dd",
-        ".bbbbb.dd",
-        ".bbbbbbdd",
-        ".bbbbbbdd",
-        "..bbbbddd",
-        ".wwww.d.."
-      ]
-    },
-    {
-      "id": "ragdoll-011",
-      "title": {
-        "en": "Strut",
-        "tr": "Salınarak Yürüyüş"
-      },
-      "palette": {
-        "b": "#F4EEE6",
-        "d": "#8B7765",
-        "w": "#FBF8F3"
-      },
-      "pixels": [
-        ".........dd",
-        "d..d.....dd",
-        "ddbd.....dd",
-        "dbbdbbbbdd.",
-        ".bbbbbbbb..",
-        "...wwbbww..",
-        "...wwb.ww..",
-        "...ww..ww..",
-        "........w.."
-      ]
-    },
-    {
-      "id": "ragdoll-012",
       "title": {
         "en": "If I Fits",
         "tr": "Kutu Sevdası"
@@ -245,16 +140,96 @@
         "p": "#9AA5B1"
       },
       "pixels": [
-        "...........",
-        "..dd...d...",
-        "..ddbbdd...",
-        "..dbbbbb...",
-        "..beebeb...",
-        ".oobbbbbop.",
-        "pooobbooop.",
-        ".ooooooooo.",
-        ".ooooooooo.",
-        ".ooooooooo."
+        "........",
+        "..dbbd..",
+        "..bbeb..",
+        ".obbbbo.",
+        "poooooo.",
+        ".oooooo.",
+        ".oooooo."
+      ]
+    },
+    {
+      "id": "ragdoll-009",
+      "title": {
+        "en": "Moon Gazer",
+        "tr": "Ay Seyri"
+      },
+      "palette": {
+        "b": "#F4EEE6",
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        "..yy...",
+        ".yy....",
+        ".yy....",
+        ".yyy...",
+        "byyyyy.",
+        "bbyyyy.",
+        "bb.b...",
+        "bbbb..."
+      ]
+    },
+    {
+      "id": "ragdoll-010",
+      "title": {
+        "en": "Portrait",
+        "tr": "Portre"
+      },
+      "palette": {
+        "b": "#F4EEE6",
+        "d": "#8B7765",
+        "e": "#4F86C6",
+        "w": "#FBF8F3"
+      },
+      "pixels": [
+        ".d....d.",
+        ".dbbbbd.",
+        ".beddeb.",
+        "bbeddeb.",
+        "bbbwwbbb",
+        "...ww..."
+      ]
+    },
+    {
+      "id": "ragdoll-011",
+      "title": {
+        "en": "Dinner Bowl",
+        "tr": "Mama Kabı"
+      },
+      "palette": {
+        "o": "#B5838D",
+        "p": "#9AA5B1",
+        "w": "#FBF8F3"
+      },
+      "pixels": [
+        "..pppp..",
+        ".pppppp.",
+        "ooppppoo",
+        ".owwwwo.",
+        ".oooooo."
+      ]
+    },
+    {
+      "id": "ragdoll-012",
+      "title": {
+        "en": "If I Fits",
+        "tr": "Kutu Sevdası"
+      },
+      "palette": {
+        "b": "#F4EEE6",
+        "d": "#8B7765",
+        "o": "#B5838D",
+        "p": "#9AA5B1"
+      },
+      "pixels": [
+        "........",
+        "..dbdd..",
+        "..bbbb..",
+        "..bbbb..",
+        "poobbop.",
+        "ooooooo.",
+        "ooooooo."
       ]
     },
     {
@@ -268,18 +243,15 @@
         "y": "#F4D35E"
       },
       "pixels": [
-        "...yyy....",
-        "..yyy.....",
-        "..yyy.....",
-        ".yyyy.....",
-        ".yyyy.....",
-        ".yyyyy....",
-        ".byyyyy...",
-        "bbyyyyyyy.",
-        "bb..yyyy..",
-        "bbb..b....",
-        "bbbb.b....",
-        ".bbbb....."
+        "...yy...",
+        "..yy....",
+        ".yyy....",
+        ".yyy....",
+        "..yyy...",
+        "bbyyyyy.",
+        ".bb.y...",
+        "bbb.b...",
+        ".bbb...."
       ]
     },
     {
@@ -293,18 +265,15 @@
         "w": "#FBF8F3"
       },
       "pixels": [
-        "...ww..ww...",
-        "...nnwwnn...",
-        ".w.wnwwnn.w.",
-        "wnw......wnw",
-        "wnw..ww..wnw",
-        ".wwwwwwwwww.",
-        "..wwwwwwww..",
-        "..wwnnnnww..",
-        ".wwnnnnnnww.",
-        "..wwnnnnww..",
-        "..wwwnnnww..",
-        "...wwwwww..."
+        "..ww.ww..",
+        "..nnwnn..",
+        "ww.w.w.ww",
+        "nn.www.nn",
+        ".wwwwwww.",
+        ".wwnnnww.",
+        ".wwnnnww.",
+        ".wwnnnww.",
+        "..wwwww.."
       ]
     },
     {
@@ -320,15 +289,13 @@
         "w": "#FBF8F3"
       },
       "pixels": [
-        "............",
-        ".ddbbbbbbdd.",
-        ".dbbbbbbbbd.",
-        ".bbbbbbbbbb.",
-        ".bbeeddeebb.",
-        "bbbeedddebbb",
-        "bbbdwwwwdbbb",
-        "b.bbwwwwbb.b",
-        "...bwwwwb..."
+        ".........",
+        ".dbbbbbd.",
+        ".bbbbbbb.",
+        ".beedeeb.",
+        "bbbdddbbb",
+        "bbbwwwbbb",
+        "..bwwwb.."
       ]
     }
   ]

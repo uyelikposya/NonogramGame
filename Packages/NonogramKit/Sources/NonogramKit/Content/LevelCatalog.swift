@@ -16,6 +16,10 @@ public struct Chapter: Identifiable, Hashable, Sendable {
     /// Planlanan bulmaca sayısı; katalogda belirtilmezse mevcut bulmaca sayısı.
     public let expectedPuzzleCount: Int
     public let puzzles: [Puzzle]
+    /// Tür listesinde ve koleksiyon kartında gösterilen piksel portre.
+    public let portrait: Matrix<RGBColor?>?
+    /// Tür tamamlanınca kazanılan kart; eğitimde yok.
+    public let card: BreedCard?
 
     public init(
         id: String,
@@ -24,7 +28,9 @@ public struct Chapter: Identifiable, Hashable, Sendable {
         subtitle: LocalizedText? = nil,
         accentColor: RGBColor? = nil,
         expectedPuzzleCount: Int,
-        puzzles: [Puzzle]
+        puzzles: [Puzzle],
+        portrait: Matrix<RGBColor?>? = nil,
+        card: BreedCard? = nil
     ) {
         self.id = id
         self.kind = kind
@@ -33,6 +39,8 @@ public struct Chapter: Identifiable, Hashable, Sendable {
         self.accentColor = accentColor
         self.expectedPuzzleCount = expectedPuzzleCount
         self.puzzles = puzzles
+        self.portrait = portrait
+        self.card = card
     }
 }
 
