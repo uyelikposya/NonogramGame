@@ -18,6 +18,9 @@ cd NonogramGame
 ./ProjeyiAc.command
 ```
 
+Güncellemek için `./Guncelle.command` (Xcode'un kendiliğinden yaptığı değişiklikleri `git stash` ile kenara alır,
+yeni sürümü indirir ve projeyi açar).
+
 `ProjeyiAc.command` XcodeGen'i (Homebrew olmadan, Intel/Apple Silicon) `.tools/` içine indirir,
 `project.yml`'den Xcode projesini üretir ve açar. Finder'da çift tıklayarak da çalıştırılabilir.
 
