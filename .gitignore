@@ -1,0 +1,13 @@
+# Xcode projesi XcodeGen ile üretilir (project.yml)
+*.xcodeproj
+*.xcworkspace
+!*.xcodeproj/project.xcworkspace
+xcuserdata/
+DerivedData/
+build/
+.build/
+.swiftpm/
+*.xcresult
+.DS_Store
+Ninni/Resources/Info.plist
+__pycache__/

@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 1,
+  "chapterID": "tutorial",
+  "puzzles": [
+    {
+      "id": "tutorial-01",
+      "title": {
+        "en": "Cat Food Box",
+        "tr": "Mama Kutusu"
+      },
+      "palette": {
+        "a": "#5B4636"
+      },
+      "pixels": [
+        ".....",
+        ".aaa.",
+        ".aaa.",
+        ".aaa.",
+        "....."
+      ],
+      "lesson": "tapToFill"
+    },
+    {
+      "id": "tutorial-02",
+      "title": {
+        "en": "Window",
+        "tr": "Pencere"
+      },
+      "palette": {
+        "a": "#5B4636"
+      },
+      "pixels": [
+        "aaaaa",
+        "a.a.a",
+        "aaaaa",
+        "a.a.a",
+        "aaaaa"
+      ],
+      "lesson": "fullLines"
+    },
+    {
+      "id": "tutorial-03",
+      "title": {
+        "en": "Fish",
+        "tr": "Balık"
+      },
+      "palette": {
+        "a": "#5B8FB9"
+      },
+      "pixels": [
+        ".....",
+        "aa..a",
+        "aaaaa",
+        "aa..a",
+        "....."
+      ],
+      "lesson": "emptyLines"
+    },
+    {
+      "id": "tutorial-04",
+      "title": {
+        "en": "Paw",
+        "tr": "Pati"
+      },
+      "palette": {
+        "a": "#D98C8C"
+      },
+      "pixels": [
+        "a.a.a",
+        ".....",
+        ".aaa.",
+        "aaaaa",
+        ".aaa."
+      ],
+      "lesson": "markWithCross"
+    },
+    {
+      "id": "tutorial-05",
+      "title": {
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak"
+      },
+      "palette": {
+        "a": "#B07CC6"
+      },
+      "pixels": [
+        ".aaa.",
+        "a.a.a",
+        "aa.aa",
+        "a.a.a",
+        ".aaa."
+      ],
+      "lesson": "multipleBlocks"
+    },
+    {
+      "id": "tutorial-06",
+      "title": {
+        "en": "Cat Face",
+        "tr": "Kedi Yüzü"
+      },
+      "palette": {
+        "a": "#5B4636"
+      },
+      "pixels": [
+        "a...a",
+        "aa.aa",
+        "aaaaa",
+        "a.a.a",
+        ".aaa."
+      ],
+      "lesson": "overlap"
+    },
+    {
+      "id": "tutorial-07",
+      "title": {
+        "en": "Bone",
+        "tr": "Kemik"
+      },
+      "palette": {
+        "a": "#C8B79E"
+      },
+      "pixels": [
+        "a...a",
+        "aaaaa",
+        "..a..",
+        "aaaaa",
+        "a...a"
+      ],
+      "lesson": "edges"
+    },
+    {
+      "id": "tutorial-08",
+      "title": {
+        "en": "Mouse",
+        "tr": "Fare"
+      },
+      "palette": {
+        "a": "#8E8E93"
+      },
+      "pixels": [
+        "aa...",
+        "aa...",
+        ".aaa.",
+        "aaaaa",
+        "...aa"
+      ],
+      "lesson": "crossReference"
+    },
+    {
+      "id": "tutorial-09",
+      "title": {
+        "en": "Heart",
+        "tr": "Kalp"
+      },
+      "palette": {
+        "a": "#E5677A"
+      },
+      "pixels": [
+        ".a.a.",
+        "aaaaa",
+        "aaaaa",
+        ".aaa.",
+        "..a.."
+      ],
+      "lesson": "mistakesAndLives",
+      "rules": {
+        "mistakeLimit": 3
+      }
+    },
+    {
+      "id": "tutorial-10",
+      "title": {
+        "en": "Kitty",
+        "tr": "Pisi"
+      },
+      "palette": {
+        "a": "#F2A65A"
+      },
+      "pixels": [
+        "a......a",
+        "aa....aa",
+        "aaaaaaaa",
+        "a.aaaa.a",
+        "aaaaaaaa",
+        ".aaaaaa.",
+        "..aaaa..",
+        "...aa..."
+      ],
+      "lesson": "graduation"
+    }
+  ]
+}
