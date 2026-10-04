@@ -4,7 +4,7 @@ import GoogleMobileAds
 import UIKit
 import UserMessagingPlatform
 
-/// Google Mobile Ads 11.x (Xcode 15 uyumlu son sürüm) ile geçiş ve ödüllü reklamlar.
+/// Google Mobile Ads 11.5 (Xcode 15.2 ile çalışan son sürüm) ile geçiş ve ödüllü reklamlar.
 @MainActor
 @Observable
 final class GoogleAdService: NSObject, AdService {

@@ -169,7 +169,7 @@ kullanıcının kendi müziğini kesmez.
 
 ## Reklam ve gelir modeli
 
-Uygulama ücretsiz; gelir Google AdMob'dan (SDK 11.13.0, Xcode 15 uyumlu son sürüm):
+Uygulama ücretsiz; gelir Google AdMob'dan (SDK 11.5.0: Xcode 15.2 ile çalışan son sürüm; Xcode 15.3+ kullanılırsa yükseltilebilir):
 
 | Reklam | Ne zaman | Kural |
 |---|---|---|
