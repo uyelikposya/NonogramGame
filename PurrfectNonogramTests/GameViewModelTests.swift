@@ -1,18 +1,18 @@
-import Foundation
 import NonogramKit
-import Testing
+import XCTest
 @testable import PurrfectNonogram
 
 @MainActor
-struct GameViewModelTests {
+final class GameViewModelTests: XCTestCase {
     let puzzle = Puzzle(id: "bar", pattern: ["###", "...", "..."])
+    let freeRules = GameRules(checksMoves: false, autoCrossCompletedLines: false)
 
     func position(_ row: Int, _ column: Int) -> GridPosition {
         GridPosition(row: row, column: column)
     }
 
-    @Test func dragFillsOnlyBlankCells() {
-        let viewModel = GameViewModel(puzzle: puzzle, rules: GameRules(checksMoves: false, autoCrossCompletedLines: false))
+    func testDragFillsOnlyBlankCells() {
+        let viewModel = GameViewModel(puzzle: puzzle, rules: freeRules)
         viewModel.tool = .cross
         viewModel.tap(position(0, 1))
 
@@ -22,11 +22,11 @@ struct GameViewModelTests {
         viewModel.dragMoved(to: position(0, 2))
         viewModel.dragEnded()
 
-        #expect(viewModel.game.board.row(0) == [.filled, .crossed, .filled])
+        XCTAssertEqual(viewModel.game.board.row(0), [.filled, .crossed, .filled])
     }
 
-    @Test func dragStartingOnMarkErases() {
-        let viewModel = GameViewModel(puzzle: puzzle, rules: GameRules(checksMoves: false, autoCrossCompletedLines: false))
+    func testDragStartingOnMarkErases() {
+        let viewModel = GameViewModel(puzzle: puzzle, rules: freeRules)
         viewModel.tap(position(0, 0))
         viewModel.tap(position(0, 1))
 
@@ -35,10 +35,10 @@ struct GameViewModelTests {
         viewModel.dragMoved(to: position(0, 2))
         viewModel.dragEnded()
 
-        #expect(viewModel.game.board.row(0) == [.blank, .blank, .blank])
+        XCTAssertEqual(viewModel.game.board.row(0), [.blank, .blank, .blank])
     }
 
-    @Test func reportsCompletionOnce() {
+    func testReportsCompletionOnce() {
         let date = Date(timeIntervalSinceReferenceDate: 1000)
         let viewModel = GameViewModel(puzzle: puzzle, rules: .classic, now: { date })
         var completions: [PuzzleCompletion] = []
@@ -50,36 +50,36 @@ struct GameViewModelTests {
         viewModel.dragMoved(to: position(1, 2))
         viewModel.dragEnded()
 
-        #expect(completions == [PuzzleCompletion(puzzleID: "bar", completedAt: date, elapsed: 0, mistakes: 0)])
-        #expect(viewModel.isFinished)
+        XCTAssertEqual(completions, [PuzzleCompletion(puzzleID: "bar", completedAt: date, elapsed: 0, mistakes: 0)])
+        XCTAssertTrue(viewModel.isFinished)
     }
 
-    @Test func mistakeIsExposedForFeedback() {
+    func testMistakeIsExposedForFeedback() {
         let viewModel = GameViewModel(puzzle: puzzle, rules: .classic)
         viewModel.tap(position(2, 2))
-        #expect(viewModel.lastMistake == position(2, 2))
-        #expect(viewModel.game.mistakes == 1)
+        XCTAssertEqual(viewModel.lastMistake, position(2, 2))
+        XCTAssertEqual(viewModel.game.mistakes, 1)
     }
 
-    @Test func tracksActiveCellWhileDragging() {
+    func testTracksActiveCellWhileDragging() {
         let viewModel = GameViewModel(puzzle: puzzle, rules: .classic)
         viewModel.dragBegan(at: position(0, 0))
-        #expect(viewModel.activeCell == position(0, 0))
+        XCTAssertEqual(viewModel.activeCell, position(0, 0))
         viewModel.dragEnded()
-        #expect(viewModel.activeCell == nil)
+        XCTAssertNil(viewModel.activeCell)
     }
 
-    @Test func restartResetsLostGame() {
+    func testRestartResetsLostGame() {
         let viewModel = GameViewModel(puzzle: puzzle, rules: .classic)
         viewModel.tap(position(1, 0))
         viewModel.tap(position(1, 1))
         viewModel.tap(position(1, 2))
-        #expect(viewModel.game.status == .lost(.outOfMistakes))
+        XCTAssertEqual(viewModel.game.status, .lost(.outOfMistakes))
 
         viewModel.restart()
-        #expect(viewModel.game.status == .playing)
-        #expect(viewModel.game.mistakes == 0)
-        #expect(viewModel.lastMistake == nil)
+        XCTAssertEqual(viewModel.game.status, .playing)
+        XCTAssertEqual(viewModel.game.mistakes, 0)
+        XCTAssertNil(viewModel.lastMistake)
         viewModel.stop()
     }
 }

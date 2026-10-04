@@ -1,0 +1,58 @@
+name: CI
+
+# Geliştiricinin ortamıyla aynı derleyici: Xcode 15.2 (Swift 5.9, iOS 17.2 SDK).
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: macos-14
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Xcode 15.2'yi seç
+        run: |
+          ls -d /Applications/Xcode*.app
+          sudo xcode-select -s /Applications/Xcode_15.2.app
+          xcodebuild -version
+          swift --version
+
+      - name: Bulmaca içeriğini doğrula
+        run: python3 Tools/validate_puzzles.py
+
+      - name: NonogramKit testleri
+        working-directory: Packages/NonogramKit
+        run: swift test
+
+      - name: Xcode projesini üret
+        run: |
+          brew install xcodegen
+          xcodegen generate
+
+      - name: Uygulamayı derle ve test et
+        run: |
+          DEVICE_ID=$(xcrun simctl list devices available -j | python3 -c '
+          import json, sys
+          data = json.load(sys.stdin)["devices"]
+          ios = sorted((r for r in data if "iOS" in r), reverse=True)
+          for runtime in ios:
+              for device in data[runtime]:
+                  if device["name"].startswith("iPhone"):
+                      print(device["udid"]); sys.exit()
+          ')
+          echo "Simülatör: $DEVICE_ID"
+          set -o pipefail
+          xcodebuild test \
+            -project PurrfectNonogram.xcodeproj \
+            -scheme PurrfectNonogram \
+            -destination "id=$DEVICE_ID" \
+            CODE_SIGNING_ALLOWED=NO \
+            | tee xcodebuild.log | grep -E "error:|warning: .*(Swift|concurrency)|Test Case .* (passed|failed)|Executed|BUILD|\*\*" || true
+          exit ${PIPESTATUS[0]}
