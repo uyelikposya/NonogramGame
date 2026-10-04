@@ -4,6 +4,10 @@ Kedi temalı, klasik kurallı iOS Nonogram (Picross) bulmaca oyunu. SwiftUI, iOS
 
 ## Kurulum
 
+**Gereksinimler:** macOS 13 Ventura+, **Xcode 15.2** (Swift 5.9, iOS 17.2 SDK). Testler XCTest kullanır.
+Kod Xcode 15.2 ile uyumlu tutulur; her push'ta GitHub Actions aynı sürümle derler ve testleri
+iOS 17.2 simülatöründe çalıştırır (`.github/workflows/ci.yml`).
+
 Xcode projesi [XcodeGen](https://github.com/yonaskolb/XcodeGen) ile `project.yml`'den üretilir.
 
 ```bash
@@ -19,7 +23,7 @@ Testler:
 cd Packages/NonogramKit && swift test
 
 # Uygulama + paketlenmiş içerik doğrulama
-xcodebuild test -scheme PurrfectNonogram -destination 'platform=iOS Simulator,name=iPhone 16'
+xcodebuild test -scheme PurrfectNonogram -destination 'platform=iOS Simulator,name=iPhone 15'
 
 # Bulmaca içeriği (yalnızca Python 3)
 python3 Tools/validate_puzzles.py
