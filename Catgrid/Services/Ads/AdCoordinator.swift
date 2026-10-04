@@ -15,6 +15,10 @@ final class AdCoordinator {
     }
 
     static func live() -> AdCoordinator {
+        // Arayüz testleri reklam/onay pencereleri olmadan çalışabilsin
+        if ProcessInfo.processInfo.arguments.contains("-disableAds") {
+            return AdCoordinator(service: NoAdService())
+        }
         #if canImport(GoogleMobileAds)
         return AdCoordinator(service: GoogleAdService())
         #else

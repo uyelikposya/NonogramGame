@@ -9,10 +9,9 @@ final class GameplayUITests: XCTestCase {
 
     func testTapAndDragOnBoardDoesNotCrash() {
         let app = XCUIApplication()
-        app.launchArguments += ["-AppleLanguages", "(en)", "-AppleLocale", "en_US"]
+        // Reklam SDK'sı ve onay/izleme pencereleri kapalı: yalnızca oyun ekranını dener
+        app.launchArguments += ["-AppleLanguages", "(en)", "-AppleLocale", "en_US", "-disableAds"]
         app.launch()
-
-        dismissTrackingAlertIfShown()
 
         let start = app.buttons["home.continue"]
         XCTAssertTrue(start.waitForExistence(timeout: 15), "Ana ekrandaki oyna düğmesi görünmedi")
@@ -32,17 +31,5 @@ final class GameplayUITests: XCTestCase {
 
         XCTAssertEqual(app.state, .runningForeground, "Uygulama çöktü")
         XCTAssertTrue(board.exists)
-    }
-
-    /// Açılıştaki iOS izleme izni penceresi (ATT) testi engellemesin.
-    private func dismissTrackingAlertIfShown() {
-        let springboard = XCUIApplication(bundleIdentifier: "com.apple.springboard")
-        for label in ["Ask App Not to Track", "Allow"] {
-            let button = springboard.buttons[label]
-            if button.waitForExistence(timeout: 4) {
-                button.tap()
-                return
-            }
-        }
     }
 }
