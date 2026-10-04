@@ -74,12 +74,26 @@ targets:
         GENERATE_INFOPLIST_FILE: YES
         PRODUCT_BUNDLE_IDENTIFIER: com.catgridcollection.nonogram.tests
 
+  CatgridUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - path: CatgridUITests
+    dependencies:
+      - target: Catgrid
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+        PRODUCT_BUNDLE_IDENTIFIER: com.catgridcollection.nonogram.uitests
+        TEST_TARGET_NAME: Catgrid
+
 schemes:
   Catgrid:
     build:
       targets:
         Catgrid: all
         CatgridTests: [test]
+        CatgridUITests: [test]
     test:
-      targets: [CatgridTests]
+      targets: [CatgridTests, CatgridUITests]
       gatherCoverageData: true

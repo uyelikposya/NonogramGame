@@ -92,6 +92,7 @@ struct HomeView: View {
                     Label(title, systemImage: isResuming ? "arrow.clockwise" : "play.fill")
                 }
                 .buttonStyle(PrimaryButtonStyle())
+                .accessibilityIdentifier("home.continue")
             }
             .padding(20)
             .card()

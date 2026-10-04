@@ -139,6 +139,7 @@ struct BoardView: View {
         .gesture(dragGesture(cell: cell))
         .accessibilityElement()
         .accessibilityLabel(Text("Puzzle board"))
+        .accessibilityIdentifier("game.board")
         .accessibilityValue(Text(game.progress, format: .percent.precision(.fractionLength(0))))
     }
 

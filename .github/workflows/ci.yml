@@ -65,10 +65,28 @@ jobs:
             CODE_SIGNING_ALLOWED=NO \
             > xcodebuild.log 2>&1 || STATUS=$?
 
-          grep -E "error:|Test Case .* (passed|failed)|Executed|\*\* .* \*\*" xcodebuild.log || true
+          grep -E "error:|Test Case .* (passed|failed)|Executed|\*\* .* \*\*|crash|EXC_" xcodebuild.log || true
+          echo "DEVICE_ID=$DEVICE_ID" >> "$GITHUB_ENV"
           if [ $STATUS -ne 0 ]; then
             echo "::error::xcodebuild başarısız (çıkış kodu $STATUS)"
             grep -B2 -A6 -E "Undefined symbol|ld: |duplicate symbol" xcodebuild.log | head -120 || true
             tail -40 xcodebuild.log
           fi
+          exit $STATUS
+
+      # Intel Mac'lerde simülatör x86_64 çalışır; arayüz testini bu mimaride de çalıştır (Rosetta ile)
+      - name: Arayüz testi (Intel / x86_64 simülatör)
+        if: always() && env.DEVICE_ID != ''
+        run: |
+          softwareupdate --install-rosetta --agree-to-license >/dev/null 2>&1 || true
+          STATUS=0
+          xcodebuild test \
+            -project Catgrid.xcodeproj \
+            -scheme Catgrid \
+            -destination "platform=iOS Simulator,id=$DEVICE_ID,arch=x86_64" \
+            -only-testing:CatgridUITests \
+            CODE_SIGNING_ALLOWED=NO \
+            > xcodebuild-x86.log 2>&1 || STATUS=$?
+          grep -E "error:|Test Case .* (passed|failed)|Executed|\*\* .* \*\*|crash|EXC_" xcodebuild-x86.log || true
+          if [ $STATUS -ne 0 ]; then tail -60 xcodebuild-x86.log; fi
           exit $STATUS
