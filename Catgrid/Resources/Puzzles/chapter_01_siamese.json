@@ -1,0 +1,288 @@
+{
+  "schemaVersion": 1,
+  "chapterID": "siamese",
+  "puzzles": [
+    {
+      "id": "siamese-001",
+      "title": {
+        "en": "Siamese Face",
+        "tr": "Siyam Yüzü"
+      },
+      "palette": {
+        "b": "#F2E3CF",
+        "d": "#4A3B35"
+      },
+      "pixels": [
+        "d...d",
+        "ddddd",
+        "b.b.b",
+        "bbbbb",
+        ".bdb."
+      ]
+    },
+    {
+      "id": "siamese-002",
+      "title": {
+        "en": "Curious Cat",
+        "tr": "Meraklı Kedi"
+      },
+      "palette": {
+        "b": "#F2E3CF",
+        "d": "#4A3B35"
+      },
+      "pixels": [
+        "...dd",
+        "...d.",
+        "bbbd.",
+        "bbbb.",
+        "b..b."
+      ]
+    },
+    {
+      "id": "siamese-003",
+      "title": {
+        "en": "Sitting Kitten",
+        "tr": "Oturan Yavru"
+      },
+      "palette": {
+        "b": "#F2E3CF",
+        "d": "#4A3B35"
+      },
+      "pixels": [
+        ".d.d.",
+        ".bbb.",
+        "..b..",
+        ".bbb.",
+        "bbbbd"
+      ]
+    },
+    {
+      "id": "siamese-004",
+      "title": {
+        "en": "Blue Gaze",
+        "tr": "Mavi Bakış"
+      },
+      "palette": {
+        "b": "#F2E3CF",
+        "d": "#4A3B35",
+        "e": "#5B9BD5"
+      },
+      "pixels": [
+        "d...d",
+        "dd.dd",
+        "beeeb",
+        "bbbbb",
+        "..d.."
+      ]
+    },
+    {
+      "id": "siamese-005",
+      "title": {
+        "en": "Tail Up",
+        "tr": "Kuyruk Havada"
+      },
+      "palette": {
+        "b": "#F2E3CF",
+        "d": "#4A3B35"
+      },
+      "pixels": [
+        "d.d.d",
+        "ddd.d",
+        "bbbbd",
+        "bbbb.",
+        "b..b."
+      ]
+    },
+    {
+      "id": "siamese-006",
+      "title": {
+        "en": "Toe Beans",
+        "tr": "Pati Yastıkları"
+      },
+      "palette": {
+        "b": "#F2E3CF",
+        "n": "#D99A9A"
+      },
+      "pixels": [
+        ".bbbb.",
+        "bbnnbb",
+        "nbbbbn",
+        ".bnnb.",
+        ".bnnb.",
+        ".bbbb."
+      ]
+    },
+    {
+      "id": "siamese-007",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi"
+      },
+      "palette": {
+        "n": "#D99A9A",
+        "w": "#FBF8F3"
+      },
+      "pixels": [
+        "nnnnnn",
+        "nwnnnn",
+        "nnnnnn",
+        ".nnnn.",
+        "..nn..",
+        "..nn.."
+      ]
+    },
+    {
+      "id": "siamese-008",
+      "title": {
+        "en": "Fish Snack",
+        "tr": "Balık Atıştırması"
+      },
+      "palette": {
+        "o": "#E07A5F",
+        "p": "#9AA5B1"
+      },
+      "pixels": [
+        ".ooo.o",
+        "oopooo",
+        "oopooo",
+        ".ooo.o"
+      ]
+    },
+    {
+      "id": "siamese-009",
+      "title": {
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak"
+      },
+      "palette": {
+        "o": "#E07A5F"
+      },
+      "pixels": [
+        "..oooo.",
+        ".oo.o.o",
+        ".oo..oo",
+        ".o.oooo",
+        "..oooo.",
+        "oo....."
+      ]
+    },
+    {
+      "id": "siamese-010",
+      "title": {
+        "en": "Dinner Bowl",
+        "tr": "Mama Kabı"
+      },
+      "palette": {
+        "o": "#E07A5F",
+        "p": "#9AA5B1",
+        "w": "#FBF8F3"
+      },
+      "pixels": [
+        "..ppp..",
+        "ppppppp",
+        "oopppoo",
+        "oowwwoo",
+        ".ooooo."
+      ]
+    },
+    {
+      "id": "siamese-011",
+      "title": {
+        "en": "Portrait",
+        "tr": "Portre"
+      },
+      "palette": {
+        "b": "#F2E3CF",
+        "d": "#4A3B35",
+        "e": "#5B9BD5"
+      },
+      "pixels": [
+        ".......",
+        "d..b.dd",
+        "dbbbbbd",
+        "bbedeb.",
+        "bbedeb.",
+        ".bdddb.",
+        "..bdb.."
+      ]
+    },
+    {
+      "id": "siamese-012",
+      "title": {
+        "en": "Toy Mouse",
+        "tr": "Oyuncak Fare"
+      },
+      "palette": {
+        "n": "#D99A9A",
+        "p": "#9AA5B1"
+      },
+      "pixels": [
+        "....n..",
+        "..pppp.",
+        ".ppppp.",
+        "n..pp.."
+      ]
+    },
+    {
+      "id": "siamese-013",
+      "title": {
+        "en": "Leftovers",
+        "tr": "Artıklar"
+      },
+      "palette": {
+        "p": "#9AA5B1"
+      },
+      "pixels": [
+        "..p..p..",
+        "pppppppp",
+        "p.p..pp.",
+        "..p..p.."
+      ]
+    },
+    {
+      "id": "siamese-014",
+      "title": {
+        "en": "If I Fits",
+        "tr": "Kutu Sevdası"
+      },
+      "palette": {
+        "b": "#F2E3CF",
+        "d": "#4A3B35",
+        "e": "#5B9BD5",
+        "o": "#E07A5F",
+        "p": "#9AA5B1"
+      },
+      "pixels": [
+        "........",
+        "..d..dd.",
+        "..dbbdd.",
+        "..bebb..",
+        ".pobbbo.",
+        ".oooooop",
+        ".oooooo.",
+        ".oooooo."
+      ]
+    },
+    {
+      "id": "siamese-015",
+      "title": {
+        "en": "Moon Gazer",
+        "tr": "Ay Seyri"
+      },
+      "palette": {
+        "b": "#F2E3CF",
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        "..yy...",
+        ".yy....",
+        ".yy....",
+        ".yyy...",
+        "byyyyy.",
+        "bbyyyy.",
+        "bb.b...",
+        "bbbb..."
+      ]
+    }
+  ]
+}

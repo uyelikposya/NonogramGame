@@ -1,6 +1,8 @@
-# Purrfect Nonogram (geçici isim)
+# Catgrid Collection: Nonogram
 
-Kedi temalı, klasik kurallı iOS Nonogram (Picross) bulmaca oyunu. SwiftUI, iOS 17+, MVVM.
+Kedi türlerini topladığın, klasik kurallı iOS Nonogram (Picross) bulmaca oyunu. SwiftUI, iOS 17+, MVVM.
+Ana ekranda adı **Catgrid**; App Store adı **Catgrid Collection: Nonogram**.
+
 
 ## Kurulum
 
@@ -26,7 +28,7 @@ Testler:
 cd Packages/NonogramKit && swift test
 
 # Uygulama + paketlenmiş içerik doğrulama
-xcodebuild test -scheme PurrfectNonogram -destination 'platform=iOS Simulator,name=iPhone 15'
+xcodebuild test -scheme Catgrid -destination 'platform=iOS Simulator,name=iPhone 15'
 
 # Bulmaca içeriği (yalnızca Python 3)
 python3 Tools/validate_puzzles.py
@@ -50,8 +52,8 @@ NonogramGame/
 │   │   ├── Content/        LevelCatalog, Chapter, CatalogLoader (JSON → katalog)
 │   │   └── Progression/    Progression (kilit kuralları), PuzzleCompletion
 │   └── Tests/NonogramKitTests/
-├── PurrfectNonogram/
-│   ├── App/                PurrfectNonogramApp, AppModel, Router (rotalar), RootView
+├── Catgrid/
+│   ├── App/                CatgridApp, AppModel, Router (rotalar), RootView
 │   ├── Core/
 │   │   ├── Theme/          ThemePalette (4 palet × açık/koyu), AppTheme tokenları, ThemeManager, modifier'lar
 │   │   └── Components/     Buton stilleri, ProgressBar, ArtworkThumbnail
@@ -63,12 +65,15 @@ NonogramGame/
 │   │   ├── Tutorial/       LessonBanner + ders metinleri
 │   │   └── Settings/       Palet seçici, görünüm, titreşim, dil
 │   ├── Services/
-│   │   └── Persistence/    PuzzleRecord (@Model), ProgressStore (SwiftData önbellekli ilerleme)
+│   │   ├── Persistence/    PuzzleRecord (@Model), ProgressStore (SwiftData önbellekli ilerleme)
+│   │   ├── Audio/          AudioManager (müzik + efektler, ayarlar)
+│   │   └── Ads/            AdPolicy, AdService (Google / test), AdCoordinator
 │   └── Resources/
 │       ├── Puzzles/        catalog.json + bölüm başına bir JSON
+│       ├── Sounds/         müzik (.m4a) ve efektler (.wav)
 │       ├── Localizable.xcstrings, InfoPlist.xcstrings   (EN varsayılan, TR)
 │       └── Assets.xcassets
-├── PurrfectNonogramTests/  ViewModel testleri + paketlenmiş içerik doğrulama
+├── CatgridTests/  ViewModel testleri + paketlenmiş içerik doğrulama
 └── Tools/validate_puzzles.py
 ```
 
@@ -136,28 +141,51 @@ Yeni palet eklemek: `ThemePalette`'e bir case ve iki `ThemeSpec` (açık/koyu) e
 (bu, çözümün benzersiz olduğunu da garanti eder). `Tools/validate_puzzles.py` ve
 `ContentValidationTests` bunu her bulmaca için kontrol eder.
 
-## Zorluk eğrisi (öneri)
+## İçerik üretimi
 
-| # | Bölüm | Boyut | Kural |
-|---|---|---|---|
-| 0 | Yavru Okulu (10) | 5×5 → 8×8 | Hata sınırı yok, ders balonları |
-| 1 | Siyam | 5×5 | 3 can |
-| 2 | British Shorthair | 5×5–8×8 | 3 can |
-| 3 | Scottish Fold | 8×8 | 3 can |
-| 4 | İran Kedisi | 8×8–10×10 | 3 can |
-| 5 | Ragdoll | 10×10 | 3 can |
-| 6 | Rus Mavisi | 10×10 | 3 can |
-| 7 | Habeş Kedisi | 10×10–12×12 | 3 can |
-| 8 | Birman | 12×12 | 3 can |
-| 9 | Bengal | 12×12–15×15 | 3 can |
-| 10 | Sfenks | 15×15 | 3 can |
-| 11 | Ankara Kedisi | 15×15 | 3 can |
-| 12 | Norveç Orman Kedisi | 15×15–15×20 | 3 can |
-| 13 | Van Kedisi | 15×20 | 3 can |
-| 14 | Maine Coon | 20×20 | 3 can |
-| 15 | Egzotik Kısa Tüylü | 20×20 | 3 can, bölüm sonu süreli bonuslar |
+Kedi türü bölümleri `Tools/generate_content.py` ile üretilir (yalnızca Python 3):
 
-Her türün 30. bulmacası o türün büyük portresi olabilir (bölüm finali).
+```bash
+python3 Tools/generate_content.py   # bölüm JSON'larını yeniden yazar
+python3 Tools/validate_puzzles.py   # tüm bulmacaları doğrular
+```
+
+- Her tür `BREEDS` içinde tanımlıdır: kulak şekli (büyük, katlanmış, püsküllü...), desen
+  (uçlar, beyaz eldiven, benek, tekir, Van lekesi), göz rengi (Ankara/Van'da ela-mavi), palet ve
+  türe özgü sahneler (Van kedisi gölde yüzer, Norveç orman kedisi çam ağacının yanında...).
+- Motifler vektör olarak çizilir, ızgaraya oturtulur ve **yalnızca tahmin gerektirmeden çözülebilen**
+  bulmacalar seçilir. Aynı kod her zaman aynı bulmacaları üretir.
+- Zorluk tür sırasıyla artar: ilk tür 5x5–8x8, son türler 20x20. Her türde 15 bulmaca.
+- **Yeni tür eklemek:** `BREEDS`'e bir giriş ekle, scripti çalıştır. Tür sayısı arayüzde sabit değildir;
+  ana ekran toplam sayı yerine toplanan koleksiyonu gösterir.
+- Elle çizilen küçük bulmacalar `HANDMADE` içinde tutulur.
+
+## Ses
+
+`Tools/generate_audio.py` (numpy + ffmpeg) müziği ve efektleri sentezler; çıktılar `Catgrid/Resources/Sounds/`.
+Profesyonel seslerle değiştirmek için aynı dosya adlarını kullanmak yeterli. Ayarlar'da müzik ve efektler
+ayrı ayrı açılıp kapatılabilir ve seviyeleri ayarlanabilir. Ses oturumu `.ambient`: sessiz anahtara uyar,
+kullanıcının kendi müziğini kesmez.
+
+## Reklam ve gelir modeli
+
+Uygulama ücretsiz; gelir Google AdMob'dan (SDK 11.13.0, Xcode 15 uyumlu son sürüm):
+
+| Reklam | Ne zaman | Kural |
+|---|---|---|
+| Geçiş (interstitial) | Her 2 çözülen tür bulmacasında bir | Yalnızca sonuç kartından ayrılırken; iki reklam arası en az 90 sn; **eğitimde asla** |
+| Ödüllü (rewarded) | Canlar ya da süre bitince, isteğe bağlı | "+1 pati" / "+60 sn", bulmaca başına bir kez |
+
+- Açılışta Google UMP onay formu (AB/İngiltere) ve ardından iOS izleme izni (ATT) istenir.
+  AB'de Ayarlar'da "Gizlilik Ayarları" görünür.
+- Mantık `AdPolicy`'de (test edilebilir), SDK `GoogleAdService`'te, ekranlar yalnızca `AdCoordinator`'ı kullanır.
+- Banner reklam bilerek yok: tahtada yanlış dokunmalara yol açar ve oyunu kalabalıklaştırır.
+- Önerilen sonraki adım: "Reklamları Kaldır" tek seferlik uygulama içi satın alma.
+
+**AdMob hesabı onaylanınca:**
+1. `project.yml` → `GADApplicationIdentifier` değerini kendi uygulama kimliğinle değiştir.
+2. `Catgrid/Services/Ads/AdService.swift` → `AdConfiguration.production` içine reklam birimi kimliklerini yaz.
+3. Debug derlemeler her zaman Google'ın test reklamlarını kullanır (kendi reklamına tıklamak hesabı riske atar).
 
 ## Yol haritası
 
@@ -169,9 +197,10 @@ Her türün 30. bulmacası o türün büyük portresi olabilir (bölüm finali).
 - [x] **Aşama 3 — Kalıcılık**: SwiftData (`PuzzleRecord`: ilk çözüm, en iyi süre, en az hata, yarım oyun),
       arka plana geçişte/ekrandan çıkışta otomatik kayıt, kaldığın yerden devam, "Yeni rekor!",
       istatistik ekranı, ilerlemeyi sıfırlama, eski UserDefaults ilerlemesinin taşınması
-- [ ] **Aşama 4 — Reklam ve yerelleştirme**: AdMob SPM, UMP/GDPR-KVKK onayı, ATT, `AdService` protokolü,
-      her 2 tamamlanan bulmacada bir geçiş reklamı, isteğe bağlı ödüllü reklam (ekstra can / ipucu),
-      tüm metinlerin TR çevirisi
-- [ ] **Aşama 5 — İçerik üretimi**: 450 tür bulmacası; PNG → JSON dönüştürücü + doğrulayıcı
+- [x] **Aşama 4 — Reklam, ses, içerik**: AdMob (test kimlikleriyle), UMP + ATT, geçiş ve ödüllü reklam,
+      müzik ve ses efektleri, 15 tür × 15 bulmaca (5x5 → 20x20), koleksiyon odaklı ana ekran,
+      uygulama adı: Catgrid Collection: Nonogram
+- [ ] **Aşama 5 — Yayın hazırlığı**: gerçek AdMob kimlikleri, uygulama simgesi, büyük tahtalar için yakınlaştırma,
+      "Reklamları Kaldır" satın alması, App Store görselleri
 - [ ] **Aşama 6 — Cila ve yayın**: ses/haptik, erişilebilirlik (VoiceOver, Dynamic Type), performans,
       App Store materyalleri

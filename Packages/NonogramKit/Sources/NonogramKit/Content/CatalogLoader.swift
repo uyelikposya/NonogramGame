@@ -29,7 +29,7 @@ public enum CatalogLoader {
                 title: entry.title,
                 subtitle: entry.subtitle,
                 accentColor: entry.accentColor.flatMap(RGBColor.init(hex:)),
-                expectedPuzzleCount: entry.expectedPuzzleCount,
+                expectedPuzzleCount: entry.expectedPuzzleCount ?? puzzles.count,
                 puzzles: puzzles
             )
         }
@@ -56,7 +56,8 @@ struct CatalogManifest: Decodable {
         let subtitle: LocalizedText?
         let accentColor: String?
         let file: String
-        let expectedPuzzleCount: Int
+        /// İsteğe bağlı: içerik hazırlanırken planlanan sayı. Yoksa dosyadaki bulmaca sayısı kullanılır.
+        let expectedPuzzleCount: Int?
     }
 
     let schemaVersion: Int

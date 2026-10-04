@@ -1,0 +1,317 @@
+{
+  "schemaVersion": 1,
+  "chapterID": "persian",
+  "puzzles": [
+    {
+      "id": "persian-001",
+      "title": {
+        "en": "Toe Beans",
+        "tr": "Pati Yastıkları"
+      },
+      "palette": {
+        "b": "#EFE7DC",
+        "n": "#E8A3A8"
+      },
+      "pixels": [
+        "..bbbb..",
+        "..nbbn..",
+        "bn....nb",
+        "bbbbbbbb",
+        ".bbbbbb.",
+        ".bnnnnb.",
+        ".bbnnnb.",
+        "..bbbb.."
+      ]
+    },
+    {
+      "id": "persian-002",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi"
+      },
+      "palette": {
+        "n": "#E8A3A8",
+        "w": "#FBF8F3"
+      },
+      "pixels": [
+        ".nnnnnn.",
+        "nwwnnnnn",
+        "nnnnnnnn",
+        ".nnnnnn.",
+        "..nnnn..",
+        "...nn...",
+        "...nn..."
+      ]
+    },
+    {
+      "id": "persian-003",
+      "title": {
+        "en": "Fish Snack",
+        "tr": "Balık Atıştırması"
+      },
+      "palette": {
+        "o": "#8E5BA8"
+      },
+      "pixels": [
+        ".oooo..o",
+        "o.oooooo",
+        "oooooooo",
+        ".oooo..o"
+      ]
+    },
+    {
+      "id": "persian-004",
+      "title": {
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak"
+      },
+      "palette": {
+        "o": "#8E5BA8"
+      },
+      "pixels": [
+        "..oooo...",
+        ".ooo.oo..",
+        "o....oo..",
+        "ooo..oo..",
+        "oo.oo.o..",
+        ".ooooo...",
+        "..ooooo..",
+        ".......oo"
+      ]
+    },
+    {
+      "id": "persian-005",
+      "title": {
+        "en": "Dinner Bowl",
+        "tr": "Mama Kabı"
+      },
+      "palette": {
+        "o": "#8E5BA8",
+        "p": "#E9C46A",
+        "w": "#FBF8F3"
+      },
+      "pixels": [
+        "...ppp...",
+        ".ppppppp.",
+        "opppppppo",
+        "oooowoooo",
+        ".ooooooo.",
+        ".ooooooo."
+      ]
+    },
+    {
+      "id": "persian-006",
+      "title": {
+        "en": "If I Fits",
+        "tr": "Kutu Sevdası"
+      },
+      "palette": {
+        "b": "#EFE7DC",
+        "e": "#3E8EDE",
+        "o": "#8E5BA8",
+        "p": "#E9C46A"
+      },
+      "pixels": [
+        "..b...b..",
+        "..bbbbb..",
+        "..bebeb..",
+        "..bbbeb..",
+        "poobbboop",
+        ".ooooooo.",
+        ".ooooooo.",
+        ".ooooooo."
+      ]
+    },
+    {
+      "id": "persian-007",
+      "title": {
+        "en": "Leftovers",
+        "tr": "Artıklar"
+      },
+      "palette": {
+        "p": "#E9C46A"
+      },
+      "pixels": [
+        "...pp....",
+        "ppppppppp",
+        "p..pp..p.",
+        "...pp...."
+      ]
+    },
+    {
+      "id": "persian-008",
+      "title": {
+        "en": "Nap Time",
+        "tr": "Şekerleme"
+      },
+      "palette": {
+        "b": "#EFE7DC"
+      },
+      "pixels": [
+        "b.bbbbbb..",
+        "bbbbbbbbb.",
+        "b..bbbbbb.",
+        ".bbbbbbbb.",
+        "..bbbbbbb.",
+        "..bbbbbb.."
+      ]
+    },
+    {
+      "id": "persian-009",
+      "title": {
+        "en": "Royal Cushion",
+        "tr": "Saray Minderi"
+      },
+      "palette": {
+        "b": "#EFE7DC",
+        "o": "#8E5BA8",
+        "p": "#E9C46A"
+      },
+      "pixels": [
+        ".b..b.....",
+        ".bbbb.....",
+        ".bbbbbb...",
+        ".bbbbbbbb.",
+        ".bbbbbbbb.",
+        "obbbbbbbbo",
+        "oopbbbbpoo",
+        "oooooooooo"
+      ]
+    },
+    {
+      "id": "persian-010",
+      "title": {
+        "en": "Sitting Pretty",
+        "tr": "Uslu Oturuş"
+      },
+      "palette": {
+        "b": "#EFE7DC"
+      },
+      "pixels": [
+        "....b....",
+        "bbbbb....",
+        "bbbbb....",
+        ".bbb.....",
+        "..bbbb.bb",
+        ".bbbbb.bb",
+        ".bbbbbbbb",
+        ".bbbbbbbb",
+        ".bbbbbbbb",
+        ".bbbb.b.."
+      ]
+    },
+    {
+      "id": "persian-011",
+      "title": {
+        "en": "Moon Gazer",
+        "tr": "Ay Seyri"
+      },
+      "palette": {
+        "b": "#EFE7DC",
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        "...yy....",
+        "..yy.....",
+        ".yyy.....",
+        ".yyy.....",
+        ".yyyy....",
+        ".byyyyy..",
+        "bb.yyyyy.",
+        "bbb.yy...",
+        "bbb.b....",
+        ".bbbb...."
+      ]
+    },
+    {
+      "id": "persian-012",
+      "title": {
+        "en": "If I Fits",
+        "tr": "Kutu Sevdası"
+      },
+      "palette": {
+        "b": "#EFE7DC",
+        "o": "#8E5BA8",
+        "p": "#E9C46A"
+      },
+      "pixels": [
+        "..........",
+        "..bbbbbb..",
+        "..bbbbbb..",
+        "..bbbbbb..",
+        "ppobbbbopp",
+        ".oooooooo.",
+        ".oooooooo.",
+        ".oooooooo."
+      ]
+    },
+    {
+      "id": "persian-013",
+      "title": {
+        "en": "Moon Gazer",
+        "tr": "Ay Seyri"
+      },
+      "palette": {
+        "b": "#EFE7DC",
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        "...yyy....",
+        "..yyy.....",
+        "..yyy.....",
+        ".yyyy.....",
+        ".yyyy.....",
+        "..yyyy....",
+        "bbyyyyyyy.",
+        "bb.yyyyy..",
+        ".bb..b....",
+        "bbbb.b....",
+        ".bbbb....."
+      ]
+    },
+    {
+      "id": "persian-014",
+      "title": {
+        "en": "Toe Beans",
+        "tr": "Pati Yastıkları"
+      },
+      "palette": {
+        "b": "#EFE7DC",
+        "n": "#E8A3A8"
+      },
+      "pixels": [
+        "...bb.bb...",
+        "..bnnbnnb..",
+        "bbbbb.bnbbb",
+        "bnb.....bnb",
+        "bnbbbbbbbnb",
+        "..bbbbbbb..",
+        "..bbnnnbb..",
+        ".bbnnnnnbb.",
+        ".bbnnnnnbb.",
+        "..bbnnnbb..",
+        "...bbbbb..."
+      ]
+    },
+    {
+      "id": "persian-015",
+      "title": {
+        "en": "Portrait",
+        "tr": "Portre"
+      },
+      "palette": {
+        "b": "#EFE7DC",
+        "e": "#3E8EDE"
+      },
+      "pixels": [
+        "....bbb....",
+        ".bbbbbbbbb.",
+        ".bbbbbbbbb.",
+        ".bbebbbebb.",
+        "bbbbbbbbbbb",
+        "bbbbbbbbbbb",
+        "...bbbbb..."
+      ]
+    }
+  ]
+}

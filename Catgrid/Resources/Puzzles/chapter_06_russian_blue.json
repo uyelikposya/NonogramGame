@@ -1,0 +1,343 @@
+{
+  "schemaVersion": 1,
+  "chapterID": "russian-blue",
+  "puzzles": [
+    {
+      "id": "russian-blue-001",
+      "title": {
+        "en": "Toe Beans",
+        "tr": "Pati Yastıkları"
+      },
+      "palette": {
+        "b": "#8FA3B5",
+        "n": "#6E8090"
+      },
+      "pixels": [
+        "...b..b...",
+        "..bnbbnb..",
+        "bbbb..bbbb",
+        "nnb....bnn",
+        "bbbbbbbbbb",
+        "..bbbbbb..",
+        ".bbnnnnbb.",
+        ".bbnnnnbb.",
+        "..bnnnnb..",
+        "...bbbb..."
+      ]
+    },
+    {
+      "id": "russian-blue-002",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi"
+      },
+      "palette": {
+        "n": "#6E8090",
+        "w": "#DCE3EA"
+      },
+      "pixels": [
+        ".nnnnnnnn.",
+        "nnwnnnnnnn",
+        "nnwnnnnnnn",
+        "nnnnnnnnnn",
+        ".nnnnnnnn.",
+        "..nnnnnn..",
+        "...nnnn...",
+        "....nn....",
+        "....nn...."
+      ]
+    },
+    {
+      "id": "russian-blue-003",
+      "title": {
+        "en": "Fish Snack",
+        "tr": "Balık Atıştırması"
+      },
+      "palette": {
+        "o": "#5C6B7A",
+        "p": "#B8C4CF"
+      },
+      "pixels": [
+        "..oooo...o",
+        "o.oopoo.oo",
+        "o.oopooooo",
+        "oooopoo.oo",
+        "..oooo...o"
+      ]
+    },
+    {
+      "id": "russian-blue-004",
+      "title": {
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak"
+      },
+      "palette": {
+        "o": "#5C6B7A"
+      },
+      "pixels": [
+        ".....oooo..",
+        "....oooooo.",
+        "...oo.ooo.o",
+        "..oooo...oo",
+        "..ooo...ooo",
+        "..oo.oo.ooo",
+        "....oooo.oo",
+        "...ooooooo.",
+        "...o.ooo...",
+        ".oo........"
+      ]
+    },
+    {
+      "id": "russian-blue-005",
+      "title": {
+        "en": "Dinner Bowl",
+        "tr": "Mama Kabı"
+      },
+      "palette": {
+        "o": "#5C6B7A",
+        "p": "#B8C4CF",
+        "w": "#DCE3EA"
+      },
+      "pixels": [
+        "...ppppp...",
+        ".ppppppppp.",
+        "opppppppppo",
+        "ooopppppooo",
+        ".owwwwwwwo.",
+        ".ooooooooo.",
+        ".ooooooooo."
+      ]
+    },
+    {
+      "id": "russian-blue-006",
+      "title": {
+        "en": "Toy Mouse",
+        "tr": "Oyuncak Fare"
+      },
+      "palette": {
+        "n": "#6E8090",
+        "p": "#B8C4CF"
+      },
+      "pixels": [
+        "......pn...",
+        "....pppn...",
+        "...ppppppp.",
+        "...pppppp..",
+        "n.n.ppppp..",
+        ".n........."
+      ]
+    },
+    {
+      "id": "russian-blue-007",
+      "title": {
+        "en": "Leftovers",
+        "tr": "Artıklar"
+      },
+      "palette": {
+        "p": "#B8C4CF"
+      },
+      "pixels": [
+        "...p.p.p...",
+        ".p.p.p.p..p",
+        "ppppppppppp",
+        ".p.p.p.p..p",
+        "...p.p.p..."
+      ]
+    },
+    {
+      "id": "russian-blue-008",
+      "title": {
+        "en": "Nap Time",
+        "tr": "Şekerleme"
+      },
+      "palette": {
+        "b": "#8FA3B5"
+      },
+      "pixels": [
+        "............",
+        "bb...bb.....",
+        "bbbbbbbbbbb.",
+        "bbbbbbbbbbbb",
+        ".bbbbbbbbbbb",
+        "..bbbbbbbbbb",
+        "...bbbbbbbb.",
+        "....bbbbbb.."
+      ]
+    },
+    {
+      "id": "russian-blue-009",
+      "title": {
+        "en": "Silver Night",
+        "tr": "Gümüş Gece"
+      },
+      "palette": {
+        "b": "#8FA3B5",
+        "y": "#F1E3A0"
+      },
+      "pixels": [
+        ".....yy.....",
+        "......yyy..y",
+        "......yyy...",
+        "......yyy...",
+        "......yyyy..",
+        ".....yyyy...",
+        ".y.yyyyyy.b.",
+        "..yyyyyy.bb.",
+        "....yy..bb..",
+        ".....b.bbb..",
+        ".....b.bbbb.",
+        "......bbbb.."
+      ]
+    },
+    {
+      "id": "russian-blue-010",
+      "title": {
+        "en": "Sitting Pretty",
+        "tr": "Uslu Oturuş"
+      },
+      "palette": {
+        "b": "#8FA3B5"
+      },
+      "pixels": [
+        "..........",
+        "bb...bb...",
+        "bbbbbbb...",
+        "bbbbbbb...",
+        ".bbbbb....",
+        "..bbb.....",
+        "...bbbb..b",
+        "..bbbbbb.b",
+        "..bbbbbb.b",
+        "..bbbbbb.b",
+        "..bbbbbbb.",
+        "..bbbb.b.."
+      ]
+    },
+    {
+      "id": "russian-blue-011",
+      "title": {
+        "en": "Strut",
+        "tr": "Salınarak Yürüyüş"
+      },
+      "palette": {
+        "b": "#8FA3B5"
+      },
+      "pixels": [
+        "b....b.....b",
+        "bb..bb.....b",
+        "bbbbbb.....b",
+        "bbbbbbbb..b.",
+        "..bbbbbbbbb.",
+        "...bbbbbbb..",
+        "....bbbbbb..",
+        "....bb..bb..",
+        "...b.b..bb..",
+        "...b.b...b.."
+      ]
+    },
+    {
+      "id": "russian-blue-012",
+      "title": {
+        "en": "If I Fits",
+        "tr": "Kutu Sevdası"
+      },
+      "palette": {
+        "b": "#8FA3B5",
+        "e": "#59B36B",
+        "o": "#5C6B7A",
+        "p": "#B8C4CF"
+      },
+      "pixels": [
+        "...b.....b..",
+        "...b....bb..",
+        "...bb...bb..",
+        "..bbbbbbbb..",
+        "...bbbbeb...",
+        "...bbebeb...",
+        ".poobbbbboo.",
+        ".poooobooopp",
+        "..ooooooooo.",
+        "..ooooooooo.",
+        "..ooooooooo.",
+        "..ooooooooo."
+      ]
+    },
+    {
+      "id": "russian-blue-013",
+      "title": {
+        "en": "Moon Gazer",
+        "tr": "Ay Seyri"
+      },
+      "palette": {
+        "b": "#8FA3B5",
+        "y": "#F1E3A0"
+      },
+      "pixels": [
+        "....yy.....",
+        "...yyy.....",
+        "..yyy......",
+        "..yyy......",
+        ".yyyy......",
+        ".yyyyy.....",
+        "..yyyyy....",
+        "bbyyyyyyyy.",
+        "bb.yyyyyy..",
+        ".bb..yy....",
+        "bbbb.b.....",
+        "bbbb.b.....",
+        ".bbbbb....."
+      ]
+    },
+    {
+      "id": "russian-blue-014",
+      "title": {
+        "en": "Toe Beans",
+        "tr": "Pati Yastıkları"
+      },
+      "palette": {
+        "b": "#8FA3B5",
+        "n": "#6E8090"
+      },
+      "pixels": [
+        "...bbb.bbb...",
+        "...bnb.bnb...",
+        ".b.bnb.bnb.b.",
+        "bbb.b...b.bbb",
+        "bnb.......bnb",
+        "bnb.bbbbb.bnb",
+        "..bbbbbbbbb..",
+        "..bbbnnnbbb..",
+        "..bbnnnnnbb..",
+        "..bbnnnnnbb..",
+        "..bbnnnnnbb..",
+        "...bbnnnbb...",
+        "....bbbbb...."
+      ]
+    },
+    {
+      "id": "russian-blue-015",
+      "title": {
+        "en": "Portrait",
+        "tr": "Portre"
+      },
+      "palette": {
+        "b": "#8FA3B5",
+        "e": "#59B36B"
+      },
+      "pixels": [
+        ".............",
+        "bb.........bb",
+        "bbb..bbb..bbb",
+        "bbbbbbbbbbbbb",
+        "bbbbbbbbbbbbb",
+        ".bbbbbbbbbbb.",
+        ".bbeebbbeebb.",
+        ".bbeebbbeebb.",
+        ".bbbbbbbbbbb.",
+        ".bbbbbbbbbbb.",
+        "..bbbbbbbbb..",
+        "....bbbbb...."
+      ]
+    }
+  ]
+}

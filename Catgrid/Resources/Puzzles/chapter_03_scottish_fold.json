@@ -1,0 +1,315 @@
+{
+  "schemaVersion": 1,
+  "chapterID": "scottish-fold",
+  "puzzles": [
+    {
+      "id": "scottish-fold-001",
+      "title": {
+        "en": "Toe Beans",
+        "tr": "Pati Yastıkları"
+      },
+      "palette": {
+        "b": "#C9CDD2",
+        "n": "#D9A0A0"
+      },
+      "pixels": [
+        "..b.b..",
+        "bbn.nbb",
+        "nn.b.nn",
+        ".bbbbb.",
+        ".bnnnb.",
+        ".bnnnb.",
+        "..bbb.."
+      ]
+    },
+    {
+      "id": "scottish-fold-002",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi"
+      },
+      "palette": {
+        "n": "#D9A0A0",
+        "w": "#F2F2F2"
+      },
+      "pixels": [
+        ".nnnnn.",
+        "nwnnnnn",
+        "nnnnnnn",
+        ".nnnnn.",
+        ".nnnnn.",
+        "..nnn..",
+        "...n..."
+      ]
+    },
+    {
+      "id": "scottish-fold-003",
+      "title": {
+        "en": "Fish Snack",
+        "tr": "Balık Atıştırması"
+      },
+      "palette": {
+        "o": "#7FB3D5"
+      },
+      "pixels": [
+        ".ooo..o",
+        "o.ooooo",
+        "ooooooo",
+        ".ooo..o"
+      ]
+    },
+    {
+      "id": "scottish-fold-004",
+      "title": {
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak"
+      },
+      "palette": {
+        "o": "#7FB3D5"
+      },
+      "pixels": [
+        "...oooo.",
+        "..o.oo.o",
+        "..oo..oo",
+        "..o.o.oo",
+        "...ooo..",
+        "..oooo..",
+        "oo......"
+      ]
+    },
+    {
+      "id": "scottish-fold-005",
+      "title": {
+        "en": "Dinner Bowl",
+        "tr": "Mama Kabı"
+      },
+      "palette": {
+        "o": "#7FB3D5",
+        "p": "#B0B7BF",
+        "w": "#F2F2F2"
+      },
+      "pixels": [
+        "..pppp..",
+        ".pppppp.",
+        "ooppppoo",
+        ".owwwwo.",
+        ".oooooo."
+      ]
+    },
+    {
+      "id": "scottish-fold-006",
+      "title": {
+        "en": "If I Fits",
+        "tr": "Kutu Sevdası"
+      },
+      "palette": {
+        "b": "#C9CDD2",
+        "e": "#D9A441",
+        "o": "#7FB3D5",
+        "p": "#B0B7BF"
+      },
+      "pixels": [
+        "..bbbb..",
+        "..beeb..",
+        "pobbboo.",
+        ".oooooo.",
+        ".oooooo.",
+        ".oooooo."
+      ]
+    },
+    {
+      "id": "scottish-fold-007",
+      "title": {
+        "en": "Leftovers",
+        "tr": "Artıklar"
+      },
+      "palette": {
+        "p": "#B0B7BF"
+      },
+      "pixels": [
+        ".....p..",
+        "ppppppp.",
+        "p...ppp.",
+        "........"
+      ]
+    },
+    {
+      "id": "scottish-fold-008",
+      "title": {
+        "en": "Moon Gazer",
+        "tr": "Ay Seyri"
+      },
+      "palette": {
+        "b": "#C9CDD2",
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        "..yy...",
+        ".yy....",
+        ".yy....",
+        ".yyy...",
+        "byyyyy.",
+        "bbyyyy.",
+        "bb.b...",
+        "bbbb..."
+      ]
+    },
+    {
+      "id": "scottish-fold-009",
+      "title": {
+        "en": "Owl Pose",
+        "tr": "Baykuş Duruşu"
+      },
+      "palette": {
+        "b": "#C9CDD2",
+        "e": "#D9A441",
+        "w": "#F2F2F2"
+      },
+      "pixels": [
+        "...bb..",
+        ".bbbbb.",
+        "bbebeeb",
+        ".bebeeb",
+        ".bbbbbb",
+        "bbwwwbb",
+        "bbwwwbb",
+        ".bwwwbb",
+        "..bwbb."
+      ]
+    },
+    {
+      "id": "scottish-fold-010",
+      "title": {
+        "en": "Sitting Pretty",
+        "tr": "Uslu Oturuş"
+      },
+      "palette": {
+        "b": "#C9CDD2",
+        "d": "#6F767D"
+      },
+      "pixels": [
+        ".bbb....",
+        "bbbbb...",
+        ".bbb....",
+        "..bbb...",
+        ".bbdbb.d",
+        ".bbbbb.d",
+        ".bbbbb.d",
+        ".bbbbbdd",
+        ".bbbb..."
+      ]
+    },
+    {
+      "id": "scottish-fold-011",
+      "title": {
+        "en": "Portrait",
+        "tr": "Portre"
+      },
+      "palette": {
+        "b": "#C9CDD2",
+        "d": "#6F767D",
+        "e": "#D9A441",
+        "n": "#D9A0A0"
+      },
+      "pixels": [
+        "..bbbbb..",
+        ".bbbbbdb.",
+        "bbbbbbdbb",
+        "bbebbbebb",
+        "bbebbbebb",
+        "bbbbnbbbb",
+        ".bbbbbbb.",
+        "..bbbbb.."
+      ]
+    },
+    {
+      "id": "scottish-fold-012",
+      "title": {
+        "en": "If I Fits",
+        "tr": "Kutu Sevdası"
+      },
+      "palette": {
+        "b": "#C9CDD2",
+        "e": "#D9A441",
+        "o": "#7FB3D5",
+        "p": "#B0B7BF"
+      },
+      "pixels": [
+        "...bbb...",
+        "..bebeb..",
+        ".oobbbbo.",
+        ".ooooooop",
+        ".........",
+        ".ooooooo."
+      ]
+    },
+    {
+      "id": "scottish-fold-013",
+      "title": {
+        "en": "Moon Gazer",
+        "tr": "Ay Seyri"
+      },
+      "palette": {
+        "b": "#C9CDD2",
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        "...yy....",
+        "..yy.....",
+        ".yyy.....",
+        ".yyy.....",
+        ".yyyy....",
+        ".byyyyy..",
+        "bb.yyyyy.",
+        "bbb.yy...",
+        "bbb.b....",
+        ".bbbb...."
+      ]
+    },
+    {
+      "id": "scottish-fold-014",
+      "title": {
+        "en": "Toe Beans",
+        "tr": "Pati Yastıkları"
+      },
+      "palette": {
+        "b": "#C9CDD2",
+        "n": "#D9A0A0"
+      },
+      "pixels": [
+        "...b..b...",
+        "..bnbbnb..",
+        "bbbb..bbbb",
+        "nnb....bnn",
+        "bbbbbbbbbb",
+        "..bbbbbb..",
+        ".bbnnnnbb.",
+        ".bbnnnnbb.",
+        "..bnnnnb..",
+        "...bbbb..."
+      ]
+    },
+    {
+      "id": "scottish-fold-015",
+      "title": {
+        "en": "Portrait",
+        "tr": "Portre"
+      },
+      "palette": {
+        "b": "#C9CDD2",
+        "d": "#6F767D",
+        "e": "#D9A441"
+      },
+      "pixels": [
+        "..bbbbbb..",
+        ".bbdbbbbb.",
+        "bbbbbbbbbb",
+        "bbeebbeebb",
+        "bbeebbbebb",
+        "bbbbbbbbbb",
+        ".bbbbbbbb.",
+        "..bbbbbb.."
+      ]
+    }
+  ]
+}

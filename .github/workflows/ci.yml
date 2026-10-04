@@ -59,8 +59,8 @@ jobs:
 
           STATUS=0
           xcodebuild $ACTION \
-            -project PurrfectNonogram.xcodeproj \
-            -scheme PurrfectNonogram \
+            -project Catgrid.xcodeproj \
+            -scheme Catgrid \
             -destination "$DESTINATION" \
             CODE_SIGNING_ALLOWED=NO \
             > xcodebuild.log 2>&1 || STATUS=$?

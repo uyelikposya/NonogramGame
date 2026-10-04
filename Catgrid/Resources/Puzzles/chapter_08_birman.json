@@ -1,0 +1,375 @@
+{
+  "schemaVersion": 1,
+  "chapterID": "birman",
+  "puzzles": [
+    {
+      "id": "birman-001",
+      "title": {
+        "en": "Toe Beans",
+        "tr": "Pati Yastıkları"
+      },
+      "palette": {
+        "n": "#D9A0A0",
+        "w": "#FBF8F3"
+      },
+      "pixels": [
+        "...ww..ww...",
+        "...nnwwnn...",
+        ".w.wnwwnn.w.",
+        "wnw......wnw",
+        "wnw..ww..wnw",
+        ".wwwwwwwwww.",
+        "..wwwwwwww..",
+        "..wwnnnnww..",
+        ".wwnnnnnnww.",
+        "..wwnnnnww..",
+        "..wwwnnnww..",
+        "...wwwwww..."
+      ]
+    },
+    {
+      "id": "birman-002",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi"
+      },
+      "palette": {
+        "n": "#D9A0A0",
+        "w": "#FBF8F3"
+      },
+      "pixels": [
+        ".nnnn..nnnn.",
+        "nnnnnnnnnnnn",
+        "nnwwnnnnnnnn",
+        "nnnnnnnnnnnn",
+        "nnnnnnnnnnnn",
+        ".nnnnnnnnnn.",
+        "..nnnnnnnn..",
+        "...nnnnnn...",
+        "....nnnn....",
+        ".....nn.....",
+        ".....nn....."
+      ]
+    },
+    {
+      "id": "birman-003",
+      "title": {
+        "en": "Fish Snack",
+        "tr": "Balık Atıştırması"
+      },
+      "palette": {
+        "o": "#C9A227"
+      },
+      "pixels": [
+        "..oooo.....o",
+        ".ooooooo..oo",
+        "o..ooooooooo",
+        "oooooooooooo",
+        "oooooooooooo",
+        ".ooooooo..oo",
+        "..oooo.....o"
+      ]
+    },
+    {
+      "id": "birman-004",
+      "title": {
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak"
+      },
+      "palette": {
+        "o": "#C9A227"
+      },
+      "pixels": [
+        "......oooo...",
+        "....oooooooo.",
+        "....oo.oooo..",
+        "...oooo....oo",
+        "...oooo..oooo",
+        "...ooo.o.oooo",
+        "...oo.ooo.ooo",
+        ".....ooooo.o.",
+        "....oooooooo.",
+        "...oo.oooo...",
+        ".ooo.........",
+        "............."
+      ]
+    },
+    {
+      "id": "birman-005",
+      "title": {
+        "en": "Dinner Bowl",
+        "tr": "Mama Kabı"
+      },
+      "palette": {
+        "o": "#C9A227",
+        "p": "#9AA5B1",
+        "w": "#FBF8F3"
+      },
+      "pixels": [
+        "....p..pp....",
+        "..ppppppppp..",
+        ".ppppppppppp.",
+        "oopppppppppoo",
+        "oooopppppoooo",
+        ".oowwwwwwwoo.",
+        ".oowwwwwwwoo.",
+        ".ooooooooooo.",
+        "..ooooooooo.."
+      ]
+    },
+    {
+      "id": "birman-006",
+      "title": {
+        "en": "Toy Mouse",
+        "tr": "Oyuncak Fare"
+      },
+      "palette": {
+        "n": "#D9A0A0",
+        "p": "#9AA5B1"
+      },
+      "pixels": [
+        "........pp...",
+        ".......pnn...",
+        ".....ppppp...",
+        "....pppppp.p.",
+        "...ppppppppp.",
+        "n..nppppppp..",
+        ".nn..ppppp...",
+        ".nn.........."
+      ]
+    },
+    {
+      "id": "birman-007",
+      "title": {
+        "en": "Leftovers",
+        "tr": "Artıklar"
+      },
+      "palette": {
+        "p": "#9AA5B1"
+      },
+      "pixels": [
+        "....p.p.p....",
+        ".pp.p.p.p...p",
+        "ppppppppppppp",
+        "ppppppppppppp",
+        ".pp.p.p.p...p",
+        "....p.p.p...."
+      ]
+    },
+    {
+      "id": "birman-008",
+      "title": {
+        "en": "Portrait",
+        "tr": "Portre"
+      },
+      "palette": {
+        "b": "#F2E6D3",
+        "d": "#6B5544",
+        "e": "#3F7FCF",
+        "w": "#FBF8F3"
+      },
+      "pixels": [
+        "..d...........",
+        "..d...bb...d..",
+        "..dbbbbbbbbd..",
+        "..bbbbbbbbbb..",
+        "..bbbbddbbbb..",
+        "..bbeeddeebb..",
+        ".bbbeeddeebbb.",
+        "bbbbddddddbbbb",
+        "bbbbwwwwwwbbbb",
+        "...bwwwwwwb...",
+        "....bwwww....."
+      ]
+    },
+    {
+      "id": "birman-009",
+      "title": {
+        "en": "White Gloves",
+        "tr": "Beyaz Eldivenler"
+      },
+      "palette": {
+        "b": "#F2E6D3",
+        "w": "#FBF8F3"
+      },
+      "pixels": [
+        "..bbb....bbb..",
+        ".bbbbb..bbbbb.",
+        "bbbbbbbbbbbbbb",
+        "bbbbbbbbbbbbbb",
+        "bbbbbbbbbbbbbb",
+        "bbbbbbbbbbbbbb",
+        "bbbbbbbbbbbbbb",
+        "bbbbbbbbbbbbbb",
+        ".bbbbbbbbbbbb.",
+        ".wwwww..wwwww.",
+        ".w.w.wwww.w.w.",
+        "ww.w.wwww.w.ww",
+        ".w.w.wwww.w.w.",
+        ".wwwww..wwwww."
+      ]
+    },
+    {
+      "id": "birman-010",
+      "title": {
+        "en": "Nap Time",
+        "tr": "Şekerleme"
+      },
+      "palette": {
+        "b": "#F2E6D3",
+        "d": "#6B5544"
+      },
+      "pixels": [
+        ".....d........",
+        "dd.bddbbbbb...",
+        "dddbddbbbbbbb.",
+        "ddd.dddbbbbbb.",
+        ".bbbbbbbbbbbbd",
+        ".bbbbbbbbbbbdd",
+        "...bbbbbbbbdd.",
+        "...dddddddddd.",
+        "...ddddddddd.."
+      ]
+    },
+    {
+      "id": "birman-011",
+      "title": {
+        "en": "Strut",
+        "tr": "Salınarak Yürüyüş"
+      },
+      "palette": {
+        "b": "#F2E6D3",
+        "d": "#6B5544",
+        "w": "#FBF8F3"
+      },
+      "pixels": [
+        "............d.",
+        "............dd",
+        "dd..d.......dd",
+        "dddddd......dd",
+        "ddbdddbbbb.dd.",
+        ".bbbbbbbbbbd..",
+        "...bbbbbbbbb..",
+        "....wbwbbww...",
+        "....wwwbbww...",
+        "...ww.w..www..",
+        "...ww.w.wwww..",
+        "...w..w.w..w.."
+      ]
+    },
+    {
+      "id": "birman-012",
+      "title": {
+        "en": "If I Fits",
+        "tr": "Kutu Sevdası"
+      },
+      "palette": {
+        "b": "#F2E6D3",
+        "d": "#6B5544",
+        "e": "#3F7FCF",
+        "o": "#C9A227",
+        "p": "#9AA5B1"
+      },
+      "pixels": [
+        "..............",
+        "....d....d....",
+        "...dddbbddd...",
+        "...dddbbddd...",
+        "...bbebbebb...",
+        "...bbebbebb...",
+        "..obbbbbbbbo..",
+        "ppoobbbbbboopp",
+        ".oooooooooooo.",
+        "..oooooooooo..",
+        ".oooooooooooo.",
+        ".oooooooooooo.",
+        ".oooooooooooo."
+      ]
+    },
+    {
+      "id": "birman-013",
+      "title": {
+        "en": "Moon Gazer",
+        "tr": "Ay Seyri"
+      },
+      "palette": {
+        "b": "#F2E6D3",
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        "......yy.....",
+        ".......yyy...",
+        ".......yyyy..",
+        ".......yyyy..",
+        ".......yyyy..",
+        ".......yyyy..",
+        "......yyyyy..",
+        ".....yyyyyy..",
+        ".yyyyyyyyybbb",
+        "..yyyyyyyybbb",
+        "...yyyyy..bbb",
+        "......b..bbb.",
+        "......b..bbbb",
+        "......b..bbbb",
+        ".......bbbbb."
+      ]
+    },
+    {
+      "id": "birman-014",
+      "title": {
+        "en": "Toe Beans",
+        "tr": "Pati Yastıkları"
+      },
+      "palette": {
+        "n": "#D9A0A0",
+        "w": "#FBF8F3"
+      },
+      "pixels": [
+        "....ww...ww....",
+        "...wnnw.wnnw...",
+        "...wnnw.wnnw...",
+        ".ww.wnw.wnw.ww.",
+        "wnnw.......wnnw",
+        "wnnw...w...wnnw",
+        "wnw.wwwwwww.wnw",
+        "...wwwwwwwww...",
+        "..wwwwwwwwwww..",
+        "..wwwnnnnnwww..",
+        "..wwnnnnnnnww..",
+        "..wwnnnnnnnww..",
+        "..wwwnnnnnwww..",
+        "...wwwnnnwww...",
+        ".....wwwww....."
+      ]
+    },
+    {
+      "id": "birman-015",
+      "title": {
+        "en": "Sitting Pretty",
+        "tr": "Uslu Oturuş"
+      },
+      "palette": {
+        "b": "#F2E6D3",
+        "d": "#6B5544",
+        "w": "#FBF8F3"
+      },
+      "pixels": [
+        ".d....d......",
+        ".d....d......",
+        "dddbbdd......",
+        "dddbdddd.....",
+        ".bdddbb......",
+        ".bdddb.......",
+        "..bbbbb....d.",
+        "...bbbbb...dd",
+        "..bbbbbbb..dd",
+        "..bbbbbbbb.dd",
+        ".bbbbbbbbb.dd",
+        "..bbbbbbbb.dd",
+        "..bbbbbbbdddd",
+        "..bbbbbbdddd.",
+        "..wwbww.dd..."
+      ]
+    }
+  ]
+}

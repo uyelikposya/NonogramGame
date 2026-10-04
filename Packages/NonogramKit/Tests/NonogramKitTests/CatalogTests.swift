@@ -54,7 +54,7 @@ final class CatalogTests: XCTestCase {
       "chapters": [
         { "id": "tutorial", "kind": "tutorial", "title": { "en": "School" }, "file": "tutorial", "expectedPuzzleCount": 2 },
         { "id": "siamese", "kind": "breed", "title": { "en": "Siamese" }, "file": "siamese", "expectedPuzzleCount": 2 },
-        { "id": "persian", "kind": "breed", "title": { "en": "Persian" }, "file": "persian", "expectedPuzzleCount": 30 }
+        { "id": "persian", "kind": "breed", "title": { "en": "Persian" }, "file": "persian" }
       ]
     }
     """
@@ -81,6 +81,7 @@ final class CatalogTests: XCTestCase {
         let catalog = try sampleCatalog()
         XCTAssertEqual(catalog.orderedPuzzles.map(\.id), ["t1", "t2", "s1", "s2"])
         XCTAssertEqual(catalog.chapters.last?.puzzles.isEmpty, true) // dosyası henüz yok
+        XCTAssertEqual(catalog.chapters.last?.expectedPuzzleCount, 0) // sayı belirtilmemiş
         XCTAssertEqual(catalog.puzzle(after: "t2")?.id, "s1")
         XCTAssertEqual(catalog.chapter(containing: "s2")?.id, "siamese")
     }

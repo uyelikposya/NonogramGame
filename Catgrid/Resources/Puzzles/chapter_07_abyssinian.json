@@ -1,0 +1,362 @@
+{
+  "schemaVersion": 1,
+  "chapterID": "abyssinian",
+  "puzzles": [
+    {
+      "id": "abyssinian-001",
+      "title": {
+        "en": "Toe Beans",
+        "tr": "Pati Yastıkları"
+      },
+      "palette": {
+        "b": "#C47F4F",
+        "n": "#C9705A"
+      },
+      "pixels": [
+        "...bb.bb...",
+        "..bnnbnnb..",
+        "bbbbb.bnbbb",
+        "bnb.....bnb",
+        "bnbbbbbbbnb",
+        "..bbbbbbb..",
+        "..bbnnnbb..",
+        ".bbnnnnnbb.",
+        ".bbnnnnnbb.",
+        "..bbnnnbb..",
+        "...bbbbb..."
+      ]
+    },
+    {
+      "id": "abyssinian-002",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi"
+      },
+      "palette": {
+        "n": "#C9705A",
+        "w": "#F2D7B6"
+      },
+      "pixels": [
+        ".nnnn.nnnn.",
+        "nnwnnnnnnnn",
+        "nnwwnnnnnnn",
+        "nnnnnnnnnnn",
+        ".nnnnnnnnn.",
+        ".nnnnnnnnn.",
+        "..nnnnnnn..",
+        "...nnnnn...",
+        "....nnn....",
+        ".....n....."
+      ]
+    },
+    {
+      "id": "abyssinian-003",
+      "title": {
+        "en": "Fish Snack",
+        "tr": "Balık Atıştırması"
+      },
+      "palette": {
+        "o": "#E0B66A",
+        "p": "#7D5A44"
+      },
+      "pixels": [
+        "..oooo....o",
+        ".ooopooo.oo",
+        "o.oopoooooo",
+        "oooopoooooo",
+        ".ooopooo.oo",
+        "..oooo....o"
+      ]
+    },
+    {
+      "id": "abyssinian-004",
+      "title": {
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak"
+      },
+      "palette": {
+        "o": "#E0B66A"
+      },
+      "pixels": [
+        "..ooooo.....",
+        ".ooooooo....",
+        "o.oooo.oo...",
+        "oo....oooo..",
+        "oooo..oooo..",
+        "ooo..o.ooo..",
+        "ooo.ooo.o...",
+        ".o.ooooo....",
+        "..ooooooo...",
+        "....oo..oo..",
+        "..........oo"
+      ]
+    },
+    {
+      "id": "abyssinian-005",
+      "title": {
+        "en": "Dinner Bowl",
+        "tr": "Mama Kabı"
+      },
+      "palette": {
+        "o": "#E0B66A",
+        "p": "#7D5A44",
+        "w": "#F2D7B6"
+      },
+      "pixels": [
+        "....p.pp....",
+        "..pppppppp..",
+        ".pppppppppp.",
+        "ooppppppppoo",
+        "oooooooooooo",
+        ".oowwwwwwoo.",
+        ".oooooooooo.",
+        "..oooooooo.."
+      ]
+    },
+    {
+      "id": "abyssinian-006",
+      "title": {
+        "en": "Toy Mouse",
+        "tr": "Oyuncak Fare"
+      },
+      "palette": {
+        "n": "#C9705A",
+        "p": "#7D5A44"
+      },
+      "pixels": [
+        ".......pp...",
+        ".....ppnp...",
+        "...ppppppp..",
+        "...pppppp.p.",
+        "...ppppppp..",
+        "n.n.ppppp...",
+        ".n.........."
+      ]
+    },
+    {
+      "id": "abyssinian-007",
+      "title": {
+        "en": "Leftovers",
+        "tr": "Artıklar"
+      },
+      "palette": {
+        "p": "#7D5A44"
+      },
+      "pixels": [
+        "...p.p.p....",
+        ".ppppp.p...p",
+        "pppppppppppp",
+        "pppppppppppp",
+        ".ppppp.p...p",
+        "...p.p.p...."
+      ]
+    },
+    {
+      "id": "abyssinian-008",
+      "title": {
+        "en": "Portrait",
+        "tr": "Portre"
+      },
+      "palette": {
+        "b": "#C47F4F",
+        "d": "#8C5532",
+        "e": "#9CB84A"
+      },
+      "pixels": [
+        "............",
+        "bb........bb",
+        "bbb.bbbb.bbb",
+        "bbbbbddbbbbb",
+        "bbbbddddbbbb",
+        ".bbeebbeebb.",
+        ".bbeebbeebb.",
+        ".bbbbbbbbbb.",
+        ".bbbbbbbbbb.",
+        "..bbbbbbbb..",
+        "...bbbbbb..."
+      ]
+    },
+    {
+      "id": "abyssinian-009",
+      "title": {
+        "en": "Ancient Grace",
+        "tr": "Kadim Zarafet"
+      },
+      "palette": {
+        "b": "#C47F4F",
+        "d": "#8C5532",
+        "o": "#E0B66A",
+        "y": "#E9C46A"
+      },
+      "pixels": [
+        "........b...",
+        ".....bbbb...",
+        ".....bbbb...",
+        ".....bbbb...",
+        ".....bbb....",
+        ".....bbbb...",
+        ".....byyb...",
+        "....bbbbb...",
+        "....bbbbb..d",
+        "..o.bbbbbb.d",
+        ".ooobbbbb..d",
+        ".oooobbbb.dd",
+        "ooooobbb.d.."
+      ]
+    },
+    {
+      "id": "abyssinian-010",
+      "title": {
+        "en": "Nap Time",
+        "tr": "Şekerleme"
+      },
+      "palette": {
+        "b": "#C47F4F",
+        "d": "#8C5532"
+      },
+      "pixels": [
+        "......b......",
+        "bb...bb......",
+        "bbbbbbbbbbb..",
+        "bbbbbbbddbbb.",
+        "bb...bbbbbbbb",
+        "..bbbbbbbbbbb",
+        "..bbbbbbbbbbb",
+        "....bbbbbbbb.",
+        "....bbbbbbb.."
+      ]
+    },
+    {
+      "id": "abyssinian-011",
+      "title": {
+        "en": "Sitting Pretty",
+        "tr": "Uslu Oturuş"
+      },
+      "palette": {
+        "b": "#C47F4F",
+        "d": "#8C5532"
+      },
+      "pixels": [
+        "......b....",
+        "bb....b....",
+        "bbbb.bb....",
+        "bbbbbbbb...",
+        "bbbbbbb....",
+        "..bbbb.....",
+        "...bbbb....",
+        "..bbbdbb..b",
+        "..bbbdbb..b",
+        "..bbbbbbb.b",
+        "..bbbbbb..b",
+        "...bbbbbbb.",
+        "..bbbbb...."
+      ]
+    },
+    {
+      "id": "abyssinian-012",
+      "title": {
+        "en": "If I Fits",
+        "tr": "Kutu Sevdası"
+      },
+      "palette": {
+        "b": "#C47F4F",
+        "e": "#9CB84A",
+        "o": "#E0B66A",
+        "p": "#7D5A44"
+      },
+      "pixels": [
+        "..b......b...",
+        "..bb....bb...",
+        "..bbb...bb...",
+        "..bbbbbbbb...",
+        "...bbbbbbb...",
+        "...beebebb...",
+        ".oobbbbbboo..",
+        "ppoobbbboopp.",
+        ".ooooooooooo.",
+        ".oooooooooo..",
+        ".ooooooooooo.",
+        ".ooooooooooo.",
+        ".oooooooooo.."
+      ]
+    },
+    {
+      "id": "abyssinian-013",
+      "title": {
+        "en": "Moon Gazer",
+        "tr": "Ay Seyri"
+      },
+      "palette": {
+        "b": "#C47F4F",
+        "y": "#E9C46A"
+      },
+      "pixels": [
+        "....yyy.....",
+        "...yyy......",
+        "..yyyy......",
+        "..yyyy......",
+        "..yyyy......",
+        "..yyyy......",
+        "..yyyyy.....",
+        "..yyyyyy....",
+        "bbbyyyyyyyy.",
+        "bb..yyyyyy..",
+        ".bbb..b.....",
+        "bbbb..b.....",
+        "bbbb..b.....",
+        ".bbbbb......"
+      ]
+    },
+    {
+      "id": "abyssinian-014",
+      "title": {
+        "en": "Toe Beans",
+        "tr": "Pati Yastıkları"
+      },
+      "palette": {
+        "b": "#C47F4F",
+        "n": "#C9705A"
+      },
+      "pixels": [
+        "....bb..bb....",
+        "...bnnbbnnb...",
+        "...bnnbbnnb...",
+        "bbbbbb..bbbbbb",
+        "bnn........nnb",
+        "bnn..bbbb..bnb",
+        ".bbbbbbbbbbbb.",
+        "..bbbbbbbbbb..",
+        "..bbbnnnnbbb..",
+        "..bbnnnnnnbb..",
+        "..bbnnnnnnbb..",
+        "..bbnnnnnnbb..",
+        "...bbbnnbbb...",
+        "....bbbbbb...."
+      ]
+    },
+    {
+      "id": "abyssinian-015",
+      "title": {
+        "en": "Strut",
+        "tr": "Salınarak Yürüyüş"
+      },
+      "palette": {
+        "b": "#C47F4F"
+      },
+      "pixels": [
+        ".b......b....b",
+        ".b......b...bb",
+        "b.......bb..bb",
+        ".b.....bbbbbbb",
+        ".bb.bbbbbbbbbb",
+        "..bbbbbbbbbb..",
+        "...bbbbbbbb...",
+        "...bbbbbbb....",
+        "...bb..b.b....",
+        "..bbb..b.b....",
+        "..bbb..b.b....",
+        ".......b.b...."
+      ]
+    }
+  ]
+}

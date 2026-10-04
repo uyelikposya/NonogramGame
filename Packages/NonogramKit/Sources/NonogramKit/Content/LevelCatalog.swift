@@ -13,7 +13,7 @@ public struct Chapter: Identifiable, Hashable, Sendable {
     public let subtitle: LocalizedText?
     /// Bölüm kartı ve kilit ekranında kullanılan vurgu rengi.
     public let accentColor: RGBColor?
-    /// İçerik hazırlanırken eksik bölümleri raporlamak için (ör. 30).
+    /// Planlanan bulmaca sayısı; katalogda belirtilmezse mevcut bulmaca sayısı.
     public let expectedPuzzleCount: Int
     public let puzzles: [Puzzle]
 

@@ -1,0 +1,397 @@
+{
+  "schemaVersion": 1,
+  "chapterID": "sphynx",
+  "puzzles": [
+    {
+      "id": "sphynx-001",
+      "title": {
+        "en": "Toe Beans",
+        "tr": "Pati Yastıkları"
+      },
+      "palette": {
+        "b": "#E9B8A7",
+        "n": "#D9827A"
+      },
+      "pixels": [
+        "....bb..bb....",
+        "...bnnbbnnb...",
+        "...bnnbbnnb...",
+        "bbbbbb..bbbbbb",
+        "bnn........nnb",
+        "bnn..bbbb..bnb",
+        ".bbbbbbbbbbbb.",
+        "..bbbbbbbbbb..",
+        "..bbbnnnnbbb..",
+        "..bbnnnnnnbb..",
+        "..bbnnnnnnbb..",
+        "..bbnnnnnnbb..",
+        "...bbbnnbbb...",
+        "....bbbbbb...."
+      ]
+    },
+    {
+      "id": "sphynx-002",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi"
+      },
+      "palette": {
+        "n": "#D9827A",
+        "w": "#F6DDD4"
+      },
+      "pixels": [
+        ".nnnnn..nnnnn.",
+        "nnnnnnnnnnnnnn",
+        "nnwwwnnnnnnnnn",
+        "nnnwnnnnnnnnnn",
+        "nnnnnnnnnnnnnn",
+        "nnnnnnnnnnnnnn",
+        ".nnnnnnnnnnnn.",
+        "..nnnnnnnnnn..",
+        "...nnnnnnnn...",
+        "....nnnnnn....",
+        ".....nnnn.....",
+        "......nn......",
+        "......nn......"
+      ]
+    },
+    {
+      "id": "sphynx-003",
+      "title": {
+        "en": "Fish Snack",
+        "tr": "Balık Atıştırması"
+      },
+      "palette": {
+        "o": "#5B7DB1",
+        "p": "#F2C14E"
+      },
+      "pixels": [
+        "...oooo......o",
+        ".oooopooo...oo",
+        "oo.oopoooo.ooo",
+        "o..oopoooooooo",
+        "ooooopoooooooo",
+        "ooooopoooo.ooo",
+        ".oooopooo...oo",
+        "...oooo......o"
+      ]
+    },
+    {
+      "id": "sphynx-004",
+      "title": {
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak"
+      },
+      "palette": {
+        "o": "#5B7DB1"
+      },
+      "pixels": [
+        "....ooooo......",
+        "..oooooooo.....",
+        ".ooooooo.oo....",
+        "....ooo.oooo...",
+        "ooo.....oooo...",
+        "ooooo...oooo...",
+        "ooooo.o..ooo...",
+        "oooo.ooo..oo...",
+        ".oo..oooo..o...",
+        ".oo.oooooo.....",
+        "..ooooooooo....",
+        "....ooooo.oo...",
+        "...........oooo",
+        "............oo."
+      ]
+    },
+    {
+      "id": "sphynx-005",
+      "title": {
+        "en": "Dinner Bowl",
+        "tr": "Mama Kabı"
+      },
+      "palette": {
+        "o": "#5B7DB1",
+        "p": "#F2C14E",
+        "w": "#F6DDD4"
+      },
+      "pixels": [
+        ".....p..pp.....",
+        "...ppppppppp...",
+        ".ppppppppppppp.",
+        ".ppppppppppppp.",
+        "ooopppppppppooo",
+        "ooooooooooooooo",
+        ".oowwwwwwwwwoo.",
+        ".ooooooooooooo.",
+        "..ooooooooooo..",
+        "..ooooooooooo.."
+      ]
+    },
+    {
+      "id": "sphynx-006",
+      "title": {
+        "en": "Toy Mouse",
+        "tr": "Oyuncak Fare"
+      },
+      "palette": {
+        "n": "#D9827A",
+        "p": "#F2C14E"
+      },
+      "pixels": [
+        ".........pp....",
+        "........pnn....",
+        "......pppnn....",
+        "....pppppppp...",
+        "....ppppppp..p.",
+        "....ppppppppp..",
+        "n..npppppppp...",
+        ".n.n.pppppp....",
+        ".nn............"
+      ]
+    },
+    {
+      "id": "sphynx-007",
+      "title": {
+        "en": "Leftovers",
+        "tr": "Artıklar"
+      },
+      "palette": {
+        "p": "#F2C14E"
+      },
+      "pixels": [
+        "....pp.p.p.....",
+        "..p.pp.p.p....p",
+        ".pp.pp.p.p...pp",
+        "ppppppppppppppp",
+        ".pp.pp.p.p...pp",
+        "..p.pp.p.p....p",
+        "....pp.p.p....."
+      ]
+    },
+    {
+      "id": "sphynx-008",
+      "title": {
+        "en": "Nap Time",
+        "tr": "Şekerleme"
+      },
+      "palette": {
+        "b": "#E9B8A7"
+      },
+      "pixels": [
+        "................",
+        ".b.....b........",
+        "bbb...bbbbbb....",
+        "bbbbbbbbbbbbbb..",
+        "bbbbbbbbbbbbbbb.",
+        "bbb....bbbbbbbbb",
+        "..bbbbbbbbbbbbbb",
+        "..bbbbbbbbbbbbbb",
+        "....bbbbbbbbbbb.",
+        ".....bbbbbbbbbb.",
+        ".....bbbbbbbbb.."
+      ]
+    },
+    {
+      "id": "sphynx-009",
+      "title": {
+        "en": "Cozy Sweater",
+        "tr": "Sıcak Kazak"
+      },
+      "palette": {
+        "b": "#E9B8A7",
+        "e": "#7FB069",
+        "o": "#5B7DB1",
+        "p": "#F2C14E"
+      },
+      "pixels": [
+        ".b...........b.",
+        ".b...........b.",
+        "bbb....b....bbb",
+        "bbbbbbbbbbbbbbb",
+        "bbbbbbbbbbbbbbb",
+        "bbbbbbbbbbbbbbb",
+        ".bbbbbbbbbbbbb.",
+        ".bbbeebbbe.bbb.",
+        ".bbeeebbbe.ebb.",
+        ".bbbbbbbbbbbbb.",
+        ".bbbbbbbbbbbbb.",
+        "..bbbbbbbbbbb..",
+        "..bbbbbbbbbbb..",
+        ".ooooooooooooo.",
+        ".ppppppppppppp.",
+        ".ooooooooooooo."
+      ]
+    },
+    {
+      "id": "sphynx-010",
+      "title": {
+        "en": "Sitting Pretty",
+        "tr": "Uslu Oturuş"
+      },
+      "palette": {
+        "b": "#E9B8A7"
+      },
+      "pixels": [
+        ".............",
+        ".b.....bb....",
+        "bbb...bbb....",
+        "bbbbbbbbb....",
+        "bbbbbbbbb....",
+        "bbbbbbbbb....",
+        "..bbbbb......",
+        "...bbbb......",
+        "....bbbbb...b",
+        "...bbbbbbb.bb",
+        "..bbbbbbbb..b",
+        "..bbbbbbbb..b",
+        "..bbbbbbbb..b",
+        "...bbbbbbb.bb",
+        "...bbbbbbbb..",
+        "...bbbbb....."
+      ]
+    },
+    {
+      "id": "sphynx-011",
+      "title": {
+        "en": "Strut",
+        "tr": "Salınarak Yürüyüş"
+      },
+      "palette": {
+        "b": "#E9B8A7"
+      },
+      "pixels": [
+        ".b............b.",
+        ".b......bb....b.",
+        "bb......bbb..bb.",
+        "bb......bbbbbbb.",
+        ".b...bbbbbbbbbbb",
+        "..bbbbbbbbbbbb..",
+        "..bbbbbbbbbbb...",
+        "...bbbbbbbb.....",
+        "...bbbbbbbb.....",
+        "...bbb..b.b.....",
+        "...b.b..b.b.....",
+        "..bb.b.bb.b.....",
+        "................"
+      ]
+    },
+    {
+      "id": "sphynx-012",
+      "title": {
+        "en": "If I Fits",
+        "tr": "Kutu Sevdası"
+      },
+      "palette": {
+        "b": "#E9B8A7",
+        "e": "#7FB069",
+        "o": "#5B7DB1",
+        "p": "#F2C14E"
+      },
+      "pixels": [
+        "................",
+        "...bb......bb...",
+        "...bb......bb...",
+        "...bbb....bbb...",
+        "...bbbbbbbbbb...",
+        "....bbbbbbbb....",
+        "....beebbeeb....",
+        "....bbebbebb....",
+        ".pooobbbbbbooop.",
+        "pppooobbbboooppp",
+        ".oooooooooooooo.",
+        "..oooooooooooo..",
+        ".oooooooooooooo.",
+        ".oooooooooooooo.",
+        ".oooooooooooooo."
+      ]
+    },
+    {
+      "id": "sphynx-013",
+      "title": {
+        "en": "Moon Gazer",
+        "tr": "Ay Seyri"
+      },
+      "palette": {
+        "b": "#E9B8A7",
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        "......yyy......",
+        "....yyyy.......",
+        "...yyyy........",
+        "...yyyy........",
+        "..yyyyy........",
+        "..yyyyy........",
+        "..yyyyy........",
+        "..yyyyyy.......",
+        "..yyyyyyy......",
+        "b.byyyyyyyyy.y.",
+        "bbbyyyyyyyyyy..",
+        "bbb..yyyyyyy...",
+        ".bbb...yyy.....",
+        ".bbbb..bb......",
+        "bbbbb..b.......",
+        ".bbbb..b.......",
+        ".bbbbbb........"
+      ]
+    },
+    {
+      "id": "sphynx-014",
+      "title": {
+        "en": "Toe Beans",
+        "tr": "Pati Yastıkları"
+      },
+      "palette": {
+        "b": "#E9B8A7",
+        "n": "#D9827A"
+      },
+      "pixels": [
+        "....bbb..bbb....",
+        "....bnb..bnb....",
+        "...bnnnbbnnnb...",
+        ".bb.bnn..bnb.bb.",
+        "bbbbbbb..bbbbbbb",
+        "bnnb........bnnb",
+        "bnnb..bbbb..bnnb",
+        "bbb.bbbbbbbb.bbb",
+        "...bbbbbbbbbb...",
+        "..bbbbbbbbbbbb..",
+        "..bbbbnnnnbbbb..",
+        "..bbbnnnnnnbbb..",
+        "..bbbnnnnnnbbb..",
+        "..bbbnnnnnnbbb..",
+        "...bbbnnnnnbb...",
+        "....bbbbbbbb....",
+        ".....bbbbbb....."
+      ]
+    },
+    {
+      "id": "sphynx-015",
+      "title": {
+        "en": "Portrait",
+        "tr": "Portre"
+      },
+      "palette": {
+        "b": "#E9B8A7",
+        "e": "#7FB069"
+      },
+      "pixels": [
+        ".................",
+        "..b............b.",
+        ".bbb..........bbb",
+        ".bbb...bbbb...bbb",
+        ".bbbbbbbbbbbbbbbb",
+        ".bbbbbbbbbbbbbbbb",
+        ".bbbbbbbbbbbbbbbb",
+        "..bbbbbbbbbbbbbb.",
+        "..bbbeebbbbeebbb.",
+        "..bbbeebbbbe.bbb.",
+        "..bbbeebbbbeebbb.",
+        "..bbbbbbbbbbbbbb.",
+        "...bbbbbbbbbbbb..",
+        "...bbbbbbbbbbbb..",
+        "....bbbbbbbbbb...",
+        "......bbbbb......"
+      ]
+    }
+  ]
+}

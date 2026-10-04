@@ -17,6 +17,6 @@ echo "Xcode projesi üretiliyor..."
 "$XCODEGEN" generate --quiet
 # CI'da yalnızca proje üretilir, Xcode açılmaz
 if [ -z "${CI:-}" ]; then
-  open PurrfectNonogram.xcodeproj
+  open Catgrid.xcodeproj
   echo "Hazır! Xcode'da iPhone 15 simülatörünü seçip ⌘R ile çalıştır."
 fi

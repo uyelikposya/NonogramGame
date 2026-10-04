@@ -8,7 +8,7 @@ Kontroller:
   - benzersiz bulmaca kimlikleri, palet/piksel tutarlılığı
   - her bulmacanın tahmin yapmadan (yalnızca satır mantığıyla) çözülebilmesi
     -> bu, çözümün benzersiz olduğunu da garanti eder
-  - bölümdeki bulmaca sayısı ile expectedPuzzleCount farkı (uyarı)
+  - eğitimde tam 10, her kedi türünde en az 15 bulmaca
 
 Satır çözücü, NonogramKit/Engine/LineSolver.swift ile aynı algoritmadır.
 """
@@ -17,6 +17,7 @@ import re
 import sys
 from pathlib import Path
 
+MIN_PUZZLES = {"tutorial": 10, "breed": 15}
 HEX = re.compile(r"^#?[0-9A-Fa-f]{6}$")
 LESSONS = {
     "tapToFill", "fullLines", "emptyLines", "markWithCross", "multipleBlocks",
@@ -147,14 +148,14 @@ def validate_puzzle(puzzle, errors):
 
 def main():
     root = Path(sys.argv[1]) if len(sys.argv) > 1 else \
-        Path(__file__).resolve().parent.parent / "PurrfectNonogram/Resources/Puzzles"
+        Path(__file__).resolve().parent.parent / "Catgrid/Resources/Puzzles"
     errors, warnings, seen = [], [], set()
     catalog = json.loads((root / "catalog.json").read_text())
 
     for entry in catalog["chapters"]:
         path = root / f"{entry['file']}.json"
         if not path.exists():
-            warnings.append(f"{entry['id']}: {path.name} henüz yok (0/{entry['expectedPuzzleCount']})")
+            errors.append(f"{entry['id']}: {path.name} bulunamadı")
             continue
         chapter = json.loads(path.read_text())
         if chapter.get("chapterID") != entry["id"]:
@@ -166,8 +167,9 @@ def main():
             seen.add(puzzle.get("id"))
             sizes.append(validate_puzzle(puzzle, errors))
         count = len(chapter["puzzles"])
-        if count != entry["expectedPuzzleCount"]:
-            warnings.append(f"{entry['id']}: {count}/{entry['expectedPuzzleCount']} bulmaca")
+        minimum = MIN_PUZZLES[entry["kind"]]
+        if count < minimum:
+            errors.append(f"{entry['id']}: {count} bulmaca (en az {minimum} olmalı)")
         print(f"✓ {entry['id']}: {count} bulmaca, boyutlar: {', '.join(sorted(set(filter(None, sizes))))}")
 
     for warning in warnings:

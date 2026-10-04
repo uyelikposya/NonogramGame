@@ -1,0 +1,390 @@
+{
+  "schemaVersion": 1,
+  "chapterID": "bengal",
+  "puzzles": [
+    {
+      "id": "bengal-001",
+      "title": {
+        "en": "Toe Beans",
+        "tr": "Pati Yastıkları"
+      },
+      "palette": {
+        "b": "#E3A857",
+        "n": "#B5654A"
+      },
+      "pixels": [
+        "...bbb.bbb...",
+        "...bnb.bnb...",
+        ".b.bnb.bnb.b.",
+        "bbb.b...b.bbb",
+        "bnb.......bnb",
+        "bnb.bbbbb.bnb",
+        "..bbbbbbbbb..",
+        "..bbbnnnbbb..",
+        "..bbnnnnnbb..",
+        "..bbnnnnnbb..",
+        "..bbnnnnnbb..",
+        "...bbnnnbb...",
+        "....bbbbb...."
+      ]
+    },
+    {
+      "id": "bengal-002",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi"
+      },
+      "palette": {
+        "n": "#B5654A",
+        "w": "#F5E6C8"
+      },
+      "pixels": [
+        ".nnnnn.nnnnn.",
+        "nnnnnnnnnnnnn",
+        "nnwwnnnnnnnnn",
+        "nnnnnnnnnnnnn",
+        "nnnnnnnnnnnnn",
+        ".nnnnnnnnnnn.",
+        "..nnnnnnnnn..",
+        "..nnnnnnnnn..",
+        "...nnnnnnn...",
+        "....nnnnn....",
+        ".....nnn.....",
+        "......n......"
+      ]
+    },
+    {
+      "id": "bengal-003",
+      "title": {
+        "en": "Fish Snack",
+        "tr": "Balık Atıştırması"
+      },
+      "palette": {
+        "o": "#3E7C4F",
+        "p": "#8C6A4A"
+      },
+      "pixels": [
+        "...oooo.....o",
+        ".oooopooo..oo",
+        "o..oopooooooo",
+        "oo.oopooooooo",
+        "ooooopooooooo",
+        ".oooopooo..oo",
+        "...oooo.....o"
+      ]
+    },
+    {
+      "id": "bengal-004",
+      "title": {
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak"
+      },
+      "palette": {
+        "o": "#3E7C4F"
+      },
+      "pixels": [
+        "..............",
+        "...oooooo.....",
+        "..oooooooo....",
+        ".o.oooo.ooo...",
+        ".oo.....ooo...",
+        ".oooo...oooo..",
+        ".oooo.o..ooo..",
+        ".ooo.ooo..o...",
+        ".oo.ooooo.....",
+        "..o.oooooo....",
+        "...oooooooo...",
+        ".....oo...oo.o",
+        "...........oo."
+      ]
+    },
+    {
+      "id": "bengal-005",
+      "title": {
+        "en": "Dinner Bowl",
+        "tr": "Mama Kabı"
+      },
+      "palette": {
+        "o": "#3E7C4F",
+        "p": "#8C6A4A",
+        "w": "#F5E6C8"
+      },
+      "pixels": [
+        "....pp.ppp....",
+        "..pppppppppp..",
+        ".pppppppppppp.",
+        "ooppppppppppoo",
+        "ooooppppppoooo",
+        ".oowwwwwwwwoo.",
+        ".oowwwwwwwwoo.",
+        ".oooooooooooo.",
+        "..oooooooooo.."
+      ]
+    },
+    {
+      "id": "bengal-006",
+      "title": {
+        "en": "If I Fits",
+        "tr": "Kutu Sevdası"
+      },
+      "palette": {
+        "b": "#E3A857",
+        "e": "#6FA04A",
+        "o": "#3E7C4F",
+        "p": "#8C6A4A"
+      },
+      "pixels": [
+        "..............",
+        "....b....b....",
+        "...bbbbbbbb...",
+        "...bbbbbbbb...",
+        "...bbebbebb...",
+        "...bbebbebb...",
+        "..obbbbbbbbo..",
+        "ppoobbbbbboopp",
+        ".oooooooooooo.",
+        "..oooooooooo..",
+        ".oooooooooooo.",
+        ".oooooooooooo.",
+        ".oooooooooooo."
+      ]
+    },
+    {
+      "id": "bengal-007",
+      "title": {
+        "en": "Leftovers",
+        "tr": "Artıklar"
+      },
+      "palette": {
+        "p": "#8C6A4A"
+      },
+      "pixels": [
+        "....p.p.pp....",
+        "..p.p.p.pp...p",
+        ".pp.p.p.pp..pp",
+        "pppppppppppppp",
+        ".pp.p.p.pp..pp",
+        "..p.p.p.pp...p",
+        "....p.p.pp...."
+      ]
+    },
+    {
+      "id": "bengal-008",
+      "title": {
+        "en": "Portrait",
+        "tr": "Portre"
+      },
+      "palette": {
+        "b": "#E3A857",
+        "d": "#5A3A22",
+        "e": "#6FA04A"
+      },
+      "pixels": [
+        ".b..........b.",
+        ".b...bbbb...b.",
+        "bbbbbbbbbbbbbb",
+        "bbbbbbbbbbbbbb",
+        "bbbbbbbbbbbbbb",
+        "bbbbbbbbbbbbbb",
+        "bddeedbbbeebbb",
+        "bbdeeebbbeebbb",
+        "bbdeebbbbeebbb",
+        "bbdbbbbbbbbbbb",
+        ".bbbbbbbbbbbb.",
+        ".bbbbbbbbbbbb.",
+        "..bbbbbbbbbb..",
+        "....bbbbbb...."
+      ]
+    },
+    {
+      "id": "bengal-009",
+      "title": {
+        "en": "Jungle Prowl",
+        "tr": "Orman Avcısı"
+      },
+      "palette": {
+        "b": "#E3A857",
+        "d": "#5A3A22",
+        "g": "#3E8E41"
+      },
+      "pixels": [
+        "...............",
+        "..........g.g..",
+        ".b...b....gg.gg",
+        "bb..bb.....gg..",
+        "bbbbbb.....g...",
+        "bbbbbbbbbb.....",
+        ".bbbbbbbbdbb...",
+        "..bbbdbbddbbb..",
+        "..bbbdddddbbbb.",
+        "..bbbbdbdbbbbb.",
+        "...bbbbbbdbbb..",
+        ".....bbbbbb...."
+      ]
+    },
+    {
+      "id": "bengal-010",
+      "title": {
+        "en": "Nap Time",
+        "tr": "Şekerleme"
+      },
+      "palette": {
+        "b": "#E3A857",
+        "d": "#5A3A22"
+      },
+      "pixels": [
+        "...............",
+        ".b...bbbbbbb...",
+        "bbbbbbbbbbbbbb.",
+        "bbbbbbbbddbdbb.",
+        "bb...bbbbdbdbbb",
+        ".bbbbbbbddbdbbb",
+        "..bbbbbbbddbbbb",
+        "...bbbbbbdbbbb.",
+        "....bbbbbbbbbb.",
+        "....bbbbbbbbb.."
+      ]
+    },
+    {
+      "id": "bengal-011",
+      "title": {
+        "en": "Sitting Pretty",
+        "tr": "Uslu Oturuş"
+      },
+      "palette": {
+        "b": "#E3A857",
+        "d": "#5A3A22"
+      },
+      "pixels": [
+        "............",
+        ".....bb...bb",
+        ".....bbbbbbb",
+        ".....bbbbbbb",
+        ".....bbbbbbb",
+        "......bbbbb.",
+        "......bbbb..",
+        "bb..bbbbb...",
+        "bb.bbbdbbb..",
+        "bb.bbdbbbbb.",
+        "bb.bbbddbbb.",
+        "bb.bbdddbbb.",
+        ".bbbbbbbbb..",
+        "..bbbbbbbb..",
+        ".....bbbbb.."
+      ]
+    },
+    {
+      "id": "bengal-012",
+      "title": {
+        "en": "If I Fits",
+        "tr": "Kutu Sevdası"
+      },
+      "palette": {
+        "b": "#E3A857",
+        "e": "#6FA04A",
+        "o": "#3E7C4F",
+        "p": "#8C6A4A"
+      },
+      "pixels": [
+        "....b.....b....",
+        "....b....bb....",
+        "...bbbbbbbb....",
+        "...bbbbbbbb....",
+        "....bebbebb....",
+        "...bbeebeeb....",
+        ".poobbbbbbboop.",
+        "pppoobbbbboopp.",
+        ".oooooooooooo..",
+        "..ooooooooooo..",
+        ".oooooooooooo..",
+        ".oooooooooooo..",
+        ".oooooooooooo.."
+      ]
+    },
+    {
+      "id": "bengal-013",
+      "title": {
+        "en": "Moon Gazer",
+        "tr": "Ay Seyri"
+      },
+      "palette": {
+        "b": "#E3A857",
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        ".....yyy......",
+        "....yyy.......",
+        "...yyyy.......",
+        "..yyyyy.......",
+        "..yyyyy.......",
+        "..yyyyy.......",
+        "..yyyyy.......",
+        "..yyyyyy......",
+        "..yyyyyyy.....",
+        "bbbyyyyyyyyyy.",
+        "bbb.yyyyyyyy..",
+        ".bb...yyyy....",
+        ".bbbb..b......",
+        "bbbbb..b......",
+        "bbbbb.bb......",
+        ".bbbbbb......."
+      ]
+    },
+    {
+      "id": "bengal-014",
+      "title": {
+        "en": "Toe Beans",
+        "tr": "Pati Yastıkları"
+      },
+      "palette": {
+        "b": "#E3A857",
+        "n": "#B5654A"
+      },
+      "pixels": [
+        "....bbb..bbb....",
+        "....bnb..bnb....",
+        "...bnnnbbnnnb...",
+        ".bb.bnb..bnb.bb.",
+        "bbbb.b....b.bbbb",
+        "bnnb........bnnb",
+        "bnnb.bbbbbb.bnnb",
+        ".bbbbbbbbbbbbbb.",
+        "...bbbbbbbbbb...",
+        "..bbbbnnnnbbbb..",
+        "..bbbnnnnnnbbb..",
+        "..bbbnnnnnnbbb..",
+        "..bbbnnnnnnbbb..",
+        "...bbnnnnnnbb...",
+        "....bbbbbbbb....",
+        ".....bbbbbb....."
+      ]
+    },
+    {
+      "id": "bengal-015",
+      "title": {
+        "en": "Strut",
+        "tr": "Salınarak Yürüyüş"
+      },
+      "palette": {
+        "b": "#E3A857",
+        "d": "#5A3A22"
+      },
+      "pixels": [
+        ".b..............",
+        ".b..............",
+        ".b........b...bb",
+        ".b........bbbbbb",
+        ".bb.......bbbbbb",
+        "..b.bbbbbbbbbbbb",
+        "...bbbbddbbbbbb.",
+        "...bbddddbbbb...",
+        "...bbbbbdbbb....",
+        "...bbbbbbbbb....",
+        "...b.b...b.b....",
+        "...b.b..bb.b....",
+        "...b.bb.bb.b....",
+        "...b....b..b...."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,235 @@
+{
+  "schemaVersion": 1,
+  "defaultRules": {
+    "checksMoves": true,
+    "mistakeLimit": 3,
+    "timeLimitSeconds": null,
+    "autoCrossCompletedLines": true
+  },
+  "chapters": [
+    {
+      "id": "tutorial",
+      "kind": "tutorial",
+      "title": {
+        "en": "Kitten School",
+        "tr": "Yavru Okulu"
+      },
+      "subtitle": {
+        "en": "Learn the rules",
+        "tr": "Kuralları öğren"
+      },
+      "accentColor": "#F4A6A0",
+      "file": "tutorial"
+    },
+    {
+      "id": "siamese",
+      "kind": "breed",
+      "title": {
+        "en": "Siamese",
+        "tr": "Siyam"
+      },
+      "subtitle": {
+        "en": "Blue eyes and dark points",
+        "tr": "Mavi gözler ve koyu uçlar"
+      },
+      "accentColor": "#C9A27E",
+      "file": "chapter_01_siamese"
+    },
+    {
+      "id": "british-shorthair",
+      "kind": "breed",
+      "title": {
+        "en": "British Shorthair",
+        "tr": "British Shorthair"
+      },
+      "subtitle": {
+        "en": "Round, plush and calm",
+        "tr": "Yuvarlak, peluş ve sakin"
+      },
+      "accentColor": "#8A9BA8",
+      "file": "chapter_02_british_shorthair"
+    },
+    {
+      "id": "scottish-fold",
+      "kind": "breed",
+      "title": {
+        "en": "Scottish Fold",
+        "tr": "Scottish Fold"
+      },
+      "subtitle": {
+        "en": "Folded ears, owl-like face",
+        "tr": "Katlanmış kulaklar, baykuş yüzü"
+      },
+      "accentColor": "#D8B48A",
+      "file": "chapter_03_scottish_fold"
+    },
+    {
+      "id": "persian",
+      "kind": "breed",
+      "title": {
+        "en": "Persian",
+        "tr": "İran Kedisi"
+      },
+      "subtitle": {
+        "en": "Long coat and flat face",
+        "tr": "Uzun tüyler ve basık yüz"
+      },
+      "accentColor": "#E8C9D0",
+      "file": "chapter_04_persian"
+    },
+    {
+      "id": "ragdoll",
+      "kind": "breed",
+      "title": {
+        "en": "Ragdoll",
+        "tr": "Ragdoll"
+      },
+      "subtitle": {
+        "en": "Goes limp when held",
+        "tr": "Kucakta gevşeyip kalır"
+      },
+      "accentColor": "#A9C3DB",
+      "file": "chapter_05_ragdoll"
+    },
+    {
+      "id": "russian-blue",
+      "kind": "breed",
+      "title": {
+        "en": "Russian Blue",
+        "tr": "Rus Mavisi"
+      },
+      "subtitle": {
+        "en": "Silver-blue coat, green eyes",
+        "tr": "Gümüş mavi tüy, yeşil gözler"
+      },
+      "accentColor": "#7D93A8",
+      "file": "chapter_06_russian_blue"
+    },
+    {
+      "id": "abyssinian",
+      "kind": "breed",
+      "title": {
+        "en": "Abyssinian",
+        "tr": "Habeş Kedisi"
+      },
+      "subtitle": {
+        "en": "Ticked coat and big ears",
+        "tr": "Kırçıllı tüy ve iri kulaklar"
+      },
+      "accentColor": "#C47F4F",
+      "file": "chapter_07_abyssinian"
+    },
+    {
+      "id": "birman",
+      "kind": "breed",
+      "title": {
+        "en": "Birman",
+        "tr": "Birman"
+      },
+      "subtitle": {
+        "en": "Sacred cat with white gloves",
+        "tr": "Beyaz eldivenli kutsal kedi"
+      },
+      "accentColor": "#E3D3B8",
+      "file": "chapter_08_birman"
+    },
+    {
+      "id": "bengal",
+      "kind": "breed",
+      "title": {
+        "en": "Bengal",
+        "tr": "Bengal"
+      },
+      "subtitle": {
+        "en": "Wild rosettes, loves to climb",
+        "tr": "Vahşi benekler, tırmanmayı sever"
+      },
+      "accentColor": "#D99A3E",
+      "file": "chapter_09_bengal"
+    },
+    {
+      "id": "sphynx",
+      "kind": "breed",
+      "title": {
+        "en": "Sphynx",
+        "tr": "Sfenks"
+      },
+      "subtitle": {
+        "en": "Hairless and always warm",
+        "tr": "Tüysüz ve hep sıcacık"
+      },
+      "accentColor": "#E7B9A5",
+      "file": "chapter_10_sphynx"
+    },
+    {
+      "id": "turkish-angora",
+      "kind": "breed",
+      "title": {
+        "en": "Turkish Angora",
+        "tr": "Ankara Kedisi"
+      },
+      "subtitle": {
+        "en": "Snow white, often odd-eyed",
+        "tr": "Kar beyazı, çoğu zaman ela-mavi göz"
+      },
+      "accentColor": "#F0E6DA",
+      "file": "chapter_11_turkish_angora"
+    },
+    {
+      "id": "norwegian-forest",
+      "kind": "breed",
+      "title": {
+        "en": "Norwegian Forest",
+        "tr": "Norveç Orman Kedisi"
+      },
+      "subtitle": {
+        "en": "Thick coat for snowy woods",
+        "tr": "Karlı ormanlar için kalın tüy"
+      },
+      "accentColor": "#8C7A5B",
+      "file": "chapter_12_norwegian_forest"
+    },
+    {
+      "id": "turkish-van",
+      "kind": "breed",
+      "title": {
+        "en": "Turkish Van",
+        "tr": "Van Kedisi"
+      },
+      "subtitle": {
+        "en": "The cat that loves to swim",
+        "tr": "Yüzmeyi seven kedi"
+      },
+      "accentColor": "#C9B27C",
+      "file": "chapter_13_turkish_van"
+    },
+    {
+      "id": "maine-coon",
+      "kind": "breed",
+      "title": {
+        "en": "Maine Coon",
+        "tr": "Maine Coon"
+      },
+      "subtitle": {
+        "en": "Gentle giant with lynx tufts",
+        "tr": "Vaşak püsküllü nazik dev"
+      },
+      "accentColor": "#7A5C45",
+      "file": "chapter_14_maine_coon"
+    },
+    {
+      "id": "exotic-shorthair",
+      "kind": "breed",
+      "title": {
+        "en": "Exotic Shorthair",
+        "tr": "Egzotik Kısa Tüylü"
+      },
+      "subtitle": {
+        "en": "A teddy bear in cat form",
+        "tr": "Kedi kılığında oyuncak ayı"
+      },
+      "accentColor": "#B58E6E",
+      "file": "chapter_15_exotic_shorthair"
+    }
+  ]
+}

@@ -1,0 +1,443 @@
+{
+  "schemaVersion": 1,
+  "chapterID": "norwegian-forest",
+  "puzzles": [
+    {
+      "id": "norwegian-forest-001",
+      "title": {
+        "en": "Toe Beans",
+        "tr": "Pati Yastıkları"
+      },
+      "palette": {
+        "b": "#B07A4A",
+        "n": "#B5654A"
+      },
+      "pixels": [
+        "....bbb..bbb....",
+        "....bnb..bnb....",
+        "...bnnnbbnnnb...",
+        ".bb.bnn..bnb.bb.",
+        "bbbbbbb..bbbbbbb",
+        "bnnb........bnnb",
+        "bnnb..bbbb..bnnb",
+        "bbb.bbbbbbbb.bbb",
+        "...bbbbbbbbbb...",
+        "..bbbbbbbbbbbb..",
+        "..bbbbnnnnbbbb..",
+        "..bbbnnnnnnbbb..",
+        "..bbbnnnnnnbbb..",
+        "..bbbnnnnnnbbb..",
+        "...bbbnnnnnbb...",
+        "....bbbbbbbb....",
+        ".....bbbbbb....."
+      ]
+    },
+    {
+      "id": "norwegian-forest-002",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi"
+      },
+      "palette": {
+        "n": "#B5654A",
+        "w": "#F3EDE4"
+      },
+      "pixels": [
+        "..nnnnn...nnnnn..",
+        ".nnnnnnnnnnnnnnn.",
+        "nnnwwnnnnnnnnnnnn",
+        "nnnwwwnnnnnnnnnnn",
+        "nnnnnnnnnnnnnnnnn",
+        "nnnnnnnnnnnnnnnnn",
+        "nnnnnnnnnnnnnnnnn",
+        ".nnnnnnnnnnnnnnn.",
+        "..nnnnnnnnnnnnn..",
+        "...nnnnnnnnnnn...",
+        "....nnnnnnnnn....",
+        "....nnnnnnnnn....",
+        ".....nnnnnnn.....",
+        "......nnnnn......",
+        ".......nnn.......",
+        "........n........"
+      ]
+    },
+    {
+      "id": "norwegian-forest-003",
+      "title": {
+        "en": "Fish Snack",
+        "tr": "Balık Atıştırması"
+      },
+      "palette": {
+        "o": "#6B4F3A",
+        "p": "#C8B6A6"
+      },
+      "pixels": [
+        "........ooooo....",
+        "oo....ooopooooo..",
+        "ooo..oooopooo.oo.",
+        "ooooooooopooo..o.",
+        "ooooooooopooo.ooo",
+        "ooooooooopoooooo.",
+        "ooo..oooopoooooo.",
+        "o.....ooopooooo..",
+        ".........ooo....."
+      ]
+    },
+    {
+      "id": "norwegian-forest-004",
+      "title": {
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak"
+      },
+      "palette": {
+        "o": "#6B4F3A"
+      },
+      "pixels": [
+        ".....oooo.........",
+        "...oooooooo.......",
+        "..ooooooo.oo......",
+        ".oooooooo.ooo.....",
+        ".o..oooo.oooo.....",
+        "ooo......ooooo....",
+        "oooooo...ooooo....",
+        "oooooo.o..oooo....",
+        "ooooo.ooo..ooo....",
+        "oooo..oooo..o.....",
+        ".oo..oooooo.......",
+        ".oo.oooooooo......",
+        "..oooooooooo......",
+        "....oooooo.oo.....",
+        "............oo..o.",
+        ".............ooo..",
+        ".................."
+      ]
+    },
+    {
+      "id": "norwegian-forest-005",
+      "title": {
+        "en": "Dinner Bowl",
+        "tr": "Mama Kabı"
+      },
+      "palette": {
+        "o": "#6B4F3A",
+        "p": "#C8B6A6",
+        "w": "#F3EDE4"
+      },
+      "pixels": [
+        "......p..ppp......",
+        "....pppppppppp....",
+        "..pppppppppppppp..",
+        ".pppppppppppppppp.",
+        "ooppppppppppppppoo",
+        "ooooppppppppppoooo",
+        "oooooooooooooooooo",
+        ".ooowwwwwwwwwwooo.",
+        ".ooowwwwwwwwwwooo.",
+        "..oooooooooooooo..",
+        "..oooooooooooooo..",
+        "...oooooooooooo..."
+      ]
+    },
+    {
+      "id": "norwegian-forest-006",
+      "title": {
+        "en": "Toy Mouse",
+        "tr": "Oyuncak Fare"
+      },
+      "palette": {
+        "n": "#B5654A",
+        "p": "#C8B6A6"
+      },
+      "pixels": [
+        ".....pp...........",
+        "....pnnp..........",
+        "....pnnpppp.......",
+        "....pppppppp......",
+        "....ppppppppp.....",
+        ".pp.ppppppppp.....",
+        "..ppppppppppp.....",
+        "...ppppppppppn...n",
+        "....pppppppp.nn.nn",
+        ".....pppppp...nnn.",
+        "...............n.."
+      ]
+    },
+    {
+      "id": "norwegian-forest-007",
+      "title": {
+        "en": "Leftovers",
+        "tr": "Artıklar"
+      },
+      "palette": {
+        "p": "#C8B6A6"
+      },
+      "pixels": [
+        ".....pp.p..p......",
+        ".....pp.p..p.....p",
+        "..pp.pp.p..p....pp",
+        ".ppp.pp.p..p...ppp",
+        "pppppppppppppppppp",
+        ".ppp.pp.p..p...ppp",
+        "..pp.pp.p..p....pp",
+        ".....pp.p..p.....p",
+        ".....pp.p..p......"
+      ]
+    },
+    {
+      "id": "norwegian-forest-008",
+      "title": {
+        "en": "Portrait",
+        "tr": "Portre"
+      },
+      "palette": {
+        "b": "#B07A4A",
+        "d": "#6B4528",
+        "e": "#8DB04A",
+        "w": "#F3EDE4"
+      },
+      "pixels": [
+        "..d............d..",
+        "..................",
+        "...b..........b...",
+        "..bb....bb....bb..",
+        "..bbbbbbbbbbbbbb..",
+        "..bbbbdbbdbdbbbb..",
+        "..bbbbdbbdbdbbbb..",
+        "..bbbbdbbdbdbbbb..",
+        "..bbbeebbbbeebbb..",
+        "..bbbeebbbbe.ebb..",
+        ".bbbbeebbbbeebbbb.",
+        "bbbbbbbbbbbbbbbbbb",
+        "bbbbbbwwwwwwbbbbbb",
+        "bb.bbwwwwwwwwbb.bb",
+        "....bbwwwwwwbb....",
+        "......wwwwww......"
+      ]
+    },
+    {
+      "id": "norwegian-forest-009",
+      "title": {
+        "en": "Forest Guardian",
+        "tr": "Orman Bekçisi"
+      },
+      "palette": {
+        "b": "#B07A4A",
+        "d": "#6B4528",
+        "g": "#2F6B3B",
+        "o": "#6B4F3A"
+      },
+      "pixels": [
+        "............g....",
+        "............g....",
+        "............gg...",
+        "...........ggg...",
+        "b....b.....gggg..",
+        "bb...bb...ggggg..",
+        "bbbbbbb...ggggg..",
+        "bbbbbbb...gggggg.",
+        "bbbbbbb..ggggggg.",
+        ".bbbbb...ggggggg.",
+        "..bbbb....dgggg..",
+        "..bbbbbb..ddggg..",
+        "..bbdddb..ddgggg.",
+        ".bbbdddbbgddgggg.",
+        ".bbbbbbbbgddgggg.",
+        ".bbbbbbbbgddggggg",
+        "..bbbbbbddddoo...",
+        "..bbbbbbddd.oo...",
+        "..bbbbb.d...oo..."
+      ]
+    },
+    {
+      "id": "norwegian-forest-010",
+      "title": {
+        "en": "Nap Time",
+        "tr": "Şekerleme"
+      },
+      "palette": {
+        "b": "#B07A4A",
+        "d": "#6B4528"
+      },
+      "pixels": [
+        "...................",
+        ".d.................",
+        ".b.....b...........",
+        ".bb...bbbbbbb......",
+        "bbbbbbbbbbbbbdbb...",
+        "bbbbbbbbbdbdbdbbb..",
+        "bbbbbbbbbdbdbdbbbb.",
+        "bb.....bbbbbbbbbbb.",
+        ".bbbbbbbbbbbbbbbbdd",
+        "..bbbbbbbbbbbbbbddd",
+        "....bbbbbbbbbbbddd.",
+        "....dddbbbbbbbdddd.",
+        "....ddddddddddddd..",
+        ".....ddddddddddd..."
+      ]
+    },
+    {
+      "id": "norwegian-forest-011",
+      "title": {
+        "en": "Sitting Pretty",
+        "tr": "Uslu Oturuş"
+      },
+      "palette": {
+        "b": "#B07A4A",
+        "d": "#6B4528"
+      },
+      "pixels": [
+        ".......d......",
+        "..............",
+        ".b....bb......",
+        ".b....bb......",
+        "bbbbbbbb......",
+        "bbbbbbbb......",
+        "bbbbbbbb......",
+        ".bbbbbb.......",
+        "..bbbbb.......",
+        "...bbbbb....d.",
+        "...bbbbbb..ddd",
+        "..bbbddbbb.ddd",
+        "..bbbddbbb.ddd",
+        "..bbbbbbbb..dd",
+        "..bbbbbbbb..dd",
+        "..bbbbbbbb.ddd",
+        "..bbbbbbbbdddd",
+        "...bbbbbbddd..",
+        "..bbbbbb.dd..."
+      ]
+    },
+    {
+      "id": "norwegian-forest-012",
+      "title": {
+        "en": "Strut",
+        "tr": "Salınarak Yürüyüş"
+      },
+      "palette": {
+        "b": "#B07A4A",
+        "d": "#6B4528"
+      },
+      "pixels": [
+        ".................d.",
+        "................dd.",
+        ".b....b.........ddd",
+        ".b...bb.........ddd",
+        "bbbbbbb..........dd",
+        "bbbbbbbb........ddd",
+        "bbbbbbbbbbbbb..ddd.",
+        ".bbbbbbbbddbdbddd..",
+        "..bbbbbbbbbbbbdd...",
+        "....bbbbbbbbbbbb...",
+        ".....bbbbbbbbbb....",
+        ".....bbbbbbbbbb....",
+        ".....b..b...b.b....",
+        ".....b..b...b.bb...",
+        ".....b..b...b.bb...",
+        ".....b..b..bb.bb...",
+        ".....b..b..bb..b..."
+      ]
+    },
+    {
+      "id": "norwegian-forest-013",
+      "title": {
+        "en": "If I Fits",
+        "tr": "Kutu Sevdası"
+      },
+      "palette": {
+        "b": "#B07A4A",
+        "d": "#6B4528",
+        "e": "#8DB04A",
+        "o": "#6B4F3A",
+        "p": "#C8B6A6"
+      },
+      "pixels": [
+        "....d...............",
+        ".............d......",
+        ".....b.......b......",
+        ".....b......bb......",
+        "....bbb.....bb......",
+        "....bbbbbbbbbbb.....",
+        "....bbbbbbbbbbb.....",
+        "....bbbbbbbbbbb.....",
+        "....bbbebbbebb......",
+        "....bbeeebeeebb.....",
+        "....bbbebbbebb......",
+        ".pooobbbbbbbbbooop..",
+        "pppooobbbbbbboooppp.",
+        "pppoooooobooooooppp.",
+        ".ooooooooooooooooo..",
+        "....................",
+        ".ooooooooooooooooo..",
+        ".ooooooooooooooooo..",
+        ".ooooooooooooooooo..",
+        ".ooooooooooooooooo.."
+      ]
+    },
+    {
+      "id": "norwegian-forest-014",
+      "title": {
+        "en": "Moon Gazer",
+        "tr": "Ay Seyri"
+      },
+      "palette": {
+        "b": "#B07A4A",
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        "......yyyy.......",
+        ".....yyyy........",
+        "....yyyy.........",
+        "...yyyyy.........",
+        "...yyyyy.........",
+        "..yyyyyy.........",
+        "..yyyyyy.........",
+        "..yyyyyy.........",
+        "..yyyyyyy........",
+        "...yyyyyyy.......",
+        "...yyyyyyyy......",
+        "bbbyyyyyyyyyyyyy.",
+        "bbbbyyyyyyyyyyy..",
+        "bbbb.yyyyyyyyy...",
+        ".bbbb..yyyyy.....",
+        ".bbbbb...b.......",
+        "bbbbbb..bb.......",
+        "bbbbbb..bb.......",
+        ".bbbbb.bb........",
+        ".bbbbbbb........."
+      ]
+    },
+    {
+      "id": "norwegian-forest-015",
+      "title": {
+        "en": "Mighty Tail",
+        "tr": "Görkemli Kuyruk"
+      },
+      "palette": {
+        "b": "#B07A4A",
+        "d": "#6B4528"
+      },
+      "pixels": [
+        "d.................",
+        "..................",
+        ".b.....b..........",
+        "bb....bb.....d....",
+        "bbb.b.bbb...ddd...",
+        "bbbbbbbbb...dddd..",
+        "bbbbbbbbb...ddddd.",
+        ".bbbbbbb.....dddd.",
+        ".bbbbbbb.....ddddd",
+        "..bbbbbb......dbdd",
+        "...bbbbbb.....dbdd",
+        "..bbbdbbdb....dbdd",
+        "..bbbdbddbb...dbdd",
+        "..bbbdbbdbb...dbdd",
+        "..bbbbbbbbb...dbdd",
+        "..bbbbbbbbb.dddbdd",
+        "..bbbbbbbbdddbbdd.",
+        "...bbbbbbddbbddd..",
+        "....bbbbbddbdd....",
+        ".........ddd......"
+      ]
+    }
+  ]
+}
