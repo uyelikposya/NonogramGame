@@ -3,6 +3,7 @@ import SwiftUI
 
 /// İpuçları + tahta. Kareler tek bir `Canvas` ile çizilir; 20x20'de 400 ayrı View yerine
 /// tek çizim, sürüklemede akıcı kalır.
+@MainActor
 struct BoardView: View {
     @Environment(\.appTheme) private var theme
     @Environment(\.accessibilityReduceMotion) private var reduceMotion

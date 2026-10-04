@@ -1,6 +1,7 @@
 import NonogramKit
 import SwiftUI
 
+@MainActor
 struct HomeView: View {
     @Environment(AppModel.self) private var model
     @Environment(Router.self) private var router
@@ -105,6 +106,7 @@ struct HomeView: View {
 }
 
 /// Bölümün vurgu renginde kedi rozeti.
+@MainActor
 struct ChapterBadge: View {
     @Environment(\.appTheme) private var theme
     let chapter: Chapter

@@ -3,6 +3,7 @@ import SwiftUI
 
 /// Rota hedefi: kimliğe göre bulmacayı bulur. `.id` sayesinde "Sonraki Bulmaca"da
 /// ViewModel sıfırdan oluşur.
+@MainActor
 struct GameScreen: View {
     @Environment(AppModel.self) private var model
     let puzzleID: String
@@ -18,6 +19,7 @@ struct GameScreen: View {
     }
 }
 
+@MainActor
 struct GameView: View {
     @Environment(AppModel.self) private var model
     @Environment(Router.self) private var router
@@ -129,6 +131,7 @@ struct GameView: View {
 // MARK: - Parçalar
 
 /// Kalan patiler (canlar) ve süre.
+@MainActor
 struct GameStatusBar: View {
     @Environment(\.appTheme) private var theme
     let game: NonogramGame
@@ -166,6 +169,7 @@ struct GameStatusBar: View {
 }
 
 /// Doldur / X aracı ve geri al.
+@MainActor
 struct GameControls: View {
     @Environment(\.appTheme) private var theme
     @AppStorage(SettingsKeys.haptics) private var hapticsEnabled = true
@@ -208,6 +212,7 @@ struct GameControls: View {
     }
 }
 
+@MainActor
 struct ResultCard<Actions: View>: View {
     @Environment(\.appTheme) private var theme
     let icon: String

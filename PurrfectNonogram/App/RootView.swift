@@ -1,5 +1,6 @@
 import SwiftUI
 
+@MainActor
 struct RootView: View {
     @Environment(Router.self) private var router
     @Environment(ThemeManager.self) private var themeManager

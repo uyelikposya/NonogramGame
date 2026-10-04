@@ -5,6 +5,7 @@ enum SettingsKeys {
     static let haptics = "settings.haptics"
 }
 
+@MainActor
 struct SettingsView: View {
     @Environment(ThemeManager.self) private var themeManager
     @Environment(\.appTheme) private var theme
@@ -89,6 +90,7 @@ struct SettingsView: View {
 }
 
 /// Paletin kendi renkleriyle çizilmiş küçük bir tahta önizlemesi.
+@MainActor
 struct PaletteCard: View {
     let palette: ThemePalette
     let isDark: Bool

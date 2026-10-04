@@ -2,6 +2,7 @@ import NonogramKit
 import SwiftUI
 
 /// Eğitim bulmacalarının üstünde, o bölümün öğrettiği kuralı anlatan balon.
+@MainActor
 struct LessonBanner: View {
     @Environment(\.appTheme) private var theme
     let lesson: TutorialLesson

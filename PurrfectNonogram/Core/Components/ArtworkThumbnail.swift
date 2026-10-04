@@ -2,6 +2,7 @@ import NonogramKit
 import SwiftUI
 
 /// Çözülmüş bulmacanın küçük piksel resmi (bölüm ızgarası, sonuç kartı).
+@MainActor
 struct ArtworkThumbnail: View {
     let artwork: Matrix<RGBColor?>
 

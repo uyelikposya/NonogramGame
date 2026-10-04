@@ -2,6 +2,7 @@ import NonogramKit
 import SwiftUI
 
 /// Bir türün 30 bulmacası: çözülenler küçük resim olarak, sıradaki vurgulu, gerisi kilitli.
+@MainActor
 struct ChapterView: View {
     @Environment(AppModel.self) private var model
     @Environment(Router.self) private var router
@@ -55,6 +56,7 @@ struct ChapterView: View {
     }
 }
 
+@MainActor
 struct PuzzleTile: View {
     enum TileState: Equatable {
         case locked

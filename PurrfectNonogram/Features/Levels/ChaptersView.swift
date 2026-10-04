@@ -2,6 +2,7 @@ import NonogramKit
 import SwiftUI
 
 /// Eğitim + 15 kedi türü. Kilitli türler soluk görünür.
+@MainActor
 struct ChaptersView: View {
     @Environment(AppModel.self) private var model
     @Environment(Router.self) private var router
@@ -32,6 +33,7 @@ struct ChaptersView: View {
     }
 }
 
+@MainActor
 struct ChapterCard: View {
     @Environment(\.appTheme) private var theme
     let chapter: Chapter

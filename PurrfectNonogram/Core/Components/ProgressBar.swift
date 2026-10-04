@@ -1,5 +1,6 @@
 import SwiftUI
 
+@MainActor
 struct ProgressBar: View {
     @Environment(\.appTheme) private var theme
     let value: Double
