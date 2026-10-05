@@ -21,8 +21,7 @@ def read(path):
 project = read("project.yml")
 if "3940256099942544" in project:
     problems.append("project.yml: GADApplicationIdentifier hâlâ Google'ın test kimliği (gerçek AdMob uygulama kimliği gir)")
-if re.search(r'DEVELOPMENT_TEAM: ""', project):
-    problems.append("project.yml: DEVELOPMENT_TEAM boş (Apple Developer Team ID gir)")
+# DEVELOPMENT_TEAM: bulutta yüklemede APPLE_TEAM_ID sırrından verilir (bkz. .github/workflows/release.yml)
 if len(re.findall(r"SKAdNetworkIdentifier", project)) < 10:
     problems.append("project.yml: SKAdNetworkItems eksik (Google'ın yayımladığı tam listeyi ekle)")
 
