@@ -10,3 +10,6 @@ h2 { margin-top: 2rem; color: var(--accent); font-size: 1.15rem; }
 section.lang { background: var(--card); border-radius: 16px; padding: 4px 20px 16px; margin-bottom: 20px; }
 a { color: var(--accent); }
 .muted { color: var(--muted); font-size: .9rem; }
+nav.langs { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 20px; }
+nav.langs a { padding: 6px 12px; border-radius: 999px; background: var(--card); color: var(--text); text-decoration: none; font-size: .9rem; }
+nav.langs a[aria-current="true"] { background: var(--accent); color: #fff; }
