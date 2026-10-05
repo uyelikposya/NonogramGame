@@ -12,6 +12,23 @@ import shutil
 import sys
 from pathlib import Path
 
+def contact_sheet(root):
+    """Her dil için 5 görüntüyü küçültüp yan yana koyar: <root>/_preview/<dil>.jpg (PIL'siz, sips ile)."""
+    import subprocess
+    preview = root / "_preview"
+    preview.mkdir(exist_ok=True)
+    for locale in sorted(p for p in root.iterdir() if p.is_dir() and not p.name.startswith("_")):
+        for shot in sorted(locale.glob("*.png")):
+            subprocess.run(["sips", "-Z", "700", "-s", "format", "jpeg", str(shot),
+                            "--out", str(preview / f"{locale.name}_{shot.stem}.jpg")],
+                           check=True, capture_output=True)
+    print(f"Önizlemeler: {preview}")
+
+
+if sys.argv[1] == "--contact-sheet":
+    contact_sheet(Path(sys.argv[2]))
+    sys.exit(0)
+
 results, target = Path(sys.argv[1]), Path(sys.argv[2])
 total = 0
 for folder in sorted(p for p in results.iterdir() if p.is_dir() and not p.name.endswith(".xcresult")):

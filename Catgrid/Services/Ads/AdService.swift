@@ -49,8 +49,8 @@ struct AdConfiguration {
     )
 
     static let production = AdConfiguration(
-        interstitialUnitID: "",  // ca-app-pub-XXXXXXXXXXXXXXXX/NNNNNNNNNN
-        rewardedUnitID: ""
+        interstitialUnitID: "ca-app-pub-7892998113103360/1228464879",  // Bölüm geçişi
+        rewardedUnitID: "ca-app-pub-7892998113103360/4077989496"       // Ödül: +1 pati / +60 sn
     )
 
     static var current: AdConfiguration {

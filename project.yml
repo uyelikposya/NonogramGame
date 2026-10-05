@@ -69,8 +69,8 @@ targets:
         UIApplicationSceneManifest:
           UIApplicationSupportsMultipleScenes: false
         UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
-        # Google'ın test uygulama kimliği; AdMob onayından sonra kendi kimliğinle değiştir
-        GADApplicationIdentifier: ca-app-pub-3940256099942544~1458002511
+        # AdMob uygulama kimliği (Catgrid, iOS)
+        GADApplicationIdentifier: ca-app-pub-7892998113103360~7845754820
         NSUserTrackingUsageDescription: Allowing tracking lets us show you more relevant ads. Ads help keep Catgrid free to play.
         # Google'ın yayımladığı liste: developers.google.com/admob/ios/3p-skadnetworks (Ekim 2026)
         SKAdNetworkItems:
