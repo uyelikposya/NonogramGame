@@ -70,16 +70,9 @@ jobs:
 
       - name: Arşivle
         run: |
-          set -o pipefail
-          if [ "$SIGNED" = "1" ]; then
-            SIGNING=(DEVELOPMENT_TEAM="$APPLE_TEAM_ID" CODE_SIGN_STYLE=Automatic
-                     -allowProvisioningUpdates
-                     -authenticationKeyPath "$ASC_KEY_PATH"
-                     -authenticationKeyID "$ASC_KEY_ID"
-                     -authenticationKeyIssuerID "$ASC_ISSUER_ID")
-          else
-            SIGNING=(CODE_SIGNING_ALLOWED=NO)
-          fi
+          # Arşiv yerel (ad hoc, "-") imzayla oluşturulur: geliştirme profili ve kayıtlı test cihazı
+          # gerekmez, gömülü çerçeveler de imzalı kalır. Asıl imza dışa aktarmada (App Store
+          # dağıtım sertifikası ve profiliyle) atılır.
           xcodebuild archive \
             -project Catgrid.xcodeproj \
             -scheme Catgrid \
@@ -87,7 +80,11 @@ jobs:
             -destination "generic/platform=iOS" \
             -archivePath build/Catgrid.xcarchive \
             CURRENT_PROJECT_VERSION="$BUILD_NUMBER" \
-            "${SIGNING[@]}" > archive.log 2>&1 || { grep -E "error:" archive.log | head -40; tail -60 archive.log; exit 1; }
+            DEVELOPMENT_TEAM="$APPLE_TEAM_ID" \
+            CODE_SIGN_STYLE=Manual \
+            CODE_SIGN_IDENTITY="-" \
+            AD_HOC_CODE_SIGNING_ALLOWED=YES \
+            PROVISIONING_PROFILE_SPECIFIER="" > archive.log 2>&1 || { grep -E "error:" archive.log | head -40; tail -60 archive.log; exit 1; }
           grep -E "\*\* ARCHIVE" archive.log
           plutil -p build/Catgrid.xcarchive/Products/Applications/Catgrid.app/Info.plist | grep -E "CFBundle(ShortVersionString|Version|Identifier)\"|DTSDKName|DTXcode\""
 
