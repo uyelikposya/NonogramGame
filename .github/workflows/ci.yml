@@ -24,6 +24,13 @@ jobs:
           xcodebuild -version
           swift --version
 
+      - name: Google SKAdNetwork listesi (geçici)
+        continue-on-error: true
+        run: |
+          curl -sL "https://developers.google.com/admob/ios/3p-skadnetworks" -o skad.html || true
+          grep -oE "[a-z0-9]{10}\.skadnetwork" skad.html | sort -u | tr '\n' ' ' ; echo
+          grep -oE "[a-z0-9]{10}\.skadnetwork" skad.html | sort -u | wc -l
+
       - name: Bulmaca içeriğini doğrula
         run: python3 Tools/validate_puzzles.py
 
