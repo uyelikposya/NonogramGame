@@ -15,6 +15,13 @@ final class AppModel {
 
     static func live() -> AppModel {
         do {
+            #if DEBUG
+            if DemoContent.isEnabled {
+                let model = AppModel(catalog: try CatalogLoader.load(from: .main), progress: .inMemory())
+                DemoContent.seed(model)
+                return model
+            }
+            #endif
             return AppModel(catalog: try CatalogLoader.load(from: .main), progress: ProgressStore.live())
         } catch {
             // Paketlenmiş içerik hatalıysa: testler (ContentValidationTests) bunu yayından önce yakalar

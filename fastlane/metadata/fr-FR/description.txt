@@ -1,0 +1,31 @@
+Remplis la grille, suis les nombres et regarde un adorable chat en pixel art apparaître !
+
+Catgrid Collection est un jeu de nonogrammes (aussi appelés logigrammes ou hanjie) tout doux, pensé pour les amoureux des chats. Chaque grille se résout par la logique pure : tu n'as jamais besoin de deviner.
+
+25 RACES DE CHATS À RENCONTRER
+Du Siamois et du Persan au Maine Coon, en passant par le Van turc et le Bobtail japonais. Chaque race propose 16 grilles, des grilles faciles en 5×5 jusqu'aux défis corsés en 12×12.
+
+COLLECTIONNE LES CARTES DE RACE
+Termine toutes les grilles d'une race pour gagner sa carte à collectionner, avec son origine, son espérance de vie, son pelage, ses traits de caractère et une anecdote amusante. Retourne la carte pour en savoir plus sur la race.
+
+APPRENDS EN QUELQUES MINUTES
+L'École des chatons t'enseigne chaque technique pas à pas, en 11 courtes leçons.
+
+JOUE À TA FAÇON
+• En mode Facile, les lignes terminées sont barrées pour toi ; en mode Difficile, tu places toi-même chaque X
+• Outils Remplir, Croix et Annuler
+• Un petit chat assistant qui t'indique une ligne où un coup sûr est possible quand tu bloques
+• Ta progression est sauvegardée automatiquement
+
+DES DÉTAILS TOUT DOUX
+Musique apaisante et effets sonores, quatre palettes de couleurs avec mode clair et sombre, vibrations et 8 langues.
+
+CATGRID PREMIUM (ABONNEMENT FACULTATIF)
+• Sans pubs
+• 9 grilles dorées pour chaque race, 225 au total
+• De brillantes Cartes dorées pour ta collection
+
+Premium est proposé sous forme d'abonnement mensuel ou annuel à renouvellement automatique. Le paiement est débité de ton compte Apple lors de la confirmation de l'achat. L'abonnement se renouvelle automatiquement, sauf s'il est résilié au moins 24 heures avant la fin de la période en cours. Tu peux le gérer ou le résilier dans les réglages de ton compte App Store.
+
+Conditions d'utilisation : https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+Politique de confidentialité : https://uyelikposya.github.io/NonogramGame/privacy.html

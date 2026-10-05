@@ -24,6 +24,7 @@ struct CollectionView: View {
                                 BreedCardView(chapter: selection.chapter, card: card, style: .compact, isGolden: selection.isGolden)
                             }
                             .buttonStyle(PressableButtonStyle())
+                            .accessibilityIdentifier("collection.card.\(selection.id)")
                         }
                     }
                     if model.hasUnmetBreeds {
@@ -164,6 +165,7 @@ struct CollectionShelf: View {
                     .foregroundStyle(theme.textPrimary)
                 Spacer()
                 Button("See All") { router.push(.collection) }
+                    .accessibilityIdentifier("home.collection")
                     .font(.subheadline.bold())
             }
             CollectionSummary()
