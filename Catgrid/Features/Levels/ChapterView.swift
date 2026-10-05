@@ -91,7 +91,7 @@ struct PuzzleTile: View {
             switch state {
             case .completed:
                 ArtworkThumbnail(artwork: puzzle.artwork)
-                    .padding(10)
+                    .padding(8)
             case .playable:
                 Text(verbatim: "\(number)")
                     .font(.title2.bold())
@@ -103,8 +103,9 @@ struct PuzzleTile: View {
         }
         .frame(maxWidth: .infinity)
         .aspectRatio(1, contentMode: .fit)
-        .background(shape.fill(state == .playable ? theme.accent : (state == .completed ? theme.surfaceMuted : theme.surface)))
-        .overlay(shape.strokeBorder(theme.separator, lineWidth: state == .locked ? 1 : 0))
+        // Çözülmüş karo nötr yüzey renginde: renkli resim zeminle karışmasın
+        .background(shape.fill(state == .playable ? theme.accent : theme.surface))
+        .overlay(shape.strokeBorder(theme.separator, lineWidth: state == .playable ? 0 : 1))
         .overlay(alignment: .topTrailing) {
             if isInProgress && state != .locked {
                 Image(systemName: "hourglass.circle.fill")
