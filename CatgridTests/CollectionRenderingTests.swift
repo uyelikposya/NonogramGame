@@ -20,7 +20,7 @@ final class CollectionRenderingTests: XCTestCase {
         let breeds = catalog.chapters.filter { $0.card != nil }
         XCTAssertFalse(breeds.isEmpty)
 
-        for language in ["en", "tr"] {
+        for language in ContentValidationTests.languages {
             let cards = ScrollView {
                 VStack {
                     ForEach(breeds) { chapter in

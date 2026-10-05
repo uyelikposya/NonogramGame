@@ -984,6 +984,9 @@ def main():
               f" + {len(premium)} premium ({', '.join(p['title']['en'] for p in premium)})")
     catalog["chapters"] = chapters
     write_json(catalog_path, catalog)
+    # İngilizce/Türkçe dışındaki diller Tools/i18n/ altındaki çevirilerden eklenir
+    import apply_translations
+    apply_translations.main(content_only=True)
 
 
 if __name__ == "__main__":

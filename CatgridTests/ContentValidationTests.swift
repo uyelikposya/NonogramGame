@@ -68,11 +68,29 @@ final class ContentValidationTests: XCTestCase {
         }
     }
 
-    func testEveryTitleIsTranslated() {
-        for puzzle in catalog.orderedPuzzles {
-            XCTAssertNotNil(puzzle.title.translations["en"], "\(puzzle.id) İngilizce başlık eksik")
-            XCTAssertNotNil(puzzle.title.translations["tr"], "\(puzzle.id) Türkçe başlık eksik")
+    static let languages = ["en", "tr", "ja", "de", "fr", "es", "pt-BR", "ko"]
+
+    /// Bulmaca, tür ve kart metinleri uygulamanın desteklediği her dilde olmalı.
+    func testEveryContentTextIsTranslated() {
+        let premium = catalog.chapters.flatMap(\.premiumPuzzles)
+        for language in Self.languages {
+            for puzzle in catalog.orderedPuzzles + premium {
+                XCTAssertNotNil(puzzle.title.translations[language], "\(puzzle.id) [\(language)] başlık eksik")
+            }
+            for chapter in catalog.chapters {
+                XCTAssertNotNil(chapter.title.translations[language], "\(chapter.id) [\(language)] ad eksik")
+                guard let card = chapter.card else { continue }
+                for text in [card.origin, card.coat, card.fact, card.about].compactMap({ $0 }) {
+                    XCTAssertNotNil(text.translations[language], "\(chapter.id) kartı [\(language)] eksik")
+                }
+            }
         }
+    }
+
+    /// Uygulamanın dil listesi (CFBundleLocalizations) çevirilerle aynı olmalı.
+    func testBundleDeclaresEveryLanguage() throws {
+        let declared = try XCTUnwrap(Bundle.main.object(forInfoDictionaryKey: "CFBundleLocalizations") as? [String])
+        XCTAssertEqual(Set(declared), Set(Self.languages))
     }
 
     func testTutorialCoversEveryLesson() throws {

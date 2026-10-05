@@ -1,0 +1,1386 @@
+{
+ "ui": {
+  "%@ years": {
+   "en": "%@ years",
+   "tr": "%@ yıl"
+  },
+  "%lld mistakes": {
+   "plural": true,
+   "en": {
+    "one": "%lld mistake",
+    "other": "%lld mistakes"
+   },
+   "tr": "%lld hata"
+  },
+  "%lld of %lld solved": {
+   "en": "%lld of %lld solved",
+   "tr": "%lld / %lld çözüldü"
+  },
+  "%lld out of 5": {
+   "en": "%lld out of 5",
+   "tr": "5 üzerinden %lld"
+  },
+  "%lld paws left": {
+   "plural": true,
+   "en": {
+    "one": "%lld paw left",
+    "other": "%lld paws left"
+   },
+   "tr": "%lld pati kaldı"
+  },
+  "1 1 1 means three separate blocks with at least one empty square between each of them.": {
+   "en": "1 1 1 means three separate blocks with at least one empty square between each of them.",
+   "tr": "1 1 1, aralarında en az birer boş kare olan üç ayrı blok demektir."
+  },
+  "9 extra puzzles and a Golden Card with Premium": {
+   "en": "9 extra puzzles and a Golden Card with Premium",
+   "tr": "Premium ile 9 ek bulmaca ve bir Altın Kart"
+  },
+  "9 golden puzzles for every breed": {
+   "en": "9 golden puzzles for every breed",
+   "tr": "Her tür için 9 altın bulmaca"
+  },
+  "A 0 means the line has no filled squares at all.": {
+   "en": "A 0 means the line has no filled squares at all.",
+   "tr": "0, o satırda hiç dolu kare olmadığı anlamına gelir."
+  },
+  "A filled square touching the edge tells you exactly where a block begins.": {
+   "en": "A filled square touching the edge tells you exactly where a block begins.",
+   "tr": "Kenara değen dolu bir kare, bloğun tam olarak nerede başladığını söyler."
+  },
+  "A long block covers the middle of the line wherever it starts. Fill the squares every position shares.": {
+   "en": "A long block covers the middle of the line wherever it starts. Fill the squares every position shares.",
+   "tr": "Uzun bir blok nereden başlarsa başlasın satırın ortasını kaplar. Her durumda dolu kalan kareleri doldur."
+  },
+  "A new cat awaits": {
+   "en": "A new cat awaits",
+   "tr": "Yeni bir kedi seni bekliyor"
+  },
+  "About": {
+   "en": "About",
+   "tr": "Hakkında"
+  },
+  "About the Breed": {
+   "en": "About the Breed",
+   "tr": "Tür Hakkında"
+  },
+  "Ad Privacy Choices": {
+   "en": "Ad Privacy Choices",
+   "tr": "Reklam Gizlilik Tercihleri"
+  },
+  "Add to Collection": {
+   "en": "Add to Collection",
+   "tr": "Koleksiyona Ekle"
+  },
+  "Affection": {
+   "en": "Affection",
+   "tr": "Sevgi"
+  },
+  "All Levels": {
+   "en": "All Levels",
+   "tr": "Tüm Bölümler"
+  },
+  "All solved puzzles, best times and saved games will be deleted. This cannot be undone.": {
+   "en": "All solved puzzles, best times and saved games will be deleted. This cannot be undone.",
+   "tr": "Çözülen tüm bulmacalar, en iyi süreler ve kayıtlı oyunlar silinecek. Bu işlem geri alınamaz."
+  },
+  "Appearance": {
+   "en": "Appearance",
+   "tr": "Görünüm"
+  },
+  "Average": {
+   "en": "Average",
+   "tr": "Ortalama"
+  },
+  "Back to Levels": {
+   "en": "Back to Levels",
+   "tr": "Bölümlere Dön"
+  },
+  "Best %@": {
+   "en": "Best %@",
+   "tr": "En iyi %@"
+  },
+  "Breeds": {
+   "en": "Breeds",
+   "tr": "Türler"
+  },
+  "Breeds Collected": {
+   "en": "Breeds Collected",
+   "tr": "Toplanan Türler"
+  },
+  "Card Collection": {
+   "en": "Card Collection",
+   "tr": "Kart Koleksiyonu"
+  },
+  "Cat helper": {
+   "en": "Cat helper",
+   "tr": "Yardımcı kedi"
+  },
+  "Change Language": {
+   "en": "Change Language",
+   "tr": "Dili Değiştir"
+  },
+  "Chapter not found": {
+   "en": "Chapter not found",
+   "tr": "Bölüm bulunamadı"
+  },
+  "Close": {
+   "en": "Close",
+   "tr": "Kapat"
+  },
+  "Coat": {
+   "en": "Coat",
+   "tr": "Tüy"
+  },
+  "Coffee": {
+   "en": "Coffee",
+   "tr": "Kahve Tonları"
+  },
+  "Collect shiny Golden Cards": {
+   "en": "Collect shiny Golden Cards",
+   "tr": "Parıltılı Altın Kartları topla"
+  },
+  "Color Palette": {
+   "en": "Color Palette",
+   "tr": "Renk Paleti"
+  },
+  "Coming soon": {
+   "en": "Coming soon",
+   "tr": "Çok yakında"
+  },
+  "Common": {
+   "en": "Common",
+   "tr": "Yaygın"
+  },
+  "Continue": {
+   "en": "Continue",
+   "tr": "Devam Et"
+  },
+  "Cross": {
+   "en": "Cross",
+   "tr": "Çarpı"
+  },
+  "Dark": {
+   "en": "Dark",
+   "tr": "Koyu"
+  },
+  "Empty lines": {
+   "en": "Empty lines",
+   "tr": "Boş satırlar"
+  },
+  "Ends on %@": {
+   "en": "Ends on %@",
+   "tr": "Bitiş: %@"
+  },
+  "Energy": {
+   "en": "Energy",
+   "tr": "Enerji"
+  },
+  "Enjoying Catgrid?": {
+   "en": "Enjoying Catgrid?",
+   "tr": "Catgrid'i sevdin mi?"
+  },
+  "Epic": {
+   "en": "Epic",
+   "tr": "Destansı"
+  },
+  "Every cat lands on its feet. Give it another try!": {
+   "en": "Every cat lands on its feet. Give it another try!",
+   "tr": "Kediler hep dört ayak üstüne düşer. Bir daha dene!"
+  },
+  "Every square belongs to a row and a column. Use what one tells you to solve the other.": {
+   "en": "Every square belongs to a row and a column. Use what one tells you to solve the other.",
+   "tr": "Her kare hem bir satıra hem bir sütuna aittir. Birinden öğrendiğinle diğerini çöz."
+  },
+  "Fastest solve %@": {
+   "en": "Fastest solve %@",
+   "tr": "En hızlı çözüm %@"
+  },
+  "Fill": {
+   "en": "Fill",
+   "tr": "Doldur"
+  },
+  "Find the overlap": {
+   "en": "Find the overlap",
+   "tr": "Çakışmayı bul"
+  },
+  "Finish all puzzles of a breed to win its card.": {
+   "en": "Finish all puzzles of a breed to win its card.",
+   "tr": "Kartını kazanmak için bir türün tüm bulmacalarını bitir."
+  },
+  "From now on each wrong move costs a paw. Lose all three and the puzzle starts over.": {
+   "en": "From now on each wrong move costs a paw. Lose all three and the puzzle starts over.",
+   "tr": "Bundan sonra her yanlış hamle bir patiye mal olur. Üçünü de kaybedersen bulmaca baştan başlar."
+  },
+  "Full lines": {
+   "en": "Full lines",
+   "tr": "Tam satırlar"
+  },
+  "Gameplay": {
+   "en": "Gameplay",
+   "tr": "Oynanış"
+  },
+  "Go Premium": {
+   "en": "Go Premium",
+   "tr": "Premium'a Geç"
+  },
+  "Golden Card": {
+   "en": "Golden Card",
+   "tr": "Altın Kart"
+  },
+  "Golden Card unlocked!": {
+   "en": "Golden Card unlocked!",
+   "tr": "Altın Kart kazandın!"
+  },
+  "Golden Cards": {
+   "en": "Golden Cards",
+   "tr": "Altın Kartlar"
+  },
+  "Golden Puzzles": {
+   "en": "Golden Puzzles",
+   "tr": "Altın Bulmacalar"
+  },
+  "Golden puzzles are part of Catgrid Premium.": {
+   "en": "Golden puzzles are part of Catgrid Premium.",
+   "tr": "Altın bulmacalar Catgrid Premium'a dahildir."
+  },
+  "Graduation": {
+   "en": "Graduation",
+   "tr": "Mezuniyet"
+  },
+  "Grooming": {
+   "en": "Grooming",
+   "tr": "Bakım"
+  },
+  "Haptics": {
+   "en": "Haptics",
+   "tr": "Titreşim"
+  },
+  "Language": {
+   "en": "Language",
+   "tr": "Dil"
+  },
+  "Legendary": {
+   "en": "Legendary",
+   "tr": "Efsanevi"
+  },
+  "Levels": {
+   "en": "Levels",
+   "tr": "Bölümler"
+  },
+  "Lifespan": {
+   "en": "Lifespan",
+   "tr": "Ömür"
+  },
+  "Light": {
+   "en": "Light",
+   "tr": "Açık"
+  },
+  "Locked": {
+   "en": "Locked",
+   "tr": "Kilitli"
+  },
+  "Manage Subscription": {
+   "en": "Manage Subscription",
+   "tr": "Aboneliği Yönet"
+  },
+  "Mark with X": {
+   "en": "Mark with X",
+   "tr": "X ile işaretle"
+  },
+  "Match System": {
+   "en": "Match System",
+   "tr": "Sistemle Aynı"
+  },
+  "Matcha": {
+   "en": "Matcha",
+   "tr": "Matcha"
+  },
+  "Midnight Blue": {
+   "en": "Midnight Blue",
+   "tr": "Gece Mavisi"
+  },
+  "Mind your paws": {
+   "en": "Mind your paws",
+   "tr": "Patilerine dikkat"
+  },
+  "Monthly plan": {
+   "en": "Monthly plan",
+   "tr": "Aylık plan"
+  },
+  "Music": {
+   "en": "Music",
+   "tr": "Müzik"
+  },
+  "New best time!": {
+   "en": "New best time!",
+   "tr": "Yeni rekor süre!"
+  },
+  "New breeds are on their way.": {
+   "en": "New breeds are on their way.",
+   "tr": "Yeni türler yolda."
+  },
+  "New card unlocked!": {
+   "en": "New card unlocked!",
+   "tr": "Yeni kart kazandın!"
+  },
+  "Next Puzzle": {
+   "en": "Next Puzzle",
+   "tr": "Sonraki Bulmaca"
+  },
+  "No ads between puzzles": {
+   "en": "No ads between puzzles",
+   "tr": "Bulmacalar arasında reklam yok"
+  },
+  "No ads · Golden puzzles · Golden Cards": {
+   "en": "No ads · Golden puzzles · Golden Cards",
+   "tr": "Reklamsız · Altın bulmacalar · Altın Kartlar"
+  },
+  "No ads, 9 golden puzzles for every breed and Golden Cards. Monthly or yearly subscription.": {
+   "en": "No ads, 9 golden puzzles for every breed and Golden Cards. Monthly or yearly subscription.",
+   "tr": "Reklamsız oyun, her tür için 9 altın bulmaca ve Altın Kartlar. Aylık ya da yıllık abonelik."
+  },
+  "Numbers tell you how many squares in a line are filled. A 3 means three filled squares side by side. Tap a square to fill it.": {
+   "en": "Numbers tell you how many squares in a line are filled. A 3 means three filled squares side by side. Tap a square to fill it.",
+   "tr": "Sayılar bir satırda kaç karenin dolu olduğunu söyler. 3, yan yana üç dolu kare demektir. Doldurmak için bir kareye dokun."
+  },
+  "Origin": {
+   "en": "Origin",
+   "tr": "Köken"
+  },
+  "Out of paws": {
+   "en": "Out of paws",
+   "tr": "Patilerin bitti"
+  },
+  "Pastel": {
+   "en": "Pastel",
+   "tr": "Pastel"
+  },
+  "Perfect": {
+   "en": "Perfect",
+   "tr": "Hatasız"
+  },
+  "Playfulness": {
+   "en": "Playfulness",
+   "tr": "Oyunculuk"
+  },
+  "Premium": {
+   "en": "Premium",
+   "tr": "Premium"
+  },
+  "Premium puzzle": {
+   "en": "Premium puzzle",
+   "tr": "Premium bulmaca"
+  },
+  "Privacy Policy": {
+   "en": "Privacy Policy",
+   "tr": "Gizlilik Politikası"
+  },
+  "Progress": {
+   "en": "Progress",
+   "tr": "İlerleme"
+  },
+  "Psst! Look at column %lld.": {
+   "en": "Psst! Look at column %lld.",
+   "tr": "Pıst! %lld. sütuna bak."
+  },
+  "Psst! Look at row %lld.": {
+   "en": "Psst! Look at row %lld.",
+   "tr": "Pıst! %lld. satıra bak."
+  },
+  "Purrfect!": {
+   "en": "Purrfect!",
+   "tr": "Mırr-ükemmel!"
+  },
+  "Purr… I can't spot a sure move. Check your marks!": {
+   "en": "Purr… I can't spot a sure move. Check your marks!",
+   "tr": "Mırr… kesin bir hamle göremiyorum. İşaretlerini kontrol et!"
+  },
+  "Puzzle %lld": {
+   "en": "Puzzle %lld",
+   "tr": "Bulmaca %lld"
+  },
+  "Puzzle %lld · %lld×%lld": {
+   "en": "Puzzle %lld · %lld×%lld",
+   "tr": "Bulmaca %lld · %lld×%lld"
+  },
+  "Puzzle %lld, in progress": {
+   "en": "Puzzle %lld, in progress",
+   "tr": "Bulmaca %lld, devam ediyor"
+  },
+  "Puzzle %lld, locked": {
+   "en": "Puzzle %lld, locked",
+   "tr": "Bulmaca %lld, kilitli"
+  },
+  "Puzzle %lld, solved: %@": {
+   "en": "Puzzle %lld, solved: %@",
+   "tr": "Bulmaca %lld, çözüldü: %@"
+  },
+  "Puzzle board": {
+   "en": "Puzzle board",
+   "tr": "Bulmaca tahtası"
+  },
+  "Puzzle not found": {
+   "en": "Puzzle not found",
+   "tr": "Bulmaca bulunamadı"
+  },
+  "Rare": {
+   "en": "Rare",
+   "tr": "Nadir"
+  },
+  "Rate Catgrid": {
+   "en": "Rate Catgrid",
+   "tr": "Catgrid'i Değerlendir"
+  },
+  "Reset all progress?": {
+   "en": "Reset all progress?",
+   "tr": "Tüm ilerleme sıfırlansın mı?"
+  },
+  "Reset Progress": {
+   "en": "Reset Progress",
+   "tr": "İlerlemeyi Sıfırla"
+  },
+  "Restore Purchases": {
+   "en": "Restore Purchases",
+   "tr": "Satın Alımları Geri Yükle"
+  },
+  "Resume": {
+   "en": "Resume",
+   "tr": "Kaldığın Yerden Devam Et"
+  },
+  "Rows meet columns": {
+   "en": "Rows meet columns",
+   "tr": "Satırlar ve sütunlar"
+  },
+  "See All": {
+   "en": "See All",
+   "tr": "Tümü"
+  },
+  "Settings": {
+   "en": "Settings",
+   "tr": "Ayarlar"
+  },
+  "Several blocks": {
+   "en": "Several blocks",
+   "tr": "Birden fazla blok"
+  },
+  "Solve all golden puzzles to win this breed's Golden Card.": {
+   "en": "Solve all golden puzzles to win this breed's Golden Card.",
+   "tr": "Bu türün Altın Kartını kazanmak için tüm altın bulmacaları çöz."
+  },
+  "Solved": {
+   "en": "Solved",
+   "tr": "Çözülen"
+  },
+  "Sound": {
+   "en": "Sound",
+   "tr": "Ses"
+  },
+  "Sound Effects": {
+   "en": "Sound Effects",
+   "tr": "Ses Efektleri"
+  },
+  "Start Playing": {
+   "en": "Start Playing",
+   "tr": "Oynamaya Başla"
+  },
+  "Statistics": {
+   "en": "Statistics",
+   "tr": "İstatistikler"
+  },
+  "Support": {
+   "en": "Support",
+   "tr": "Destek"
+  },
+  "Support new cat breeds and puzzles": {
+   "en": "Support new cat breeds and puzzles",
+   "tr": "Yeni kedi türlerine ve bulmacalara destek ol"
+  },
+  "Switch to the X tool to mark squares you know are empty. It keeps your thinking tidy.": {
+   "en": "Switch to the X tool to mark squares you know are empty. It keeps your thinking tidy.",
+   "tr": "Boş olduğunu bildiğin kareleri X aracıyla işaretle. Böylece kafan karışmaz."
+  },
+  "Tap for a hint": {
+   "en": "Tap for a hint",
+   "tr": "İpucu için dokun"
+  },
+  "Tap the card to flip it": {
+   "en": "Tap the card to flip it",
+   "tr": "Kartı çevirmek için üstüne dokun"
+  },
+  "Tap to fill": {
+   "en": "Tap to fill",
+   "tr": "Doldurmak için dokun"
+  },
+  "Tap to flip the card": {
+   "en": "Tap to flip the card",
+   "tr": "Kartı çevirmek için dokun"
+  },
+  "Terms of Use": {
+   "en": "Terms of Use",
+   "tr": "Kullanım Koşulları"
+  },
+  "The game follows your device language. You can choose a different language just for this app in Settings.": {
+   "en": "The game follows your device language. You can choose a different language just for this app in Settings.",
+   "tr": "Oyun cihazının dilini kullanır. Ayarlar'dan yalnızca bu uygulama için farklı bir dil seçebilirsin."
+  },
+  "Time %@": {
+   "en": "Time %@",
+   "tr": "Süre %@"
+  },
+  "Time's up": {
+   "en": "Time's up",
+   "tr": "Süre doldu"
+  },
+  "Total Time": {
+   "en": "Total Time",
+   "tr": "Toplam Süre"
+  },
+  "Try Again": {
+   "en": "Try Again",
+   "tr": "Tekrar Dene"
+  },
+  "Undo": {
+   "en": "Undo",
+   "tr": "Geri Al"
+  },
+  "Use the edges": {
+   "en": "Use the edges",
+   "tr": "Kenarları kullan"
+  },
+  "Version %@": {
+   "en": "Version %@",
+   "tr": "Sürüm %@"
+  },
+  "Watch an ad: +1 paw": {
+   "en": "Watch an ad: +1 paw",
+   "tr": "Reklam izle: +1 pati"
+  },
+  "Watch an ad: +60 seconds": {
+   "en": "Watch an ad: +60 seconds",
+   "tr": "Reklam izle: +60 saniye"
+  },
+  "When a clue is as long as the line, the whole line is filled. Start there!": {
+   "en": "When a clue is as long as the line, the whole line is filled. Start there!",
+   "tr": "İpucu satır kadar uzunsa satırın tamamı doludur. Oradan başla!"
+  },
+  "Yearly plan": {
+   "en": "Yearly plan",
+   "tr": "Yıllık plan"
+  },
+  "You know all the rules. Solve this one on your own!": {
+   "en": "You know all the rules. Solve this one on your own!",
+   "tr": "Tüm kuralları biliyorsun. Bunu kendi başına çöz!"
+  },
+  "You solved every %@ puzzle.": {
+   "en": "You solved every %@ puzzle.",
+   "tr": "%@ bulmacalarının hepsini çözdün."
+  },
+  "You solved every golden %@ puzzle.": {
+   "en": "You solved every golden %@ puzzle.",
+   "tr": "Tüm altın %@ bulmacalarını çözdün."
+  },
+  "You solved every puzzle!": {
+   "en": "You solved every puzzle!",
+   "tr": "Tüm bulmacaları çözdün!"
+  },
+  "You won the Golden Card of this breed!": {
+   "en": "You won the Golden Card of this breed!",
+   "tr": "Bu türün Altın Kartını kazandın!"
+  },
+  "You're Premium. Thank you for supporting Catgrid!": {
+   "en": "You're Premium. Thank you for supporting Catgrid!",
+   "tr": "Premium üyesin. Catgrid'e destek olduğun için teşekkürler!"
+  },
+  "You've collected %lld cat breeds. There are still cats you haven't met!": {
+   "plural": true,
+   "en": {
+    "one": "You've collected %lld cat breed. There are still cats you haven't met!",
+    "other": "You've collected %lld cat breeds. There are still cats you haven't met!"
+   },
+   "tr": "%lld kedi türü topladın. Hâlâ tanışmadığın kediler var!"
+  },
+  "You've met every cat. New breeds are on their way!": {
+   "en": "You've met every cat. New breeds are on their way!",
+   "tr": "Tüm kedilerle tanıştın. Yeni türler yolda!"
+  }
+ },
+ "infoplist": {
+  "CFBundleDisplayName": {
+   "en": "Catgrid",
+   "tr": "Catgrid"
+  },
+  "NSUserTrackingUsageDescription": {
+   "en": "Your data will be used to show you more relevant ads. This keeps Catgrid free.",
+   "tr": "Verilerin sana daha ilgili reklamlar göstermek için kullanılır. Bu sayede Catgrid ücretsiz kalır."
+  }
+ },
+ "content": {
+  "Kitten School": {
+   "tr": "Yavru Okulu",
+   "kind": "title"
+  },
+  "Learn the rules": {
+   "tr": "Kuralları öğren",
+   "kind": "subtitle"
+  },
+  "Siamese": {
+   "tr": "Siyam",
+   "kind": "title"
+  },
+  "Blue eyes and dark points": {
+   "tr": "Mavi gözler ve koyu uçlar",
+   "kind": "subtitle"
+  },
+  "Thailand": {
+   "tr": "Tayland",
+   "kind": "origin"
+  },
+  "Short, colorpoint": {
+   "tr": "Kısa, uçları koyu",
+   "kind": "coat"
+  },
+  "One of the most talkative breeds: Siamese love to 'chat' with their people.": {
+   "tr": "En konuşkan türlerden biri: insanlarıyla 'sohbet etmeyi' çok sever.",
+   "kind": "fact"
+  },
+  "One of the oldest recognized breeds, the Siamese is described in Thai manuscripts centuries old. Its dark 'points' come from a temperature-sensitive gene: cooler parts of the body grow darker fur. Siamese are social, vocal and dislike being left alone for long.": {
+   "tr": "Tanınan en eski türlerden biri olan Siyam, yüzyıllık Tay el yazmalarında anlatılır. Koyu uçları sıcaklığa duyarlı bir genden gelir: vücudun serin bölgelerinde tüy koyulaşır. Sosyal ve sesli kedilerdir, uzun süre yalnız kalmayı sevmezler.",
+   "kind": "about"
+  },
+  "British Shorthair": {
+   "tr": "British Shorthair",
+   "kind": "title"
+  },
+  "Round, plush and calm": {
+   "tr": "Yuvarlak, peluş ve sakin",
+   "kind": "subtitle"
+  },
+  "United Kingdom": {
+   "tr": "Birleşik Krallık",
+   "kind": "origin"
+  },
+  "Short, dense, plush": {
+   "tr": "Kısa, yoğun, peluş",
+   "kind": "coat"
+  },
+  "Its round, smiling face is often said to have inspired the Cheshire Cat.": {
+   "tr": "Yuvarlak, gülümseyen yüzünün Cheshire Kedisi'ne ilham verdiği söylenir.",
+   "kind": "fact"
+  },
+  "Descended from the street cats of Britain, the breed was refined in the late 1800s and became famous for its blue-grey coat. It is sturdy, round-faced and calm, happy to be near its people without demanding constant attention.": {
+   "tr": "İngiltere'nin sokak kedilerinden gelen tür, 1800'lerin sonunda geliştirildi ve mavi-gri tüyüyle ünlendi. Sağlam yapılı, yuvarlak yüzlü ve sakindir; sürekli ilgi istemeden insanlarının yakınında olmayı sever.",
+   "kind": "about"
+  },
+  "Scottish Fold": {
+   "tr": "Scottish Fold",
+   "kind": "title"
+  },
+  "Folded ears, owl-like face": {
+   "tr": "Katlanmış kulaklar, baykuş yüzü",
+   "kind": "subtitle"
+  },
+  "Scotland": {
+   "tr": "İskoçya",
+   "kind": "origin"
+  },
+  "Short or long": {
+   "tr": "Kısa ya da uzun",
+   "kind": "coat"
+  },
+  "Every Scottish Fold traces back to Susie, a farm cat found in Scotland in 1961.": {
+   "tr": "Tüm Scottish Fold'lar 1961'de İskoçya'da bir çiftlikte bulunan Susie adlı kediden gelir.",
+   "kind": "fact"
+  },
+  "The folded ears come from a natural mutation that affects cartilage. Kittens are born with straight ears that may fold within a few weeks. Because the same gene can cause joint problems, responsible breeders never pair two folded-ear cats.": {
+   "tr": "Katlanmış kulaklar kıkırdağı etkileyen doğal bir mutasyondan gelir. Yavrular düz kulakla doğar, kulaklar birkaç haftada katlanabilir. Aynı gen eklem sorunlarına yol açabildiği için sorumlu üreticiler iki katlı kulaklı kediyi asla eşleştirmez.",
+   "kind": "about"
+  },
+  "Persian": {
+   "tr": "İran Kedisi",
+   "kind": "title"
+  },
+  "Long coat and flat face": {
+   "tr": "Uzun tüyler ve basık yüz",
+   "kind": "subtitle"
+  },
+  "Iran (Persia)": {
+   "tr": "İran",
+   "kind": "origin"
+  },
+  "Long and silky": {
+   "tr": "Uzun ve ipeksi",
+   "kind": "coat"
+  },
+  "Persians have been prized in Europe for their long coats since the 1600s.": {
+   "tr": "İran kedileri uzun tüyleri nedeniyle 1600'lerden beri Avrupa'da çok değerlidir.",
+   "kind": "fact"
+  },
+  "Long-haired cats reached Europe from Persia and neighbouring regions in the 1600s. Today's Persian has a round head, short nose and a coat that needs daily brushing. It prefers a quiet home and is known as one of the most relaxed breeds.": {
+   "tr": "Uzun tüylü kediler 1600'lerde İran ve çevresinden Avrupa'ya ulaştı. Bugünkü İran kedisinin yuvarlak başı, kısa burnu ve her gün taranması gereken tüyleri vardır. Sakin evleri sever ve en rahat türlerden biri olarak bilinir.",
+   "kind": "about"
+  },
+  "Ragdoll": {
+   "tr": "Ragdoll",
+   "kind": "title"
+  },
+  "Goes limp when held": {
+   "tr": "Kucakta gevşeyip kalır",
+   "kind": "subtitle"
+  },
+  "United States": {
+   "tr": "ABD",
+   "kind": "origin"
+  },
+  "Semi-long, silky": {
+   "tr": "Yarı uzun, ipeksi",
+   "kind": "coat"
+  },
+  "Named for the way it goes limp like a rag doll when picked up.": {
+   "tr": "Adını, kucağa alınınca bez bebek gibi gevşemesinden alır.",
+   "kind": "fact"
+  },
+  "Developed in California in the 1960s, the Ragdoll is a large, blue-eyed colorpoint cat. It often follows people from room to room and tends to relax completely when held, which gave the breed its name.": {
+   "tr": "1960'larda Kaliforniya'da geliştirilen Ragdoll, iri ve mavi gözlü, uçları koyu bir kedidir. Genellikle insanları odadan odaya takip eder ve kucağa alınınca tamamen gevşer; adı da buradan gelir.",
+   "kind": "about"
+  },
+  "Russian Blue": {
+   "tr": "Rus Mavisi",
+   "kind": "title"
+  },
+  "Silver-blue coat, green eyes": {
+   "tr": "Gümüş mavi tüy, yeşil gözler",
+   "kind": "subtitle"
+  },
+  "Russia": {
+   "tr": "Rusya",
+   "kind": "origin"
+  },
+  "Short, dense double coat": {
+   "tr": "Kısa, yoğun çift kat",
+   "kind": "coat"
+  },
+  "Its silver-tipped coat is so dense it stands out from the body.": {
+   "tr": "Gümüş uçlu tüyü o kadar yoğundur ki gövdeden kabarık durur.",
+   "kind": "fact"
+  },
+  "Said to come from the port of Arkhangelsk, the Russian Blue was shown in England in the 1870s. Its plush double coat looks silver because each hair is tipped with light grey. It is gentle and somewhat shy with strangers.": {
+   "tr": "Arhangelsk limanından geldiği söylenen Rus Mavisi, 1870'lerde İngiltere'de sergilendi. Her tüyün ucu açık gri olduğundan yoğun çift kat tüyü gümüş gibi görünür. Nazik bir kedidir, yabancılara karşı biraz çekingendir.",
+   "kind": "about"
+  },
+  "Abyssinian": {
+   "tr": "Habeş Kedisi",
+   "kind": "title"
+  },
+  "Ticked coat and big ears": {
+   "tr": "Kırçıllı tüy ve iri kulaklar",
+   "kind": "subtitle"
+  },
+  "Named after Abyssinia (Ethiopia)": {
+   "tr": "Adını Habeşistan'dan (Etiyopya) alır",
+   "kind": "origin"
+  },
+  "Short, ticked": {
+   "tr": "Kısa, kırçıllı",
+   "kind": "coat"
+  },
+  "It looks like the cats of ancient Egyptian art, but genetics point to the Indian Ocean coast.": {
+   "tr": "Antik Mısır sanatındaki kedilere benzer, ama genetik çalışmalar Hint Okyanusu kıyılarını işaret eder.",
+   "kind": "fact"
+  },
+  "The Abyssinian's 'ticked' coat has bands of color on every hair, giving it a warm, shimmering look. Its true origin is debated, but it became established in Britain in the late 1800s. Abyssinians are athletic, curious and love to climb.": {
+   "tr": "Habeş kedisinin kırçıllı tüyünde her telde renk bantları vardır; bu ona sıcak, parıltılı bir görünüm verir. Gerçek kökeni tartışmalıdır ama 1800'lerin sonunda İngiltere'de yerleşti. Atletik, meraklı ve tırmanmayı seven kedilerdir.",
+   "kind": "about"
+  },
+  "Birman": {
+   "tr": "Birman",
+   "kind": "title"
+  },
+  "Sacred cat with white gloves": {
+   "tr": "Beyaz eldivenli kutsal kedi",
+   "kind": "subtitle"
+  },
+  "Myanmar (Burma)": {
+   "tr": "Myanmar (Burma)",
+   "kind": "origin"
+  },
+  "Semi-long, white gloves": {
+   "tr": "Yarı uzun, beyaz eldivenli",
+   "kind": "coat"
+  },
+  "Legend says a temple cat's paws turned white where they touched its dying priest.": {
+   "tr": "Efsaneye göre bir tapınak kedisinin, ölmekte olan rahibine dokunan patileri beyaza dönmüştür.",
+   "kind": "fact"
+  },
+  "Known as the 'Sacred Cat of Burma', the Birman has a silky colorpoint coat, deep blue eyes and pure white paws. The breed was developed in France in the early 1900s. Birmans are gentle, quiet companions.": {
+   "tr": "'Burma'nın Kutsal Kedisi' olarak bilinen Birman'ın ipeksi tüyü, koyu mavi gözleri ve bembeyaz patileri vardır. Tür 1900'lerin başında Fransa'da geliştirildi. Nazik ve sessiz yol arkadaşlarıdır.",
+   "kind": "about"
+  },
+  "Bengal": {
+   "tr": "Bengal",
+   "kind": "title"
+  },
+  "Wild rosettes, loves to climb": {
+   "tr": "Vahşi benekler, tırmanmayı sever",
+   "kind": "subtitle"
+  },
+  "Short, spotted or marbled": {
+   "tr": "Kısa, benekli ya da mermer desenli",
+   "kind": "coat"
+  },
+  "Bred from domestic cats and the wild Asian leopard cat; many Bengals love water.": {
+   "tr": "Evcil kedilerle vahşi Asya leopar kedisinden geliştirildi; çoğu suyu çok sever.",
+   "kind": "fact"
+  },
+  "The Bengal was created by crossing domestic cats with the Asian leopard cat, and was recognized as a breed in the 1980s. Its spotted or marbled coat often has a glittering sheen. Bengals are very active and need plenty of play.": {
+   "tr": "Bengal, evcil kedilerle Asya leopar kedisinin melezlenmesiyle oluşturuldu ve 1980'lerde tür olarak tanındı. Benekli ya da mermer desenli tüyü çoğu zaman parıldar. Çok hareketlidirler ve bol oyun isterler.",
+   "kind": "about"
+  },
+  "Sphynx": {
+   "tr": "Sfenks",
+   "kind": "title"
+  },
+  "Hairless and always warm": {
+   "tr": "Tüysüz ve hep sıcacık",
+   "kind": "subtitle"
+  },
+  "Canada": {
+   "tr": "Kanada",
+   "kind": "origin"
+  },
+  "Hairless (fine peach fuzz)": {
+   "tr": "Tüysüz (ince şeftali tüyü)",
+   "kind": "coat"
+  },
+  "Not truly bald: a fine peach fuzz covers its warm skin, and it needs regular baths.": {
+   "tr": "Aslında tamamen tüysüz değildir; sıcak teni ince bir tüyle kaplıdır ve düzenli banyo ister.",
+   "kind": "fact"
+  },
+  "The modern Sphynx began in Canada in 1966 with a hairless kitten born to a domestic cat. Without a full coat it loses heat quickly, so it seeks warm laps and sunny spots. Its skin needs regular washing to remove natural oils.": {
+   "tr": "Modern Sfenks, 1966'da Kanada'da evcil bir kediden doğan tüysüz bir yavruyla başladı. Tüyü olmadığı için çabuk üşür; sıcak kucakları ve güneşli köşeleri arar. Derisindeki doğal yağlar nedeniyle düzenli yıkanması gerekir.",
+   "kind": "about"
+  },
+  "Turkish Angora": {
+   "tr": "Ankara Kedisi",
+   "kind": "title"
+  },
+  "Snow white, often odd-eyed": {
+   "tr": "Kar beyazı, çoğu zaman ela-mavi göz",
+   "kind": "subtitle"
+  },
+  "Türkiye (Ankara)": {
+   "tr": "Türkiye (Ankara)",
+   "kind": "origin"
+  },
+  "One of the oldest natural breeds, treasured in Ankara for centuries; odd-colored eyes are common.": {
+   "tr": "En eski doğal türlerden biri, Ankara'da yüzyıllardır el üstünde tutulur; farklı renkte gözler sık görülür.",
+   "kind": "fact"
+  },
+  "A natural breed from central Anatolia, the Turkish Angora has a silky, single-layer coat and a long, plumed tail. White is the classic color, and odd-colored eyes are common. Angoras are lively, intelligent and very affectionate.": {
+   "tr": "Orta Anadolu'nun doğal türü olan Ankara kedisinin ipeksi, tek katlı tüyü ve uzun, püsküllü kuyruğu vardır. Klasik rengi beyazdır; farklı renkte gözler sık görülür. Canlı, zeki ve çok sevecen kedilerdir.",
+   "kind": "about"
+  },
+  "Norwegian Forest": {
+   "tr": "Norveç Orman Kedisi",
+   "kind": "title"
+  },
+  "Thick coat for snowy woods": {
+   "tr": "Karlı ormanlar için kalın tüy",
+   "kind": "subtitle"
+  },
+  "Norway": {
+   "tr": "Norveç",
+   "kind": "origin"
+  },
+  "Long, water-resistant double coat": {
+   "tr": "Uzun, su geçirmez çift kat",
+   "kind": "coat"
+  },
+  "Norse legends tell of forest cats pulling the goddess Freya's chariot.": {
+   "tr": "İskandinav efsanelerinde tanrıça Freya'nın arabasını orman kedileri çeker.",
+   "kind": "fact"
+  },
+  "Adapted to cold Scandinavian forests, this large cat has a water-resistant double coat, a thick ruff and tufted ears. It is a skilled climber that can descend trees head-first. Despite its wild look, it is friendly and calm.": {
+   "tr": "Soğuk İskandinav ormanlarına uyum sağlamış bu iri kedinin su geçirmez çift kat tüyü, gür yelesi ve püsküllü kulakları vardır. Ağaçlardan baş aşağı inebilen usta bir tırmanıcıdır. Vahşi görünüşüne rağmen arkadaş canlısı ve sakindir.",
+   "kind": "about"
+  },
+  "Turkish Van": {
+   "tr": "Van Kedisi",
+   "kind": "title"
+  },
+  "The cat that loves to swim": {
+   "tr": "Yüzmeyi seven kedi",
+   "kind": "subtitle"
+  },
+  "Türkiye (Lake Van)": {
+   "tr": "Türkiye (Van Gölü)",
+   "kind": "origin"
+  },
+  "Semi-long, water-resistant": {
+   "tr": "Yarı uzun, su geçirmez",
+   "kind": "coat"
+  },
+  "Nicknamed 'the swimming cat' for its love of water.": {
+   "tr": "Suyu sevmesiyle 'yüzen kedi' olarak anılır.",
+   "kind": "fact"
+  },
+  "The breed developed around Lake Van in eastern Türkiye. Its classic pattern is a white body with colored markings on the head and tail. Its semi-long coat resists water, and many Vans enjoy playing in it. Note: the all-white odd-eyed 'Van kedisi' of Türkiye is a related local cat.": {
+   "tr": "Tür, Doğu Anadolu'da Van Gölü çevresinde gelişti. Klasik deseni beyaz gövde ve başta, kuyrukta renkli lekelerdir. Yarı uzun tüyü su geçirmez, çoğu Van kedisi suyla oynamayı sever. Not: Türkiye'deki bembeyaz, farklı renkte gözlü Van kedisi akraba bir yerel kedidir.",
+   "kind": "about"
+  },
+  "Maine Coon": {
+   "tr": "Maine Coon",
+   "kind": "title"
+  },
+  "Gentle giant with lynx tufts": {
+   "tr": "Vaşak püsküllü nazik dev",
+   "kind": "subtitle"
+  },
+  "United States (Maine)": {
+   "tr": "ABD (Maine)",
+   "kind": "origin"
+  },
+  "Long, shaggy": {
+   "tr": "Uzun, gür",
+   "kind": "coat"
+  },
+  "One of the largest domestic breeds; males can weigh more than 8 kg.": {
+   "tr": "En iri evcil kedi türlerinden; erkekleri 8 kilonun üzerine çıkabilir.",
+   "kind": "fact"
+  },
+  "One of North America's oldest natural breeds, the Maine Coon was a working farm and ship cat. It has a shaggy, water-resistant coat, large paws and a long, bushy tail. It is gentle and playful, often called a 'gentle giant'.": {
+   "tr": "Kuzey Amerika'nın en eski doğal türlerinden Maine Coon, çiftliklerde ve gemilerde çalışan bir kediydi. Gür ve su geçirmez tüyü, iri patileri ve uzun, kabarık kuyruğu vardır. Nazik ve oyunbazdır; çoğu zaman 'nazik dev' diye anılır.",
+   "kind": "about"
+  },
+  "Exotic Shorthair": {
+   "tr": "Egzotik Kısa Tüylü",
+   "kind": "title"
+  },
+  "A teddy bear in cat form": {
+   "tr": "Kedi kılığında oyuncak ayı",
+   "kind": "subtitle"
+  },
+  "Short, plush": {
+   "tr": "Kısa, peluş",
+   "kind": "coat"
+  },
+  "Often called 'a Persian in pajamas': the Persian look with an easy-care coat.": {
+   "tr": "'Pijamalı İran kedisi' diye anılır: İran kedisi görünümü, bakımı kolay tüy.",
+   "kind": "fact"
+  },
+  "Created in the 1950s–60s by crossing Persians with shorthaired cats, the Exotic keeps the Persian's sweet, flat face and calm nature. Its dense, plush coat is much easier to care for than a Persian's.": {
+   "tr": "1950-60'larda İran kedilerinin kısa tüylü kedilerle melezlenmesiyle oluşturulan Egzotik, İran kedisinin tatlı, basık yüzünü ve sakin doğasını korur. Yoğun, peluş tüyünün bakımı İran kedisinden çok daha kolaydır.",
+   "kind": "about"
+  },
+  "Burmese": {
+   "tr": "Burma Kedisi",
+   "kind": "title"
+  },
+  "Satin coat, golden eyes": {
+   "tr": "Saten tüy, altın gözler",
+   "kind": "subtitle"
+  },
+  "Short, satin": {
+   "tr": "Kısa, saten",
+   "kind": "coat"
+  },
+  "Modern Burmese descend from Wong Mau, a cat brought to the United States in 1930.": {
+   "tr": "Modern Burmalar, 1930'da ABD'ye getirilen Wong Mau adlı kediden gelir.",
+   "kind": "fact"
+  },
+  "The breed traces back to a single brown cat, Wong Mau, brought from Burma to the United States in 1930. Burmese are compact, heavier than they look, and have a glossy satin coat. They are famously people-oriented.": {
+   "tr": "Tür, 1930'da Burma'dan ABD'ye getirilen kahverengi bir kedi olan Wong Mau'ya dayanır. Burmalar kompakt yapılıdır, göründüklerinden ağırdır ve parlak saten bir tüyleri vardır. İnsanlara son derece bağlı olmalarıyla ünlüdürler.",
+   "kind": "about"
+  },
+  "Chartreux": {
+   "tr": "Chartreux",
+   "kind": "title"
+  },
+  "Blue-grey with a gentle smile": {
+   "tr": "Gülümseyen mavi-gri kedi",
+   "kind": "subtitle"
+  },
+  "France": {
+   "tr": "Fransa",
+   "kind": "origin"
+  },
+  "Short, woolly": {
+   "tr": "Kısa, yünümsü",
+   "kind": "coat"
+  },
+  "A quiet French breed known for its 'smiling' face and copper eyes.": {
+   "tr": "'Gülümseyen' yüzü ve bakır rengi gözleriyle bilinen sessiz bir Fransız türü.",
+   "kind": "fact"
+  },
+  "A historic French breed with a blue-grey, water-repellent woolly coat and copper to orange eyes. Its rounded head and slightly narrow muzzle give it a 'smiling' expression. Chartreux are quiet, observant and loyal.": {
+   "tr": "Mavi-gri, su itici yünümsü tüyü ve bakırdan turuncuya değişen gözleri olan tarihi bir Fransız türü. Yuvarlak başı ve hafif dar burnu ona 'gülümseyen' bir ifade verir. Sessiz, gözlemci ve sadık kedilerdir.",
+   "kind": "about"
+  },
+  "Egyptian Mau": {
+   "tr": "Mısır Mau",
+   "kind": "title"
+  },
+  "Natural spots, a born sprinter": {
+   "tr": "Doğal benekler, doğuştan koşucu",
+   "kind": "subtitle"
+  },
+  "Egypt": {
+   "tr": "Mısır",
+   "kind": "origin"
+  },
+  "Short, naturally spotted": {
+   "tr": "Kısa, doğal benekli",
+   "kind": "coat"
+  },
+  "One of the fastest house cats, said to sprint at around 48 km/h.": {
+   "tr": "En hızlı ev kedilerinden; saatte 48 km civarında koşabildiği söylenir.",
+   "kind": "fact"
+  },
+  "One of the few naturally spotted domestic breeds, the Egyptian Mau has gooseberry-green eyes and a loose flap of skin that lets it stretch its stride. The modern breed was developed from cats brought from Egypt in the 1950s.": {
+   "tr": "Doğal benekli az sayıdaki evcil türden biri olan Mısır Mau'nun bektaşi üzümü yeşili gözleri ve adımını uzatmasını sağlayan gevşek bir deri kıvrımı vardır. Modern tür, 1950'lerde Mısır'dan getirilen kedilerden geliştirildi.",
+   "kind": "about"
+  },
+  "Manx": {
+   "tr": "Manx",
+   "kind": "title"
+  },
+  "The tailless cat of the Isle of Man": {
+   "tr": "Man Adası'nın kuyruksuz kedisi",
+   "kind": "subtitle"
+  },
+  "Isle of Man": {
+   "tr": "Man Adası",
+   "kind": "origin"
+  },
+  "Famous for being born without a tail; it runs with a rabbit-like hop.": {
+   "tr": "Kuyruksuz doğmasıyla ünlüdür; tavşan gibi seken bir koşusu vardır.",
+   "kind": "fact"
+  },
+  "Native to the Isle of Man, the Manx carries a natural gene for a short or missing tail. With longer hind legs and a rounded body, it moves with a rabbit-like hop. Manx cats are known as skilled hunters and loyal companions.": {
+   "tr": "Man Adası'na özgü Manx, kısa ya da hiç olmayan kuyruk için doğal bir gen taşır. Uzun arka bacakları ve yuvarlak gövdesiyle tavşan gibi seker. Usta avcılar ve sadık dostlar olarak bilinirler.",
+   "kind": "about"
+  },
+  "Bombay": {
+   "tr": "Bombay",
+   "kind": "title"
+  },
+  "A pocket-sized panther": {
+   "tr": "Cep boyu bir panter",
+   "kind": "subtitle"
+  },
+  "Short, glossy black": {
+   "tr": "Kısa, parlak siyah",
+   "kind": "coat"
+  },
+  "Bred to look like a miniature black panther, with copper eyes.": {
+   "tr": "Minyatür bir kara panter gibi görünmesi için geliştirildi; gözleri bakır rengidir.",
+   "kind": "fact"
+  },
+  "Developed in the United States in the 1950s from Burmese and black American Shorthairs, the Bombay has a jet-black, glossy coat and copper eyes. It loves warmth and company and is often described as dog-like.": {
+   "tr": "1950'lerde ABD'de Burma ve siyah Amerikan Kısa Tüylü kedilerden geliştirilen Bombay'ın simsiyah, parlak tüyü ve bakır rengi gözleri vardır. Sıcaklığı ve birlikteliği sever; çoğu zaman köpek gibi diye anlatılır.",
+   "kind": "about"
+  },
+  "Siberian": {
+   "tr": "Sibirya Kedisi",
+   "kind": "title"
+  },
+  "Triple coat for Siberian winters": {
+   "tr": "Sibirya kışına üç kat tüy",
+   "kind": "subtitle"
+  },
+  "Long, triple coat": {
+   "tr": "Uzun, üç katlı",
+   "kind": "coat"
+  },
+  "Russia's national cat, with a thick triple coat for Siberian winters.": {
+   "tr": "Rusya'nın ulusal kedisi; Sibirya kışları için kalın, üç katlı tüyü vardır.",
+   "kind": "fact"
+  },
+  "A natural forest cat of Russia, the Siberian has a dense triple coat suited to harsh winters. It is strong and agile, and matures slowly over several years. Siberians are playful, affectionate and often enjoy water.": {
+   "tr": "Rusya'nın doğal orman kedisi olan Sibirya kedisinin sert kışlara uygun yoğun, üç katlı tüyü vardır. Güçlü ve çeviktir, birkaç yılda yavaşça olgunlaşır. Oyunbaz, sevecen kedilerdir ve çoğu suyu sever.",
+   "kind": "about"
+  },
+  "Devon Rex": {
+   "tr": "Devon Rex",
+   "kind": "title"
+  },
+  "Pixie ears and wavy fur": {
+   "tr": "Peri kulakları ve dalgalı tüy",
+   "kind": "subtitle"
+  },
+  "England (Devon)": {
+   "tr": "İngiltere (Devon)",
+   "kind": "origin"
+  },
+  "Short, wavy": {
+   "tr": "Kısa, dalgalı",
+   "kind": "coat"
+  },
+  "Huge ears and wavy fur earn it the nickname 'pixie cat'.": {
+   "tr": "Kocaman kulakları ve dalgalı tüyüyle 'peri kedisi' diye anılır.",
+   "kind": "fact"
+  },
+  "The Devon Rex began with a curly-coated kitten found in Devon, England, in 1960. Its short, wavy coat, huge low-set ears and large eyes give it an elfin look. It is mischievous, loves warmth and likes to perch on shoulders.": {
+   "tr": "Devon Rex, 1960'ta İngiltere'nin Devon bölgesinde bulunan kıvırcık tüylü bir yavruyla başladı. Kısa dalgalı tüyü, alçakta duran kocaman kulakları ve iri gözleri ona peri gibi bir görünüm verir. Yaramazdır, sıcağı sever ve omuzlara tünemeyi sever.",
+   "kind": "about"
+  },
+  "Oriental Shorthair": {
+   "tr": "Oryantal Kısa Tüylü",
+   "kind": "title"
+  },
+  "Sleek, talkative, all ears": {
+   "tr": "İnce, konuşkan, kocaman kulaklı",
+   "kind": "subtitle"
+  },
+  "Thailand & United Kingdom": {
+   "tr": "Tayland ve Birleşik Krallık",
+   "kind": "origin"
+  },
+  "Short, fine": {
+   "tr": "Kısa, ince",
+   "kind": "coat"
+  },
+  "A Siamese cousin that comes in hundreds of colors and patterns.": {
+   "tr": "Siyam'ın kuzeni; yüzlerce renk ve desende görülür.",
+   "kind": "fact"
+  },
+  "A close relative of the Siamese, the Oriental Shorthair has the same slender body and large ears but comes in a huge range of solid colors and patterns. Most have green eyes. They are vocal, curious and deeply attached to their people.": {
+   "tr": "Siyam'ın yakın akrabası olan Oryantal Kısa Tüylü, aynı ince gövdeye ve iri kulaklara sahiptir ama çok çeşitli düz renk ve desende görülür. Çoğunun gözleri yeşildir. Sesli, meraklı ve insanlarına derinden bağlıdırlar.",
+   "kind": "about"
+  },
+  "Japanese Bobtail": {
+   "tr": "Japon Bobtail",
+   "kind": "title"
+  },
+  "Pom-pom tail, calico luck": {
+   "tr": "Ponpon kuyruk, üç renkli şans",
+   "kind": "subtitle"
+  },
+  "Japan": {
+   "tr": "Japonya",
+   "kind": "origin"
+  },
+  "Short or long, often calico": {
+   "tr": "Kısa ya da uzun, çoğu üç renkli",
+   "kind": "coat"
+  },
+  "The waving maneki-neko lucky cat figurines are modeled on this bobtailed breed.": {
+   "tr": "El sallayan maneki-neko şans kedisi biblolarına bu kısa kuyruklu tür örnek alınır.",
+   "kind": "fact"
+  },
+  "Bobtailed cats have lived in Japan for centuries and appear in old paintings and prints. Each Bobtail's short, pom-pom tail is unique. The tricolor 'mi-ke' pattern is especially prized. They are active, chatty and playful.": {
+   "tr": "Kısa kuyruklu kediler yüzyıllardır Japonya'da yaşar ve eski resim ve baskılarda görülür. Her Bobtail'in ponpon gibi kısa kuyruğu kendine özgüdür. Üç renkli 'mi-ke' deseni özellikle değerlidir. Hareketli, konuşkan ve oyunbazdırlar.",
+   "kind": "about"
+  },
+  "Somali": {
+   "tr": "Somali",
+   "kind": "title"
+  },
+  "The fox cat with a bushy tail": {
+   "tr": "Gür kuyruklu tilki kedi",
+   "kind": "subtitle"
+  },
+  "North America": {
+   "tr": "Kuzey Amerika",
+   "kind": "origin"
+  },
+  "Semi-long, ticked": {
+   "tr": "Yarı uzun, kırçıllı",
+   "kind": "coat"
+  },
+  "A long-haired Abyssinian, nicknamed the 'fox cat' for its bushy tail.": {
+   "tr": "Gür kuyruğu yüzünden 'tilki kedi' denen uzun tüylü bir Habeş kedisi.",
+   "kind": "fact"
+  },
+  "The Somali is the long-haired form of the Abyssinian, recognized as a separate breed in the late 1970s. Its ticked coat and full, bushy tail give it a fox-like look. Somalis are energetic, clever and endlessly curious.": {
+   "tr": "Somali, Habeş kedisinin uzun tüylü biçimidir ve 1970'lerin sonunda ayrı bir tür olarak tanındı. Kırçıllı tüyü ve gür, kabarık kuyruğu ona tilki gibi bir görünüm verir. Enerjik, zeki ve bitmeyen bir merakla dolu kedilerdir.",
+   "kind": "about"
+  },
+  "Siamese Face": {
+   "tr": "Siyam Yüzü",
+   "kind": "title"
+  },
+  "Curious Cat": {
+   "tr": "Meraklı Kedi",
+   "kind": "title"
+  },
+  "Sitting Kitten": {
+   "tr": "Oturan Yavru",
+   "kind": "title"
+  },
+  "Blue Gaze": {
+   "tr": "Mavi Bakış",
+   "kind": "title"
+  },
+  "Tail Up": {
+   "tr": "Kuyruk Havada",
+   "kind": "title"
+  },
+  "Toe Beans": {
+   "tr": "Pati Yastıkları",
+   "kind": "title"
+  },
+  "Purr Love": {
+   "tr": "Mırıl Sevgi",
+   "kind": "title"
+  },
+  "Fish Snack": {
+   "tr": "Balık Atıştırması",
+   "kind": "title"
+  },
+  "Yarn Ball": {
+   "tr": "Yün Yumak",
+   "kind": "title"
+  },
+  "Dinner Bowl": {
+   "tr": "Mama Kabı",
+   "kind": "title"
+  },
+  "Portrait": {
+   "tr": "Portre",
+   "kind": "title"
+  },
+  "Toy Mouse": {
+   "tr": "Oyuncak Fare",
+   "kind": "title"
+  },
+  "Leftovers": {
+   "tr": "Artıklar",
+   "kind": "title"
+  },
+  "If I Fits": {
+   "tr": "Kutu Sevdası",
+   "kind": "title"
+  },
+  "Moon Gazer": {
+   "tr": "Ay Seyri",
+   "kind": "title"
+  },
+  "Golden Paw": {
+   "tr": "Altın Pati",
+   "kind": "title"
+  },
+  "Strut": {
+   "tr": "Salınarak Yürüyüş",
+   "kind": "title"
+  },
+  "Nap Time": {
+   "tr": "Şekerleme",
+   "kind": "title"
+  },
+  "Lucky Cat": {
+   "tr": "Şans Kedisi",
+   "kind": "title"
+  },
+  "Teacup Cat": {
+   "tr": "Fincandaki Kedi",
+   "kind": "title"
+  },
+  "Owl Pose": {
+   "tr": "Baykuş Duruşu",
+   "kind": "title"
+  },
+  "Royal Cushion": {
+   "tr": "Saray Minderi",
+   "kind": "title"
+  },
+  "Floppy Hug": {
+   "tr": "Gevşek Kucaklama",
+   "kind": "title"
+  },
+  "Sitting Pretty": {
+   "tr": "Uslu Oturuş",
+   "kind": "title"
+  },
+  "Silver Night": {
+   "tr": "Gümüş Gece",
+   "kind": "title"
+  },
+  "Ancient Grace": {
+   "tr": "Kadim Zarafet",
+   "kind": "title"
+  },
+  "White Gloves": {
+   "tr": "Beyaz Eldivenler",
+   "kind": "title"
+  },
+  "Jungle Prowl": {
+   "tr": "Orman Avcısı",
+   "kind": "title"
+  },
+  "Cozy Sweater": {
+   "tr": "Sıcak Kazak",
+   "kind": "title"
+  },
+  "Silk Ribbon": {
+   "tr": "İpek Kurdele",
+   "kind": "title"
+  },
+  "Mighty Tail": {
+   "tr": "Görkemli Kuyruk",
+   "kind": "title"
+  },
+  "Forest Guardian": {
+   "tr": "Orman Bekçisi",
+   "kind": "title"
+  },
+  "Lake Swimmer": {
+   "tr": "Göl Yüzücüsü",
+   "kind": "title"
+  },
+  "Teddy Face": {
+   "tr": "Oyuncak Ayı Yüzü",
+   "kind": "title"
+  },
+  "Cat Food Box": {
+   "tr": "Mama Kutusu",
+   "kind": "title"
+  },
+  "Window": {
+   "tr": "Pencere",
+   "kind": "title"
+  },
+  "Fish": {
+   "tr": "Balık",
+   "kind": "title"
+  },
+  "Paw": {
+   "tr": "Pati",
+   "kind": "title"
+  },
+  "Cat Face": {
+   "tr": "Kedi Yüzü",
+   "kind": "title"
+  },
+  "Bone": {
+   "tr": "Kemik",
+   "kind": "title"
+  },
+  "Mouse": {
+   "tr": "Fare",
+   "kind": "title"
+  },
+  "Heart": {
+   "tr": "Kalp",
+   "kind": "title"
+  },
+  "Kitty": {
+   "tr": "Pisi",
+   "kind": "title"
+  }
+ },
+ "storekit": {
+  "Premium Yearly": {
+   "tr": "Yıllık Premium"
+  },
+  "No ads, golden puzzles and golden cards for a whole year.": {
+   "tr": "Bir yıl boyunca reklamsız oyun, altın bulmacalar ve altın kartlar."
+  },
+  "Premium Monthly": {
+   "tr": "Aylık Premium"
+  },
+  "No ads, golden puzzles and golden cards, renewed every month.": {
+   "tr": "Reklamsız oyun, altın bulmacalar ve altın kartlar; her ay yenilenir."
+  }
+ }
+}
