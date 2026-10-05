@@ -22,7 +22,10 @@ struct PrimaryButtonStyle: ButtonStyle {
         configuration.label
             .font(.headline)
             .foregroundStyle(theme.onAccent)
-            .padding(.horizontal, 28)
+            // Yan yana iki buton ve uzun çeviriler (ör. "İstatistikler") tek satırda kalsın
+            .lineLimit(1)
+            .minimumScaleFactor(0.75)
+            .padding(.horizontal, 16)
             .padding(.vertical, 16)
             .frame(maxWidth: .infinity, minHeight: 44)
             .background(Capsule().fill(theme.accent))
@@ -41,7 +44,10 @@ struct SecondaryButtonStyle: ButtonStyle {
         configuration.label
             .font(.headline)
             .foregroundStyle(theme.accent)
-            .padding(.horizontal, 28)
+            // Yan yana iki buton ve uzun çeviriler (ör. "İstatistikler") tek satırda kalsın
+            .lineLimit(1)
+            .minimumScaleFactor(0.75)
+            .padding(.horizontal, 16)
             .padding(.vertical, 16)
             .frame(maxWidth: .infinity, minHeight: 44)
             .background(Capsule().fill(theme.surfaceMuted))
