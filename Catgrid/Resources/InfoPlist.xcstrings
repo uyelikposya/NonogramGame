@@ -15,6 +15,42 @@
             "state": "translated",
             "value": "Catgrid"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Catgrid"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Catgrid"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Catgrid"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Catgrid"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Catgrid"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Catgrid"
+          }
         }
       }
     },
@@ -30,6 +66,42 @@
           "stringUnit": {
             "state": "translated",
             "value": "Verilerin sana daha ilgili reklamlar göstermek için kullanılır. Bu sayede Catgrid ücretsiz kalır."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "データは、より関連性の高い広告を表示するために使用されます。これによりCatgridを無料でご利用いただけます。"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Deine Daten werden verwendet, um dir relevantere Werbung zu zeigen. So bleibt Catgrid kostenlos."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tes données serviront à t'afficher des publicités plus pertinentes. C'est ce qui permet à Catgrid de rester gratuit."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tus datos se usarán para mostrarte anuncios más relevantes. Así Catgrid sigue siendo gratis."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Seus dados serão usados para mostrar anúncios mais relevantes para você. Isso mantém o Catgrid gratuito."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "회원님의 데이터는 더 관련성 높은 광고를 보여 드리는 데 사용돼요. 덕분에 Catgrid를 무료로 즐길 수 있어요."
           }
         }
       }

@@ -6,7 +6,13 @@
       "id": "british-shorthair-001",
       "title": {
         "en": "Toe Beans",
-        "tr": "Pati Yastıkları"
+        "tr": "Pati Yastıkları",
+        "ja": "肉球",
+        "de": "Pfotenballen",
+        "fr": "Coussinets",
+        "es": "Almohadillas",
+        "pt-BR": "Almofadinhas",
+        "ko": "말랑 젤리"
       },
       "palette": {
         "b": "#8E9AA6",
@@ -24,7 +30,13 @@
       "id": "british-shorthair-002",
       "title": {
         "en": "Purr Love",
-        "tr": "Mırıl Sevgi"
+        "tr": "Mırıl Sevgi",
+        "ja": "ゴロゴロ大好き",
+        "de": "Schnurrliebe",
+        "fr": "Ronron d'amour",
+        "es": "Amor ronroneante",
+        "pt-BR": "Amor Ronronado",
+        "ko": "골골송 사랑"
       },
       "palette": {
         "n": "#6E7A86"
@@ -41,7 +53,13 @@
       "id": "british-shorthair-003",
       "title": {
         "en": "Fish Snack",
-        "tr": "Balık Atıştırması"
+        "tr": "Balık Atıştırması",
+        "ja": "おさかなおやつ",
+        "de": "Fischsnack",
+        "fr": "Goûter poisson",
+        "es": "Tentempié de pescado",
+        "pt-BR": "Petisco de Peixe",
+        "ko": "생선 간식"
       },
       "palette": {
         "o": "#F2E8DC"
@@ -57,7 +75,13 @@
       "id": "british-shorthair-004",
       "title": {
         "en": "Yarn Ball",
-        "tr": "Yün Yumak"
+        "tr": "Yün Yumak",
+        "ja": "毛糸玉",
+        "de": "Wollknäuel",
+        "fr": "Pelote de laine",
+        "es": "Ovillo de lana",
+        "pt-BR": "Novelo de Lã",
+        "ko": "털실 뭉치"
       },
       "palette": {
         "o": "#F2E8DC"
@@ -75,7 +99,13 @@
       "id": "british-shorthair-005",
       "title": {
         "en": "Dinner Bowl",
-        "tr": "Mama Kabı"
+        "tr": "Mama Kabı",
+        "ja": "ごはん皿",
+        "de": "Futternapf",
+        "fr": "Gamelle",
+        "es": "Cuenco de comida",
+        "pt-BR": "Potinho de Ração",
+        "ko": "밥그릇"
       },
       "palette": {
         "o": "#F2E8DC",
@@ -93,7 +123,13 @@
       "id": "british-shorthair-006",
       "title": {
         "en": "Leftovers",
-        "tr": "Artıklar"
+        "tr": "Artıklar",
+        "ja": "食べ残し",
+        "de": "Reste",
+        "fr": "Restes",
+        "es": "Sobras",
+        "pt-BR": "Restinho",
+        "ko": "남은 음식"
       },
       "palette": {
         "p": "#C98B6B"
@@ -109,7 +145,13 @@
       "id": "british-shorthair-007",
       "title": {
         "en": "Leftovers",
-        "tr": "Artıklar"
+        "tr": "Artıklar",
+        "ja": "食べ残し",
+        "de": "Reste",
+        "fr": "Restes",
+        "es": "Sobras",
+        "pt-BR": "Restinho",
+        "ko": "남은 음식"
       },
       "palette": {
         "p": "#C98B6B"
@@ -125,7 +167,13 @@
       "id": "british-shorthair-008",
       "title": {
         "en": "Toy Mouse",
-        "tr": "Oyuncak Fare"
+        "tr": "Oyuncak Fare",
+        "ja": "ネズミのおもちゃ",
+        "de": "Spielmaus",
+        "fr": "Souris jouet",
+        "es": "Ratón de juguete",
+        "pt-BR": "Ratinho de Brinquedo",
+        "ko": "장난감 쥐"
       },
       "palette": {
         "n": "#6E7A86",
@@ -142,7 +190,13 @@
       "id": "british-shorthair-009",
       "title": {
         "en": "Portrait",
-        "tr": "Portre"
+        "tr": "Portre",
+        "ja": "肖像画",
+        "de": "Porträt",
+        "fr": "Portrait",
+        "es": "Retrato",
+        "pt-BR": "Retrato",
+        "ko": "초상화"
       },
       "palette": {
         "b": "#8E9AA6",
@@ -161,7 +215,13 @@
       "id": "british-shorthair-010",
       "title": {
         "en": "Dinner Bowl",
-        "tr": "Mama Kabı"
+        "tr": "Mama Kabı",
+        "ja": "ごはん皿",
+        "de": "Futternapf",
+        "fr": "Gamelle",
+        "es": "Cuenco de comida",
+        "pt-BR": "Potinho de Ração",
+        "ko": "밥그릇"
       },
       "palette": {
         "o": "#F2E8DC",
@@ -180,7 +240,13 @@
       "id": "british-shorthair-011",
       "title": {
         "en": "Fish Snack",
-        "tr": "Balık Atıştırması"
+        "tr": "Balık Atıştırması",
+        "ja": "おさかなおやつ",
+        "de": "Fischsnack",
+        "fr": "Goûter poisson",
+        "es": "Tentempié de pescado",
+        "pt-BR": "Petisco de Peixe",
+        "ko": "생선 간식"
       },
       "palette": {
         "o": "#F2E8DC"
@@ -196,7 +262,13 @@
       "id": "british-shorthair-012",
       "title": {
         "en": "Purr Love",
-        "tr": "Mırıl Sevgi"
+        "tr": "Mırıl Sevgi",
+        "ja": "ゴロゴロ大好き",
+        "de": "Schnurrliebe",
+        "fr": "Ronron d'amour",
+        "es": "Amor ronroneante",
+        "pt-BR": "Amor Ronronado",
+        "ko": "골골송 사랑"
       },
       "palette": {
         "n": "#6E7A86",
@@ -216,7 +288,13 @@
       "id": "british-shorthair-013",
       "title": {
         "en": "Moon Gazer",
-        "tr": "Ay Seyri"
+        "tr": "Ay Seyri",
+        "ja": "月を見る猫",
+        "de": "Mondgucker",
+        "fr": "Rêveur de lune",
+        "es": "Mirando la luna",
+        "pt-BR": "Admirador da Lua",
+        "ko": "달 바라기"
       },
       "palette": {
         "b": "#8E9AA6",
@@ -237,7 +315,13 @@
       "id": "british-shorthair-014",
       "title": {
         "en": "Toe Beans",
-        "tr": "Pati Yastıkları"
+        "tr": "Pati Yastıkları",
+        "ja": "肉球",
+        "de": "Pfotenballen",
+        "fr": "Coussinets",
+        "es": "Almohadillas",
+        "pt-BR": "Almofadinhas",
+        "ko": "말랑 젤리"
       },
       "palette": {
         "b": "#8E9AA6",
@@ -258,7 +342,13 @@
       "id": "british-shorthair-015",
       "title": {
         "en": "Portrait",
-        "tr": "Portre"
+        "tr": "Portre",
+        "ja": "肖像画",
+        "de": "Porträt",
+        "fr": "Portrait",
+        "es": "Retrato",
+        "pt-BR": "Retrato",
+        "ko": "초상화"
       },
       "palette": {
         "b": "#8E9AA6",

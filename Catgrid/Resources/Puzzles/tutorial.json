@@ -6,7 +6,13 @@
       "id": "tutorial-01",
       "title": {
         "en": "Cat Food Box",
-        "tr": "Mama Kutusu"
+        "tr": "Mama Kutusu",
+        "ja": "キャットフードの箱",
+        "de": "Futterdose",
+        "fr": "Boîte de croquettes",
+        "es": "Caja de comida",
+        "pt-BR": "Caixa de Ração",
+        "ko": "고양이 사료 상자"
       },
       "palette": {
         "a": "#5B4636"
@@ -24,7 +30,13 @@
       "id": "tutorial-02",
       "title": {
         "en": "Window",
-        "tr": "Pencere"
+        "tr": "Pencere",
+        "ja": "窓",
+        "de": "Fenster",
+        "fr": "Fenêtre",
+        "es": "Ventana",
+        "pt-BR": "Janela",
+        "ko": "창문"
       },
       "palette": {
         "a": "#5B4636"
@@ -42,7 +54,13 @@
       "id": "tutorial-03",
       "title": {
         "en": "Fish",
-        "tr": "Balık"
+        "tr": "Balık",
+        "ja": "魚",
+        "de": "Fisch",
+        "fr": "Poisson",
+        "es": "Pez",
+        "pt-BR": "Peixe",
+        "ko": "물고기"
       },
       "palette": {
         "a": "#5B8FB9"
@@ -60,7 +78,13 @@
       "id": "tutorial-04",
       "title": {
         "en": "Paw",
-        "tr": "Pati"
+        "tr": "Pati",
+        "ja": "肉球",
+        "de": "Pfote",
+        "fr": "Patte",
+        "es": "Patita",
+        "pt-BR": "Patinha",
+        "ko": "발바닥"
       },
       "palette": {
         "a": "#D98C8C"
@@ -78,7 +102,13 @@
       "id": "tutorial-05",
       "title": {
         "en": "Yarn Ball",
-        "tr": "Yün Yumak"
+        "tr": "Yün Yumak",
+        "ja": "毛糸玉",
+        "de": "Wollknäuel",
+        "fr": "Pelote de laine",
+        "es": "Ovillo de lana",
+        "pt-BR": "Novelo de Lã",
+        "ko": "털실 뭉치"
       },
       "palette": {
         "a": "#B07CC6"
@@ -96,7 +126,13 @@
       "id": "tutorial-06",
       "title": {
         "en": "Cat Face",
-        "tr": "Kedi Yüzü"
+        "tr": "Kedi Yüzü",
+        "ja": "猫の顔",
+        "de": "Katzengesicht",
+        "fr": "Tête de chat",
+        "es": "Cara de gato",
+        "pt-BR": "Carinha de Gato",
+        "ko": "고양이 얼굴"
       },
       "palette": {
         "a": "#5B4636"
@@ -114,7 +150,13 @@
       "id": "tutorial-07",
       "title": {
         "en": "Bone",
-        "tr": "Kemik"
+        "tr": "Kemik",
+        "ja": "骨",
+        "de": "Knochen",
+        "fr": "Os",
+        "es": "Hueso",
+        "pt-BR": "Osso",
+        "ko": "뼈다귀"
       },
       "palette": {
         "a": "#C8B79E"
@@ -132,7 +174,13 @@
       "id": "tutorial-08",
       "title": {
         "en": "Mouse",
-        "tr": "Fare"
+        "tr": "Fare",
+        "ja": "ネズミ",
+        "de": "Maus",
+        "fr": "Souris",
+        "es": "Ratón",
+        "pt-BR": "Ratinho",
+        "ko": "쥐"
       },
       "palette": {
         "a": "#8E8E93"
@@ -150,7 +198,13 @@
       "id": "tutorial-09",
       "title": {
         "en": "Heart",
-        "tr": "Kalp"
+        "tr": "Kalp",
+        "ja": "ハート",
+        "de": "Herz",
+        "fr": "Cœur",
+        "es": "Corazón",
+        "pt-BR": "Coração",
+        "ko": "하트"
       },
       "palette": {
         "a": "#E5677A"
@@ -171,7 +225,13 @@
       "id": "tutorial-10",
       "title": {
         "en": "Kitty",
-        "tr": "Pisi"
+        "tr": "Pisi",
+        "ja": "子猫",
+        "de": "Mieze",
+        "fr": "Minou",
+        "es": "Gatito",
+        "pt-BR": "Gatinho",
+        "ko": "야옹이"
       },
       "palette": {
         "a": "#F2A65A"
