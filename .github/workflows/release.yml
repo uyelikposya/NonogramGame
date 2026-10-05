@@ -70,8 +70,9 @@ jobs:
 
       - name: Arşivle
         run: |
-          # Arşiv imzasız oluşturulur; imza yalnızca dışa aktarmada (App Store dağıtım profiliyle)
-          # atılır. Böylece geliştirme profili ve kayıtlı test cihazı gerekmez.
+          # Arşiv yerel (ad hoc, "-") imzayla oluşturulur: geliştirme profili ve kayıtlı test cihazı
+          # gerekmez, gömülü çerçeveler de imzalı kalır. Asıl imza dışa aktarmada (App Store
+          # dağıtım sertifikası ve profiliyle) atılır.
           xcodebuild archive \
             -project Catgrid.xcodeproj \
             -scheme Catgrid \
@@ -80,7 +81,10 @@ jobs:
             -archivePath build/Catgrid.xcarchive \
             CURRENT_PROJECT_VERSION="$BUILD_NUMBER" \
             DEVELOPMENT_TEAM="$APPLE_TEAM_ID" \
-            CODE_SIGNING_ALLOWED=NO > archive.log 2>&1 || { grep -E "error:" archive.log | head -40; tail -60 archive.log; exit 1; }
+            CODE_SIGN_STYLE=Manual \
+            CODE_SIGN_IDENTITY="-" \
+            AD_HOC_CODE_SIGNING_ALLOWED=YES \
+            PROVISIONING_PROFILE_SPECIFIER="" > archive.log 2>&1 || { grep -E "error:" archive.log | head -40; tail -60 archive.log; exit 1; }
           grep -E "\*\* ARCHIVE" archive.log
           plutil -p build/Catgrid.xcarchive/Products/Applications/Catgrid.app/Info.plist | grep -E "CFBundle(ShortVersionString|Version|Identifier)\"|DTSDKName|DTXcode\""
 
