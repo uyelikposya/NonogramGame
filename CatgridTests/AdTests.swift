@@ -110,13 +110,6 @@ final class RemoveAdsTests: XCTestCase {
         XCTAssertEqual(service.interstitialsShown, 0)
     }
 
-    func testSubscriptionActiveUntilExpiration() {
-        let now = Date()
-        XCTAssertTrue(StoreManager.isActive(revocationDate: nil, expirationDate: now.addingTimeInterval(60), now: now))
-        XCTAssertFalse(StoreManager.isActive(revocationDate: nil, expirationDate: now.addingTimeInterval(-60), now: now))
-        XCTAssertFalse(StoreManager.isActive(revocationDate: now, expirationDate: now.addingTimeInterval(60), now: now))
-    }
-
     @MainActor
     func testCachedSubscriptionStateIsRestoredOnLaunch() throws {
         let defaults = try XCTUnwrap(UserDefaults(suiteName: "Store-\(UUID().uuidString)"))

@@ -50,10 +50,21 @@ final class ProgressStore {
         if let legacyDefaults { migrateLegacyProgress(from: legacyDefaults) }
     }
 
-    /// Diskte kalıcı kayıt.
-    static func live() throws -> ProgressStore {
-        let container = try ModelContainer(for: PuzzleRecord.self)
-        return ProgressStore(container: container, legacyDefaults: .standard)
+    /// Diskte kalıcı kayıt. Veritabanı açılamazsa (bozuk dosya, dolu disk) uygulama çökmez:
+    /// önce dosya silinip yeniden kurulur, o da olmazsa oturum bellekte sürer.
+    static func live() -> ProgressStore {
+        let configuration = ModelConfiguration()
+        if let container = try? ModelContainer(for: PuzzleRecord.self, configurations: configuration) {
+            return ProgressStore(container: container, legacyDefaults: .standard)
+        }
+        let url = configuration.url
+        for suffix in ["", "-shm", "-wal"] {
+            try? FileManager.default.removeItem(at: URL(fileURLWithPath: url.path + suffix))
+        }
+        if let container = try? ModelContainer(for: PuzzleRecord.self, configurations: configuration) {
+            return ProgressStore(container: container, legacyDefaults: .standard)
+        }
+        return inMemory()
     }
 
     /// Testler ve önizlemeler için bellekte kayıt.

@@ -156,11 +156,16 @@
    "one": "Has coleccionado %lld raza de gato. ¡Aún te quedan gatos por conocer!",
    "other": "Has coleccionado %lld razas de gato. ¡Aún te quedan gatos por conocer!"
   },
-  "You've met every cat. New breeds are on their way!": "Ya conoces a todos los gatos. ¡Pronto llegarán nuevas razas!"
+  "You've met every cat. New breeds are on their way!": "Ya conoces a todos los gatos. ¡Pronto llegarán nuevas razas!",
+  "Continue: +1 paw": "Continuar: +1 patita",
+  "Continue: +60 seconds": "Continuar: +60 segundos",
+  "Purchases restored. Welcome back to Premium!": "Compras restauradas. ¡Bienvenido de nuevo a Premium!",
+  "No active subscription was found for this Apple Account.": "No se encontró ninguna suscripción activa para esta cuenta de Apple.",
+  "Couldn't reach the App Store. Please try again.": "No se pudo conectar con la App Store. Inténtalo de nuevo."
  },
  "infoplist": {
   "CFBundleDisplayName": "Catgrid",
-  "NSUserTrackingUsageDescription": "Tus datos se usarán para mostrarte anuncios más relevantes. Así Catgrid sigue siendo gratis."
+  "NSUserTrackingUsageDescription": "Si permites el seguimiento, te mostraremos anuncios más relevantes. Los anuncios ayudan a que Catgrid sea gratis."
  },
  "content": {
   "Kitten School": "Escuela de gatitos",

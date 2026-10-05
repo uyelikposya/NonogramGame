@@ -603,6 +603,26 @@
   "You've met every cat. New breeds are on their way!": {
    "en": "You've met every cat. New breeds are on their way!",
    "tr": "Tüm kedilerle tanıştın. Yeni türler yolda!"
+  },
+  "Continue: +1 paw": {
+   "en": "Continue: +1 paw",
+   "tr": "Devam et: +1 pati"
+  },
+  "Continue: +60 seconds": {
+   "en": "Continue: +60 seconds",
+   "tr": "Devam et: +60 saniye"
+  },
+  "Purchases restored. Welcome back to Premium!": {
+   "en": "Purchases restored. Welcome back to Premium!",
+   "tr": "Satın alımlar geri yüklendi. Premium'a tekrar hoş geldin!"
+  },
+  "No active subscription was found for this Apple Account.": {
+   "en": "No active subscription was found for this Apple Account.",
+   "tr": "Bu Apple Hesabı için etkin bir abonelik bulunamadı."
+  },
+  "Couldn't reach the App Store. Please try again.": {
+   "en": "Couldn't reach the App Store. Please try again.",
+   "tr": "App Store'a ulaşılamadı. Lütfen tekrar dene."
   }
  },
  "infoplist": {
@@ -611,8 +631,8 @@
    "tr": "Catgrid"
   },
   "NSUserTrackingUsageDescription": {
-   "en": "Your data will be used to show you more relevant ads. This keeps Catgrid free.",
-   "tr": "Verilerin sana daha ilgili reklamlar göstermek için kullanılır. Bu sayede Catgrid ücretsiz kalır."
+   "en": "Allowing tracking lets us show you more relevant ads. Ads help keep Catgrid free to play.",
+   "tr": "İzin verirsen sana daha ilgili reklamlar gösterebiliriz. Reklamlar Catgrid'in ücretsiz oynanmasını sağlar."
   }
  },
  "content": {

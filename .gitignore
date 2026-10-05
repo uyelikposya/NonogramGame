@@ -9,6 +9,6 @@ build/
 .swiftpm/
 *.xcresult
 .DS_Store
-Ninni/Resources/Info.plist
+Catgrid/Resources/Info.plist
 __pycache__/
 .tools/

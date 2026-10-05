@@ -153,11 +153,16 @@
   "You've collected %lld cat breeds. There are still cats you haven't met!": {
    "other": "%lld種類の猫を集めました。まだ出会っていない猫がいますよ！"
   },
-  "You've met every cat. New breeds are on their way!": "すべての猫に出会いました。新しい猫種を準備中です！"
+  "You've met every cat. New breeds are on their way!": "すべての猫に出会いました。新しい猫種を準備中です！",
+  "Continue: +1 paw": "続ける：肉球+1",
+  "Continue: +60 seconds": "続ける：+60秒",
+  "Purchases restored. Welcome back to Premium!": "購入を復元しました。Premiumへおかえりなさい！",
+  "No active subscription was found for this Apple Account.": "このAppleアカウントで有効なサブスクリプションが見つかりませんでした。",
+  "Couldn't reach the App Store. Please try again.": "App Storeに接続できませんでした。もう一度お試しください。"
  },
  "infoplist": {
   "CFBundleDisplayName": "Catgrid",
-  "NSUserTrackingUsageDescription": "データは、より関連性の高い広告を表示するために使用されます。これによりCatgridを無料でご利用いただけます。"
+  "NSUserTrackingUsageDescription": "トラッキングを許可すると、より関連性の高い広告が表示されます。広告のおかげでCatgridを無料で遊べます。"
  },
  "content": {
   "Kitten School": "子猫の学校",

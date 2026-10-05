@@ -32,6 +32,7 @@ final class GameViewRenderingTests: XCTestCase {
         .environment(Router())
         .environment(audio)
         .environment(AdCoordinator(service: NoAdService()))
+        .environment(StoreManager(defaults: UserDefaults(suiteName: "game-store-\(UUID().uuidString)")!))
         .environment(ThemeManager(defaults: UserDefaults(suiteName: "render-theme-\(UUID().uuidString)")!))
         .environment(\.appTheme, .default)
 
@@ -76,6 +77,7 @@ final class GameViewRenderingTests: XCTestCase {
         .environment(Router())
         .environment(AudioManager(defaults: UserDefaults(suiteName: "companion-\(UUID().uuidString)")!))
         .environment(AdCoordinator(service: NoAdService()))
+        .environment(StoreManager(defaults: UserDefaults(suiteName: "game-store-\(UUID().uuidString)")!))
         .environment(\.appTheme, .default)
 
         let window = UIWindow(frame: CGRect(x: 0, y: 0, width: 390, height: 844))
@@ -131,6 +133,7 @@ final class GameViewRenderingTests: XCTestCase {
             .environment(Router())
             .environment(AudioManager(defaults: UserDefaults(suiteName: "render-\(UUID().uuidString)")!))
             .environment(AdCoordinator(service: NoAdService()))
+            .environment(StoreManager(defaults: UserDefaults(suiteName: "game-store-\(UUID().uuidString)")!))
             .environment(ThemeManager(defaults: UserDefaults(suiteName: "render-theme-\(UUID().uuidString)")!))
             .environment(\.appTheme, .default)
         let window = UIWindow(frame: CGRect(x: 0, y: 0, width: 390, height: 844))

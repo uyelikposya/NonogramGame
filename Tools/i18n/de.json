@@ -156,11 +156,16 @@
    "one": "Du hast %lld Katzenrasse gesammelt. Es gibt noch Katzen, die du nicht kennst!",
    "other": "Du hast %lld Katzenrassen gesammelt. Es gibt noch Katzen, die du nicht kennst!"
   },
-  "You've met every cat. New breeds are on their way!": "Du kennst jetzt alle Katzen. Neue Rassen sind unterwegs!"
+  "You've met every cat. New breeds are on their way!": "Du kennst jetzt alle Katzen. Neue Rassen sind unterwegs!",
+  "Continue: +1 paw": "Weiter: +1 Pfote",
+  "Continue: +60 seconds": "Weiter: +60 Sekunden",
+  "Purchases restored. Welcome back to Premium!": "Käufe wiederhergestellt. Willkommen zurück bei Premium!",
+  "No active subscription was found for this Apple Account.": "Für diesen Apple Account wurde kein aktives Abo gefunden.",
+  "Couldn't reach the App Store. Please try again.": "Der App Store ist nicht erreichbar. Bitte versuch es noch einmal."
  },
  "infoplist": {
   "CFBundleDisplayName": "Catgrid",
-  "NSUserTrackingUsageDescription": "Deine Daten werden verwendet, um dir relevantere Werbung zu zeigen. So bleibt Catgrid kostenlos."
+  "NSUserTrackingUsageDescription": "Wenn du Tracking erlaubst, zeigen wir dir passendere Werbung. Werbung hilft, Catgrid kostenlos spielbar zu halten."
  },
  "content": {
   "Kitten School": "Kätzchenschule",
