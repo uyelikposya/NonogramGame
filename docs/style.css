@@ -13,3 +13,6 @@ a { color: var(--accent); }
 nav.langs { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 20px; }
 nav.langs a { padding: 6px 12px; border-radius: 999px; background: var(--card); color: var(--text); text-decoration: none; font-size: .9rem; }
 nav.langs a[aria-current="true"] { background: var(--accent); color: #fff; }
+header > div { min-width: 0; }
+h1 { font-size: 1.35rem; overflow-wrap: anywhere; }
+section.lang { overflow-wrap: anywhere; }

@@ -47,12 +47,12 @@ SCRIPT = """<script>
     var lang = pick();
     document.documentElement.lang = lang;
     codes.forEach(function (code) {
-      document.getElementById(code).hidden = code !== lang;
+      document.getElementById("lang-" + code).hidden = code !== lang;
       var link = document.querySelector('a[href="#' + code + '"]');
       if (link) link.setAttribute("aria-current", code === lang ? "true" : "false");
     });
   }
-  window.addEventListener("hashchange", show);
+  window.addEventListener("hashchange", function () { show(); window.scrollTo(0, 0); });
   show();
 })();
 </script>"""
@@ -66,7 +66,7 @@ def build(page, meta):
         if not source.exists():
             sys.exit(f"Eksik: {source.relative_to(DOCS.parent)}")
         heading = meta["headings"][code]
-        sections.append(f'<section class="lang" id="{code}" lang="{code}">\n<h2>{heading}</h2>\n'
+        sections.append(f'<section class="lang" id="lang-{code}" lang="{code}">\n<h2>{heading}</h2>\n'
                         f'{source.read_text().strip()}\n</section>')
     updated = f' · Last updated: {meta["updated"]}' if meta["updated"] else ""
     codes = "[" + ",".join(f'"{code}"' for code, _ in LANGS) + "]"
