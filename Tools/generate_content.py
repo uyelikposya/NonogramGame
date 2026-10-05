@@ -18,11 +18,11 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from validate_puzzles import clue, solve_logically  # noqa: E402
+from validate_puzzles import clue, solve_line, solve_logically  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 PUZZLES = ROOT / "Catgrid/Resources/Puzzles"
-PUZZLES_PER_BREED = 15
+PUZZLES_PER_BREED = 16
 
 
 # MARK: - Çizim primitifleri (0...1 normalize koordinatlar, y aşağı doğru)
@@ -775,27 +775,85 @@ HANDMADE = {
 }
 
 
-MAX_SIZE = 15  # Telefonda yakınlaştırmasız rahat oynanan en büyük boyut
+MAX_SIZE = 12  # Ücretsiz bölümlerde en büyük tahta (premium da 12x12)
+
+# Her türde 16 ücretsiz bölüm, dört kademe. Boyutlar (satır x sütun); motifin yönüne göre
+# döndürülebilir. Türler ilerledikçe her kademede seçenek listesinin üst ucuna kayılır.
+TIERS = [
+    ("easy", 5, [(4, 5), (5, 5), (5, 6), (5, 7), (6, 6), (6, 7), (7, 7)]),
+    ("medium", 7, [(6, 6), (6, 7), (7, 7), (8, 8), (8, 9)]),
+    ("hard", 3, [(8, 8), (8, 9), (9, 9), (9, 10), (10, 10)]),
+    ("expert", 1, [(10, 10), (11, 11), (12, 12)]),
+]
+
+EASY_MOTIFS = ["paw", "heart", "fish", "yarn", "bowl", "mouse", "fishbone"]
+MEDIUM_MOTIFS = ["portrait", "sitting", "sleeping", "box", "moon", "fish", "yarn", "mouse", "bowl", "heart"]
+# Zor bölümler: sahneler. Her tür farklı bir kombinasyon alır, silüetler türler arasında tekrar etmez.
+SCENES = ["sleeping", "walking", "box", "moon", "sitting", "teacup", "owl", "cushion", "bellyup", "night",
+          "bastet", "gloves", "sweater", "bow", "swimming", "bigtail", "teddy", "lucky", "jungle", "forest"]
 
 
-def size_range(order):
-    """Tür sırasına göre ızgara boyutu: 5x5'ten başlayıp 15x15'e çıkar."""
-    lo = min(MAX_SIZE, 5 + int((order - 1) * 0.45))
-    hi = min(MAX_SIZE, lo + 3)
-    return lo, hi
+def tier_sizes(tier, order, total=25):
+    _, count, options = next(t for t in TIERS if t[0] == tier)
+    progress = (order - 1) / max(total - 1, 1)
+    if tier == "expert":
+        return [options[min(int(progress * len(options)), len(options) - 1)]]
+    # Seçenekler arasında artan, türe göre kayan bir dizi
+    span = len(options) - 1
+    low = progress * max(span - (count - 1) * 0.5, 0) * 0.6
+    return [options[min(span, round(low + (span - low) * i / max(count - 1, 1)))] for i in range(count)]
 
 
-def motif_plan(breed, count):
-    """Küçük boyutlarda basit nesneler, büyüklerde sahneler; türe özgü motiflerden biri
-    bölümün ortasında, diğeri finalde."""
-    specials = breed["specials"]
-    simple = ["paw", "heart", "fish", "yarn", "bowl", "mouse", "fishbone"]
-    scenes = [s for s in ("portrait", "sleeping", "sitting", "walking", "box", "moon") if s not in specials]
-    pool = simple + scenes
-    plan = [pool[i % len(pool)] for i in range(count - 2)]
-    plan.insert(round(len(plan) * 0.6), specials[0])
-    plan.append(specials[-1])
-    return plan
+def difficulty(pixels):
+    """Mantıkla çözerken gereken satır/sütun geçişi sayısı: yüksekse daha çok düşünmek gerekir."""
+    solution = [[c != "." for c in row] for row in pixels]
+    rows, cols = [clue(r) for r in solution], [clue(c) for c in zip(*solution)]
+    grid = [[None] * len(cols) for _ in rows]
+    sweeps = 0
+    changed = True
+    while changed:
+        changed = False
+        sweeps += 1
+        for r in range(len(rows)):
+            solved = solve_line(grid[r], rows[r])
+            if solved != grid[r]:
+                grid[r], changed = solved, True
+        for c in range(len(cols)):
+            column = [grid[r][c] for r in range(len(rows))]
+            solved = solve_line(column, cols[c])
+            if solved != column:
+                for r in range(len(rows)):
+                    grid[r][c] = solved[r]
+                changed = True
+    return sweeps
+
+
+def fit_box(box, rows, cols, stretch):
+    """Çizimin kutusunu rows x cols oranına getirir: en fazla `stretch` kat esneme, kalanı kenar boşluğu."""
+    x0, y0, x1, y1 = box
+    w, h = x1 - x0, y1 - y0
+    cx, cy = (x0 + x1) / 2, (y0 + y1) / 2
+    target = cols / rows
+    if w / h > target:
+        h = max(h, w / target / stretch)
+    else:
+        w = max(w, h * target / stretch)
+    return cx - w / 2, cy - h / 2, cx + w / 2, cy + h / 2
+
+
+def motif_plan(breed, order):
+    """(kademe, motif) listesi: kolay/orta ortak nesneler, zor/çok zor türe özgü sahneler."""
+    rotate = lambda pool, k: pool[k % len(pool):] + pool[:k % len(pool)]  # noqa: E731
+    excluded = set(breed.get("exclude", []))
+    easy = rotate(EASY_MOTIFS, order)[:5]
+    medium = [m for m in rotate(MEDIUM_MOTIFS, order) if m not in excluded][:7]
+    specials = [m for m in breed["specials"] if m not in excluded]
+    # Portre orta kademede zaten var; zor kademede türün ayırt edici sahneleri öne çıkar
+    distinctive = [m for m in specials if m != "portrait"]
+    scenes = [m for m in rotate(SCENES, order * 3) if m not in excluded and m not in specials and m not in medium]
+    expert = distinctive[0] if distinctive else scenes.pop(0)
+    hard = (distinctive[1:] + scenes)[:3]
+    return [("easy", m) for m in easy] + [("medium", m) for m in medium] + [("hard", m) for m in hard] + [("expert", expert)]
 
 
 def is_good(pixels, max_empty=1):
@@ -810,53 +868,85 @@ def is_good(pixels, max_empty=1):
     return solve_logically([clue(r) for r in solution], [clue(c) for c in zip(*solution)]) == solution
 
 
+# Zor ve çok zor bölümlerin silüetleri tüm türler arasında benzersiz; yedek motifler de
+# tüm türlerde en az kullanılandan seçilir ki aynı sahne her türde çıkmasın
+GLOBAL_HARD_SILHOUETTES = set()
+GLOBAL_HARD_USAGE = {}
+# En az kaç çözüm geçişi (bkz. difficulty): zor bölümler gerçekten düşündürsün
+MIN_DIFFICULTY = {"hard": 4, "expert": 5}
+
+
+def render_candidates(breed, name, rows, cols, seed, attempts=36):
+    """Bir motiften, hedef boyutta ve iki yönde, çözülebilir adaylar üretir."""
+    draw, en, tr = MOTIFS[name]
+    shapes = draw({**breed, "size": max(rows, cols)})
+    box = bounds(shapes)
+    w, h = box[2] - box[0], box[3] - box[1]
+    # Geniş motifler yatay, uzun motifler dikey yerleşsin
+    r, c = (min(rows, cols), max(rows, cols)) if w >= h else (max(rows, cols), min(rows, cols))
+    rng = random.Random(seed)
+    for attempt in range(attempts):
+        jitter = attempt >= 4
+        stretch = (1.0, 1.15, 1.3, 1.5)[attempt % 4]
+        pixels = rasterize(
+            shapes, fit_box(box, r, c, stretch), r, c,
+            mirror=(attempt // 4) % 2 == 1,
+            scale=rng.uniform(0.9, 1.0) if jitter else 1.0,
+            dx=rng.uniform(-0.04, 0.04) if jitter else 0.0,
+            dy=rng.uniform(-0.04, 0.04) if jitter else 0.0,
+        )
+        if is_good(pixels, max_empty=1 if max(r, c) < 8 else 2):
+            yield en, tr, pixels
+
+
 def generate_breed(breed, order):
     puzzles = []
     used = set()
-    for pid, (en, tr), pixels in HANDMADE.get(breed["id"], []):
+    handmade = HANDMADE.get(breed["id"], [])
+    for pid, (en, tr), pixels in handmade:
         puzzles.append(make_puzzle(pid, en, tr, pixels, breed))
         used.add(silhouette(pixels))
-    count = PUZZLES_PER_BREED - len(puzzles)
-    lo, hi = size_range(order)
-    if puzzles:
-        lo = min(hi, lo + 1)
-    sizes = [round(lo + (hi - lo) * i / max(count - 1, 1)) for i in range(count)]
-    plan = motif_plan(breed, count)
+    sizes = [size for tier, _, _ in TIERS for size in tier_sizes(tier, order)]
+    plan = motif_plan(breed, order)
     usage = {}
-    for n, motif in zip(sizes, plan):
+    hard_names = set()
+    excluded = set(breed.get("exclude", []))
+    for index, ((tier, motif), (rows, cols)) in enumerate(zip(plan, sizes)):
+        if index < len(handmade):
+            continue  # elle çizilenler kolay kademenin yerini tutar
         number = len(puzzles) + 1
-        found = None
-        # Plandaki motif bu boyutta okunmuyorsa ya da çözülemiyorsa en az kullanılan uygun motife geç
-        excluded = set(breed.get("exclude", []))
-        fallbacks = sorted(set(COMMON + breed["specials"]) - {motif} - excluded, key=lambda m: (usage.get(m, 0), m))
+        is_hard = tier in ("hard", "expert")
+        pool = (SCENES + breed["specials"]) if is_hard else (MEDIUM_MOTIFS + EASY_MOTIFS)
+        counts = GLOBAL_HARD_USAGE if is_hard else usage
+        # Bir türün zor bölümlerinde aynı motif iki kez çıkmasın
+        taken = hard_names if is_hard else set()
+        fallbacks = sorted(set(pool) - {motif} - excluded - taken, key=lambda m: (counts.get(m, 0), m))
+        target = MIN_DIFFICULTY.get(tier, 0)
+        best = None
         for name in [motif] + fallbacks:
-            if n < MIN_SIZE.get(name, 0):
+            if max(rows, cols) < MIN_SIZE.get(name, 0) or name in taken:
                 continue
-            draw, en, tr = MOTIFS[name]
-            shapes = draw({**breed, "size": n})
-            box = bounds(shapes)
-            rows, cols = canvas_size(box, n)
-            rng = random.Random(f"{breed['id']}-{number}-{name}")
-            for attempt in range(24):
-                jitter = attempt > 0
-                pixels = rasterize(
-                    shapes, box, rows, cols,
-                    mirror=attempt % 2 == 1,
-                    scale=rng.uniform(0.92, 1.0) if jitter else 1.0,
-                    dx=rng.uniform(-0.03, 0.03) if jitter else 0.0,
-                    dy=rng.uniform(-0.03, 0.03) if jitter else 0.0,
-                )
+            for en, tr, pixels in render_candidates(breed, name, rows, cols, f"{breed['id']}-{number}-{name}"):
                 key = silhouette(pixels)
-                if key not in used and is_good(pixels):
-                    found = (en, tr, pixels)
-                    used.add(key)
-                    usage[name] = usage.get(name, 0) + 1
-                    break
-            if found:
+                if key in used or (is_hard and key in GLOBAL_HARD_SILHOUETTES):
+                    continue
+                score = difficulty(pixels)
+                if best is None or score > best[0]:
+                    best = (score, name, en, tr, pixels)
+                if not is_hard:
+                    break  # kolay/orta: ilk uygun aday yeter
+            # Zor kademede hedef zorluğa ulaşılana kadar diğer motifler de denenir
+            if best and best[0] >= target:
                 break
-        if not found:
-            raise SystemExit(f"{breed['id']} #{number} ({n}) için çözülebilir bulmaca bulunamadı")
-        en, tr, pixels = found
+        if not best:
+            raise SystemExit(f"{breed['id']} #{number} ({rows}x{cols}, {tier}) için çözülebilir bulmaca bulunamadı")
+        _, name, en, tr, pixels = best
+        used.add(silhouette(pixels))
+        if is_hard:
+            GLOBAL_HARD_SILHOUETTES.add(silhouette(pixels))
+            GLOBAL_HARD_USAGE[name] = GLOBAL_HARD_USAGE.get(name, 0) + 1
+            hard_names.add(name)
+        usage[name] = usage.get(name, 0) + 1
         puzzles.append(make_puzzle(f"{breed['id']}-{number:03d}", en, tr, pixels, breed))
     return puzzles
 

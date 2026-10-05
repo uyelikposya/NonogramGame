@@ -12,6 +12,7 @@ public enum TutorialLesson: String, Codable, Sendable, CaseIterable {
     case edges
     case crossReference
     case mistakesAndLives
+    case difficulty
     case graduation
 }
 

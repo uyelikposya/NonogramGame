@@ -5,6 +5,31 @@
     {
       "id": "bombay-001",
       "title": {
+        "en": "Dinner Bowl",
+        "tr": "Mama Kabı",
+        "ja": "ごはん皿",
+        "de": "Futternapf",
+        "fr": "Gamelle",
+        "es": "Cuenco de comida",
+        "pt-BR": "Potinho de Ração",
+        "ko": "밥그릇"
+      },
+      "palette": {
+        "o": "#5C6B7A",
+        "p": "#8E8A93",
+        "w": "#55525A"
+      },
+      "pixels": [
+        "......",
+        ".pppp.",
+        "ooppoo",
+        "oowwwo",
+        ".oooo."
+      ]
+    },
+    {
+      "id": "bombay-002",
+      "title": {
         "en": "Toe Beans",
         "tr": "Pati Yastıkları",
         "ja": "肉球",
@@ -19,23 +44,17 @@
         "n": "#4A4148"
       },
       "pixels": [
-        "...bbb.bbb...",
-        "...bnb.bnb...",
-        ".b.bnb.bnb.b.",
-        "bbb.b...b.bbb",
-        "bnb.......bnb",
-        "bnb.bbbbb.bnb",
-        "..bbbbbbbbb..",
-        "..bbbnnnbbb..",
-        "..bbnnnnnbb..",
-        "..bbnnnnnbb..",
-        "..bbnnnnnbb..",
-        "...bbnnnbb...",
-        "....bbbbb...."
+        ".....",
+        ".nbn.",
+        "n...n",
+        "bbbbb",
+        ".bnb.",
+        ".bnn.",
+        "..b.."
       ]
     },
     {
-      "id": "bombay-002",
+      "id": "bombay-003",
       "title": {
         "en": "Purr Love",
         "tr": "Mırıl Sevgi",
@@ -51,22 +70,16 @@
         "w": "#55525A"
       },
       "pixels": [
-        ".nnnnn.nnnnn.",
-        "nnnnnnnnnnnnn",
-        "nnwwnnnnnnnnn",
-        "nnnnnnnnnnnnn",
-        "nnnnnnnnnnnnn",
-        ".nnnnnnnnnnn.",
-        "..nnnnnnnnn..",
-        "..nnnnnnnnn..",
-        "...nnnnnnn...",
-        "....nnnnn....",
-        ".....nnn.....",
-        "......n......"
+        ".nnnn.",
+        "nwnnnn",
+        "nnnnnn",
+        ".nnnn.",
+        "..nn..",
+        "......"
       ]
     },
     {
-      "id": "bombay-003",
+      "id": "bombay-004",
       "title": {
         "en": "Fish Snack",
         "tr": "Balık Atıştırması",
@@ -78,21 +91,19 @@
         "ko": "생선 간식"
       },
       "palette": {
-        "o": "#5C6B7A",
-        "p": "#8E8A93"
+        "o": "#5C6B7A"
       },
       "pixels": [
-        "...oooo.....o",
-        ".oooopooo..oo",
-        "o..oopooooooo",
-        "oo.oopooooooo",
-        "ooooopooooooo",
-        ".oooopooo..oo",
-        "...oooo.....o"
+        "..oo...",
+        "ooooo.o",
+        "o.ooooo",
+        "ooooooo",
+        "ooooo.o",
+        "..oo..."
       ]
     },
     {
-      "id": "bombay-004",
+      "id": "bombay-005",
       "title": {
         "en": "Yarn Ball",
         "tr": "Yün Yumak",
@@ -107,22 +118,17 @@
         "o": "#5C6B7A"
       },
       "pixels": [
-        ".....ooooo...",
-        "....ooooooo..",
-        "...oo.oooo.o.",
-        "..oooo.o...o.",
-        "..oooo..oooo.",
-        "..ooo.oo.ooo.",
-        "..oo.ooo.ooo.",
-        "....ooooo.oo.",
-        "...oooooooo..",
-        "...o.ooooo...",
-        "ooo..........",
-        "............."
+        ".oooo..",
+        "ooo.o..",
+        "oo..oo.",
+        "oo.ooo.",
+        "o.ooo..",
+        ".oooo..",
+        ".....oo"
       ]
     },
     {
-      "id": "bombay-005",
+      "id": "bombay-006",
       "title": {
         "en": "Dinner Bowl",
         "tr": "Mama Kabı",
@@ -139,71 +145,16 @@
         "w": "#55525A"
       },
       "pixels": [
-        "....pp.ppp....",
-        "..pppppppppp..",
-        ".pppppppppppp.",
-        "ooppppppppppoo",
-        "ooooppppppoooo",
-        ".oowwwwwwwwoo.",
-        ".oowwwwwwwwoo.",
-        ".oooooooooooo.",
-        "..oooooooooo.."
-      ]
-    },
-    {
-      "id": "bombay-006",
-      "title": {
-        "en": "Toy Mouse",
-        "tr": "Oyuncak Fare",
-        "ja": "ネズミのおもちゃ",
-        "de": "Spielmaus",
-        "fr": "Souris jouet",
-        "es": "Ratón de juguete",
-        "pt-BR": "Ratinho de Brinquedo",
-        "ko": "장난감 쥐"
-      },
-      "palette": {
-        "n": "#4A4148",
-        "p": "#8E8A93"
-      },
-      "pixels": [
-        "........pnp...",
-        "......ppnnp...",
-        "....ppppppp...",
-        "....ppppppp.p.",
-        "....pppppppp..",
-        "n..npppppppp..",
-        ".nn..ppppp....",
-        ".............."
+        "...p..",
+        ".pppp.",
+        "oppppo",
+        "oowwoo",
+        ".oooo.",
+        ".oooo."
       ]
     },
     {
       "id": "bombay-007",
-      "title": {
-        "en": "Leftovers",
-        "tr": "Artıklar",
-        "ja": "食べ残し",
-        "de": "Reste",
-        "fr": "Restes",
-        "es": "Sobras",
-        "pt-BR": "Restinho",
-        "ko": "남은 음식"
-      },
-      "palette": {
-        "p": "#8E8A93"
-      },
-      "pixels": [
-        "....p.p.pp....",
-        "..p.p.p.pp...p",
-        ".pp.p.p.pp..pp",
-        "pppppppppppppp",
-        ".pp.p.p.pp..pp",
-        "..p.p.p.pp...p",
-        "....p.p.pp...."
-      ]
-    },
-    {
-      "id": "bombay-008",
       "title": {
         "en": "Portrait",
         "tr": "Portre",
@@ -219,150 +170,68 @@
         "e": "#D9822B"
       },
       "pixels": [
-        ".b..........b.",
-        ".b...bbbb...b.",
-        "bbbbbbbbbbbbbb",
-        "bbbbbbbbbbbbbb",
-        "bbbbbbbbbbbbbb",
-        "bbbbbbbbbbbbbb",
-        "bbbeebbbbeebbb",
-        "bbbeebbbbeebbb",
-        "bbbeebbbbeebbb",
-        "bbbbbbbbbbbbbb",
-        ".bbbbbbbbbbbb.",
-        ".bbbbbbbbbbbb.",
-        "..bbbbbbbbbb..",
-        "....bbbbbb...."
+        "...b...",
+        ".bbbbb.",
+        "bbbbbbb",
+        "bbebebb",
+        ".bbbbb.",
+        "..bbb.."
+      ]
+    },
+    {
+      "id": "bombay-008",
+      "title": {
+        "en": "Toy Mouse",
+        "tr": "Oyuncak Fare",
+        "ja": "ネズミのおもちゃ",
+        "de": "Spielmaus",
+        "fr": "Souris jouet",
+        "es": "Ratón de juguete",
+        "pt-BR": "Ratinho de Brinquedo",
+        "ko": "장난감 쥐"
+      },
+      "palette": {
+        "n": "#4A4148",
+        "p": "#8E8A93"
+      },
+      "pixels": [
+        "....p..",
+        "...pn..",
+        "..pppp.",
+        ".ppppp.",
+        ".npppp.",
+        "n..pp..",
+        "......."
       ]
     },
     {
       "id": "bombay-009",
       "title": {
-        "en": "Silver Night",
-        "tr": "Gümüş Gece",
-        "ja": "銀色の夜",
-        "de": "Silbernacht",
-        "fr": "Nuit argentée",
-        "es": "Noche plateada",
-        "pt-BR": "Noite Prateada",
-        "ko": "은빛 밤"
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi",
+        "ja": "ゴロゴロ大好き",
+        "de": "Schnurrliebe",
+        "fr": "Ronron d'amour",
+        "es": "Amor ronroneante",
+        "pt-BR": "Amor Ronronado",
+        "ko": "골골송 사랑"
       },
       "palette": {
-        "b": "#2B2A2E",
-        "y": "#F1E3A0"
+        "n": "#4A4148",
+        "w": "#55525A"
       },
       "pixels": [
-        "......yy......",
-        "y....yyy......",
-        "....yyy.......",
-        "....yyy.......",
-        "...yyyy.......",
-        "...yyyyy......",
-        "...yyyyyy.....",
-        "....yyyyyy....",
-        "..bbyyyyyyyyy.",
-        "..bb..yyyyyy..",
-        "..bbb...y.....",
-        "..bbbb..b.....",
-        "..bbbb.b.....y",
-        "...bbbbb.....y"
+        ".nn.nn.",
+        "nwnnnnn",
+        "nnnnnnn",
+        ".nnnnn.",
+        ".nnnnn.",
+        "..nnn..",
+        "...n..."
       ]
     },
     {
       "id": "bombay-010",
-      "title": {
-        "en": "Nap Time",
-        "tr": "Şekerleme",
-        "ja": "お昼寝タイム",
-        "de": "Nickerchen",
-        "fr": "L'heure de la sieste",
-        "es": "Hora de la siesta",
-        "pt-BR": "Hora da Soneca",
-        "ko": "낮잠 시간"
-      },
-      "palette": {
-        "b": "#2B2A2E"
-      },
-      "pixels": [
-        ".....b........",
-        "bb.b.bbbbbb...",
-        "bbbbbbbbbbbbb.",
-        "bbbbbbbbbbbbbb",
-        ".bbbbbbbbbbbbb",
-        ".bbbbbbbbbbbbb",
-        "...bbbbbbbbbbb",
-        "....bbbbbbbbb.",
-        "....bbbbbbbb.."
-      ]
-    },
-    {
-      "id": "bombay-011",
-      "title": {
-        "en": "Sitting Pretty",
-        "tr": "Uslu Oturuş",
-        "ja": "おすましおすわり",
-        "de": "Brav sitzen",
-        "fr": "Sage comme une image",
-        "es": "Sentado con estilo",
-        "pt-BR": "Pose Elegante",
-        "ko": "얌전히 앉기"
-      },
-      "palette": {
-        "b": "#2B2A2E"
-      },
-      "pixels": [
-        ".....b.....",
-        "bb...b.....",
-        "bbbbbbb....",
-        "bbbbbbb....",
-        ".bbbbb.....",
-        ".bbbb......",
-        "...bbbb....",
-        "..bbbbbb..b",
-        "..bbbbbb..b",
-        ".bbbbbbbb.b",
-        ".bbbbbbb..b",
-        "..bbbbbb.bb",
-        "..bbbbbbbb.",
-        "..bbbb....."
-      ]
-    },
-    {
-      "id": "bombay-012",
-      "title": {
-        "en": "If I Fits",
-        "tr": "Kutu Sevdası",
-        "ja": "入れるなら入る",
-        "de": "Passt, sitzt",
-        "fr": "Si ça rentre…",
-        "es": "Si quepo, me siento",
-        "pt-BR": "Se Cabe, Eu Entro",
-        "ko": "들어가면 내 자리"
-      },
-      "palette": {
-        "b": "#2B2A2E",
-        "e": "#D9822B",
-        "o": "#5C6B7A",
-        "p": "#8E8A93"
-      },
-      "pixels": [
-        "....b......b...",
-        "....bb....bb...",
-        "....bbbbbbbb...",
-        "....bbbbbbbb...",
-        "....bbebbebb...",
-        "....bbebbebb...",
-        "..oobbbbbbbooo.",
-        ".ppooobbbbooopp",
-        "..oooooooooooo.",
-        "..oooooooooooo.",
-        "..oooooooooooo.",
-        "..oooooooooooo.",
-        "..oooooooooooo."
-      ]
-    },
-    {
-      "id": "bombay-013",
       "title": {
         "en": "Moon Gazer",
         "tr": "Ay Seyri",
@@ -378,86 +247,183 @@
         "y": "#F1E3A0"
       },
       "pixels": [
-        ".....yy......",
-        "...yyy.......",
-        "...yyy.......",
-        "..yyyy.......",
-        "..yyyy.......",
-        "..yyyy.......",
-        "..yyyyy......",
-        "..yyyyyy.....",
-        "bbbyyyyyyyyy.",
-        "bbb.yyyyyyy..",
-        ".bb..yyyy....",
-        ".bbb..b......",
-        "bbbbb.b......",
-        ".bbbbbb......",
-        ".bbbb........"
+        "...y....",
+        "..yy....",
+        ".yyy....",
+        ".yyy....",
+        ".byyyyy.",
+        ".b.yyy..",
+        ".bb.b...",
+        ".bbb...."
       ]
     },
     {
-      "id": "bombay-014",
+      "id": "bombay-011",
       "title": {
-        "en": "Toe Beans",
-        "tr": "Pati Yastıkları",
-        "ja": "肉球",
-        "de": "Pfotenballen",
-        "fr": "Coussinets",
-        "es": "Almohadillas",
-        "pt-BR": "Almofadinhas",
-        "ko": "말랑 젤리"
+        "en": "Fish Snack",
+        "tr": "Balık Atıştırması",
+        "ja": "おさかなおやつ",
+        "de": "Fischsnack",
+        "fr": "Goûter poisson",
+        "es": "Tentempié de pescado",
+        "pt-BR": "Petisco de Peixe",
+        "ko": "생선 간식"
       },
       "palette": {
-        "b": "#2B2A2E",
-        "n": "#4A4148"
+        "o": "#5C6B7A"
       },
       "pixels": [
-        "....bb...bb....",
-        "...bnnb.bnnb...",
-        "...bnnb.bnnb...",
-        ".bb.bnb.bnb.bb.",
-        "bnnb.......bnnb",
-        "bnnb...b...bnnb",
-        "bnb.bbbbbbb.bnb",
-        "...bbbbbbbbb...",
-        "..bbbbbbbbbbb..",
-        "..bbbnnnnnbbb..",
-        "..bbnnnnnnnbb..",
-        "..bbnnnnnnnbb..",
-        "..bbbnnnnnbbb..",
-        "...bbbnnnbbb...",
-        ".....bbbbb....."
+        "........",
+        "..oo....",
+        "ooooo..o",
+        "o.oooooo",
+        "oooooooo",
+        "ooooo..o",
+        "..oo....",
+        "........"
       ]
     },
     {
-      "id": "bombay-015",
+      "id": "bombay-012",
       "title": {
-        "en": "Strut",
-        "tr": "Salınarak Yürüyüş",
-        "ja": "おすまし歩き",
-        "de": "Stolzieren",
-        "fr": "Pavane",
-        "es": "Pavoneo",
-        "pt-BR": "Desfile",
-        "ko": "당당한 걸음"
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak",
+        "ja": "毛糸玉",
+        "de": "Wollknäuel",
+        "fr": "Pelote de laine",
+        "es": "Ovillo de lana",
+        "pt-BR": "Novelo de Lã",
+        "ko": "털실 뭉치"
+      },
+      "palette": {
+        "o": "#5C6B7A"
+      },
+      "pixels": [
+        "..oooo...",
+        ".ooo.oo..",
+        "o....oo..",
+        "ooo..oo..",
+        "oo.oo.o..",
+        ".ooooo...",
+        "..ooooo..",
+        ".......oo"
+      ]
+    },
+    {
+      "id": "bombay-013",
+      "title": {
+        "en": "Nap Time",
+        "tr": "Şekerleme",
+        "ja": "お昼寝タイム",
+        "de": "Nickerchen",
+        "fr": "L'heure de la sieste",
+        "es": "Hora de la siesta",
+        "pt-BR": "Hora da Soneca",
+        "ko": "낮잠 시간"
       },
       "palette": {
         "b": "#2B2A2E"
       },
       "pixels": [
-        "...............",
-        "bb.............",
-        "b........b..b..",
-        "b.......bbbbbb.",
-        ".b....b.bbbbbb.",
-        ".bbbbbbbbbbbb..",
-        "..bbbbbbbbbb...",
-        "..bbbbbbbbb....",
-        "..bbbbbbbb.....",
-        "..bbb..b.b.....",
-        "..b.b..b.b.....",
-        "..b.b..b.bb....",
-        "..b....b......."
+        ".........",
+        "bbbbbbb..",
+        "bbbbbbbb.",
+        "bbbbbbbbb",
+        ".bbbbbbbb",
+        ".bbbbbbbb",
+        "..bbbbbb.",
+        "..bbbbbb."
+      ]
+    },
+    {
+      "id": "bombay-014",
+      "title": {
+        "en": "Teacup Cat",
+        "tr": "Fincandaki Kedi",
+        "ja": "ティーカップ猫",
+        "de": "Teetassenkatze",
+        "fr": "Chat dans une tasse",
+        "es": "Gato en una taza",
+        "pt-BR": "Gato na Xícara",
+        "ko": "찻잔 고양이"
+      },
+      "palette": {
+        "b": "#2B2A2E",
+        "e": "#D9822B",
+        "o": "#5C6B7A",
+        "p": "#8E8A93"
+      },
+      "pixels": [
+        "..........",
+        "...bb...b.",
+        "...bbbbbb.",
+        "...bebeeb.",
+        "..oobbbbbo",
+        ".oooobbboo",
+        ".o.ppppppp",
+        "..ooooooo.",
+        "...oooooo."
+      ]
+    },
+    {
+      "id": "bombay-015",
+      "title": {
+        "en": "Owl Pose",
+        "tr": "Baykuş Duruşu",
+        "ja": "フクロウのポーズ",
+        "de": "Eulenpose",
+        "fr": "Pose de chouette",
+        "es": "Pose de búho",
+        "pt-BR": "Pose de Coruja",
+        "ko": "부엉이 포즈"
+      },
+      "palette": {
+        "b": "#2B2A2E",
+        "e": "#D9822B",
+        "w": "#55525A"
+      },
+      "pixels": [
+        "..........",
+        ".bb.....b.",
+        ".bbbbbbbbb",
+        ".bbebbeebb",
+        ".bbeebeeb.",
+        ".bbbbbbbb.",
+        ".bbbwwwbbb",
+        ".bbwwwwwbb",
+        ".bbwwwwbb.",
+        "...bbbbb.."
+      ]
+    },
+    {
+      "id": "bombay-016",
+      "title": {
+        "en": "Silver Night",
+        "tr": "Gümüş Gece",
+        "ja": "銀色の夜",
+        "de": "Silbernacht",
+        "fr": "Nuit argentée",
+        "es": "Noche plateada",
+        "pt-BR": "Noite Prateada",
+        "ko": "은빛 밤"
+      },
+      "palette": {
+        "b": "#2B2A2E",
+        "y": "#F1E3A0"
+      },
+      "pixels": [
+        "....yy......",
+        ".....yyy..y.",
+        ".....yyy....",
+        ".....yyyy...",
+        ".....yyyy...",
+        "....yyyy....",
+        ".yyyyyyybb..",
+        "..yyyyy.bb..",
+        "....b..bb...",
+        "....b.bbbb..",
+        "y....bbbb...",
+        "............"
       ]
     }
   ]

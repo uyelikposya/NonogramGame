@@ -5,85 +5,6 @@
     {
       "id": "sphynx-001",
       "title": {
-        "en": "Toe Beans",
-        "tr": "Pati Yastıkları",
-        "ja": "肉球",
-        "de": "Pfotenballen",
-        "fr": "Coussinets",
-        "es": "Almohadillas",
-        "pt-BR": "Almofadinhas",
-        "ko": "말랑 젤리"
-      },
-      "palette": {
-        "b": "#E9B8A7",
-        "n": "#D9827A"
-      },
-      "pixels": [
-        "..bb.bb..",
-        "..nnbnn..",
-        "bb.b.b.bb",
-        "nn.bbb.nn",
-        ".bbbbbbb.",
-        ".bbnnnbb.",
-        ".bbnnnbb.",
-        ".bbnnnbb.",
-        "..bbbbb.."
-      ]
-    },
-    {
-      "id": "sphynx-002",
-      "title": {
-        "en": "Purr Love",
-        "tr": "Mırıl Sevgi",
-        "ja": "ゴロゴロ大好き",
-        "de": "Schnurrliebe",
-        "fr": "Ronron d'amour",
-        "es": "Amor ronroneante",
-        "pt-BR": "Amor Ronronado",
-        "ko": "골골송 사랑"
-      },
-      "palette": {
-        "n": "#D9827A",
-        "w": "#F6DDD4"
-      },
-      "pixels": [
-        ".nnn.nnn.",
-        "nwwnnnnnn",
-        "nnnnnnnnn",
-        "nnnnnnnnn",
-        ".nnnnnnn.",
-        "..nnnnn..",
-        "...nnn...",
-        "....n...."
-      ]
-    },
-    {
-      "id": "sphynx-003",
-      "title": {
-        "en": "Fish Snack",
-        "tr": "Balık Atıştırması",
-        "ja": "おさかなおやつ",
-        "de": "Fischsnack",
-        "fr": "Goûter poisson",
-        "es": "Tentempié de pescado",
-        "pt-BR": "Petisco de Peixe",
-        "ko": "생선 간식"
-      },
-      "palette": {
-        "o": "#5B7DB1",
-        "p": "#F2C14E"
-      },
-      "pixels": [
-        ".oooo...o",
-        "o.opoo.oo",
-        "o.opooooo",
-        "ooopoo.oo",
-        ".oooo...o"
-      ]
-    },
-    {
-      "id": "sphynx-004",
-      "title": {
         "en": "Yarn Ball",
         "tr": "Yün Yumak",
         "ja": "毛糸玉",
@@ -97,19 +18,15 @@
         "o": "#5B7DB1"
       },
       "pixels": [
-        "....oooo..",
-        "...o.oooo.",
-        "..ooo.o..o",
-        "..ooo..ooo",
-        "..oo.o.ooo",
-        "..o.ooo.oo",
-        "...oooooo.",
-        "...ooooo..",
-        ".oo......."
+        ".oo..",
+        "o..o.",
+        "o.oo.",
+        "oooo.",
+        "....."
       ]
     },
     {
-      "id": "sphynx-005",
+      "id": "sphynx-002",
       "title": {
         "en": "Dinner Bowl",
         "tr": "Mama Kabı",
@@ -126,96 +43,356 @@
         "w": "#F6DDD4"
       },
       "pixels": [
-        "...pppp...",
-        ".pppppppp.",
-        "oppppppppo",
-        "oooppppooo",
-        ".owwwwwwo.",
-        ".oooooooo.",
-        ".oooooooo."
+        "......",
+        ".pppp.",
+        "ooppoo",
+        "oowwwo",
+        ".oooo."
+      ]
+    },
+    {
+      "id": "sphynx-003",
+      "title": {
+        "en": "Toy Mouse",
+        "tr": "Oyuncak Fare",
+        "ja": "ネズミのおもちゃ",
+        "de": "Spielmaus",
+        "fr": "Souris jouet",
+        "es": "Ratón de juguete",
+        "pt-BR": "Ratinho de Brinquedo",
+        "ko": "장난감 쥐"
+      },
+      "palette": {
+        "n": "#D9827A",
+        "p": "#F2C14E"
+      },
+      "pixels": [
+        "....n..",
+        "...ppp.",
+        "..ppppp",
+        "..pppp.",
+        ".n.pp.."
+      ]
+    },
+    {
+      "id": "sphynx-004",
+      "title": {
+        "en": "Fish Snack",
+        "tr": "Balık Atıştırması",
+        "ja": "おさかなおやつ",
+        "de": "Fischsnack",
+        "fr": "Goûter poisson",
+        "es": "Tentempié de pescado",
+        "pt-BR": "Petisco de Peixe",
+        "ko": "생선 간식"
+      },
+      "palette": {
+        "o": "#5B7DB1"
+      },
+      "pixels": [
+        "..oo...",
+        "ooooo.o",
+        "o.ooooo",
+        "ooooooo",
+        "ooooo.o",
+        "..oo..."
+      ]
+    },
+    {
+      "id": "sphynx-005",
+      "title": {
+        "en": "Toe Beans",
+        "tr": "Pati Yastıkları",
+        "ja": "肉球",
+        "de": "Pfotenballen",
+        "fr": "Coussinets",
+        "es": "Almohadillas",
+        "pt-BR": "Almofadinhas",
+        "ko": "말랑 젤리"
+      },
+      "palette": {
+        "b": "#E9B8A7",
+        "n": "#D9827A"
+      },
+      "pixels": [
+        "..b.b..",
+        ".bn.nb.",
+        "nn.b.nn",
+        ".bbbbb.",
+        ".bnnnb.",
+        ".bnnnb.",
+        "..bbb.."
       ]
     },
     {
       "id": "sphynx-006",
       "title": {
-        "en": "If I Fits",
-        "tr": "Kutu Sevdası",
-        "ja": "入れるなら入る",
-        "de": "Passt, sitzt",
-        "fr": "Si ça rentre…",
-        "es": "Si quepo, me siento",
-        "pt-BR": "Se Cabe, Eu Entro",
-        "ko": "들어가면 내 자리"
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi",
+        "ja": "ゴロゴロ大好き",
+        "de": "Schnurrliebe",
+        "fr": "Ronron d'amour",
+        "es": "Amor ronroneante",
+        "pt-BR": "Amor Ronronado",
+        "ko": "골골송 사랑"
       },
       "palette": {
-        "b": "#E9B8A7",
-        "e": "#7FB069",
-        "o": "#5B7DB1",
-        "p": "#F2C14E"
+        "n": "#D9827A",
+        "w": "#F6DDD4"
       },
       "pixels": [
-        "..b....b..",
-        "..bb...b..",
-        "..bbbbbb..",
-        "..bbbbbb..",
-        "...bebeb..",
-        ".oobbbbbo.",
-        ".poobbooop",
-        ".oooooooo.",
-        ".oooooooo.",
-        ".oooooooo."
+        ".nnnn.",
+        "nwnnnn",
+        "nnnnnn",
+        ".nnnn.",
+        "..nn..",
+        "......"
       ]
     },
     {
       "id": "sphynx-007",
       "title": {
-        "en": "Leftovers",
-        "tr": "Artıklar",
-        "ja": "食べ残し",
-        "de": "Reste",
-        "fr": "Restes",
-        "es": "Sobras",
-        "pt-BR": "Restinho",
-        "ko": "남은 음식"
+        "en": "Portrait",
+        "tr": "Portre",
+        "ja": "肖像画",
+        "de": "Porträt",
+        "fr": "Portrait",
+        "es": "Retrato",
+        "pt-BR": "Retrato",
+        "ko": "초상화"
       },
       "palette": {
-        "p": "#F2C14E"
+        "b": "#E9B8A7",
+        "e": "#7FB069"
       },
       "pixels": [
-        "...pp.p...",
-        ".p.pp.p..p",
-        "pppppppppp",
-        ".p.pp.p..p",
-        "...pp.p..."
+        ".......",
+        "bbbbbbb",
+        ".bbbbb.",
+        ".bebeb.",
+        ".bbbbb.",
+        "..bbb.."
       ]
     },
     {
       "id": "sphynx-008",
       "title": {
-        "en": "Nap Time",
-        "tr": "Şekerleme",
-        "ja": "お昼寝タイム",
-        "de": "Nickerchen",
-        "fr": "L'heure de la sieste",
-        "es": "Hora de la siesta",
-        "pt-BR": "Hora da Soneca",
-        "ko": "낮잠 시간"
+        "en": "Dinner Bowl",
+        "tr": "Mama Kabı",
+        "ja": "ごはん皿",
+        "de": "Futternapf",
+        "fr": "Gamelle",
+        "es": "Cuenco de comida",
+        "pt-BR": "Potinho de Ração",
+        "ko": "밥그릇"
       },
       "palette": {
-        "b": "#E9B8A7"
+        "o": "#5B7DB1",
+        "p": "#F2C14E",
+        "w": "#F6DDD4"
       },
       "pixels": [
-        "..........",
-        "bb..bbb...",
-        "bbbbbbbbb.",
-        "bbbbbbbbbb",
-        ".bbbbbbbbb",
-        "...bbbbbbb",
-        "...bbbbbb."
+        "....p..",
+        ".ppppp.",
+        "opppppo",
+        "oowwwoo",
+        ".ooooo.",
+        ".ooooo."
       ]
     },
     {
       "id": "sphynx-009",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi",
+        "ja": "ゴロゴロ大好き",
+        "de": "Schnurrliebe",
+        "fr": "Ronron d'amour",
+        "es": "Amor ronroneante",
+        "pt-BR": "Amor Ronronado",
+        "ko": "골골송 사랑"
+      },
+      "palette": {
+        "n": "#D9827A",
+        "w": "#F6DDD4"
+      },
+      "pixels": [
+        ".nn.nn.",
+        "nwnnnnn",
+        "nnnnnnn",
+        ".nnnnn.",
+        ".nnnnn.",
+        "..nnn..",
+        "...n..."
+      ]
+    },
+    {
+      "id": "sphynx-010",
+      "title": {
+        "en": "Moon Gazer",
+        "tr": "Ay Seyri",
+        "ja": "月を見る猫",
+        "de": "Mondgucker",
+        "fr": "Rêveur de lune",
+        "es": "Mirando la luna",
+        "pt-BR": "Admirador da Lua",
+        "ko": "달 바라기"
+      },
+      "palette": {
+        "b": "#E9B8A7",
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        "...y....",
+        "..yy....",
+        ".yyy....",
+        ".yyy....",
+        ".byyyyy.",
+        ".b.yyy..",
+        ".bb.b...",
+        ".bbb...."
+      ]
+    },
+    {
+      "id": "sphynx-011",
+      "title": {
+        "en": "Fish Snack",
+        "tr": "Balık Atıştırması",
+        "ja": "おさかなおやつ",
+        "de": "Fischsnack",
+        "fr": "Goûter poisson",
+        "es": "Tentempié de pescado",
+        "pt-BR": "Petisco de Peixe",
+        "ko": "생선 간식"
+      },
+      "palette": {
+        "o": "#5B7DB1"
+      },
+      "pixels": [
+        "........",
+        "..oo....",
+        "ooooo..o",
+        "o.oooooo",
+        "oooooooo",
+        "ooooo..o",
+        "..oo....",
+        "........"
+      ]
+    },
+    {
+      "id": "sphynx-012",
+      "title": {
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak",
+        "ja": "毛糸玉",
+        "de": "Wollknäuel",
+        "fr": "Pelote de laine",
+        "es": "Ovillo de lana",
+        "pt-BR": "Novelo de Lã",
+        "ko": "털실 뭉치"
+      },
+      "palette": {
+        "o": "#5B7DB1"
+      },
+      "pixels": [
+        "..oooo...",
+        ".ooo.oo..",
+        "o....oo..",
+        "ooo..oo..",
+        "oo.oo.o..",
+        ".ooooo...",
+        "..ooooo..",
+        ".......oo"
+      ]
+    },
+    {
+      "id": "sphynx-013",
+      "title": {
+        "en": "Portrait",
+        "tr": "Portre",
+        "ja": "肖像画",
+        "de": "Porträt",
+        "fr": "Portrait",
+        "es": "Retrato",
+        "pt-BR": "Retrato",
+        "ko": "초상화"
+      },
+      "palette": {
+        "b": "#E9B8A7",
+        "e": "#7FB069"
+      },
+      "pixels": [
+        ".........",
+        ".b..b..bb",
+        ".bbbbbbbb",
+        ".bbbbbbb.",
+        ".bbebbeb.",
+        ".bbbbbbb.",
+        "..bbbbb..",
+        "....b...."
+      ]
+    },
+    {
+      "id": "sphynx-014",
+      "title": {
+        "en": "White Gloves",
+        "tr": "Beyaz Eldivenler",
+        "ja": "白い手袋",
+        "de": "Weiße Handschuhe",
+        "fr": "Gants blancs",
+        "es": "Guantes blancos",
+        "pt-BR": "Luvas Brancas",
+        "ko": "하얀 장갑"
+      },
+      "palette": {
+        "b": "#E9B8A7",
+        "w": "#F6DDD4"
+      },
+      "pixels": [
+        "..b...b..",
+        ".bbb.bbb.",
+        "bbbbbbbb.",
+        "bbbbbbbbb",
+        "bbbbbbbb.",
+        "bbbbbbbb.",
+        "wwwwwwww.",
+        "wwwwwwww.",
+        ".ww..www."
+      ]
+    },
+    {
+      "id": "sphynx-015",
+      "title": {
+        "en": "Silk Ribbon",
+        "tr": "İpek Kurdele",
+        "ja": "シルクのリボン",
+        "de": "Seidenband",
+        "fr": "Ruban de soie",
+        "es": "Cinta de seda",
+        "pt-BR": "Fita de Seda",
+        "ko": "실크 리본"
+      },
+      "palette": {
+        "b": "#E9B8A7",
+        "e": "#7FB069",
+        "n": "#D9827A",
+        "o": "#5B7DB1"
+      },
+      "pixels": [
+        "........b.",
+        "bb..bb.bb.",
+        "bbbbbbbbb.",
+        ".bbbbbbbb.",
+        ".beebbebb.",
+        ".bbebbebb.",
+        ".bbbbbbbb.",
+        "..bbbbnb..",
+        "..nnonn...",
+        ".........."
+      ]
+    },
+    {
+      "id": "sphynx-016",
       "title": {
         "en": "Cozy Sweater",
         "tr": "Sıcak Kazak",
@@ -232,197 +409,17 @@
         "o": "#5B7DB1"
       },
       "pixels": [
-        "b........b",
-        "bb......bb",
-        "bbbbbbbbbb",
-        "bbbbbbbbbb",
-        ".bbbbbbbb.",
-        ".beebbeeb.",
-        ".bbebbbbb.",
-        ".bbbbbbbb.",
-        ".bbbbbbbb.",
-        ".oooooooo.",
-        ".oooooooo."
-      ]
-    },
-    {
-      "id": "sphynx-010",
-      "title": {
-        "en": "Sitting Pretty",
-        "tr": "Uslu Oturuş",
-        "ja": "おすましおすわり",
-        "de": "Brav sitzen",
-        "fr": "Sage comme une image",
-        "es": "Sentado con estilo",
-        "pt-BR": "Pose Elegante",
-        "ko": "얌전히 앉기"
-      },
-      "palette": {
-        "b": "#E9B8A7"
-      },
-      "pixels": [
-        ".....b...",
-        "bb...b...",
-        "bbbbbb...",
-        "bbbbbb...",
-        ".bbbb....",
-        "..bbbb...",
-        "..bbbbb.b",
-        "..bbbbb.b",
-        "..bbbbb.b",
-        "..bbbbbbb",
-        "..bbbb..."
-      ]
-    },
-    {
-      "id": "sphynx-011",
-      "title": {
-        "en": "Strut",
-        "tr": "Salınarak Yürüyüş",
-        "ja": "おすまし歩き",
-        "de": "Stolzieren",
-        "fr": "Pavane",
-        "es": "Pavoneo",
-        "pt-BR": "Desfile",
-        "ko": "당당한 걸음"
-      },
-      "palette": {
-        "b": "#E9B8A7"
-      },
-      "pixels": [
-        "b........b.",
-        "b....bb..b.",
-        "b....bbbbb.",
-        ".bbbbbbbbb.",
-        ".bbbbbbb...",
-        "..bbbbb....",
-        "...b.bb....",
-        ".b.b.b.....",
-        "...b......."
-      ]
-    },
-    {
-      "id": "sphynx-012",
-      "title": {
-        "en": "If I Fits",
-        "tr": "Kutu Sevdası",
-        "ja": "入れるなら入る",
-        "de": "Passt, sitzt",
-        "fr": "Si ça rentre…",
-        "es": "Si quepo, me siento",
-        "pt-BR": "Se Cabe, Eu Entro",
-        "ko": "들어가면 내 자리"
-      },
-      "palette": {
-        "b": "#E9B8A7",
-        "e": "#7FB069",
-        "o": "#5B7DB1",
-        "p": "#F2C14E"
-      },
-      "pixels": [
         "...........",
-        "..b....b...",
-        "..bb..bbb..",
+        ".b........b",
+        ".bb..bb..bb",
+        ".bbbbbbbbbb",
+        ".bbbbbbbbbb",
+        ".bbeebbeeb.",
+        ".bbeebbeeb.",
+        "..bbbbbbbb.",
         "..bbbbbbb..",
-        "..bbebeb...",
-        "..bbbbeb...",
-        "ppobbbboop.",
-        ".ooooooooo.",
-        ".ooooooooo.",
-        ".ooooooooo.",
-        ".oooooooo.."
-      ]
-    },
-    {
-      "id": "sphynx-013",
-      "title": {
-        "en": "Moon Gazer",
-        "tr": "Ay Seyri",
-        "ja": "月を見る猫",
-        "de": "Mondgucker",
-        "fr": "Rêveur de lune",
-        "es": "Mirando la luna",
-        "pt-BR": "Admirador da Lua",
-        "ko": "달 바라기"
-      },
-      "palette": {
-        "b": "#E9B8A7",
-        "y": "#F4D35E"
-      },
-      "pixels": [
-        "...yyy....",
-        "..yyy.....",
-        "..yyy.....",
-        ".yyyy.....",
-        ".yyyy.....",
-        ".yyyyy....",
-        ".byyyyy...",
-        "bbyyyyyyy.",
-        "bb..yyyy..",
-        "bbb..b....",
-        "bbbb.b....",
-        ".bbbb....."
-      ]
-    },
-    {
-      "id": "sphynx-014",
-      "title": {
-        "en": "Toe Beans",
-        "tr": "Pati Yastıkları",
-        "ja": "肉球",
-        "de": "Pfotenballen",
-        "fr": "Coussinets",
-        "es": "Almohadillas",
-        "pt-BR": "Almofadinhas",
-        "ko": "말랑 젤리"
-      },
-      "palette": {
-        "b": "#E9B8A7",
-        "n": "#D9827A"
-      },
-      "pixels": [
-        "...bb..bb...",
-        "...nnbbnn...",
-        ".b.bnbbnn.b.",
-        "bnb......bnb",
-        "bnb..bb..bnb",
-        ".bbbbbbbbbb.",
-        "..bbbbbbbb..",
-        "..bbnnnnbb..",
-        ".bbnnnnnnbb.",
-        "..bbnnnnbb..",
-        "..bbbnnnbb..",
-        "...bbbbbb..."
-      ]
-    },
-    {
-      "id": "sphynx-015",
-      "title": {
-        "en": "Portrait",
-        "tr": "Portre",
-        "ja": "肖像画",
-        "de": "Porträt",
-        "fr": "Portrait",
-        "es": "Retrato",
-        "pt-BR": "Retrato",
-        "ko": "초상화"
-      },
-      "palette": {
-        "b": "#E9B8A7",
-        "e": "#7FB069"
-      },
-      "pixels": [
-        "............",
-        "bb........bb",
-        "bbb.bbbb.bbb",
-        "bbbbbbbbbbbb",
-        "bbbbbbbbbbbb",
-        ".bbeebbeebb.",
-        ".bbeebbeebb.",
-        ".bbbbbbbbbb.",
-        ".bbbbbbbbbb.",
-        "..bbbbbbbb..",
-        "...bbbbbb..."
+        "..oooooooo.",
+        "..oooooooo."
       ]
     }
   ]

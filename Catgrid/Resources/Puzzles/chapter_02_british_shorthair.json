@@ -5,53 +5,6 @@
     {
       "id": "british-shorthair-001",
       "title": {
-        "en": "Toe Beans",
-        "tr": "Pati Yastıkları",
-        "ja": "肉球",
-        "de": "Pfotenballen",
-        "fr": "Coussinets",
-        "es": "Almohadillas",
-        "pt-BR": "Almofadinhas",
-        "ko": "말랑 젤리"
-      },
-      "palette": {
-        "b": "#8E9AA6",
-        "n": "#6E7A86"
-      },
-      "pixels": [
-        ".b.b.",
-        "nb.bn",
-        "bbbbb",
-        ".nnn.",
-        ".bnb."
-      ]
-    },
-    {
-      "id": "british-shorthair-002",
-      "title": {
-        "en": "Purr Love",
-        "tr": "Mırıl Sevgi",
-        "ja": "ゴロゴロ大好き",
-        "de": "Schnurrliebe",
-        "fr": "Ronron d'amour",
-        "es": "Amor ronroneante",
-        "pt-BR": "Amor Ronronado",
-        "ko": "골골송 사랑"
-      },
-      "palette": {
-        "n": "#6E7A86"
-      },
-      "pixels": [
-        "nnnnn",
-        "nnnnn",
-        "nnnnn",
-        ".nnn.",
-        "..n.."
-      ]
-    },
-    {
-      "id": "british-shorthair-003",
-      "title": {
         "en": "Fish Snack",
         "tr": "Balık Atıştırması",
         "ja": "おさかなおやつ",
@@ -72,7 +25,7 @@
       ]
     },
     {
-      "id": "british-shorthair-004",
+      "id": "british-shorthair-002",
       "title": {
         "en": "Yarn Ball",
         "tr": "Yün Yumak",
@@ -87,132 +40,15 @@
         "o": "#F2E8DC"
       },
       "pixels": [
-        "..ooo.",
-        ".ooo.o",
-        ".oo.oo",
-        "..oo.o",
-        "..ooo.",
+        ".ooo..",
+        "o..oo.",
+        "ooo.o.",
+        ".ooo..",
         "......"
       ]
     },
     {
-      "id": "british-shorthair-005",
-      "title": {
-        "en": "Dinner Bowl",
-        "tr": "Mama Kabı",
-        "ja": "ごはん皿",
-        "de": "Futternapf",
-        "fr": "Gamelle",
-        "es": "Cuenco de comida",
-        "pt-BR": "Potinho de Ração",
-        "ko": "밥그릇"
-      },
-      "palette": {
-        "o": "#F2E8DC",
-        "p": "#C98B6B",
-        "w": "#DDE3E8"
-      },
-      "pixels": [
-        ".pppp.",
-        "oppppo",
-        "oowwoo",
-        ".oooo."
-      ]
-    },
-    {
-      "id": "british-shorthair-006",
-      "title": {
-        "en": "Leftovers",
-        "tr": "Artıklar",
-        "ja": "食べ残し",
-        "de": "Reste",
-        "fr": "Restes",
-        "es": "Sobras",
-        "pt-BR": "Restinho",
-        "ko": "남은 음식"
-      },
-      "palette": {
-        "p": "#C98B6B"
-      },
-      "pixels": [
-        "......",
-        "p.pppp",
-        "pppppp",
-        "..pp.."
-      ]
-    },
-    {
-      "id": "british-shorthair-007",
-      "title": {
-        "en": "Leftovers",
-        "tr": "Artıklar",
-        "ja": "食べ残し",
-        "de": "Reste",
-        "fr": "Restes",
-        "es": "Sobras",
-        "pt-BR": "Restinho",
-        "ko": "남은 음식"
-      },
-      "palette": {
-        "p": "#C98B6B"
-      },
-      "pixels": [
-        "...p..",
-        "p.pp.p",
-        "pppppp",
-        "..pp.."
-      ]
-    },
-    {
-      "id": "british-shorthair-008",
-      "title": {
-        "en": "Toy Mouse",
-        "tr": "Oyuncak Fare",
-        "ja": "ネズミのおもちゃ",
-        "de": "Spielmaus",
-        "fr": "Souris jouet",
-        "es": "Ratón de juguete",
-        "pt-BR": "Ratinho de Brinquedo",
-        "ko": "장난감 쥐"
-      },
-      "palette": {
-        "n": "#6E7A86",
-        "p": "#C98B6B"
-      },
-      "pixels": [
-        "...n..",
-        "..ppp.",
-        ".pppp.",
-        "n..p.."
-      ]
-    },
-    {
-      "id": "british-shorthair-009",
-      "title": {
-        "en": "Portrait",
-        "tr": "Portre",
-        "ja": "肖像画",
-        "de": "Porträt",
-        "fr": "Portrait",
-        "es": "Retrato",
-        "pt-BR": "Retrato",
-        "ko": "초상화"
-      },
-      "palette": {
-        "b": "#8E9AA6",
-        "e": "#E8A33D"
-      },
-      "pixels": [
-        ".bbbb.b",
-        "bbbbbbb",
-        "bbebeeb",
-        "bbbbbbb",
-        ".bbbbb.",
-        "..bbb.."
-      ]
-    },
-    {
-      "id": "british-shorthair-010",
+      "id": "british-shorthair-003",
       "title": {
         "en": "Dinner Bowl",
         "tr": "Mama Kabı",
@@ -230,36 +66,141 @@
       },
       "pixels": [
         "..ppp..",
-        "ppppppp",
+        ".ppppp.",
         "oopppoo",
-        "oowwwoo",
+        ".owwwo.",
         ".ooooo."
       ]
     },
     {
-      "id": "british-shorthair-011",
+      "id": "british-shorthair-004",
       "title": {
-        "en": "Fish Snack",
-        "tr": "Balık Atıştırması",
-        "ja": "おさかなおやつ",
-        "de": "Fischsnack",
-        "fr": "Goûter poisson",
-        "es": "Tentempié de pescado",
-        "pt-BR": "Petisco de Peixe",
-        "ko": "생선 간식"
+        "en": "Toy Mouse",
+        "tr": "Oyuncak Fare",
+        "ja": "ネズミのおもちゃ",
+        "de": "Spielmaus",
+        "fr": "Souris jouet",
+        "es": "Ratón de juguete",
+        "pt-BR": "Ratinho de Brinquedo",
+        "ko": "장난감 쥐"
       },
       "palette": {
-        "o": "#F2E8DC"
+        "n": "#6E7A86",
+        "p": "#C98B6B"
       },
       "pixels": [
-        ".ooo..o",
-        "o.ooooo",
-        "ooooooo",
-        ".ooo..o"
+        "....p..",
+        "...pn..",
+        "..pppp.",
+        "..pppp.",
+        "nnppp..",
+        "......."
       ]
     },
     {
-      "id": "british-shorthair-012",
+      "id": "british-shorthair-005",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi",
+        "ja": "ゴロゴロ大好き",
+        "de": "Schnurrliebe",
+        "fr": "Ronron d'amour",
+        "es": "Amor ronroneante",
+        "pt-BR": "Amor Ronronado",
+        "ko": "골골송 사랑"
+      },
+      "palette": {
+        "n": "#6E7A86",
+        "w": "#DDE3E8"
+      },
+      "pixels": [
+        ".nn.nn.",
+        "nwnnnnn",
+        "nnnnnnn",
+        ".nnnnn.",
+        ".nnnnn.",
+        "..nnn..",
+        "...n..."
+      ]
+    },
+    {
+      "id": "british-shorthair-006",
+      "title": {
+        "en": "Toe Beans",
+        "tr": "Pati Yastıkları",
+        "ja": "肉球",
+        "de": "Pfotenballen",
+        "fr": "Coussinets",
+        "es": "Almohadillas",
+        "pt-BR": "Almofadinhas",
+        "ko": "말랑 젤리"
+      },
+      "palette": {
+        "b": "#8E9AA6",
+        "n": "#6E7A86"
+      },
+      "pixels": [
+        "..bb..",
+        "bbnnbb",
+        "bbbbbb",
+        ".bnnb.",
+        ".bnnb.",
+        ".bbbb."
+      ]
+    },
+    {
+      "id": "british-shorthair-007",
+      "title": {
+        "en": "Portrait",
+        "tr": "Portre",
+        "ja": "肖像画",
+        "de": "Porträt",
+        "fr": "Portrait",
+        "es": "Retrato",
+        "pt-BR": "Retrato",
+        "ko": "초상화"
+      },
+      "palette": {
+        "b": "#8E9AA6",
+        "e": "#E8A33D"
+      },
+      "pixels": [
+        "b.bbb..",
+        "bbbbbbb",
+        "bbbbebb",
+        "bbbbbbb",
+        "bbbbbb.",
+        "..bbb.."
+      ]
+    },
+    {
+      "id": "british-shorthair-008",
+      "title": {
+        "en": "Dinner Bowl",
+        "tr": "Mama Kabı",
+        "ja": "ごはん皿",
+        "de": "Futternapf",
+        "fr": "Gamelle",
+        "es": "Cuenco de comida",
+        "pt-BR": "Potinho de Ração",
+        "ko": "밥그릇"
+      },
+      "palette": {
+        "o": "#F2E8DC",
+        "p": "#C98B6B",
+        "w": "#DDE3E8"
+      },
+      "pixels": [
+        "....p..",
+        ".ppppp.",
+        "opppppo",
+        "oowwwoo",
+        ".ooooo.",
+        ".ooooo."
+      ]
+    },
+    {
+      "id": "british-shorthair-009",
       "title": {
         "en": "Purr Love",
         "tr": "Mırıl Sevgi",
@@ -285,83 +226,199 @@
       ]
     },
     {
+      "id": "british-shorthair-010",
+      "title": {
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak",
+        "ja": "毛糸玉",
+        "de": "Wollknäuel",
+        "fr": "Pelote de laine",
+        "es": "Ovillo de lana",
+        "pt-BR": "Novelo de Lã",
+        "ko": "털실 뭉치"
+      },
+      "palette": {
+        "o": "#F2E8DC"
+      },
+      "pixels": [
+        "....o...",
+        "..ooooo.",
+        "..oo...o",
+        "..oo..oo",
+        "..o.o.oo",
+        "...ooo..",
+        "..oooo..",
+        ".o......"
+      ]
+    },
+    {
+      "id": "british-shorthair-011",
+      "title": {
+        "en": "Toy Mouse",
+        "tr": "Oyuncak Fare",
+        "ja": "ネズミのおもちゃ",
+        "de": "Spielmaus",
+        "fr": "Souris jouet",
+        "es": "Ratón de juguete",
+        "pt-BR": "Ratinho de Brinquedo",
+        "ko": "장난감 쥐"
+      },
+      "palette": {
+        "n": "#6E7A86",
+        "p": "#C98B6B"
+      },
+      "pixels": [
+        "........",
+        "..np....",
+        "..ppp...",
+        "..pppp..",
+        ".ppppp..",
+        ".ppppp.n",
+        "..ppp.nn",
+        "........"
+      ]
+    },
+    {
+      "id": "british-shorthair-012",
+      "title": {
+        "en": "Dinner Bowl",
+        "tr": "Mama Kabı",
+        "ja": "ごはん皿",
+        "de": "Futternapf",
+        "fr": "Gamelle",
+        "es": "Cuenco de comida",
+        "pt-BR": "Potinho de Ração",
+        "ko": "밥그릇"
+      },
+      "palette": {
+        "o": "#F2E8DC",
+        "p": "#C98B6B",
+        "w": "#DDE3E8"
+      },
+      "pixels": [
+        ".........",
+        "...ppp...",
+        ".ppppppp.",
+        "opppppppo",
+        "oooowoooo",
+        ".ooooooo.",
+        ".ooooooo.",
+        "........."
+      ]
+    },
+    {
       "id": "british-shorthair-013",
       "title": {
-        "en": "Moon Gazer",
-        "tr": "Ay Seyri",
-        "ja": "月を見る猫",
-        "de": "Mondgucker",
-        "fr": "Rêveur de lune",
-        "es": "Mirando la luna",
-        "pt-BR": "Admirador da Lua",
-        "ko": "달 바라기"
+        "en": "Owl Pose",
+        "tr": "Baykuş Duruşu",
+        "ja": "フクロウのポーズ",
+        "de": "Eulenpose",
+        "fr": "Pose de chouette",
+        "es": "Pose de búho",
+        "pt-BR": "Pose de Coruja",
+        "ko": "부엉이 포즈"
       },
       "palette": {
         "b": "#8E9AA6",
-        "y": "#F4D35E"
+        "e": "#E8A33D",
+        "w": "#DDE3E8"
       },
       "pixels": [
-        "..yy...",
-        ".yy....",
-        ".yy....",
-        ".yyy...",
-        "byyyyy.",
-        "bbyyyy.",
-        "bb.b...",
-        "bbbb..."
+        "...b....",
+        ".bbbbbb.",
+        ".beeeeb.",
+        "..bbbb..",
+        ".bbwbb..",
+        ".bbwwbb.",
+        ".bbwwb..",
+        "..bbb..."
       ]
     },
     {
       "id": "british-shorthair-014",
       "title": {
-        "en": "Toe Beans",
-        "tr": "Pati Yastıkları",
-        "ja": "肉球",
-        "de": "Pfotenballen",
-        "fr": "Coussinets",
-        "es": "Almohadillas",
-        "pt-BR": "Almofadinhas",
-        "ko": "말랑 젤리"
+        "en": "White Gloves",
+        "tr": "Beyaz Eldivenler",
+        "ja": "白い手袋",
+        "de": "Weiße Handschuhe",
+        "fr": "Gants blancs",
+        "es": "Guantes blancos",
+        "pt-BR": "Luvas Brancas",
+        "ko": "하얀 장갑"
       },
       "palette": {
         "b": "#8E9AA6",
-        "n": "#6E7A86"
+        "w": "#DDE3E8"
       },
       "pixels": [
-        "..bbbb..",
-        "..nbbn..",
-        "bn....nb",
-        "bbbbbbbb",
-        ".bbbbbb.",
-        ".bnnnnb.",
-        ".bbnnnb.",
-        "..bbbb.."
+        "..b...b..",
+        ".bbb.bbb.",
+        ".bbbbbbbb",
+        "bbbbbbbbb",
+        ".bbbbbbbb",
+        ".bbbbbbb.",
+        ".wwwwwww.",
+        ".ww.www.w",
+        "..ww..ww."
       ]
     },
     {
       "id": "british-shorthair-015",
       "title": {
-        "en": "Portrait",
-        "tr": "Portre",
-        "ja": "肖像画",
-        "de": "Porträt",
-        "fr": "Portrait",
-        "es": "Retrato",
-        "pt-BR": "Retrato",
-        "ko": "초상화"
+        "en": "Floppy Hug",
+        "tr": "Gevşek Kucaklama",
+        "ja": "ぐにゃっとハグ",
+        "de": "Schlappe Umarmung",
+        "fr": "Câlin tout mou",
+        "es": "Abrazo blandito",
+        "pt-BR": "Abraço Molinho",
+        "ko": "축 늘어진 포옹"
       },
       "palette": {
         "b": "#8E9AA6",
-        "e": "#E8A33D"
+        "d": "#6E7A86",
+        "w": "#DDE3E8"
       },
       "pixels": [
-        "...bb...",
-        ".bbbbbbb",
-        "bbebbbbb",
-        "bbebbebb",
-        ".bbbbbbb",
-        ".bbbbbb.",
-        "...bb..."
+        "...d..d...",
+        "...b..b...",
+        "...b..b...",
+        ".bbb..b...",
+        ".bbbbbbb..",
+        "bbbbwwwb..",
+        ".bbwwwwbd.",
+        "..bbwwbbd.",
+        "...bbbb..d",
+        ".........."
+      ]
+    },
+    {
+      "id": "british-shorthair-016",
+      "title": {
+        "en": "Mighty Tail",
+        "tr": "Görkemli Kuyruk",
+        "ja": "立派なしっぽ",
+        "de": "Prachtschwanz",
+        "fr": "Queue majestueuse",
+        "es": "Gran cola",
+        "pt-BR": "Cauda Poderosa",
+        "ko": "늠름한 꼬리"
+      },
+      "palette": {
+        "b": "#8E9AA6",
+        "d": "#6E7A86"
+      },
+      "pixels": [
+        "b......d..",
+        "bbbbb.ddd.",
+        "bbbbb..ddd",
+        ".bbb....dd",
+        "..bbb...dd",
+        ".bbbbb..bd",
+        ".bbbbb..bd",
+        ".bbbbbddbd",
+        "..bbbdddd.",
+        "...b.dd..."
       ]
     }
   ]

@@ -15,6 +15,7 @@ private struct ThemedScreen: ViewModifier {
 private struct ScreenTitle: ViewModifier {
     @Environment(\.appTheme) private var theme
     let title: Text
+    var subtitle: Text?
 
     func body(content: Content) -> some View {
         content
@@ -22,9 +23,20 @@ private struct ScreenTitle: ViewModifier {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .principal) {
-                    title
-                        .font(.headline)
-                        .foregroundStyle(theme.textPrimary)
+                    VStack(spacing: 0) {
+                        title
+                            .font(.headline)
+                            .foregroundStyle(theme.textPrimary)
+                        if let subtitle {
+                            subtitle
+                                .font(.caption)
+                                .foregroundStyle(theme.textSecondary)
+                        }
+                    }
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.8)
+                    .accessibilityElement(children: .combine)
+                    .accessibilityIdentifier("screen.title")
                 }
             }
     }
@@ -67,6 +79,11 @@ extension View {
     /// İçerikten gelen (çevrilmeyecek) başlıklar için.
     func screenTitle(verbatim title: String) -> some View {
         modifier(ScreenTitle(title: Text(verbatim: title)))
+    }
+
+    /// Başlık + altında küçük bir satır (ör. tür adı ve "Bulmaca 3 / 16").
+    func screenTitle(_ title: Text, subtitle: Text?) -> some View {
+        modifier(ScreenTitle(title: title, subtitle: subtitle))
     }
 
     func card(fill: Color? = nil, cornerRadius: CGFloat = 24) -> some View {

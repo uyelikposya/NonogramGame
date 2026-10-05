@@ -5,55 +5,28 @@
     {
       "id": "persian-001",
       "title": {
-        "en": "Toe Beans",
-        "tr": "Pati Yastıkları",
-        "ja": "肉球",
-        "de": "Pfotenballen",
-        "fr": "Coussinets",
-        "es": "Almohadillas",
-        "pt-BR": "Almofadinhas",
-        "ko": "말랑 젤리"
+        "en": "Dinner Bowl",
+        "tr": "Mama Kabı",
+        "ja": "ごはん皿",
+        "de": "Futternapf",
+        "fr": "Gamelle",
+        "es": "Cuenco de comida",
+        "pt-BR": "Potinho de Ração",
+        "ko": "밥그릇"
       },
       "palette": {
-        "b": "#EFE7DC",
-        "n": "#E8A3A8"
+        "o": "#8E5BA8",
+        "p": "#E9C46A"
       },
       "pixels": [
-        ".bbbb.",
-        "bbnnbb",
-        "nbbbbn",
-        ".bnnb.",
-        ".bnnb.",
-        ".bbbb."
+        "..p..",
+        "ppppp",
+        "ooooo",
+        ".ooo."
       ]
     },
     {
       "id": "persian-002",
-      "title": {
-        "en": "Purr Love",
-        "tr": "Mırıl Sevgi",
-        "ja": "ゴロゴロ大好き",
-        "de": "Schnurrliebe",
-        "fr": "Ronron d'amour",
-        "es": "Amor ronroneante",
-        "pt-BR": "Amor Ronronado",
-        "ko": "골골송 사랑"
-      },
-      "palette": {
-        "n": "#E8A3A8",
-        "w": "#FBF8F3"
-      },
-      "pixels": [
-        "nnnnnn",
-        "nwnnnn",
-        "nnnnnn",
-        ".nnnn.",
-        "..nn..",
-        "..nn.."
-      ]
-    },
-    {
-      "id": "persian-003",
       "title": {
         "en": "Fish Snack",
         "tr": "Balık Atıştırması",
@@ -69,14 +42,90 @@
         "p": "#E9C46A"
       },
       "pixels": [
-        ".ooo.o",
+        "..o...",
+        "oopo.o",
         "oopooo",
-        "oopooo",
-        ".ooo.o"
+        "oopo.o",
+        "..o..."
+      ]
+    },
+    {
+      "id": "persian-003",
+      "title": {
+        "en": "Leftovers",
+        "tr": "Artıklar",
+        "ja": "食べ残し",
+        "de": "Reste",
+        "fr": "Restes",
+        "es": "Sobras",
+        "pt-BR": "Restinho",
+        "ko": "남은 음식"
+      },
+      "palette": {
+        "p": "#E9C46A"
+      },
+      "pixels": [
+        "..ppp..",
+        ".pppp.p",
+        "ppppppp",
+        ".pppp.p",
+        "..ppp.."
       ]
     },
     {
       "id": "persian-004",
+      "title": {
+        "en": "Toe Beans",
+        "tr": "Pati Yastıkları",
+        "ja": "肉球",
+        "de": "Pfotenballen",
+        "fr": "Coussinets",
+        "es": "Almohadillas",
+        "pt-BR": "Almofadinhas",
+        "ko": "말랑 젤리"
+      },
+      "palette": {
+        "b": "#EFE7DC",
+        "n": "#E8A3A8"
+      },
+      "pixels": [
+        "......",
+        ".bnnb.",
+        "nb..bn",
+        ".bbbb.",
+        ".bnnb.",
+        ".bnnb.",
+        "..bb.."
+      ]
+    },
+    {
+      "id": "persian-005",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi",
+        "ja": "ゴロゴロ大好き",
+        "de": "Schnurrliebe",
+        "fr": "Ronron d'amour",
+        "es": "Amor ronroneante",
+        "pt-BR": "Amor Ronronado",
+        "ko": "골골송 사랑"
+      },
+      "palette": {
+        "n": "#E8A3A8",
+        "w": "#FBF8F3"
+      },
+      "pixels": [
+        ".nn.nn.",
+        "nwnnnnn",
+        "nnnnnnn",
+        ".nnnnn.",
+        ".nnnnn.",
+        "..nnn..",
+        "...n..."
+      ]
+    },
+    {
+      "id": "persian-006",
       "title": {
         "en": "Yarn Ball",
         "tr": "Yün Yumak",
@@ -91,16 +140,90 @@
         "o": "#8E5BA8"
       },
       "pixels": [
-        "...ooo.",
-        "..o.ooo",
-        ".oo..oo",
-        "...oo.o",
-        "..oooo.",
-        "......."
+        ".ooo..",
+        "ooooo.",
+        "oo.oo.",
+        "o.ooo.",
+        ".oooo.",
+        "......"
       ]
     },
     {
-      "id": "persian-005",
+      "id": "persian-007",
+      "title": {
+        "en": "Fish Snack",
+        "tr": "Balık Atıştırması",
+        "ja": "おさかなおやつ",
+        "de": "Fischsnack",
+        "fr": "Goûter poisson",
+        "es": "Tentempié de pescado",
+        "pt-BR": "Petisco de Peixe",
+        "ko": "생선 간식"
+      },
+      "palette": {
+        "o": "#8E5BA8"
+      },
+      "pixels": [
+        "..oo...",
+        "ooooo.o",
+        "o.ooooo",
+        "ooooooo",
+        "ooooo.o",
+        "..oo..."
+      ]
+    },
+    {
+      "id": "persian-008",
+      "title": {
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak",
+        "ja": "毛糸玉",
+        "de": "Wollknäuel",
+        "fr": "Pelote de laine",
+        "es": "Ovillo de lana",
+        "pt-BR": "Novelo de Lã",
+        "ko": "털실 뭉치"
+      },
+      "palette": {
+        "o": "#8E5BA8"
+      },
+      "pixels": [
+        ".oooo..",
+        "o.o.o..",
+        "oo..oo.",
+        "oooo...",
+        ".oooo..",
+        ".....o."
+      ]
+    },
+    {
+      "id": "persian-009",
+      "title": {
+        "en": "Portrait",
+        "tr": "Portre",
+        "ja": "肖像画",
+        "de": "Porträt",
+        "fr": "Portrait",
+        "es": "Retrato",
+        "pt-BR": "Retrato",
+        "ko": "초상화"
+      },
+      "palette": {
+        "b": "#EFE7DC",
+        "e": "#3E8EDE"
+      },
+      "pixels": [
+        "...b...",
+        ".bbbbb.",
+        ".bbbbb.",
+        "bbebebb",
+        "bbbbbbb",
+        "bbbbbbb",
+        "...b..."
+      ]
+    },
+    {
+      "id": "persian-010",
       "title": {
         "en": "Dinner Bowl",
         "tr": "Mama Kabı",
@@ -117,139 +240,46 @@
         "w": "#FBF8F3"
       },
       "pixels": [
-        "..ppp..",
-        "ppppppp",
-        "oopppoo",
-        "oowwwoo",
-        ".ooooo."
-      ]
-    },
-    {
-      "id": "persian-006",
-      "title": {
-        "en": "Leftovers",
-        "tr": "Artıklar",
-        "ja": "食べ残し",
-        "de": "Reste",
-        "fr": "Restes",
-        "es": "Sobras",
-        "pt-BR": "Restinho",
-        "ko": "남은 음식"
-      },
-      "palette": {
-        "p": "#E9C46A"
-      },
-      "pixels": [
-        "..ppp..",
-        "ppppp.p",
-        "ppppp.p",
-        "..ppp.."
-      ]
-    },
-    {
-      "id": "persian-007",
-      "title": {
-        "en": "Leftovers",
-        "tr": "Artıklar",
-        "ja": "食べ残し",
-        "de": "Reste",
-        "fr": "Restes",
-        "es": "Sobras",
-        "pt-BR": "Restinho",
-        "ko": "남은 음식"
-      },
-      "palette": {
-        "p": "#E9C46A"
-      },
-      "pixels": [
-        "..pp...",
-        "ppppppp",
-        "p.pp.p.",
-        "......."
-      ]
-    },
-    {
-      "id": "persian-008",
-      "title": {
-        "en": "If I Fits",
-        "tr": "Kutu Sevdası",
-        "ja": "入れるなら入る",
-        "de": "Passt, sitzt",
-        "fr": "Si ça rentre…",
-        "es": "Si quepo, me siento",
-        "pt-BR": "Se Cabe, Eu Entro",
-        "ko": "들어가면 내 자리"
-      },
-      "palette": {
-        "b": "#EFE7DC",
-        "e": "#3E8EDE",
-        "o": "#8E5BA8",
-        "p": "#E9C46A"
-      },
-      "pixels": [
-        "..b..b..",
-        "..bbbb..",
-        "..beeb..",
-        "pobbboo.",
+        "........",
+        "....p...",
+        ".pppppp.",
+        "oppppppo",
+        "oowwwwoo",
         ".oooooo.",
         ".oooooo.",
-        ".oooooo."
-      ]
-    },
-    {
-      "id": "persian-009",
-      "title": {
-        "en": "Moon Gazer",
-        "tr": "Ay Seyri",
-        "ja": "月を見る猫",
-        "de": "Mondgucker",
-        "fr": "Rêveur de lune",
-        "es": "Mirando la luna",
-        "pt-BR": "Admirador da Lua",
-        "ko": "달 바라기"
-      },
-      "palette": {
-        "b": "#EFE7DC",
-        "y": "#F4D35E"
-      },
-      "pixels": [
-        "..yy...",
-        ".yy....",
-        ".yy....",
-        ".yyy...",
-        "byyyyy.",
-        "bbyyyy.",
-        "bb.b...",
-        "bbbb..."
-      ]
-    },
-    {
-      "id": "persian-010",
-      "title": {
-        "en": "Toy Mouse",
-        "tr": "Oyuncak Fare",
-        "ja": "ネズミのおもちゃ",
-        "de": "Spielmaus",
-        "fr": "Souris jouet",
-        "es": "Ratón de juguete",
-        "pt-BR": "Ratinho de Brinquedo",
-        "ko": "장난감 쥐"
-      },
-      "palette": {
-        "n": "#E8A3A8",
-        "p": "#E9C46A"
-      },
-      "pixels": [
-        "..np....",
-        "..ppp...",
-        "..pppp..",
-        ".ppppp.n",
-        "...p..n."
+        "........"
       ]
     },
     {
       "id": "persian-011",
       "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi",
+        "ja": "ゴロゴロ大好き",
+        "de": "Schnurrliebe",
+        "fr": "Ronron d'amour",
+        "es": "Amor ronroneante",
+        "pt-BR": "Amor Ronronado",
+        "ko": "골골송 사랑"
+      },
+      "palette": {
+        "n": "#E8A3A8",
+        "w": "#FBF8F3"
+      },
+      "pixels": [
+        ".nn..nn.",
+        "nwnnnnnn",
+        "nnnnnnnn",
+        "nnnnnnnn",
+        ".nnnnnn.",
+        "..nnnn..",
+        "...nn...",
+        "........"
+      ]
+    },
+    {
+      "id": "persian-012",
+      "title": {
         "en": "Portrait",
         "tr": "Portre",
         "ja": "肖像画",
@@ -264,120 +294,127 @@
         "e": "#3E8EDE"
       },
       "pixels": [
-        ".bbbbbb.",
-        ".bbbbbb.",
-        ".bebbeb.",
-        "bbbbbbbb",
-        "..bbbb.."
-      ]
-    },
-    {
-      "id": "persian-012",
-      "title": {
-        "en": "If I Fits",
-        "tr": "Kutu Sevdası",
-        "ja": "入れるなら入る",
-        "de": "Passt, sitzt",
-        "fr": "Si ça rentre…",
-        "es": "Si quepo, me siento",
-        "pt-BR": "Se Cabe, Eu Entro",
-        "ko": "들어가면 내 자리"
-      },
-      "palette": {
-        "b": "#EFE7DC",
-        "e": "#3E8EDE",
-        "o": "#8E5BA8",
-        "p": "#E9C46A"
-      },
-      "pixels": [
-        "........",
-        "..bbbb..",
-        "..bbeb..",
-        ".obbbbo.",
-        "poooooo.",
-        ".oooooo.",
-        ".oooooo."
+        ".........",
+        ".b.bbb.b.",
+        ".bbbbbbb.",
+        ".bebbbeb.",
+        "bbbbbbebb",
+        "bbbbbbbbb",
+        "..bbbbb..",
+        "........."
       ]
     },
     {
       "id": "persian-013",
       "title": {
-        "en": "Moon Gazer",
-        "tr": "Ay Seyri",
-        "ja": "月を見る猫",
-        "de": "Mondgucker",
-        "fr": "Rêveur de lune",
-        "es": "Mirando la luna",
-        "pt-BR": "Admirador da Lua",
-        "ko": "달 바라기"
+        "en": "Portrait",
+        "tr": "Portre",
+        "ja": "肖像画",
+        "de": "Porträt",
+        "fr": "Portrait",
+        "es": "Retrato",
+        "pt-BR": "Retrato",
+        "ko": "초상화"
+      },
+      "palette": {
+        "b": "#EFE7DC",
+        "e": "#3E8EDE"
+      },
+      "pixels": [
+        "........",
+        ".bbbbb..",
+        ".bbbbbb.",
+        ".bebbbb.",
+        "bbebbeb.",
+        "bbbbbbb.",
+        "bbbbbb..",
+        "..bbb..."
+      ]
+    },
+    {
+      "id": "persian-014",
+      "title": {
+        "en": "Sitting Pretty",
+        "tr": "Uslu Oturuş",
+        "ja": "おすましおすわり",
+        "de": "Brav sitzen",
+        "fr": "Sage comme une image",
+        "es": "Sentado con estilo",
+        "pt-BR": "Pose Elegante",
+        "ko": "얌전히 앉기"
+      },
+      "palette": {
+        "b": "#EFE7DC"
+      },
+      "pixels": [
+        ".b..b....",
+        ".bbbb....",
+        ".bbbb....",
+        "..bbb..b.",
+        "..bbbb.b.",
+        "..bbbb.b.",
+        "..bbbbbbb",
+        "..bbbbbb.",
+        "..b.b...."
+      ]
+    },
+    {
+      "id": "persian-015",
+      "title": {
+        "en": "Lake Swimmer",
+        "tr": "Göl Yüzücüsü",
+        "ja": "湖のスイマー",
+        "de": "Seeschwimmerin",
+        "fr": "Nageur du lac",
+        "es": "Nadador del lago",
+        "pt-BR": "Nadador do Lago",
+        "ko": "호수의 수영 선수"
+      },
+      "palette": {
+        "b": "#EFE7DC",
+        "e": "#3E8EDE",
+        "u": "#4A90C2"
+      },
+      "pixels": [
+        "..........",
+        "....bb....",
+        ".bbbbbbb..",
+        ".bbebbbb..",
+        ".bbebbbbb.",
+        ".bbbbbbbb.",
+        ".uubuuuuu.",
+        "uuuuuuuuu.",
+        ".uuuuuuu..",
+        ".........."
+      ]
+    },
+    {
+      "id": "persian-016",
+      "title": {
+        "en": "Silver Night",
+        "tr": "Gümüş Gece",
+        "ja": "銀色の夜",
+        "de": "Silbernacht",
+        "fr": "Nuit argentée",
+        "es": "Noche plateada",
+        "pt-BR": "Noite Prateada",
+        "ko": "은빛 밤"
       },
       "palette": {
         "b": "#EFE7DC",
         "y": "#F4D35E"
       },
       "pixels": [
-        "....y...",
-        "....yy..",
-        "....yyy.",
-        "....yyy.",
-        "...yyyy.",
-        ".yyyyybb",
-        "..yyy.bb",
-        "...b.bbb",
-        "....bbb."
-      ]
-    },
-    {
-      "id": "persian-014",
-      "title": {
-        "en": "Toe Beans",
-        "tr": "Pati Yastıkları",
-        "ja": "肉球",
-        "de": "Pfotenballen",
-        "fr": "Coussinets",
-        "es": "Almohadillas",
-        "pt-BR": "Almofadinhas",
-        "ko": "말랑 젤리"
-      },
-      "palette": {
-        "b": "#EFE7DC",
-        "n": "#E8A3A8"
-      },
-      "pixels": [
-        "..bb.bb..",
-        "..nnbnn..",
-        "bb.b.b.bb",
-        "nn.bbb.nn",
-        ".bbbbbbb.",
-        ".bbnnnbb.",
-        ".bbnnnbb.",
-        ".bbnnnbb.",
-        "..bbbbb.."
-      ]
-    },
-    {
-      "id": "persian-015",
-      "title": {
-        "en": "Portrait",
-        "tr": "Portre",
-        "ja": "肖像画",
-        "de": "Porträt",
-        "fr": "Portrait",
-        "es": "Retrato",
-        "pt-BR": "Retrato",
-        "ko": "초상화"
-      },
-      "palette": {
-        "b": "#EFE7DC",
-        "e": "#3E8EDE"
-      },
-      "pixels": [
-        ".b.bbb.b.",
-        ".bbbbbbb.",
-        ".bebbbeb.",
-        "bbbbbbebb",
-        "bbbbbbbbb",
-        "..bbbbb.."
+        "....yy....",
+        ".....yy...",
+        ".....yy...",
+        ".....yyy..",
+        "....yyy...",
+        ".yyyyyyb..",
+        "..yyyy.bb.",
+        "....b.bb..",
+        "....b.bbb.",
+        ".....bbb.."
       ]
     }
   ]

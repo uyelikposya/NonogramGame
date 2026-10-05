@@ -126,103 +126,6 @@
     {
       "id": "siamese-006",
       "title": {
-        "en": "Toe Beans",
-        "tr": "Pati Yastıkları",
-        "ja": "肉球",
-        "de": "Pfotenballen",
-        "fr": "Coussinets",
-        "es": "Almohadillas",
-        "pt-BR": "Almofadinhas",
-        "ko": "말랑 젤리"
-      },
-      "palette": {
-        "b": "#F2E3CF",
-        "n": "#D99A9A"
-      },
-      "pixels": [
-        ".bbbb.",
-        "bbnnbb",
-        "nbbbbn",
-        ".bnnb.",
-        ".bnnb.",
-        ".bbbb."
-      ]
-    },
-    {
-      "id": "siamese-007",
-      "title": {
-        "en": "Purr Love",
-        "tr": "Mırıl Sevgi",
-        "ja": "ゴロゴロ大好き",
-        "de": "Schnurrliebe",
-        "fr": "Ronron d'amour",
-        "es": "Amor ronroneante",
-        "pt-BR": "Amor Ronronado",
-        "ko": "골골송 사랑"
-      },
-      "palette": {
-        "n": "#D99A9A",
-        "w": "#FBF8F3"
-      },
-      "pixels": [
-        "nnnnnn",
-        "nwnnnn",
-        "nnnnnn",
-        ".nnnn.",
-        "..nn..",
-        "..nn.."
-      ]
-    },
-    {
-      "id": "siamese-008",
-      "title": {
-        "en": "Fish Snack",
-        "tr": "Balık Atıştırması",
-        "ja": "おさかなおやつ",
-        "de": "Fischsnack",
-        "fr": "Goûter poisson",
-        "es": "Tentempié de pescado",
-        "pt-BR": "Petisco de Peixe",
-        "ko": "생선 간식"
-      },
-      "palette": {
-        "o": "#E07A5F",
-        "p": "#9AA5B1"
-      },
-      "pixels": [
-        ".ooo.o",
-        "oopooo",
-        "oopooo",
-        ".ooo.o"
-      ]
-    },
-    {
-      "id": "siamese-009",
-      "title": {
-        "en": "Yarn Ball",
-        "tr": "Yün Yumak",
-        "ja": "毛糸玉",
-        "de": "Wollknäuel",
-        "fr": "Pelote de laine",
-        "es": "Ovillo de lana",
-        "pt-BR": "Novelo de Lã",
-        "ko": "털실 뭉치"
-      },
-      "palette": {
-        "o": "#E07A5F"
-      },
-      "pixels": [
-        "..oooo.",
-        ".oo.o.o",
-        ".oo..oo",
-        ".o.oooo",
-        "..oooo.",
-        "oo....."
-      ]
-    },
-    {
-      "id": "siamese-010",
-      "title": {
         "en": "Dinner Bowl",
         "tr": "Mama Kabı",
         "ja": "ごはん皿",
@@ -238,38 +141,138 @@
         "w": "#FBF8F3"
       },
       "pixels": [
-        "..ppp..",
-        "ppppppp",
-        "oopppoo",
-        "oowwwoo",
-        ".ooooo."
+        "...p..",
+        ".pppp.",
+        "oppppo",
+        "oowwoo",
+        ".oooo.",
+        ".oooo."
+      ]
+    },
+    {
+      "id": "siamese-007",
+      "title": {
+        "en": "Fish Snack",
+        "tr": "Balık Atıştırması",
+        "ja": "おさかなおやつ",
+        "de": "Fischsnack",
+        "fr": "Goûter poisson",
+        "es": "Tentempié de pescado",
+        "pt-BR": "Petisco de Peixe",
+        "ko": "생선 간식"
+      },
+      "palette": {
+        "o": "#E07A5F"
+      },
+      "pixels": [
+        "..oo...",
+        "ooooo.o",
+        "o.ooooo",
+        "ooooooo",
+        "ooooo.o",
+        "..oo..."
+      ]
+    },
+    {
+      "id": "siamese-008",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi",
+        "ja": "ゴロゴロ大好き",
+        "de": "Schnurrliebe",
+        "fr": "Ronron d'amour",
+        "es": "Amor ronroneante",
+        "pt-BR": "Amor Ronronado",
+        "ko": "골골송 사랑"
+      },
+      "palette": {
+        "n": "#D99A9A"
+      },
+      "pixels": [
+        ".nnnnn.",
+        "nnnnnnn",
+        "nnnnnnn",
+        ".nnnnn.",
+        "..nnn..",
+        "...n..."
+      ]
+    },
+    {
+      "id": "siamese-009",
+      "title": {
+        "en": "Toe Beans",
+        "tr": "Pati Yastıkları",
+        "ja": "肉球",
+        "de": "Pfotenballen",
+        "fr": "Coussinets",
+        "es": "Almohadillas",
+        "pt-BR": "Almofadinhas",
+        "ko": "말랑 젤리"
+      },
+      "palette": {
+        "b": "#F2E3CF",
+        "n": "#D99A9A"
+      },
+      "pixels": [
+        "..b.b..",
+        ".bn.nb.",
+        "nn.b.nn",
+        ".bbbbb.",
+        ".bnnnb.",
+        ".bnnnb.",
+        "..bbb.."
+      ]
+    },
+    {
+      "id": "siamese-010",
+      "title": {
+        "en": "Fish Snack",
+        "tr": "Balık Atıştırması",
+        "ja": "おさかなおやつ",
+        "de": "Fischsnack",
+        "fr": "Goûter poisson",
+        "es": "Tentempié de pescado",
+        "pt-BR": "Petisco de Peixe",
+        "ko": "생선 간식"
+      },
+      "palette": {
+        "o": "#E07A5F"
+      },
+      "pixels": [
+        "........",
+        "..oo....",
+        "ooooo..o",
+        "o.oooooo",
+        "oooooooo",
+        "ooooo..o",
+        "..oo....",
+        "........"
       ]
     },
     {
       "id": "siamese-011",
       "title": {
-        "en": "Portrait",
-        "tr": "Portre",
-        "ja": "肖像画",
-        "de": "Porträt",
-        "fr": "Portrait",
-        "es": "Retrato",
-        "pt-BR": "Retrato",
-        "ko": "초상화"
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak",
+        "ja": "毛糸玉",
+        "de": "Wollknäuel",
+        "fr": "Pelote de laine",
+        "es": "Ovillo de lana",
+        "pt-BR": "Novelo de Lã",
+        "ko": "털실 뭉치"
       },
       "palette": {
-        "b": "#F2E3CF",
-        "d": "#4A3B35",
-        "e": "#5B9BD5"
+        "o": "#E07A5F"
       },
       "pixels": [
-        ".......",
-        "d..b.dd",
-        "dbbbbbd",
-        "bbedeb.",
-        "bbedeb.",
-        ".bdddb.",
-        "..bdb.."
+        "...ooo..",
+        "..o.ooo.",
+        "..oo....",
+        ".oo..ooo",
+        ".o.oo.o.",
+        "..ooooo.",
+        "..oooo..",
+        "o......."
       ]
     },
     {
@@ -289,66 +292,18 @@
         "p": "#9AA5B1"
       },
       "pixels": [
-        "....n..",
-        "..pppp.",
-        ".ppppp.",
-        "n..pp.."
+        ".........",
+        "..nn.....",
+        "..pppp...",
+        "..ppppp..",
+        ".pppppp..",
+        ".pppppn.n",
+        "..pppp.nn",
+        "........."
       ]
     },
     {
       "id": "siamese-013",
-      "title": {
-        "en": "Leftovers",
-        "tr": "Artıklar",
-        "ja": "食べ残し",
-        "de": "Reste",
-        "fr": "Restes",
-        "es": "Sobras",
-        "pt-BR": "Restinho",
-        "ko": "남은 음식"
-      },
-      "palette": {
-        "p": "#9AA5B1"
-      },
-      "pixels": [
-        "..p..p..",
-        "pppppppp",
-        "p.p..pp.",
-        "..p..p.."
-      ]
-    },
-    {
-      "id": "siamese-014",
-      "title": {
-        "en": "If I Fits",
-        "tr": "Kutu Sevdası",
-        "ja": "入れるなら入る",
-        "de": "Passt, sitzt",
-        "fr": "Si ça rentre…",
-        "es": "Si quepo, me siento",
-        "pt-BR": "Se Cabe, Eu Entro",
-        "ko": "들어가면 내 자리"
-      },
-      "palette": {
-        "b": "#F2E3CF",
-        "d": "#4A3B35",
-        "e": "#5B9BD5",
-        "o": "#E07A5F",
-        "p": "#9AA5B1"
-      },
-      "pixels": [
-        "........",
-        "..d..dd.",
-        "..dbbdd.",
-        "..bebb..",
-        ".pobbbo.",
-        ".oooooop",
-        ".oooooo.",
-        ".oooooo."
-      ]
-    },
-    {
-      "id": "siamese-015",
       "title": {
         "en": "Moon Gazer",
         "tr": "Ay Seyri",
@@ -364,14 +319,104 @@
         "y": "#F4D35E"
       },
       "pixels": [
-        "..yy...",
-        ".yy....",
-        ".yy....",
-        ".yyy...",
-        "byyyyy.",
-        "bbyyyy.",
-        "bb.b...",
-        "bbbb..."
+        "...yy...",
+        "..yy....",
+        "..yy....",
+        "..yyy...",
+        ".byyyyy.",
+        ".bb.y...",
+        ".bb.....",
+        "........"
+      ]
+    },
+    {
+      "id": "siamese-014",
+      "title": {
+        "en": "Owl Pose",
+        "tr": "Baykuş Duruşu",
+        "ja": "フクロウのポーズ",
+        "de": "Eulenpose",
+        "fr": "Pose de chouette",
+        "es": "Pose de búho",
+        "pt-BR": "Pose de Coruja",
+        "ko": "부엉이 포즈"
+      },
+      "palette": {
+        "b": "#F2E3CF",
+        "d": "#4A3B35",
+        "e": "#5B9BD5",
+        "w": "#FBF8F3"
+      },
+      "pixels": [
+        ".d.......",
+        ".dd....dd",
+        ".ddbbbddd",
+        ".beebeeb.",
+        ".bbebbeb.",
+        ".bbbbbbb.",
+        ".bbwwwbb.",
+        ".bbwwwbb.",
+        "..bbwbb.."
+      ]
+    },
+    {
+      "id": "siamese-015",
+      "title": {
+        "en": "Ancient Grace",
+        "tr": "Kadim Zarafet",
+        "ja": "古代の気品",
+        "de": "Uralte Anmut",
+        "fr": "Grâce ancestrale",
+        "es": "Gracia antigua",
+        "pt-BR": "Graça Ancestral",
+        "ko": "고대의 우아함"
+      },
+      "palette": {
+        "b": "#F2E3CF",
+        "d": "#4A3B35",
+        "o": "#E07A5F"
+      },
+      "pixels": [
+        "..........",
+        ".....bb...",
+        ".....bb...",
+        ".....bb...",
+        ".....bb...",
+        ".....bb...",
+        "....bbbb.d",
+        "..oobbbb.d",
+        "..oobbbbd.",
+        ".oooo....."
+      ]
+    },
+    {
+      "id": "siamese-016",
+      "title": {
+        "en": "Floppy Hug",
+        "tr": "Gevşek Kucaklama",
+        "ja": "ぐにゃっとハグ",
+        "de": "Schlappe Umarmung",
+        "fr": "Câlin tout mou",
+        "es": "Abrazo blandito",
+        "pt-BR": "Abraço Molinho",
+        "ko": "축 늘어진 포옹"
+      },
+      "palette": {
+        "b": "#F2E3CF",
+        "d": "#4A3B35",
+        "w": "#FBF8F3"
+      },
+      "pixels": [
+        "...d..d...",
+        "...b..b...",
+        "...b..b...",
+        "...b.bbbb.",
+        "..bbbbbbb.",
+        "..bwwwbbb.",
+        ".dbwwwwbb.",
+        ".dbbwwbb..",
+        "d...bb....",
+        ".........."
       ]
     }
   ]

@@ -47,6 +47,11 @@ struct GameView: View {
     @State private var completionResult: CompletionResult?
     /// Bu bulmacayla bir türün tümü çözüldüyse kazanılan kart.
     @State private var newCard: CardSelection?
+    /// Kart kazanıldı ama penceresi henüz kapanmadı: o sırada sonuç kartındaki düğmeler gizli,
+    /// oyuncu yanlışlıkla sonraki bölüme geçip kartı kaçırmasın.
+    @State private var isCardPending = false
+    @AppStorage(SettingsKeys.hardMode) private var isHardMode = false
+    @State private var difficultyNote: Bool?
     /// Küçük kedinin o an söylediği (ipucu).
     @State private var companionLine: CompanionLine?
     @State private var companionLineID = 0
@@ -69,7 +74,21 @@ struct GameView: View {
                     .transition(.move(edge: .top).combined(with: .opacity))
             }
 
-            GameStatusBar(game: game)
+            GameStatusBar(game: game, isHardMode: $isHardMode)
+                .overlay(alignment: .bottom) {
+                    if let hard = difficultyNote {
+                        Text(hard ? LocalizedStringKey("Hard: you place every X yourself.") : LocalizedStringKey("Easy: finished lines are crossed out for you."))
+                            .font(.footnote.weight(.semibold))
+                            .foregroundStyle(theme.textPrimary)
+                            .padding(.horizontal, 12)
+                            .padding(.vertical, 8)
+                            .background(Capsule().fill(theme.surface).shadow(color: .black.opacity(0.1), radius: 6, y: 2))
+                            .offset(y: 44)
+                            .transition(.opacity.combined(with: .move(edge: .top)))
+                            .allowsHitTesting(false)
+                    }
+                }
+                .zIndex(1)
 
             BoardView(
                 game: game,
@@ -94,7 +113,7 @@ struct GameView: View {
         }
         .padding(20)
         .themedScreen()
-        .screenTitle(verbatim: game.status == .won ? viewModel.puzzle.title.resolved : "")
+        .screenTitle(Text(verbatim: chapter?.title.resolved ?? ""), subtitle: subtitle)
         .overlay(alignment: .bottom) {
             resultCard
                 .padding(20)
@@ -118,6 +137,7 @@ struct GameView: View {
                     }
                 }
                 if let earned {
+                    isCardPending = true
                     // Önce kedi resmi ortaya çıksın, sonra kart
                     Task {
                         try? await Task.sleep(for: .seconds(1.4))
@@ -132,13 +152,23 @@ struct GameView: View {
                 audio.play(event.soundEffect)
                 Haptics.play(event)
             }
+            viewModel.autoCrosses = !isHardMode
             viewModel.start()
+        }
+        .onChange(of: isHardMode) { _, hard in
+            viewModel.autoCrosses = !hard
+            Haptics.selection()
+            withAnimation(.snappy) { difficultyNote = hard }
+            Task {
+                try? await Task.sleep(for: .seconds(2.5))
+                if difficultyNote == hard { withAnimation(.easeOut) { difficultyNote = nil } }
+            }
         }
         .onDisappear {
             viewModel.stop()
             persistProgress()
         }
-        .sheet(item: $newCard) { selection in
+        .sheet(item: $newCard, onDismiss: { isCardPending = false }) { selection in
             CardDetailSheet(chapter: selection.chapter, isNewCard: true, isGolden: selection.isGolden)
         }
         // Uygulama arka plana geçince (ve kapatılmadan önce) yarım oyun kaydedilir
@@ -157,6 +187,41 @@ struct GameView: View {
             guard newValue > 0 else { return }
             flashMistake()
         }
+    }
+
+    private var chapter: Chapter? {
+        model.catalog.chapter(containing: viewModel.puzzle.id)
+    }
+
+    /// Başlığın altında: bölüm sırası; çözülünce resmin adı.
+    private var subtitle: Text? {
+        if game.status == .won { return Text(verbatim: viewModel.puzzle.title.resolved) }
+        guard let chapter else { return nil }
+        let number = model.number(of: viewModel.puzzle)
+        if model.catalog.isPremium(viewModel.puzzle.id) {
+            return Text("Golden puzzle \(number) of \(chapter.premiumPuzzles.count)")
+        }
+        if chapter.kind == .tutorial {
+            return Text("Lesson \(number) of \(chapter.puzzles.count)")
+        }
+        return Text("Puzzle \(number) of \(chapter.puzzles.count)")
+    }
+
+    /// Sonraki bulmaca başka bir türdeyse düğme "Sonraki kedi: …" der.
+    @ViewBuilder
+    private func nextButton(_ next: Puzzle) -> some View {
+        let nextChapter = model.catalog.chapter(containing: next.id)
+        Button {
+            leave(to: .game(puzzleID: next.id))
+        } label: {
+            if let nextChapter, nextChapter.id != chapter?.id {
+                Label("Next Cat: \(nextChapter.title.resolved)", systemImage: "pawprint.fill")
+            } else {
+                Text("Next Puzzle")
+            }
+        }
+        .buttonStyle(PrimaryButtonStyle())
+        .accessibilityIdentifier("result.next")
     }
 
     private var companionHint: HintFinder.Hint? {
@@ -238,12 +303,22 @@ struct GameView: View {
                 detail: completionResult.map { resultDetail($0) },
                 badge: completionResult?.isNewBest == true ? "New best time!" : nil
             ) {
-                if let next = model.nextPuzzle(after: viewModel.puzzle) {
-                    Button("Next Puzzle") { leave(to: .game(puzzleID: next.id)) }
-                        .buttonStyle(PrimaryButtonStyle())
+                if isCardPending {
+                    // Kart penceresi açılana/kapanana kadar geçiş düğmeleri yok
+                    HStack(spacing: 8) {
+                        ProgressView()
+                        Text("Your card is on its way…")
+                    }
+                    .font(.subheadline.weight(.semibold))
+                    .foregroundStyle(theme.textSecondary)
+                    .frame(maxWidth: .infinity, minHeight: 52)
+                } else {
+                    if let next = model.nextPuzzle(after: viewModel.puzzle) {
+                        nextButton(next)
+                    }
+                    Button("Back to Levels") { leave(to: nil) }
+                        .buttonStyle(SecondaryButtonStyle())
                 }
-                Button("Back to Levels") { leave(to: nil) }
-                    .buttonStyle(SecondaryButtonStyle())
             }
             .transition(.move(edge: .bottom).combined(with: .opacity))
         case .lost(let reason):
@@ -295,6 +370,7 @@ struct GameView: View {
 struct GameStatusBar: View {
     @Environment(\.appTheme) private var theme
     let game: NonogramGame
+    @Binding var isHardMode: Bool
 
     var body: some View {
         HStack {
@@ -319,6 +395,24 @@ struct GameStatusBar: View {
                 Image(systemName: game.rules.timeLimit == nil ? "clock" : "hourglass")
             }
             .foregroundStyle(isRunningOut ? theme.mistake : theme.textSecondary)
+
+            // Zorluk: "Zor"da tamamlanan satırlara otomatik X konmaz
+            Button {
+                isHardMode.toggle()
+            } label: {
+                Label(isHardMode ? LocalizedStringKey("Hard") : LocalizedStringKey("Easy"), systemImage: isHardMode ? "flame.fill" : "leaf.fill")
+                    .font(.subheadline.weight(.bold))
+                    .lineLimit(1)
+                    .padding(.horizontal, 10)
+                    .padding(.vertical, 6)
+                    .background(Capsule().fill(isHardMode ? theme.mistake.opacity(0.15) : theme.surfaceMuted))
+                    .foregroundStyle(isHardMode ? theme.mistake : theme.accent)
+            }
+            .buttonStyle(PressableButtonStyle())
+            .padding(.leading, 6)
+            .accessibilityLabel(Text("Difficulty"))
+            .accessibilityValue(isHardMode ? Text("Hard") : Text("Easy"))
+            .accessibilityIdentifier("game.difficulty")
         }
         .font(.headline)
     }

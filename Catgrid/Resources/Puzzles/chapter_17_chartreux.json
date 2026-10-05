@@ -5,92 +5,6 @@
     {
       "id": "chartreux-001",
       "title": {
-        "en": "Toe Beans",
-        "tr": "Pati Yastıkları",
-        "ja": "肉球",
-        "de": "Pfotenballen",
-        "fr": "Coussinets",
-        "es": "Almohadillas",
-        "pt-BR": "Almofadinhas",
-        "ko": "말랑 젤리"
-      },
-      "palette": {
-        "b": "#7F8C99",
-        "n": "#5E6A75"
-      },
-      "pixels": [
-        "...bb..bb...",
-        "...nnbbnn...",
-        ".b.bnbbnn.b.",
-        "bnb......bnb",
-        "bnb..bb..bnb",
-        ".bbbbbbbbbb.",
-        "..bbbbbbbb..",
-        "..bbnnnnbb..",
-        ".bbnnnnnnbb.",
-        "..bbnnnnbb..",
-        "..bbbnnnbb..",
-        "...bbbbbb..."
-      ]
-    },
-    {
-      "id": "chartreux-002",
-      "title": {
-        "en": "Purr Love",
-        "tr": "Mırıl Sevgi",
-        "ja": "ゴロゴロ大好き",
-        "de": "Schnurrliebe",
-        "fr": "Ronron d'amour",
-        "es": "Amor ronroneante",
-        "pt-BR": "Amor Ronronado",
-        "ko": "골골송 사랑"
-      },
-      "palette": {
-        "n": "#5E6A75",
-        "w": "#D5DCE2"
-      },
-      "pixels": [
-        ".nnnn..nnnn.",
-        "nnnnnnnnnnnn",
-        "nnwwnnnnnnnn",
-        "nnnnnnnnnnnn",
-        "nnnnnnnnnnnn",
-        ".nnnnnnnnnn.",
-        "..nnnnnnnn..",
-        "...nnnnnn...",
-        "....nnnn....",
-        ".....nn.....",
-        ".....nn....."
-      ]
-    },
-    {
-      "id": "chartreux-003",
-      "title": {
-        "en": "Fish Snack",
-        "tr": "Balık Atıştırması",
-        "ja": "おさかなおやつ",
-        "de": "Fischsnack",
-        "fr": "Goûter poisson",
-        "es": "Tentempié de pescado",
-        "pt-BR": "Petisco de Peixe",
-        "ko": "생선 간식"
-      },
-      "palette": {
-        "o": "#F2E8DC"
-      },
-      "pixels": [
-        "..oooo.....o",
-        ".ooooooo..oo",
-        "o..ooooooooo",
-        "oooooooooooo",
-        "oooooooooooo",
-        ".ooooooo..oo",
-        "..oooo.....o"
-      ]
-    },
-    {
-      "id": "chartreux-004",
-      "title": {
         "en": "Yarn Ball",
         "tr": "Yün Yumak",
         "ja": "毛糸玉",
@@ -104,22 +18,15 @@
         "o": "#F2E8DC"
       },
       "pixels": [
-        "......ooo....",
-        "....ooooooo..",
-        "...oo.oooooo.",
-        "...ooo.oo..o.",
-        "..oooo...ooo.",
-        "..ooo....oooo",
-        "..oo..oo.ooo.",
-        ".....oooo.oo.",
-        "....ooooooo..",
-        "...ooooooo...",
-        "o.o....o.....",
-        ".o..........."
+        ".ooo..",
+        "o..oo.",
+        "ooo.o.",
+        ".ooo..",
+        "......"
       ]
     },
     {
-      "id": "chartreux-005",
+      "id": "chartreux-002",
       "title": {
         "en": "Dinner Bowl",
         "tr": "Mama Kabı",
@@ -136,19 +43,15 @@
         "w": "#D5DCE2"
       },
       "pixels": [
-        "....p..pp....",
-        "..ppppppppp..",
-        ".ppppppppppp.",
-        "oopppppppppoo",
-        "oooopppppoooo",
-        ".oowwwwwwwoo.",
-        ".oowwwwwwwoo.",
-        ".ooooooooooo.",
-        "..ooooooooo.."
+        "..ppp..",
+        ".ppppp.",
+        "oopppoo",
+        ".owwwo.",
+        ".ooooo."
       ]
     },
     {
-      "id": "chartreux-006",
+      "id": "chartreux-003",
       "title": {
         "en": "Toy Mouse",
         "tr": "Oyuncak Fare",
@@ -164,158 +67,220 @@
         "p": "#C98B6B"
       },
       "pixels": [
-        "........pp...",
-        "......ppnn...",
-        "....ppppppp..",
-        "....pppppp.p.",
-        "...pppppppp..",
-        "n..nppppppp..",
-        ".nn..ppppp...",
-        "............."
+        "...n..",
+        "..pp..",
+        ".pppp.",
+        ".pppp.",
+        "n.pp..",
+        "......"
+      ]
+    },
+    {
+      "id": "chartreux-004",
+      "title": {
+        "en": "Fish Snack",
+        "tr": "Balık Atıştırması",
+        "ja": "おさかなおやつ",
+        "de": "Fischsnack",
+        "fr": "Goûter poisson",
+        "es": "Tentempié de pescado",
+        "pt-BR": "Petisco de Peixe",
+        "ko": "생선 간식"
+      },
+      "palette": {
+        "o": "#F2E8DC"
+      },
+      "pixels": [
+        "..oo...",
+        "ooooo.o",
+        "o.ooooo",
+        "ooooooo",
+        "ooooo.o",
+        "..oo..."
+      ]
+    },
+    {
+      "id": "chartreux-005",
+      "title": {
+        "en": "Toe Beans",
+        "tr": "Pati Yastıkları",
+        "ja": "肉球",
+        "de": "Pfotenballen",
+        "fr": "Coussinets",
+        "es": "Almohadillas",
+        "pt-BR": "Almofadinhas",
+        "ko": "말랑 젤리"
+      },
+      "palette": {
+        "b": "#7F8C99",
+        "n": "#5E6A75"
+      },
+      "pixels": [
+        "..b.b..",
+        ".bn.nb.",
+        "nn.b.nn",
+        ".bbbbb.",
+        ".bnnnb.",
+        ".bnnnb.",
+        "..bbb.."
+      ]
+    },
+    {
+      "id": "chartreux-006",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi",
+        "ja": "ゴロゴロ大好き",
+        "de": "Schnurrliebe",
+        "fr": "Ronron d'amour",
+        "es": "Amor ronroneante",
+        "pt-BR": "Amor Ronronado",
+        "ko": "골골송 사랑"
+      },
+      "palette": {
+        "n": "#5E6A75",
+        "w": "#D5DCE2"
+      },
+      "pixels": [
+        ".nnnn.",
+        "nwnnnn",
+        "nnnnnn",
+        ".nnnn.",
+        "..nn..",
+        "......"
       ]
     },
     {
       "id": "chartreux-007",
       "title": {
-        "en": "Leftovers",
-        "tr": "Artıklar",
-        "ja": "食べ残し",
-        "de": "Reste",
-        "fr": "Restes",
-        "es": "Sobras",
-        "pt-BR": "Restinho",
-        "ko": "남은 음식"
+        "en": "Dinner Bowl",
+        "tr": "Mama Kabı",
+        "ja": "ごはん皿",
+        "de": "Futternapf",
+        "fr": "Gamelle",
+        "es": "Cuenco de comida",
+        "pt-BR": "Potinho de Ração",
+        "ko": "밥그릇"
       },
       "palette": {
-        "p": "#C98B6B"
+        "o": "#F2E8DC",
+        "p": "#C98B6B",
+        "w": "#D5DCE2"
       },
       "pixels": [
-        "....p.p.p....",
-        ".pp.p.p.p...p",
-        "ppppppppppppp",
-        "ppppppppppppp",
-        ".pp.p.p.p...p",
-        "....p.p.p...."
+        "....p..",
+        ".ppppp.",
+        "opppppo",
+        "oowwwoo",
+        ".ooooo.",
+        ".ooooo."
       ]
     },
     {
       "id": "chartreux-008",
       "title": {
-        "en": "Nap Time",
-        "tr": "Şekerleme",
-        "ja": "お昼寝タイム",
-        "de": "Nickerchen",
-        "fr": "L'heure de la sieste",
-        "es": "Hora de la siesta",
-        "pt-BR": "Hora da Soneca",
-        "ko": "낮잠 시간"
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi",
+        "ja": "ゴロゴロ大好き",
+        "de": "Schnurrliebe",
+        "fr": "Ronron d'amour",
+        "es": "Amor ronroneante",
+        "pt-BR": "Amor Ronronado",
+        "ko": "골골송 사랑"
       },
       "palette": {
-        "b": "#7F8C99"
+        "n": "#5E6A75",
+        "w": "#D5DCE2"
       },
       "pixels": [
-        ".....bbbbbb...",
-        "bbbbbbbbbbbbb.",
-        "bbbbbbbbbbbbbb",
-        "bb...bbbbbbbbb",
-        ".bbbbbbbbbbbbb",
-        "..bbbbbbbbbbbb",
-        "....bbbbbbbbb.",
-        "....bbbbbbbb.."
+        ".nn.nn.",
+        "nwnnnnn",
+        "nnnnnnn",
+        ".nnnnn.",
+        ".nnnnn.",
+        "..nnn..",
+        "...n..."
       ]
     },
     {
       "id": "chartreux-009",
       "title": {
-        "en": "Teacup Cat",
-        "tr": "Fincandaki Kedi",
-        "ja": "ティーカップ猫",
-        "de": "Teetassenkatze",
-        "fr": "Chat dans une tasse",
-        "es": "Gato en una taza",
-        "pt-BR": "Gato na Xícara",
-        "ko": "찻잔 고양이"
+        "en": "Portrait",
+        "tr": "Portre",
+        "ja": "肖像画",
+        "de": "Porträt",
+        "fr": "Portrait",
+        "es": "Retrato",
+        "pt-BR": "Retrato",
+        "ko": "초상화"
       },
       "palette": {
         "b": "#7F8C99",
-        "e": "#D98B2B",
-        "o": "#F2E8DC",
-        "p": "#C98B6B"
+        "e": "#D98B2B"
       },
       "pixels": [
-        "..b...........",
-        "..bbbbb.bb....",
-        ".bbbbbbbbb....",
-        ".bbbebbebb....",
-        "..bbebbeeb....",
-        "oobbbbbbbooo..",
-        "oooobbbooooooo",
-        ".pppppppppp.oo",
-        ".oooooooooooo.",
-        ".ooooooooo.o..",
-        ".ooooooooo...."
+        ".......",
+        "bbbbbbb",
+        "bbbbbbb",
+        "beebeeb",
+        "bbbbbbb",
+        ".bbbbb.",
+        "...b..."
       ]
     },
     {
       "id": "chartreux-010",
       "title": {
-        "en": "Sitting Pretty",
-        "tr": "Uslu Oturuş",
-        "ja": "おすましおすわり",
-        "de": "Brav sitzen",
-        "fr": "Sage comme une image",
-        "es": "Sentado con estilo",
-        "pt-BR": "Pose Elegante",
-        "ko": "얌전히 앉기"
+        "en": "If I Fits",
+        "tr": "Kutu Sevdası",
+        "ja": "入れるなら入る",
+        "de": "Passt, sitzt",
+        "fr": "Si ça rentre…",
+        "es": "Si quepo, me siento",
+        "pt-BR": "Se Cabe, Eu Entro",
+        "ko": "들어가면 내 자리"
       },
       "palette": {
-        "b": "#7F8C99"
+        "b": "#7F8C99",
+        "o": "#F2E8DC",
+        "p": "#C98B6B"
       },
       "pixels": [
-        "............",
-        ".....b....b.",
-        ".....bbbbbb.",
-        ".....bbbbbb.",
-        ".....bbbbbb.",
-        "......bbbb..",
-        "b...bbbbb...",
-        "bb.bbbbbbb..",
-        "b..bbbbbbb..",
-        "b..bbbbbbb..",
-        "b..bbbbbbb..",
-        "bb.bbbbbbb..",
-        ".bbbbbbbb...",
-        ".....bbbbb.."
+        "........",
+        "..bbbb..",
+        "..bbbb..",
+        "..bbbb..",
+        "poobboop",
+        ".oooooo.",
+        ".oooooo.",
+        ".oooooo."
       ]
     },
     {
       "id": "chartreux-011",
       "title": {
-        "en": "Strut",
-        "tr": "Salınarak Yürüyüş",
-        "ja": "おすまし歩き",
-        "de": "Stolzieren",
-        "fr": "Pavane",
-        "es": "Pavoneo",
-        "pt-BR": "Desfile",
-        "ko": "당당한 걸음"
+        "en": "Moon Gazer",
+        "tr": "Ay Seyri",
+        "ja": "月を見る猫",
+        "de": "Mondgucker",
+        "fr": "Rêveur de lune",
+        "es": "Mirando la luna",
+        "pt-BR": "Admirador da Lua",
+        "ko": "달 바라기"
       },
       "palette": {
-        "b": "#7F8C99"
+        "b": "#7F8C99",
+        "y": "#F4D35E"
       },
       "pixels": [
-        "............bb",
-        ".............b",
-        "bb..b........b",
-        "bbbbbb......bb",
-        "bbbbbbbbbbb.b.",
-        ".bbbbbbbbbbb..",
-        "...bbbbbbbbb..",
-        "....bbbbbbbb..",
-        "....b.bb.b.b..",
-        "....b.b..b.b..",
-        "...bb.b..b.b..",
-        "...b..b..b.b.."
+        "...y....",
+        "..yy....",
+        ".yyy....",
+        ".yyy....",
+        ".byyyyy.",
+        ".b.yyy..",
+        ".bb.b...",
+        ".bbb...."
       ]
     },
     {
@@ -337,117 +302,138 @@
         "p": "#C98B6B"
       },
       "pixels": [
-        "....b.........",
-        "....bb.b.bb...",
-        "....bbbbbbb...",
-        "....bbbbebb...",
-        "....beebebb...",
-        "..oobbbbbbooo.",
-        ".ppoobbbbooopp",
-        "..ooooooooooo.",
-        "..oooooooooo..",
-        "..ooooooooooo.",
-        "..ooooooooooo.",
-        "..oooooooooo.."
+        ".........",
+        "..bbbbb..",
+        "..bebeb..",
+        "..bebeb..",
+        "poobbboop",
+        ".ooooooo.",
+        ".ooooooo.",
+        ".ooooooo."
       ]
     },
     {
       "id": "chartreux-013",
       "title": {
-        "en": "Moon Gazer",
-        "tr": "Ay Seyri",
-        "ja": "月を見る猫",
-        "de": "Mondgucker",
-        "fr": "Rêveur de lune",
-        "es": "Mirando la luna",
-        "pt-BR": "Admirador da Lua",
-        "ko": "달 바라기"
+        "en": "Lucky Cat",
+        "tr": "Şans Kedisi",
+        "ja": "招き猫",
+        "de": "Glückskatze",
+        "fr": "Chat porte-bonheur",
+        "es": "Gato de la suerte",
+        "pt-BR": "Gato da Sorte",
+        "ko": "행운의 고양이"
       },
       "palette": {
         "b": "#7F8C99",
+        "e": "#D98B2B",
+        "n": "#5E6A75",
         "y": "#F4D35E"
       },
       "pixels": [
-        ".....yy......",
-        "...yyy.......",
-        "..yyyy.......",
-        "..yyyy.......",
-        "..yyyy.......",
-        ".yyyyy.......",
-        "..yyyyy......",
-        "..yyyyyy.....",
-        "bbyyyyyyyy.y.",
-        "bbbyyyyyyyy..",
-        "bbb.yyyyyy...",
-        ".bbb..b......",
-        "bbbb..b......",
-        "bbbb..b......",
-        ".bbbbb......."
+        ".....bbb",
+        "bbbbbbbb",
+        "bbebebbb",
+        "bbbbebb.",
+        ".nbbbbb.",
+        "bbbybb..",
+        "bbyybb..",
+        "bbyyyb..",
+        ".bbbb..."
       ]
     },
     {
       "id": "chartreux-014",
       "title": {
-        "en": "Toe Beans",
-        "tr": "Pati Yastıkları",
-        "ja": "肉球",
-        "de": "Pfotenballen",
-        "fr": "Coussinets",
-        "es": "Almohadillas",
-        "pt-BR": "Almofadinhas",
-        "ko": "말랑 젤리"
+        "en": "Cozy Sweater",
+        "tr": "Sıcak Kazak",
+        "ja": "ぬくぬくセーター",
+        "de": "Kuschelpulli",
+        "fr": "Pull douillet",
+        "es": "Jersey calentito",
+        "pt-BR": "Suéter Quentinho",
+        "ko": "포근한 스웨터"
       },
       "palette": {
         "b": "#7F8C99",
-        "n": "#5E6A75"
+        "e": "#D98B2B",
+        "o": "#F2E8DC",
+        "p": "#C98B6B"
       },
       "pixels": [
-        "....bb...bb....",
-        "...bnnb.bnnb...",
-        "...bnnb.bnnb...",
-        ".bb.bnb.bnb.bb.",
-        "bnnb.......bnnb",
-        "bnnb...b...bnnb",
-        "bnb.bbbbbbb.bnb",
-        "...bbbbbbbbb...",
-        "..bbbbbbbbbbb..",
-        "..bbbnnnnnbbb..",
-        "..bbnnnnnnnbb..",
-        "..bbnnnnnnnbb..",
-        "..bbbnnnnnbbb..",
-        "...bbbnnnbbb...",
-        ".....bbbbb....."
+        "....bb....",
+        ".bbbbbbbb.",
+        "bbbbbbbbb.",
+        "bbeebbeeb.",
+        "bbbbbbebb.",
+        ".bbbbbbbb.",
+        ".obbbbbb..",
+        ".ooooooop.",
+        ".ooooooo.."
       ]
     },
     {
       "id": "chartreux-015",
       "title": {
-        "en": "Portrait",
-        "tr": "Portre",
-        "ja": "肖像画",
-        "de": "Porträt",
-        "fr": "Portrait",
-        "es": "Retrato",
-        "pt-BR": "Retrato",
-        "ko": "초상화"
+        "en": "Silk Ribbon",
+        "tr": "İpek Kurdele",
+        "ja": "シルクのリボン",
+        "de": "Seidenband",
+        "fr": "Ruban de soie",
+        "es": "Cinta de seda",
+        "pt-BR": "Fita de Seda",
+        "ko": "실크 리본"
       },
       "palette": {
         "b": "#7F8C99",
-        "e": "#D98B2B"
+        "e": "#D98B2B",
+        "n": "#5E6A75",
+        "o": "#F2E8DC"
       },
       "pixels": [
-        ".b...bbbbbb..b.",
-        ".bbbbbbbbbbbbb.",
-        ".bbbbbbbbbbbbbb",
-        "bbbbbbbbbbbbbbb",
-        "bbbbebbbbbeebbb",
-        "bbbeeebbbeeebbb",
-        "bbbbeebbbbeebbb",
-        "bbbbbbbbbbbbbbb",
-        ".bbbbbbbbbbbbb.",
-        "..bbbbbbbbbbbb.",
-        "...bbbbbbbbb...",
-        "......bbbb....."
+        "....bb....",
+        ".bbbbbbbb.",
+        "bbbbbbbbbb",
+        "bbeebbeebb",
+        "bbeebbeebb",
+        "bbbbbbbbbb",
+        ".bbbbbbbb.",
+        "..nnobnb..",
+        "..nn..n...",
+        ".........."
+      ]
+    },
+    {
+      "id": "chartreux-016",
+      "title": {
+        "en": "Teacup Cat",
+        "tr": "Fincandaki Kedi",
+        "ja": "ティーカップ猫",
+        "de": "Teetassenkatze",
+        "fr": "Chat dans une tasse",
+        "es": "Gato en una taza",
+        "pt-BR": "Gato na Xícara",
+        "ko": "찻잔 고양이"
+      },
+      "palette": {
+        "b": "#7F8C99",
+        "e": "#D98B2B",
+        "o": "#F2E8DC",
+        "p": "#C98B6B"
+      },
+      "pixels": [
+        "............",
+        "..b....b....",
+        "..bbbbbb....",
+        "..bbbbbb....",
+        "..beebeb....",
+        ".obbbbebo...",
+        "ooobbbbooo..",
+        ".ooobbooo.oo",
+        ".pppppppp.o.",
+        ".ooooooooo..",
+        ".oooooooo...",
+        "..oooooo...."
       ]
     }
   ]

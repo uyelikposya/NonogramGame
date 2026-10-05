@@ -19,16 +19,11 @@
         "n": "#A0624A"
       },
       "pixels": [
-        "...b..b...",
-        "..bnbbnb..",
-        "bbbb..bbbb",
-        "nnb....bnn",
-        "bbbbbbbbbb",
-        "..bbbbbb..",
-        ".bbnnnnbb.",
-        ".bbnnnnbb.",
-        "..bnnnnb..",
-        "...bbbb..."
+        ".n.n.",
+        "nb.bn",
+        ".bbb.",
+        ".nnn.",
+        ".bnb."
       ]
     },
     {
@@ -44,19 +39,14 @@
         "ko": "골골송 사랑"
       },
       "palette": {
-        "n": "#A0624A",
-        "w": "#EFE6DA"
+        "n": "#A0624A"
       },
       "pixels": [
-        ".nnnnnnnn.",
-        "nnwnnnnnnn",
-        "nnwnnnnnnn",
-        "nnnnnnnnnn",
-        ".nnnnnnnn.",
-        "..nnnnnn..",
-        "...nnnn...",
-        "....nn....",
-        "....nn...."
+        ".nnnn.",
+        "nnnnnn",
+        ".nnnn.",
+        "..nn..",
+        "..nn.."
       ]
     },
     {
@@ -72,15 +62,15 @@
         "ko": "생선 간식"
       },
       "palette": {
-        "o": "#6B4F3A",
-        "p": "#C8B6A6"
+        "o": "#6B4F3A"
       },
       "pixels": [
-        "..oooo...o",
-        "o.oopoo.oo",
-        "o.oopooooo",
-        "oooopoo.oo",
-        "..oooo...o"
+        "......",
+        ".ooo.o",
+        "o.oooo",
+        "oooooo",
+        ".ooo.o",
+        "..o..."
       ]
     },
     {
@@ -99,16 +89,12 @@
         "o": "#6B4F3A"
       },
       "pixels": [
-        ".....ooo...",
-        "....oooooo.",
-        "...oo.ooo.o",
-        "..oooo...oo",
-        "..ooo...ooo",
-        "..oo..o.ooo",
-        "....oooo.oo",
-        "...ooooooo.",
-        "...o.oooo..",
-        "ooo........"
+        ".oooo..",
+        "o.o.o..",
+        "oo..oo.",
+        "oooo...",
+        ".oooo..",
+        ".....o."
       ]
     },
     {
@@ -129,70 +115,173 @@
         "w": "#EFE6DA"
       },
       "pixels": [
-        "...ppppp...",
-        ".ppppppppp.",
-        "opppppppppo",
-        "ooopppppooo",
-        ".owwwwwwwo.",
-        ".ooooooooo.",
-        ".ooooooooo."
+        ".......",
+        ".ppppp.",
+        "ppppppp",
+        "oopppoo",
+        "oowwwoo",
+        ".ooooo.",
+        ".ooooo."
       ]
     },
     {
       "id": "maine-coon-006",
       "title": {
-        "en": "Mighty Tail",
-        "tr": "Görkemli Kuyruk",
-        "ja": "立派なしっぽ",
-        "de": "Prachtschwanz",
-        "fr": "Queue majestueuse",
-        "es": "Gran cola",
-        "pt-BR": "Cauda Poderosa",
-        "ko": "늠름한 꼬리"
+        "en": "Toy Mouse",
+        "tr": "Oyuncak Fare",
+        "ja": "ネズミのおもちゃ",
+        "de": "Spielmaus",
+        "fr": "Souris jouet",
+        "es": "Ratón de juguete",
+        "pt-BR": "Ratinho de Brinquedo",
+        "ko": "장난감 쥐"
       },
       "palette": {
-        "b": "#8A6A4E",
-        "d": "#4E3A2A"
+        "n": "#A0624A",
+        "p": "#C8B6A6"
       },
       "pixels": [
-        "..........",
-        "b...b.....",
-        "bbbbb..d..",
-        "bbbbb..dd.",
-        ".bbb...ddd",
-        ".bbbb...dd",
-        ".bbdbb..dd",
-        ".bbbbb..bd",
-        ".bbbbbddbd",
-        ".bbbbddbd.",
-        "...b.dd..."
+        "..n...",
+        ".ppp..",
+        ".pppp.",
+        ".pppp.",
+        "..pp.n",
+        "......"
       ]
     },
     {
       "id": "maine-coon-007",
       "title": {
-        "en": "Leftovers",
-        "tr": "Artıklar",
-        "ja": "食べ残し",
-        "de": "Reste",
-        "fr": "Restes",
-        "es": "Sobras",
-        "pt-BR": "Restinho",
-        "ko": "남은 음식"
+        "en": "Fish Snack",
+        "tr": "Balık Atıştırması",
+        "ja": "おさかなおやつ",
+        "de": "Fischsnack",
+        "fr": "Goûter poisson",
+        "es": "Tentempié de pescado",
+        "pt-BR": "Petisco de Peixe",
+        "ko": "생선 간식"
       },
       "palette": {
-        "p": "#C8B6A6"
+        "o": "#6B4F3A"
       },
       "pixels": [
-        "...p.p.p...",
-        ".p.p.p.p..p",
-        "ppppppppppp",
-        ".p.p.p.p..p",
-        "...p.p.p..."
+        "..oo...",
+        "ooooo.o",
+        "o.ooooo",
+        "ooooooo",
+        "ooooo.o",
+        "..oo..."
       ]
     },
     {
       "id": "maine-coon-008",
+      "title": {
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak",
+        "ja": "毛糸玉",
+        "de": "Wollknäuel",
+        "fr": "Pelote de laine",
+        "es": "Ovillo de lana",
+        "pt-BR": "Novelo de Lã",
+        "ko": "털실 뭉치"
+      },
+      "palette": {
+        "o": "#6B4F3A"
+      },
+      "pixels": [
+        ".oooo..",
+        "ooo.o..",
+        "oo..oo.",
+        "oo.ooo.",
+        "o.ooo..",
+        ".oooo..",
+        ".....oo"
+      ]
+    },
+    {
+      "id": "maine-coon-009",
+      "title": {
+        "en": "Portrait",
+        "tr": "Portre",
+        "ja": "肖像画",
+        "de": "Porträt",
+        "fr": "Portrait",
+        "es": "Retrato",
+        "pt-BR": "Retrato",
+        "ko": "초상화"
+      },
+      "palette": {
+        "b": "#8A6A4E",
+        "e": "#C9A53F",
+        "w": "#EFE6DA"
+      },
+      "pixels": [
+        ".......",
+        ".b.b.b.",
+        ".bbbbb.",
+        ".bebeb.",
+        "bbebebb",
+        "bbwwwbb",
+        "..www.."
+      ]
+    },
+    {
+      "id": "maine-coon-010",
+      "title": {
+        "en": "Dinner Bowl",
+        "tr": "Mama Kabı",
+        "ja": "ごはん皿",
+        "de": "Futternapf",
+        "fr": "Gamelle",
+        "es": "Cuenco de comida",
+        "pt-BR": "Potinho de Ração",
+        "ko": "밥그릇"
+      },
+      "palette": {
+        "o": "#6B4F3A",
+        "p": "#C8B6A6",
+        "w": "#EFE6DA"
+      },
+      "pixels": [
+        "........",
+        "....p...",
+        ".pppppp.",
+        "oppppppo",
+        "oowwwwoo",
+        ".oooooo.",
+        ".oooooo.",
+        "........"
+      ]
+    },
+    {
+      "id": "maine-coon-011",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi",
+        "ja": "ゴロゴロ大好き",
+        "de": "Schnurrliebe",
+        "fr": "Ronron d'amour",
+        "es": "Amor ronroneante",
+        "pt-BR": "Amor Ronronado",
+        "ko": "골골송 사랑"
+      },
+      "palette": {
+        "n": "#A0624A",
+        "w": "#EFE6DA"
+      },
+      "pixels": [
+        ".nn..nn.",
+        "nwnnnnnn",
+        "nnnnnnnn",
+        "nnnnnnnn",
+        ".nnnnnn.",
+        "..nnnn..",
+        "...nn...",
+        "........"
+      ]
+    },
+    {
+      "id": "maine-coon-012",
       "title": {
         "en": "Portrait",
         "tr": "Portre",
@@ -207,144 +296,48 @@
         "b": "#8A6A4E",
         "d": "#4E3A2A",
         "e": "#C9A53F",
-        "n": "#A0624A",
         "w": "#EFE6DA"
       },
       "pixels": [
-        "............",
-        "..b.........",
-        "..b..bbb.bb.",
-        "..bbbbdbbbb.",
-        ".bbbbbdbbbb.",
-        ".bbeebbbebb.",
-        ".bbeebbbebbb",
-        "bbbbbwnwbbbb",
-        "bbbbwwwwwbbb",
-        "...bwwwww..."
-      ]
-    },
-    {
-      "id": "maine-coon-009",
-      "title": {
-        "en": "Mighty Tail",
-        "tr": "Görkemli Kuyruk",
-        "ja": "立派なしっぽ",
-        "de": "Prachtschwanz",
-        "fr": "Queue majestueuse",
-        "es": "Gran cola",
-        "pt-BR": "Cauda Poderosa",
-        "ko": "늠름한 꼬리"
-      },
-      "palette": {
-        "b": "#8A6A4E",
-        "d": "#4E3A2A"
-      },
-      "pixels": [
-        "...........",
-        "b...b......",
-        "bb..b..dd..",
-        "bbbbb..ddd.",
-        "bbbbb...ddd",
-        ".bbbb....dd",
-        "..bbbb...bd",
-        ".bbddbb..dd",
-        ".bbbbbb.dbd",
-        ".bbbbbbddbd",
-        "..bbbbdbdd.",
-        ".....ddd..."
-      ]
-    },
-    {
-      "id": "maine-coon-010",
-      "title": {
-        "en": "Nap Time",
-        "tr": "Şekerleme",
-        "ja": "お昼寝タイム",
-        "de": "Nickerchen",
-        "fr": "L'heure de la sieste",
-        "es": "Hora de la siesta",
-        "pt-BR": "Hora da Soneca",
-        "ko": "낮잠 시간"
-      },
-      "palette": {
-        "b": "#8A6A4E",
-        "d": "#4E3A2A"
-      },
-      "pixels": [
-        "............",
-        "....b.......",
-        "bb..bbbbb...",
-        "bbbbbbbbbbb.",
-        "bb..bbbbbbbb",
-        ".bbbbbbbbbbd",
-        "..bbbbbbbbdd",
-        "...dddbbbdd.",
-        "...ddddddd.."
-      ]
-    },
-    {
-      "id": "maine-coon-011",
-      "title": {
-        "en": "Sitting Pretty",
-        "tr": "Uslu Oturuş",
-        "ja": "おすましおすわり",
-        "de": "Brav sitzen",
-        "fr": "Sage comme une image",
-        "es": "Sentado con estilo",
-        "pt-BR": "Pose Elegante",
-        "ko": "얌전히 앉기"
-      },
-      "palette": {
-        "b": "#8A6A4E",
-        "d": "#4E3A2A"
-      },
-      "pixels": [
         ".........",
-        "b...b....",
-        "bbbbb....",
-        "bbbbb....",
-        "bbbbb....",
-        ".bbb.....",
-        "..bbbb.dd",
-        ".bbddb.dd",
-        ".bbbbbbdd",
-        ".bbbbbbdd",
-        ".bbbbbddd",
-        ".bbbb.d.."
-      ]
-    },
-    {
-      "id": "maine-coon-012",
-      "title": {
-        "en": "Strut",
-        "tr": "Salınarak Yürüyüş",
-        "ja": "おすまし歩き",
-        "de": "Stolzieren",
-        "fr": "Pavane",
-        "es": "Pavoneo",
-        "pt-BR": "Desfile",
-        "ko": "당당한 걸음"
-      },
-      "palette": {
-        "b": "#8A6A4E",
-        "d": "#4E3A2A"
-      },
-      "pixels": [
-        "..........d.",
-        "b.........d.",
-        "bb.bb.....dd",
-        "bbbbb.....d.",
-        "bbbbbbbbbdd.",
-        ".bbbbbbbbd..",
-        "...bbbbbb...",
-        "...bbbbbb...",
-        "...b.b.b.b..",
-        "...b.b.b.b..",
-        "............"
+        ".b.....b.",
+        ".bbbbbbb.",
+        ".bbdbbbb.",
+        ".beebeeb.",
+        "bbbbbbbbb",
+        "bbbwwwbbb",
+        "...www..."
       ]
     },
     {
       "id": "maine-coon-013",
+      "title": {
+        "en": "White Gloves",
+        "tr": "Beyaz Eldivenler",
+        "ja": "白い手袋",
+        "de": "Weiße Handschuhe",
+        "fr": "Gants blancs",
+        "es": "Guantes blancos",
+        "pt-BR": "Luvas Brancas",
+        "ko": "하얀 장갑"
+      },
+      "palette": {
+        "b": "#8A6A4E",
+        "w": "#EFE6DA"
+      },
+      "pixels": [
+        ".bb..bb..",
+        "bbbbbbbb.",
+        "bbbbbbbb.",
+        "bbbbbbbb.",
+        ".bbbbbbb.",
+        ".wwwwwww.",
+        ".wwwwwww.",
+        "..w...w.."
+      ]
+    },
+    {
+      "id": "maine-coon-014",
       "title": {
         "en": "If I Fits",
         "tr": "Kutu Sevdası",
@@ -362,85 +355,74 @@
         "p": "#C8B6A6"
       },
       "pixels": [
-        ".............",
-        "....b....b...",
-        "....b....b...",
-        "...bbbbbbb...",
-        "...bbbbbbb...",
-        "...bbebeeb...",
-        "....bebbeb...",
-        ".poobbbbboop.",
-        ".ppoooboooopp",
-        "..oooooooooo.",
-        "..oooooooooo.",
-        "..oooooooooo.",
-        "..oooooooooo."
-      ]
-    },
-    {
-      "id": "maine-coon-014",
-      "title": {
-        "en": "Moon Gazer",
-        "tr": "Ay Seyri",
-        "ja": "月を見る猫",
-        "de": "Mondgucker",
-        "fr": "Rêveur de lune",
-        "es": "Mirando la luna",
-        "pt-BR": "Admirador da Lua",
-        "ko": "달 바라기"
-      },
-      "palette": {
-        "b": "#8A6A4E",
-        "y": "#F4D35E"
-      },
-      "pixels": [
-        "....yy.....",
-        "...yyy.....",
-        "..yyy......",
-        "..yyy......",
-        ".yyyy......",
-        ".yyyyy.....",
-        "..yyyyy....",
-        "bbyyyyyyyy.",
-        "bb.yyyyyy..",
-        ".bb..yy....",
-        "bbbb.b.....",
-        "bbbb.b.....",
-        ".bbbbb....."
+        ".........",
+        "......b..",
+        "..bbbbb..",
+        "..bbbeb..",
+        "..bbbbbo.",
+        ".pooboopp",
+        "..oooooo.",
+        ".ooooooo.",
+        "..oooooo."
       ]
     },
     {
       "id": "maine-coon-015",
       "title": {
-        "en": "Forest Guardian",
-        "tr": "Orman Bekçisi",
-        "ja": "森の守り神",
-        "de": "Waldhüter",
-        "fr": "Gardien de la forêt",
-        "es": "Guardián del bosque",
-        "pt-BR": "Guardião da Floresta",
-        "ko": "숲의 수호자"
+        "en": "Sitting Pretty",
+        "tr": "Uslu Oturuş",
+        "ja": "おすましおすわり",
+        "de": "Brav sitzen",
+        "fr": "Sage comme une image",
+        "es": "Sentado con estilo",
+        "pt-BR": "Pose Elegante",
+        "ko": "얌전히 앉기"
       },
       "palette": {
         "b": "#8A6A4E",
-        "d": "#4E3A2A",
-        "g": "#2F6B3B",
-        "o": "#6B4F3A"
+        "d": "#4E3A2A"
       },
       "pixels": [
-        "............",
-        "........gg..",
-        "........gg..",
-        "b...b..gggg.",
-        "bbbbb..gggg.",
-        "bbbbb..gggg.",
-        ".bbb...gggg.",
-        "..bbb..dggg.",
-        ".bbddb.ddgg.",
-        ".bbbbbgddgg.",
-        ".bbbbbgddggg",
-        ".bbbbbddoo..",
-        ".bbbbdd.oo.."
+        "..........",
+        "....b...b.",
+        "....bbbbb.",
+        "....bbbbb.",
+        ".....bbbb.",
+        "d..bbbbb..",
+        "ddbbddbb..",
+        "ddbbbbbbb.",
+        "dddbbbbb..",
+        ".dddbbbb.."
+      ]
+    },
+    {
+      "id": "maine-coon-016",
+      "title": {
+        "en": "Mighty Tail",
+        "tr": "Görkemli Kuyruk",
+        "ja": "立派なしっぽ",
+        "de": "Prachtschwanz",
+        "fr": "Queue majestueuse",
+        "es": "Gran cola",
+        "pt-BR": "Cauda Poderosa",
+        "ko": "늠름한 꼬리"
+      },
+      "palette": {
+        "b": "#8A6A4E",
+        "d": "#4E3A2A"
+      },
+      "pixels": [
+        "...........",
+        "....b......",
+        "bb..b..dd..",
+        "bbbbb..ddd.",
+        ".bbbb...ddd",
+        "..bbb...dbd",
+        ".bbddb..dbd",
+        ".bbbbbb.dbd",
+        ".bbbbbbddd.",
+        "..bbbddbdd.",
+        "......d...."
       ]
     }
   ]

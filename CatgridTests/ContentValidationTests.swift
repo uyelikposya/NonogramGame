@@ -13,11 +13,11 @@ final class ContentValidationTests: XCTestCase {
 
     func testStartsWithTutorialFollowedByBreeds() {
         XCTAssertEqual(catalog.chapters.first?.kind, .tutorial)
-        XCTAssertEqual(catalog.chapters.first?.puzzles.count, 10)
+        XCTAssertEqual(catalog.chapters.first?.puzzles.count, 11)
         let breeds = catalog.chapters.filter { $0.kind == .breed }
         XCTAssertGreaterThanOrEqual(breeds.count, 15)
         for breed in breeds {
-            XCTAssertGreaterThanOrEqual(breed.puzzles.count, 15, "\(breed.id) en az 15 bulmaca içermeli")
+            XCTAssertEqual(breed.puzzles.count, 16, "\(breed.id) 16 ücretsiz bulmaca içermeli")
             XCTAssertNotNil(breed.subtitle, "\(breed.id) tür bilgisi eksik")
         }
     }
@@ -38,11 +38,17 @@ final class ContentValidationTests: XCTestCase {
         }
     }
 
-    /// Telefonda yakınlaştırmasız rahat oynanması için en büyük tahta 15x15.
-    func testBoardsGrowUpTo15() {
-        let sides = catalog.orderedPuzzles.map { max($0.rows, $0.columns) }
-        XCTAssertEqual(sides.max(), 15)
-        XCTAssertLessThanOrEqual(sides.first ?? 0, 5)
+    /// Her türde 16 ücretsiz bölüm: 5 kolay, 7 orta, 3 zor, 1 çok zor (en büyük 12x12).
+    func testBreedsGetHarderWithinTheChapter() {
+        func side(_ puzzle: Puzzle) -> Int { max(puzzle.rows, puzzle.columns) }
+        for breed in catalog.chapters.filter({ $0.kind == .breed }) {
+            let puzzles = breed.puzzles
+            XCTAssertTrue(puzzles[0..<5].allSatisfy { side($0) <= 7 }, "\(breed.id) kolay bölümler 7'den büyük")
+            XCTAssertTrue(puzzles[5..<12].allSatisfy { (6...9).contains(side($0)) }, "\(breed.id) orta bölümler 6-9 dışında")
+            XCTAssertTrue(puzzles[12..<15].allSatisfy { (8...10).contains(side($0)) }, "\(breed.id) zor bölümler 8-10 dışında")
+            XCTAssertTrue((10...12).contains(side(puzzles[15])), "\(breed.id) son bölüm 10-12 dışında")
+        }
+        XCTAssertEqual(catalog.orderedPuzzles.map(side).max(), 12)
     }
 
     func testEveryBreedHasPortraitAndCard() {

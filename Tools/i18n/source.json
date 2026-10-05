@@ -623,6 +623,54 @@
   "Couldn't reach the App Store. Please try again.": {
    "en": "Couldn't reach the App Store. Please try again.",
    "tr": "App Store'a ulaşılamadı. Lütfen tekrar dene."
+  },
+  "Puzzle %lld of %lld": {
+   "en": "Puzzle %lld of %lld",
+   "tr": "Bulmaca %lld / %lld"
+  },
+  "Lesson %lld of %lld": {
+   "en": "Lesson %lld of %lld",
+   "tr": "Ders %lld / %lld"
+  },
+  "Golden puzzle %lld of %lld": {
+   "en": "Golden puzzle %lld of %lld",
+   "tr": "Altın bulmaca %lld / %lld"
+  },
+  "Next Cat: %@": {
+   "en": "Next Cat: %@",
+   "tr": "Sonraki kedi: %@"
+  },
+  "Easy": {
+   "en": "Easy",
+   "tr": "Kolay"
+  },
+  "Hard": {
+   "en": "Hard",
+   "tr": "Zor"
+  },
+  "Difficulty": {
+   "en": "Difficulty",
+   "tr": "Zorluk"
+  },
+  "Easy: finished lines are crossed out for you.": {
+   "en": "Easy: finished lines are crossed out for you.",
+   "tr": "Kolay: tamamlanan satırlara X otomatik konur."
+  },
+  "Hard: you place every X yourself.": {
+   "en": "Hard: you place every X yourself.",
+   "tr": "Zor: tüm X'leri kendin koyarsın."
+  },
+  "Choose your difficulty": {
+   "en": "Choose your difficulty",
+   "tr": "Zorluğunu seç"
+  },
+  "The button next to the timer sets the difficulty. On Easy, finished lines are crossed out for you. On Hard, you mark every empty square yourself. Try both!": {
+   "en": "The button next to the timer sets the difficulty. On Easy, finished lines are crossed out for you. On Hard, you mark every empty square yourself. Try both!",
+   "tr": "Sürenin yanındaki düğme zorluğu belirler. Kolay'da tamamlanan satırlara X otomatik konur. Zor'da boş kareleri kendin işaretlersin. İkisini de dene!"
+  },
+  "Your card is on its way…": {
+   "en": "Your card is on its way…",
+   "tr": "Kartın geliyor…"
   }
  },
  "infoplist": {
@@ -1386,6 +1434,10 @@
   },
   "Kitty": {
    "tr": "Pisi",
+   "kind": "title"
+  },
+  "Cat Basket": {
+   "tr": "Kedi Sepeti",
    "kind": "title"
   }
  },

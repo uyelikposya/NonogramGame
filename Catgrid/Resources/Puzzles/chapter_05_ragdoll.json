@@ -5,6 +5,53 @@
     {
       "id": "ragdoll-001",
       "title": {
+        "en": "Toy Mouse",
+        "tr": "Oyuncak Fare",
+        "ja": "ネズミのおもちゃ",
+        "de": "Spielmaus",
+        "fr": "Souris jouet",
+        "es": "Ratón de juguete",
+        "pt-BR": "Ratinho de Brinquedo",
+        "ko": "장난감 쥐"
+      },
+      "palette": {
+        "p": "#9AA5B1"
+      },
+      "pixels": [
+        "...p.",
+        "..pp.",
+        ".pppp",
+        "....."
+      ]
+    },
+    {
+      "id": "ragdoll-002",
+      "title": {
+        "en": "Dinner Bowl",
+        "tr": "Mama Kabı",
+        "ja": "ごはん皿",
+        "de": "Futternapf",
+        "fr": "Gamelle",
+        "es": "Cuenco de comida",
+        "pt-BR": "Potinho de Ração",
+        "ko": "밥그릇"
+      },
+      "palette": {
+        "o": "#B5838D",
+        "p": "#9AA5B1",
+        "w": "#FBF8F3"
+      },
+      "pixels": [
+        "......",
+        ".pppp.",
+        "ooppoo",
+        "oowwwo",
+        ".oooo."
+      ]
+    },
+    {
+      "id": "ragdoll-003",
+      "title": {
         "en": "Toe Beans",
         "tr": "Pati Yastıkları",
         "ja": "肉球",
@@ -19,16 +66,169 @@
         "w": "#FBF8F3"
       },
       "pixels": [
-        ".wwww.",
-        "wwnnww",
-        "nwwwwn",
-        ".wnnw.",
-        ".wnnw.",
-        ".wwww."
+        ".....",
+        ".nwn.",
+        "n...n",
+        "wwwww",
+        ".wnw.",
+        ".wnn.",
+        "..w.."
       ]
     },
     {
-      "id": "ragdoll-002",
+      "id": "ragdoll-004",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi",
+        "ja": "ゴロゴロ大好き",
+        "de": "Schnurrliebe",
+        "fr": "Ronron d'amour",
+        "es": "Amor ronroneante",
+        "pt-BR": "Amor Ronronado",
+        "ko": "골골송 사랑"
+      },
+      "palette": {
+        "n": "#E2A3A3"
+      },
+      "pixels": [
+        ".nnnnn.",
+        "nnnnnnn",
+        "nnnnnnn",
+        ".nnnnn.",
+        "..nnn..",
+        "...n..."
+      ]
+    },
+    {
+      "id": "ragdoll-005",
+      "title": {
+        "en": "Portrait",
+        "tr": "Portre",
+        "ja": "肖像画",
+        "de": "Porträt",
+        "fr": "Portrait",
+        "es": "Retrato",
+        "pt-BR": "Retrato",
+        "ko": "초상화"
+      },
+      "palette": {
+        "b": "#F4EEE6",
+        "d": "#8B7765",
+        "e": "#4F86C6",
+        "w": "#FBF8F3"
+      },
+      "pixels": [
+        ".......",
+        ".dbbbd.",
+        ".bbbbb.",
+        ".bedeb.",
+        "bbdddbb",
+        "bbwwwbb",
+        "..www.."
+      ]
+    },
+    {
+      "id": "ragdoll-006",
+      "title": {
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak",
+        "ja": "毛糸玉",
+        "de": "Wollknäuel",
+        "fr": "Pelote de laine",
+        "es": "Ovillo de lana",
+        "pt-BR": "Novelo de Lã",
+        "ko": "털실 뭉치"
+      },
+      "palette": {
+        "o": "#B5838D"
+      },
+      "pixels": [
+        ".ooo..",
+        "ooooo.",
+        "oo.oo.",
+        "o.ooo.",
+        ".oooo.",
+        "......"
+      ]
+    },
+    {
+      "id": "ragdoll-007",
+      "title": {
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak",
+        "ja": "毛糸玉",
+        "de": "Wollknäuel",
+        "fr": "Pelote de laine",
+        "es": "Ovillo de lana",
+        "pt-BR": "Novelo de Lã",
+        "ko": "털실 뭉치"
+      },
+      "palette": {
+        "o": "#B5838D"
+      },
+      "pixels": [
+        ".oooo..",
+        "o.o.o..",
+        "oo..oo.",
+        "oooo...",
+        ".oooo..",
+        ".....o."
+      ]
+    },
+    {
+      "id": "ragdoll-008",
+      "title": {
+        "en": "Toy Mouse",
+        "tr": "Oyuncak Fare",
+        "ja": "ネズミのおもちゃ",
+        "de": "Spielmaus",
+        "fr": "Souris jouet",
+        "es": "Ratón de juguete",
+        "pt-BR": "Ratinho de Brinquedo",
+        "ko": "장난감 쥐"
+      },
+      "palette": {
+        "n": "#E2A3A3",
+        "p": "#9AA5B1"
+      },
+      "pixels": [
+        "....p..",
+        "..ppp..",
+        "..ppp..",
+        "..pppp.",
+        "nnppp..",
+        "......."
+      ]
+    },
+    {
+      "id": "ragdoll-009",
+      "title": {
+        "en": "Dinner Bowl",
+        "tr": "Mama Kabı",
+        "ja": "ごはん皿",
+        "de": "Futternapf",
+        "fr": "Gamelle",
+        "es": "Cuenco de comida",
+        "pt-BR": "Potinho de Ração",
+        "ko": "밥그릇"
+      },
+      "palette": {
+        "o": "#B5838D",
+        "p": "#9AA5B1",
+        "w": "#FBF8F3"
+      },
+      "pixels": [
+        ".......",
+        ".ppppp.",
+        "ppppppp",
+        "oopppoo",
+        "oowwwoo",
+        ".ooooo.",
+        ".ooooo."
+      ]
+    },
+    {
+      "id": "ragdoll-010",
       "title": {
         "en": "Purr Love",
         "tr": "Mırıl Sevgi",
@@ -44,325 +244,19 @@
         "w": "#FBF8F3"
       },
       "pixels": [
-        "nnnnnn",
-        "nwnnnn",
-        "nnnnnn",
-        ".nnnn.",
-        "..nn..",
-        "..nn.."
-      ]
-    },
-    {
-      "id": "ragdoll-003",
-      "title": {
-        "en": "Fish Snack",
-        "tr": "Balık Atıştırması",
-        "ja": "おさかなおやつ",
-        "de": "Fischsnack",
-        "fr": "Goûter poisson",
-        "es": "Tentempié de pescado",
-        "pt-BR": "Petisco de Peixe",
-        "ko": "생선 간식"
-      },
-      "palette": {
-        "o": "#B5838D",
-        "p": "#9AA5B1"
-      },
-      "pixels": [
-        ".ooo.o",
-        "oopooo",
-        "oopooo",
-        ".ooo.o"
-      ]
-    },
-    {
-      "id": "ragdoll-004",
-      "title": {
-        "en": "Yarn Ball",
-        "tr": "Yün Yumak",
-        "ja": "毛糸玉",
-        "de": "Wollknäuel",
-        "fr": "Pelote de laine",
-        "es": "Ovillo de lana",
-        "pt-BR": "Novelo de Lã",
-        "ko": "털실 뭉치"
-      },
-      "palette": {
-        "o": "#B5838D"
-      },
-      "pixels": [
-        "...ooo.",
-        "..o.ooo",
-        ".oo..oo",
-        "...oooo",
-        "..oooo.",
-        ".o....."
-      ]
-    },
-    {
-      "id": "ragdoll-005",
-      "title": {
-        "en": "Dinner Bowl",
-        "tr": "Mama Kabı",
-        "ja": "ごはん皿",
-        "de": "Futternapf",
-        "fr": "Gamelle",
-        "es": "Cuenco de comida",
-        "pt-BR": "Potinho de Ração",
-        "ko": "밥그릇"
-      },
-      "palette": {
-        "o": "#B5838D",
-        "p": "#9AA5B1",
-        "w": "#FBF8F3"
-      },
-      "pixels": [
-        "..ppp..",
-        "ppppppp",
-        "oopppoo",
-        "oowwwoo",
-        ".ooooo."
-      ]
-    },
-    {
-      "id": "ragdoll-006",
-      "title": {
-        "en": "Leftovers",
-        "tr": "Artıklar",
-        "ja": "食べ残し",
-        "de": "Reste",
-        "fr": "Restes",
-        "es": "Sobras",
-        "pt-BR": "Restinho",
-        "ko": "남은 음식"
-      },
-      "palette": {
-        "p": "#9AA5B1"
-      },
-      "pixels": [
-        "..ppp..",
-        "ppppp.p",
-        "ppppp.p",
-        "..ppp.."
-      ]
-    },
-    {
-      "id": "ragdoll-007",
-      "title": {
-        "en": "Leftovers",
-        "tr": "Artıklar",
-        "ja": "食べ残し",
-        "de": "Reste",
-        "fr": "Restes",
-        "es": "Sobras",
-        "pt-BR": "Restinho",
-        "ko": "남은 음식"
-      },
-      "palette": {
-        "p": "#9AA5B1"
-      },
-      "pixels": [
-        ".......",
-        "p.pppp.",
-        "pppppp.",
-        "..ppp.."
-      ]
-    },
-    {
-      "id": "ragdoll-008",
-      "title": {
-        "en": "If I Fits",
-        "tr": "Kutu Sevdası",
-        "ja": "入れるなら入る",
-        "de": "Passt, sitzt",
-        "fr": "Si ça rentre…",
-        "es": "Si quepo, me siento",
-        "pt-BR": "Se Cabe, Eu Entro",
-        "ko": "들어가면 내 자리"
-      },
-      "palette": {
-        "b": "#F4EEE6",
-        "d": "#8B7765",
-        "e": "#4F86C6",
-        "o": "#B5838D",
-        "p": "#9AA5B1"
-      },
-      "pixels": [
-        "........",
-        "..dbbd..",
-        "..bbeb..",
-        ".obbbbo.",
-        "poooooo.",
-        ".oooooo.",
-        ".oooooo."
-      ]
-    },
-    {
-      "id": "ragdoll-009",
-      "title": {
-        "en": "Moon Gazer",
-        "tr": "Ay Seyri",
-        "ja": "月を見る猫",
-        "de": "Mondgucker",
-        "fr": "Rêveur de lune",
-        "es": "Mirando la luna",
-        "pt-BR": "Admirador da Lua",
-        "ko": "달 바라기"
-      },
-      "palette": {
-        "b": "#F4EEE6",
-        "y": "#F4D35E"
-      },
-      "pixels": [
-        "..yy...",
-        ".yy....",
-        ".yy....",
-        ".yyy...",
-        "byyyyy.",
-        "bbyyyy.",
-        "bb.b...",
-        "bbbb..."
-      ]
-    },
-    {
-      "id": "ragdoll-010",
-      "title": {
-        "en": "Portrait",
-        "tr": "Portre",
-        "ja": "肖像画",
-        "de": "Porträt",
-        "fr": "Portrait",
-        "es": "Retrato",
-        "pt-BR": "Retrato",
-        "ko": "초상화"
-      },
-      "palette": {
-        "b": "#F4EEE6",
-        "d": "#8B7765",
-        "e": "#4F86C6",
-        "w": "#FBF8F3"
-      },
-      "pixels": [
-        ".d....d.",
-        ".dbbbbd.",
-        ".beddeb.",
-        "bbeddeb.",
-        "bbbwwbbb",
-        "...ww..."
+        ".nn..nn.",
+        "nwnnnnnn",
+        "nnnnnnnn",
+        "nnnnnnnn",
+        ".nnnnnn.",
+        "..nnnn..",
+        "...nn...",
+        "........"
       ]
     },
     {
       "id": "ragdoll-011",
       "title": {
-        "en": "Dinner Bowl",
-        "tr": "Mama Kabı",
-        "ja": "ごはん皿",
-        "de": "Futternapf",
-        "fr": "Gamelle",
-        "es": "Cuenco de comida",
-        "pt-BR": "Potinho de Ração",
-        "ko": "밥그릇"
-      },
-      "palette": {
-        "o": "#B5838D",
-        "p": "#9AA5B1",
-        "w": "#FBF8F3"
-      },
-      "pixels": [
-        "..pppp..",
-        ".pppppp.",
-        "ooppppoo",
-        ".owwwwo.",
-        ".oooooo."
-      ]
-    },
-    {
-      "id": "ragdoll-012",
-      "title": {
-        "en": "If I Fits",
-        "tr": "Kutu Sevdası",
-        "ja": "入れるなら入る",
-        "de": "Passt, sitzt",
-        "fr": "Si ça rentre…",
-        "es": "Si quepo, me siento",
-        "pt-BR": "Se Cabe, Eu Entro",
-        "ko": "들어가면 내 자리"
-      },
-      "palette": {
-        "b": "#F4EEE6",
-        "d": "#8B7765",
-        "o": "#B5838D",
-        "p": "#9AA5B1"
-      },
-      "pixels": [
-        "........",
-        "..dbdd..",
-        "..bbbb..",
-        "..bbbb..",
-        "poobbop.",
-        "ooooooo.",
-        "ooooooo."
-      ]
-    },
-    {
-      "id": "ragdoll-013",
-      "title": {
-        "en": "Moon Gazer",
-        "tr": "Ay Seyri",
-        "ja": "月を見る猫",
-        "de": "Mondgucker",
-        "fr": "Rêveur de lune",
-        "es": "Mirando la luna",
-        "pt-BR": "Admirador da Lua",
-        "ko": "달 바라기"
-      },
-      "palette": {
-        "b": "#F4EEE6",
-        "y": "#F4D35E"
-      },
-      "pixels": [
-        "...yy...",
-        "..yy....",
-        ".yyy....",
-        ".yyy....",
-        "..yyy...",
-        "bbyyyyy.",
-        ".bb.y...",
-        "bbb.b...",
-        ".bbb...."
-      ]
-    },
-    {
-      "id": "ragdoll-014",
-      "title": {
-        "en": "Toe Beans",
-        "tr": "Pati Yastıkları",
-        "ja": "肉球",
-        "de": "Pfotenballen",
-        "fr": "Coussinets",
-        "es": "Almohadillas",
-        "pt-BR": "Almofadinhas",
-        "ko": "말랑 젤리"
-      },
-      "palette": {
-        "n": "#E2A3A3",
-        "w": "#FBF8F3"
-      },
-      "pixels": [
-        "..ww.ww..",
-        "..nnwnn..",
-        "ww.w.w.ww",
-        "nn.www.nn",
-        ".wwwwwww.",
-        ".wwnnnww.",
-        ".wwnnnww.",
-        ".wwnnnww.",
-        "..wwwww.."
-      ]
-    },
-    {
-      "id": "ragdoll-015",
-      "title": {
         "en": "Portrait",
         "tr": "Portre",
         "ja": "肖像画",
@@ -379,13 +273,161 @@
         "w": "#FBF8F3"
       },
       "pixels": [
+        "........",
+        ".d.bb.d.",
+        ".dbbbbd.",
+        ".beddeb.",
+        "bbeddebb",
+        "bbdwwdbb",
+        "..bwww..",
+        "........"
+      ]
+    },
+    {
+      "id": "ragdoll-012",
+      "title": {
+        "en": "Sitting Pretty",
+        "tr": "Uslu Oturuş",
+        "ja": "おすましおすわり",
+        "de": "Brav sitzen",
+        "fr": "Sage comme une image",
+        "es": "Sentado con estilo",
+        "pt-BR": "Pose Elegante",
+        "ko": "얌전히 앉기"
+      },
+      "palette": {
+        "b": "#F4EEE6",
+        "d": "#8B7765",
+        "w": "#FBF8F3"
+      },
+      "pixels": [
+        "........",
+        "ddbdd...",
+        "ddddd...",
+        ".bdb....",
+        "..bbb.dd",
+        ".bbbbbdd",
+        ".bbbbbdd",
+        ".bbbbbdd",
+        ".wwwbdd."
+      ]
+    },
+    {
+      "id": "ragdoll-013",
+      "title": {
+        "en": "Teddy Face",
+        "tr": "Oyuncak Ayı Yüzü",
+        "ja": "テディベア顔",
+        "de": "Teddygesicht",
+        "fr": "Bouille de nounours",
+        "es": "Cara de osito",
+        "pt-BR": "Cara de Ursinho",
+        "ko": "테디베어 얼굴"
+      },
+      "palette": {
+        "b": "#F4EEE6",
+        "d": "#8B7765",
+        "e": "#4F86C6",
+        "w": "#FBF8F3"
+      },
+      "pixels": [
+        "........",
+        "......d.",
+        ".dbbbbd.",
+        ".bbbbbb.",
+        ".beedebb",
+        ".bbdddbb",
+        ".bbwwwbb",
+        "...ww..."
+      ]
+    },
+    {
+      "id": "ragdoll-014",
+      "title": {
+        "en": "Nap Time",
+        "tr": "Şekerleme",
+        "ja": "お昼寝タイム",
+        "de": "Nickerchen",
+        "fr": "L'heure de la sieste",
+        "es": "Hora de la siesta",
+        "pt-BR": "Hora da Soneca",
+        "ko": "낮잠 시간"
+      },
+      "palette": {
+        "b": "#F4EEE6",
+        "d": "#8B7765"
+      },
+      "pixels": [
         ".........",
-        ".dbbbbbd.",
-        ".bbbbbbb.",
-        ".beedeeb.",
-        "bbbdddbbb",
-        "bbbwwwbbb",
-        "..bwwwb.."
+        "d..dbb...",
+        "ddbdbbbb.",
+        "ddddbbbbb",
+        "bbbbbbbbb",
+        ".bbbbbbbd",
+        "..bbbbbd.",
+        "..dddddd.",
+        "........."
+      ]
+    },
+    {
+      "id": "ragdoll-015",
+      "title": {
+        "en": "Lucky Cat",
+        "tr": "Şans Kedisi",
+        "ja": "招き猫",
+        "de": "Glückskatze",
+        "fr": "Chat porte-bonheur",
+        "es": "Gato de la suerte",
+        "pt-BR": "Gato da Sorte",
+        "ko": "행운의 고양이"
+      },
+      "palette": {
+        "b": "#F4EEE6",
+        "d": "#8B7765",
+        "e": "#4F86C6",
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        ".d....d...",
+        ".ddbbddbb.",
+        ".ddbbdddb.",
+        ".beebebbb.",
+        ".bbbbbbb..",
+        "..bbybbb..",
+        ".bbbbbbb..",
+        ".bbyybbb..",
+        ".bbyybb...",
+        "..bbbb...."
+      ]
+    },
+    {
+      "id": "ragdoll-016",
+      "title": {
+        "en": "Floppy Hug",
+        "tr": "Gevşek Kucaklama",
+        "ja": "ぐにゃっとハグ",
+        "de": "Schlappe Umarmung",
+        "fr": "Câlin tout mou",
+        "es": "Abrazo blandito",
+        "pt-BR": "Abraço Molinho",
+        "ko": "축 늘어진 포옹"
+      },
+      "palette": {
+        "b": "#F4EEE6",
+        "d": "#8B7765",
+        "w": "#FBF8F3"
+      },
+      "pixels": [
+        "...w..w...",
+        "...b..b...",
+        "...b..b...",
+        "...b..bbb.",
+        "...bbbbbb.",
+        "..bbwwbbbb",
+        ".dbwwwwbb.",
+        ".dbbwwwb..",
+        "d..bbbb...",
+        "d........."
       ]
     }
   ]

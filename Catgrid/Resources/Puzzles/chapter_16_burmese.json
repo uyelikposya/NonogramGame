@@ -5,65 +5,6 @@
     {
       "id": "burmese-001",
       "title": {
-        "en": "Toe Beans",
-        "tr": "Pati Yastıkları",
-        "ja": "肉球",
-        "de": "Pfotenballen",
-        "fr": "Coussinets",
-        "es": "Almohadillas",
-        "pt-BR": "Almofadinhas",
-        "ko": "말랑 젤리"
-      },
-      "palette": {
-        "b": "#6B4A35",
-        "n": "#8C5A4A"
-      },
-      "pixels": [
-        "...bb.bb...",
-        "..bnnbnnb..",
-        "bbbbb.bnbbb",
-        "bnb.....bnb",
-        "bnbbbbbbbnb",
-        "..bbbbbbb..",
-        "..bbnnnbb..",
-        ".bbnnnnnbb.",
-        ".bbnnnnnbb.",
-        "..bbnnnbb..",
-        "...bbbbb..."
-      ]
-    },
-    {
-      "id": "burmese-002",
-      "title": {
-        "en": "Purr Love",
-        "tr": "Mırıl Sevgi",
-        "ja": "ゴロゴロ大好き",
-        "de": "Schnurrliebe",
-        "fr": "Ronron d'amour",
-        "es": "Amor ronroneante",
-        "pt-BR": "Amor Ronronado",
-        "ko": "골골송 사랑"
-      },
-      "palette": {
-        "n": "#8C5A4A",
-        "w": "#D9C2AE"
-      },
-      "pixels": [
-        ".nnnn.nnnn.",
-        "nnwnnnnnnnn",
-        "nnwwnnnnnnn",
-        "nnnnnnnnnnn",
-        ".nnnnnnnnn.",
-        ".nnnnnnnnn.",
-        "..nnnnnnn..",
-        "...nnnnn...",
-        "....nnn....",
-        ".....n....."
-      ]
-    },
-    {
-      "id": "burmese-003",
-      "title": {
         "en": "Fish Snack",
         "tr": "Balık Atıştırması",
         "ja": "おさかなおやつ",
@@ -78,16 +19,15 @@
         "p": "#C8B6A6"
       },
       "pixels": [
-        "..oooo....o",
-        ".ooopooo.oo",
-        "o.oopoooooo",
-        "oooopoooooo",
-        ".ooopooo.oo",
-        "..oooo....o"
+        "..o...",
+        "oopo.o",
+        "oopooo",
+        "oopo.o",
+        "..o..."
       ]
     },
     {
-      "id": "burmese-004",
+      "id": "burmese-002",
       "title": {
         "en": "Yarn Ball",
         "tr": "Yün Yumak",
@@ -102,21 +42,15 @@
         "o": "#B5838D"
       },
       "pixels": [
-        "..ooooo.....",
-        ".ooooooo....",
-        "o.oooo.oo...",
-        "oo....oooo..",
-        "oooo..oooo..",
-        "ooo..o.ooo..",
-        "ooo.ooo.o...",
-        ".o.ooooo....",
-        "..ooooooo...",
-        "....oo..oo..",
-        "..........oo"
+        ".oooo..",
+        "o.o.oo.",
+        "oo..oo.",
+        ".oooo..",
+        ".....o."
       ]
     },
     {
-      "id": "burmese-005",
+      "id": "burmese-003",
       "title": {
         "en": "Dinner Bowl",
         "tr": "Mama Kabı",
@@ -133,18 +67,16 @@
         "w": "#D9C2AE"
       },
       "pixels": [
-        "....p.pp....",
-        "..pppppppp..",
-        ".pppppppppp.",
-        "ooppppppppoo",
-        "oooooooooooo",
-        ".oowwwwwwoo.",
-        ".oooooooooo.",
-        "..oooooooo.."
+        "...p..",
+        ".pppp.",
+        "oppppo",
+        "oowwoo",
+        ".oooo.",
+        ".oooo."
       ]
     },
     {
-      "id": "burmese-006",
+      "id": "burmese-004",
       "title": {
         "en": "Toy Mouse",
         "tr": "Oyuncak Fare",
@@ -160,158 +92,171 @@
         "p": "#C8B6A6"
       },
       "pixels": [
-        "...pnp......",
-        "...pnppp....",
-        "..ppppppp...",
-        ".p.pppppp...",
-        "..ppppppp...",
-        "...ppppp.n.n",
-        "..........n."
+        "....p..",
+        "...pn..",
+        "..pppp.",
+        "..pppp.",
+        "nnppp..",
+        "......."
+      ]
+    },
+    {
+      "id": "burmese-005",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi",
+        "ja": "ゴロゴロ大好き",
+        "de": "Schnurrliebe",
+        "fr": "Ronron d'amour",
+        "es": "Amor ronroneante",
+        "pt-BR": "Amor Ronronado",
+        "ko": "골골송 사랑"
+      },
+      "palette": {
+        "n": "#8C5A4A",
+        "w": "#D9C2AE"
+      },
+      "pixels": [
+        ".nn.nn.",
+        "nwnnnnn",
+        "nnnnnnn",
+        ".nnnnn.",
+        ".nnnnn.",
+        "..nnn..",
+        "...n..."
+      ]
+    },
+    {
+      "id": "burmese-006",
+      "title": {
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak",
+        "ja": "毛糸玉",
+        "de": "Wollknäuel",
+        "fr": "Pelote de laine",
+        "es": "Ovillo de lana",
+        "pt-BR": "Novelo de Lã",
+        "ko": "털실 뭉치"
+      },
+      "palette": {
+        "o": "#B5838D"
+      },
+      "pixels": [
+        ".ooo..",
+        "ooooo.",
+        "oo.oo.",
+        "o.ooo.",
+        ".oooo.",
+        "......"
       ]
     },
     {
       "id": "burmese-007",
       "title": {
-        "en": "Leftovers",
-        "tr": "Artıklar",
-        "ja": "食べ残し",
-        "de": "Reste",
-        "fr": "Restes",
-        "es": "Sobras",
-        "pt-BR": "Restinho",
-        "ko": "남은 음식"
+        "en": "Toy Mouse",
+        "tr": "Oyuncak Fare",
+        "ja": "ネズミのおもちゃ",
+        "de": "Spielmaus",
+        "fr": "Souris jouet",
+        "es": "Ratón de juguete",
+        "pt-BR": "Ratinho de Brinquedo",
+        "ko": "장난감 쥐"
       },
       "palette": {
+        "n": "#8C5A4A",
         "p": "#C8B6A6"
       },
       "pixels": [
-        "...p.p.p....",
-        ".ppppp.p...p",
-        "pppppppppppp",
-        "pppppppppppp",
-        ".ppppp.p...p",
-        "...p.p.p...."
+        "..p....",
+        "..np...",
+        ".pppp..",
+        ".ppppp.",
+        ".ppppn.",
+        "..pp..n"
       ]
     },
     {
       "id": "burmese-008",
       "title": {
-        "en": "Nap Time",
-        "tr": "Şekerleme",
-        "ja": "お昼寝タイム",
-        "de": "Nickerchen",
-        "fr": "L'heure de la sieste",
-        "es": "Hora de la siesta",
-        "pt-BR": "Hora da Soneca",
-        "ko": "낮잠 시간"
+        "en": "Dinner Bowl",
+        "tr": "Mama Kabı",
+        "ja": "ごはん皿",
+        "de": "Futternapf",
+        "fr": "Gamelle",
+        "es": "Cuenco de comida",
+        "pt-BR": "Potinho de Ração",
+        "ko": "밥그릇"
       },
       "palette": {
-        "b": "#6B4A35"
+        "o": "#B5838D",
+        "p": "#C8B6A6",
+        "w": "#D9C2AE"
       },
       "pixels": [
-        "............",
-        "bbbbbbbbbb..",
-        "bbbbbbbbbbb.",
-        "bb..bbbbbbbb",
-        ".bbbbbbbbbbb",
-        "..bbbbbbbbbb",
-        "...bbbbbbbb.",
-        "...bbbbbbb.."
+        ".......",
+        ".ppppp.",
+        "ppppppp",
+        "oopppoo",
+        "oowwwoo",
+        ".ooooo.",
+        ".ooooo."
       ]
     },
     {
       "id": "burmese-009",
       "title": {
-        "en": "Royal Cushion",
-        "tr": "Saray Minderi",
-        "ja": "王様のクッション",
-        "de": "Königskissen",
-        "fr": "Coussin royal",
-        "es": "Cojín real",
-        "pt-BR": "Almofada Real",
-        "ko": "왕실 방석"
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi",
+        "ja": "ゴロゴロ大好き",
+        "de": "Schnurrliebe",
+        "fr": "Ronron d'amour",
+        "es": "Amor ronroneante",
+        "pt-BR": "Amor Ronronado",
+        "ko": "골골송 사랑"
       },
       "palette": {
-        "b": "#6B4A35",
         "n": "#8C5A4A",
-        "o": "#B5838D"
+        "w": "#D9C2AE"
       },
       "pixels": [
-        ".............",
-        ".bb..bb......",
-        ".bbbbbb......",
-        ".bbbbbb......",
-        "..bnnbbbbb...",
-        "..bbbbbbbbb..",
-        ".bbbbbbbbbbb.",
-        ".bbbbbbbbbbb.",
-        "ooobbbbbbbooo",
-        "ooooooooooooo",
-        "ooooooooooooo"
+        ".nnnnn.",
+        "nwnnnnn",
+        "nnnnnnn",
+        ".nnnnn.",
+        ".nnnnn.",
+        "..nnn..",
+        "...n..."
       ]
     },
     {
       "id": "burmese-010",
       "title": {
-        "en": "Sitting Pretty",
-        "tr": "Uslu Oturuş",
-        "ja": "おすましおすわり",
-        "de": "Brav sitzen",
-        "fr": "Sage comme une image",
-        "es": "Sentado con estilo",
-        "pt-BR": "Pose Elegante",
-        "ko": "얌전히 앉기"
+        "en": "Portrait",
+        "tr": "Portre",
+        "ja": "肖像画",
+        "de": "Porträt",
+        "fr": "Portrait",
+        "es": "Retrato",
+        "pt-BR": "Retrato",
+        "ko": "초상화"
       },
       "palette": {
-        "b": "#6B4A35"
+        "b": "#6B4A35",
+        "e": "#E5B53B"
       },
       "pixels": [
-        ".....b.....",
-        "bb...b.....",
-        "bbbbbbb....",
-        "bbbbbbb....",
-        ".bbbbb.....",
-        "..bbbb.....",
-        "..bbbbb...b",
-        "..bbbbbb..b",
-        ".bbbbbbb..b",
-        ".bbbbbbb..b",
-        "..bbbbbb.bb",
-        "..bbbbbbbb.",
-        "..bbbb....."
+        "........",
+        "bbbbbbbb",
+        "bbbbbbbb",
+        "bbebbebb",
+        "bbebbeeb",
+        "bbbbbbbb",
+        ".bbbbbb.",
+        "..bbbb.."
       ]
     },
     {
       "id": "burmese-011",
-      "title": {
-        "en": "Strut",
-        "tr": "Salınarak Yürüyüş",
-        "ja": "おすまし歩き",
-        "de": "Stolzieren",
-        "fr": "Pavane",
-        "es": "Pavoneo",
-        "pt-BR": "Desfile",
-        "ko": "당당한 걸음"
-      },
-      "palette": {
-        "b": "#6B4A35"
-      },
-      "pixels": [
-        "............b",
-        "b...b.......b",
-        "bbbbb.......b",
-        "bbbbbbbb...bb",
-        ".bbbbbbbbbbb.",
-        "..bbbbbbbbb..",
-        "...bbbbbbbb..",
-        "...bbbbbbbb..",
-        "...b.b..b.b..",
-        "...b.bb.b.b..",
-        "...b..b.b.b.."
-      ]
-    },
-    {
-      "id": "burmese-012",
       "title": {
         "en": "If I Fits",
         "tr": "Kutu Sevdası",
@@ -329,88 +274,44 @@
         "p": "#C8B6A6"
       },
       "pixels": [
-        ".............",
-        "...b....b....",
-        "...bbbbbb....",
-        "...bbbbbbb...",
-        "...bebbeb....",
-        "...bbbbeb....",
-        ".poobbbbboop.",
-        "ppoooobooopp.",
-        ".oooooooooo..",
-        ".oooooooooo..",
-        ".oooooooooo..",
-        ".oooooooooo.."
+        "........",
+        "..b..b..",
+        "..bbbb..",
+        "..beeb..",
+        "poobboop",
+        ".oooooo.",
+        ".oooooo.",
+        ".oooooo."
+      ]
+    },
+    {
+      "id": "burmese-012",
+      "title": {
+        "en": "Nap Time",
+        "tr": "Şekerleme",
+        "ja": "お昼寝タイム",
+        "de": "Nickerchen",
+        "fr": "L'heure de la sieste",
+        "es": "Hora de la siesta",
+        "pt-BR": "Hora da Soneca",
+        "ko": "낮잠 시간"
+      },
+      "palette": {
+        "b": "#6B4A35"
+      },
+      "pixels": [
+        ".........",
+        "b..bbbb..",
+        "bbbbbbbb.",
+        "bbbbbbbbb",
+        ".bbbbbbbb",
+        "..bbbbbbb",
+        "..bbbbbb.",
+        "........."
       ]
     },
     {
       "id": "burmese-013",
-      "title": {
-        "en": "Moon Gazer",
-        "tr": "Ay Seyri",
-        "ja": "月を見る猫",
-        "de": "Mondgucker",
-        "fr": "Rêveur de lune",
-        "es": "Mirando la luna",
-        "pt-BR": "Admirador da Lua",
-        "ko": "달 바라기"
-      },
-      "palette": {
-        "b": "#6B4A35",
-        "y": "#F4D35E"
-      },
-      "pixels": [
-        "....yyy.....",
-        "...yyy......",
-        "..yyyy......",
-        "..yyyy......",
-        "..yyyy......",
-        "..yyyy......",
-        "..yyyyy.....",
-        "..yyyyyy....",
-        "bbbyyyyyyyy.",
-        "bb..yyyyyy..",
-        ".bbb..b.....",
-        "bbbb..b.....",
-        "bbbb..b.....",
-        ".bbbbb......"
-      ]
-    },
-    {
-      "id": "burmese-014",
-      "title": {
-        "en": "Toe Beans",
-        "tr": "Pati Yastıkları",
-        "ja": "肉球",
-        "de": "Pfotenballen",
-        "fr": "Coussinets",
-        "es": "Almohadillas",
-        "pt-BR": "Almofadinhas",
-        "ko": "말랑 젤리"
-      },
-      "palette": {
-        "b": "#6B4A35",
-        "n": "#8C5A4A"
-      },
-      "pixels": [
-        "....bb..bb....",
-        "...bnnbbnnb...",
-        "...bnnbbnnb...",
-        "bbbbbb..bbbbbb",
-        "bnn........nnb",
-        "bnn..bbbb..bnb",
-        ".bbbbbbbbbbbb.",
-        "..bbbbbbbbbb..",
-        "..bbbnnnnbbb..",
-        "..bbnnnnnnbb..",
-        "..bbnnnnnnbb..",
-        "..bbnnnnnnbb..",
-        "...bbbnnbbb...",
-        "....bbbbbb...."
-      ]
-    },
-    {
-      "id": "burmese-015",
       "title": {
         "en": "Portrait",
         "tr": "Portre",
@@ -423,23 +324,106 @@
       },
       "palette": {
         "b": "#6B4A35",
-        "e": "#E5B53B",
-        "n": "#8C5A4A"
+        "e": "#E5B53B"
       },
       "pixels": [
-        ".b..........b.",
-        ".b...bbbb...b.",
-        "bbbbbbbbbbbbbb",
-        "bbbbbbbbbbbbbb",
-        "bbbbbbbbbbbbbb",
-        "bbbebbbbbbebbb",
-        "bbbeebbbbeebbb",
-        "bbbeebbbbeebbb",
-        "bbbbbbbbbbbbbb",
-        "bbbbbbnnbbbbbb",
-        ".bbbbbbbbbbbb.",
-        "..bbbbbbbbbb..",
-        "....bbbbbb...."
+        ".........",
+        ".b.bbb.b.",
+        "bbbbbbbb.",
+        "bbbbbbbb.",
+        "bbebbeeb.",
+        "bbbbbbbb.",
+        ".bbbbbbb.",
+        "..bbbbb.."
+      ]
+    },
+    {
+      "id": "burmese-014",
+      "title": {
+        "en": "Silver Night",
+        "tr": "Gümüş Gece",
+        "ja": "銀色の夜",
+        "de": "Silbernacht",
+        "fr": "Nuit argentée",
+        "es": "Noche plateada",
+        "pt-BR": "Noite Prateada",
+        "ko": "은빛 밤"
+      },
+      "palette": {
+        "b": "#6B4A35",
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        "....yy....",
+        "...yy.....",
+        "...yy.....",
+        "..yyy.....",
+        "...yyy....",
+        ".bbyyyyyy.",
+        "..b..yy...",
+        ".bbb.b....",
+        "..bbb....y"
+      ]
+    },
+    {
+      "id": "burmese-015",
+      "title": {
+        "en": "Ancient Grace",
+        "tr": "Kadim Zarafet",
+        "ja": "古代の気品",
+        "de": "Uralte Anmut",
+        "fr": "Grâce ancestrale",
+        "es": "Gracia antigua",
+        "pt-BR": "Graça Ancestral",
+        "ko": "고대의 우아함"
+      },
+      "palette": {
+        "b": "#6B4A35",
+        "d": "#4F3526",
+        "o": "#B5838D",
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        "....b.b...",
+        "....bbb...",
+        "....bbb...",
+        "....bbb...",
+        "....byy...",
+        "....bbb...",
+        "..obbbbb.d",
+        ".oobbbbb.d",
+        ".ooobbbdd.",
+        ".ooo......"
+      ]
+    },
+    {
+      "id": "burmese-016",
+      "title": {
+        "en": "Jungle Prowl",
+        "tr": "Orman Avcısı",
+        "ja": "ジャングル探検",
+        "de": "Dschungelpirsch",
+        "fr": "Rôdeur de jungle",
+        "es": "Acecho en la jungla",
+        "pt-BR": "Espreita na Selva",
+        "ko": "정글 탐험"
+      },
+      "palette": {
+        "b": "#6B4A35",
+        "g": "#4E8F4A"
+      },
+      "pixels": [
+        "...........",
+        ".gg........",
+        "ggg...b..b.",
+        ".gg...bbbb.",
+        "......bbbb.",
+        "..bbbbbbbb.",
+        ".bbbbbbbb..",
+        ".bbbbbbbb..",
+        ".bbbbbbbb..",
+        "..bbbbbb...",
+        "...bbb....."
       ]
     }
   ]

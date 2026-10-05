@@ -5,36 +5,54 @@
     {
       "id": "egyptian-mau-001",
       "title": {
-        "en": "Toe Beans",
-        "tr": "Pati Yastıkları",
-        "ja": "肉球",
-        "de": "Pfotenballen",
-        "fr": "Coussinets",
-        "es": "Almohadillas",
-        "pt-BR": "Almofadinhas",
-        "ko": "말랑 젤리"
+        "en": "Dinner Bowl",
+        "tr": "Mama Kabı",
+        "ja": "ごはん皿",
+        "de": "Futternapf",
+        "fr": "Gamelle",
+        "es": "Cuenco de comida",
+        "pt-BR": "Potinho de Ração",
+        "ko": "밥그릇"
       },
       "palette": {
-        "b": "#C9CBC4",
-        "n": "#B87F72"
+        "o": "#E0B66A",
+        "p": "#7D5A44",
+        "w": "#EDEDE6"
       },
       "pixels": [
-        "...bb..bb...",
-        "...nnbbnn...",
-        ".b.bnbbnn.b.",
-        "bnb......bnb",
-        "bnb..bb..bnb",
-        ".bbbbbbbbbb.",
-        "..bbbbbbbb..",
-        "..bbnnnnbb..",
-        ".bbnnnnnnbb.",
-        "..bbnnnnbb..",
-        "..bbbnnnbb..",
-        "...bbbbbb..."
+        "......",
+        ".pppp.",
+        "ooppoo",
+        "oowwwo",
+        ".oooo."
       ]
     },
     {
       "id": "egyptian-mau-002",
+      "title": {
+        "en": "Toy Mouse",
+        "tr": "Oyuncak Fare",
+        "ja": "ネズミのおもちゃ",
+        "de": "Spielmaus",
+        "fr": "Souris jouet",
+        "es": "Ratón de juguete",
+        "pt-BR": "Ratinho de Brinquedo",
+        "ko": "장난감 쥐"
+      },
+      "palette": {
+        "n": "#B87F72",
+        "p": "#7D5A44"
+      },
+      "pixels": [
+        "..n....",
+        ".ppp...",
+        "ppppp..",
+        ".pppp.n",
+        "......."
+      ]
+    },
+    {
+      "id": "egyptian-mau-003",
       "title": {
         "en": "Purr Love",
         "tr": "Mırıl Sevgi",
@@ -50,76 +68,68 @@
         "w": "#EDEDE6"
       },
       "pixels": [
-        ".nnnn..nnnn.",
-        "nnnnnnnnnnnn",
-        "nnwwnnnnnnnn",
-        "nnnnnnnnnnnn",
-        "nnnnnnnnnnnn",
-        ".nnnnnnnnnn.",
-        "..nnnnnnnn..",
-        "...nnnnnn...",
-        "....nnnn....",
-        ".....nn.....",
-        ".....nn....."
-      ]
-    },
-    {
-      "id": "egyptian-mau-003",
-      "title": {
-        "en": "Fish Snack",
-        "tr": "Balık Atıştırması",
-        "ja": "おさかなおやつ",
-        "de": "Fischsnack",
-        "fr": "Goûter poisson",
-        "es": "Tentempié de pescado",
-        "pt-BR": "Petisco de Peixe",
-        "ko": "생선 간식"
-      },
-      "palette": {
-        "o": "#E0B66A"
-      },
-      "pixels": [
-        "..oooo.....o",
-        ".ooooooo..oo",
-        "o..ooooooooo",
-        "oooooooooooo",
-        "oooooooooooo",
-        ".ooooooo..oo",
-        "..oooo.....o"
+        ".nnnn.",
+        "nwnnnn",
+        "nnnnnn",
+        ".nnnn.",
+        "..nn..",
+        "......"
       ]
     },
     {
       "id": "egyptian-mau-004",
       "title": {
-        "en": "Yarn Ball",
-        "tr": "Yün Yumak",
-        "ja": "毛糸玉",
-        "de": "Wollknäuel",
-        "fr": "Pelote de laine",
-        "es": "Ovillo de lana",
-        "pt-BR": "Novelo de Lã",
-        "ko": "털실 뭉치"
+        "en": "Toe Beans",
+        "tr": "Pati Yastıkları",
+        "ja": "肉球",
+        "de": "Pfotenballen",
+        "fr": "Coussinets",
+        "es": "Almohadillas",
+        "pt-BR": "Almofadinhas",
+        "ko": "말랑 젤리"
       },
       "palette": {
-        "o": "#E0B66A"
+        "b": "#C9CBC4",
+        "n": "#B87F72"
       },
       "pixels": [
-        "...oooo......",
-        ".oooooooo....",
-        "..oooo.oo....",
-        "oo....oooo...",
-        "oooo..oooo...",
-        "oooo.o.ooo...",
-        "ooo.ooo.oo...",
-        ".o.ooooo.....",
-        ".oooooooo....",
-        "...oooo.oo...",
-        ".........ooo.",
-        "............."
+        "......",
+        ".bnnb.",
+        "nb..bn",
+        ".bbbb.",
+        ".bnnb.",
+        ".bnnb.",
+        "..bb.."
       ]
     },
     {
       "id": "egyptian-mau-005",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi",
+        "ja": "ゴロゴロ大好き",
+        "de": "Schnurrliebe",
+        "fr": "Ronron d'amour",
+        "es": "Amor ronroneante",
+        "pt-BR": "Amor Ronronado",
+        "ko": "골골송 사랑"
+      },
+      "palette": {
+        "n": "#B87F72",
+        "w": "#EDEDE6"
+      },
+      "pixels": [
+        ".nn.nn.",
+        "nwnnnnn",
+        "nnnnnnn",
+        ".nnnnn.",
+        ".nnnnn.",
+        "..nnn..",
+        "...n..."
+      ]
+    },
+    {
+      "id": "egyptian-mau-006",
       "title": {
         "en": "Dinner Bowl",
         "tr": "Mama Kabı",
@@ -136,66 +146,36 @@
         "w": "#EDEDE6"
       },
       "pixels": [
-        "....p..pp....",
-        "..ppppppppp..",
-        ".ppppppppppp.",
-        "oopppppppppoo",
-        "oooopppppoooo",
-        ".oowwwwwwwoo.",
-        ".oowwwwwwwoo.",
-        ".ooooooooooo.",
-        "..ooooooooo.."
-      ]
-    },
-    {
-      "id": "egyptian-mau-006",
-      "title": {
-        "en": "Toy Mouse",
-        "tr": "Oyuncak Fare",
-        "ja": "ネズミのおもちゃ",
-        "de": "Spielmaus",
-        "fr": "Souris jouet",
-        "es": "Ratón de juguete",
-        "pt-BR": "Ratinho de Brinquedo",
-        "ko": "장난감 쥐"
-      },
-      "palette": {
-        "n": "#B87F72",
-        "p": "#7D5A44"
-      },
-      "pixels": [
-        ".......pnp...",
-        "......ppnn...",
-        "....ppppppp..",
-        "....pppppp.p.",
-        "...pppppppp..",
-        "n..nppppppp..",
-        ".nn..ppppp...",
-        "............."
+        "...p..",
+        ".pppp.",
+        "oppppo",
+        "oowwoo",
+        ".oooo.",
+        ".oooo."
       ]
     },
     {
       "id": "egyptian-mau-007",
       "title": {
-        "en": "Leftovers",
-        "tr": "Artıklar",
-        "ja": "食べ残し",
-        "de": "Reste",
-        "fr": "Restes",
-        "es": "Sobras",
-        "pt-BR": "Restinho",
-        "ko": "남은 음식"
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi",
+        "ja": "ゴロゴロ大好き",
+        "de": "Schnurrliebe",
+        "fr": "Ronron d'amour",
+        "es": "Amor ronroneante",
+        "pt-BR": "Amor Ronronado",
+        "ko": "골골송 사랑"
       },
       "palette": {
-        "p": "#7D5A44"
+        "n": "#B87F72"
       },
       "pixels": [
-        "....p.p.p....",
-        ".pp.p.p.p...p",
-        "ppppppppppppp",
-        "ppppppppppppp",
-        ".pp.p.p.p...p",
-        "....p.p.p...."
+        ".nnnnn.",
+        "nnnnnnn",
+        "nnnnnnn",
+        ".nnnnn.",
+        "..nnn..",
+        "...n..."
       ]
     },
     {
@@ -212,124 +192,45 @@
       },
       "palette": {
         "b": "#C9CBC4",
-        "d": "#4D4A44",
         "e": "#8DBF4A"
       },
       "pixels": [
-        ".b..........b.",
-        ".b..........b.",
-        "bbb..bbbb..bbb",
-        "bbbbbbbbbbbbbb",
-        "bbbbbbbbbbbbbb",
-        "bbbbbbbbddbbbb",
-        ".bbbebbbbebbb.",
-        ".bbeeebbeeebb.",
-        ".bbbebbbbebbb.",
-        ".bbbbbbbdbbbb.",
-        "..bbdbbdbbbb..",
-        "...bbbbbbbb...",
-        "....bbbbbb...."
+        ".......",
+        "bb.b.bb",
+        "bbbbbbb",
+        "bbebebb",
+        "bbebebb",
+        ".bbbbb.",
+        "..bbb.."
       ]
     },
     {
       "id": "egyptian-mau-009",
       "title": {
-        "en": "Ancient Grace",
-        "tr": "Kadim Zarafet",
-        "ja": "古代の気品",
-        "de": "Uralte Anmut",
-        "fr": "Grâce ancestrale",
-        "es": "Gracia antigua",
-        "pt-BR": "Graça Ancestral",
-        "ko": "고대의 우아함"
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak",
+        "ja": "毛糸玉",
+        "de": "Wollknäuel",
+        "fr": "Pelote de laine",
+        "es": "Ovillo de lana",
+        "pt-BR": "Novelo de Lã",
+        "ko": "털실 뭉치"
       },
       "palette": {
-        "b": "#C9CBC4",
-        "d": "#4D4A44",
-        "o": "#E0B66A",
-        "y": "#F4D35E"
+        "o": "#E0B66A"
       },
       "pixels": [
-        ".....b.......",
-        ".....bb.b....",
-        ".....bbbb....",
-        ".....b.bb....",
-        "......bbb....",
-        "......bbb....",
-        ".....byyy....",
-        ".....bbbb....",
-        ".....bbbbb..d",
-        "..o.bbbbbb..d",
-        "..oobbbbbb..d",
-        ".ooobbbbbb..d",
-        ".oooobbbbb.dd",
-        "oooooobbbdd.."
+        ".oooo..",
+        "ooo.o..",
+        "oo..oo.",
+        "oo.ooo.",
+        "o.ooo..",
+        ".oooo..",
+        ".....oo"
       ]
     },
     {
       "id": "egyptian-mau-010",
-      "title": {
-        "en": "Nap Time",
-        "tr": "Şekerleme",
-        "ja": "お昼寝タイム",
-        "de": "Nickerchen",
-        "fr": "L'heure de la sieste",
-        "es": "Hora de la siesta",
-        "pt-BR": "Hora da Soneca",
-        "ko": "낮잠 시간"
-      },
-      "palette": {
-        "b": "#C9CBC4",
-        "d": "#4D4A44"
-      },
-      "pixels": [
-        "..............",
-        ".b....b.......",
-        "bbb..bbbbbb...",
-        "bbbbbbbdbbbbb.",
-        "bbbbbbbbbbddbb",
-        ".bbbbbddbbbbbb",
-        "..bbbbbbbbdbbb",
-        "...bbbbbbbbbbb",
-        "....bbbbbbbbb.",
-        "....bbbbbbbb.."
-      ]
-    },
-    {
-      "id": "egyptian-mau-011",
-      "title": {
-        "en": "Sitting Pretty",
-        "tr": "Uslu Oturuş",
-        "ja": "おすましおすわり",
-        "de": "Brav sitzen",
-        "fr": "Sage comme une image",
-        "es": "Sentado con estilo",
-        "pt-BR": "Pose Elegante",
-        "ko": "얌전히 앉기"
-      },
-      "palette": {
-        "b": "#C9CBC4",
-        "d": "#4D4A44"
-      },
-      "pixels": [
-        "......b....",
-        "bb....b....",
-        "bbb..bb....",
-        "bbbbbbbb...",
-        "bbbbbbbb...",
-        "..bbbb.....",
-        "..bbbb.....",
-        "...bbbbb..b",
-        "..bbbdbb..b",
-        "..bbddbbb.b",
-        "..bbddbbb.b",
-        "..bbbbbb.bb",
-        "...bbbbbbb.",
-        "..bbbbb...."
-      ]
-    },
-    {
-      "id": "egyptian-mau-012",
       "title": {
         "en": "If I Fits",
         "tr": "Kutu Sevdası",
@@ -343,23 +244,73 @@
       "palette": {
         "b": "#C9CBC4",
         "e": "#8DBF4A",
-        "o": "#E0B66A",
-        "p": "#7D5A44"
+        "o": "#E0B66A"
       },
       "pixels": [
-        "...b......b...",
-        "...b.....bb...",
-        "...bb....bb...",
-        "..bbbbbbbbb...",
-        "...bbbbbbbb...",
-        "...bbebeebb...",
-        "..obbbbbbboo..",
-        "ppoobbbbboopp.",
-        ".oooooooooooo.",
-        "..oooooooooo..",
-        ".oooooooooooo.",
-        ".oooooooooooo.",
-        ".ooooooooooo.."
+        "........",
+        "..b..b..",
+        ".bbbbbb.",
+        "..beeb..",
+        ".obbbbo.",
+        ".oooooo.",
+        ".oooooo.",
+        ".oooooo."
+      ]
+    },
+    {
+      "id": "egyptian-mau-011",
+      "title": {
+        "en": "If I Fits",
+        "tr": "Kutu Sevdası",
+        "ja": "入れるなら入る",
+        "de": "Passt, sitzt",
+        "fr": "Si ça rentre…",
+        "es": "Si quepo, me siento",
+        "pt-BR": "Se Cabe, Eu Entro",
+        "ko": "들어가면 내 자리"
+      },
+      "palette": {
+        "b": "#C9CBC4",
+        "e": "#8DBF4A",
+        "o": "#E0B66A"
+      },
+      "pixels": [
+        "........",
+        ".bb..bb.",
+        ".bbbbbb.",
+        "..beeb..",
+        ".obbbbo.",
+        ".oooooo.",
+        ".oooooo.",
+        ".oooooo."
+      ]
+    },
+    {
+      "id": "egyptian-mau-012",
+      "title": {
+        "en": "Moon Gazer",
+        "tr": "Ay Seyri",
+        "ja": "月を見る猫",
+        "de": "Mondgucker",
+        "fr": "Rêveur de lune",
+        "es": "Mirando la luna",
+        "pt-BR": "Admirador da Lua",
+        "ko": "달 바라기"
+      },
+      "palette": {
+        "b": "#C9CBC4",
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        "....y...",
+        "....yy..",
+        ".....yy.",
+        "....yyy.",
+        "....yyy.",
+        "..yyyybb",
+        "...yy.bb",
+        ".....bbb",
+        ".....bb."
       ]
     },
     {
@@ -379,86 +330,106 @@
         "y": "#F4D35E"
       },
       "pixels": [
-        "......yy.....",
-        ".......yy....",
-        ".......yyy...",
-        ".......yyyy..",
-        ".......yyyy..",
-        ".......yyyyy.",
-        ".......yyyy..",
-        "......yyyyy..",
-        ".y..yyyyyyy.b",
-        "..yyyyyyyybbb",
-        "...yyyyyy.bbb",
-        "......b..bbb.",
-        "......b..bbbb",
-        "......b..bbbb",
-        "......bbbbbb."
+        "..yy....",
+        ".yyy....",
+        ".yyy....",
+        ".yyy....",
+        ".yyyy...",
+        "bbyyyyy.",
+        "bb..y...",
+        "bbb.....",
+        ".bb....."
       ]
     },
     {
       "id": "egyptian-mau-014",
       "title": {
-        "en": "Toe Beans",
-        "tr": "Pati Yastıkları",
-        "ja": "肉球",
-        "de": "Pfotenballen",
-        "fr": "Coussinets",
-        "es": "Almohadillas",
-        "pt-BR": "Almofadinhas",
-        "ko": "말랑 젤리"
+        "en": "Lake Swimmer",
+        "tr": "Göl Yüzücüsü",
+        "ja": "湖のスイマー",
+        "de": "Seeschwimmerin",
+        "fr": "Nageur du lac",
+        "es": "Nadador del lago",
+        "pt-BR": "Nadador do Lago",
+        "ko": "호수의 수영 선수"
       },
       "palette": {
         "b": "#C9CBC4",
-        "n": "#B87F72"
+        "e": "#8DBF4A",
+        "u": "#4A90C2"
       },
       "pixels": [
-        "....bb...bb....",
-        "...bnnb.bnnb...",
-        "...bnnb.bnnb...",
-        ".bb.bnb.bnb.bb.",
-        "bnnb.......bnnb",
-        "bnnb...b...bnnb",
-        "bnb.bbbbbbb.bnb",
-        "...bbbbbbbbb...",
-        "..bbbbbbbbbbb..",
-        "..bbbnnnnnbbb..",
-        "..bbnnnnnnnbb..",
-        "..bbnnnnnnnbb..",
-        "..bbbnnnnnbbb..",
-        "...bbbnnnbbb...",
-        ".....bbbbb....."
+        "..........",
+        ".bb.b..b..",
+        ".bbbbbbb..",
+        "..bebbbb..",
+        "..bebbeb..",
+        "..bbbbbb..",
+        ".uububbu..",
+        "u..u.uu.u.",
+        ".uuuuuuuu."
       ]
     },
     {
       "id": "egyptian-mau-015",
       "title": {
-        "en": "Strut",
-        "tr": "Salınarak Yürüyüş",
-        "ja": "おすまし歩き",
-        "de": "Stolzieren",
-        "fr": "Pavane",
-        "es": "Pavoneo",
-        "pt-BR": "Desfile",
-        "ko": "당당한 걸음"
+        "en": "Mighty Tail",
+        "tr": "Görkemli Kuyruk",
+        "ja": "立派なしっぽ",
+        "de": "Prachtschwanz",
+        "fr": "Queue majestueuse",
+        "es": "Gran cola",
+        "pt-BR": "Cauda Poderosa",
+        "ko": "늠름한 꼬리"
       },
       "palette": {
         "b": "#C9CBC4",
         "d": "#4D4A44"
       },
       "pixels": [
-        ".b......b.....b",
-        ".b......bb...bb",
-        "bb......bbbbbbb",
-        ".b......bbbbbbb",
-        ".bb.bbbbbbbbbbb",
-        "..bbbbdddbbbb..",
-        "...bbbddbbb....",
-        "...bbbbbbbb....",
-        "...bbb..b.b....",
-        "...b.b..b.b....",
-        "...b.b.bb.b....",
-        ".....b....b...."
+        "..........",
+        ".....b..bb",
+        "..dd.bbbbb",
+        ".dd..bbbb.",
+        "dd....bbb.",
+        "db..bbbb..",
+        ".dd.bddbb.",
+        ".dddbbbbb.",
+        "..dbdbbb..",
+        "....d....."
+      ]
+    },
+    {
+      "id": "egyptian-mau-016",
+      "title": {
+        "en": "Ancient Grace",
+        "tr": "Kadim Zarafet",
+        "ja": "古代の気品",
+        "de": "Uralte Anmut",
+        "fr": "Grâce ancestrale",
+        "es": "Gracia antigua",
+        "pt-BR": "Graça Ancestral",
+        "ko": "고대의 우아함"
+      },
+      "palette": {
+        "b": "#C9CBC4",
+        "d": "#4D4A44",
+        "o": "#E0B66A",
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        "............",
+        ".....bbb....",
+        ".....bbb....",
+        ".....bbb....",
+        ".....bbb....",
+        ".....yyy....",
+        ".....bbbb...",
+        "....bbbbb..d",
+        "..o.bbbbb..d",
+        ".ooobbbbb.d.",
+        ".oooobbbbdd.",
+        "ooooo.b....."
       ]
     }
   ]

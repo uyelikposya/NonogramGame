@@ -4,6 +4,8 @@ import UIKit
 
 enum SettingsKeys {
     static let haptics = "settings.haptics"
+    /// "Zor": tamamlanan satırlara otomatik X konmaz.
+    static let hardMode = "settings.hardMode"
 }
 
 @MainActor

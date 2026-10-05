@@ -222,6 +222,31 @@
       }
     },
     {
+      "id": "tutorial-11",
+      "title": {
+        "en": "Cat Basket",
+        "tr": "Kedi Sepeti",
+        "ja": "猫のかご",
+        "de": "Katzenkorb",
+        "fr": "Panier du chat",
+        "es": "Cesta del gato",
+        "pt-BR": "Cestinha do Gato",
+        "ko": "고양이 바구니"
+      },
+      "palette": {
+        "a": "#C98B5B",
+        "b": "#F2D7C9"
+      },
+      "pixels": [
+        ".b.b.",
+        "aaaaa",
+        "a...a",
+        "aaaaa",
+        ".aaa."
+      ],
+      "lesson": "difficulty"
+    },
+    {
       "id": "tutorial-10",
       "title": {
         "en": "Kitty",

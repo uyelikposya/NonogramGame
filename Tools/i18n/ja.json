@@ -158,7 +158,19 @@
   "Continue: +60 seconds": "続ける：+60秒",
   "Purchases restored. Welcome back to Premium!": "購入を復元しました。Premiumへおかえりなさい！",
   "No active subscription was found for this Apple Account.": "このAppleアカウントで有効なサブスクリプションが見つかりませんでした。",
-  "Couldn't reach the App Store. Please try again.": "App Storeに接続できませんでした。もう一度お試しください。"
+  "Couldn't reach the App Store. Please try again.": "App Storeに接続できませんでした。もう一度お試しください。",
+  "Puzzle %lld of %lld": "パズル %lld / %lld",
+  "Lesson %lld of %lld": "レッスン %lld / %lld",
+  "Golden puzzle %lld of %lld": "ゴールデンパズル %lld / %lld",
+  "Next Cat: %@": "次の猫：%@",
+  "Easy": "かんたん",
+  "Hard": "むずかしい",
+  "Difficulty": "難易度",
+  "Easy: finished lines are crossed out for you.": "かんたん：完成した列には自動で×が付きます。",
+  "Hard: you place every X yourself.": "むずかしい：×はすべて自分で付けます。",
+  "Choose your difficulty": "難易度を選ぼう",
+  "The button next to the timer sets the difficulty. On Easy, finished lines are crossed out for you. On Hard, you mark every empty square yourself. Try both!": "タイマーの横のボタンで難易度を切り替えられます。かんたんでは完成した列に自動で×が付き、むずかしいでは空きマスに自分で印を付けます。両方試してみましょう！",
+  "Your card is on its way…": "カードが届きます…"
  },
  "infoplist": {
   "CFBundleDisplayName": "Catgrid",
@@ -352,7 +364,8 @@
   "Bone": "骨",
   "Mouse": "ネズミ",
   "Heart": "ハート",
-  "Kitty": "子猫"
+  "Kitty": "子猫",
+  "Cat Basket": "猫のかご"
  },
  "storekit": {
   "Premium Yearly": "Premium 年額",

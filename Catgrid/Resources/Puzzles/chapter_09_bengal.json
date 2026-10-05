@@ -5,59 +5,6 @@
     {
       "id": "bengal-001",
       "title": {
-        "en": "Toe Beans",
-        "tr": "Pati Yastıkları",
-        "ja": "肉球",
-        "de": "Pfotenballen",
-        "fr": "Coussinets",
-        "es": "Almohadillas",
-        "pt-BR": "Almofadinhas",
-        "ko": "말랑 젤리"
-      },
-      "palette": {
-        "b": "#E3A857",
-        "n": "#B5654A"
-      },
-      "pixels": [
-        "..bbbb..",
-        "..nbbn..",
-        "bn....nb",
-        "bbbbbbbb",
-        ".bbbbbb.",
-        ".bnnnnb.",
-        ".bbnnnb.",
-        "..bbbb.."
-      ]
-    },
-    {
-      "id": "bengal-002",
-      "title": {
-        "en": "Purr Love",
-        "tr": "Mırıl Sevgi",
-        "ja": "ゴロゴロ大好き",
-        "de": "Schnurrliebe",
-        "fr": "Ronron d'amour",
-        "es": "Amor ronroneante",
-        "pt-BR": "Amor Ronronado",
-        "ko": "골골송 사랑"
-      },
-      "palette": {
-        "n": "#B5654A",
-        "w": "#F5E6C8"
-      },
-      "pixels": [
-        ".nnnnnn.",
-        "nwwnnnnn",
-        "nnnnnnnn",
-        ".nnnnnn.",
-        "..nnnn..",
-        "...nn...",
-        "...nn..."
-      ]
-    },
-    {
-      "id": "bengal-003",
-      "title": {
         "en": "Fish Snack",
         "tr": "Balık Atıştırması",
         "ja": "おさかなおやつ",
@@ -71,14 +18,15 @@
         "o": "#3E7C4F"
       },
       "pixels": [
-        ".oooo..o",
-        "o.oooooo",
-        "oooooooo",
-        ".oooo..o"
+        ".o...",
+        "ooooo",
+        "ooooo",
+        ".oo.o",
+        "....."
       ]
     },
     {
-      "id": "bengal-004",
+      "id": "bengal-002",
       "title": {
         "en": "Yarn Ball",
         "tr": "Yün Yumak",
@@ -93,18 +41,15 @@
         "o": "#3E7C4F"
       },
       "pixels": [
-        "..oooo...",
-        ".ooo.oo..",
-        "o....oo..",
-        "ooo..oo..",
-        "oo.oo.o..",
-        ".ooooo...",
-        "..ooooo..",
-        ".......oo"
+        ".ooo..",
+        "o..oo.",
+        "ooo.o.",
+        ".ooo..",
+        "......"
       ]
     },
     {
-      "id": "bengal-005",
+      "id": "bengal-003",
       "title": {
         "en": "Dinner Bowl",
         "tr": "Mama Kabı",
@@ -121,16 +66,15 @@
         "w": "#F5E6C8"
       },
       "pixels": [
-        "...ppp...",
-        ".ppppppp.",
-        "opppppppo",
-        "oooowoooo",
-        ".ooooooo.",
-        ".ooooooo."
+        "..ppp..",
+        ".ppppp.",
+        "oopppoo",
+        ".owwwo.",
+        ".ooooo."
       ]
     },
     {
-      "id": "bengal-006",
+      "id": "bengal-004",
       "title": {
         "en": "Toy Mouse",
         "tr": "Oyuncak Fare",
@@ -146,37 +90,67 @@
         "p": "#8C6A4A"
       },
       "pixels": [
-        "..np.....",
-        "..pppp...",
-        "p.pppp...",
-        ".pppppn..",
-        "..ppp..n."
+        "....n..",
+        "..ppn..",
+        "..pppp.",
+        "..pppp.",
+        "nnppp..",
+        "......."
+      ]
+    },
+    {
+      "id": "bengal-005",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi",
+        "ja": "ゴロゴロ大好き",
+        "de": "Schnurrliebe",
+        "fr": "Ronron d'amour",
+        "es": "Amor ronroneante",
+        "pt-BR": "Amor Ronronado",
+        "ko": "골골송 사랑"
+      },
+      "palette": {
+        "n": "#B5654A",
+        "w": "#F5E6C8"
+      },
+      "pixels": [
+        ".nn.nn.",
+        "nwnnnnn",
+        "nnnnnnn",
+        ".nnnnn.",
+        ".nnnnn.",
+        "..nnn..",
+        "...n..."
+      ]
+    },
+    {
+      "id": "bengal-006",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi",
+        "ja": "ゴロゴロ大好き",
+        "de": "Schnurrliebe",
+        "fr": "Ronron d'amour",
+        "es": "Amor ronroneante",
+        "pt-BR": "Amor Ronronado",
+        "ko": "골골송 사랑"
+      },
+      "palette": {
+        "n": "#B5654A",
+        "w": "#F5E6C8"
+      },
+      "pixels": [
+        ".nnnn.",
+        "nwnnnn",
+        "nnnnnn",
+        ".nnnn.",
+        "..nn..",
+        "......"
       ]
     },
     {
       "id": "bengal-007",
-      "title": {
-        "en": "Leftovers",
-        "tr": "Artıklar",
-        "ja": "食べ残し",
-        "de": "Reste",
-        "fr": "Restes",
-        "es": "Sobras",
-        "pt-BR": "Restinho",
-        "ko": "남은 음식"
-      },
-      "palette": {
-        "p": "#8C6A4A"
-      },
-      "pixels": [
-        "...pp....",
-        "pppppppp.",
-        "p..pp..p.",
-        "....p...."
-      ]
-    },
-    {
-      "id": "bengal-008",
       "title": {
         "en": "Portrait",
         "tr": "Portre",
@@ -193,164 +167,16 @@
         "e": "#6FA04A"
       },
       "pixels": [
-        "..........",
-        "bbbbbbbbbb",
-        "bbbbbbbbbb",
-        "bbbbbbbbbb",
-        "bdeebbeebb",
-        "bdeebbeebb",
-        "bddbbbbbbb",
-        "bbbbbbbbbb",
-        ".bbbbbbbb.",
-        "..bbbbbb.."
+        "...b...",
+        ".bbbbb.",
+        "bbebbbb",
+        "bdebebb",
+        ".bbbbb.",
+        "..bbb.."
       ]
     },
     {
-      "id": "bengal-009",
-      "title": {
-        "en": "If I Fits",
-        "tr": "Kutu Sevdası",
-        "ja": "入れるなら入る",
-        "de": "Passt, sitzt",
-        "fr": "Si ça rentre…",
-        "es": "Si quepo, me siento",
-        "pt-BR": "Se Cabe, Eu Entro",
-        "ko": "들어가면 내 자리"
-      },
-      "palette": {
-        "b": "#E3A857",
-        "e": "#6FA04A",
-        "o": "#3E7C4F",
-        "p": "#8C6A4A"
-      },
-      "pixels": [
-        "..........",
-        "..bb..bb..",
-        "..bbbbbb..",
-        "..beeeeb..",
-        ".obbbbbbo.",
-        "ppoobboopp",
-        ".oooooooo.",
-        ".oooooooo.",
-        ".oooooooo."
-      ]
-    },
-    {
-      "id": "bengal-010",
-      "title": {
-        "en": "Nap Time",
-        "tr": "Şekerleme",
-        "ja": "お昼寝タイム",
-        "de": "Nickerchen",
-        "fr": "L'heure de la sieste",
-        "es": "Hora de la siesta",
-        "pt-BR": "Hora da Soneca",
-        "ko": "낮잠 시간"
-      },
-      "palette": {
-        "b": "#E3A857",
-        "d": "#5A3A22"
-      },
-      "pixels": [
-        "....bb....",
-        "bbbbbbbbb.",
-        "bbbbbbddbb",
-        ".bbbbbdbbb",
-        "..bbbbdbbb",
-        "...bbbbbb."
-      ]
-    },
-    {
-      "id": "bengal-011",
-      "title": {
-        "en": "Sitting Pretty",
-        "tr": "Uslu Oturuş",
-        "ja": "おすましおすわり",
-        "de": "Brav sitzen",
-        "fr": "Sage comme une image",
-        "es": "Sentado con estilo",
-        "pt-BR": "Pose Elegante",
-        "ko": "얌전히 앉기"
-      },
-      "palette": {
-        "b": "#E3A857",
-        "d": "#5A3A22"
-      },
-      "pixels": [
-        "........",
-        "bbbbb...",
-        "bbbbb...",
-        ".bbb....",
-        "..bbb...",
-        ".bbdbb.b",
-        ".bbddb.b",
-        ".bbdbb.b",
-        ".bbbbbbb",
-        ".bbbb..."
-      ]
-    },
-    {
-      "id": "bengal-012",
-      "title": {
-        "en": "If I Fits",
-        "tr": "Kutu Sevdası",
-        "ja": "入れるなら入る",
-        "de": "Passt, sitzt",
-        "fr": "Si ça rentre…",
-        "es": "Si quepo, me siento",
-        "pt-BR": "Se Cabe, Eu Entro",
-        "ko": "들어가면 내 자리"
-      },
-      "palette": {
-        "b": "#E3A857",
-        "e": "#6FA04A",
-        "o": "#3E7C4F",
-        "p": "#8C6A4A"
-      },
-      "pixels": [
-        "..........",
-        "...b...b..",
-        "...bbbbb..",
-        "...bebeb..",
-        "..obbbbbo.",
-        ".poobboopp",
-        ".oooooooo.",
-        ".oooooooo.",
-        "..ooooooo."
-      ]
-    },
-    {
-      "id": "bengal-013",
-      "title": {
-        "en": "Moon Gazer",
-        "tr": "Ay Seyri",
-        "ja": "月を見る猫",
-        "de": "Mondgucker",
-        "fr": "Rêveur de lune",
-        "es": "Mirando la luna",
-        "pt-BR": "Admirador da Lua",
-        "ko": "달 바라기"
-      },
-      "palette": {
-        "b": "#E3A857",
-        "y": "#F4D35E"
-      },
-      "pixels": [
-        "...yyy....",
-        "..yyy.....",
-        "..yyy.....",
-        ".yyyy.....",
-        ".yyyy.....",
-        "..yyyy....",
-        "bbyyyyyyy.",
-        "bb.yyyyy..",
-        ".bb..b....",
-        "bbbb.b....",
-        ".bbbb....."
-      ]
-    },
-    {
-      "id": "bengal-014",
+      "id": "bengal-008",
       "title": {
         "en": "Toe Beans",
         "tr": "Pati Yastıkları",
@@ -366,45 +192,241 @@
         "n": "#B5654A"
       },
       "pixels": [
-        "...bb.bb...",
-        "..bnnbnnb..",
-        "bbbbb.bnbbb",
-        "bnb.....bnb",
-        "bnbbbbbbbnb",
-        "..bbbbbbb..",
-        "..bbnnnbb..",
-        ".bbnnnnnbb.",
-        ".bbnnnnnbb.",
-        "..bbnnnbb..",
-        "...bbbbb..."
+        "......",
+        ".bnnb.",
+        "nb..bn",
+        ".bbbb.",
+        ".bnnb.",
+        ".bnnb.",
+        "..bb.."
       ]
     },
     {
-      "id": "bengal-015",
+      "id": "bengal-009",
       "title": {
-        "en": "Strut",
-        "tr": "Salınarak Yürüyüş",
-        "ja": "おすまし歩き",
-        "de": "Stolzieren",
-        "fr": "Pavane",
-        "es": "Pavoneo",
-        "pt-BR": "Desfile",
-        "ko": "당당한 걸음"
+        "en": "Dinner Bowl",
+        "tr": "Mama Kabı",
+        "ja": "ごはん皿",
+        "de": "Futternapf",
+        "fr": "Gamelle",
+        "es": "Cuenco de comida",
+        "pt-BR": "Potinho de Ração",
+        "ko": "밥그릇"
+      },
+      "palette": {
+        "o": "#3E7C4F",
+        "p": "#8C6A4A",
+        "w": "#F5E6C8"
+      },
+      "pixels": [
+        ".......",
+        ".ppppp.",
+        "ppppppp",
+        "oopppoo",
+        "oowwwoo",
+        ".ooooo.",
+        ".ooooo."
+      ]
+    },
+    {
+      "id": "bengal-010",
+      "title": {
+        "en": "If I Fits",
+        "tr": "Kutu Sevdası",
+        "ja": "入れるなら入る",
+        "de": "Passt, sitzt",
+        "fr": "Si ça rentre…",
+        "es": "Si quepo, me siento",
+        "pt-BR": "Se Cabe, Eu Entro",
+        "ko": "들어가면 내 자리"
+      },
+      "palette": {
+        "b": "#E3A857",
+        "e": "#6FA04A",
+        "o": "#3E7C4F",
+        "p": "#8C6A4A"
+      },
+      "pixels": [
+        "........",
+        "..b..b..",
+        "..bbbb..",
+        "..beeb..",
+        "poobboop",
+        ".oooooo.",
+        ".oooooo.",
+        ".oooooo."
+      ]
+    },
+    {
+      "id": "bengal-011",
+      "title": {
+        "en": "Moon Gazer",
+        "tr": "Ay Seyri",
+        "ja": "月を見る猫",
+        "de": "Mondgucker",
+        "fr": "Rêveur de lune",
+        "es": "Mirando la luna",
+        "pt-BR": "Admirador da Lua",
+        "ko": "달 바라기"
+      },
+      "palette": {
+        "b": "#E3A857",
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        "...y....",
+        "..yy....",
+        ".yyy....",
+        ".yyy....",
+        ".byyyyy.",
+        ".b.yyy..",
+        ".bb.b...",
+        ".bbb...."
+      ]
+    },
+    {
+      "id": "bengal-012",
+      "title": {
+        "en": "Fish Snack",
+        "tr": "Balık Atıştırması",
+        "ja": "おさかなおやつ",
+        "de": "Fischsnack",
+        "fr": "Goûter poisson",
+        "es": "Tentempié de pescado",
+        "pt-BR": "Petisco de Peixe",
+        "ko": "생선 간식"
+      },
+      "palette": {
+        "o": "#3E7C4F",
+        "p": "#8C6A4A"
+      },
+      "pixels": [
+        ".........",
+        "..ooo....",
+        ".oopoo..o",
+        "o.opooooo",
+        "ooopooooo",
+        ".oopoo..o",
+        "..ooo....",
+        "........."
+      ]
+    },
+    {
+      "id": "bengal-013",
+      "title": {
+        "en": "Nap Time",
+        "tr": "Şekerleme",
+        "ja": "お昼寝タイム",
+        "de": "Nickerchen",
+        "fr": "L'heure de la sieste",
+        "es": "Hora de la siesta",
+        "pt-BR": "Hora da Soneca",
+        "ko": "낮잠 시간"
       },
       "palette": {
         "b": "#E3A857",
         "d": "#5A3A22"
       },
       "pixels": [
+        ".........",
+        "bbbbbbb..",
+        "bbbbbbbb.",
+        "b..bbdbbb",
+        ".bbbbddbb",
+        ".bbbbbbbb",
+        "..bbbbbb.",
+        "...bbbbb."
+      ]
+    },
+    {
+      "id": "bengal-014",
+      "title": {
+        "en": "Cozy Sweater",
+        "tr": "Sıcak Kazak",
+        "ja": "ぬくぬくセーター",
+        "de": "Kuschelpulli",
+        "fr": "Pull douillet",
+        "es": "Jersey calentito",
+        "pt-BR": "Suéter Quentinho",
+        "ko": "포근한 스웨터"
+      },
+      "palette": {
+        "b": "#E3A857",
+        "e": "#6FA04A",
+        "o": "#3E7C4F",
+        "p": "#8C6A4A"
+      },
+      "pixels": [
+        ".b.......",
+        ".bbbbbbb.",
+        ".bbbbbbbb",
+        ".bbebbebb",
+        ".bbebbebb",
+        ".bbbbbbb.",
+        "..bbbbbb.",
+        ".poooooo.",
+        "..oooooo."
+      ]
+    },
+    {
+      "id": "bengal-015",
+      "title": {
+        "en": "Floppy Hug",
+        "tr": "Gevşek Kucaklama",
+        "ja": "ぐにゃっとハグ",
+        "de": "Schlappe Umarmung",
+        "fr": "Câlin tout mou",
+        "es": "Abrazo blandito",
+        "pt-BR": "Abraço Molinho",
+        "ko": "축 늘어진 포옹"
+      },
+      "palette": {
+        "b": "#E3A857",
+        "d": "#5A3A22",
+        "w": "#F5E6C8"
+      },
+      "pixels": [
+        "..........",
+        "...d..d...",
+        "...b..b...",
+        "...b..b...",
+        "...bbbbbb.",
+        "..bbbbbbbb",
+        ".bbwwwwbb.",
+        ".dbwwwwb..",
+        "d.bbwwbb..",
+        "d...bb...."
+      ]
+    },
+    {
+      "id": "bengal-016",
+      "title": {
+        "en": "Jungle Prowl",
+        "tr": "Orman Avcısı",
+        "ja": "ジャングル探検",
+        "de": "Dschungelpirsch",
+        "fr": "Rôdeur de jungle",
+        "es": "Acecho en la jungla",
+        "pt-BR": "Espreita na Selva",
+        "ko": "정글 탐험"
+      },
+      "palette": {
+        "b": "#E3A857",
+        "d": "#5A3A22",
+        "g": "#3E8E41"
+      },
+      "pixels": [
         "...........",
-        ".......b..b",
-        ".......bbbb",
-        ".bbbbbbbbbb",
-        "..bbddbbbb.",
-        "..bbbdbb...",
-        "..bb..bb...",
-        "..b...bb...",
-        "..b.b......"
+        "..gg.......",
+        ".ggg.......",
+        "..g....b.bb",
+        "......bbbbb",
+        "...bbbbbbbb",
+        "..bbdbbbbb.",
+        ".bbbdddbb..",
+        ".bbbdddbb..",
+        "..bbdbbbb..",
+        "...bbbb...."
       ]
     }
   ]

@@ -52,6 +52,7 @@ extension TutorialLesson {
         case .edges: "Use the edges"
         case .crossReference: "Rows meet columns"
         case .mistakesAndLives: "Mind your paws"
+        case .difficulty: "Choose your difficulty"
         case .graduation: "Graduation"
         }
     }
@@ -76,6 +77,8 @@ extension TutorialLesson {
             "Every square belongs to a row and a column. Use what one tells you to solve the other."
         case .mistakesAndLives:
             "From now on each wrong move costs a paw. Lose all three and the puzzle starts over."
+        case .difficulty:
+            "The button next to the timer sets the difficulty. On Easy, finished lines are crossed out for you. On Hard, you mark every empty square yourself. Try both!"
         case .graduation:
             "You know all the rules. Solve this one on your own!"
         }

@@ -161,7 +161,19 @@
   "Continue: +60 seconds": "Weiter: +60 Sekunden",
   "Purchases restored. Welcome back to Premium!": "Käufe wiederhergestellt. Willkommen zurück bei Premium!",
   "No active subscription was found for this Apple Account.": "Für diesen Apple Account wurde kein aktives Abo gefunden.",
-  "Couldn't reach the App Store. Please try again.": "Der App Store ist nicht erreichbar. Bitte versuch es noch einmal."
+  "Couldn't reach the App Store. Please try again.": "Der App Store ist nicht erreichbar. Bitte versuch es noch einmal.",
+  "Puzzle %lld of %lld": "Rätsel %lld von %lld",
+  "Lesson %lld of %lld": "Lektion %lld von %lld",
+  "Golden puzzle %lld of %lld": "Goldenes Rätsel %lld von %lld",
+  "Next Cat: %@": "Nächste Katze: %@",
+  "Easy": "Leicht",
+  "Hard": "Schwer",
+  "Difficulty": "Schwierigkeit",
+  "Easy: finished lines are crossed out for you.": "Leicht: Fertige Reihen werden automatisch mit X markiert.",
+  "Hard: you place every X yourself.": "Schwer: Du setzt jedes X selbst.",
+  "Choose your difficulty": "Wähle deine Schwierigkeit",
+  "The button next to the timer sets the difficulty. On Easy, finished lines are crossed out for you. On Hard, you mark every empty square yourself. Try both!": "Mit dem Knopf neben der Zeit stellst du die Schwierigkeit ein. Bei Leicht werden fertige Reihen automatisch durchgekreuzt, bei Schwer markierst du jedes leere Feld selbst. Probier beides aus!",
+  "Your card is on its way…": "Deine Karte ist unterwegs …"
  },
  "infoplist": {
   "CFBundleDisplayName": "Catgrid",
@@ -355,7 +367,8 @@
   "The Devon Rex began with a curly-coated kitten found in Devon, England, in 1960. Its short, wavy coat, huge low-set ears and large eyes give it an elfin look. It is mischievous, loves warmth and likes to perch on shoulders.": "Die Devon Rex begann mit einem lockigen Kätzchen, das 1960 in Devon, England, gefunden wurde. Ihr kurzes, welliges Fell, die riesigen, tief angesetzten Ohren und die großen Augen geben ihr ein elfenhaftes Aussehen. Sie ist frech, liebt Wärme und sitzt gern auf Schultern.",
   "A close relative of the Siamese, the Oriental Shorthair has the same slender body and large ears but comes in a huge range of solid colors and patterns. Most have green eyes. They are vocal, curious and deeply attached to their people.": "Die Orientalisch Kurzhaar ist eng mit der Siamkatze verwandt und hat denselben schlanken Körper und die großen Ohren, kommt aber in einer riesigen Auswahl an einfarbigen Farben und Mustern vor. Die meisten haben grüne Augen. Sie sind gesprächig, neugierig und sehr an ihre Menschen gebunden.",
   "Bobtailed cats have lived in Japan for centuries and appear in old paintings and prints. Each Bobtail's short, pom-pom tail is unique. The tricolor 'mi-ke' pattern is especially prized. They are active, chatty and playful.": "Stummelschwanzkatzen leben seit Jahrhunderten in Japan und tauchen auf alten Gemälden und Drucken auf. Der kurze Pompon-Schwanz jeder Bobtail ist einzigartig. Besonders geschätzt ist das dreifarbige „Mi-ke“-Muster. Sie sind aktiv, gesprächig und verspielt.",
-  "The Somali is the long-haired form of the Abyssinian, recognized as a separate breed in the late 1970s. Its ticked coat and full, bushy tail give it a fox-like look. Somalis are energetic, clever and endlessly curious.": "Die Somali ist die langhaarige Form der Abessinierkatze und wurde Ende der 1970er-Jahre als eigene Rasse anerkannt. Ihr geticktes Fell und der volle, buschige Schwanz verleihen ihr ein fuchsähnliches Aussehen. Somalis sind energiegeladen, klug und unendlich neugierig."
+  "The Somali is the long-haired form of the Abyssinian, recognized as a separate breed in the late 1970s. Its ticked coat and full, bushy tail give it a fox-like look. Somalis are energetic, clever and endlessly curious.": "Die Somali ist die langhaarige Form der Abessinierkatze und wurde Ende der 1970er-Jahre als eigene Rasse anerkannt. Ihr geticktes Fell und der volle, buschige Schwanz verleihen ihr ein fuchsähnliches Aussehen. Somalis sind energiegeladen, klug und unendlich neugierig.",
+  "Cat Basket": "Katzenkorb"
  },
  "storekit": {
   "Premium Yearly": "Premium Jährlich",

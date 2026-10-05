@@ -161,7 +161,19 @@
   "Continue: +60 seconds": "Continuar: +60 segundos",
   "Purchases restored. Welcome back to Premium!": "Compras restauradas. Boas-vindas de volta ao Premium!",
   "No active subscription was found for this Apple Account.": "Nenhuma assinatura ativa foi encontrada para esta Conta Apple.",
-  "Couldn't reach the App Store. Please try again.": "Não foi possível acessar a App Store. Tente novamente."
+  "Couldn't reach the App Store. Please try again.": "Não foi possível acessar a App Store. Tente novamente.",
+  "Puzzle %lld of %lld": "Fase %lld de %lld",
+  "Lesson %lld of %lld": "Lição %lld de %lld",
+  "Golden puzzle %lld of %lld": "Quebra-cabeça dourado %lld de %lld",
+  "Next Cat: %@": "Próximo gato: %@",
+  "Easy": "Fácil",
+  "Hard": "Difícil",
+  "Difficulty": "Dificuldade",
+  "Easy: finished lines are crossed out for you.": "Fácil: linhas completas são marcadas com X automaticamente.",
+  "Hard: you place every X yourself.": "Difícil: você marca cada X sozinho.",
+  "Choose your difficulty": "Escolha sua dificuldade",
+  "The button next to the timer sets the difficulty. On Easy, finished lines are crossed out for you. On Hard, you mark every empty square yourself. Try both!": "O botão ao lado do tempo muda a dificuldade. No Fácil, linhas completas recebem X automaticamente. No Difícil, você marca cada quadrado vazio. Experimente os dois!",
+  "Your card is on its way…": "Sua carta está a caminho…"
  },
  "infoplist": {
   "CFBundleDisplayName": "Catgrid",
@@ -355,7 +367,8 @@
   "Bone": "Osso",
   "Mouse": "Ratinho",
   "Heart": "Coração",
-  "Kitty": "Gatinho"
+  "Kitty": "Gatinho",
+  "Cat Basket": "Cestinha do Gato"
  },
  "storekit": {
   "Premium Yearly": "Premium Anual",

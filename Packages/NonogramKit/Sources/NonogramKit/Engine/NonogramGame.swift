@@ -39,11 +39,15 @@ public struct NonogramGame: Sendable {
     /// Hata sonrası düzeltilen kareler; oyuncu bunları değiştiremez.
     public private(set) var lockedCells: Set<GridPosition> = []
     private var undoStack: [[CellChange]] = []
+    /// Tamamlanan satır/sütuna otomatik X konur mu? Kurallardan başlar; oyuncu "Zor" moda
+    /// geçince oyun sırasında kapatılabilir (yalnızca sonraki hamleleri etkiler).
+    public var autoCrossesCompletedLines: Bool
 
     public init(puzzle: Puzzle, rules: GameRules) {
         self.puzzle = puzzle
         self.rules = rules
         self.board = Matrix(rows: puzzle.rows, columns: puzzle.columns, repeating: .blank)
+        self.autoCrossesCompletedLines = rules.autoCrossCompletedLines
     }
 
     // MARK: - Durum
@@ -165,7 +169,7 @@ public struct NonogramGame: Sendable {
     }
 
     private mutating func autoCrossLines(through position: GridPosition, recordingInto changes: inout [CellChange]) {
-        guard rules.autoCrossCompletedLines else { return }
+        guard autoCrossesCompletedLines else { return }
         if isRowSatisfied(position.row) {
             for column in 0..<board.columns where board[position.row, column] == .blank {
                 set(.crossed, at: GridPosition(row: position.row, column: column), recordingInto: &changes)

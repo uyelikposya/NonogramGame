@@ -5,132 +5,6 @@
     {
       "id": "somali-001",
       "title": {
-        "en": "Toe Beans",
-        "tr": "Pati Yastıkları",
-        "ja": "肉球",
-        "de": "Pfotenballen",
-        "fr": "Coussinets",
-        "es": "Almohadillas",
-        "pt-BR": "Almofadinhas",
-        "ko": "말랑 젤리"
-      },
-      "palette": {
-        "b": "#C8743F",
-        "n": "#C9705A"
-      },
-      "pixels": [
-        "....bb...bb....",
-        "...bnnb.bnnb...",
-        "...bnnb.bnnb...",
-        ".bb.bnb.bnb.bb.",
-        "bnnb.......bnnb",
-        "bnnb...b...bnnb",
-        "bnb.bbbbbbb.bnb",
-        "...bbbbbbbbb...",
-        "..bbbbbbbbbbb..",
-        "..bbbnnnnnbbb..",
-        "..bbnnnnnnnbb..",
-        "..bbnnnnnnnbb..",
-        "..bbbnnnnnbbb..",
-        "...bbbnnnbbb...",
-        ".....bbbbb....."
-      ]
-    },
-    {
-      "id": "somali-002",
-      "title": {
-        "en": "Purr Love",
-        "tr": "Mırıl Sevgi",
-        "ja": "ゴロゴロ大好き",
-        "de": "Schnurrliebe",
-        "fr": "Ronron d'amour",
-        "es": "Amor ronroneante",
-        "pt-BR": "Amor Ronronado",
-        "ko": "골골송 사랑"
-      },
-      "palette": {
-        "n": "#C9705A",
-        "w": "#F2D7B6"
-      },
-      "pixels": [
-        "..nnnnn.nnnnn..",
-        ".nnnnnnnnnnnnn.",
-        "nnnwwnnnnnnnnnn",
-        "nnnwwnnnnnnnnnn",
-        "nnnnnnnnnnnnnnn",
-        "nnnnnnnnnnnnnnn",
-        ".nnnnnnnnnnnnn.",
-        "..nnnnnnnnnnn..",
-        "...nnnnnnnnn...",
-        "...nnnnnnnnn...",
-        "....nnnnnnn....",
-        ".....nnnnn.....",
-        "......nnn......",
-        ".......n......."
-      ]
-    },
-    {
-      "id": "somali-003",
-      "title": {
-        "en": "Fish Snack",
-        "tr": "Balık Atıştırması",
-        "ja": "おさかなおやつ",
-        "de": "Fischsnack",
-        "fr": "Goûter poisson",
-        "es": "Tentempié de pescado",
-        "pt-BR": "Petisco de Peixe",
-        "ko": "생선 간식"
-      },
-      "palette": {
-        "o": "#E0B66A",
-        "p": "#7D5A44"
-      },
-      "pixels": [
-        "...ooooo......o",
-        ".ooooopooo...oo",
-        "oo.ooopoooo.ooo",
-        "oo.ooopoooooooo",
-        "oooooopoooooooo",
-        "oooooopoooo.ooo",
-        ".ooooopooo...oo",
-        "...ooooo......o"
-      ]
-    },
-    {
-      "id": "somali-004",
-      "title": {
-        "en": "Yarn Ball",
-        "tr": "Yün Yumak",
-        "ja": "毛糸玉",
-        "de": "Wollknäuel",
-        "fr": "Pelote de laine",
-        "es": "Ovillo de lana",
-        "pt-BR": "Novelo de Lã",
-        "ko": "털실 뭉치"
-      },
-      "palette": {
-        "o": "#E0B66A"
-      },
-      "pixels": [
-        "........o......",
-        ".....ooooooo...",
-        "....oo.oooooo..",
-        "...ooo..oooo.o.",
-        "...oooo.o...oo.",
-        "...oooo...oooo.",
-        "...ooo..o.oooo.",
-        "...oo..oo..ooo.",
-        "...o..oooo.ooo.",
-        ".....oooooo.o..",
-        "....oooooooo...",
-        "...oo.ooooo....",
-        "oooo...........",
-        "..o............"
-      ]
-    },
-    {
-      "id": "somali-005",
-      "title": {
         "en": "Dinner Bowl",
         "tr": "Mama Kabı",
         "ja": "ごはん皿",
@@ -146,20 +20,15 @@
         "w": "#F2D7B6"
       },
       "pixels": [
-        ".....p..pp.....",
-        "...ppppppppp...",
-        ".ppppppppppppp.",
-        ".ppppppppppppp.",
-        "ooopppppppppooo",
-        "ooooooooooooooo",
-        ".oowwwwwwwwwoo.",
-        ".ooooooooooooo.",
-        "..ooooooooooo..",
-        "..ooooooooooo.."
+        "......",
+        ".pppp.",
+        "ooppoo",
+        "oowwwo",
+        ".oooo."
       ]
     },
     {
-      "id": "somali-006",
+      "id": "somali-002",
       "title": {
         "en": "Toy Mouse",
         "tr": "Oyuncak Fare",
@@ -175,40 +44,135 @@
         "p": "#7D5A44"
       },
       "pixels": [
-        "....pp.........",
-        "....nnp........",
-        "....pnpppp.....",
-        "...pppppppp....",
-        ".pp.ppppppp....",
-        "...pppppppp....",
-        "...ppppppppn..n",
-        "....ppppp...nn.",
-        "..............."
+        "..n....",
+        ".ppp...",
+        "ppppp..",
+        ".pppp.n",
+        "......."
+      ]
+    },
+    {
+      "id": "somali-003",
+      "title": {
+        "en": "Fish Snack",
+        "tr": "Balık Atıştırması",
+        "ja": "おさかなおやつ",
+        "de": "Fischsnack",
+        "fr": "Goûter poisson",
+        "es": "Tentempié de pescado",
+        "pt-BR": "Petisco de Peixe",
+        "ko": "생선 간식"
+      },
+      "palette": {
+        "o": "#E0B66A"
+      },
+      "pixels": [
+        "..o...",
+        "oooo.o",
+        "oooooo",
+        "oooooo",
+        ".ooo.o",
+        "......"
+      ]
+    },
+    {
+      "id": "somali-004",
+      "title": {
+        "en": "Toe Beans",
+        "tr": "Pati Yastıkları",
+        "ja": "肉球",
+        "de": "Pfotenballen",
+        "fr": "Coussinets",
+        "es": "Almohadillas",
+        "pt-BR": "Almofadinhas",
+        "ko": "말랑 젤리"
+      },
+      "palette": {
+        "b": "#C8743F",
+        "n": "#C9705A"
+      },
+      "pixels": [
+        "......",
+        ".bnnb.",
+        "nb..bn",
+        ".bbbb.",
+        ".bnnb.",
+        ".bnnb.",
+        "..bb.."
+      ]
+    },
+    {
+      "id": "somali-005",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi",
+        "ja": "ゴロゴロ大好き",
+        "de": "Schnurrliebe",
+        "fr": "Ronron d'amour",
+        "es": "Amor ronroneante",
+        "pt-BR": "Amor Ronronado",
+        "ko": "골골송 사랑"
+      },
+      "palette": {
+        "n": "#C9705A",
+        "w": "#F2D7B6"
+      },
+      "pixels": [
+        ".nn.nn.",
+        "nwnnnnn",
+        "nnnnnnn",
+        ".nnnnn.",
+        ".nnnnn.",
+        "..nnn..",
+        "...n..."
+      ]
+    },
+    {
+      "id": "somali-006",
+      "title": {
+        "en": "Fish Snack",
+        "tr": "Balık Atıştırması",
+        "ja": "おさかなおやつ",
+        "de": "Fischsnack",
+        "fr": "Goûter poisson",
+        "es": "Tentempié de pescado",
+        "pt-BR": "Petisco de Peixe",
+        "ko": "생선 간식"
+      },
+      "palette": {
+        "o": "#E0B66A"
+      },
+      "pixels": [
+        "..oo...",
+        "ooooo.o",
+        "o.ooooo",
+        "ooooooo",
+        "ooooo.o",
+        "..oo..."
       ]
     },
     {
       "id": "somali-007",
       "title": {
-        "en": "Leftovers",
-        "tr": "Artıklar",
-        "ja": "食べ残し",
-        "de": "Reste",
-        "fr": "Restes",
-        "es": "Sobras",
-        "pt-BR": "Restinho",
-        "ko": "남은 음식"
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak",
+        "ja": "毛糸玉",
+        "de": "Wollknäuel",
+        "fr": "Pelote de laine",
+        "es": "Ovillo de lana",
+        "pt-BR": "Novelo de Lã",
+        "ko": "털실 뭉치"
       },
       "palette": {
-        "p": "#7D5A44"
+        "o": "#E0B66A"
       },
       "pixels": [
-        "....pp.p.p.....",
-        "..p.pp.p.p....p",
-        ".pp.pp.p.p...pp",
-        "ppppppppppppppp",
-        ".pp.pp.p.p...pp",
-        "..p.pp.p.p....p",
-        "....pp.p.p....."
+        ".oooo..",
+        "o.o.o..",
+        "oo..oo.",
+        "oooo...",
+        ".oooo..",
+        ".....o."
       ]
     },
     {
@@ -226,90 +190,102 @@
       "palette": {
         "b": "#C8743F",
         "d": "#8C4A24",
-        "e": "#9CB84A",
-        "n": "#C9705A"
+        "e": "#9CB84A"
       },
       "pixels": [
-        ".b...........b.",
-        ".bb.........bb.",
-        ".bb...bbb...bb.",
-        ".bbbbbbbbbbbbb.",
-        ".bbbbbdddbbbbb.",
-        ".bbbbbdddbbbbb.",
-        "..bbeebbbeebb..",
-        ".bbbeebbbeebbb.",
-        "bbbbebbbbbebbbb",
-        "bbbbbbbnbbbbbbb",
-        "bbbbbbbbbbbbbbb",
-        "...bbbbbbbbb...",
-        ".....bbbbb....."
+        ".......",
+        "bb.b.bb",
+        "bbbdbbb",
+        ".bebeb.",
+        "bbebbbb",
+        "bbbbbbb",
+        "...b..."
       ]
     },
     {
       "id": "somali-009",
       "title": {
-        "en": "Mighty Tail",
-        "tr": "Görkemli Kuyruk",
-        "ja": "立派なしっぽ",
-        "de": "Prachtschwanz",
-        "fr": "Queue majestueuse",
-        "es": "Gran cola",
-        "pt-BR": "Cauda Poderosa",
-        "ko": "늠름한 꼬리"
+        "en": "Dinner Bowl",
+        "tr": "Mama Kabı",
+        "ja": "ごはん皿",
+        "de": "Futternapf",
+        "fr": "Gamelle",
+        "es": "Cuenco de comida",
+        "pt-BR": "Potinho de Ração",
+        "ko": "밥그릇"
       },
       "palette": {
-        "b": "#C8743F",
-        "d": "#8C4A24"
+        "o": "#E0B66A",
+        "p": "#7D5A44",
+        "w": "#F2D7B6"
       },
       "pixels": [
-        "..............",
-        "bb....bb......",
-        "bb....bb..d...",
-        "bbbbbbbb.ddd..",
-        "bbbbbbbb..ddd.",
-        ".bbbbbb...dddd",
-        "..bbbb.....ddd",
-        "...bbbb....dbd",
-        "...bbdbb...dbd",
-        "..bbbdbbb..dbd",
-        "..bbbbbbb..dbd",
-        "..bbbbbbb.dbdd",
-        "..bbbbbbddbdd.",
-        "...bbbbddbdd..",
-        ".......ddd...."
+        ".......",
+        ".ppppp.",
+        "ppppppp",
+        "oopppoo",
+        "oowwwoo",
+        ".ooooo.",
+        ".ooooo."
       ]
     },
     {
       "id": "somali-010",
       "title": {
-        "en": "Nap Time",
-        "tr": "Şekerleme",
-        "ja": "お昼寝タイム",
-        "de": "Nickerchen",
-        "fr": "L'heure de la sieste",
-        "es": "Hora de la siesta",
-        "pt-BR": "Hora da Soneca",
-        "ko": "낮잠 시간"
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi",
+        "ja": "ゴロゴロ大好き",
+        "de": "Schnurrliebe",
+        "fr": "Ronron d'amour",
+        "es": "Amor ronroneante",
+        "pt-BR": "Amor Ronronado",
+        "ko": "골골송 사랑"
       },
       "palette": {
-        "b": "#C8743F",
-        "d": "#8C4A24"
+        "n": "#C9705A",
+        "w": "#F2D7B6"
       },
       "pixels": [
-        "...............",
-        ".b....bb.......",
-        "bbb..bbbbbbb...",
-        "bbbbbbbbdddbb..",
-        "bbbbbbbbbbbbbb.",
-        ".bbbbbbbbbbbbbb",
-        "..bbbbbbbbbbbbb",
-        "....bbbbbbbbbbb",
-        "....bbbbbbbbbb.",
-        "....bbbbbbbbb.."
+        ".nn..nn.",
+        "nwnnnnnn",
+        "nnnnnnnn",
+        "nnnnnnnn",
+        ".nnnnnn.",
+        "..nnnn..",
+        "...nn...",
+        "........"
       ]
     },
     {
       "id": "somali-011",
+      "title": {
+        "en": "Portrait",
+        "tr": "Portre",
+        "ja": "肖像画",
+        "de": "Porträt",
+        "fr": "Portrait",
+        "es": "Retrato",
+        "pt-BR": "Retrato",
+        "ko": "초상화"
+      },
+      "palette": {
+        "b": "#C8743F",
+        "d": "#8C4A24",
+        "e": "#9CB84A"
+      },
+      "pixels": [
+        "........",
+        ".b....b.",
+        "bbbddbbb",
+        ".bbddbb.",
+        ".bebbeb.",
+        "bbbbbbbb",
+        "bbbbbbbb",
+        "...bb..."
+      ]
+    },
+    {
+      "id": "somali-012",
       "title": {
         "en": "Sitting Pretty",
         "tr": "Uslu Oturuş",
@@ -325,157 +301,135 @@
         "d": "#8C4A24"
       },
       "pixels": [
-        ".......b.....",
-        ".b.....b.....",
-        "bbb...bb.....",
-        "bbbbbbbbb....",
-        "bbbbbbbbb....",
-        "..bbbbb......",
-        "..bbbbb......",
-        "...bbbbb...bb",
-        "...bbbdbb..bb",
-        "..bbbbdbbb.bb",
-        "..bbbbbbbb.bb",
-        "..bbbbbbbb.bb",
-        "...bbbbbbbbbb",
-        "...bbbbbbbbb.",
-        "...bbbbb.bb.."
+        "....b...",
+        "bb..b...",
+        "bbbbb...",
+        ".bbb....",
+        "..bbb...",
+        "..bbdbbb",
+        ".bbbbbbb",
+        "..bbbbbb",
+        "..bbbbb."
       ]
     },
     {
-      "id": "somali-012",
+      "id": "somali-013",
       "title": {
-        "en": "Strut",
-        "tr": "Salınarak Yürüyüş",
-        "ja": "おすまし歩き",
-        "de": "Stolzieren",
-        "fr": "Pavane",
-        "es": "Pavoneo",
-        "pt-BR": "Desfile",
-        "ko": "당당한 걸음"
+        "en": "Nap Time",
+        "tr": "Şekerleme",
+        "ja": "お昼寝タイム",
+        "de": "Nickerchen",
+        "fr": "L'heure de la sieste",
+        "es": "Hora de la siesta",
+        "pt-BR": "Hora da Soneca",
+        "ko": "낮잠 시간"
       },
       "palette": {
         "b": "#C8743F",
         "d": "#8C4A24"
       },
       "pixels": [
-        "......b......b.",
-        "bb...bb......bb",
-        "bbb..bb......bb",
-        "bbbbbbb......bb",
-        "bbbbbbbbbbb.bb.",
-        "..bbbbbbdbbbb..",
-        "....bbbbbbbbb..",
-        "....bbbbbbbb...",
-        "....bbbbbbbb...",
-        "....b.bb.bbb...",
-        "....b..b.bbbb..",
-        "....b..b.b..b.."
-      ]
-    },
-    {
-      "id": "somali-013",
-      "title": {
-        "en": "If I Fits",
-        "tr": "Kutu Sevdası",
-        "ja": "入れるなら入る",
-        "de": "Passt, sitzt",
-        "fr": "Si ça rentre…",
-        "es": "Si quepo, me siento",
-        "pt-BR": "Se Cabe, Eu Entro",
-        "ko": "들어가면 내 자리"
-      },
-      "palette": {
-        "b": "#C8743F",
-        "e": "#9CB84A",
-        "o": "#E0B66A",
-        "p": "#7D5A44"
-      },
-      "pixels": [
-        "...............",
-        "....b......b...",
-        "...bb.....bb...",
-        "...bbb....bb...",
-        "...bbbbbbbbbb..",
-        "....bbbbbbbb...",
-        "....bbebeebb...",
-        "....bbebbebb...",
-        ".ppoobbbbbboop.",
-        ".ppoooobooooopp",
-        "..ooooooooooo..",
-        "..oooooooooooo.",
-        "..oooooooooooo.",
-        "..oooooooooooo."
+        ".........",
+        "b...b....",
+        "bbbbbbb..",
+        "bbbbbdbb.",
+        "bb.bbbbbb",
+        ".bbbbbbbb",
+        "..bbbbbbb",
+        "..bbbbbb.",
+        "...bbbb.."
       ]
     },
     {
       "id": "somali-014",
       "title": {
-        "en": "Moon Gazer",
-        "tr": "Ay Seyri",
-        "ja": "月を見る猫",
-        "de": "Mondgucker",
-        "fr": "Rêveur de lune",
-        "es": "Mirando la luna",
-        "pt-BR": "Admirador da Lua",
-        "ko": "달 바라기"
+        "en": "Teddy Face",
+        "tr": "Oyuncak Ayı Yüzü",
+        "ja": "テディベア顔",
+        "de": "Teddygesicht",
+        "fr": "Bouille de nounours",
+        "es": "Cara de osito",
+        "pt-BR": "Cara de Ursinho",
+        "ko": "테디베어 얼굴"
       },
       "palette": {
         "b": "#C8743F",
-        "y": "#F4D35E"
+        "d": "#8C4A24",
+        "e": "#9CB84A",
+        "w": "#F2D7B6"
       },
       "pixels": [
-        "......yy.....",
-        "....yyy......",
-        "...yyyy......",
-        "...yyy.......",
-        "..yyyy.......",
-        "..yyyyy......",
-        "..yyyyy......",
-        "..yyyyyy.....",
-        "..byyyyyyy...",
-        "bbbyyyyyyyyy.",
-        ".bb..yyyyyy..",
-        ".bbb...b.....",
-        ".bbbb..b.....",
-        ".bbbb..b.....",
-        ".bbbbbb......"
+        "..........",
+        ".b.....bb.",
+        ".bbbbbbbb.",
+        ".bbbddbbb.",
+        ".bbebbebb.",
+        ".bbebbebb.",
+        "bbbbwwbbb.",
+        "..bbbbb...",
+        ".........."
       ]
     },
     {
       "id": "somali-015",
       "title": {
-        "en": "Forest Guardian",
-        "tr": "Orman Bekçisi",
-        "ja": "森の守り神",
-        "de": "Waldhüter",
-        "fr": "Gardien de la forêt",
-        "es": "Guardián del bosque",
-        "pt-BR": "Guardião da Floresta",
-        "ko": "숲의 수호자"
+        "en": "Lucky Cat",
+        "tr": "Şans Kedisi",
+        "ja": "招き猫",
+        "de": "Glückskatze",
+        "fr": "Chat porte-bonheur",
+        "es": "Gato de la suerte",
+        "pt-BR": "Gato da Sorte",
+        "ko": "행운의 고양이"
       },
       "palette": {
         "b": "#C8743F",
         "d": "#8C4A24",
-        "g": "#3E7C4F",
-        "o": "#E0B66A"
+        "e": "#9CB84A",
+        "y": "#F4D35E"
       },
       "pixels": [
-        "...........g...",
-        "...........g...",
-        "..........ggg..",
-        "bb....b...ggg..",
-        "bb...bb..gggg..",
-        "bbbbbbb..ggggg.",
-        "bbbbbbb..ggggg.",
-        "..bbbb...ggggg.",
-        "...bbb...bggg..",
-        "..bbbdbb.bbggg.",
-        "..bbbdbb.bbggg.",
-        "..bbbbbbgbbgggg",
-        "..bbbbbbgbbgggg",
-        "...bbbbbbbbo...",
-        "..bbbbbbb..o..."
+        "..........",
+        "..b...bbb.",
+        ".bbbdbbbb.",
+        "..bebebbb.",
+        "..bebebb..",
+        "...bbbbb..",
+        "..bbybb...",
+        "..bbybb...",
+        "..byyyb...",
+        "...bbb...."
+      ]
+    },
+    {
+      "id": "somali-016",
+      "title": {
+        "en": "Mighty Tail",
+        "tr": "Görkemli Kuyruk",
+        "ja": "立派なしっぽ",
+        "de": "Prachtschwanz",
+        "fr": "Queue majestueuse",
+        "es": "Gran cola",
+        "pt-BR": "Cauda Poderosa",
+        "ko": "늠름한 꼬리"
+      },
+      "palette": {
+        "b": "#C8743F",
+        "d": "#8C4A24"
+      },
+      "pixels": [
+        "............",
+        "......b....b",
+        "..dd..bb..bb",
+        "..dd.bbbbbbb",
+        ".ddd..bbbbbb",
+        "ddd....bbbb.",
+        "ddd...bbbb..",
+        "ddd..bbdbb..",
+        ".dd..bbbbbb.",
+        ".dbddbbbbb..",
+        ".ddbddbbbb..",
+        "...ddd.b...."
       ]
     }
   ]

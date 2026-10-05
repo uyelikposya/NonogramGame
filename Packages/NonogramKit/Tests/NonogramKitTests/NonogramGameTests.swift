@@ -59,6 +59,20 @@ final class NonogramGameTests: XCTestCase {
         XCTAssertTrue(game.isRowSatisfied(0))
     }
 
+    /// "Zor" mod: oyuncu otomatik X'i oyun sırasında kapatabilir.
+    func testHardModeLeavesCompletedLineUnmarked() {
+        var game = NonogramGame(puzzle: plus, rules: .classic)
+        game.autoCrossesCompletedLines = false
+        game.mark(.filled, at: position(0, 1))
+        XCTAssertEqual(game.board[position(0, 0)], .blank)
+        XCTAssertEqual(game.board[position(0, 2)], .blank)
+        XCTAssertTrue(game.isRowSatisfied(0))
+
+        game.autoCrossesCompletedLines = true
+        game.mark(.filled, at: position(2, 1))
+        XCTAssertEqual(game.board[position(2, 0)], .crossed)
+    }
+
     func testUndoRevertsMoveWithAutoCrosses() {
         var game = NonogramGame(puzzle: plus, rules: .classic)
         game.mark(.filled, at: position(0, 1))

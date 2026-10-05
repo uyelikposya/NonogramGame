@@ -5,48 +5,48 @@
     {
       "id": "scottish-fold-001",
       "title": {
-        "en": "Toe Beans",
-        "tr": "Pati Yastıkları",
-        "ja": "肉球",
-        "de": "Pfotenballen",
-        "fr": "Coussinets",
-        "es": "Almohadillas",
-        "pt-BR": "Almofadinhas",
-        "ko": "말랑 젤리"
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak",
+        "ja": "毛糸玉",
+        "de": "Wollknäuel",
+        "fr": "Pelote de laine",
+        "es": "Ovillo de lana",
+        "pt-BR": "Novelo de Lã",
+        "ko": "털실 뭉치"
       },
       "palette": {
-        "b": "#C9CDD2",
-        "n": "#D9A0A0"
+        "o": "#7FB3D5"
       },
       "pixels": [
-        ".b.b.",
-        "nb.bn",
-        "bbbbb",
-        ".nnn.",
-        ".bnb."
+        ".oo..",
+        "o..o.",
+        "oooo.",
+        "....."
       ]
     },
     {
       "id": "scottish-fold-002",
       "title": {
-        "en": "Purr Love",
-        "tr": "Mırıl Sevgi",
-        "ja": "ゴロゴロ大好き",
-        "de": "Schnurrliebe",
-        "fr": "Ronron d'amour",
-        "es": "Amor ronroneante",
-        "pt-BR": "Amor Ronronado",
-        "ko": "골골송 사랑"
+        "en": "Dinner Bowl",
+        "tr": "Mama Kabı",
+        "ja": "ごはん皿",
+        "de": "Futternapf",
+        "fr": "Gamelle",
+        "es": "Cuenco de comida",
+        "pt-BR": "Potinho de Ração",
+        "ko": "밥그릇"
       },
       "palette": {
-        "n": "#D9A0A0"
+        "o": "#7FB3D5",
+        "p": "#B0B7BF",
+        "w": "#F2F2F2"
       },
       "pixels": [
-        "nnnnn",
-        "nnnnn",
-        "nnnnn",
-        ".nnn.",
-        "..n.."
+        "......",
+        ".pppp.",
+        "ooppoo",
+        "oowwwo",
+        ".oooo."
       ]
     },
     {
@@ -65,58 +65,61 @@
         "o": "#7FB3D5"
       },
       "pixels": [
-        ".oo..",
-        ".oooo",
-        "ooooo",
-        ".oo.."
+        "..o....",
+        "ooooo.o",
+        "ooooooo",
+        "ooooo.o",
+        "..o...."
       ]
     },
     {
       "id": "scottish-fold-004",
       "title": {
-        "en": "Yarn Ball",
-        "tr": "Yün Yumak",
-        "ja": "毛糸玉",
-        "de": "Wollknäuel",
-        "fr": "Pelote de laine",
-        "es": "Ovillo de lana",
-        "pt-BR": "Novelo de Lã",
-        "ko": "털실 뭉치"
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi",
+        "ja": "ゴロゴロ大好き",
+        "de": "Schnurrliebe",
+        "fr": "Ronron d'amour",
+        "es": "Amor ronroneante",
+        "pt-BR": "Amor Ronronado",
+        "ko": "골골송 사랑"
       },
       "palette": {
-        "o": "#7FB3D5"
+        "n": "#D9A0A0"
       },
       "pixels": [
-        "..ooo.",
-        ".ooooo",
-        ".oo.oo",
-        ".o.o.o",
-        "..ooo.",
-        "......"
+        ".nnnnn.",
+        "nnnnnnn",
+        "nnnnnnn",
+        ".nnnnn.",
+        "..nnn..",
+        "...n..."
       ]
     },
     {
       "id": "scottish-fold-005",
       "title": {
-        "en": "Dinner Bowl",
-        "tr": "Mama Kabı",
-        "ja": "ごはん皿",
-        "de": "Futternapf",
-        "fr": "Gamelle",
-        "es": "Cuenco de comida",
-        "pt-BR": "Potinho de Ração",
-        "ko": "밥그릇"
+        "en": "Toe Beans",
+        "tr": "Pati Yastıkları",
+        "ja": "肉球",
+        "de": "Pfotenballen",
+        "fr": "Coussinets",
+        "es": "Almohadillas",
+        "pt-BR": "Almofadinhas",
+        "ko": "말랑 젤리"
       },
       "palette": {
-        "o": "#7FB3D5",
-        "p": "#B0B7BF",
-        "w": "#F2F2F2"
+        "b": "#C9CDD2",
+        "n": "#D9A0A0"
       },
       "pixels": [
-        ".pppp.",
-        "oppppo",
-        "oowwoo",
-        ".oooo."
+        "..b.b..",
+        ".bn.nb.",
+        "nn.b.nn",
+        ".bbbbb.",
+        ".bnnnb.",
+        ".bnnnb.",
+        "..bbb.."
       ]
     },
     {
@@ -136,60 +139,16 @@
         "p": "#B0B7BF"
       },
       "pixels": [
-        "..n...",
+        "..p...",
+        ".ppp..",
         ".ppp..",
         ".pppp.",
-        "..pp.n"
-      ]
-    },
-    {
-      "id": "scottish-fold-007",
-      "title": {
-        "en": "Leftovers",
-        "tr": "Artıklar",
-        "ja": "食べ残し",
-        "de": "Reste",
-        "fr": "Restes",
-        "es": "Sobras",
-        "pt-BR": "Restinho",
-        "ko": "남은 음식"
-      },
-      "palette": {
-        "p": "#B0B7BF"
-      },
-      "pixels": [
-        "..pp..",
-        "pppppp",
-        "p.ppp.",
+        "..pp.n",
         "......"
       ]
     },
     {
-      "id": "scottish-fold-008",
-      "title": {
-        "en": "Dinner Bowl",
-        "tr": "Mama Kabı",
-        "ja": "ごはん皿",
-        "de": "Futternapf",
-        "fr": "Gamelle",
-        "es": "Cuenco de comida",
-        "pt-BR": "Potinho de Ração",
-        "ko": "밥그릇"
-      },
-      "palette": {
-        "o": "#7FB3D5",
-        "p": "#B0B7BF",
-        "w": "#F2F2F2"
-      },
-      "pixels": [
-        "..pp..",
-        ".pppp.",
-        "oowwoo",
-        ".oooo."
-      ]
-    },
-    {
-      "id": "scottish-fold-009",
+      "id": "scottish-fold-007",
       "title": {
         "en": "Portrait",
         "tr": "Portre",
@@ -208,14 +167,14 @@
       "pixels": [
         "..bbb..",
         ".bdbbb.",
-        "bbebebb",
+        "beebebb",
         "bbbbbbb",
-        "bbbbbbb",
-        ".bbbbb."
+        ".bbbbb.",
+        "..bbb.."
       ]
     },
     {
-      "id": "scottish-fold-010",
+      "id": "scottish-fold-008",
       "title": {
         "en": "Fish Snack",
         "tr": "Balık Atıştırması",
@@ -230,32 +189,92 @@
         "o": "#7FB3D5"
       },
       "pixels": [
-        ".ooo..o",
+        "..oo...",
+        "ooooo.o",
         "o.ooooo",
         "ooooooo",
-        ".ooo..o"
+        "ooooo.o",
+        "..oo..."
+      ]
+    },
+    {
+      "id": "scottish-fold-009",
+      "title": {
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak",
+        "ja": "毛糸玉",
+        "de": "Wollknäuel",
+        "fr": "Pelote de laine",
+        "es": "Ovillo de lana",
+        "pt-BR": "Novelo de Lã",
+        "ko": "털실 뭉치"
+      },
+      "palette": {
+        "o": "#7FB3D5"
+      },
+      "pixels": [
+        ".oooo..",
+        "ooo.o..",
+        "oo..oo.",
+        "oo.ooo.",
+        "o.ooo..",
+        ".oooo..",
+        ".....oo"
+      ]
+    },
+    {
+      "id": "scottish-fold-010",
+      "title": {
+        "en": "Toy Mouse",
+        "tr": "Oyuncak Fare",
+        "ja": "ネズミのおもちゃ",
+        "de": "Spielmaus",
+        "fr": "Souris jouet",
+        "es": "Ratón de juguete",
+        "pt-BR": "Ratinho de Brinquedo",
+        "ko": "장난감 쥐"
+      },
+      "palette": {
+        "n": "#D9A0A0",
+        "p": "#B0B7BF"
+      },
+      "pixels": [
+        "........",
+        "..np....",
+        "..ppp...",
+        "..pppp..",
+        ".ppppp..",
+        ".ppppp.n",
+        "..ppp.nn",
+        "........"
       ]
     },
     {
       "id": "scottish-fold-011",
       "title": {
-        "en": "Leftovers",
-        "tr": "Artıklar",
-        "ja": "食べ残し",
-        "de": "Reste",
-        "fr": "Restes",
-        "es": "Sobras",
-        "pt-BR": "Restinho",
-        "ko": "남은 음식"
+        "en": "Dinner Bowl",
+        "tr": "Mama Kabı",
+        "ja": "ごはん皿",
+        "de": "Futternapf",
+        "fr": "Gamelle",
+        "es": "Cuenco de comida",
+        "pt-BR": "Potinho de Ração",
+        "ko": "밥그릇"
       },
       "palette": {
-        "p": "#B0B7BF"
+        "o": "#7FB3D5",
+        "p": "#B0B7BF",
+        "w": "#F2F2F2"
       },
       "pixels": [
-        "..ppp..",
-        "ppppp.p",
-        "ppppp.p",
-        "..ppp.."
+        "........",
+        "....p...",
+        ".pppppp.",
+        "oppppppo",
+        "oowwwwoo",
+        ".oooooo.",
+        ".oooooo.",
+        "........"
       ]
     },
     {
@@ -275,93 +294,134 @@
         "w": "#F2F2F2"
       },
       "pixels": [
-        ".nnnnn.",
-        "nwnnnnn",
-        "nnnnnnn",
-        ".nnnnn.",
-        ".nnnnn.",
-        "..nnn..",
-        "...n..."
+        ".nnn.nnn.",
+        "nnwnnnnnn",
+        "nnnnnnnnn",
+        ".nnnnnnn.",
+        ".nnnnnnn.",
+        "..nnnnn..",
+        "...nnn...",
+        "....n...."
       ]
     },
     {
       "id": "scottish-fold-013",
       "title": {
-        "en": "Moon Gazer",
-        "tr": "Ay Seyri",
-        "ja": "月を見る猫",
-        "de": "Mondgucker",
-        "fr": "Rêveur de lune",
-        "es": "Mirando la luna",
-        "pt-BR": "Admirador da Lua",
-        "ko": "달 바라기"
+        "en": "If I Fits",
+        "tr": "Kutu Sevdası",
+        "ja": "入れるなら入る",
+        "de": "Passt, sitzt",
+        "fr": "Si ça rentre…",
+        "es": "Si quepo, me siento",
+        "pt-BR": "Se Cabe, Eu Entro",
+        "ko": "들어가면 내 자리"
       },
       "palette": {
         "b": "#C9CDD2",
-        "y": "#F4D35E"
+        "e": "#D9A441",
+        "o": "#7FB3D5",
+        "p": "#B0B7BF"
       },
       "pixels": [
-        "..yy...",
-        ".yy....",
-        ".yy....",
-        ".yyy...",
-        "byyyyy.",
-        "bbyyyy.",
-        "bb.b...",
-        "bbbb..."
+        "..bbb...",
+        "..bbbb..",
+        "..beeb..",
+        "poobbop.",
+        ".oooooo.",
+        "........",
+        ".oooooo.",
+        ".ooooo.."
       ]
     },
     {
       "id": "scottish-fold-014",
       "title": {
-        "en": "Toe Beans",
-        "tr": "Pati Yastıkları",
-        "ja": "肉球",
-        "de": "Pfotenballen",
-        "fr": "Coussinets",
-        "es": "Almohadillas",
-        "pt-BR": "Almofadinhas",
-        "ko": "말랑 젤리"
+        "en": "Lucky Cat",
+        "tr": "Şans Kedisi",
+        "ja": "招き猫",
+        "de": "Glückskatze",
+        "fr": "Chat porte-bonheur",
+        "es": "Gato de la suerte",
+        "pt-BR": "Gato da Sorte",
+        "ko": "행운의 고양이"
       },
       "palette": {
         "b": "#C9CDD2",
-        "n": "#D9A0A0"
+        "d": "#6F767D",
+        "e": "#D9A441",
+        "y": "#F4D35E"
       },
       "pixels": [
-        "..bbbb..",
-        "..nbbn..",
-        "bn....nb",
-        "bbbbbbbb",
-        ".bbbbbb.",
-        ".bnnnnb.",
-        ".bbnnnb.",
-        "..bbbb.."
+        ".......b.",
+        "..bdbb.b.",
+        ".bebebbb.",
+        ".bbbbbb..",
+        "..bbbbb..",
+        ".bbbbbb..",
+        ".bbyybb..",
+        ".bbyyb...",
+        "..bbbb..."
       ]
     },
     {
       "id": "scottish-fold-015",
       "title": {
-        "en": "Portrait",
-        "tr": "Portre",
-        "ja": "肖像画",
-        "de": "Porträt",
-        "fr": "Portrait",
-        "es": "Retrato",
-        "pt-BR": "Retrato",
-        "ko": "초상화"
+        "en": "White Gloves",
+        "tr": "Beyaz Eldivenler",
+        "ja": "白い手袋",
+        "de": "Weiße Handschuhe",
+        "fr": "Gants blancs",
+        "es": "Guantes blancos",
+        "pt-BR": "Luvas Brancas",
+        "ko": "하얀 장갑"
       },
       "palette": {
         "b": "#C9CDD2",
-        "e": "#D9A441"
+        "w": "#F2F2F2"
       },
       "pixels": [
-        "..bbbb..",
-        ".bbbbbb.",
-        "bbebbebb",
-        "beebbeeb",
-        "bbbbbbbb",
-        ".bbbbbb.",
-        "..bbbb.."
+        ".bbb..bbb.",
+        "bbbbbbbbb.",
+        "bbbbbbbbbb",
+        "bbbbbbbbbb",
+        "bbbbbbbbbb",
+        "bbbbbbbbb.",
+        ".wwwwwwww.",
+        "www.wwwwww",
+        "www.wwwww.",
+        "..ww..ww.."
+      ]
+    },
+    {
+      "id": "scottish-fold-016",
+      "title": {
+        "en": "Silk Ribbon",
+        "tr": "İpek Kurdele",
+        "ja": "シルクのリボン",
+        "de": "Seidenband",
+        "fr": "Ruban de soie",
+        "es": "Cinta de seda",
+        "pt-BR": "Fita de Seda",
+        "ko": "실크 리본"
+      },
+      "palette": {
+        "b": "#C9CDD2",
+        "d": "#6F767D",
+        "e": "#D9A441",
+        "n": "#D9A0A0",
+        "o": "#7FB3D5"
+      },
+      "pixels": [
+        "...bbbb...",
+        ".bbbdbbb..",
+        "bbbbdbbbb.",
+        "bbebdbebbb",
+        "bbeebbeebb",
+        "bbbbbbbbbb",
+        "bbbbnbbbb.",
+        ".bbbbbbbb.",
+        "..nnonnn..",
+        "..n...n..."
       ]
     }
   ]

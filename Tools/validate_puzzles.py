@@ -8,7 +8,7 @@ Kontroller:
   - benzersiz bulmaca kimlikleri, palet/piksel tutarlılığı
   - her bulmacanın tahmin yapmadan (yalnızca satır mantığıyla) çözülebilmesi
     -> bu, çözümün benzersiz olduğunu da garanti eder
-  - eğitimde tam 10, her kedi türünde en az 15 bulmaca
+  - eğitimde 11, her kedi türünde en az 16 bulmaca
   - her türde 9 premium bulmaca: üçer tane 8x8, 10x10, 12x12; biri pati
 
 Satır çözücü, NonogramKit/Engine/LineSolver.swift ile aynı algoritmadır.
@@ -18,13 +18,13 @@ import re
 import sys
 from pathlib import Path
 
-MIN_PUZZLES = {"tutorial": 10, "breed": 15}
+MIN_PUZZLES = {"tutorial": 11, "breed": 16}
 LANGUAGES = ["en", "tr", "ja", "de", "fr", "es", "pt-BR", "ko"]
 PREMIUM_SIZES = ["8x8"] * 3 + ["10x10"] * 3 + ["12x12"] * 3
 HEX = re.compile(r"^#?[0-9A-Fa-f]{6}$")
 LESSONS = {
     "tapToFill", "fullLines", "emptyLines", "markWithCross", "multipleBlocks",
-    "overlap", "edges", "crossReference", "mistakesAndLives", "graduation",
+    "overlap", "edges", "crossReference", "mistakesAndLives", "difficulty", "graduation",
 }
 
 

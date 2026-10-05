@@ -19,20 +19,12 @@
         "n": "#B5654A"
       },
       "pixels": [
-        "....bb..bb....",
-        "...bnnbbnnb...",
-        "...bnnbbnnb...",
-        "bbbbbb..bbbbbb",
-        "bnn........nnb",
-        "bnn..bbbb..bnb",
-        ".bbbbbbbbbbbb.",
-        "..bbbbbbbbbb..",
-        "..bbbnnnnbbb..",
-        "..bbnnnnnnbb..",
-        "..bbnnnnnnbb..",
-        "..bbnnnnnnbb..",
-        "...bbbnnbbb...",
-        "....bbbbbb...."
+        ".....",
+        ".b.b.",
+        "nbbbn",
+        ".bnb.",
+        ".nnn.",
+        "..b.."
       ]
     },
     {
@@ -48,23 +40,14 @@
         "ko": "골골송 사랑"
       },
       "palette": {
-        "n": "#B5654A",
-        "w": "#F1EBE2"
+        "n": "#B5654A"
       },
       "pixels": [
-        ".nnnnn..nnnnn.",
-        "nnnnnnnnnnnnnn",
-        "nnwwwnnnnnnnnn",
-        "nnnwnnnnnnnnnn",
-        "nnnnnnnnnnnnnn",
-        "nnnnnnnnnnnnnn",
-        ".nnnnnnnnnnnn.",
-        "..nnnnnnnnnn..",
-        "...nnnnnnnn...",
-        "....nnnnnn....",
-        ".....nnnn.....",
-        "......nn......",
-        "......nn......"
+        ".nnnnn.",
+        "nnnnnnn",
+        ".nnnnn.",
+        "..nnn..",
+        "...n..."
       ]
     },
     {
@@ -80,18 +63,15 @@
         "ko": "생선 간식"
       },
       "palette": {
-        "o": "#6B4F3A",
-        "p": "#C8B6A6"
+        "o": "#6B4F3A"
       },
       "pixels": [
-        "...oooo......o",
-        ".oooopooo...oo",
-        "oo.oopoooo.ooo",
-        "o..oopoooooooo",
-        "ooooopoooooooo",
-        "ooooopoooo.ooo",
-        ".oooopooo...oo",
-        "...oooo......o"
+        "......",
+        "o.ooo.",
+        "ooooo.",
+        "oooooo",
+        "o.oooo",
+        "...o.."
       ]
     },
     {
@@ -110,19 +90,12 @@
         "o": "#6B4F3A"
       },
       "pixels": [
-        "..............",
-        "...ooooo......",
-        ".oooooo.oo....",
-        "...ooo..oo....",
-        "oo...o.oooo...",
-        "ooooo..oooo...",
-        "oooo.o..ooo...",
-        "ooo..oo..oo...",
-        ".oo.oooo......",
-        ".oooooooo.....",
-        "..oooooooo....",
-        ".....o....o.o.",
-        "...........oo."
+        ".oooo..",
+        "o.o.o..",
+        "oo..oo.",
+        "oooo...",
+        ".oooo..",
+        ".....o."
       ]
     },
     {
@@ -143,15 +116,13 @@
         "w": "#F1EBE2"
       },
       "pixels": [
-        "....pp.ppp....",
-        "..pppppppppp..",
-        ".pppppppppppp.",
-        "ooppppppppppoo",
-        "ooooppppppoooo",
-        ".oowwwwwwwwoo.",
-        ".oowwwwwwwwoo.",
-        ".oooooooooooo.",
-        "..oooooooooo.."
+        ".......",
+        ".ppppp.",
+        "ppppppp",
+        "oopppoo",
+        "oowwwoo",
+        ".ooooo.",
+        ".ooooo."
       ]
     },
     {
@@ -171,76 +142,264 @@
         "p": "#C8B6A6"
       },
       "pixels": [
-        "...pnp........",
-        "...pnppp......",
-        "...ppppppp....",
-        ".p.ppppppp....",
-        "..pppppppp....",
-        "..ppppppppn..n",
-        "...pppppp..nn.",
-        ".............."
+        "...p..",
+        "..pn..",
+        "..ppp.",
+        ".pppp.",
+        "n.pp..",
+        "......"
       ]
     },
     {
       "id": "siberian-007",
       "title": {
-        "en": "Leftovers",
-        "tr": "Artıklar",
-        "ja": "食べ残し",
-        "de": "Reste",
-        "fr": "Restes",
-        "es": "Sobras",
-        "pt-BR": "Restinho",
-        "ko": "남은 음식"
+        "en": "Portrait",
+        "tr": "Portre",
+        "ja": "肖像画",
+        "de": "Porträt",
+        "fr": "Portrait",
+        "es": "Retrato",
+        "pt-BR": "Retrato",
+        "ko": "초상화"
       },
       "palette": {
-        "p": "#C8B6A6"
+        "b": "#A58B6F",
+        "e": "#8DB04A",
+        "w": "#F1EBE2"
       },
       "pixels": [
-        "....p.p.pp....",
-        "..p.p.p.pp...p",
-        ".pp.p.p.pp..pp",
-        "pppppppppppppp",
-        ".pp.p.p.pp..pp",
-        "..p.p.p.pp...p",
-        "....p.p.pp...."
+        ".......",
+        ".bbbbb.",
+        ".bbbbb.",
+        "bbebebb",
+        "bbbwbbb",
+        "..www.."
       ]
     },
     {
       "id": "siberian-008",
       "title": {
-        "en": "Mighty Tail",
-        "tr": "Görkemli Kuyruk",
-        "ja": "立派なしっぽ",
-        "de": "Prachtschwanz",
-        "fr": "Queue majestueuse",
-        "es": "Gran cola",
-        "pt-BR": "Cauda Poderosa",
-        "ko": "늠름한 꼬리"
+        "en": "Dinner Bowl",
+        "tr": "Mama Kabı",
+        "ja": "ごはん皿",
+        "de": "Futternapf",
+        "fr": "Gamelle",
+        "es": "Cuenco de comida",
+        "pt-BR": "Potinho de Ração",
+        "ko": "밥그릇"
       },
       "palette": {
-        "b": "#A58B6F",
-        "d": "#5E4B3A"
+        "o": "#6B4F3A",
+        "p": "#C8B6A6",
+        "w": "#F1EBE2"
       },
       "pixels": [
-        "............",
-        ".b...b......",
-        ".b...b..dd..",
-        "bbbbbb..ddd.",
-        "bbbbbb..dddd",
-        ".bbbbb...ddd",
-        "..bbbb....dd",
-        "..bbbbb...dd",
-        "..bbddbb..dd",
-        ".bbbbbbb..bd",
-        ".bbbbbbb.dbd",
-        "..bbbbbddbdd",
-        "...bbbddbd..",
-        "......dd...."
+        "..ppp..",
+        ".ppppp.",
+        "ppppppp",
+        "oopppoo",
+        "oowwwoo",
+        ".ooooo.",
+        ".ooooo."
       ]
     },
     {
       "id": "siberian-009",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi",
+        "ja": "ゴロゴロ大好き",
+        "de": "Schnurrliebe",
+        "fr": "Ronron d'amour",
+        "es": "Amor ronroneante",
+        "pt-BR": "Amor Ronronado",
+        "ko": "골골송 사랑"
+      },
+      "palette": {
+        "n": "#B5654A",
+        "w": "#F1EBE2"
+      },
+      "pixels": [
+        ".nn.nn.",
+        "nwnnnnn",
+        "nnnnnnn",
+        ".nnnnn.",
+        ".nnnnn.",
+        "..nnn..",
+        "...n..."
+      ]
+    },
+    {
+      "id": "siberian-010",
+      "title": {
+        "en": "Fish Snack",
+        "tr": "Balık Atıştırması",
+        "ja": "おさかなおやつ",
+        "de": "Fischsnack",
+        "fr": "Goûter poisson",
+        "es": "Tentempié de pescado",
+        "pt-BR": "Petisco de Peixe",
+        "ko": "생선 간식"
+      },
+      "palette": {
+        "o": "#6B4F3A"
+      },
+      "pixels": [
+        "........",
+        "..oo....",
+        "ooooo..o",
+        "o.oooooo",
+        "oooooooo",
+        "ooooo..o",
+        "..oo....",
+        "........"
+      ]
+    },
+    {
+      "id": "siberian-011",
+      "title": {
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak",
+        "ja": "毛糸玉",
+        "de": "Wollknäuel",
+        "fr": "Pelote de laine",
+        "es": "Ovillo de lana",
+        "pt-BR": "Novelo de Lã",
+        "ko": "털실 뭉치"
+      },
+      "palette": {
+        "o": "#6B4F3A"
+      },
+      "pixels": [
+        "...oooo.",
+        "..oooooo",
+        "..oo...o",
+        "..oo..oo",
+        "..o.oooo",
+        "...ooo.o",
+        "..ooooo.",
+        "oo......"
+      ]
+    },
+    {
+      "id": "siberian-012",
+      "title": {
+        "en": "Toy Mouse",
+        "tr": "Oyuncak Fare",
+        "ja": "ネズミのおもちゃ",
+        "de": "Spielmaus",
+        "fr": "Souris jouet",
+        "es": "Ratón de juguete",
+        "pt-BR": "Ratinho de Brinquedo",
+        "ko": "장난감 쥐"
+      },
+      "palette": {
+        "n": "#B5654A",
+        "p": "#C8B6A6"
+      },
+      "pixels": [
+        ".........",
+        "..nn.....",
+        "..pppp...",
+        "..ppppp..",
+        ".pppppp..",
+        ".pppppn.n",
+        "..pppp.nn",
+        "........."
+      ]
+    },
+    {
+      "id": "siberian-013",
+      "title": {
+        "en": "Teddy Face",
+        "tr": "Oyuncak Ayı Yüzü",
+        "ja": "テディベア顔",
+        "de": "Teddygesicht",
+        "fr": "Bouille de nounours",
+        "es": "Cara de osito",
+        "pt-BR": "Cara de Ursinho",
+        "ko": "테디베어 얼굴"
+      },
+      "palette": {
+        "b": "#A58B6F",
+        "d": "#5E4B3A",
+        "e": "#8DB04A",
+        "w": "#F1EBE2"
+      },
+      "pixels": [
+        ".........",
+        ".........",
+        ".b.bb..b.",
+        ".bbbdbbb.",
+        ".bbbdbbb.",
+        ".bebbebb.",
+        "bbbbbbbbb",
+        "bbbwwwbbb",
+        "..bwwwb.."
+      ]
+    },
+    {
+      "id": "siberian-014",
+      "title": {
+        "en": "Teacup Cat",
+        "tr": "Fincandaki Kedi",
+        "ja": "ティーカップ猫",
+        "de": "Teetassenkatze",
+        "fr": "Chat dans une tasse",
+        "es": "Gato en una taza",
+        "pt-BR": "Gato na Xícara",
+        "ko": "찻잔 고양이"
+      },
+      "palette": {
+        "b": "#A58B6F",
+        "e": "#8DB04A",
+        "o": "#6B4F3A",
+        "p": "#C8B6A6"
+      },
+      "pixels": [
+        "..........",
+        "..........",
+        "....b...b.",
+        "...bbbbbb.",
+        "...bebeeb.",
+        "..oobbbbbo",
+        ".o.oopppoo",
+        ".o.ooooooo",
+        "...oooooo."
+      ]
+    },
+    {
+      "id": "siberian-015",
+      "title": {
+        "en": "Owl Pose",
+        "tr": "Baykuş Duruşu",
+        "ja": "フクロウのポーズ",
+        "de": "Eulenpose",
+        "fr": "Pose de chouette",
+        "es": "Pose de búho",
+        "pt-BR": "Pose de Coruja",
+        "ko": "부엉이 포즈"
+      },
+      "palette": {
+        "b": "#A58B6F",
+        "e": "#8DB04A",
+        "w": "#F1EBE2"
+      },
+      "pixels": [
+        "..........",
+        ".b.....b..",
+        ".bbbbbbbb.",
+        ".bbebbebb.",
+        ".beebbeeb.",
+        ".bbbbbbb..",
+        ".bbwwwbbb.",
+        ".bbwwwwbb.",
+        "..bwwwbb..",
+        "....bb...."
+      ]
+    },
+    {
+      "id": "siberian-016",
       "title": {
         "en": "Forest Guardian",
         "tr": "Orman Bekçisi",
@@ -258,221 +417,18 @@
         "o": "#6B4F3A"
       },
       "pixels": [
-        "..........g...",
-        "..........g...",
-        ".........ggg..",
-        "b........ggg..",
-        "bb..b...gggg..",
-        "bbbbbb..ggggg.",
-        "bbbbbb..ggggg.",
-        ".bbbb...ggggg.",
-        "..bbb...dggg..",
-        "..bdbbb.ddggg.",
-        ".bbdbbb.ddggg.",
-        ".bbbbbbgddgggg",
-        ".bbbbbbgddgggg",
-        "..bbbbbdddo...",
-        ".bbbbbdd..o..."
-      ]
-    },
-    {
-      "id": "siberian-010",
-      "title": {
-        "en": "Nap Time",
-        "tr": "Şekerleme",
-        "ja": "お昼寝タイム",
-        "de": "Nickerchen",
-        "fr": "L'heure de la sieste",
-        "es": "Hora de la siesta",
-        "pt-BR": "Hora da Soneca",
-        "ko": "낮잠 시간"
-      },
-      "palette": {
-        "b": "#A58B6F",
-        "d": "#5E4B3A"
-      },
-      "pixels": [
-        "......d........",
-        "...............",
-        ".b...bbbbb.....",
-        "bbbbbbbbbbbbb..",
-        "bbbbbbbdbbdbbb.",
-        "bb...bbbbbbbbb.",
-        ".bbbbbbbbbbbbbd",
-        "..bbbbbbbbbbbdd",
-        "...bbbbbbbbbdd.",
-        "...dddddddddd..",
-        "....ddddddddd.."
-      ]
-    },
-    {
-      "id": "siberian-011",
-      "title": {
-        "en": "Sitting Pretty",
-        "tr": "Uslu Oturuş",
-        "ja": "おすましおすわり",
-        "de": "Brav sitzen",
-        "fr": "Sage comme une image",
-        "es": "Sentado con estilo",
-        "pt-BR": "Pose Elegante",
-        "ko": "얌전히 앉기"
-      },
-      "palette": {
-        "b": "#A58B6F",
-        "d": "#5E4B3A"
-      },
-      "pixels": [
-        "d..........",
-        ".....b.....",
-        "bb...b.....",
-        "bbbbbb.....",
-        "bbbbbb.....",
-        "bbbbbb.....",
-        ".bbbb......",
-        "..bbbb...d.",
-        "..bbddb..dd",
-        "..bbdddb.dd",
-        ".bbbbbbb.dd",
-        ".bbbbbbb.dd",
-        "..bbbbbbddd",
-        "..bbbbbddd.",
-        "..bbbb.dd.."
-      ]
-    },
-    {
-      "id": "siberian-012",
-      "title": {
-        "en": "Strut",
-        "tr": "Salınarak Yürüyüş",
-        "ja": "おすまし歩き",
-        "de": "Stolzieren",
-        "fr": "Pavane",
-        "es": "Pavoneo",
-        "pt-BR": "Desfile",
-        "ko": "당당한 걸음"
-      },
-      "palette": {
-        "b": "#A58B6F",
-        "d": "#5E4B3A"
-      },
-      "pixels": [
-        "d............d.",
-        ".............dd",
-        "bb..bb.......dd",
-        "bbbbbb.......dd",
-        "bbbbbb......ddd",
-        ".bbbbbbdddbddd.",
-        "..bbbbbbbbbdd..",
-        "....bbbbbbbb...",
-        "....bbbbbbbb...",
-        "....b.b..b.b...",
-        "....b.b..b.b...",
-        "....b.b..b.b...",
-        "....b.b..b.b..."
-      ]
-    },
-    {
-      "id": "siberian-013",
-      "title": {
-        "en": "If I Fits",
-        "tr": "Kutu Sevdası",
-        "ja": "入れるなら入る",
-        "de": "Passt, sitzt",
-        "fr": "Si ça rentre…",
-        "es": "Si quepo, me siento",
-        "pt-BR": "Se Cabe, Eu Entro",
-        "ko": "들어가면 내 자리"
-      },
-      "palette": {
-        "b": "#A58B6F",
-        "e": "#8DB04A",
-        "o": "#6B4F3A",
-        "p": "#C8B6A6"
-      },
-      "pixels": [
-        "...............",
-        "....b.....b....",
-        "....b.....b....",
-        "....bb...bb....",
-        "...bbbbbbbbb...",
-        "...bbbbbbbbb...",
-        "....beebeeb....",
-        "....beebeeb....",
-        ".poobbbbbbboop.",
-        "pppoobbbbbooppp",
-        ".ooooooooooooo.",
-        "..ooooooooooo..",
-        ".ooooooooooooo.",
-        ".ooooooooooooo.",
-        ".ooooooooooooo."
-      ]
-    },
-    {
-      "id": "siberian-014",
-      "title": {
-        "en": "Moon Gazer",
-        "tr": "Ay Seyri",
-        "ja": "月を見る猫",
-        "de": "Mondgucker",
-        "fr": "Rêveur de lune",
-        "es": "Mirando la luna",
-        "pt-BR": "Admirador da Lua",
-        "ko": "달 바라기"
-      },
-      "palette": {
-        "b": "#A58B6F",
-        "y": "#F4D35E"
-      },
-      "pixels": [
-        ".....yyy.....",
-        "......yyy....",
-        "......yyyy...",
-        ".......yyy...",
-        ".......yyyy..",
-        "......yyyyy..",
-        "......yyyyy..",
-        ".....yyyyy...",
-        ".yyyyyyyyybb.",
-        ".yyyyyyyy.bbb",
-        "...yyyyy..bb.",
-        ".....b..bbbb.",
-        ".....b..bbbb.",
-        ".....bb.bbbb.",
-        ".......bbbbb."
-      ]
-    },
-    {
-      "id": "siberian-015",
-      "title": {
-        "en": "Mighty Tail",
-        "tr": "Görkemli Kuyruk",
-        "ja": "立派なしっぽ",
-        "de": "Prachtschwanz",
-        "fr": "Queue majestueuse",
-        "es": "Gran cola",
-        "pt-BR": "Cauda Poderosa",
-        "ko": "늠름한 꼬리"
-      },
-      "palette": {
-        "b": "#A58B6F",
-        "d": "#5E4B3A"
-      },
-      "pixels": [
-        ".............",
-        ".....b.......",
-        "bb...b...d...",
-        "bbbbbb..ddd..",
-        "bbbbbb..dddd.",
-        "bbbbbb...ddd.",
-        ".bbbbb....ddd",
-        "..bbbb....dbd",
-        "..bbbbb...dbd",
-        ".bbbddbb..dbd",
-        ".bbbbbbb..dbd",
-        ".bbbbbbb.ddbd",
-        "..bbbbbddbbd.",
-        "..bbbbddbdd..",
-        ".......dd...."
+        "............",
+        "........g...",
+        "........gg..",
+        ".b..b..ggg..",
+        ".bbbb..gggg.",
+        ".bbbb..gggg.",
+        ".bbb...ggg..",
+        "..bbbb.dggg.",
+        ".bbbdbbddgg.",
+        ".bbbbbgddggg",
+        "..bbbbddoo..",
+        "..bbb.d....."
       ]
     }
   ]
