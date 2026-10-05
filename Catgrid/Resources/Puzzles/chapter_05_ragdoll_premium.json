@@ -1,0 +1,216 @@
+{
+  "schemaVersion": 1,
+  "chapterID": "ragdoll",
+  "puzzles": [
+    {
+      "id": "ragdoll-p01",
+      "title": {
+        "en": "Golden Paw",
+        "tr": "Altın Pati"
+      },
+      "palette": {
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        ".yy..yy.",
+        ".yy..yy.",
+        "........",
+        "yy....yy",
+        "yy.yy.yy",
+        "..yyyy..",
+        ".yyyyyy.",
+        "..yyyy.."
+      ]
+    },
+    {
+      "id": "ragdoll-p02",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi"
+      },
+      "palette": {
+        "n": "#E2A3A3",
+        "w": "#FBF8F3"
+      },
+      "pixels": [
+        ".nn..nn.",
+        "nwnnnnnn",
+        "nnnnnnnn",
+        "nnnnnnnn",
+        ".nnnnnn.",
+        "..nnnn..",
+        "...nn...",
+        "........"
+      ]
+    },
+    {
+      "id": "ragdoll-p03",
+      "title": {
+        "en": "Fish Snack",
+        "tr": "Balık Atıştırması"
+      },
+      "palette": {
+        "o": "#B5838D"
+      },
+      "pixels": [
+        "........",
+        "..oo....",
+        "ooooo..o",
+        "o.oooooo",
+        "oooooooo",
+        "ooooo..o",
+        "..oo....",
+        "........"
+      ]
+    },
+    {
+      "id": "ragdoll-p04",
+      "title": {
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak"
+      },
+      "palette": {
+        "o": "#B5838D"
+      },
+      "pixels": [
+        "..........",
+        "...ooooo..",
+        "..oo.ooo..",
+        "..ooo...o.",
+        "..oo...ooo",
+        "..o.oo.oo.",
+        "...oooo.o.",
+        "...ooooo..",
+        ".oo.......",
+        ".........."
+      ]
+    },
+    {
+      "id": "ragdoll-p05",
+      "title": {
+        "en": "Toy Mouse",
+        "tr": "Oyuncak Fare"
+      },
+      "palette": {
+        "n": "#E2A3A3",
+        "p": "#9AA5B1"
+      },
+      "pixels": [
+        "..........",
+        "...p......",
+        "..nnp.....",
+        "..ppppp...",
+        "..ppppp...",
+        ".ppppppp..",
+        "..pppppn.n",
+        "..pppp..nn",
+        "........n.",
+        ".........."
+      ]
+    },
+    {
+      "id": "ragdoll-p06",
+      "title": {
+        "en": "Portrait",
+        "tr": "Portre"
+      },
+      "palette": {
+        "b": "#F4EEE6",
+        "d": "#8B7765",
+        "e": "#4F86C6",
+        "w": "#FBF8F3"
+      },
+      "pixels": [
+        "..........",
+        ".d......d.",
+        ".dbbbbbbd.",
+        ".dbbbbbbd.",
+        ".bbeddebb.",
+        ".beeddeeb.",
+        "bbbdwwdbbb",
+        "bbbwwwwbbb",
+        "...wwww...",
+        ".........."
+      ]
+    },
+    {
+      "id": "ragdoll-p07",
+      "title": {
+        "en": "Floppy Hug",
+        "tr": "Gevşek Kucaklama"
+      },
+      "palette": {
+        "b": "#F4EEE6",
+        "d": "#8B7765",
+        "w": "#FBF8F3"
+      },
+      "pixels": [
+        "...w....w...",
+        "...w...ww...",
+        "...bb..b....",
+        "....b..b....",
+        ".bb.b..b....",
+        "bbbbbbbbb...",
+        "bbbbbwwbbb..",
+        "bbbbwwwwbb..",
+        ".bbwwwwwbbd.",
+        "..bbwwwwb.d.",
+        "...bbbbb...d",
+        "...........d"
+      ]
+    },
+    {
+      "id": "ragdoll-p08",
+      "title": {
+        "en": "Nap Time",
+        "tr": "Şekerleme"
+      },
+      "palette": {
+        "b": "#F4EEE6",
+        "d": "#8B7765"
+      },
+      "pixels": [
+        "............",
+        "d...dbbb....",
+        "ddbbdbbbbb..",
+        "ddbbdbbbbbb.",
+        "ddddddbbbbb.",
+        "d...bbbbbbbb",
+        ".bbbbbbbbbbd",
+        ".bbbbbbbbbdd",
+        "..bbbbbbbbdd",
+        "...dddddbdd.",
+        "...ddddddd..",
+        "....dddddd.."
+      ]
+    },
+    {
+      "id": "ragdoll-p09",
+      "title": {
+        "en": "Lucky Cat",
+        "tr": "Şans Kedisi"
+      },
+      "palette": {
+        "b": "#F4EEE6",
+        "d": "#8B7765",
+        "e": "#4F86C6",
+        "n": "#E2A3A3",
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        "............",
+        ".dd....ddbb.",
+        ".dddbbdddbb.",
+        ".ddbbbeddbb.",
+        ".bbebbebbbb.",
+        "..bbbbbbbb..",
+        "..nbnnbnbb..",
+        ".bbbbybbb...",
+        ".bbbbbbbb...",
+        ".bbyyyybb...",
+        "..bbyybb....",
+        "...bbbb....."
+      ]
+    }
+  ]
+}

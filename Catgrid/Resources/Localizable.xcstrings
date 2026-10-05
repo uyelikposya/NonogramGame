@@ -97,6 +97,26 @@
         }
       }
     },
+    "9 extra puzzles and a Golden Card with Premium": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Premium ile 9 ek bulmaca ve bir Altın Kart"
+          }
+        }
+      }
+    },
+    "9 golden puzzles for every breed": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Her tür için 9 altın bulmaca"
+          }
+        }
+      }
+    },
     "A 0 means the line has no filled squares at all.": {
       "localizations": {
         "tr": {
@@ -163,16 +183,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "Reklam Gizlilik Tercihleri"
-          }
-        }
-      }
-    },
-    "Ad-Free": {
-      "localizations": {
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Reklamsız"
           }
         }
       }
@@ -297,16 +307,6 @@
         }
       }
     },
-    "Catgrid Ad-Free": {
-      "localizations": {
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Catgrid Reklamsız"
-          }
-        }
-      }
-    },
     "Change Language": {
       "localizations": {
         "tr": {
@@ -353,6 +353,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Kahve Tonları"
+          }
+        }
+      }
+    },
+    "Collect shiny Golden Cards": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Parıltılı Altın Kartları topla"
           }
         }
       }
@@ -443,6 +453,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Enerji"
+          }
+        }
+      }
+    },
+    "Enjoying Catgrid?": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Catgrid'i sevdin mi?"
           }
         }
       }
@@ -547,12 +567,62 @@
         }
       }
     },
-    "Go Ad-Free": {
+    "Go Premium": {
       "localizations": {
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Reklamsız Ol"
+            "value": "Premium'a Geç"
+          }
+        }
+      }
+    },
+    "Golden Card": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Altın Kart"
+          }
+        }
+      }
+    },
+    "Golden Card unlocked!": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Altın Kart kazandın!"
+          }
+        }
+      }
+    },
+    "Golden Cards": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Altın Kartlar"
+          }
+        }
+      }
+    },
+    "Golden Puzzles": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Altın Bulmacalar"
+          }
+        }
+      }
+    },
+    "Golden puzzles are part of Catgrid Premium.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Altın bulmacalar Catgrid Premium'a dahildir."
           }
         }
       }
@@ -777,6 +847,26 @@
         }
       }
     },
+    "No ads · Golden puzzles · Golden Cards": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reklamsız · Altın bulmacalar · Altın Kartlar"
+          }
+        }
+      }
+    },
+    "No ads, 9 golden puzzles for every breed and Golden Cards. Monthly or yearly subscription.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Reklamsız oyun, her tür için 9 altın bulmaca ve Altın Kartlar. Aylık ya da yıllık abonelik."
+          }
+        }
+      }
+    },
     "Numbers tell you how many squares in a line are filled. A 3 means three filled squares side by side. Tap a square to fill it.": {
       "localizations": {
         "tr": {
@@ -833,6 +923,26 @@
           "stringUnit": {
             "state": "translated",
             "value": "Oyunculuk"
+          }
+        }
+      }
+    },
+    "Premium": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Premium"
+          }
+        }
+      }
+    },
+    "Premium puzzle": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Premium bulmaca"
           }
         }
       }
@@ -987,16 +1097,6 @@
         }
       }
     },
-    "Remove the ads between puzzles with a monthly or yearly subscription. Optional rewarded ads for extra paws stay available.": {
-      "localizations": {
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Bulmacalar arasındaki reklamları aylık ya da yıllık abonelikle kaldır. Ekstra pati için isteğe bağlı ödüllü reklamlar kullanılabilir kalır."
-          }
-        }
-      }
-    },
     "Reset all progress?": {
       "localizations": {
         "tr": {
@@ -1037,16 +1137,6 @@
         }
       }
     },
-    "Rewarded ads for extra paws stay optional": {
-      "localizations": {
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ekstra pati için ödüllü reklamlar isteğe bağlı kalır"
-          }
-        }
-      }
-    },
     "Rows meet columns": {
       "localizations": {
         "tr": {
@@ -1083,6 +1173,16 @@
           "stringUnit": {
             "state": "translated",
             "value": "Birden fazla blok"
+          }
+        }
+      }
+    },
+    "Solve all golden puzzles to win this breed's Golden Card.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bu türün Altın Kartını kazanmak için tüm altın bulmacaları çöz."
           }
         }
       }
@@ -1357,6 +1457,16 @@
         }
       }
     },
+    "You solved every golden %@ puzzle.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tüm altın %@ bulmacalarını çözdün."
+          }
+        }
+      }
+    },
     "You solved every puzzle!": {
       "localizations": {
         "tr": {
@@ -1367,12 +1477,22 @@
         }
       }
     },
-    "You're Ad-Free. Thank you for supporting Catgrid!": {
+    "You won the Golden Card of this breed!": {
       "localizations": {
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Reklamsızsın. Catgrid'e destek olduğun için teşekkürler!"
+            "value": "Bu türün Altın Kartını kazandın!"
+          }
+        }
+      }
+    },
+    "You're Premium. Thank you for supporting Catgrid!": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Premium üyesin. Catgrid'e destek olduğun için teşekkürler!"
           }
         }
       }

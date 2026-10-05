@@ -28,6 +28,9 @@ final class CollectionRenderingTests: XCTestCase {
                         BreedCardView(chapter: chapter, card: chapter.card!, style: .compact)
                         BreedCardBackView(chapter: chapter, card: chapter.card!)
                         FlippableBreedCard(chapter: chapter, card: chapter.card!)
+                        BreedCardView(chapter: chapter, card: chapter.card!, style: .full, isGolden: true)
+                        BreedCardView(chapter: chapter, card: chapter.card!, style: .compact, isGolden: true)
+                        FlippableBreedCard(chapter: chapter, card: chapter.card!, isGolden: true)
                     }
                 }
             }
@@ -47,6 +50,23 @@ final class CollectionRenderingTests: XCTestCase {
             }
         }
         XCTAssertEqual(model.collectedBreeds.count, 2)
+        // İlk türün Altın bulmacaları da çözülmüş olsun
+        let first = try XCTUnwrap(catalog.chapters.first { $0.kind == .breed })
+        for puzzle in first.premiumPuzzles {
+            model.record(PuzzleCompletion(puzzleID: puzzle.id, completedAt: Date(), elapsed: 60, mistakes: 0))
+        }
+        XCTAssertEqual(model.goldenBreeds.map(\.id), [first.id])
+        XCTAssertEqual(model.collectedCards.count, 3)
+
+        for isPremium in [false, true] {
+            show(
+                NavigationStack { ChapterView(chapterID: first.id) }
+                    .environment(model)
+                    .environment(Router())
+                    .environment(makeStore(isPremium: isPremium))
+                    .environment(\.appTheme, .default)
+            )
+        }
 
         show(
             NavigationStack { CollectionView() }
@@ -54,12 +74,21 @@ final class CollectionRenderingTests: XCTestCase {
                 .environment(Router())
                 .environment(\.appTheme, .default)
         )
-        show(
-            NavigationStack { HomeView() }
-                .environment(model)
-                .environment(Router())
-                .environment(\.appTheme, .default)
-        )
+        for isPremium in [false, true] {
+            show(
+                NavigationStack { HomeView() }
+                    .environment(model)
+                    .environment(Router())
+                    .environment(makeStore(isPremium: isPremium))
+                    .environment(\.appTheme, .default)
+            )
+        }
+    }
+
+    private func makeStore(isPremium: Bool) -> StoreManager {
+        let defaults = UserDefaults(suiteName: "render-store-\(UUID().uuidString)")!
+        defaults.set(isPremium, forKey: StoreManager.cacheKey)
+        return StoreManager(defaults: defaults)
     }
 
     func testSettingsScreenRenders() {

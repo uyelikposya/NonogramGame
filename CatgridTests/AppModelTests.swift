@@ -9,7 +9,11 @@ final class AppModelTests: XCTestCase {
             Chapter(id: "tutorial", kind: .tutorial, title: ["en": "School"], expectedPuzzleCount: 2,
                     puzzles: [Puzzle(id: "t1", pattern: ["#"]), Puzzle(id: "t2", pattern: ["#"])]),
             Chapter(id: "siamese", kind: .breed, title: ["en": "Siamese"], expectedPuzzleCount: 30,
-                    puzzles: [Puzzle(id: "s1", pattern: ["#"])]),
+                    puzzles: [Puzzle(id: "s1", pattern: ["#"])],
+                    card: BreedCard(number: 1, rarity: .common, origin: ["en": "Thailand"], lifespan: "15",
+                                    coat: ["en": "Short"], stats: .init(energy: 1, affection: 1, playfulness: 1, grooming: 1),
+                                    fact: ["en": "Talkative"]),
+                    premiumPuzzles: [Puzzle(id: "sp1", pattern: ["#"]), Puzzle(id: "sp2", pattern: ["#"])]),
         ])
         return AppModel(catalog: catalog, progress: .inMemory())
     }
@@ -53,6 +57,34 @@ final class AppModelTests: XCTestCase {
         model.record(completion("s1"))
         XCTAssertEqual(model.collectedBreeds.map(\.id), ["siamese"])
         XCTAssertFalse(model.hasUnmetBreeds)
+    }
+
+    func testGoldenCardNeedsEveryPremiumPuzzle() throws {
+        let model = try makeModel()
+        let siamese = try XCTUnwrap(model.chapter(withID: "siamese"))
+        model.record(completion("sp1"))
+        XCTAssertFalse(model.isGoldenCollected(siamese))
+        XCTAssertEqual(model.completedCount, 0, "Premium bulmacalar normal ilerlemeye sayılmaz")
+
+        model.record(completion("sp2"))
+        XCTAssertTrue(model.isGoldenCollected(siamese))
+        // Normal kart henüz yokken de Altın Kart koleksiyonda görünür
+        XCTAssertEqual(model.collectedCards.map(\.id), ["siamese#golden"])
+
+        model.record(completion("t1"))
+        model.record(completion("t2"))
+        model.record(completion("s1"))
+        XCTAssertEqual(model.collectedCards.map(\.id), ["siamese", "siamese#golden"])
+        XCTAssertEqual(model.goldenBreeds.map(\.id), ["siamese"])
+    }
+
+    func testNumbersPremiumPuzzlesSeparately() throws {
+        let model = try makeModel()
+        let sp2 = try XCTUnwrap(model.catalog.puzzle(withID: "sp2"))
+        let sp1 = try XCTUnwrap(model.catalog.puzzle(withID: "sp1"))
+        XCTAssertEqual(model.number(of: sp2), 2)
+        XCTAssertEqual(model.nextPuzzle(after: sp1)?.id, "sp2")
+        XCTAssertNil(model.nextPuzzle(after: sp2))
     }
 
     func testResetClearsProgress() throws {

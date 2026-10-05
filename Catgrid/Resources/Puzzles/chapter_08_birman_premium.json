@@ -1,0 +1,215 @@
+{
+  "schemaVersion": 1,
+  "chapterID": "birman",
+  "puzzles": [
+    {
+      "id": "birman-p01",
+      "title": {
+        "en": "Golden Paw",
+        "tr": "Altın Pati"
+      },
+      "palette": {
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        ".yy..yy.",
+        ".yy..yy.",
+        "........",
+        "yy....yy",
+        "yy.yy.yy",
+        "..yyyy..",
+        ".yyyyyy.",
+        "..yyyy.."
+      ]
+    },
+    {
+      "id": "birman-p02",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi"
+      },
+      "palette": {
+        "n": "#D9A0A0",
+        "w": "#FBF8F3"
+      },
+      "pixels": [
+        ".nn..nn.",
+        "nwnnnnnn",
+        "nnnnnnnn",
+        "nnnnnnnn",
+        ".nnnnnn.",
+        "..nnnn..",
+        "...nn...",
+        "........"
+      ]
+    },
+    {
+      "id": "birman-p03",
+      "title": {
+        "en": "Fish Snack",
+        "tr": "Balık Atıştırması"
+      },
+      "palette": {
+        "o": "#C9A227"
+      },
+      "pixels": [
+        "........",
+        "..oo....",
+        "ooooo..o",
+        "o.oooooo",
+        "oooooooo",
+        "ooooo..o",
+        "..oo....",
+        "........"
+      ]
+    },
+    {
+      "id": "birman-p04",
+      "title": {
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak"
+      },
+      "palette": {
+        "o": "#C9A227"
+      },
+      "pixels": [
+        "....ooo...",
+        "...oooooo.",
+        "..oo.oo...",
+        "..ooo..oo.",
+        "..oo.o.ooo",
+        "..o.ooooo.",
+        "...oooo.o.",
+        "...ooooo..",
+        "ooo.......",
+        ".........."
+      ]
+    },
+    {
+      "id": "birman-p05",
+      "title": {
+        "en": "Toy Mouse",
+        "tr": "Oyuncak Fare"
+      },
+      "palette": {
+        "n": "#D9A0A0",
+        "p": "#9AA5B1"
+      },
+      "pixels": [
+        "..........",
+        "...p......",
+        "..nnp.....",
+        "..ppppp...",
+        "..ppppp...",
+        ".ppppppp..",
+        "..pppppn.n",
+        "..pppp..nn",
+        "........n.",
+        ".........."
+      ]
+    },
+    {
+      "id": "birman-p06",
+      "title": {
+        "en": "Portrait",
+        "tr": "Portre"
+      },
+      "palette": {
+        "b": "#F2E6D3",
+        "d": "#6B5544",
+        "e": "#3F7FCF",
+        "w": "#FBF8F3"
+      },
+      "pixels": [
+        "..........",
+        ".d......d.",
+        ".dbbbbbbd.",
+        ".dbbbbbbd.",
+        ".bbeddebb.",
+        ".beeddeeb.",
+        "bbbdwwdbbb",
+        "bbbwwwwbbb",
+        "...wwww...",
+        ".........."
+      ]
+    },
+    {
+      "id": "birman-p07",
+      "title": {
+        "en": "White Gloves",
+        "tr": "Beyaz Eldivenler"
+      },
+      "palette": {
+        "b": "#F2E6D3",
+        "w": "#FBF8F3"
+      },
+      "pixels": [
+        "..bb...bbb..",
+        ".bbbb.bbbbb.",
+        "bbbbbbbbbbb.",
+        "bbbbbbbbbbb.",
+        "bbbbbbbbbbb.",
+        "bbbbbbbbbbb.",
+        "bbbbbbbbbbb.",
+        ".wwwb.bwww..",
+        "wwwwwwwwwww.",
+        "wwwwwwwwwww.",
+        ".wwww.wwww..",
+        "..w.....w..."
+      ]
+    },
+    {
+      "id": "birman-p08",
+      "title": {
+        "en": "Nap Time",
+        "tr": "Şekerleme"
+      },
+      "palette": {
+        "b": "#F2E6D3",
+        "d": "#6B5544"
+      },
+      "pixels": [
+        "............",
+        "d...dbbb....",
+        "ddbbdbbbbb..",
+        "ddbbdbbbbbb.",
+        "ddddddbbbbb.",
+        "d...bbbbbbbb",
+        ".bbbbbbbbbbd",
+        ".bbbbbbbbbdd",
+        "..bbbbbbbbdd",
+        "...dddddbdd.",
+        "...ddddddd..",
+        "....dddddd.."
+      ]
+    },
+    {
+      "id": "birman-p09",
+      "title": {
+        "en": "Lucky Cat",
+        "tr": "Şans Kedisi"
+      },
+      "palette": {
+        "b": "#F2E6D3",
+        "d": "#6B5544",
+        "e": "#3F7FCF",
+        "n": "#D9A0A0",
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        "............",
+        ".dd....ddbb.",
+        ".dddbbdddbb.",
+        ".ddbbbeddbb.",
+        ".bbebbebbbb.",
+        "..bbbbbbbb..",
+        "..nbnnbnbb..",
+        ".bbbbybbb...",
+        ".bbbbbbbb...",
+        ".bbyyyybb...",
+        "..bbyybb....",
+        "...bbbb....."
+      ]
+    }
+  ]
+}

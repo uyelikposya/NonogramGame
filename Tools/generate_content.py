@@ -798,14 +798,14 @@ def motif_plan(breed, count):
     return plan
 
 
-def is_good(pixels):
+def is_good(pixels, max_empty=1):
     solution = [[c != "." for c in row] for row in pixels]
     rows, cols = len(solution), len(solution[0])
     ratio = sum(map(sum, solution)) / (rows * cols)
     if not 0.25 <= ratio <= 0.85:
         return False
     # Resim tuvali doldurmalı: en fazla bir boş satır/sütun
-    if sum(1 for row in solution if not any(row)) > 1 or sum(1 for col in zip(*solution) if not any(col)) > 1:
+    if sum(1 for row in solution if not any(row)) > max_empty or sum(1 for col in zip(*solution) if not any(col)) > max_empty:
         return False
     return solve_logically([clue(r) for r in solution], [clue(c) for c in zip(*solution)]) == solution
 
@@ -861,6 +861,82 @@ def generate_breed(breed, order):
     return puzzles
 
 
+# MARK: - Premium (abonelere özel) bulmacalar
+
+PREMIUM_SIZES = [8, 8, 8, 10, 10, 10, 12, 12, 12]
+GOLDEN_PAW = [".##..##.", ".##..##.", "........", "##....##", "##.##.##", "..####..", ".######.", "..####.."]
+PREMIUM_TITLE = ("Golden", "Altın")
+
+
+def premium_plan(breed):
+    """9 premium bulmaca: 8x8'de pati ve küçük nesneler, 10x10'da oyuncaklar ve portre,
+    12x12'de türe özgü sahne, şekerleme ve şans kedisi."""
+    special = next((m for m in breed["specials"] if m not in ("portrait", "lucky", "sleeping")), "sitting")
+    return ["paw", "heart", "fish", "yarn", "mouse", "portrait", special, "sleeping", "lucky"]
+
+
+def square_box(box, stretch):
+    """Kısa kenarı uzun kenarın 1/stretch'ine kadar büyütür: kare ızgarada çizim en fazla
+    `stretch` kat esner, kalan fark kenar boşluğu olur."""
+    x0, y0, x1, y1 = box
+    w, h = x1 - x0, y1 - y0
+    cx, cy = (x0 + x1) / 2, (y0 + y1) / 2
+    if w >= h:
+        h = max(h, w / stretch)
+    else:
+        w = max(w, h / stretch)
+    return cx - w / 2, cy - h / 2, cx + w / 2, cy + h / 2
+
+
+def generate_premium(breed):
+    puzzles = []
+    used = set()
+    excluded = set(breed.get("exclude", []))
+    fallbacks = ["fishbone", "bowl", "sitting", "box", "moon", "walking", "teacup"]
+    usage = {}
+    for number, (n, motif) in enumerate(zip(PREMIUM_SIZES, premium_plan(breed)), 1):
+        if motif == "paw":
+            # Elle çizilmiş klasik pati izi, altın renkte (8x8, mantıkla çözülebilir)
+            pixels = [row.replace("#", "y") for row in GOLDEN_PAW]
+            assert len(pixels) == n and is_good(pixels, max_empty=2)
+            used.add(silhouette(pixels))
+            puzzles.append(make_puzzle(f"{breed['id']}-p{number:02d}", "Golden Paw", "Altın Pati", pixels, breed))
+            continue
+        found = None
+        ordered = sorted((m for m in fallbacks if m != motif), key=lambda m: usage.get(m, 0))
+        for name in [motif] + ordered:
+            if name in excluded or n < MIN_SIZE.get(name, 0):
+                continue
+            draw, en, tr = MOTIFS[name]
+            shapes = draw({**breed, "size": n})
+            box = bounds(shapes)
+            rng = random.Random(f"{breed['id']}-premium-{number}-{name}")
+            for attempt in range(48):
+                jitter = attempt > 5
+                stretch = (1.0, 1.15, 1.3, 1.45, 1.6, 1.8)[attempt % 6]
+                pixels = rasterize(
+                    shapes, square_box(box, stretch), n, n,
+                    mirror=(attempt // 6) % 2 == 1,
+                    scale=rng.uniform(0.9, 1.0) if jitter else 1.0,
+                    dx=rng.uniform(-0.04, 0.04) if jitter else 0.0,
+                    dy=rng.uniform(-0.04, 0.04) if jitter else 0.0,
+                )
+                key = silhouette(pixels)
+                # Kare ızgarada uzun motifler (balık) için iki boş satır/sütuna izin var
+                if key not in used and is_good(pixels, max_empty=2):
+                    found = (en, tr, pixels)
+                    used.add(key)
+                    usage[name] = usage.get(name, 0) + 1
+                    break
+            if found:
+                break
+        if not found:
+            raise SystemExit(f"{breed['id']} premium #{number} ({n}x{n}) için çözülebilir bulmaca bulunamadı")
+        en, tr, pixels = found
+        puzzles.append(make_puzzle(f"{breed['id']}-p{number:02d}", en, tr, pixels, breed))
+    return puzzles
+
+
 def silhouette(pixels):
     return tuple("".join("#" if c != "." else "." for c in row) for row in pixels)
 
@@ -900,8 +976,12 @@ def main():
         })
         puzzles = generate_breed(breed, order)
         write_json(PUZZLES / f"{file}.json", {"schemaVersion": 1, "chapterID": breed["id"], "puzzles": puzzles})
+        premium = generate_premium(breed)
+        chapters[-1]["premiumFile"] = f"{file}_premium"
+        write_json(PUZZLES / f"{file}_premium.json", {"schemaVersion": 1, "chapterID": breed["id"], "puzzles": premium})
         sizes = sorted({len(p["pixels"]) for p in puzzles})
-        print(f"✓ {breed['id']}: {len(puzzles)} bulmaca, {sizes[0]}x{sizes[0]} – {sizes[-1]}x{sizes[-1]}")
+        print(f"✓ {breed['id']}: {len(puzzles)} bulmaca, {sizes[0]}x{sizes[0]} – {sizes[-1]}x{sizes[-1]}"
+              f" + {len(premium)} premium ({', '.join(p['title']['en'] for p in premium)})")
     catalog["chapters"] = chapters
     write_json(catalog_path, catalog)
 

@@ -20,6 +20,9 @@ public struct Chapter: Identifiable, Hashable, Sendable {
     public let portrait: Matrix<RGBColor?>?
     /// Tür tamamlanınca kazanılan kart; eğitimde yok.
     public let card: BreedCard?
+    /// Yalnızca abonelere açık bulmacalar; hepsi çözülünce türün Altın Kartı kazanılır.
+    /// Normal ilerleme sırasının (kilitler, "Devam Et") parçası değildir.
+    public let premiumPuzzles: [Puzzle]
 
     public init(
         id: String,
@@ -30,7 +33,8 @@ public struct Chapter: Identifiable, Hashable, Sendable {
         expectedPuzzleCount: Int,
         puzzles: [Puzzle],
         portrait: Matrix<RGBColor?>? = nil,
-        card: BreedCard? = nil
+        card: BreedCard? = nil,
+        premiumPuzzles: [Puzzle] = []
     ) {
         self.id = id
         self.kind = kind
@@ -41,6 +45,7 @@ public struct Chapter: Identifiable, Hashable, Sendable {
         self.puzzles = puzzles
         self.portrait = portrait
         self.card = card
+        self.premiumPuzzles = premiumPuzzles
     }
 }
 
@@ -55,6 +60,7 @@ public struct LevelCatalog: Sendable {
     public let orderedPuzzles: [Puzzle]
     private let indexByPuzzleID: [String: Int]
     private let chapterIDByPuzzleID: [String: String]
+    private let premiumByID: [String: Puzzle]
 
     public init(chapters: [Chapter], defaultRules: GameRules = .classic) throws {
         self.chapters = chapters
@@ -70,12 +76,28 @@ public struct LevelCatalog: Sendable {
                 chapterIDs[puzzle.id] = chapter.id
             }
         }
+        var premium: [String: Puzzle] = [:]
+        for chapter in chapters {
+            for puzzle in chapter.premiumPuzzles {
+                guard indexes[puzzle.id] == nil, premium[puzzle.id] == nil else {
+                    throw CatalogError.duplicatePuzzleID(puzzle.id)
+                }
+                premium[puzzle.id] = puzzle
+                chapterIDs[puzzle.id] = chapter.id
+            }
+        }
         self.indexByPuzzleID = indexes
         self.chapterIDByPuzzleID = chapterIDs
+        self.premiumByID = premium
     }
 
     public func puzzle(withID id: String) -> Puzzle? {
-        index(of: id).map { orderedPuzzles[$0] }
+        index(of: id).map { orderedPuzzles[$0] } ?? premiumByID[id]
+    }
+
+    /// Abonelere özel (Altın) bulmaca mı?
+    public func isPremium(_ puzzleID: String) -> Bool {
+        premiumByID[puzzleID] != nil
     }
 
     public func index(of puzzleID: String) -> Int? {
@@ -86,7 +108,15 @@ public struct LevelCatalog: Sendable {
         chapterIDByPuzzleID[puzzleID].flatMap { id in chapters.first { $0.id == id } }
     }
 
+    /// Sıradaki bulmaca. Premium bulmacalarda aynı türün sıradaki premium bulmacası.
     public func puzzle(after puzzleID: String) -> Puzzle? {
+        if isPremium(puzzleID) {
+            guard let premium = chapter(containing: puzzleID)?.premiumPuzzles,
+                  let index = premium.firstIndex(where: { $0.id == puzzleID }),
+                  index + 1 < premium.count
+            else { return nil }
+            return premium[index + 1]
+        }
         guard let index = index(of: puzzleID), index + 1 < orderedPuzzles.count else { return nil }
         return orderedPuzzles[index + 1]
     }

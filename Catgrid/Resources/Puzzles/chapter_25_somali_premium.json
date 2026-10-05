@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "chapterID": "somali",
+  "puzzles": [
+    {
+      "id": "somali-p01",
+      "title": {
+        "en": "Golden Paw",
+        "tr": "Altın Pati"
+      },
+      "palette": {
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        ".yy..yy.",
+        ".yy..yy.",
+        "........",
+        "yy....yy",
+        "yy.yy.yy",
+        "..yyyy..",
+        ".yyyyyy.",
+        "..yyyy.."
+      ]
+    },
+    {
+      "id": "somali-p02",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi"
+      },
+      "palette": {
+        "n": "#C9705A",
+        "w": "#F2D7B6"
+      },
+      "pixels": [
+        ".nn..nn.",
+        "nwnnnnnn",
+        "nnnnnnnn",
+        "nnnnnnnn",
+        ".nnnnnn.",
+        "..nnnn..",
+        "...nn...",
+        "........"
+      ]
+    },
+    {
+      "id": "somali-p03",
+      "title": {
+        "en": "Fish Snack",
+        "tr": "Balık Atıştırması"
+      },
+      "palette": {
+        "o": "#E0B66A"
+      },
+      "pixels": [
+        "........",
+        "..oo....",
+        "ooooo..o",
+        "o.oooooo",
+        "oooooooo",
+        "ooooo..o",
+        "..oo....",
+        "........"
+      ]
+    },
+    {
+      "id": "somali-p04",
+      "title": {
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak"
+      },
+      "palette": {
+        "o": "#E0B66A"
+      },
+      "pixels": [
+        "....oooo..",
+        "...o.oooo.",
+        "..oo.oo...",
+        "..ooo..ooo",
+        "..oo.o.ooo",
+        "..o.oo.oo.",
+        "...oooo.o.",
+        "..oooooo..",
+        "oo........",
+        ".........."
+      ]
+    },
+    {
+      "id": "somali-p05",
+      "title": {
+        "en": "Toy Mouse",
+        "tr": "Oyuncak Fare"
+      },
+      "palette": {
+        "n": "#C9705A",
+        "p": "#7D5A44"
+      },
+      "pixels": [
+        "..........",
+        "...p......",
+        "..nnp.....",
+        "..ppppp...",
+        "..ppppp...",
+        ".ppppppp..",
+        "..pppppn.n",
+        "..pppp..nn",
+        "........n.",
+        ".........."
+      ]
+    },
+    {
+      "id": "somali-p06",
+      "title": {
+        "en": "Portrait",
+        "tr": "Portre"
+      },
+      "palette": {
+        "b": "#C8743F",
+        "d": "#8C4A24",
+        "e": "#9CB84A"
+      },
+      "pixels": [
+        "..........",
+        ".b......b.",
+        ".bbbbbbbb.",
+        "bbbbddbbbb",
+        ".bbbddbbb.",
+        ".beebbeeb.",
+        "bbbebbebbb",
+        "bbbbbbbbbb",
+        "b.bbbbbb.b",
+        "...bbbb..."
+      ]
+    },
+    {
+      "id": "somali-p07",
+      "title": {
+        "en": "Mighty Tail",
+        "tr": "Görkemli Kuyruk"
+      },
+      "palette": {
+        "b": "#C8743F",
+        "d": "#8C4A24"
+      },
+      "pixels": [
+        "............",
+        ".b...bb.....",
+        "bbbbbbb.dd..",
+        "bbbbbbb.ddd.",
+        ".bbbbb...ddd",
+        "..bbbb...ddd",
+        "...bbbb..dbd",
+        "..bbbdbb.dbd",
+        "..bbbbbb.dbd",
+        "..bbbbbbdbd.",
+        "...bbbddbdd.",
+        "....b.ddd..."
+      ]
+    },
+    {
+      "id": "somali-p08",
+      "title": {
+        "en": "Nap Time",
+        "tr": "Şekerleme"
+      },
+      "palette": {
+        "b": "#C8743F",
+        "d": "#8C4A24"
+      },
+      "pixels": [
+        "............",
+        "b....b......",
+        "bb...b......",
+        "bbbbbbbbbb..",
+        "bbbbbbdddbb.",
+        "bbbbbbbbbbb.",
+        ".bbbbbbbbbbb",
+        "..bbbbbbbbbb",
+        "...bbbbbbbbb",
+        "...bbbbbbbb.",
+        "...bbbbbbb..",
+        ".......bb..."
+      ]
+    },
+    {
+      "id": "somali-p09",
+      "title": {
+        "en": "Lucky Cat",
+        "tr": "Şans Kedisi"
+      },
+      "palette": {
+        "b": "#C8743F",
+        "d": "#8C4A24",
+        "e": "#9CB84A",
+        "o": "#E0B66A",
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        "............",
+        ".bb.....bbb.",
+        ".bbbbbbbbbb.",
+        ".bbbdddbbbb.",
+        "..bbebebbbb.",
+        "..bbebbbbb..",
+        "...bbbbbbb..",
+        "..bbbybbb...",
+        "..bbbbbbb...",
+        "..bbooobb...",
+        "..bbyyybb...",
+        "...bbbbb...."
+      ]
+    }
+  ]
+}

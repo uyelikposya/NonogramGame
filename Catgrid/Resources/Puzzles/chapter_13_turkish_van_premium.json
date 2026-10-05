@@ -1,0 +1,219 @@
+{
+  "schemaVersion": 1,
+  "chapterID": "turkish-van",
+  "puzzles": [
+    {
+      "id": "turkish-van-p01",
+      "title": {
+        "en": "Golden Paw",
+        "tr": "Altın Pati"
+      },
+      "palette": {
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        ".yy..yy.",
+        ".yy..yy.",
+        "........",
+        "yy....yy",
+        "yy.yy.yy",
+        "..yyyy..",
+        ".yyyyyy.",
+        "..yyyy.."
+      ]
+    },
+    {
+      "id": "turkish-van-p02",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi"
+      },
+      "palette": {
+        "n": "#E8A3A8",
+        "w": "#FBF8F3"
+      },
+      "pixels": [
+        ".nn..nn.",
+        "nwnnnnnn",
+        "nnnnnnnn",
+        "nnnnnnnn",
+        ".nnnnnn.",
+        "..nnnn..",
+        "...nn...",
+        "........"
+      ]
+    },
+    {
+      "id": "turkish-van-p03",
+      "title": {
+        "en": "Fish Snack",
+        "tr": "Balık Atıştırması"
+      },
+      "palette": {
+        "o": "#E07A5F"
+      },
+      "pixels": [
+        "........",
+        "..oo....",
+        "ooooo..o",
+        "o.oooooo",
+        "oooooooo",
+        "ooooo..o",
+        "..oo....",
+        "........"
+      ]
+    },
+    {
+      "id": "turkish-van-p04",
+      "title": {
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak"
+      },
+      "palette": {
+        "o": "#E07A5F"
+      },
+      "pixels": [
+        "...ooooo..",
+        "..oo.oooo.",
+        "..oo.oo...",
+        "..ooo..ooo",
+        "..oo.o.ooo",
+        "..o.oo.oo.",
+        "...oooo.o.",
+        "..oooooo..",
+        "oo........",
+        ".........."
+      ]
+    },
+    {
+      "id": "turkish-van-p05",
+      "title": {
+        "en": "Toy Mouse",
+        "tr": "Oyuncak Fare"
+      },
+      "palette": {
+        "n": "#E8A3A8",
+        "p": "#9AA5B1"
+      },
+      "pixels": [
+        "..........",
+        "...p......",
+        "..nnp.....",
+        "..ppppp...",
+        "..ppppp...",
+        ".ppppppp..",
+        "..pppppn.n",
+        "..pppp..nn",
+        "........n.",
+        ".........."
+      ]
+    },
+    {
+      "id": "turkish-van-p06",
+      "title": {
+        "en": "Portrait",
+        "tr": "Portre"
+      },
+      "palette": {
+        "b": "#EFE9E0",
+        "d": "#C2683A",
+        "e": "#E1B33F",
+        "f": "#4F86C6"
+      },
+      "pixels": [
+        "..........",
+        "ddddbbdddd",
+        "ddddbbdddd",
+        "ddddbbdddd",
+        "bbeebbffbb",
+        "bbeebbffbb",
+        "bbbbbbbbbb",
+        "bbbbbbbbbb",
+        ".bbbbbbbb.",
+        "...bbbb..."
+      ]
+    },
+    {
+      "id": "turkish-van-p07",
+      "title": {
+        "en": "Lake Swimmer",
+        "tr": "Göl Yüzücüsü"
+      },
+      "palette": {
+        "b": "#EFE9E0",
+        "d": "#C2683A",
+        "e": "#E1B33F",
+        "f": "#4F86C6",
+        "u": "#4A90C2"
+      },
+      "pixels": [
+        "............",
+        "..d......d..",
+        "..dddbbddd..",
+        "..dddbbddd..",
+        "..bdebbfdb..",
+        "..bbebbfbb..",
+        "..bbbbbbbb..",
+        "...bbbbbb...",
+        ".uuuuuuuuuu.",
+        "u..uu..uu..u",
+        "uuuuuuuuuuuu",
+        "............"
+      ]
+    },
+    {
+      "id": "turkish-van-p08",
+      "title": {
+        "en": "Nap Time",
+        "tr": "Şekerleme"
+      },
+      "palette": {
+        "b": "#EFE9E0",
+        "d": "#C2683A"
+      },
+      "pixels": [
+        "............",
+        "d...dbbb....",
+        "ddbbddbbbb..",
+        "ddbbddbbbbb.",
+        "ddddddbbbbbb",
+        "d....dbbbbbb",
+        ".bbbbbbbbbbb",
+        ".bbbbbbbbbbd",
+        "..bbbbbbbbdd",
+        "...bbbbbbbd.",
+        "...dddddddd.",
+        ".....ddddd.."
+      ]
+    },
+    {
+      "id": "turkish-van-p09",
+      "title": {
+        "en": "Lucky Cat",
+        "tr": "Şans Kedisi"
+      },
+      "palette": {
+        "b": "#EFE9E0",
+        "d": "#C2683A",
+        "e": "#E1B33F",
+        "f": "#4F86C6",
+        "n": "#E8A3A8",
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        "............",
+        ".dd....ddbb.",
+        ".dddbbdddbb.",
+        ".ddbbbfddbb.",
+        ".bbebbfbbbb.",
+        "..bbbbbbbb..",
+        "..nbnnbnbb..",
+        ".bbbbybbb...",
+        ".bbbbbbbb...",
+        ".bbyyyybb...",
+        "..bbyybb....",
+        "...bbbb....."
+      ]
+    }
+  ]
+}

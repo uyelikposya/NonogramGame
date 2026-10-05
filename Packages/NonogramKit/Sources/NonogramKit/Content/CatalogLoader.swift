@@ -23,6 +23,14 @@ public enum CatalogLoader {
                 }
                 puzzles = file.puzzles
             }
+            var premium: [Puzzle] = []
+            if let name = entry.premiumFile, let data = try chapterData(name) {
+                let file = try decoder.decode(ChapterFile.self, from: data)
+                guard file.chapterID == entry.id else {
+                    throw CatalogError.chapterMismatch(expected: entry.id, found: file.chapterID)
+                }
+                premium = file.puzzles
+            }
             return Chapter(
                 id: entry.id,
                 kind: entry.kind,
@@ -32,7 +40,8 @@ public enum CatalogLoader {
                 expectedPuzzleCount: entry.expectedPuzzleCount ?? puzzles.count,
                 puzzles: puzzles,
                 portrait: try entry.portrait?.artwork(),
-                card: entry.card
+                card: entry.card,
+                premiumPuzzles: premium
             )
         }
         return try LevelCatalog(chapters: chapters, defaultRules: manifest.defaultRules ?? .classic)
@@ -58,6 +67,8 @@ struct CatalogManifest: Decodable {
         let subtitle: LocalizedText?
         let accentColor: String?
         let file: String
+        /// Abonelere özel bulmacaların dosyası (isteğe bağlı).
+        let premiumFile: String?
         /// İsteğe bağlı: içerik hazırlanırken planlanan sayı. Yoksa dosyadaki bulmaca sayısı kullanılır.
         let expectedPuzzleCount: Int?
         let portrait: PixelArt.Payload?

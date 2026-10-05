@@ -48,6 +48,21 @@ public struct Progression: Sendable {
         catalog.orderedPuzzles.first { isUnlocked($0.id) && !isCompleted($0.id) }
     }
 
+    /// Premium bulmaca: tür açıldıysa ve (ilkiyse ya da) bir önceki premium bulmaca çözüldüyse açık.
+    /// Abonelik kontrolü uygulamadadır; bu yalnızca sıra kuralı.
+    public func isPremiumUnlocked(_ puzzleID: String) -> Bool {
+        guard let chapter = catalog.chapter(containing: puzzleID),
+              let index = chapter.premiumPuzzles.firstIndex(where: { $0.id == puzzleID }),
+              isUnlocked(chapter)
+        else { return false }
+        if index == 0 || isCompleted(puzzleID) { return true }
+        return isCompleted(chapter.premiumPuzzles[index - 1].id)
+    }
+
+    public func completedPremiumCount(in chapter: Chapter) -> Int {
+        chapter.premiumPuzzles.filter { isCompleted($0.id) }.count
+    }
+
     public func completedCount(in chapter: Chapter) -> Int {
         chapter.puzzles.filter { isCompleted($0.id) }.count
     }

@@ -9,6 +9,7 @@ Kontroller:
   - her bulmacanın tahmin yapmadan (yalnızca satır mantığıyla) çözülebilmesi
     -> bu, çözümün benzersiz olduğunu da garanti eder
   - eğitimde tam 10, her kedi türünde en az 15 bulmaca
+  - her türde 9 premium bulmaca: üçer tane 8x8, 10x10, 12x12; biri pati
 
 Satır çözücü, NonogramKit/Engine/LineSolver.swift ile aynı algoritmadır.
 """
@@ -18,6 +19,7 @@ import sys
 from pathlib import Path
 
 MIN_PUZZLES = {"tutorial": 10, "breed": 15}
+PREMIUM_SIZES = ["8x8"] * 3 + ["10x10"] * 3 + ["12x12"] * 3
 HEX = re.compile(r"^#?[0-9A-Fa-f]{6}$")
 LESSONS = {
     "tapToFill", "fullLines", "emptyLines", "markWithCross", "multipleBlocks",
@@ -171,6 +173,30 @@ def main():
         if count < minimum:
             errors.append(f"{entry['id']}: {count} bulmaca (en az {minimum} olmalı)")
         print(f"✓ {entry['id']}: {count} bulmaca, boyutlar: {', '.join(sorted(set(filter(None, sizes))))}")
+
+        if entry["kind"] != "breed":
+            continue
+        if "premiumFile" not in entry:
+            errors.append(f"{entry['id']}: premium bulmaca dosyası (premiumFile) yok")
+            continue
+        path = root / f"{entry['premiumFile']}.json"
+        if not path.exists():
+            errors.append(f"{entry['id']}: {path.name} bulunamadı")
+            continue
+        premium = json.loads(path.read_text())
+        if premium.get("chapterID") != entry["id"]:
+            errors.append(f"{path.name}: chapterID {premium.get('chapterID')} != {entry['id']}")
+        sizes = []
+        for puzzle in premium["puzzles"]:
+            if puzzle.get("id") in seen:
+                errors.append(f"tekrarlanan id {puzzle.get('id')}")
+            seen.add(puzzle.get("id"))
+            sizes.append(validate_puzzle(puzzle, errors))
+        if sorted(filter(None, sizes), key=lambda x: int(x.split("x")[0])) != PREMIUM_SIZES:
+            errors.append(f"{entry['id']}: premium boyutları {sizes} (üçer tane 8x8, 10x10, 12x12 olmalı)")
+        if not any("Paw" in p.get("title", {}).get("en", "") for p in premium["puzzles"]):
+            errors.append(f"{entry['id']}: premium bölümlerde pati yok")
+        print(f"  ★ {len(premium['puzzles'])} premium")
 
     for warning in warnings:
         print(f"! {warning}")

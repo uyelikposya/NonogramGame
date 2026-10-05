@@ -17,7 +17,9 @@ final class AdCoordinator {
     static func live() -> AdCoordinator {
         // Arayüz testleri reklam/onay pencereleri olmadan çalışabilsin
         if ProcessInfo.processInfo.arguments.contains("-disableAds") {
-            return AdCoordinator(service: NoAdService())
+            let coordinator = AdCoordinator(service: NoAdService())
+            coordinator.showsPremiumPromo = false
+            return coordinator
         }
         #if canImport(GoogleMobileAds)
         return AdCoordinator(service: GoogleAdService())
@@ -26,8 +28,12 @@ final class AdCoordinator {
         #endif
     }
 
-    /// "Reklamları Kaldır" satın alındıysa bölümler arası reklam gösterilmez.
+    /// Premium aboneyse bölümler arası reklam (ve Premium tanıtımı) gösterilmez.
     var interstitialsDisabled = false
+
+    /// Birkaç reklamdan sonra açılan Premium tanıtım ekranı (RootView sunar).
+    var isPremiumPromoPresented = false
+    var showsPremiumPromo = true
 
     var isRewardedReady: Bool { service.isRewardedReady }
     var isPrivacyOptionsRequired: Bool { service.isPrivacyOptionsRequired }
@@ -47,10 +53,15 @@ final class AdCoordinator {
             return
         }
         Task {
-            if await service.showInterstitial() {
+            let shown = await service.showInterstitial()
+            if shown {
                 policy.recordInterstitialShown(now: now())
             }
             action()
+            if shown, showsPremiumPromo, policy.isPremiumPromoDue {
+                policy.recordPremiumPromoShown()
+                isPremiumPromoPresented = true
+            }
         }
     }
 

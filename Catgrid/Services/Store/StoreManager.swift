@@ -1,24 +1,25 @@
 import Foundation
 import StoreKit
 
-/// "Reklamsız" otomatik yenilenen abonelik (aylık / yıllık), StoreKit 2.
+/// "Catgrid Premium" otomatik yenilenen abonelik (aylık / yıllık), StoreKit 2.
 ///
-/// Abonelik sürdükçe bölümler arası geçiş reklamları gösterilmez; oyuncunun isteğiyle
+/// Abonelik sürdükçe: bölümler arası geçiş reklamları gösterilmez, her türün 9 Altın
+/// bulmacası açılır ve bunları bitiren Altın Kartı kazanır; oyuncunun isteğiyle
 /// izlenen ödüllü reklam (+1 pati) seçenek olarak kalır. Satın alma ekranı Apple'ın
 /// `SubscriptionStoreView`'ıdır (fiyat, süre, yenileme ve iptal bilgisi App Store
 /// kurallarına uygun gösterilir).
 @MainActor
 @Observable
 final class StoreManager {
-    /// App Store Connect'te aynı abonelik grubunda ("Ad-Free") tanımlanmalı.
-    static let monthlyProductID = "com.catgridcollection.nonogram.adfree.monthly"
-    static let yearlyProductID = "com.catgridcollection.nonogram.adfree.yearly"
+    /// App Store Connect'te aynı abonelik grubunda ("Premium") tanımlanmalı.
+    static let monthlyProductID = "com.catgridcollection.nonogram.premium.monthly"
+    static let yearlyProductID = "com.catgridcollection.nonogram.premium.yearly"
     static let productIDs = [yearlyProductID, monthlyProductID]
-    static let cacheKey = "store.adsRemoved"
+    static let cacheKey = "store.premium"
 
     /// Son bilinen durum önbellekte tutulur ki uygulama açılır açılmaz (çevrimdışı da) doğru olsun.
-    private(set) var isAdsRemoved: Bool {
-        didSet { defaults.set(isAdsRemoved, forKey: Self.cacheKey) }
+    private(set) var isPremium: Bool {
+        didSet { defaults.set(isPremium, forKey: Self.cacheKey) }
     }
 
     /// Etkin aboneliğin ürünü (ayarlarda "Aylık"/"Yıllık" göstermek için).
@@ -32,7 +33,7 @@ final class StoreManager {
 
     init(defaults: UserDefaults = .standard) {
         self.defaults = defaults
-        self.isAdsRemoved = defaults.bool(forKey: Self.cacheKey)
+        self.isPremium = defaults.bool(forKey: Self.cacheKey)
     }
 
     func start() async {
@@ -70,7 +71,7 @@ final class StoreManager {
                 active = transaction
             }
         }
-        isAdsRemoved = active != nil
+        isPremium = active != nil
         activeProductID = active?.productID
         expirationDate = active?.expirationDate
         willAutoRenew = await Self.willAutoRenew(active)

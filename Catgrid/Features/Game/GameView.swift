@@ -6,10 +6,19 @@ import SwiftUI
 @MainActor
 struct GameScreen: View {
     @Environment(AppModel.self) private var model
+    @Environment(StoreManager.self) private var store
     let puzzleID: String
 
     var body: some View {
-        if let puzzle = model.catalog.puzzle(withID: puzzleID) {
+        if model.catalog.isPremium(puzzleID), !store.isPremium {
+            // Abonelik bitmişse Altın bulmacalar kapanır (kazanılan kartlar kalır)
+            ContentUnavailableView(
+                "Premium puzzle",
+                systemImage: "crown.fill",
+                description: Text("Golden puzzles are part of Catgrid Premium.")
+            )
+            .themedScreen()
+        } else if let puzzle = model.catalog.puzzle(withID: puzzleID) {
             GameView(
                 puzzle: puzzle,
                 rules: model.catalog.rules(for: puzzle),
@@ -36,7 +45,7 @@ struct GameView: View {
     @State private var flashingCell: GridPosition?
     @State private var completionResult: CompletionResult?
     /// Bu bulmacayla bir türün tümü çözüldüyse kazanılan kart.
-    @State private var newCardChapter: Chapter?
+    @State private var newCard: CardSelection?
     /// Küçük kedinin o an söylediği (ipucu).
     @State private var companionLine: CompanionLine?
     @State private var companionLineID = 0
@@ -94,13 +103,22 @@ struct GameView: View {
             viewModel.onSolved = { completion in
                 let chapter = model.catalog.chapter(containing: completion.puzzleID)
                 let wasCollected = chapter.map { model.isCollected($0) } ?? true
+                let wasGolden = chapter.map { model.isGoldenCollected($0) } ?? true
                 completionResult = model.record(completion)
                 ads.puzzleCompleted(isTutorial: isTutorial)
-                if let chapter, chapter.card != nil, !wasCollected, model.isCollected(chapter) {
+                var earned: CardSelection?
+                if let chapter, chapter.card != nil {
+                    if !wasGolden, model.isGoldenCollected(chapter) {
+                        earned = CardSelection(chapter: chapter, isGolden: true)
+                    } else if !wasCollected, model.isCollected(chapter) {
+                        earned = CardSelection(chapter: chapter, isGolden: false)
+                    }
+                }
+                if let earned {
                     // Önce kedi resmi ortaya çıksın, sonra kart
                     Task {
                         try? await Task.sleep(for: .seconds(1.4))
-                        newCardChapter = chapter
+                        newCard = earned
                         audio.play(.card)
                     }
                 }
@@ -117,8 +135,8 @@ struct GameView: View {
             viewModel.stop()
             persistProgress()
         }
-        .sheet(item: $newCardChapter) { chapter in
-            CardDetailSheet(chapter: chapter, isNewCard: true)
+        .sheet(item: $newCard) { selection in
+            CardDetailSheet(chapter: selection.chapter, isNewCard: true, isGolden: selection.isGolden)
         }
         // Uygulama arka plana geçince (ve kapatılmadan önce) yarım oyun kaydedilir
         .onChange(of: scenePhase) { _, phase in

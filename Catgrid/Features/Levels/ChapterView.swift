@@ -6,8 +6,10 @@ import SwiftUI
 struct ChapterView: View {
     @Environment(AppModel.self) private var model
     @Environment(Router.self) private var router
+    @Environment(StoreManager.self) private var store
     @Environment(\.appTheme) private var theme
     let chapterID: String
+    @State private var isShowingPaywall = false
 
     private let columns = [GridItem(.adaptive(minimum: 72), spacing: 12)]
 
@@ -54,15 +56,113 @@ struct ChapterView: View {
                             .disabled(state == .locked)
                         }
                     }
+
+                    if !chapter.premiumPuzzles.isEmpty {
+                        if store.isPremium {
+                            premiumSection(chapter, progression: progression)
+                        } else {
+                            // Abone olmayanlar bulmacaları görmez; yalnızca kısa bir tanıtım
+                            PremiumTeaser { isShowingPaywall = true }
+                        }
+                    }
                 }
                 .padding(20)
             }
             .themedScreen()
             .screenTitle(verbatim: chapter.title.resolved)
+            .sheet(isPresented: $isShowingPaywall) {
+                PremiumPaywall()
+            }
         } else {
             ContentUnavailableView("Chapter not found", systemImage: "questionmark.circle")
                 .themedScreen()
         }
+    }
+}
+
+extension ChapterView {
+    /// Abonelere özel 9 Altın bulmaca; hepsi çözülünce türün Altın Kartı.
+    private func premiumSection(_ chapter: Chapter, progression: Progression) -> some View {
+        let solved = progression.completedPremiumCount(in: chapter)
+        return VStack(alignment: .leading, spacing: 12) {
+            HStack(spacing: 8) {
+                Image(systemName: "crown.fill")
+                    .foregroundStyle(Gold.deep)
+                Text("Golden Puzzles")
+                    .font(.title3.bold())
+                    .foregroundStyle(theme.textPrimary)
+                Spacer()
+                Text("\(solved) of \(chapter.premiumPuzzles.count) solved")
+                    .font(.subheadline)
+                    .foregroundStyle(theme.textSecondary)
+            }
+            Text(model.isGoldenCollected(chapter)
+                 ? LocalizedStringKey("You won the Golden Card of this breed!")
+                 : LocalizedStringKey("Solve all golden puzzles to win this breed's Golden Card."))
+                .font(.subheadline)
+                .foregroundStyle(theme.textSecondary)
+
+            LazyVGrid(columns: columns, spacing: 12) {
+                ForEach(Array(chapter.premiumPuzzles.enumerated()), id: \.element.id) { offset, puzzle in
+                    let state = PuzzleTile.TileState(
+                        isCompleted: progression.isCompleted(puzzle.id),
+                        isUnlocked: progression.isPremiumUnlocked(puzzle.id)
+                    )
+                    Button {
+                        router.push(.game(puzzleID: puzzle.id))
+                    } label: {
+                        PuzzleTile(
+                            puzzle: puzzle,
+                            number: offset + 1,
+                            state: state,
+                            isInProgress: model.progress.hasSavedGame(for: puzzle.id),
+                            isGolden: true
+                        )
+                    }
+                    .buttonStyle(PressableButtonStyle())
+                    .disabled(state == .locked)
+                }
+            }
+        }
+        .padding(.top, 8)
+        .accessibilityIdentifier("chapter.premium")
+    }
+}
+
+/// Abone olmayanlara bölüm ekranında: "Bu türün 9 Altın bulmacası Premium'da".
+@MainActor
+struct PremiumTeaser: View {
+    @Environment(\.appTheme) private var theme
+    let action: () -> Void
+
+    var body: some View {
+        Button(action: action) {
+            HStack(spacing: 12) {
+                Image(systemName: "crown.fill")
+                    .font(.title3)
+                    .foregroundStyle(Gold.deep)
+                VStack(alignment: .leading, spacing: 2) {
+                    Text("Golden Puzzles")
+                        .font(.headline)
+                        .foregroundStyle(theme.textPrimary)
+                    Text("9 extra puzzles and a Golden Card with Premium")
+                        .font(.caption)
+                        .foregroundStyle(theme.textSecondary)
+                }
+                Spacer(minLength: 4)
+                Image(systemName: "lock.fill")
+                    .foregroundStyle(Gold.deep)
+            }
+            .padding(14)
+            .background(RoundedRectangle(cornerRadius: 16, style: .continuous).fill(theme.surface))
+            .overlay(
+                RoundedRectangle(cornerRadius: 16, style: .continuous)
+                    .strokeBorder(Gold.foil, lineWidth: 2)
+            )
+        }
+        .buttonStyle(PressableButtonStyle())
+        .padding(.top, 8)
+        .accessibilityIdentifier("chapter.premiumTeaser")
     }
 }
 
@@ -84,6 +184,8 @@ struct PuzzleTile: View {
     let state: TileState
     /// Yarım bırakılmış: köşede küçük bir rozet gösterilir.
     var isInProgress = false
+    /// Abonelere özel Altın bulmaca: altın zemin/çerçeve.
+    var isGolden = false
 
     var body: some View {
         let shape = RoundedRectangle(cornerRadius: 16, style: .continuous)
@@ -95,17 +197,29 @@ struct PuzzleTile: View {
             case .playable:
                 Text(verbatim: "\(number)")
                     .font(.title2.bold())
-                    .foregroundStyle(theme.onAccent)
+                    .foregroundStyle(isGolden ? Gold.ink : theme.onAccent)
             case .locked:
-                Image(systemName: "lock.fill")
-                    .foregroundStyle(theme.textSecondary.opacity(0.6))
+                Image(systemName: isGolden ? "crown.fill" : "lock.fill")
+                    .foregroundStyle(isGolden ? Gold.deep.opacity(0.6) : theme.textSecondary.opacity(0.6))
             }
         }
         .frame(maxWidth: .infinity)
         .aspectRatio(1, contentMode: .fit)
         // Çözülmüş karo nötr yüzey renginde: renkli resim zeminle karışmasın
-        .background(shape.fill(state == .playable ? theme.accent : theme.surface))
-        .overlay(shape.strokeBorder(theme.separator, lineWidth: state == .playable ? 0 : 1))
+        .background {
+            if isGolden && state == .playable {
+                shape.fill(Gold.foil)
+            } else {
+                shape.fill(state == .playable ? theme.accent : theme.surface)
+            }
+        }
+        .overlay {
+            if isGolden {
+                shape.strokeBorder(Gold.foil, lineWidth: state == .locked ? 1.5 : 2.5)
+            } else {
+                shape.strokeBorder(theme.separator, lineWidth: state == .playable ? 0 : 1)
+            }
+        }
         .overlay(alignment: .topTrailing) {
             if isInProgress && state != .locked {
                 Image(systemName: "hourglass.circle.fill")

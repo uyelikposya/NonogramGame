@@ -15,16 +15,16 @@
       "localizations" : [
         {
           "description" : "",
-          "displayName" : "Catgrid Ad-Free",
+          "displayName" : "Catgrid Premium",
           "locale" : "en_US"
         },
         {
           "description" : "",
-          "displayName" : "Catgrid Reklamsız",
+          "displayName" : "Catgrid Premium",
           "locale" : "tr"
         }
       ],
-      "name" : "Ad-Free",
+      "name" : "Premium",
       "subscriptions" : [
         {
           "adHocOffers" : [
@@ -40,19 +40,19 @@
           "introductoryOffer" : null,
           "localizations" : [
             {
-              "description" : "No ads between puzzles for a whole year.",
-              "displayName" : "Ad-Free Yearly",
+              "description" : "No ads, golden puzzles and golden cards for a whole year.",
+              "displayName" : "Premium Yearly",
               "locale" : "en_US"
             },
             {
-              "description" : "Bir yıl boyunca bulmacalar arasında reklam yok.",
-              "displayName" : "Yıllık Reklamsız",
+              "description" : "Bir yıl boyunca reklamsız oyun, altın bulmacalar ve altın kartlar.",
+              "displayName" : "Yıllık Premium",
               "locale" : "tr"
             }
           ],
-          "productID" : "com.catgridcollection.nonogram.adfree.yearly",
+          "productID" : "com.catgridcollection.nonogram.premium.yearly",
           "recurringSubscriptionPeriod" : "P1Y",
-          "referenceName" : "Ad-Free Yearly",
+          "referenceName" : "Premium Yearly",
           "subscriptionGroupID" : "8F3A6B21",
           "type" : "RecurringSubscription"
         },
@@ -70,19 +70,19 @@
           "introductoryOffer" : null,
           "localizations" : [
             {
-              "description" : "No ads between puzzles, renewed every month.",
-              "displayName" : "Ad-Free Monthly",
+              "description" : "No ads, golden puzzles and golden cards, renewed every month.",
+              "displayName" : "Premium Monthly",
               "locale" : "en_US"
             },
             {
-              "description" : "Bulmacalar arasında reklam yok, her ay yenilenir.",
-              "displayName" : "Aylık Reklamsız",
+              "description" : "Reklamsız oyun, altın bulmacalar ve altın kartlar; her ay yenilenir.",
+              "displayName" : "Aylık Premium",
               "locale" : "tr"
             }
           ],
-          "productID" : "com.catgridcollection.nonogram.adfree.monthly",
+          "productID" : "com.catgridcollection.nonogram.premium.monthly",
           "recurringSubscriptionPeriod" : "P1M",
-          "referenceName" : "Ad-Free Monthly",
+          "referenceName" : "Premium Monthly",
           "subscriptionGroupID" : "8F3A6B21",
           "type" : "RecurringSubscription"
         }
