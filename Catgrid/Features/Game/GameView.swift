@@ -38,6 +38,7 @@ struct GameView: View {
     @Environment(Router.self) private var router
     @Environment(AudioManager.self) private var audio
     @Environment(AdCoordinator.self) private var ads
+    @Environment(StoreManager.self) private var store
     @Environment(\.appTheme) private var theme
     @Environment(\.scenePhase) private var scenePhase
 
@@ -97,6 +98,8 @@ struct GameView: View {
         .overlay(alignment: .bottom) {
             resultCard
                 .padding(20)
+                // Çok büyük yazı boyutunda düğmeler ekrandan taşmasın
+                .dynamicTypeSize(...DynamicTypeSize.accessibility2)
         }
         .animation(.spring(duration: 0.5), value: game.status)
         .onAppear {
@@ -250,7 +253,18 @@ struct GameView: View {
                 title: reason == .outOfTime ? "Time's up" : "Out of paws",
                 message: Text("Every cat lands on its feet. Give it another try!")
             ) {
-                if viewModel.canRevive, ads.isRewardedReady {
+                if viewModel.canRevive, store.isPremium {
+                    // Premium: devam hakkı reklamsız
+                    Button {
+                        viewModel.revive()
+                    } label: {
+                        let title: LocalizedStringKey = reason == .outOfTime ? "Continue: +60 seconds" : "Continue: +1 paw"
+                        Label(title, systemImage: "crown.fill")
+                    }
+                    .buttonStyle(PrimaryButtonStyle())
+                    Button("Try Again") { viewModel.restart() }
+                        .buttonStyle(SecondaryButtonStyle())
+                } else if viewModel.canRevive, ads.isRewardedReady {
                     Button {
                         Task {
                             if await ads.watchRewardedAd() { viewModel.revive() }

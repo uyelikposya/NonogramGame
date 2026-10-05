@@ -8,7 +8,7 @@ Kontroller:
     Birden fazlası varsa Xcode çoğul kuralını yanlış argümana uygulayabilir; sayı nesne (%@)
     gibi okunur ve uygulama EXC_BAD_ACCESS ile çöker.
   - Her çevirinin biçim argümanları (%@, %lld...) anahtardakilerle aynı türde ve sayıda olmalı.
-  - Her anahtarın Türkçe çevirisi olmalı.
+  - Her anahtarın tüm dillerde (tr, ja, de, fr, es, pt-BR, ko) çevirisi olmalı.
 """
 import json
 import re
@@ -16,6 +16,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+LANGUAGES = ["tr", "ja", "de", "fr", "es", "pt-BR", "ko"]
 CATALOGS = [ROOT / "Catgrid/Resources/Localizable.xcstrings", ROOT / "Catgrid/Resources/InfoPlist.xcstrings"]
 SPEC = re.compile(r"%(?:\d+\$)?(lld|ld|d|@|f|%)")
 
@@ -42,8 +43,9 @@ def main():
             plural = any("variations" in loc for loc in localizations.values())
             if plural and expected is not None and len(expected) > 1:
                 errors.append(f"{path.name}: çoğul anahtarda birden fazla argüman: {key!r}")
-            if "tr" not in localizations:
-                errors.append(f"{path.name}: Türkçe çeviri yok: {key!r}")
+            for language in LANGUAGES:
+                if language not in localizations:
+                    errors.append(f"{path.name}: [{language}] çeviri yok: {key!r}")
             if expected is None:
                 continue
             for language, localization in localizations.items():

@@ -54,18 +54,34 @@ final class StoreManager {
         }
     }
 
-    func restorePurchases() async {
-        try? await AppStore.sync()
+    enum RestoreResult: Equatable {
+        case restored
+        case nothingToRestore
+        case failed
+    }
+
+    /// "Satın Alımları Geri Yükle": sonucu kullanıcıya gösterilir.
+    @discardableResult
+    func restorePurchases() async -> RestoreResult {
+        do {
+            try await AppStore.sync()
+        } catch {
+            await refreshEntitlements()
+            return isPremium ? .restored : .failed
+        }
         await refreshEntitlements()
+        return isPremium ? .restored : .nothingToRestore
     }
 
     /// Uygulama öne gelince de çağrılır: süresi dolan abonelik reklamları geri açar.
     func refreshEntitlements() async {
         var active: Transaction?
         for await result in Transaction.currentEntitlements {
+            // currentEntitlements süresi dolmuşları zaten içermez; ödeme yenileme (grace)
+            // süresindeki aboneler de burada kalır, o yüzden yalnızca iade kontrol edilir
             guard case .verified(let transaction) = result,
                   Self.productIDs.contains(transaction.productID),
-                  Self.isActive(transaction, now: Date())
+                  transaction.revocationDate == nil
             else { continue }
             if active == nil || (transaction.expirationDate ?? .distantFuture) > (active?.expirationDate ?? .distantPast) {
                 active = transaction
@@ -75,17 +91,6 @@ final class StoreManager {
         activeProductID = active?.productID
         expirationDate = active?.expirationDate
         willAutoRenew = await Self.willAutoRenew(active)
-    }
-
-    /// İade edilmemiş ve süresi dolmamış abonelik.
-    nonisolated static func isActive(revocationDate: Date?, expirationDate: Date?, now: Date) -> Bool {
-        guard revocationDate == nil else { return false }
-        guard let expirationDate else { return true }
-        return expirationDate > now
-    }
-
-    private static func isActive(_ transaction: Transaction, now: Date) -> Bool {
-        isActive(revocationDate: transaction.revocationDate, expirationDate: transaction.expirationDate, now: now)
     }
 
     private static func willAutoRenew(_ transaction: Transaction?) async -> Bool {

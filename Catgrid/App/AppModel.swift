@@ -15,10 +15,10 @@ final class AppModel {
 
     static func live() -> AppModel {
         do {
-            return AppModel(catalog: try CatalogLoader.load(from: .main), progress: try ProgressStore.live())
+            return AppModel(catalog: try CatalogLoader.load(from: .main), progress: ProgressStore.live())
         } catch {
-            // Paketlenmiş içerik veya veritabanı açılamıyorsa geliştirme sırasında hemen fark edilsin
-            fatalError("Uygulama başlatılamadı: \(error)")
+            // Paketlenmiş içerik hatalıysa: testler (ContentValidationTests) bunu yayından önce yakalar
+            fatalError("Bölüm içeriği yüklenemedi: \(error)")
         }
     }
 

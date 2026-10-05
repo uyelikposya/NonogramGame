@@ -7,4 +7,10 @@ enum AppLinks {
     static let support = URL(string: "https://uyelikposya.github.io/NonogramGame/support.html")!
     /// Apple'ın standart kullanım koşulları (EULA); abonelikli uygulamalarda bağlantı zorunlu.
     static let termsOfUse = URL(string: "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/")!
+    /// App Store Connect'teki uygulama kimliği (Apple ID, yalnızca rakamlar). Doldurulunca
+    /// "Değerlendir" doğrudan yorum sayfasını açar; boşken iOS'un değerlendirme penceresi kullanılır.
+    static let appStoreID = ""
+    static var writeReview: URL? {
+        appStoreID.isEmpty ? nil : URL(string: "https://apps.apple.com/app/id\(appStoreID)?action=write-review")
+    }
 }

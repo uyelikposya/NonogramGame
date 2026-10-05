@@ -55,15 +55,23 @@ targets:
       path: Catgrid/Resources/Info.plist
       properties:
         CFBundleDisplayName: Catgrid
-        CFBundleLocalizations: [en, tr]
+        # Sürüm ve derleme numarası yukarıdaki MARKETING_VERSION / CURRENT_PROJECT_VERSION'dan;
+        # App Store'a her yüklemede CURRENT_PROJECT_VERSION bir artırılmalı
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        LSRequiresIPhoneOS: true
+        CFBundleLocalizations: [en, tr, ja, de, fr, es, pt-BR, ko]
         ITSAppUsesNonExemptEncryption: false
-        UILaunchScreen: {}
+        UILaunchScreen:
+          UIColorName: LaunchBackground   # açılışta temanın zemini (koyu modda beyaz parlama olmasın)
+        # iOS 26'nın yeni (Liquid Glass) görünümü yerine bugünkü tasarım korunur
+        UIDesignRequiresCompatibility: true
         UIApplicationSceneManifest:
           UIApplicationSupportsMultipleScenes: false
         UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
         # Google'ın test uygulama kimliği; AdMob onayından sonra kendi kimliğinle değiştir
         GADApplicationIdentifier: ca-app-pub-3940256099942544~1458002511
-        NSUserTrackingUsageDescription: Your data will be used to show you more relevant ads. This keeps Catgrid free.
+        NSUserTrackingUsageDescription: Allowing tracking lets us show you more relevant ads. Ads help keep Catgrid free to play.
         SKAdNetworkItems:
           - SKAdNetworkIdentifier: cstr6suwn9.skadnetwork
 

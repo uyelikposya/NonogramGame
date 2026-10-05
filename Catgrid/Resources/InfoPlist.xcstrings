@@ -15,6 +15,42 @@
             "state": "translated",
             "value": "Catgrid"
           }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Catgrid"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Catgrid"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Catgrid"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Catgrid"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Catgrid"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Catgrid"
+          }
         }
       }
     },
@@ -23,13 +59,49 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Your data will be used to show you more relevant ads. This keeps Catgrid free."
+            "value": "Allowing tracking lets us show you more relevant ads. Ads help keep Catgrid free to play."
           }
         },
         "tr": {
           "stringUnit": {
             "state": "translated",
-            "value": "Verilerin sana daha ilgili reklamlar göstermek için kullanılır. Bu sayede Catgrid ücretsiz kalır."
+            "value": "İzin verirsen sana daha ilgili reklamlar gösterebiliriz. Reklamlar Catgrid'in ücretsiz oynanmasını sağlar."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "トラッキングを許可すると、より関連性の高い広告が表示されます。広告のおかげでCatgridを無料で遊べます。"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Wenn du Tracking erlaubst, zeigen wir dir passendere Werbung. Werbung hilft, Catgrid kostenlos spielbar zu halten."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Autoriser le suivi nous permet de t'afficher des publicités plus pertinentes. La publicité aide à garder Catgrid gratuit."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Si permites el seguimiento, te mostraremos anuncios más relevantes. Los anuncios ayudan a que Catgrid sea gratis."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Permitir o rastreamento nos ajuda a mostrar anúncios mais relevantes. Os anúncios mantêm o Catgrid gratuito."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "추적을 허용하면 더 관련성 높은 광고를 보여 드릴 수 있어요. 광고 덕분에 Catgrid를 무료로 즐길 수 있어요."
           }
         }
       }

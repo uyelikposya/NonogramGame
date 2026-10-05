@@ -24,9 +24,16 @@ final class GoogleAdService: NSObject, AdService {
     func start() async {
         guard !isStarted else { return }
         isStarted = true
+        // Onay formu ve izleme (ATT) sorusu yalnızca uygulama öndeyken ve pencere hazırken
+        // gösterilebilir; aksi halde iOS soruyu sessizce atlar
+        while UIApplication.shared.applicationState != .active || UIApplication.shared.topViewController == nil {
+            try? await Task.sleep(for: .milliseconds(300))
+        }
         await requestConsent()
         await requestTrackingAuthorization()
         guard UMPConsentInformation.sharedInstance.canRequestAds else { return }
+        // Her yaşa uygun, sakin bir kedi oyunu: yalnızca genel izleyici reklamları
+        GADMobileAds.sharedInstance().requestConfiguration.maxAdContentRating = .general
         await withCheckedContinuation { continuation in
             GADMobileAds.sharedInstance().start { _ in continuation.resume() }
         }

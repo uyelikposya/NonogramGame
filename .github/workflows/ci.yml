@@ -94,3 +94,42 @@ jobs:
           grep -E "error:|Test Case .* (passed|failed)|Executed|\*\* .* \*\*|crash|EXC_" xcodebuild-x86.log || true
           if [ $STATUS -ne 0 ]; then tail -60 xcodebuild-x86.log; fi
           exit $STATUS
+
+  # App Store'a yükleme için Xcode 26 / iOS 26 SDK zorunlu (Nisan 2026'dan beri).
+  # Aynı kod bu derleyiciyle de Release olarak derlenmeli.
+  release-build:
+    runs-on: macos-15
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: En yeni Xcode 26'yı seç
+        run: |
+          ls -d /Applications/Xcode*.app
+          XCODE=$(ls -d /Applications/Xcode_26*.app | sort -V | tail -1)
+          if [ -z "$XCODE" ]; then echo "::error::Bu çalıştırıcıda Xcode 26 yok"; exit 1; fi
+          sudo xcode-select -s "$XCODE"
+          xcodebuild -version
+
+      - name: Xcode projesini üret
+        run: ./ProjeyiAc.command
+
+      - name: Cihaz için Release derlemesi (imzasız)
+        run: |
+          STATUS=0
+          xcodebuild build \
+            -project Catgrid.xcodeproj \
+            -scheme Catgrid \
+            -configuration Release \
+            -destination "generic/platform=iOS" \
+            CODE_SIGNING_ALLOWED=NO \
+            > release.log 2>&1 || STATUS=$?
+          grep -E "error:|warning: .*deprecated|\*\* .* \*\*" release.log | head -80 || true
+          if [ $STATUS -ne 0 ]; then tail -60 release.log; fi
+          exit $STATUS
+
+      - name: Derlenen uygulamanın Info.plist'i
+        run: |
+          APP=$(find ~/Library/Developer/Xcode/DerivedData -path "*Release-iphoneos/Catgrid.app" -maxdepth 6 | head -1)
+          plutil -p "$APP/Info.plist" | grep -E "CFBundle(ShortVersionString|Version|Localizations)|MinimumOSVersion|DTSDKName|DTXcode" -A9 | head -40
+          ls "$APP" | head -40

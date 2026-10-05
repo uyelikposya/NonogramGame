@@ -21,6 +21,8 @@ struct SettingsView: View {
     @State private var isConfirmingReset = false
     @State private var isShowingPaywall = false
     @State private var isManagingSubscription = false
+    @State private var restoreResult: StoreManager.RestoreResult?
+    @State private var isRestoring = false
 
     private let paletteColumns = [GridItem(.flexible(), spacing: 12), GridItem(.flexible(), spacing: 12)]
 
@@ -75,10 +77,32 @@ struct SettingsView: View {
                             .buttonStyle(PrimaryButtonStyle())
                             .accessibilityIdentifier("settings.premium")
                         }
-                        Button("Restore Purchases") {
-                            Task { await store.restorePurchases() }
+                        Button {
+                            Task {
+                                isRestoring = true
+                                restoreResult = await store.restorePurchases()
+                                isRestoring = false
+                            }
+                        } label: {
+                            if isRestoring {
+                                ProgressView()
+                            } else {
+                                Text("Restore Purchases")
+                            }
                         }
                         .buttonStyle(SecondaryButtonStyle())
+                        .disabled(isRestoring)
+                        .alert(
+                            "Restore Purchases",
+                            isPresented: Binding(get: { restoreResult != nil }, set: { if !$0 { restoreResult = nil } })
+                        ) {
+                        } message: {
+                            switch restoreResult {
+                            case .restored: Text("Purchases restored. Welcome back to Premium!")
+                            case .nothingToRestore: Text("No active subscription was found for this Apple Account.")
+                            case .failed, nil: Text("Couldn't reach the App Store. Please try again.")
+                            }
+                        }
                     }
                     .padding(16)
                     .card(cornerRadius: 16)
@@ -146,7 +170,9 @@ struct SettingsView: View {
 
                 section("About") {
                     VStack(spacing: 0) {
-                        linkRow("Rate Catgrid", icon: "star.fill") { requestReview() }
+                        linkRow("Rate Catgrid", icon: "star.fill") {
+                            if let url = AppLinks.writeReview { openURL(url) } else { requestReview() }
+                        }
                         Divider()
                         linkRow("Support", icon: "questionmark.circle.fill") { openURL(AppLinks.support) }
                         Divider()

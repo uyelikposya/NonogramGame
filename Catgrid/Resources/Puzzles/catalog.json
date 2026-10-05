@@ -12,11 +12,23 @@
       "kind": "tutorial",
       "title": {
         "en": "Kitten School",
-        "tr": "Yavru Okulu"
+        "tr": "Yavru Okulu",
+        "ja": "子猫の学校",
+        "de": "Kätzchenschule",
+        "fr": "École des chatons",
+        "es": "Escuela de gatitos",
+        "pt-BR": "Escola de Gatinhos",
+        "ko": "아기 고양이 학교"
       },
       "subtitle": {
         "en": "Learn the rules",
-        "tr": "Kuralları öğren"
+        "tr": "Kuralları öğren",
+        "ja": "ルールを覚えよう",
+        "de": "Lerne die Regeln",
+        "fr": "Apprends les règles",
+        "es": "Aprende las reglas",
+        "pt-BR": "Aprenda as regras",
+        "ko": "규칙 배우기"
       },
       "accentColor": "#F4A6A0",
       "file": "tutorial"
@@ -26,11 +38,23 @@
       "kind": "breed",
       "title": {
         "en": "Siamese",
-        "tr": "Siyam"
+        "tr": "Siyam",
+        "ja": "シャム",
+        "de": "Siamkatze",
+        "fr": "Siamois",
+        "es": "Siamés",
+        "pt-BR": "Siamês",
+        "ko": "샴"
       },
       "subtitle": {
         "en": "Blue eyes and dark points",
-        "tr": "Mavi gözler ve koyu uçlar"
+        "tr": "Mavi gözler ve koyu uçlar",
+        "ja": "青い瞳と濃いポイント",
+        "de": "Blaue Augen und dunkle Abzeichen",
+        "fr": "Yeux bleus et extrémités foncées",
+        "es": "Ojos azules y puntas oscuras",
+        "pt-BR": "Olhos azuis e extremidades escuras",
+        "ko": "파란 눈과 짙은 포인트"
       },
       "accentColor": "#C9A27E",
       "file": "chapter_01_siamese",
@@ -72,12 +96,24 @@
         "rarity": "common",
         "origin": {
           "en": "Thailand",
-          "tr": "Tayland"
+          "tr": "Tayland",
+          "ja": "タイ",
+          "de": "Thailand",
+          "fr": "Thaïlande",
+          "es": "Tailandia",
+          "pt-BR": "Tailândia",
+          "ko": "태국"
         },
         "lifespan": "15–20",
         "coat": {
           "en": "Short, colorpoint",
-          "tr": "Kısa, uçları koyu"
+          "tr": "Kısa, uçları koyu",
+          "ja": "短毛、カラーポイント",
+          "de": "Kurz, Colorpoint",
+          "fr": "Court, colourpoint",
+          "es": "Corto, colorpoint",
+          "pt-BR": "Curta, colorpoint",
+          "ko": "단모, 컬러포인트"
         },
         "stats": {
           "energy": 5,
@@ -87,11 +123,23 @@
         },
         "fact": {
           "en": "One of the most talkative breeds: Siamese love to 'chat' with their people.",
-          "tr": "En konuşkan türlerden biri: insanlarıyla 'sohbet etmeyi' çok sever."
+          "tr": "En konuşkan türlerden biri: insanlarıyla 'sohbet etmeyi' çok sever.",
+          "ja": "最もおしゃべりな猫種のひとつ。シャムは飼い主と「おしゃべり」するのが大好きです。",
+          "de": "Eine der gesprächigsten Rassen: Siamkatzen „plaudern“ gern mit ihren Menschen.",
+          "fr": "L'une des races les plus bavardes : le Siamois adore « discuter » avec ses humains.",
+          "es": "Una de las razas más habladoras: a los siameses les encanta «charlar» con su gente.",
+          "pt-BR": "Uma das raças mais falantes: o Siamês adora \"conversar\" com seus humanos.",
+          "ko": "가장 수다스러운 품종 중 하나예요. 샴은 사람과 '대화'하는 걸 정말 좋아해요."
         },
         "about": {
           "en": "One of the oldest recognized breeds, the Siamese is described in Thai manuscripts centuries old. Its dark 'points' come from a temperature-sensitive gene: cooler parts of the body grow darker fur. Siamese are social, vocal and dislike being left alone for long.",
-          "tr": "Tanınan en eski türlerden biri olan Siyam, yüzyıllık Tay el yazmalarında anlatılır. Koyu uçları sıcaklığa duyarlı bir genden gelir: vücudun serin bölgelerinde tüy koyulaşır. Sosyal ve sesli kedilerdir, uzun süre yalnız kalmayı sevmezler."
+          "tr": "Tanınan en eski türlerden biri olan Siyam, yüzyıllık Tay el yazmalarında anlatılır. Koyu uçları sıcaklığa duyarlı bir genden gelir: vücudun serin bölgelerinde tüy koyulaşır. Sosyal ve sesli kedilerdir, uzun süre yalnız kalmayı sevmezler.",
+          "ja": "公認猫種の中でも最も古いもののひとつで、数百年前のタイの写本にも記されています。濃い色の「ポイント」は温度に反応する遺伝子によるもので、体の冷たい部分ほど毛色が濃くなります。シャムは社交的でよく鳴き、長い時間ひとりにされるのを嫌います。",
+          "de": "Die Siamkatze ist eine der ältesten anerkannten Rassen und wird schon in jahrhundertealten thailändischen Handschriften beschrieben. Ihre dunklen „Abzeichen“ (Points) entstehen durch ein temperaturempfindliches Gen: An kühleren Körperstellen wächst dunkleres Fell. Siamkatzen sind gesellig, gesprächig und mögen es nicht, lange allein zu sein.",
+          "fr": "L'une des plus anciennes races reconnues, le Siamois est décrit dans des manuscrits thaïlandais vieux de plusieurs siècles. Ses « extrémités » foncées proviennent d'un gène sensible à la température : les parties les plus fraîches du corps se couvrent d'un poil plus sombre. Le Siamois est sociable, bavard et n'aime pas rester seul longtemps.",
+          "es": "Una de las razas reconocidas más antiguas, el siamés aparece descrito en manuscritos tailandeses de hace siglos. Sus «puntas» oscuras se deben a un gen sensible a la temperatura: en las partes más frías del cuerpo crece un pelo más oscuro. Los siameses son sociables, maúllan mucho y no les gusta quedarse solos durante mucho tiempo.",
+          "pt-BR": "Uma das raças reconhecidas mais antigas, o Siamês é descrito em manuscritos tailandeses de séculos atrás. Suas \"extremidades\" escuras vêm de um gene sensível à temperatura: as partes mais frias do corpo desenvolvem pelos mais escuros. Os Siameses são sociáveis, vocais e não gostam de ficar sozinhos por muito tempo.",
+          "ko": "샴은 공인된 품종 중 가장 오래된 품종 중 하나로, 수백 년 된 태국 필사본에도 등장해요. 짙은 '포인트'는 온도에 민감한 유전자 때문에 생기는데, 체온이 낮은 부위일수록 털이 더 짙게 자라요. 샴은 사교적이고 목소리가 많으며, 오랫동안 혼자 있는 걸 싫어해요."
         }
       },
       "premiumFile": "chapter_01_siamese_premium"
@@ -101,11 +149,23 @@
       "kind": "breed",
       "title": {
         "en": "British Shorthair",
-        "tr": "British Shorthair"
+        "tr": "British Shorthair",
+        "ja": "ブリティッシュショートヘア",
+        "de": "Britisch Kurzhaar",
+        "fr": "British Shorthair",
+        "es": "British Shorthair",
+        "pt-BR": "Britânico de Pelo Curto",
+        "ko": "브리티시 쇼트헤어"
       },
       "subtitle": {
         "en": "Round, plush and calm",
-        "tr": "Yuvarlak, peluş ve sakin"
+        "tr": "Yuvarlak, peluş ve sakin",
+        "ja": "まんまる、ふかふか、おだやか",
+        "de": "Rund, plüschig und gelassen",
+        "fr": "Rond, moelleux et calme",
+        "es": "Redondo, mullido y tranquilo",
+        "pt-BR": "Redondinho, macio e calmo",
+        "ko": "동글동글, 폭신하고 차분해요"
       },
       "accentColor": "#8A9BA8",
       "file": "chapter_02_british_shorthair",
@@ -143,12 +203,24 @@
         "rarity": "common",
         "origin": {
           "en": "United Kingdom",
-          "tr": "Birleşik Krallık"
+          "tr": "Birleşik Krallık",
+          "ja": "イギリス",
+          "de": "Vereinigtes Königreich",
+          "fr": "Royaume-Uni",
+          "es": "Reino Unido",
+          "pt-BR": "Reino Unido",
+          "ko": "영국"
         },
         "lifespan": "12–17",
         "coat": {
           "en": "Short, dense, plush",
-          "tr": "Kısa, yoğun, peluş"
+          "tr": "Kısa, yoğun, peluş",
+          "ja": "短毛、密でふかふか",
+          "de": "Kurz, dicht, plüschig",
+          "fr": "Court, dense, pelucheux",
+          "es": "Corto, denso y mullido",
+          "pt-BR": "Curta, densa e aveludada",
+          "ko": "단모, 촘촘하고 폭신함"
         },
         "stats": {
           "energy": 2,
@@ -158,11 +230,23 @@
         },
         "fact": {
           "en": "Its round, smiling face is often said to have inspired the Cheshire Cat.",
-          "tr": "Yuvarlak, gülümseyen yüzünün Cheshire Kedisi'ne ilham verdiği söylenir."
+          "tr": "Yuvarlak, gülümseyen yüzünün Cheshire Kedisi'ne ilham verdiği söylenir.",
+          "ja": "丸くほほえんだような顔は、チェシャ猫のモデルになったとよく言われます。",
+          "de": "Ihr rundes, lächelndes Gesicht soll die Grinsekatze inspiriert haben.",
+          "fr": "On dit souvent que sa bouille ronde et souriante a inspiré le Chat du Cheshire.",
+          "es": "Se suele decir que su cara redonda y sonriente inspiró al Gato de Cheshire.",
+          "pt-BR": "Dizem que seu rosto redondo e sorridente inspirou o Gato de Cheshire.",
+          "ko": "둥글고 웃는 듯한 얼굴이 체셔 고양이의 모티브가 되었다는 이야기가 많아요."
         },
         "about": {
           "en": "Descended from the street cats of Britain, the breed was refined in the late 1800s and became famous for its blue-grey coat. It is sturdy, round-faced and calm, happy to be near its people without demanding constant attention.",
-          "tr": "İngiltere'nin sokak kedilerinden gelen tür, 1800'lerin sonunda geliştirildi ve mavi-gri tüyüyle ünlendi. Sağlam yapılı, yuvarlak yüzlü ve sakindir; sürekli ilgi istemeden insanlarının yakınında olmayı sever."
+          "tr": "İngiltere'nin sokak kedilerinden gelen tür, 1800'lerin sonunda geliştirildi ve mavi-gri tüyüyle ünlendi. Sağlam yapılı, yuvarlak yüzlü ve sakindir; sürekli ilgi istemeden insanlarının yakınında olmayı sever.",
+          "ja": "イギリスの街猫を祖先とし、1800年代後半に改良が進められ、ブルーグレーの被毛で有名になりました。がっしりとした体に丸い顔をもつおだやかな性格で、常にかまってほしがることなく、飼い主のそばにいるだけで満足します。",
+          "de": "Die Rasse stammt von den Straßenkatzen Großbritanniens ab, wurde im späten 19. Jahrhundert veredelt und wurde für ihr blaugraues Fell berühmt. Sie ist kräftig, hat ein rundes Gesicht und ein ruhiges Wesen und ist gern in der Nähe ihrer Menschen, ohne ständig Aufmerksamkeit zu verlangen.",
+          "fr": "Issue des chats des rues de Grande-Bretagne, la race a été affinée à la fin du XIXe siècle et est devenue célèbre pour son pelage gris-bleu. Robuste, au visage rond et calme, ce chat aime rester près de ses humains sans réclamer sans cesse de l'attention.",
+          "es": "Descendiente de los gatos callejeros de Gran Bretaña, la raza se perfeccionó a finales del siglo XIX y se hizo famosa por su pelaje gris azulado. Es robusto, de cara redonda y tranquilo; le gusta estar cerca de su gente sin exigir atención constante.",
+          "pt-BR": "Descendente dos gatos de rua da Grã-Bretanha, a raça foi aprimorada no fim do século XIX e ficou famosa por sua pelagem cinza-azulada. É robusto, tem o rosto redondo e é calmo; gosta de ficar perto de seus humanos sem exigir atenção constante.",
+          "ko": "영국의 길고양이에서 유래한 품종으로, 1800년대 후반에 개량되었고 청회색 털로 유명해졌어요. 튼튼하고 얼굴이 둥글며 차분해서, 끊임없이 관심을 바라지 않고도 사람 곁에 있는 걸 좋아해요."
         }
       },
       "premiumFile": "chapter_02_british_shorthair_premium"
@@ -172,11 +256,23 @@
       "kind": "breed",
       "title": {
         "en": "Scottish Fold",
-        "tr": "Scottish Fold"
+        "tr": "Scottish Fold",
+        "ja": "スコティッシュフォールド",
+        "de": "Scottish Fold",
+        "fr": "Scottish Fold",
+        "es": "Scottish Fold",
+        "pt-BR": "Scottish Fold",
+        "ko": "스코티시 폴드"
       },
       "subtitle": {
         "en": "Folded ears, owl-like face",
-        "tr": "Katlanmış kulaklar, baykuş yüzü"
+        "tr": "Katlanmış kulaklar, baykuş yüzü",
+        "ja": "折れ耳とフクロウのような顔",
+        "de": "Gefaltete Ohren, Eulengesicht",
+        "fr": "Oreilles pliées, tête de chouette",
+        "es": "Orejas dobladas y cara de búho",
+        "pt-BR": "Orelhas dobradas, carinha de coruja",
+        "ko": "접힌 귀, 부엉이 같은 얼굴"
       },
       "accentColor": "#D8B48A",
       "file": "chapter_03_scottish_fold",
@@ -215,12 +311,24 @@
         "rarity": "common",
         "origin": {
           "en": "Scotland",
-          "tr": "İskoçya"
+          "tr": "İskoçya",
+          "ja": "スコットランド",
+          "de": "Schottland",
+          "fr": "Écosse",
+          "es": "Escocia",
+          "pt-BR": "Escócia",
+          "ko": "스코틀랜드"
         },
         "lifespan": "11–15",
         "coat": {
           "en": "Short or long",
-          "tr": "Kısa ya da uzun"
+          "tr": "Kısa ya da uzun",
+          "ja": "短毛または長毛",
+          "de": "Kurz oder lang",
+          "fr": "Court ou long",
+          "es": "Corto o largo",
+          "pt-BR": "Curta ou longa",
+          "ko": "단모 또는 장모"
         },
         "stats": {
           "energy": 3,
@@ -230,11 +338,23 @@
         },
         "fact": {
           "en": "Every Scottish Fold traces back to Susie, a farm cat found in Scotland in 1961.",
-          "tr": "Tüm Scottish Fold'lar 1961'de İskoçya'da bir çiftlikte bulunan Susie adlı kediden gelir."
+          "tr": "Tüm Scottish Fold'lar 1961'de İskoçya'da bir çiftlikte bulunan Susie adlı kediden gelir.",
+          "ja": "すべてのスコティッシュフォールドは、1961年にスコットランドで見つかった農場の猫「スージー」にさかのぼります。",
+          "de": "Jede Scottish Fold geht auf Susie zurück, eine Hofkatze, die 1961 in Schottland gefunden wurde.",
+          "fr": "Tous les Scottish Fold descendent de Susie, une chatte de ferme trouvée en Écosse en 1961.",
+          "es": "Todos los Scottish Fold descienden de Susie, una gata de granja encontrada en Escocia en 1961.",
+          "pt-BR": "Todo Scottish Fold descende de Susie, uma gata de fazenda encontrada na Escócia em 1961.",
+          "ko": "모든 스코티시 폴드는 1961년 스코틀랜드의 한 농장에서 발견된 고양이 '수지'에게서 시작됐어요."
         },
         "about": {
           "en": "The folded ears come from a natural mutation that affects cartilage. Kittens are born with straight ears that may fold within a few weeks. Because the same gene can cause joint problems, responsible breeders never pair two folded-ear cats.",
-          "tr": "Katlanmış kulaklar kıkırdağı etkileyen doğal bir mutasyondan gelir. Yavrular düz kulakla doğar, kulaklar birkaç haftada katlanabilir. Aynı gen eklem sorunlarına yol açabildiği için sorumlu üreticiler iki katlı kulaklı kediyi asla eşleştirmez."
+          "tr": "Katlanmış kulaklar kıkırdağı etkileyen doğal bir mutasyondan gelir. Yavrular düz kulakla doğar, kulaklar birkaç haftada katlanabilir. Aynı gen eklem sorunlarına yol açabildiği için sorumlu üreticiler iki katlı kulaklı kediyi asla eşleştirmez.",
+          "ja": "折れた耳は、軟骨に影響する自然発生の突然変異によるものです。子猫は立ち耳で生まれ、数週間のうちに耳が折れることがあります。同じ遺伝子が関節の病気を引き起こすことがあるため、責任あるブリーダーは折れ耳同士を決して交配させません。",
+          "de": "Die gefalteten Ohren gehen auf eine natürliche Mutation zurück, die den Knorpel betrifft. Kätzchen kommen mit geraden Ohren zur Welt, die sich innerhalb weniger Wochen falten können. Da dasselbe Gen Gelenkprobleme verursachen kann, verpaaren verantwortungsvolle Züchter nie zwei Katzen mit Faltohren.",
+          "fr": "Les oreilles pliées proviennent d'une mutation naturelle qui affecte le cartilage. Les chatons naissent avec des oreilles droites qui peuvent se plier en quelques semaines. Comme ce même gène peut provoquer des problèmes articulaires, les éleveurs responsables n'accouplent jamais deux chats aux oreilles pliées.",
+          "es": "Las orejas dobladas se deben a una mutación natural que afecta al cartílago. Los gatitos nacen con las orejas rectas, que pueden doblarse en pocas semanas. Como el mismo gen puede causar problemas en las articulaciones, los criadores responsables nunca cruzan dos gatos de orejas dobladas.",
+          "pt-BR": "As orelhas dobradas vêm de uma mutação natural que afeta a cartilagem. Os filhotes nascem com orelhas retas, que podem se dobrar em poucas semanas. Como o mesmo gene pode causar problemas nas articulações, criadores responsáveis nunca cruzam dois gatos de orelhas dobradas.",
+          "ko": "접힌 귀는 연골에 영향을 주는 자연 돌연변이에서 비롯돼요. 새끼 고양이는 곧은 귀로 태어나 몇 주 안에 귀가 접힐 수 있어요. 같은 유전자가 관절 문제를 일으킬 수 있기 때문에, 책임감 있는 브리더는 귀가 접힌 고양이끼리 절대 교배하지 않아요."
         }
       },
       "premiumFile": "chapter_03_scottish_fold_premium"
@@ -244,11 +364,23 @@
       "kind": "breed",
       "title": {
         "en": "Persian",
-        "tr": "İran Kedisi"
+        "tr": "İran Kedisi",
+        "ja": "ペルシャ",
+        "de": "Perserkatze",
+        "fr": "Persan",
+        "es": "Persa",
+        "pt-BR": "Persa",
+        "ko": "페르시안"
       },
       "subtitle": {
         "en": "Long coat and flat face",
-        "tr": "Uzun tüyler ve basık yüz"
+        "tr": "Uzun tüyler ve basık yüz",
+        "ja": "長い被毛と平たい顔",
+        "de": "Langes Fell und flaches Gesicht",
+        "fr": "Poil long et face plate",
+        "es": "Pelo largo y cara chata",
+        "pt-BR": "Pelo longo e rosto achatado",
+        "ko": "긴 털과 납작한 얼굴"
       },
       "accentColor": "#E8C9D0",
       "file": "chapter_04_persian",
@@ -282,12 +414,24 @@
         "rarity": "common",
         "origin": {
           "en": "Iran (Persia)",
-          "tr": "İran"
+          "tr": "İran",
+          "ja": "イラン（ペルシャ）",
+          "de": "Iran (Persien)",
+          "fr": "Iran (Perse)",
+          "es": "Irán (Persia)",
+          "pt-BR": "Irã (Pérsia)",
+          "ko": "이란(페르시아)"
         },
         "lifespan": "12–17",
         "coat": {
           "en": "Long and silky",
-          "tr": "Uzun ve ipeksi"
+          "tr": "Uzun ve ipeksi",
+          "ja": "長毛、絹のような手触り",
+          "de": "Lang und seidig",
+          "fr": "Long et soyeux",
+          "es": "Largo y sedoso",
+          "pt-BR": "Longa e sedosa",
+          "ko": "장모, 실키함"
         },
         "stats": {
           "energy": 1,
@@ -297,11 +441,23 @@
         },
         "fact": {
           "en": "Persians have been prized in Europe for their long coats since the 1600s.",
-          "tr": "İran kedileri uzun tüyleri nedeniyle 1600'lerden beri Avrupa'da çok değerlidir."
+          "tr": "İran kedileri uzun tüyleri nedeniyle 1600'lerden beri Avrupa'da çok değerlidir.",
+          "ja": "ペルシャは1600年代から、その長い被毛でヨーロッパで珍重されてきました。",
+          "de": "Perserkatzen werden in Europa seit dem 17. Jahrhundert für ihr langes Fell geschätzt.",
+          "fr": "Le Persan est apprécié en Europe pour son long pelage depuis le XVIIe siècle.",
+          "es": "Los persas son apreciados en Europa por su pelo largo desde el siglo XVII.",
+          "pt-BR": "Os Persas são admirados na Europa por sua pelagem longa desde o século XVII.",
+          "ko": "페르시안은 1600년대부터 긴 털 덕분에 유럽에서 귀한 대접을 받았어요."
         },
         "about": {
           "en": "Long-haired cats reached Europe from Persia and neighbouring regions in the 1600s. Today's Persian has a round head, short nose and a coat that needs daily brushing. It prefers a quiet home and is known as one of the most relaxed breeds.",
-          "tr": "Uzun tüylü kediler 1600'lerde İran ve çevresinden Avrupa'ya ulaştı. Bugünkü İran kedisinin yuvarlak başı, kısa burnu ve her gün taranması gereken tüyleri vardır. Sakin evleri sever ve en rahat türlerden biri olarak bilinir."
+          "tr": "Uzun tüylü kediler 1600'lerde İran ve çevresinden Avrupa'ya ulaştı. Bugünkü İran kedisinin yuvarlak başı, kısa burnu ve her gün taranması gereken tüyleri vardır. Sakin evleri sever ve en rahat türlerden biri olarak bilinir.",
+          "ja": "長毛の猫は1600年代にペルシャやその周辺地域からヨーロッパへ渡りました。現在のペルシャは丸い頭と短い鼻をもち、被毛は毎日のブラッシングが必要です。静かな家を好み、最ものんびりした猫種のひとつとして知られています。",
+          "de": "Langhaarkatzen gelangten im 17. Jahrhundert aus Persien und benachbarten Regionen nach Europa. Die heutige Perserkatze hat einen runden Kopf, eine kurze Nase und ein Fell, das täglich gebürstet werden muss. Sie bevorzugt ein ruhiges Zuhause und gilt als eine der entspanntesten Rassen.",
+          "fr": "Les chats à poil long sont arrivés en Europe depuis la Perse et les régions voisines au XVIIe siècle. Le Persan actuel a une tête ronde, un nez court et un pelage qui demande un brossage quotidien. Il préfère un foyer calme et passe pour l'une des races les plus paisibles.",
+          "es": "Los gatos de pelo largo llegaron a Europa desde Persia y regiones vecinas en el siglo XVII. El persa actual tiene la cabeza redonda, la nariz corta y un pelaje que necesita cepillado diario. Prefiere un hogar tranquilo y es conocido como una de las razas más relajadas.",
+          "pt-BR": "Gatos de pelo longo chegaram à Europa vindos da Pérsia e de regiões vizinhas no século XVII. O Persa de hoje tem cabeça redonda, focinho curto e uma pelagem que precisa ser escovada todos os dias. Prefere um lar tranquilo e é conhecido como uma das raças mais relaxadas.",
+          "ko": "장모 고양이는 1600년대에 페르시아와 그 주변 지역에서 유럽으로 건너왔어요. 오늘날의 페르시안은 둥근 머리와 짧은 코를 가졌고, 털은 매일 빗질해 줘야 해요. 조용한 집을 좋아하며 가장 느긋한 품종 중 하나로 알려져 있어요."
         }
       },
       "premiumFile": "chapter_04_persian_premium"
@@ -311,11 +467,23 @@
       "kind": "breed",
       "title": {
         "en": "Ragdoll",
-        "tr": "Ragdoll"
+        "tr": "Ragdoll",
+        "ja": "ラグドール",
+        "de": "Ragdoll",
+        "fr": "Ragdoll",
+        "es": "Ragdoll",
+        "pt-BR": "Ragdoll",
+        "ko": "랙돌"
       },
       "subtitle": {
         "en": "Goes limp when held",
-        "tr": "Kucakta gevşeyip kalır"
+        "tr": "Kucakta gevşeyip kalır",
+        "ja": "抱っこするとぐにゃり",
+        "de": "Wird auf dem Arm ganz schlaff",
+        "fr": "Tout mou dans les bras",
+        "es": "Se relaja en tus brazos",
+        "pt-BR": "Fica molinho no colo",
+        "ko": "안으면 몸이 축 늘어져요"
       },
       "accentColor": "#A9C3DB",
       "file": "chapter_05_ragdoll",
@@ -354,12 +522,24 @@
         "rarity": "common",
         "origin": {
           "en": "United States",
-          "tr": "ABD"
+          "tr": "ABD",
+          "ja": "アメリカ",
+          "de": "USA",
+          "fr": "États-Unis",
+          "es": "Estados Unidos",
+          "pt-BR": "Estados Unidos",
+          "ko": "미국"
         },
         "lifespan": "12–17",
         "coat": {
           "en": "Semi-long, silky",
-          "tr": "Yarı uzun, ipeksi"
+          "tr": "Yarı uzun, ipeksi",
+          "ja": "セミロング、絹のような手触り",
+          "de": "Halblang, seidig",
+          "fr": "Mi-long, soyeux",
+          "es": "Semilargo y sedoso",
+          "pt-BR": "Semilonga e sedosa",
+          "ko": "중장모, 실키함"
         },
         "stats": {
           "energy": 2,
@@ -369,11 +549,23 @@
         },
         "fact": {
           "en": "Named for the way it goes limp like a rag doll when picked up.",
-          "tr": "Adını, kucağa alınınca bez bebek gibi gevşemesinden alır."
+          "tr": "Adını, kucağa alınınca bez bebek gibi gevşemesinden alır.",
+          "ja": "抱き上げるとぬいぐるみ（ラグドール）のように体の力が抜けることから名付けられました。",
+          "de": "Benannt danach, dass sie hochgehoben schlaff wird wie eine Stoffpuppe (engl. „rag doll“).",
+          "fr": "Son nom vient de sa façon de devenir tout mou comme une poupée de chiffon quand on le prend.",
+          "es": "Su nombre viene de cómo se queda flácido como una muñeca de trapo cuando lo coges en brazos.",
+          "pt-BR": "O nome vem do jeito como fica molinho, feito uma boneca de pano, quando é pego no colo.",
+          "ko": "안아 올리면 헝겊 인형(래그돌)처럼 축 늘어져서 붙은 이름이에요."
         },
         "about": {
           "en": "Developed in California in the 1960s, the Ragdoll is a large, blue-eyed colorpoint cat. It often follows people from room to room and tends to relax completely when held, which gave the breed its name.",
-          "tr": "1960'larda Kaliforniya'da geliştirilen Ragdoll, iri ve mavi gözlü, uçları koyu bir kedidir. Genellikle insanları odadan odaya takip eder ve kucağa alınınca tamamen gevşer; adı da buradan gelir."
+          "tr": "1960'larda Kaliforniya'da geliştirilen Ragdoll, iri ve mavi gözlü, uçları koyu bir kedidir. Genellikle insanları odadan odaya takip eder ve kucağa alınınca tamamen gevşer; adı da buradan gelir.",
+          "ja": "1960年代にカリフォルニアで作出されたラグドールは、青い瞳をもつ大型のカラーポイントの猫です。部屋から部屋へと人のあとをついて回ることが多く、抱っこされると完全に脱力する傾向があり、それが名前の由来になりました。",
+          "de": "Die Ragdoll wurde in den 1960er-Jahren in Kalifornien gezüchtet und ist eine große, blauäugige Colorpoint-Katze. Sie folgt ihren Menschen oft von Zimmer zu Zimmer und entspannt sich auf dem Arm meist völlig – daher der Name der Rasse (engl. „Stoffpuppe“).",
+          "fr": "Développé en Californie dans les années 1960, le Ragdoll est un grand chat colourpoint aux yeux bleus. Il suit souvent ses humains de pièce en pièce et a tendance à se détendre complètement quand on le porte, d'où le nom de la race.",
+          "es": "Desarrollado en California en la década de 1960, el ragdoll es un gato grande, colorpoint y de ojos azules. A menudo sigue a las personas de habitación en habitación y suele relajarse por completo cuando lo sostienen en brazos, lo que dio nombre a la raza.",
+          "pt-BR": "Desenvolvido na Califórnia nos anos 1960, o Ragdoll é um gato grande, de olhos azuis e pelagem colorpoint. Costuma seguir as pessoas de cômodo em cômodo e tende a relaxar completamente quando está no colo, o que deu nome à raça.",
+          "ko": "1960년대 캘리포니아에서 개발된 랙돌은 파란 눈을 가진 대형 컬러포인트 고양이예요. 사람을 따라 이 방 저 방 다니는 일이 많고, 안기면 몸에 힘을 완전히 빼는 경향이 있는데, 여기서 품종 이름이 나왔어요."
         }
       },
       "premiumFile": "chapter_05_ragdoll_premium"
@@ -383,11 +575,23 @@
       "kind": "breed",
       "title": {
         "en": "Russian Blue",
-        "tr": "Rus Mavisi"
+        "tr": "Rus Mavisi",
+        "ja": "ロシアンブルー",
+        "de": "Russisch Blau",
+        "fr": "Bleu russe",
+        "es": "Azul ruso",
+        "pt-BR": "Azul Russo",
+        "ko": "러시안 블루"
       },
       "subtitle": {
         "en": "Silver-blue coat, green eyes",
-        "tr": "Gümüş mavi tüy, yeşil gözler"
+        "tr": "Gümüş mavi tüy, yeşil gözler",
+        "ja": "銀青色の被毛と緑の瞳",
+        "de": "Silberblaues Fell, grüne Augen",
+        "fr": "Robe bleu argenté, yeux verts",
+        "es": "Pelo azul plateado, ojos verdes",
+        "pt-BR": "Pelo azul-prateado, olhos verdes",
+        "ko": "은청색 털, 초록 눈"
       },
       "accentColor": "#7D93A8",
       "file": "chapter_06_russian_blue",
@@ -428,12 +632,24 @@
         "rarity": "common",
         "origin": {
           "en": "Russia",
-          "tr": "Rusya"
+          "tr": "Rusya",
+          "ja": "ロシア",
+          "de": "Russland",
+          "fr": "Russie",
+          "es": "Rusia",
+          "pt-BR": "Rússia",
+          "ko": "러시아"
         },
         "lifespan": "15–20",
         "coat": {
           "en": "Short, dense double coat",
-          "tr": "Kısa, yoğun çift kat"
+          "tr": "Kısa, yoğun çift kat",
+          "ja": "短毛、密なダブルコート",
+          "de": "Kurzes, dichtes Doppelfell",
+          "fr": "Court, double pelage dense",
+          "es": "Doble capa corta y densa",
+          "pt-BR": "Curta, densa, com subpelo",
+          "ko": "단모, 촘촘한 이중모"
         },
         "stats": {
           "energy": 3,
@@ -443,11 +659,23 @@
         },
         "fact": {
           "en": "Its silver-tipped coat is so dense it stands out from the body.",
-          "tr": "Gümüş uçlu tüyü o kadar yoğundur ki gövdeden kabarık durur."
+          "tr": "Gümüş uçlu tüyü o kadar yoğundur ki gövdeden kabarık durur.",
+          "ja": "毛先が銀色の被毛はとても密で、体から立ち上がるように生えています。",
+          "de": "Ihr silbern gespitztes Fell ist so dicht, dass es vom Körper absteht.",
+          "fr": "Son pelage aux pointes argentées est si dense qu'il se tient décollé du corps.",
+          "es": "Su pelaje de puntas plateadas es tan denso que se separa del cuerpo.",
+          "pt-BR": "Sua pelagem de pontas prateadas é tão densa que fica afastada do corpo.",
+          "ko": "끝이 은빛인 털이 아주 촘촘해서 몸에서 살짝 떠 있는 것처럼 보여요."
         },
         "about": {
           "en": "Said to come from the port of Arkhangelsk, the Russian Blue was shown in England in the 1870s. Its plush double coat looks silver because each hair is tipped with light grey. It is gentle and somewhat shy with strangers.",
-          "tr": "Arhangelsk limanından geldiği söylenen Rus Mavisi, 1870'lerde İngiltere'de sergilendi. Her tüyün ucu açık gri olduğundan yoğun çift kat tüyü gümüş gibi görünür. Nazik bir kedidir, yabancılara karşı biraz çekingendir."
+          "tr": "Arhangelsk limanından geldiği söylenen Rus Mavisi, 1870'lerde İngiltere'de sergilendi. Her tüyün ucu açık gri olduğundan yoğun çift kat tüyü gümüş gibi görünür. Nazik bir kedidir, yabancılara karşı biraz çekingendir.",
+          "ja": "アルハンゲリスクの港が原産とされ、1870年代にイギリスのキャットショーに出陳されました。ふかふかのダブルコートは毛先が淡いグレーのため、銀色に見えます。おとなしく、知らない人には少し人見知りします。",
+          "de": "Russisch Blau soll aus der Hafenstadt Archangelsk stammen und wurde in den 1870er-Jahren in England ausgestellt. Ihr plüschiges Doppelfell wirkt silbern, weil jedes Haar eine hellgraue Spitze hat. Sie ist sanft und Fremden gegenüber etwas scheu.",
+          "fr": "Originaire, dit-on, du port d'Arkhangelsk, le Bleu russe a été présenté en Angleterre dans les années 1870. Son double pelage pelucheux paraît argenté car chaque poil a une pointe gris clair. Il est doux et plutôt timide avec les inconnus.",
+          "es": "Se dice que procede del puerto de Arcángel y se exhibió en Inglaterra en la década de 1870. Su mullido pelaje de doble capa parece plateado porque cada pelo tiene la punta de color gris claro. Es dulce y algo tímido con los desconocidos.",
+          "pt-BR": "Dizem que veio do porto de Arkhangelsk, e o Azul Russo foi exibido na Inglaterra na década de 1870. Sua pelagem dupla e aveludada parece prateada porque cada fio tem a ponta cinza-clara. É gentil e um pouco tímido com estranhos.",
+          "ko": "아르한겔스크 항구에서 왔다고 전해지는 러시안 블루는 1870년대 영국의 캣쇼에 출품됐어요. 털 한 올 한 올의 끝이 옅은 회색이라 폭신한 이중모가 은빛으로 보여요. 온순하고, 낯선 사람에게는 다소 수줍어해요."
         }
       },
       "premiumFile": "chapter_06_russian_blue_premium"
@@ -457,11 +685,23 @@
       "kind": "breed",
       "title": {
         "en": "Abyssinian",
-        "tr": "Habeş Kedisi"
+        "tr": "Habeş Kedisi",
+        "ja": "アビシニアン",
+        "de": "Abessinierkatze",
+        "fr": "Abyssin",
+        "es": "Abisinio",
+        "pt-BR": "Abissínio",
+        "ko": "아비시니안"
       },
       "subtitle": {
         "en": "Ticked coat and big ears",
-        "tr": "Kırçıllı tüy ve iri kulaklar"
+        "tr": "Kırçıllı tüy ve iri kulaklar",
+        "ja": "ティックドの被毛と大きな耳",
+        "de": "Getickte Fellzeichnung und große Ohren",
+        "fr": "Robe tiquetée et grandes oreilles",
+        "es": "Pelo atigrado y orejas grandes",
+        "pt-BR": "Pelo tiquetado e orelhas grandes",
+        "ko": "티킹 털과 큰 귀"
       },
       "accentColor": "#C47F4F",
       "file": "chapter_07_abyssinian",
@@ -503,12 +743,24 @@
         "rarity": "common",
         "origin": {
           "en": "Named after Abyssinia (Ethiopia)",
-          "tr": "Adını Habeşistan'dan (Etiyopya) alır"
+          "tr": "Adını Habeşistan'dan (Etiyopya) alır",
+          "ja": "アビシニア（エチオピア）にちなむ名前",
+          "de": "Benannt nach Abessinien (Äthiopien)",
+          "fr": "Nommé d'après l'Abyssinie (Éthiopie)",
+          "es": "Debe su nombre a Abisinia (Etiopía)",
+          "pt-BR": "Nome em homenagem à Abissínia (Etiópia)",
+          "ko": "아비시니아(에티오피아)에서 따온 이름"
         },
         "lifespan": "12–15",
         "coat": {
           "en": "Short, ticked",
-          "tr": "Kısa, kırçıllı"
+          "tr": "Kısa, kırçıllı",
+          "ja": "短毛、ティックド",
+          "de": "Kurz, getickt",
+          "fr": "Court, tiqueté",
+          "es": "Corto, atigrado (ticked)",
+          "pt-BR": "Curta, tiquetada",
+          "ko": "단모, 티킹"
         },
         "stats": {
           "energy": 5,
@@ -518,11 +770,23 @@
         },
         "fact": {
           "en": "It looks like the cats of ancient Egyptian art, but genetics point to the Indian Ocean coast.",
-          "tr": "Antik Mısır sanatındaki kedilere benzer, ama genetik çalışmalar Hint Okyanusu kıyılarını işaret eder."
+          "tr": "Antik Mısır sanatındaki kedilere benzer, ama genetik çalışmalar Hint Okyanusu kıyılarını işaret eder.",
+          "ja": "古代エジプト美術の猫に似ていますが、遺伝学的にはインド洋沿岸の出身と考えられています。",
+          "de": "Sie ähnelt den Katzen der altägyptischen Kunst, doch die Genetik deutet auf die Küste des Indischen Ozeans.",
+          "fr": "Il ressemble aux chats de l'art de l'Égypte ancienne, mais la génétique désigne les côtes de l'océan Indien.",
+          "es": "Se parece a los gatos del arte del antiguo Egipto, pero la genética apunta a la costa del océano Índico.",
+          "pt-BR": "Parece os gatos da arte do Antigo Egito, mas a genética aponta para a costa do Oceano Índico.",
+          "ko": "고대 이집트 미술 속 고양이를 닮았지만, 유전학적으로는 인도양 연안에서 온 것으로 보여요."
         },
         "about": {
           "en": "The Abyssinian's 'ticked' coat has bands of color on every hair, giving it a warm, shimmering look. Its true origin is debated, but it became established in Britain in the late 1800s. Abyssinians are athletic, curious and love to climb.",
-          "tr": "Habeş kedisinin kırçıllı tüyünde her telde renk bantları vardır; bu ona sıcak, parıltılı bir görünüm verir. Gerçek kökeni tartışmalıdır ama 1800'lerin sonunda İngiltere'de yerleşti. Atletik, meraklı ve tırmanmayı seven kedilerdir."
+          "tr": "Habeş kedisinin kırçıllı tüyünde her telde renk bantları vardır; bu ona sıcak, parıltılı bir görünüm verir. Gerçek kökeni tartışmalıdır ama 1800'lerin sonunda İngiltere'de yerleşti. Atletik, meraklı ve tırmanmayı seven kedilerdir.",
+          "ja": "アビシニアンの「ティックド」の被毛は1本1本に色の帯があり、温かみのあるきらめくような見た目になります。本当の起源には諸説ありますが、1800年代後半にイギリスで品種として確立されました。運動神経がよく好奇心旺盛で、高いところに登るのが大好きです。",
+          "de": "Das „getickte“ Fell der Abessinierkatze hat auf jedem Haar Farbbänder, was ihm einen warmen, schimmernden Look verleiht. Ihre wahre Herkunft ist umstritten, doch in Großbritannien etablierte sie sich im späten 19. Jahrhundert. Abessinierkatzen sind sportlich, neugierig und klettern gern.",
+          "fr": "Le pelage « tiqueté » de l'Abyssin présente des bandes de couleur sur chaque poil, ce qui lui donne un aspect chaud et chatoyant. Sa véritable origine est débattue, mais la race s'est établie en Grande-Bretagne à la fin du XIXe siècle. L'Abyssin est athlétique, curieux et adore grimper.",
+          "es": "El pelaje «ticked» del abisinio tiene bandas de color en cada pelo, lo que le da un aspecto cálido y brillante. Su verdadero origen es objeto de debate, pero la raza se consolidó en Gran Bretaña a finales del siglo XIX. Los abisinios son atléticos, curiosos y les encanta trepar.",
+          "pt-BR": "A pelagem \"tiquetada\" do Abissínio tem faixas de cor em cada fio, o que lhe dá uma aparência quente e cintilante. Sua verdadeira origem é discutida, mas a raça se estabeleceu na Grã-Bretanha no fim do século XIX. Os Abissínios são atléticos, curiosos e adoram escalar.",
+          "ko": "아비시니안의 '티킹' 털은 한 올마다 색 띠가 있어 따뜻하고 은은하게 반짝이는 느낌을 줘요. 정확한 기원은 논란이 있지만, 1800년대 후반 영국에서 품종으로 자리 잡았어요. 아비시니안은 운동 능력이 뛰어나고 호기심이 많으며 높은 곳에 오르는 걸 좋아해요."
         }
       },
       "premiumFile": "chapter_07_abyssinian_premium"
@@ -532,11 +796,23 @@
       "kind": "breed",
       "title": {
         "en": "Birman",
-        "tr": "Birman"
+        "tr": "Birman",
+        "ja": "バーマン",
+        "de": "Heilige Birma",
+        "fr": "Sacré de Birmanie",
+        "es": "Birmano sagrado",
+        "pt-BR": "Sagrado da Birmânia",
+        "ko": "버만"
       },
       "subtitle": {
         "en": "Sacred cat with white gloves",
-        "tr": "Beyaz eldivenli kutsal kedi"
+        "tr": "Beyaz eldivenli kutsal kedi",
+        "ja": "白い手袋の聖なる猫",
+        "de": "Heilige Katze mit weißen Handschuhen",
+        "fr": "Chat sacré aux gants blancs",
+        "es": "Gato sagrado con guantes blancos",
+        "pt-BR": "O gato sagrado de luvas brancas",
+        "ko": "하얀 장갑을 낀 신성한 고양이"
       },
       "accentColor": "#E3D3B8",
       "file": "chapter_08_birman",
@@ -575,12 +851,24 @@
         "rarity": "common",
         "origin": {
           "en": "Myanmar (Burma)",
-          "tr": "Myanmar (Burma)"
+          "tr": "Myanmar (Burma)",
+          "ja": "ミャンマー（ビルマ）",
+          "de": "Myanmar (Birma)",
+          "fr": "Myanmar (Birmanie)",
+          "es": "Myanmar (Birmania)",
+          "pt-BR": "Mianmar (Birmânia)",
+          "ko": "미얀마(버마)"
         },
         "lifespan": "12–16",
         "coat": {
           "en": "Semi-long, white gloves",
-          "tr": "Yarı uzun, beyaz eldivenli"
+          "tr": "Yarı uzun, beyaz eldivenli",
+          "ja": "セミロング、白い手袋",
+          "de": "Halblang, weiße Handschuhe",
+          "fr": "Mi-long, gants blancs",
+          "es": "Semilargo, guantes blancos",
+          "pt-BR": "Semilonga, luvas brancas",
+          "ko": "중장모, 하얀 장갑"
         },
         "stats": {
           "energy": 2,
@@ -590,11 +878,23 @@
         },
         "fact": {
           "en": "Legend says a temple cat's paws turned white where they touched its dying priest.",
-          "tr": "Efsaneye göre bir tapınak kedisinin, ölmekte olan rahibine dokunan patileri beyaza dönmüştür."
+          "tr": "Efsaneye göre bir tapınak kedisinin, ölmekte olan rahibine dokunan patileri beyaza dönmüştür.",
+          "ja": "伝説では、寺院の猫の足先が、息を引き取る僧侶に触れたところだけ白くなったといわれています。",
+          "de": "Der Legende nach wurden die Pfoten einer Tempelkatze weiß, wo sie ihren sterbenden Priester berührten.",
+          "fr": "La légende dit que les pattes d'un chat de temple sont devenues blanches là où elles touchaient son prêtre mourant.",
+          "es": "Cuenta la leyenda que las patas de un gato del templo se volvieron blancas donde tocaron a su sacerdote moribundo.",
+          "pt-BR": "Diz a lenda que as patas de um gato de templo ficaram brancas onde tocaram seu sacerdote moribundo.",
+          "ko": "전설에 따르면 사원의 고양이가 죽어 가는 사제에게 닿은 발이 하얗게 변했다고 해요."
         },
         "about": {
           "en": "Known as the 'Sacred Cat of Burma', the Birman has a silky colorpoint coat, deep blue eyes and pure white paws. The breed was developed in France in the early 1900s. Birmans are gentle, quiet companions.",
-          "tr": "'Burma'nın Kutsal Kedisi' olarak bilinen Birman'ın ipeksi tüyü, koyu mavi gözleri ve bembeyaz patileri vardır. Tür 1900'lerin başında Fransa'da geliştirildi. Nazik ve sessiz yol arkadaşlarıdır."
+          "tr": "'Burma'nın Kutsal Kedisi' olarak bilinen Birman'ın ipeksi tüyü, koyu mavi gözleri ve bembeyaz patileri vardır. Tür 1900'lerin başında Fransa'da geliştirildi. Nazik ve sessiz yol arkadaşlarıdır.",
+          "ja": "「ビルマの聖猫」として知られるバーマンは、絹のようなカラーポイントの被毛、深い青色の瞳、真っ白な足先をもっています。この品種は1900年代初めにフランスで作出されました。バーマンはおだやかで物静かな良きパートナーです。",
+          "de": "Die Heilige Birma, auch „Heilige Katze von Birma“ genannt, hat ein seidiges Colorpoint-Fell, tiefblaue Augen und reinweiße Pfoten. Die Rasse wurde Anfang des 20. Jahrhunderts in Frankreich gezüchtet. Birmas sind sanfte, ruhige Begleiter.",
+          "fr": "Surnommé le « chat sacré de Birmanie », le Sacré de Birmanie a un pelage colourpoint soyeux, des yeux d'un bleu profond et des pattes d'un blanc pur. La race a été développée en France au début du XXe siècle. C'est un compagnon doux et calme.",
+          "es": "Conocido como el «gato sagrado de Birmania», el birmano tiene un pelaje colorpoint sedoso, ojos de un azul intenso y patas de un blanco puro. La raza se desarrolló en Francia a principios del siglo XX. Los birmanos son compañeros dulces y tranquilos.",
+          "pt-BR": "Conhecido como o \"Gato Sagrado da Birmânia\", ele tem pelagem colorpoint sedosa, olhos azul-profundos e patas totalmente brancas. A raça foi desenvolvida na França no início do século XX. São companheiros gentis e tranquilos.",
+          "ko": "'버마의 신성한 고양이'로 알려진 버만은 실키한 컬러포인트 털, 깊고 파란 눈, 새하얀 발을 가졌어요. 이 품종은 1900년대 초 프랑스에서 개발됐어요. 버만은 온순하고 조용한 반려묘예요."
         }
       },
       "premiumFile": "chapter_08_birman_premium"
@@ -604,11 +904,23 @@
       "kind": "breed",
       "title": {
         "en": "Bengal",
-        "tr": "Bengal"
+        "tr": "Bengal",
+        "ja": "ベンガル",
+        "de": "Bengalkatze",
+        "fr": "Bengal",
+        "es": "Bengalí",
+        "pt-BR": "Bengal",
+        "ko": "벵갈"
       },
       "subtitle": {
         "en": "Wild rosettes, loves to climb",
-        "tr": "Vahşi benekler, tırmanmayı sever"
+        "tr": "Vahşi benekler, tırmanmayı sever",
+        "ja": "野性的なロゼット模様、木登り好き",
+        "de": "Wilde Rosetten, klettert gern",
+        "fr": "Rosettes sauvages, adore grimper",
+        "es": "Rosetas salvajes, le encanta trepar",
+        "pt-BR": "Rosetas selvagens, adora escalar",
+        "ko": "야생의 로제트 무늬, 오르기를 좋아해요"
       },
       "accentColor": "#D99A3E",
       "file": "chapter_09_bengal",
@@ -651,12 +963,24 @@
         "rarity": "rare",
         "origin": {
           "en": "United States",
-          "tr": "ABD"
+          "tr": "ABD",
+          "ja": "アメリカ",
+          "de": "USA",
+          "fr": "États-Unis",
+          "es": "Estados Unidos",
+          "pt-BR": "Estados Unidos",
+          "ko": "미국"
         },
         "lifespan": "12–16",
         "coat": {
           "en": "Short, spotted or marbled",
-          "tr": "Kısa, benekli ya da mermer desenli"
+          "tr": "Kısa, benekli ya da mermer desenli",
+          "ja": "短毛、スポッテッドまたはマーブル",
+          "de": "Kurz, getupft oder marmoriert",
+          "fr": "Court, tacheté ou marbré",
+          "es": "Corto, moteado o marmolado",
+          "pt-BR": "Curta, pintada ou marmorizada",
+          "ko": "단모, 점박이 또는 마블"
         },
         "stats": {
           "energy": 5,
@@ -666,11 +990,23 @@
         },
         "fact": {
           "en": "Bred from domestic cats and the wild Asian leopard cat; many Bengals love water.",
-          "tr": "Evcil kedilerle vahşi Asya leopar kedisinden geliştirildi; çoğu suyu çok sever."
+          "tr": "Evcil kedilerle vahşi Asya leopar kedisinden geliştirildi; çoğu suyu çok sever.",
+          "ja": "イエネコと野生のアジアヒョウ猫（ベンガルヤマネコ）から生まれた品種で、水が好きなベンガルも多くいます。",
+          "de": "Gezüchtet aus Hauskatzen und der wilden Asiatischen Leopardkatze; viele Bengalkatzen lieben Wasser.",
+          "fr": "Issu de chats domestiques et du chat-léopard du Bengale sauvage ; beaucoup de Bengals adorent l'eau.",
+          "es": "Procede de gatos domésticos y del gato leopardo asiático salvaje; a muchos bengalíes les encanta el agua.",
+          "pt-BR": "Criado a partir de gatos domésticos e do gato-leopardo-asiático selvagem; muitos Bengals adoram água.",
+          "ko": "집고양이와 야생 아시아 표범고양이를 교배해 만들어졌어요. 물을 좋아하는 벵갈도 많아요."
         },
         "about": {
           "en": "The Bengal was created by crossing domestic cats with the Asian leopard cat, and was recognized as a breed in the 1980s. Its spotted or marbled coat often has a glittering sheen. Bengals are very active and need plenty of play.",
-          "tr": "Bengal, evcil kedilerle Asya leopar kedisinin melezlenmesiyle oluşturuldu ve 1980'lerde tür olarak tanındı. Benekli ya da mermer desenli tüyü çoğu zaman parıldar. Çok hareketlidirler ve bol oyun isterler."
+          "tr": "Bengal, evcil kedilerle Asya leopar kedisinin melezlenmesiyle oluşturuldu ve 1980'lerde tür olarak tanındı. Benekli ya da mermer desenli tüyü çoğu zaman parıldar. Çok hareketlidirler ve bol oyun isterler.",
+          "ja": "ベンガルはイエネコとアジアヒョウ猫（ベンガルヤマネコ）を交配して作出され、1980年代に品種として公認されました。斑点模様やマーブル模様の被毛には、きらめくような光沢があることがよくあります。とても活発で、たっぷり遊ぶ時間が必要です。",
+          "de": "Die Bengalkatze entstand durch Kreuzung von Hauskatzen mit der Asiatischen Leopardkatze und wurde in den 1980er-Jahren als Rasse anerkannt. Ihr getupftes oder marmoriertes Fell hat oft einen glitzernden Schimmer. Bengalkatzen sind sehr aktiv und brauchen viel Spiel.",
+          "fr": "Le Bengal a été créé en croisant des chats domestiques avec le chat-léopard du Bengale, et a été reconnu comme race dans les années 1980. Son pelage tacheté ou marbré a souvent un reflet scintillant. Le Bengal est très actif et a besoin de beaucoup jouer.",
+          "es": "El bengalí se creó cruzando gatos domésticos con el gato leopardo asiático y fue reconocido como raza en la década de 1980. Su pelaje moteado o marmolado suele tener un brillo resplandeciente. Los bengalíes son muy activos y necesitan mucho juego.",
+          "pt-BR": "O Bengal foi criado cruzando gatos domésticos com o gato-leopardo-asiático e foi reconhecido como raça nos anos 1980. Sua pelagem pintada ou marmorizada costuma ter um brilho cintilante. Os Bengals são muito ativos e precisam de muita brincadeira.",
+          "ko": "벵갈은 집고양이와 아시아 표범고양이를 교배해 탄생했고, 1980년대에 품종으로 인정받았어요. 점박이나 마블 무늬 털에는 반짝이는 광택이 도는 경우가 많아요. 벵갈은 활동량이 아주 많아서 충분히 놀아 줘야 해요."
         }
       },
       "premiumFile": "chapter_09_bengal_premium"
@@ -680,11 +1016,23 @@
       "kind": "breed",
       "title": {
         "en": "Sphynx",
-        "tr": "Sfenks"
+        "tr": "Sfenks",
+        "ja": "スフィンクス",
+        "de": "Sphynx",
+        "fr": "Sphynx",
+        "es": "Esfinge",
+        "pt-BR": "Sphynx",
+        "ko": "스핑크스"
       },
       "subtitle": {
         "en": "Hairless and always warm",
-        "tr": "Tüysüz ve hep sıcacık"
+        "tr": "Tüysüz ve hep sıcacık",
+        "ja": "毛がなくて、いつもぽかぽか",
+        "de": "Haarlos und immer warm",
+        "fr": "Sans poils et toujours chaud",
+        "es": "Sin pelo y siempre calentito",
+        "pt-BR": "Sem pelo e sempre quentinho",
+        "ko": "털이 없고 늘 따뜻해요"
       },
       "accentColor": "#E7B9A5",
       "file": "chapter_10_sphynx",
@@ -725,12 +1073,24 @@
         "rarity": "rare",
         "origin": {
           "en": "Canada",
-          "tr": "Kanada"
+          "tr": "Kanada",
+          "ja": "カナダ",
+          "de": "Kanada",
+          "fr": "Canada",
+          "es": "Canadá",
+          "pt-BR": "Canadá",
+          "ko": "캐나다"
         },
         "lifespan": "8–14",
         "coat": {
           "en": "Hairless (fine peach fuzz)",
-          "tr": "Tüysüz (ince şeftali tüyü)"
+          "tr": "Tüysüz (ince şeftali tüyü)",
+          "ja": "無毛（桃の産毛のような細い毛）",
+          "de": "Haarlos (feiner Pfirsichflaum)",
+          "fr": "Nu (fin duvet de pêche)",
+          "es": "Sin pelo (fina pelusa de melocotón)",
+          "pt-BR": "Sem pelo (penugem fina como de pêssego)",
+          "ko": "무모(복숭아 같은 솜털)"
         },
         "stats": {
           "energy": 4,
@@ -740,11 +1100,23 @@
         },
         "fact": {
           "en": "Not truly bald: a fine peach fuzz covers its warm skin, and it needs regular baths.",
-          "tr": "Aslında tamamen tüysüz değildir; sıcak teni ince bir tüyle kaplıdır ve düzenli banyo ister."
+          "tr": "Aslında tamamen tüysüz değildir; sıcak teni ince bir tüyle kaplıdır ve düzenli banyo ister.",
+          "ja": "完全な無毛ではなく、温かい肌は桃の産毛のような細い毛に覆われています。定期的な入浴が必要です。",
+          "de": "Nicht wirklich nackt: Ein feiner Pfirsichflaum bedeckt ihre warme Haut, und sie braucht regelmäßig ein Bad.",
+          "fr": "Pas vraiment nu : un fin duvet de pêche couvre sa peau chaude, et il a besoin de bains réguliers.",
+          "es": "No es realmente calvo: una fina pelusa como la del melocotón cubre su piel cálida, y necesita baños regulares.",
+          "pt-BR": "Não é totalmente careca: uma penugem fina, como a de um pêssego, cobre sua pele quentinha, e ele precisa de banhos regulares.",
+          "ko": "완전히 털이 없는 건 아니에요. 따뜻한 피부를 복숭아 같은 솜털이 덮고 있고, 정기적으로 목욕시켜야 해요."
         },
         "about": {
           "en": "The modern Sphynx began in Canada in 1966 with a hairless kitten born to a domestic cat. Without a full coat it loses heat quickly, so it seeks warm laps and sunny spots. Its skin needs regular washing to remove natural oils.",
-          "tr": "Modern Sfenks, 1966'da Kanada'da evcil bir kediden doğan tüysüz bir yavruyla başladı. Tüyü olmadığı için çabuk üşür; sıcak kucakları ve güneşli köşeleri arar. Derisindeki doğal yağlar nedeniyle düzenli yıkanması gerekir."
+          "tr": "Modern Sfenks, 1966'da Kanada'da evcil bir kediden doğan tüysüz bir yavruyla başladı. Tüyü olmadığı için çabuk üşür; sıcak kucakları ve güneşli köşeleri arar. Derisindeki doğal yağlar nedeniyle düzenli yıkanması gerekir.",
+          "ja": "現在のスフィンクスは、1966年にカナダでイエネコから生まれた無毛の子猫から始まりました。被毛がほとんどないため体温を失いやすく、温かいひざの上や日なたを好みます。皮膚の天然の脂を落とすため、定期的に洗ってあげる必要があります。",
+          "de": "Die moderne Sphynx begann 1966 in Kanada mit einem haarlosen Kätzchen, das eine Hauskatze zur Welt brachte. Ohne volles Fell verliert sie schnell Wärme und sucht daher warme Schöße und sonnige Plätze. Ihre Haut muss regelmäßig gewaschen werden, um natürliche Fette zu entfernen.",
+          "fr": "Le Sphynx moderne est né au Canada en 1966 avec un chaton sans poils mis au monde par une chatte domestique. Sans véritable pelage, il perd vite sa chaleur ; il recherche donc les genoux bien chauds et les coins ensoleillés. Sa peau doit être lavée régulièrement pour éliminer le sébum naturel.",
+          "es": "El esfinge moderno surgió en Canadá en 1966 con un gatito sin pelo nacido de una gata doméstica. Sin un pelaje completo pierde calor rápidamente, por lo que busca regazos cálidos y rincones soleados. Su piel necesita lavados regulares para eliminar los aceites naturales.",
+          "pt-BR": "O Sphynx moderno surgiu no Canadá em 1966, com um filhote sem pelo nascido de uma gata doméstica. Sem uma pelagem completa, perde calor rapidamente, por isso procura colos quentinhos e cantinhos ensolarados. Sua pele precisa ser lavada regularmente para remover a oleosidade natural.",
+          "ko": "현대의 스핑크스는 1966년 캐나다에서 집고양이가 낳은 털 없는 새끼 고양이에서 시작됐어요. 털이 거의 없어 체온을 빨리 잃기 때문에 따뜻한 무릎이나 햇볕 드는 곳을 찾아요. 피부의 천연 유분을 없애기 위해 정기적으로 씻겨 줘야 해요."
         }
       },
       "premiumFile": "chapter_10_sphynx_premium"
@@ -754,11 +1126,23 @@
       "kind": "breed",
       "title": {
         "en": "Turkish Angora",
-        "tr": "Ankara Kedisi"
+        "tr": "Ankara Kedisi",
+        "ja": "ターキッシュアンゴラ",
+        "de": "Türkisch Angora",
+        "fr": "Angora turc",
+        "es": "Angora turco",
+        "pt-BR": "Angorá Turco",
+        "ko": "터키시 앙고라"
       },
       "subtitle": {
         "en": "Snow white, often odd-eyed",
-        "tr": "Kar beyazı, çoğu zaman ela-mavi göz"
+        "tr": "Kar beyazı, çoğu zaman ela-mavi göz",
+        "ja": "雪のように白く、オッドアイも多い",
+        "de": "Schneeweiß, oft mit zweifarbigen Augen",
+        "fr": "Blanc neige, souvent aux yeux vairons",
+        "es": "Blanco nieve, a menudo con ojos de distinto color",
+        "pt-BR": "Branco como a neve, muitas vezes de olhos bicolores",
+        "ko": "새하얀 털, 오드아이가 많아요"
       },
       "accentColor": "#F0E6DA",
       "file": "chapter_11_turkish_angora",
@@ -796,12 +1180,24 @@
         "rarity": "rare",
         "origin": {
           "en": "Türkiye (Ankara)",
-          "tr": "Türkiye (Ankara)"
+          "tr": "Türkiye (Ankara)",
+          "ja": "トルコ（アンカラ）",
+          "de": "Türkei (Ankara)",
+          "fr": "Turquie (Ankara)",
+          "es": "Turquía (Ankara)",
+          "pt-BR": "Turquia (Ancara)",
+          "ko": "튀르키예(앙카라)"
         },
         "lifespan": "12–18",
         "coat": {
           "en": "Semi-long, silky",
-          "tr": "Yarı uzun, ipeksi"
+          "tr": "Yarı uzun, ipeksi",
+          "ja": "セミロング、絹のような手触り",
+          "de": "Halblang, seidig",
+          "fr": "Mi-long, soyeux",
+          "es": "Semilargo y sedoso",
+          "pt-BR": "Semilonga e sedosa",
+          "ko": "중장모, 실키함"
         },
         "stats": {
           "energy": 4,
@@ -811,11 +1207,23 @@
         },
         "fact": {
           "en": "One of the oldest natural breeds, treasured in Ankara for centuries; odd-colored eyes are common.",
-          "tr": "En eski doğal türlerden biri, Ankara'da yüzyıllardır el üstünde tutulur; farklı renkte gözler sık görülür."
+          "tr": "En eski doğal türlerden biri, Ankara'da yüzyıllardır el üstünde tutulur; farklı renkte gözler sık görülür.",
+          "ja": "最も古い自然発生種のひとつで、アンカラで何世紀にもわたって大切にされてきました。左右の目の色が違うオッドアイもよく見られます。",
+          "de": "Eine der ältesten natürlichen Rassen, in Ankara seit Jahrhunderten geschätzt; verschiedenfarbige Augen sind häufig.",
+          "fr": "L'une des plus anciennes races naturelles, chérie à Ankara depuis des siècles ; les yeux vairons sont fréquents.",
+          "es": "Una de las razas naturales más antiguas, apreciada en Ankara durante siglos; es habitual que tenga ojos de distinto color.",
+          "pt-BR": "Uma das raças naturais mais antigas, valorizada em Ancara há séculos; olhos de cores diferentes são comuns.",
+          "ko": "가장 오래된 자연 발생 품종 중 하나로, 수백 년 동안 앙카라에서 귀하게 여겨졌어요. 양쪽 눈 색이 다른 오드아이가 흔해요."
         },
         "about": {
           "en": "A natural breed from central Anatolia, the Turkish Angora has a silky, single-layer coat and a long, plumed tail. White is the classic color, and odd-colored eyes are common. Angoras are lively, intelligent and very affectionate.",
-          "tr": "Orta Anadolu'nun doğal türü olan Ankara kedisinin ipeksi, tek katlı tüyü ve uzun, püsküllü kuyruğu vardır. Klasik rengi beyazdır; farklı renkte gözler sık görülür. Canlı, zeki ve çok sevecen kedilerdir."
+          "tr": "Orta Anadolu'nun doğal türü olan Ankara kedisinin ipeksi, tek katlı tüyü ve uzun, püsküllü kuyruğu vardır. Klasik rengi beyazdır; farklı renkte gözler sık görülür. Canlı, zeki ve çok sevecen kedilerdir.",
+          "ja": "アナトリア中部の自然発生種であるターキッシュアンゴラは、絹のようなシングルコートと、羽根飾りのような長いしっぽをもっています。白が代表的な毛色で、オッドアイもよく見られます。活発で賢く、とても愛情深い猫です。",
+          "de": "Die Türkisch Angora ist eine natürliche Rasse aus Zentralanatolien mit seidigem, einschichtigem Fell und einem langen, buschigen Schwanz. Weiß ist die klassische Farbe, und verschiedenfarbige Augen sind häufig. Angoras sind lebhaft, intelligent und sehr anhänglich.",
+          "fr": "Race naturelle du centre de l'Anatolie, l'Angora turc a un pelage soyeux sans sous-poil et une longue queue en panache. Le blanc est sa couleur classique et les yeux vairons sont fréquents. L'Angora est vif, intelligent et très affectueux.",
+          "es": "Raza natural de Anatolia central, el angora turco tiene un pelaje sedoso de una sola capa y una cola larga y emplumada. El blanco es el color clásico, y es habitual que tenga ojos de distinto color. Los angoras son vivaces, inteligentes y muy cariñosos.",
+          "pt-BR": "Raça natural da Anatólia central, o Angorá Turco tem pelagem sedosa de camada única e cauda longa e felpuda. O branco é a cor clássica, e olhos de cores diferentes são comuns. Os Angorás são animados, inteligentes e muito carinhosos.",
+          "ko": "아나톨리아 중부에서 자연 발생한 터키시 앙고라는 실키한 단일모와 깃털처럼 풍성한 긴 꼬리를 가졌어요. 흰색이 대표적인 색이고, 오드아이도 흔해요. 앙고라는 활발하고 영리하며 애정이 아주 많아요."
         }
       },
       "premiumFile": "chapter_11_turkish_angora_premium"
@@ -825,11 +1233,23 @@
       "kind": "breed",
       "title": {
         "en": "Norwegian Forest",
-        "tr": "Norveç Orman Kedisi"
+        "tr": "Norveç Orman Kedisi",
+        "ja": "ノルウェージャンフォレストキャット",
+        "de": "Norwegische Waldkatze",
+        "fr": "Chat des forêts norvégiennes",
+        "es": "Bosque de Noruega",
+        "pt-BR": "Norueguês da Floresta",
+        "ko": "노르웨이 숲"
       },
       "subtitle": {
         "en": "Thick coat for snowy woods",
-        "tr": "Karlı ormanlar için kalın tüy"
+        "tr": "Karlı ormanlar için kalın tüy",
+        "ja": "雪の森に備えた厚い被毛",
+        "de": "Dickes Fell für verschneite Wälder",
+        "fr": "Épaisse fourrure pour bois enneigés",
+        "es": "Pelo espeso para bosques nevados",
+        "pt-BR": "Pelo grosso para florestas nevadas",
+        "ko": "눈 덮인 숲을 위한 두꺼운 털"
       },
       "accentColor": "#8C7A5B",
       "file": "chapter_12_norwegian_forest",
@@ -871,12 +1291,24 @@
         "rarity": "rare",
         "origin": {
           "en": "Norway",
-          "tr": "Norveç"
+          "tr": "Norveç",
+          "ja": "ノルウェー",
+          "de": "Norwegen",
+          "fr": "Norvège",
+          "es": "Noruega",
+          "pt-BR": "Noruega",
+          "ko": "노르웨이"
         },
         "lifespan": "12–16",
         "coat": {
           "en": "Long, water-resistant double coat",
-          "tr": "Uzun, su geçirmez çift kat"
+          "tr": "Uzun, su geçirmez çift kat",
+          "ja": "長毛、水をはじくダブルコート",
+          "de": "Langes, wasserabweisendes Doppelfell",
+          "fr": "Long, double pelage imperméable",
+          "es": "Doble capa larga y resistente al agua",
+          "pt-BR": "Longa, dupla e resistente à água",
+          "ko": "장모, 방수성 이중모"
         },
         "stats": {
           "energy": 3,
@@ -886,11 +1318,23 @@
         },
         "fact": {
           "en": "Norse legends tell of forest cats pulling the goddess Freya's chariot.",
-          "tr": "İskandinav efsanelerinde tanrıça Freya'nın arabasını orman kedileri çeker."
+          "tr": "İskandinav efsanelerinde tanrıça Freya'nın arabasını orman kedileri çeker.",
+          "ja": "北欧神話には、女神フレイヤの戦車を森の猫たちが引いたという話があります。",
+          "de": "Nordische Sagen erzählen von Waldkatzen, die den Wagen der Göttin Freya ziehen.",
+          "fr": "Les légendes nordiques racontent que des chats des forêts tiraient le char de la déesse Freyja.",
+          "es": "Las leyendas nórdicas hablan de gatos del bosque que tiraban del carro de la diosa Freya.",
+          "pt-BR": "Lendas nórdicas contam que gatos da floresta puxavam a carruagem da deusa Freya.",
+          "ko": "북유럽 전설에는 숲고양이들이 여신 프레이야의 마차를 끌었다는 이야기가 있어요."
         },
         "about": {
           "en": "Adapted to cold Scandinavian forests, this large cat has a water-resistant double coat, a thick ruff and tufted ears. It is a skilled climber that can descend trees head-first. Despite its wild look, it is friendly and calm.",
-          "tr": "Soğuk İskandinav ormanlarına uyum sağlamış bu iri kedinin su geçirmez çift kat tüyü, gür yelesi ve püsküllü kulakları vardır. Ağaçlardan baş aşağı inebilen usta bir tırmanıcıdır. Vahşi görünüşüne rağmen arkadaş canlısı ve sakindir."
+          "tr": "Soğuk İskandinav ormanlarına uyum sağlamış bu iri kedinin su geçirmez çift kat tüyü, gür yelesi ve püsküllü kulakları vardır. Ağaçlardan baş aşağı inebilen usta bir tırmanıcıdır. Vahşi görünüşüne rağmen arkadaş canlısı ve sakindir.",
+          "ja": "スカンジナビアの寒い森に適応したこの大型の猫は、水をはじくダブルコート、豊かな襟毛、房毛のある耳をもっています。木登りが得意で、頭を下にして木から降りることもできます。野性的な見た目とは裏腹に、人なつっこくおだやかです。",
+          "de": "Diese große, an kalte skandinavische Wälder angepasste Katze hat ein wasserabweisendes Doppelfell, eine dichte Halskrause und Pinselohren. Sie ist eine geschickte Kletterin, die Bäume kopfüber hinabsteigen kann. Trotz ihres wilden Aussehens ist sie freundlich und ruhig.",
+          "fr": "Adapté aux froides forêts scandinaves, ce grand chat possède un double pelage imperméable, une épaisse collerette et des oreilles ornées de plumets. Grimpeur habile, il peut descendre des arbres la tête la première. Malgré son allure sauvage, il est sociable et calme.",
+          "es": "Adaptado a los fríos bosques escandinavos, este gato grande tiene un pelaje de doble capa resistente al agua, una espesa gorguera y orejas con penachos. Es un hábil trepador capaz de bajar de los árboles de cabeza. A pesar de su aspecto salvaje, es amistoso y tranquilo.",
+          "pt-BR": "Adaptado às florestas frias da Escandinávia, este gato grande tem pelagem dupla resistente à água, uma juba espessa e tufos nas orelhas. É um escalador habilidoso, capaz de descer das árvores de cabeça para baixo. Apesar da aparência selvagem, é simpático e calmo.",
+          "ko": "추운 스칸디나비아 숲에 적응한 이 대형 고양이는 방수성 이중모, 풍성한 목털, 끝에 털 뭉치가 난 귀를 가졌어요. 나무를 아주 잘 타서 머리부터 거꾸로 내려올 수도 있어요. 야생적인 외모와 달리 다정하고 차분해요."
         }
       },
       "premiumFile": "chapter_12_norwegian_forest_premium"
@@ -900,11 +1344,23 @@
       "kind": "breed",
       "title": {
         "en": "Turkish Van",
-        "tr": "Van Kedisi"
+        "tr": "Van Kedisi",
+        "ja": "ターキッシュバン",
+        "de": "Türkisch Van",
+        "fr": "Van turc",
+        "es": "Van turco",
+        "pt-BR": "Van Turco",
+        "ko": "터키시 반"
       },
       "subtitle": {
         "en": "The cat that loves to swim",
-        "tr": "Yüzmeyi seven kedi"
+        "tr": "Yüzmeyi seven kedi",
+        "ja": "泳ぐのが大好きな猫",
+        "de": "Die Katze, die gern schwimmt",
+        "fr": "Le chat qui adore nager",
+        "es": "El gato al que le encanta nadar",
+        "pt-BR": "O gato que adora nadar",
+        "ko": "수영을 좋아하는 고양이"
       },
       "accentColor": "#C9B27C",
       "file": "chapter_13_turkish_van",
@@ -948,12 +1404,24 @@
         "rarity": "rare",
         "origin": {
           "en": "Türkiye (Lake Van)",
-          "tr": "Türkiye (Van Gölü)"
+          "tr": "Türkiye (Van Gölü)",
+          "ja": "トルコ（ヴァン湖）",
+          "de": "Türkei (Vansee)",
+          "fr": "Turquie (lac de Van)",
+          "es": "Turquía (lago Van)",
+          "pt-BR": "Turquia (Lago Van)",
+          "ko": "튀르키예(반 호수)"
         },
         "lifespan": "12–17",
         "coat": {
           "en": "Semi-long, water-resistant",
-          "tr": "Yarı uzun, su geçirmez"
+          "tr": "Yarı uzun, su geçirmez",
+          "ja": "セミロング、水をはじく",
+          "de": "Halblang, wasserabweisend",
+          "fr": "Mi-long, imperméable",
+          "es": "Semilargo, resistente al agua",
+          "pt-BR": "Semilonga, resistente à água",
+          "ko": "중장모, 방수성"
         },
         "stats": {
           "energy": 5,
@@ -963,11 +1431,23 @@
         },
         "fact": {
           "en": "Nicknamed 'the swimming cat' for its love of water.",
-          "tr": "Suyu sevmesiyle 'yüzen kedi' olarak anılır."
+          "tr": "Suyu sevmesiyle 'yüzen kedi' olarak anılır.",
+          "ja": "水が大好きなことから「泳ぐ猫」と呼ばれています。",
+          "de": "Wegen ihrer Liebe zum Wasser „Schwimmkatze“ genannt.",
+          "fr": "Surnommé « le chat nageur » pour son amour de l'eau.",
+          "es": "Apodado «el gato nadador» por su amor al agua.",
+          "pt-BR": "Apelidado de \"gato nadador\" por seu amor pela água.",
+          "ko": "물을 좋아해서 '수영하는 고양이'라는 별명이 붙었어요."
         },
         "about": {
           "en": "The breed developed around Lake Van in eastern Türkiye. Its classic pattern is a white body with colored markings on the head and tail. Its semi-long coat resists water, and many Vans enjoy playing in it. Note: the all-white odd-eyed 'Van kedisi' of Türkiye is a related local cat.",
-          "tr": "Tür, Doğu Anadolu'da Van Gölü çevresinde gelişti. Klasik deseni beyaz gövde ve başta, kuyrukta renkli lekelerdir. Yarı uzun tüyü su geçirmez, çoğu Van kedisi suyla oynamayı sever. Not: Türkiye'deki bembeyaz, farklı renkte gözlü Van kedisi akraba bir yerel kedidir."
+          "tr": "Tür, Doğu Anadolu'da Van Gölü çevresinde gelişti. Klasik deseni beyaz gövde ve başta, kuyrukta renkli lekelerdir. Yarı uzun tüyü su geçirmez, çoğu Van kedisi suyla oynamayı sever. Not: Türkiye'deki bembeyaz, farklı renkte gözlü Van kedisi akraba bir yerel kedidir.",
+          "ja": "この品種はトルコ東部のヴァン湖周辺で発達しました。代表的な模様は、白い体に頭としっぽだけ色が入る柄です。セミロングの被毛は水をはじき、水遊びを楽しむ子も多くいます。なお、トルコの全身真っ白でオッドアイの「ヴァン・ケディシ」は、近縁の地元の猫です。",
+          "de": "Die Rasse entstand rund um den Vansee im Osten der Türkei. Ihr klassisches Muster ist ein weißer Körper mit farbigen Abzeichen an Kopf und Schwanz. Ihr halblanges Fell ist wasserabweisend, und viele Vans spielen gern im Wasser. Hinweis: Die ganz weiße „Van kedisi“ der Türkei mit verschiedenfarbigen Augen ist eine verwandte lokale Katze.",
+          "fr": "La race s'est développée autour du lac de Van, dans l'est de la Turquie. Son motif classique est un corps blanc avec des marques colorées sur la tête et la queue. Son pelage mi-long résiste à l'eau, et beaucoup de Vans aiment y jouer. À noter : le « Van kedisi » de Turquie, entièrement blanc aux yeux vairons, est un chat local apparenté.",
+          "es": "La raza se desarrolló en torno al lago Van, en el este de Turquía. Su patrón clásico es un cuerpo blanco con manchas de color en la cabeza y la cola. Su pelaje semilargo repele el agua, y a muchos vanes les encanta jugar en ella. Nota: el «Van kedisi» de Turquía, totalmente blanco y con ojos de distinto color, es un gato local emparentado.",
+          "pt-BR": "A raça se desenvolveu ao redor do Lago Van, no leste da Turquia. Seu padrão clássico é o corpo branco com manchas coloridas na cabeça e na cauda. Sua pelagem semilonga resiste à água, e muitos Vans adoram brincar nela. Observação: o \"Van kedisi\" da Turquia, todo branco e de olhos de cores diferentes, é um gato local aparentado.",
+          "ko": "이 품종은 튀르키예 동부의 반 호수 주변에서 발달했어요. 대표적인 무늬는 하얀 몸에 머리와 꼬리에만 색 무늬가 있는 형태예요. 중장모 털은 물에 잘 젖지 않고, 물놀이를 즐기는 반 고양이도 많아요. 참고로 튀르키예의 온몸이 하얀 오드아이 고양이 '반 케디시(Van kedisi)'는 이와 관련된 토종 고양이예요."
         }
       },
       "premiumFile": "chapter_13_turkish_van_premium"
@@ -977,11 +1457,23 @@
       "kind": "breed",
       "title": {
         "en": "Maine Coon",
-        "tr": "Maine Coon"
+        "tr": "Maine Coon",
+        "ja": "メインクーン",
+        "de": "Maine Coon",
+        "fr": "Maine Coon",
+        "es": "Maine Coon",
+        "pt-BR": "Maine Coon",
+        "ko": "메인쿤"
       },
       "subtitle": {
         "en": "Gentle giant with lynx tufts",
-        "tr": "Vaşak püsküllü nazik dev"
+        "tr": "Vaşak püsküllü nazik dev",
+        "ja": "オオヤマネコのような房毛の優しい巨人",
+        "de": "Sanfter Riese mit Luchspinseln",
+        "fr": "Doux géant aux plumets de lynx",
+        "es": "Gigante amable con penachos de lince",
+        "pt-BR": "Gigante gentil com tufos de lince",
+        "ko": "스라소니 귀털을 가진 온순한 거인"
       },
       "accentColor": "#7A5C45",
       "file": "chapter_14_maine_coon",
@@ -1021,12 +1513,24 @@
         "rarity": "rare",
         "origin": {
           "en": "United States (Maine)",
-          "tr": "ABD (Maine)"
+          "tr": "ABD (Maine)",
+          "ja": "アメリカ（メイン州）",
+          "de": "USA (Maine)",
+          "fr": "États-Unis (Maine)",
+          "es": "Estados Unidos (Maine)",
+          "pt-BR": "Estados Unidos (Maine)",
+          "ko": "미국(메인주)"
         },
         "lifespan": "12–15",
         "coat": {
           "en": "Long, shaggy",
-          "tr": "Uzun, gür"
+          "tr": "Uzun, gür",
+          "ja": "長毛、ふさふさ",
+          "de": "Lang, zottelig",
+          "fr": "Long, hirsute",
+          "es": "Largo y lanudo",
+          "pt-BR": "Longa e farta",
+          "ko": "장모, 덥수룩함"
         },
         "stats": {
           "energy": 3,
@@ -1036,11 +1540,23 @@
         },
         "fact": {
           "en": "One of the largest domestic breeds; males can weigh more than 8 kg.",
-          "tr": "En iri evcil kedi türlerinden; erkekleri 8 kilonun üzerine çıkabilir."
+          "tr": "En iri evcil kedi türlerinden; erkekleri 8 kilonun üzerine çıkabilir.",
+          "ja": "イエネコの中で最も大きな品種のひとつで、オスは8kgを超えることもあります。",
+          "de": "Eine der größten Hauskatzenrassen; Kater können über 8 kg wiegen.",
+          "fr": "L'une des plus grandes races domestiques ; les mâles peuvent peser plus de 8 kg.",
+          "es": "Una de las razas domésticas más grandes; los machos pueden pesar más de 8 kg.",
+          "pt-BR": "Uma das maiores raças domésticas; os machos podem pesar mais de 8 kg.",
+          "ko": "가장 큰 집고양이 품종 중 하나로, 수컷은 8kg이 넘기도 해요."
         },
         "about": {
           "en": "One of North America's oldest natural breeds, the Maine Coon was a working farm and ship cat. It has a shaggy, water-resistant coat, large paws and a long, bushy tail. It is gentle and playful, often called a 'gentle giant'.",
-          "tr": "Kuzey Amerika'nın en eski doğal türlerinden Maine Coon, çiftliklerde ve gemilerde çalışan bir kediydi. Gür ve su geçirmez tüyü, iri patileri ve uzun, kabarık kuyruğu vardır. Nazik ve oyunbazdır; çoğu zaman 'nazik dev' diye anılır."
+          "tr": "Kuzey Amerika'nın en eski doğal türlerinden Maine Coon, çiftliklerde ve gemilerde çalışan bir kediydi. Gür ve su geçirmez tüyü, iri patileri ve uzun, kabarık kuyruğu vardır. Nazik ve oyunbazdır; çoğu zaman 'nazik dev' diye anılır.",
+          "ja": "北米で最も古い自然発生種のひとつであるメインクーンは、農場や船でネズミを捕る働き猫でした。水をはじくふさふさの被毛、大きな足、長くふさふさしたしっぽが特徴です。優しく遊び好きで、「優しい巨人」と呼ばれることもよくあります。",
+          "de": "Die Maine Coon ist eine der ältesten natürlichen Rassen Nordamerikas und war einst Arbeitskatze auf Höfen und Schiffen. Sie hat ein zotteliges, wasserabweisendes Fell, große Pfoten und einen langen, buschigen Schwanz. Sie ist sanft und verspielt und wird oft „sanfter Riese“ genannt.",
+          "fr": "L'une des plus anciennes races naturelles d'Amérique du Nord, le Maine Coon était un chat de travail dans les fermes et sur les navires. Il a un pelage hirsute et imperméable, de grandes pattes et une longue queue touffue. Doux et joueur, on le surnomme souvent le « doux géant ».",
+          "es": "Una de las razas naturales más antiguas de Norteamérica, el Maine Coon fue gato de trabajo en granjas y barcos. Tiene un pelaje lanudo y resistente al agua, patas grandes y una cola larga y tupida. Es dulce y juguetón, y a menudo lo llaman «gigante amable».",
+          "pt-BR": "Uma das raças naturais mais antigas da América do Norte, o Maine Coon era um gato de trabalho em fazendas e navios. Tem pelagem farta e resistente à água, patas grandes e uma cauda longa e peluda. É gentil e brincalhão, muitas vezes chamado de \"gigante gentil\".",
+          "ko": "북미에서 가장 오래된 자연 발생 품종 중 하나인 메인쿤은 농장과 배에서 일하던 고양이였어요. 덥수룩한 방수성 털, 큰 발, 길고 풍성한 꼬리를 가졌어요. 온순하고 장난기가 많아 '온순한 거인'이라고 불리곤 해요."
         }
       },
       "premiumFile": "chapter_14_maine_coon_premium"
@@ -1050,11 +1566,23 @@
       "kind": "breed",
       "title": {
         "en": "Exotic Shorthair",
-        "tr": "Egzotik Kısa Tüylü"
+        "tr": "Egzotik Kısa Tüylü",
+        "ja": "エキゾチックショートヘア",
+        "de": "Exotic Shorthair",
+        "fr": "Exotic Shorthair",
+        "es": "Exótico de pelo corto",
+        "pt-BR": "Exótico de Pelo Curto",
+        "ko": "엑조틱 쇼트헤어"
       },
       "subtitle": {
         "en": "A teddy bear in cat form",
-        "tr": "Kedi kılığında oyuncak ayı"
+        "tr": "Kedi kılığında oyuncak ayı",
+        "ja": "猫の姿をしたテディベア",
+        "de": "Ein Teddybär in Katzengestalt",
+        "fr": "Un ours en peluche version chat",
+        "es": "Un osito de peluche con forma de gato",
+        "pt-BR": "Um ursinho de pelúcia em forma de gato",
+        "ko": "고양이 모습을 한 테디베어"
       },
       "accentColor": "#B58E6E",
       "file": "chapter_15_exotic_shorthair",
@@ -1092,12 +1620,24 @@
         "rarity": "rare",
         "origin": {
           "en": "United States",
-          "tr": "ABD"
+          "tr": "ABD",
+          "ja": "アメリカ",
+          "de": "USA",
+          "fr": "États-Unis",
+          "es": "Estados Unidos",
+          "pt-BR": "Estados Unidos",
+          "ko": "미국"
         },
         "lifespan": "12–15",
         "coat": {
           "en": "Short, plush",
-          "tr": "Kısa, peluş"
+          "tr": "Kısa, peluş",
+          "ja": "短毛、ふかふか",
+          "de": "Kurz, plüschig",
+          "fr": "Court, pelucheux",
+          "es": "Corto y mullido",
+          "pt-BR": "Curta e aveludada",
+          "ko": "단모, 폭신함"
         },
         "stats": {
           "energy": 2,
@@ -1107,11 +1647,23 @@
         },
         "fact": {
           "en": "Often called 'a Persian in pajamas': the Persian look with an easy-care coat.",
-          "tr": "'Pijamalı İran kedisi' diye anılır: İran kedisi görünümü, bakımı kolay tüy."
+          "tr": "'Pijamalı İran kedisi' diye anılır: İran kedisi görünümü, bakımı kolay tüy.",
+          "ja": "「パジャマを着たペルシャ」とよく呼ばれます。ペルシャの見た目に、手入れの楽な被毛をあわせもっています。",
+          "de": "Oft „Perser im Pyjama“ genannt: der Look der Perserkatze mit pflegeleichtem Fell.",
+          "fr": "Souvent surnommé « le Persan en pyjama » : le look du Persan avec un pelage facile à entretenir.",
+          "es": "A menudo lo llaman «un persa en pijama»: el aspecto del persa con un pelaje fácil de cuidar.",
+          "pt-BR": "Muitas vezes chamado de \"Persa de pijama\": a aparência do Persa com uma pelagem fácil de cuidar.",
+          "ko": "'잠옷 입은 페르시안'이라고 불리곤 해요. 페르시안의 외모에 관리하기 쉬운 털을 가졌어요."
         },
         "about": {
           "en": "Created in the 1950s–60s by crossing Persians with shorthaired cats, the Exotic keeps the Persian's sweet, flat face and calm nature. Its dense, plush coat is much easier to care for than a Persian's.",
-          "tr": "1950-60'larda İran kedilerinin kısa tüylü kedilerle melezlenmesiyle oluşturulan Egzotik, İran kedisinin tatlı, basık yüzünü ve sakin doğasını korur. Yoğun, peluş tüyünün bakımı İran kedisinden çok daha kolaydır."
+          "tr": "1950-60'larda İran kedilerinin kısa tüylü kedilerle melezlenmesiyle oluşturulan Egzotik, İran kedisinin tatlı, basık yüzünü ve sakin doğasını korur. Yoğun, peluş tüyünün bakımı İran kedisinden çok daha kolaydır.",
+          "ja": "1950〜60年代にペルシャと短毛の猫を交配して作出されたエキゾチックは、ペルシャのかわいらしい平たい顔とおだやかな性格を受け継いでいます。密でふかふかの被毛は、ペルシャよりずっとお手入れが簡単です。",
+          "de": "Die Exotic entstand in den 1950er- und 60er-Jahren durch Kreuzung von Perserkatzen mit Kurzhaarkatzen und hat das süße, flache Gesicht und das ruhige Wesen der Perserkatze behalten. Ihr dichtes, plüschiges Fell ist viel pflegeleichter als das einer Perserkatze.",
+          "fr": "Créé dans les années 1950-60 en croisant des Persans avec des chats à poil court, l'Exotic conserve la douce face plate et le caractère calme du Persan. Son pelage dense et pelucheux est bien plus facile à entretenir que celui d'un Persan.",
+          "es": "Creado en las décadas de 1950 y 1960 cruzando persas con gatos de pelo corto, el exótico conserva la dulce cara chata y el carácter tranquilo del persa. Su pelaje denso y mullido es mucho más fácil de cuidar que el de un persa.",
+          "pt-BR": "Criado nas décadas de 1950 e 1960 cruzando Persas com gatos de pelo curto, o Exótico mantém o rosto achatado e meigo e a natureza calma do Persa. Sua pelagem densa e aveludada é muito mais fácil de cuidar do que a de um Persa.",
+          "ko": "1950~60년대에 페르시안과 단모 고양이를 교배해 만든 엑조틱은 페르시안의 사랑스럽고 납작한 얼굴과 차분한 성격을 그대로 지녔어요. 촘촘하고 폭신한 털은 페르시안보다 훨씬 관리하기 쉬워요."
         }
       },
       "premiumFile": "chapter_15_exotic_shorthair_premium"
@@ -1121,11 +1673,23 @@
       "kind": "breed",
       "title": {
         "en": "Burmese",
-        "tr": "Burma Kedisi"
+        "tr": "Burma Kedisi",
+        "ja": "バーミーズ",
+        "de": "Burma-Katze",
+        "fr": "Burmese",
+        "es": "Burmés",
+        "pt-BR": "Burmês",
+        "ko": "버미즈"
       },
       "subtitle": {
         "en": "Satin coat, golden eyes",
-        "tr": "Saten tüy, altın gözler"
+        "tr": "Saten tüy, altın gözler",
+        "ja": "サテンのような被毛と金色の瞳",
+        "de": "Satinfell, goldene Augen",
+        "fr": "Robe satinée, yeux dorés",
+        "es": "Pelo satinado, ojos dorados",
+        "pt-BR": "Pelo acetinado, olhos dourados",
+        "ko": "새틴 같은 털, 황금빛 눈"
       },
       "accentColor": "#6B4A35",
       "file": "chapter_16_burmese",
@@ -1166,12 +1730,24 @@
         "rarity": "rare",
         "origin": {
           "en": "Myanmar (Burma)",
-          "tr": "Myanmar (Burma)"
+          "tr": "Myanmar (Burma)",
+          "ja": "ミャンマー（ビルマ）",
+          "de": "Myanmar (Birma)",
+          "fr": "Myanmar (Birmanie)",
+          "es": "Myanmar (Birmania)",
+          "pt-BR": "Mianmar (Birmânia)",
+          "ko": "미얀마(버마)"
         },
         "lifespan": "12–16",
         "coat": {
           "en": "Short, satin",
-          "tr": "Kısa, saten"
+          "tr": "Kısa, saten",
+          "ja": "短毛、サテンのような光沢",
+          "de": "Kurz, satinartig",
+          "fr": "Court, satiné",
+          "es": "Corto, satinado",
+          "pt-BR": "Curta, acetinada",
+          "ko": "단모, 새틴"
         },
         "stats": {
           "energy": 4,
@@ -1181,11 +1757,23 @@
         },
         "fact": {
           "en": "Modern Burmese descend from Wong Mau, a cat brought to the United States in 1930.",
-          "tr": "Modern Burmalar, 1930'da ABD'ye getirilen Wong Mau adlı kediden gelir."
+          "tr": "Modern Burmalar, 1930'da ABD'ye getirilen Wong Mau adlı kediden gelir.",
+          "ja": "現在のバーミーズは、1930年にアメリカへ連れてこられた猫「ウォンマウ」の子孫です。",
+          "de": "Die heutigen Burma-Katzen stammen von Wong Mau ab, einer Katze, die 1930 in die USA gebracht wurde.",
+          "fr": "Les Burmese modernes descendent de Wong Mau, une chatte amenée aux États-Unis en 1930.",
+          "es": "Los burmeses actuales descienden de Wong Mau, una gata llevada a Estados Unidos en 1930.",
+          "pt-BR": "Os Burmeses modernos descendem de Wong Mau, uma gata levada para os Estados Unidos em 1930.",
+          "ko": "현대의 버미즈는 1930년 미국으로 건너온 고양이 '웡 마우'의 후손이에요."
         },
         "about": {
           "en": "The breed traces back to a single brown cat, Wong Mau, brought from Burma to the United States in 1930. Burmese are compact, heavier than they look, and have a glossy satin coat. They are famously people-oriented.",
-          "tr": "Tür, 1930'da Burma'dan ABD'ye getirilen kahverengi bir kedi olan Wong Mau'ya dayanır. Burmalar kompakt yapılıdır, göründüklerinden ağırdır ve parlak saten bir tüyleri vardır. İnsanlara son derece bağlı olmalarıyla ünlüdürler."
+          "tr": "Tür, 1930'da Burma'dan ABD'ye getirilen kahverengi bir kedi olan Wong Mau'ya dayanır. Burmalar kompakt yapılıdır, göründüklerinden ağırdır ve parlak saten bir tüyleri vardır. İnsanlara son derece bağlı olmalarıyla ünlüdürler.",
+          "ja": "この品種は、1930年にビルマからアメリカへ連れてこられた1匹の茶色い猫、ウォンマウにさかのぼります。バーミーズは体が引き締まっていて見た目より重く、つややかなサテンのような被毛をもっています。人が大好きなことで有名です。",
+          "de": "Die Rasse geht auf eine einzige braune Katze zurück, Wong Mau, die 1930 aus Birma in die USA gebracht wurde. Burma-Katzen sind kompakt, schwerer, als sie aussehen, und haben ein glänzendes Satinfell. Sie sind für ihre Menschenbezogenheit bekannt.",
+          "fr": "La race remonte à une seule chatte brune, Wong Mau, amenée de Birmanie aux États-Unis en 1930. Le Burmese est compact, plus lourd qu'il n'y paraît, et possède un pelage satiné et brillant. Il est réputé pour son grand attachement aux humains.",
+          "es": "La raza se remonta a una sola gata marrón, Wong Mau, llevada de Birmania a Estados Unidos en 1930. Los burmeses son compactos, pesan más de lo que aparentan y tienen un pelaje satinado y brillante. Son famosos por lo mucho que les gusta la gente.",
+          "pt-BR": "A raça remonta a uma única gata marrom, Wong Mau, levada da Birmânia para os Estados Unidos em 1930. Os Burmeses são compactos, mais pesados do que parecem e têm uma pelagem acetinada e brilhante. São famosos por serem muito apegados às pessoas.",
+          "ko": "이 품종은 1930년 버마에서 미국으로 건너온 갈색 고양이 한 마리, 웡 마우에서 시작됐어요. 버미즈는 몸이 다부지고 보기보다 무거우며, 윤기 나는 새틴 같은 털을 가졌어요. 사람을 무척 좋아하는 것으로 유명해요."
         }
       },
       "premiumFile": "chapter_16_burmese_premium"
@@ -1195,11 +1783,23 @@
       "kind": "breed",
       "title": {
         "en": "Chartreux",
-        "tr": "Chartreux"
+        "tr": "Chartreux",
+        "ja": "シャルトリュー",
+        "de": "Kartäuser",
+        "fr": "Chartreux",
+        "es": "Chartreux",
+        "pt-BR": "Chartreux",
+        "ko": "샤르트뢰"
       },
       "subtitle": {
         "en": "Blue-grey with a gentle smile",
-        "tr": "Gülümseyen mavi-gri kedi"
+        "tr": "Gülümseyen mavi-gri kedi",
+        "ja": "ブルーグレーと優しいほほえみ",
+        "de": "Blaugrau mit sanftem Lächeln",
+        "fr": "Gris-bleu au doux sourire",
+        "es": "Gris azulado con una dulce sonrisa",
+        "pt-BR": "Cinza-azulado de sorriso gentil",
+        "ko": "청회색 털과 부드러운 미소"
       },
       "accentColor": "#7F8C99",
       "file": "chapter_17_chartreux",
@@ -1237,12 +1837,24 @@
         "rarity": "epic",
         "origin": {
           "en": "France",
-          "tr": "Fransa"
+          "tr": "Fransa",
+          "ja": "フランス",
+          "de": "Frankreich",
+          "fr": "France",
+          "es": "Francia",
+          "pt-BR": "França",
+          "ko": "프랑스"
         },
         "lifespan": "12–15",
         "coat": {
           "en": "Short, woolly",
-          "tr": "Kısa, yünümsü"
+          "tr": "Kısa, yünümsü",
+          "ja": "短毛、ウールのような手触り",
+          "de": "Kurz, wollig",
+          "fr": "Court, laineux",
+          "es": "Corto, lanoso",
+          "pt-BR": "Curta, lanosa",
+          "ko": "단모, 양털 같음"
         },
         "stats": {
           "energy": 2,
@@ -1252,11 +1864,23 @@
         },
         "fact": {
           "en": "A quiet French breed known for its 'smiling' face and copper eyes.",
-          "tr": "'Gülümseyen' yüzü ve bakır rengi gözleriyle bilinen sessiz bir Fransız türü."
+          "tr": "'Gülümseyen' yüzü ve bakır rengi gözleriyle bilinen sessiz bir Fransız türü.",
+          "ja": "「ほほえんでいる」ような顔と銅色の瞳で知られる、物静かなフランスの猫種です。",
+          "de": "Eine ruhige französische Rasse, bekannt für ihr „lächelndes“ Gesicht und kupferfarbene Augen.",
+          "fr": "Une race française discrète, connue pour son air « souriant » et ses yeux cuivrés.",
+          "es": "Una tranquila raza francesa conocida por su cara «sonriente» y sus ojos cobrizos.",
+          "pt-BR": "Uma raça francesa tranquila, conhecida pelo rosto \"sorridente\" e pelos olhos cor de cobre.",
+          "ko": "'웃는' 얼굴과 구릿빛 눈으로 알려진 조용한 프랑스 품종이에요."
         },
         "about": {
           "en": "A historic French breed with a blue-grey, water-repellent woolly coat and copper to orange eyes. Its rounded head and slightly narrow muzzle give it a 'smiling' expression. Chartreux are quiet, observant and loyal.",
-          "tr": "Mavi-gri, su itici yünümsü tüyü ve bakırdan turuncuya değişen gözleri olan tarihi bir Fransız türü. Yuvarlak başı ve hafif dar burnu ona 'gülümseyen' bir ifade verir. Sessiz, gözlemci ve sadık kedilerdir."
+          "tr": "Mavi-gri, su itici yünümsü tüyü ve bakırdan turuncuya değişen gözleri olan tarihi bir Fransız türü. Yuvarlak başı ve hafif dar burnu ona 'gülümseyen' bir ifade verir. Sessiz, gözlemci ve sadık kedilerdir.",
+          "ja": "長い歴史をもつフランスの猫種で、水をはじくウールのようなブルーグレーの被毛と、銅色からオレンジ色の瞳をもっています。丸い頭とやや細いマズルが「ほほえんでいる」ような表情を生み出します。シャルトリューは物静かで観察力があり、忠実です。",
+          "de": "Eine historische französische Rasse mit blaugrauem, wasserabweisendem, wolligem Fell und kupfer- bis orangefarbenen Augen. Ihr rundlicher Kopf und die etwas schmale Schnauze verleihen ihr einen „lächelnden“ Ausdruck. Kartäuser sind ruhig, aufmerksam und treu.",
+          "fr": "Race française historique au pelage laineux gris-bleu et déperlant, aux yeux cuivre à orange. Sa tête arrondie et son museau légèrement étroit lui donnent une expression « souriante ». Le Chartreux est discret, observateur et fidèle.",
+          "es": "Una raza francesa histórica con un pelaje lanoso gris azulado que repele el agua y ojos de color cobre a naranja. Su cabeza redondeada y su hocico algo estrecho le dan una expresión «sonriente». Los chartreux son tranquilos, observadores y leales.",
+          "pt-BR": "Uma raça francesa histórica, com pelagem lanosa cinza-azulada e repelente à água, e olhos que vão do cobre ao laranja. A cabeça arredondada e o focinho levemente estreito lhe dão uma expressão \"sorridente\". Os Chartreux são tranquilos, observadores e leais.",
+          "ko": "역사가 깊은 프랑스 품종으로, 물을 튕겨 내는 청회색 양털 같은 털과 구릿빛에서 주황빛 눈을 가졌어요. 둥근 머리와 살짝 좁은 주둥이 덕분에 '웃는' 표정이 돼요. 샤르트뢰는 조용하고 관찰력이 좋으며 충성스러워요."
         }
       },
       "premiumFile": "chapter_17_chartreux_premium"
@@ -1266,11 +1890,23 @@
       "kind": "breed",
       "title": {
         "en": "Egyptian Mau",
-        "tr": "Mısır Mau"
+        "tr": "Mısır Mau",
+        "ja": "エジプシャンマウ",
+        "de": "Ägyptische Mau",
+        "fr": "Mau égyptien",
+        "es": "Mau egipcio",
+        "pt-BR": "Mau Egípcio",
+        "ko": "이집션 마우"
       },
       "subtitle": {
         "en": "Natural spots, a born sprinter",
-        "tr": "Doğal benekler, doğuştan koşucu"
+        "tr": "Doğal benekler, doğuştan koşucu",
+        "ja": "天然の斑点をもつ生まれながらの俊足",
+        "de": "Natürliche Tupfen, geborene Sprinterin",
+        "fr": "Taches naturelles, sprinteur né",
+        "es": "Manchas naturales, velocista nato",
+        "pt-BR": "Pintas naturais, velocista nato",
+        "ko": "타고난 점박이, 타고난 스프린터"
       },
       "accentColor": "#C9CBC4",
       "file": "chapter_18_egyptian_mau",
@@ -1312,12 +1948,24 @@
         "rarity": "epic",
         "origin": {
           "en": "Egypt",
-          "tr": "Mısır"
+          "tr": "Mısır",
+          "ja": "エジプト",
+          "de": "Ägypten",
+          "fr": "Égypte",
+          "es": "Egipto",
+          "pt-BR": "Egito",
+          "ko": "이집트"
         },
         "lifespan": "12–15",
         "coat": {
           "en": "Short, naturally spotted",
-          "tr": "Kısa, doğal benekli"
+          "tr": "Kısa, doğal benekli",
+          "ja": "短毛、天然のスポット柄",
+          "de": "Kurz, natürlich getupft",
+          "fr": "Court, naturellement tacheté",
+          "es": "Corto, con manchas naturales",
+          "pt-BR": "Curta, naturalmente pintada",
+          "ko": "단모, 자연 점박이"
         },
         "stats": {
           "energy": 5,
@@ -1327,11 +1975,23 @@
         },
         "fact": {
           "en": "One of the fastest house cats, said to sprint at around 48 km/h.",
-          "tr": "En hızlı ev kedilerinden; saatte 48 km civarında koşabildiği söylenir."
+          "tr": "En hızlı ev kedilerinden; saatte 48 km civarında koşabildiği söylenir.",
+          "ja": "最も足の速いイエネコのひとつで、時速約48kmで走るといわれています。",
+          "de": "Eine der schnellsten Hauskatzen; sie soll bis zu etwa 48 km/h schnell sprinten.",
+          "fr": "L'un des chats domestiques les plus rapides : il pourrait sprinter à environ 48 km/h.",
+          "es": "Uno de los gatos domésticos más rápidos; se dice que corre a unos 48 km/h.",
+          "pt-BR": "Um dos gatos domésticos mais rápidos; dizem que chega a cerca de 48 km/h em disparada.",
+          "ko": "가장 빠른 집고양이 중 하나로, 시속 약 48km로 달린다고 해요."
         },
         "about": {
           "en": "One of the few naturally spotted domestic breeds, the Egyptian Mau has gooseberry-green eyes and a loose flap of skin that lets it stretch its stride. The modern breed was developed from cats brought from Egypt in the 1950s.",
-          "tr": "Doğal benekli az sayıdaki evcil türden biri olan Mısır Mau'nun bektaşi üzümü yeşili gözleri ve adımını uzatmasını sağlayan gevşek bir deri kıvrımı vardır. Modern tür, 1950'lerde Mısır'dan getirilen kedilerden geliştirildi."
+          "tr": "Doğal benekli az sayıdaki evcil türden biri olan Mısır Mau'nun bektaşi üzümü yeşili gözleri ve adımını uzatmasını sağlayan gevşek bir deri kıvrımı vardır. Modern tür, 1950'lerde Mısır'dan getirilen kedilerden geliştirildi.",
+          "ja": "天然の斑点模様をもつ数少ないイエネコの品種のひとつで、グーズベリーのような緑の瞳と、歩幅を大きく伸ばせるゆったりとした皮膚のひだをもっています。現在の品種は、1950年代にエジプトから連れてこられた猫をもとに作出されました。",
+          "de": "Die Ägyptische Mau ist eine der wenigen von Natur aus getupften Hauskatzenrassen. Sie hat stachelbeergrüne Augen und eine lose Hautfalte, die ihr längere Schritte ermöglicht. Die moderne Rasse wurde aus Katzen gezüchtet, die in den 1950er-Jahren aus Ägypten gebracht wurden.",
+          "fr": "L'une des rares races domestiques naturellement tachetées, le Mau égyptien a des yeux vert groseille à maquereau et un repli de peau lâche qui lui permet d'allonger sa foulée. La race moderne a été développée à partir de chats ramenés d'Égypte dans les années 1950.",
+          "es": "Una de las pocas razas domésticas con manchas naturales, el mau egipcio tiene ojos verde grosella y un pliegue de piel suelta que le permite alargar la zancada. La raza moderna se desarrolló a partir de gatos traídos de Egipto en la década de 1950.",
+          "pt-BR": "Uma das poucas raças domésticas com pintas naturais, o Mau Egípcio tem olhos verde-groselha e uma prega de pele solta que permite alongar a passada. A raça moderna foi desenvolvida a partir de gatos trazidos do Egito nos anos 1950.",
+          "ko": "자연적으로 점박이 무늬를 가진 몇 안 되는 집고양이 품종인 이집션 마우는 구스베리 같은 초록 눈과, 보폭을 넓혀 주는 느슨한 옆구리 피부를 가졌어요. 현대의 품종은 1950년대에 이집트에서 데려온 고양이들로부터 개발됐어요."
         }
       },
       "premiumFile": "chapter_18_egyptian_mau_premium"
@@ -1341,11 +2001,23 @@
       "kind": "breed",
       "title": {
         "en": "Manx",
-        "tr": "Manx"
+        "tr": "Manx",
+        "ja": "マンクス",
+        "de": "Manx",
+        "fr": "Manx",
+        "es": "Manx",
+        "pt-BR": "Manx",
+        "ko": "맹크스"
       },
       "subtitle": {
         "en": "The tailless cat of the Isle of Man",
-        "tr": "Man Adası'nın kuyruksuz kedisi"
+        "tr": "Man Adası'nın kuyruksuz kedisi",
+        "ja": "マン島のしっぽのない猫",
+        "de": "Die schwanzlose Katze der Isle of Man",
+        "fr": "Le chat sans queue de l'île de Man",
+        "es": "El gato sin cola de la isla de Man",
+        "pt-BR": "O gato sem cauda da Ilha de Man",
+        "ko": "맨섬의 꼬리 없는 고양이"
       },
       "accentColor": "#D9A066",
       "file": "chapter_19_manx",
@@ -1385,12 +2057,24 @@
         "rarity": "epic",
         "origin": {
           "en": "Isle of Man",
-          "tr": "Man Adası"
+          "tr": "Man Adası",
+          "ja": "マン島",
+          "de": "Isle of Man",
+          "fr": "Île de Man",
+          "es": "Isla de Man",
+          "pt-BR": "Ilha de Man",
+          "ko": "맨섬"
         },
         "lifespan": "8–14",
         "coat": {
           "en": "Short or long",
-          "tr": "Kısa ya da uzun"
+          "tr": "Kısa ya da uzun",
+          "ja": "短毛または長毛",
+          "de": "Kurz oder lang",
+          "fr": "Court ou long",
+          "es": "Corto o largo",
+          "pt-BR": "Curta ou longa",
+          "ko": "단모 또는 장모"
         },
         "stats": {
           "energy": 3,
@@ -1400,11 +2084,23 @@
         },
         "fact": {
           "en": "Famous for being born without a tail; it runs with a rabbit-like hop.",
-          "tr": "Kuyruksuz doğmasıyla ünlüdür; tavşan gibi seken bir koşusu vardır."
+          "tr": "Kuyruksuz doğmasıyla ünlüdür; tavşan gibi seken bir koşusu vardır.",
+          "ja": "しっぽがない状態で生まれることで有名で、ウサギのようにぴょんぴょん跳ねて走ります。",
+          "de": "Berühmt dafür, ohne Schwanz geboren zu werden; sie läuft mit hasenartigen Hüpfern.",
+          "fr": "Célèbre pour naître sans queue ; il court en sautillant comme un lapin.",
+          "es": "Famoso por nacer sin cola; corre dando saltitos como un conejo.",
+          "pt-BR": "Famoso por nascer sem cauda; corre aos pulinhos, como um coelho.",
+          "ko": "꼬리 없이 태어나는 것으로 유명하고, 토끼처럼 깡충깡충 뛰어요."
         },
         "about": {
           "en": "Native to the Isle of Man, the Manx carries a natural gene for a short or missing tail. With longer hind legs and a rounded body, it moves with a rabbit-like hop. Manx cats are known as skilled hunters and loyal companions.",
-          "tr": "Man Adası'na özgü Manx, kısa ya da hiç olmayan kuyruk için doğal bir gen taşır. Uzun arka bacakları ve yuvarlak gövdesiyle tavşan gibi seker. Usta avcılar ve sadık dostlar olarak bilinirler."
+          "tr": "Man Adası'na özgü Manx, kısa ya da hiç olmayan kuyruk için doğal bir gen taşır. Uzun arka bacakları ve yuvarlak gövdesiyle tavşan gibi seker. Usta avcılar ve sadık dostlar olarak bilinirler.",
+          "ja": "マン島原産のマンクスは、しっぽが短い、またはしっぽがなくなる自然の遺伝子をもっています。長めの後ろ足と丸みのある体で、ウサギのように跳ねるように動きます。狩りが上手で、忠実なパートナーとして知られています。",
+          "de": "Die Manx stammt von der Isle of Man und trägt ein natürliches Gen für einen kurzen oder fehlenden Schwanz. Mit ihren längeren Hinterbeinen und dem rundlichen Körper bewegt sie sich hasenartig hüpfend. Manx-Katzen gelten als geschickte Jägerinnen und treue Begleiter.",
+          "fr": "Originaire de l'île de Man, le Manx porte un gène naturel qui lui donne une queue courte ou absente. Avec ses pattes arrière plus longues et son corps arrondi, il se déplace en sautillant comme un lapin. Le Manx est réputé pour être un chasseur habile et un compagnon fidèle.",
+          "es": "Originario de la isla de Man, el manx porta un gen natural que le da una cola corta o ninguna. Con las patas traseras más largas y el cuerpo redondeado, se mueve dando saltitos como un conejo. Los manx son conocidos por ser hábiles cazadores y compañeros leales.",
+          "pt-BR": "Nativo da Ilha de Man, o Manx carrega um gene natural para cauda curta ou ausente. Com patas traseiras mais longas e corpo arredondado, ele se move aos pulinhos, como um coelho. Os gatos Manx são conhecidos como caçadores habilidosos e companheiros leais.",
+          "ko": "맨섬 토종인 맹크스는 꼬리가 짧거나 없는 자연 유전자를 가지고 있어요. 뒷다리가 더 길고 몸이 둥글어서 토끼처럼 깡충깡충 움직여요. 맹크스는 뛰어난 사냥꾼이자 충성스러운 반려묘로 알려져 있어요."
         }
       },
       "premiumFile": "chapter_19_manx_premium"
@@ -1414,11 +2110,23 @@
       "kind": "breed",
       "title": {
         "en": "Bombay",
-        "tr": "Bombay"
+        "tr": "Bombay",
+        "ja": "ボンベイ",
+        "de": "Bombay",
+        "fr": "Bombay",
+        "es": "Bombay",
+        "pt-BR": "Bombaim",
+        "ko": "봄베이"
       },
       "subtitle": {
         "en": "A pocket-sized panther",
-        "tr": "Cep boyu bir panter"
+        "tr": "Cep boyu bir panter",
+        "ja": "ポケットサイズの黒ヒョウ",
+        "de": "Ein Panther im Taschenformat",
+        "fr": "Une panthère de poche",
+        "es": "Una pantera de bolsillo",
+        "pt-BR": "Uma pantera de bolso",
+        "ko": "주머니 크기의 흑표범"
       },
       "accentColor": "#2B2A2E",
       "file": "chapter_20_bombay",
@@ -1460,12 +2168,24 @@
         "rarity": "epic",
         "origin": {
           "en": "United States",
-          "tr": "ABD"
+          "tr": "ABD",
+          "ja": "アメリカ",
+          "de": "USA",
+          "fr": "États-Unis",
+          "es": "Estados Unidos",
+          "pt-BR": "Estados Unidos",
+          "ko": "미국"
         },
         "lifespan": "12–16",
         "coat": {
           "en": "Short, glossy black",
-          "tr": "Kısa, parlak siyah"
+          "tr": "Kısa, parlak siyah",
+          "ja": "短毛、つややかな黒",
+          "de": "Kurz, glänzend schwarz",
+          "fr": "Court, noir brillant",
+          "es": "Corto, negro brillante",
+          "pt-BR": "Curta, preta e brilhante",
+          "ko": "단모, 윤기 나는 검정"
         },
         "stats": {
           "energy": 3,
@@ -1475,11 +2195,23 @@
         },
         "fact": {
           "en": "Bred to look like a miniature black panther, with copper eyes.",
-          "tr": "Minyatür bir kara panter gibi görünmesi için geliştirildi; gözleri bakır rengidir."
+          "tr": "Minyatür bir kara panter gibi görünmesi için geliştirildi; gözleri bakır rengidir.",
+          "ja": "銅色の瞳をもつ、小さな黒ヒョウのような姿を目指して作出されました。",
+          "de": "Gezüchtet, um wie ein schwarzer Mini-Panther auszusehen, mit kupferfarbenen Augen.",
+          "fr": "Sélectionné pour ressembler à une panthère noire miniature, aux yeux cuivrés.",
+          "es": "Criado para parecer una pantera negra en miniatura, con ojos cobrizos.",
+          "pt-BR": "Criado para parecer uma pantera-negra em miniatura, com olhos cor de cobre.",
+          "ko": "구릿빛 눈을 가진 작은 흑표범처럼 보이도록 만들어진 품종이에요."
         },
         "about": {
           "en": "Developed in the United States in the 1950s from Burmese and black American Shorthairs, the Bombay has a jet-black, glossy coat and copper eyes. It loves warmth and company and is often described as dog-like.",
-          "tr": "1950'lerde ABD'de Burma ve siyah Amerikan Kısa Tüylü kedilerden geliştirilen Bombay'ın simsiyah, parlak tüyü ve bakır rengi gözleri vardır. Sıcaklığı ve birlikteliği sever; çoğu zaman köpek gibi diye anlatılır."
+          "tr": "1950'lerde ABD'de Burma ve siyah Amerikan Kısa Tüylü kedilerden geliştirilen Bombay'ın simsiyah, parlak tüyü ve bakır rengi gözleri vardır. Sıcaklığı ve birlikteliği sever; çoğu zaman köpek gibi diye anlatılır.",
+          "ja": "1950年代にアメリカでバーミーズと黒いアメリカンショートヘアから作出されたボンベイは、漆黒のつややかな被毛と銅色の瞳をもっています。暖かい場所と人と一緒にいることが大好きで、犬のような猫とよくいわれます。",
+          "de": "Die Bombay wurde in den 1950er-Jahren in den USA aus Burma-Katzen und schwarzen Amerikanisch Kurzhaar gezüchtet. Sie hat ein tiefschwarzes, glänzendes Fell und kupferfarbene Augen. Sie liebt Wärme und Gesellschaft und wird oft als hundeähnlich beschrieben.",
+          "fr": "Développé aux États-Unis dans les années 1950 à partir de Burmese et d'American Shorthair noirs, le Bombay a un pelage noir de jais brillant et des yeux cuivrés. Il adore la chaleur et la compagnie, et on le compare souvent à un chien.",
+          "es": "Desarrollado en Estados Unidos en la década de 1950 a partir de burmeses y American Shorthair negros, el bombay tiene un pelaje negro azabache y brillante y ojos cobrizos. Le encantan el calor y la compañía, y a menudo se dice que se comporta como un perro.",
+          "pt-BR": "Desenvolvido nos Estados Unidos nos anos 1950 a partir de Burmeses e de Americanos de Pelo Curto pretos, o Bombaim tem pelagem preta retinta e brilhante e olhos cor de cobre. Adora calor e companhia e muitas vezes é descrito como parecido com um cachorro.",
+          "ko": "1950년대 미국에서 버미즈와 검은 아메리칸 쇼트헤어를 교배해 개발된 봄베이는 칠흑같이 윤기 나는 털과 구릿빛 눈을 가졌어요. 따뜻한 곳과 함께 있는 걸 좋아해서 강아지 같다는 말을 자주 들어요."
         }
       },
       "premiumFile": "chapter_20_bombay_premium"
@@ -1489,11 +2221,23 @@
       "kind": "breed",
       "title": {
         "en": "Siberian",
-        "tr": "Sibirya Kedisi"
+        "tr": "Sibirya Kedisi",
+        "ja": "サイベリアン",
+        "de": "Sibirische Katze",
+        "fr": "Sibérien",
+        "es": "Siberiano",
+        "pt-BR": "Siberiano",
+        "ko": "시베리안"
       },
       "subtitle": {
         "en": "Triple coat for Siberian winters",
-        "tr": "Sibirya kışına üç kat tüy"
+        "tr": "Sibirya kışına üç kat tüy",
+        "ja": "シベリアの冬に備えたトリプルコート",
+        "de": "Dreifaches Fell für sibirische Winter",
+        "fr": "Triple pelage pour l'hiver sibérien",
+        "es": "Triple capa para los inviernos siberianos",
+        "pt-BR": "Pelagem tripla para invernos siberianos",
+        "ko": "시베리아의 겨울을 위한 삼중모"
       },
       "accentColor": "#A58B6F",
       "file": "chapter_21_siberian",
@@ -1533,12 +2277,24 @@
         "rarity": "epic",
         "origin": {
           "en": "Russia",
-          "tr": "Rusya"
+          "tr": "Rusya",
+          "ja": "ロシア",
+          "de": "Russland",
+          "fr": "Russie",
+          "es": "Rusia",
+          "pt-BR": "Rússia",
+          "ko": "러시아"
         },
         "lifespan": "11–18",
         "coat": {
           "en": "Long, triple coat",
-          "tr": "Uzun, üç katlı"
+          "tr": "Uzun, üç katlı",
+          "ja": "長毛、トリプルコート",
+          "de": "Lang, dreischichtig",
+          "fr": "Long, triple pelage",
+          "es": "Largo, de triple capa",
+          "pt-BR": "Longa, tripla",
+          "ko": "장모, 삼중모"
         },
         "stats": {
           "energy": 4,
@@ -1548,11 +2304,23 @@
         },
         "fact": {
           "en": "Russia's national cat, with a thick triple coat for Siberian winters.",
-          "tr": "Rusya'nın ulusal kedisi; Sibirya kışları için kalın, üç katlı tüyü vardır."
+          "tr": "Rusya'nın ulusal kedisi; Sibirya kışları için kalın, üç katlı tüyü vardır.",
+          "ja": "ロシアの国猫で、シベリアの冬に耐える厚いトリプルコートをもっています。",
+          "de": "Russlands Nationalkatze, mit dickem, dreischichtigem Fell für sibirische Winter.",
+          "fr": "Le chat national de la Russie, avec un épais triple pelage pour les hivers sibériens.",
+          "es": "El gato nacional de Rusia, con una espesa triple capa para los inviernos siberianos.",
+          "pt-BR": "O gato nacional da Rússia, com uma espessa pelagem tripla para os invernos siberianos.",
+          "ko": "러시아의 국묘로, 시베리아의 겨울을 견디는 두꺼운 삼중모를 가졌어요."
         },
         "about": {
           "en": "A natural forest cat of Russia, the Siberian has a dense triple coat suited to harsh winters. It is strong and agile, and matures slowly over several years. Siberians are playful, affectionate and often enjoy water.",
-          "tr": "Rusya'nın doğal orman kedisi olan Sibirya kedisinin sert kışlara uygun yoğun, üç katlı tüyü vardır. Güçlü ve çeviktir, birkaç yılda yavaşça olgunlaşır. Oyunbaz, sevecen kedilerdir ve çoğu suyu sever."
+          "tr": "Rusya'nın doğal orman kedisi olan Sibirya kedisinin sert kışlara uygun yoğun, üç katlı tüyü vardır. Güçlü ve çeviktir, birkaç yılda yavaşça olgunlaşır. Oyunbaz, sevecen kedilerdir ve çoğu suyu sever.",
+          "ja": "ロシアの自然発生の森の猫であるサイベリアンは、厳しい冬に適した密なトリプルコートをもっています。力強く俊敏で、数年かけてゆっくりと成熟します。遊び好きで愛情深く、水遊びを楽しむことも多い猫です。",
+          "de": "Die Sibirische Katze ist eine natürliche Waldkatze aus Russland mit dichtem, dreischichtigem Fell für harte Winter. Sie ist kräftig und wendig und wird erst über mehrere Jahre langsam erwachsen. Sibirische Katzen sind verspielt, anhänglich und mögen oft Wasser.",
+          "fr": "Chat des forêts naturel de Russie, le Sibérien a un triple pelage dense adapté aux hivers rigoureux. Fort et agile, il atteint sa maturité lentement, sur plusieurs années. Le Sibérien est joueur, affectueux et aime souvent l'eau.",
+          "es": "Gato natural de los bosques de Rusia, el siberiano tiene un denso pelaje de triple capa adaptado a los duros inviernos. Es fuerte y ágil, y madura lentamente a lo largo de varios años. Los siberianos son juguetones, cariñosos y a menudo disfrutan del agua.",
+          "pt-BR": "Gato florestal natural da Rússia, o Siberiano tem uma densa pelagem tripla, adequada a invernos rigorosos. É forte e ágil e amadurece devagar, ao longo de vários anos. Os Siberianos são brincalhões, carinhosos e muitas vezes gostam de água.",
+          "ko": "러시아의 자연 발생 숲고양이인 시베리안은 혹독한 겨울에 알맞은 촘촘한 삼중모를 가졌어요. 힘이 세고 민첩하며, 몇 년에 걸쳐 천천히 성숙해요. 시베리안은 장난기와 애정이 많고, 물을 좋아하는 경우가 많아요."
         }
       },
       "premiumFile": "chapter_21_siberian_premium"
@@ -1562,11 +2330,23 @@
       "kind": "breed",
       "title": {
         "en": "Devon Rex",
-        "tr": "Devon Rex"
+        "tr": "Devon Rex",
+        "ja": "デボンレックス",
+        "de": "Devon Rex",
+        "fr": "Devon Rex",
+        "es": "Devon Rex",
+        "pt-BR": "Devon Rex",
+        "ko": "데본 렉스"
       },
       "subtitle": {
         "en": "Pixie ears and wavy fur",
-        "tr": "Peri kulakları ve dalgalı tüy"
+        "tr": "Peri kulakları ve dalgalı tüy",
+        "ja": "妖精のような耳とウェーブの被毛",
+        "de": "Elfenohren und welliges Fell",
+        "fr": "Oreilles de lutin, poil ondulé",
+        "es": "Orejas de duende y pelo ondulado",
+        "pt-BR": "Orelhas de duende e pelo ondulado",
+        "ko": "요정 같은 귀와 곱슬곱슬한 털"
       },
       "accentColor": "#C8B8A6",
       "file": "chapter_22_devon_rex",
@@ -1608,12 +2388,24 @@
         "rarity": "epic",
         "origin": {
           "en": "England (Devon)",
-          "tr": "İngiltere (Devon)"
+          "tr": "İngiltere (Devon)",
+          "ja": "イギリス（デヴォン）",
+          "de": "England (Devon)",
+          "fr": "Angleterre (Devon)",
+          "es": "Inglaterra (Devon)",
+          "pt-BR": "Inglaterra (Devon)",
+          "ko": "잉글랜드(데번)"
         },
         "lifespan": "9–15",
         "coat": {
           "en": "Short, wavy",
-          "tr": "Kısa, dalgalı"
+          "tr": "Kısa, dalgalı",
+          "ja": "短毛、ウェーブ",
+          "de": "Kurz, wellig",
+          "fr": "Court, ondulé",
+          "es": "Corto, ondulado",
+          "pt-BR": "Curta, ondulada",
+          "ko": "단모, 웨이브"
         },
         "stats": {
           "energy": 5,
@@ -1623,11 +2415,23 @@
         },
         "fact": {
           "en": "Huge ears and wavy fur earn it the nickname 'pixie cat'.",
-          "tr": "Kocaman kulakları ve dalgalı tüyüyle 'peri kedisi' diye anılır."
+          "tr": "Kocaman kulakları ve dalgalı tüyüyle 'peri kedisi' diye anılır.",
+          "ja": "大きな耳とウェーブのかかった被毛から、「妖精猫」というニックネームがついています。",
+          "de": "Riesige Ohren und welliges Fell brachten ihr den Spitznamen „Elfenkatze“ ein.",
+          "fr": "Ses immenses oreilles et son poil ondulé lui valent le surnom de « chat lutin ».",
+          "es": "Sus enormes orejas y su pelo ondulado le han valido el apodo de «gato duende».",
+          "pt-BR": "As orelhas enormes e o pelo ondulado lhe renderam o apelido de \"gato duende\".",
+          "ko": "커다란 귀와 곱슬곱슬한 털 덕분에 '요정 고양이'라는 별명이 붙었어요."
         },
         "about": {
           "en": "The Devon Rex began with a curly-coated kitten found in Devon, England, in 1960. Its short, wavy coat, huge low-set ears and large eyes give it an elfin look. It is mischievous, loves warmth and likes to perch on shoulders.",
-          "tr": "Devon Rex, 1960'ta İngiltere'nin Devon bölgesinde bulunan kıvırcık tüylü bir yavruyla başladı. Kısa dalgalı tüyü, alçakta duran kocaman kulakları ve iri gözleri ona peri gibi bir görünüm verir. Yaramazdır, sıcağı sever ve omuzlara tünemeyi sever."
+          "tr": "Devon Rex, 1960'ta İngiltere'nin Devon bölgesinde bulunan kıvırcık tüylü bir yavruyla başladı. Kısa dalgalı tüyü, alçakta duran kocaman kulakları ve iri gözleri ona peri gibi bir görünüm verir. Yaramazdır, sıcağı sever ve omuzlara tünemeyi sever.",
+          "ja": "デボンレックスは、1960年にイギリスのデヴォンで見つかった巻き毛の子猫から始まりました。短いウェーブの被毛、低い位置についた大きな耳、大きな目が妖精のような雰囲気を生み出します。いたずら好きで暖かい場所が大好きで、人の肩に乗るのを好みます。",
+          "de": "Die Devon Rex begann mit einem lockigen Kätzchen, das 1960 in Devon, England, gefunden wurde. Ihr kurzes, welliges Fell, die riesigen, tief angesetzten Ohren und die großen Augen geben ihr ein elfenhaftes Aussehen. Sie ist frech, liebt Wärme und sitzt gern auf Schultern.",
+          "fr": "Le Devon Rex est né d'un chaton au poil frisé trouvé dans le Devon, en Angleterre, en 1960. Son pelage court et ondulé, ses immenses oreilles implantées bas et ses grands yeux lui donnent un air de lutin. Espiègle, il adore la chaleur et aime se percher sur les épaules.",
+          "es": "El devon rex comenzó con un gatito de pelo rizado encontrado en Devon (Inglaterra) en 1960. Su pelaje corto y ondulado, sus enormes orejas de implantación baja y sus grandes ojos le dan un aspecto de elfo. Es travieso, le encanta el calor y le gusta subirse a los hombros.",
+          "pt-BR": "O Devon Rex começou com um filhote de pelo encaracolado encontrado em Devon, na Inglaterra, em 1960. A pelagem curta e ondulada, as orelhas enormes de implantação baixa e os olhos grandes lhe dão um ar de elfo. É travesso, adora calor e gosta de se empoleirar nos ombros.",
+          "ko": "데본 렉스는 1960년 잉글랜드 데번에서 발견된 곱슬털 새끼 고양이에서 시작됐어요. 짧은 웨이브 털, 낮게 달린 커다란 귀, 큰 눈 덕분에 요정 같은 모습이에요. 장난꾸러기이고 따뜻한 걸 좋아하며, 사람 어깨 위에 올라앉는 걸 좋아해요."
         }
       },
       "premiumFile": "chapter_22_devon_rex_premium"
@@ -1637,11 +2441,23 @@
       "kind": "breed",
       "title": {
         "en": "Oriental Shorthair",
-        "tr": "Oryantal Kısa Tüylü"
+        "tr": "Oryantal Kısa Tüylü",
+        "ja": "オリエンタルショートヘア",
+        "de": "Orientalisch Kurzhaar",
+        "fr": "Oriental à poil court",
+        "es": "Oriental de pelo corto",
+        "pt-BR": "Oriental de Pelo Curto",
+        "ko": "오리엔탈 쇼트헤어"
       },
       "subtitle": {
         "en": "Sleek, talkative, all ears",
-        "tr": "İnce, konuşkan, kocaman kulaklı"
+        "tr": "İnce, konuşkan, kocaman kulaklı",
+        "ja": "スリムでおしゃべり、大きな耳",
+        "de": "Schlank, gesprächig, ganz Ohr",
+        "fr": "Élancé, bavard, tout en oreilles",
+        "es": "Esbelto, hablador y todo orejas",
+        "pt-BR": "Elegante, falante e todo orelhas",
+        "ko": "날렵하고 수다스러운 큰 귀"
       },
       "accentColor": "#3F7A5A",
       "file": "chapter_23_oriental_shorthair",
@@ -1683,12 +2499,24 @@
         "rarity": "legendary",
         "origin": {
           "en": "Thailand & United Kingdom",
-          "tr": "Tayland ve Birleşik Krallık"
+          "tr": "Tayland ve Birleşik Krallık",
+          "ja": "タイ＆イギリス",
+          "de": "Thailand & Vereinigtes Königreich",
+          "fr": "Thaïlande et Royaume-Uni",
+          "es": "Tailandia y Reino Unido",
+          "pt-BR": "Tailândia e Reino Unido",
+          "ko": "태국 및 영국"
         },
         "lifespan": "12–15",
         "coat": {
           "en": "Short, fine",
-          "tr": "Kısa, ince"
+          "tr": "Kısa, ince",
+          "ja": "短毛、細く柔らか",
+          "de": "Kurz, fein",
+          "fr": "Court, fin",
+          "es": "Corto, fino",
+          "pt-BR": "Curta e fina",
+          "ko": "단모, 가늘고 고움"
         },
         "stats": {
           "energy": 5,
@@ -1698,11 +2526,23 @@
         },
         "fact": {
           "en": "A Siamese cousin that comes in hundreds of colors and patterns.",
-          "tr": "Siyam'ın kuzeni; yüzlerce renk ve desende görülür."
+          "tr": "Siyam'ın kuzeni; yüzlerce renk ve desende görülür.",
+          "ja": "シャムのいとこにあたり、数百もの毛色と模様があります。",
+          "de": "Eine Cousine der Siamkatze, die es in Hunderten Farben und Mustern gibt.",
+          "fr": "Un cousin du Siamois qui existe en des centaines de couleurs et de motifs.",
+          "es": "Un primo del siamés que existe en cientos de colores y patrones.",
+          "pt-BR": "Um primo do Siamês que existe em centenas de cores e padrões.",
+          "ko": "샴의 사촌으로, 수백 가지 색과 무늬가 있어요."
         },
         "about": {
           "en": "A close relative of the Siamese, the Oriental Shorthair has the same slender body and large ears but comes in a huge range of solid colors and patterns. Most have green eyes. They are vocal, curious and deeply attached to their people.",
-          "tr": "Siyam'ın yakın akrabası olan Oryantal Kısa Tüylü, aynı ince gövdeye ve iri kulaklara sahiptir ama çok çeşitli düz renk ve desende görülür. Çoğunun gözleri yeşildir. Sesli, meraklı ve insanlarına derinden bağlıdırlar."
+          "tr": "Siyam'ın yakın akrabası olan Oryantal Kısa Tüylü, aynı ince gövdeye ve iri kulaklara sahiptir ama çok çeşitli düz renk ve desende görülür. Çoğunun gözleri yeşildir. Sesli, meraklı ve insanlarına derinden bağlıdırlar.",
+          "ja": "シャムの近縁種であるオリエンタルショートヘアは、シャムと同じほっそりした体と大きな耳をもちながら、非常に幅広い単色や模様があります。ほとんどが緑の瞳です。よく鳴き、好奇心旺盛で、飼い主に深い愛着をもちます。",
+          "de": "Die Orientalisch Kurzhaar ist eng mit der Siamkatze verwandt und hat denselben schlanken Körper und die großen Ohren, kommt aber in einer riesigen Auswahl an einfarbigen Farben und Mustern vor. Die meisten haben grüne Augen. Sie sind gesprächig, neugierig und sehr an ihre Menschen gebunden.",
+          "fr": "Proche parent du Siamois, l'Oriental à poil court a le même corps élancé et les mêmes grandes oreilles, mais existe dans une immense gamme de couleurs unies et de motifs. La plupart ont les yeux verts. Il est bavard, curieux et profondément attaché à ses humains.",
+          "es": "Pariente cercano del siamés, el oriental de pelo corto tiene el mismo cuerpo esbelto y las mismas orejas grandes, pero existe en una enorme variedad de colores sólidos y patrones. La mayoría tiene los ojos verdes. Son habladores, curiosos y muy apegados a su gente.",
+          "pt-BR": "Parente próximo do Siamês, o Oriental de Pelo Curto tem o mesmo corpo esguio e as orelhas grandes, mas existe em uma enorme variedade de cores sólidas e padrões. A maioria tem olhos verdes. São vocais, curiosos e muito apegados aos seus humanos.",
+          "ko": "샴과 가까운 친척인 오리엔탈 쇼트헤어는 샴처럼 날씬한 몸과 큰 귀를 가졌지만, 단색과 무늬의 종류가 매우 다양해요. 대부분 초록 눈을 가졌어요. 목소리가 많고 호기심이 강하며 사람에게 깊은 애착을 보여요."
         }
       },
       "premiumFile": "chapter_23_oriental_shorthair_premium"
@@ -1712,11 +2552,23 @@
       "kind": "breed",
       "title": {
         "en": "Japanese Bobtail",
-        "tr": "Japon Bobtail"
+        "tr": "Japon Bobtail",
+        "ja": "ジャパニーズボブテイル",
+        "de": "Japanese Bobtail",
+        "fr": "Bobtail japonais",
+        "es": "Bobtail japonés",
+        "pt-BR": "Bobtail Japonês",
+        "ko": "재패니즈 밥테일"
       },
       "subtitle": {
         "en": "Pom-pom tail, calico luck",
-        "tr": "Ponpon kuyruk, üç renkli şans"
+        "tr": "Ponpon kuyruk, üç renkli şans",
+        "ja": "ポンポンしっぽと三毛の幸運",
+        "de": "Pompon-Schwanz, dreifarbiges Glück",
+        "fr": "Queue pompon, tricolore porte-bonheur",
+        "es": "Cola de pompón, suerte tricolor",
+        "pt-BR": "Cauda de pompom, sorte tricolor",
+        "ko": "방울 꼬리, 행운의 삼색이"
       },
       "accentColor": "#F5F1EA",
       "file": "chapter_24_japanese_bobtail",
@@ -1760,12 +2612,24 @@
         "rarity": "legendary",
         "origin": {
           "en": "Japan",
-          "tr": "Japonya"
+          "tr": "Japonya",
+          "ja": "日本",
+          "de": "Japan",
+          "fr": "Japon",
+          "es": "Japón",
+          "pt-BR": "Japão",
+          "ko": "일본"
         },
         "lifespan": "15–18",
         "coat": {
           "en": "Short or long, often calico",
-          "tr": "Kısa ya da uzun, çoğu üç renkli"
+          "tr": "Kısa ya da uzun, çoğu üç renkli",
+          "ja": "短毛または長毛、三毛が多い",
+          "de": "Kurz oder lang, oft dreifarbig",
+          "fr": "Court ou long, souvent tricolore",
+          "es": "Corto o largo, a menudo tricolor",
+          "pt-BR": "Curta ou longa, muitas vezes tricolor",
+          "ko": "단모 또는 장모, 삼색이 많음"
         },
         "stats": {
           "energy": 4,
@@ -1775,11 +2639,23 @@
         },
         "fact": {
           "en": "The waving maneki-neko lucky cat figurines are modeled on this bobtailed breed.",
-          "tr": "El sallayan maneki-neko şans kedisi biblolarına bu kısa kuyruklu tür örnek alınır."
+          "tr": "El sallayan maneki-neko şans kedisi biblolarına bu kısa kuyruklu tür örnek alınır.",
+          "ja": "手招きする縁起物の招き猫は、このしっぽの短い猫種がモデルになっています。",
+          "de": "Die winkenden Maneki-neko-Glückskatzen sind dieser stummelschwänzigen Rasse nachempfunden.",
+          "fr": "Les figurines porte-bonheur maneki-neko qui font signe de la patte s'inspirent de cette race à queue courte.",
+          "es": "Las figuras del maneki-neko, el gato de la suerte que saluda con la pata, se inspiran en esta raza de cola corta.",
+          "pt-BR": "As estatuetas do maneki-neko, o gatinho da sorte que acena, foram inspiradas nesta raça de cauda curta.",
+          "ko": "손짓하는 행운의 고양이 마네키네코 인형은 이 짧은 꼬리 품종을 본뜬 거예요."
         },
         "about": {
           "en": "Bobtailed cats have lived in Japan for centuries and appear in old paintings and prints. Each Bobtail's short, pom-pom tail is unique. The tricolor 'mi-ke' pattern is especially prized. They are active, chatty and playful.",
-          "tr": "Kısa kuyruklu kediler yüzyıllardır Japonya'da yaşar ve eski resim ve baskılarda görülür. Her Bobtail'in ponpon gibi kısa kuyruğu kendine özgüdür. Üç renkli 'mi-ke' deseni özellikle değerlidir. Hareketli, konuşkan ve oyunbazdırlar."
+          "tr": "Kısa kuyruklu kediler yüzyıllardır Japonya'da yaşar ve eski resim ve baskılarda görülür. Her Bobtail'in ponpon gibi kısa kuyruğu kendine özgüdür. Üç renkli 'mi-ke' deseni özellikle değerlidir. Hareketli, konuşkan ve oyunbazdırlar.",
+          "ja": "しっぽの短い猫は何世紀も前から日本で暮らしており、昔の絵画や浮世絵にも登場します。ポンポンのような短いしっぽは1匹ごとに形が異なります。3色の「三毛」柄は特に珍重されています。活発でおしゃべり、遊び好きな猫です。",
+          "de": "Stummelschwanzkatzen leben seit Jahrhunderten in Japan und tauchen auf alten Gemälden und Drucken auf. Der kurze Pompon-Schwanz jeder Bobtail ist einzigartig. Besonders geschätzt ist das dreifarbige „Mi-ke“-Muster. Sie sind aktiv, gesprächig und verspielt.",
+          "fr": "Les chats à queue courte vivent au Japon depuis des siècles et figurent sur d'anciennes peintures et estampes. La courte queue en pompon de chaque Bobtail est unique. Le motif tricolore « mi-ke » est particulièrement prisé. Le Bobtail japonais est actif, bavard et joueur.",
+          "es": "Los gatos de cola corta viven en Japón desde hace siglos y aparecen en pinturas y grabados antiguos. La cola corta en forma de pompón de cada bobtail es única. El patrón tricolor «mi-ke» es especialmente apreciado. Son activos, habladores y juguetones.",
+          "pt-BR": "Gatos de cauda curta vivem no Japão há séculos e aparecem em pinturas e gravuras antigas. A cauda curta em forma de pompom de cada Bobtail é única. O padrão tricolor \"mi-ke\" é especialmente valorizado. São ativos, falantes e brincalhões.",
+          "ko": "꼬리가 짧은 고양이는 수백 년 전부터 일본에 살아왔고 옛 그림과 판화에도 등장해요. 밥테일의 짧은 방울 꼬리는 저마다 모양이 달라요. 삼색 '미케' 무늬가 특히 귀하게 여겨져요. 활발하고 수다스러우며 장난기가 많아요."
         }
       },
       "premiumFile": "chapter_24_japanese_bobtail_premium"
@@ -1789,11 +2665,23 @@
       "kind": "breed",
       "title": {
         "en": "Somali",
-        "tr": "Somali"
+        "tr": "Somali",
+        "ja": "ソマリ",
+        "de": "Somali",
+        "fr": "Somali",
+        "es": "Somalí",
+        "pt-BR": "Somali",
+        "ko": "소말리"
       },
       "subtitle": {
         "en": "The fox cat with a bushy tail",
-        "tr": "Gür kuyruklu tilki kedi"
+        "tr": "Gür kuyruklu tilki kedi",
+        "ja": "ふさふさしっぽのキツネ猫",
+        "de": "Die Fuchskatze mit buschigem Schwanz",
+        "fr": "Le chat renard à la queue touffue",
+        "es": "El gato zorro de cola tupida",
+        "pt-BR": "O gato-raposa de cauda peluda",
+        "ko": "풍성한 꼬리의 여우 고양이"
       },
       "accentColor": "#C8743F",
       "file": "chapter_25_somali",
@@ -1833,12 +2721,24 @@
         "rarity": "legendary",
         "origin": {
           "en": "North America",
-          "tr": "Kuzey Amerika"
+          "tr": "Kuzey Amerika",
+          "ja": "北米",
+          "de": "Nordamerika",
+          "fr": "Amérique du Nord",
+          "es": "Norteamérica",
+          "pt-BR": "América do Norte",
+          "ko": "북미"
         },
         "lifespan": "12–16",
         "coat": {
           "en": "Semi-long, ticked",
-          "tr": "Yarı uzun, kırçıllı"
+          "tr": "Yarı uzun, kırçıllı",
+          "ja": "セミロング、ティックド",
+          "de": "Halblang, getickt",
+          "fr": "Mi-long, tiqueté",
+          "es": "Semilargo, atigrado (ticked)",
+          "pt-BR": "Semilonga, tiquetada",
+          "ko": "중장모, 티킹"
         },
         "stats": {
           "energy": 5,
@@ -1848,11 +2748,23 @@
         },
         "fact": {
           "en": "A long-haired Abyssinian, nicknamed the 'fox cat' for its bushy tail.",
-          "tr": "Gür kuyruğu yüzünden 'tilki kedi' denen uzun tüylü bir Habeş kedisi."
+          "tr": "Gür kuyruğu yüzünden 'tilki kedi' denen uzun tüylü bir Habeş kedisi.",
+          "ja": "長毛のアビシニアンで、ふさふさしたしっぽから「キツネ猫」と呼ばれています。",
+          "de": "Eine langhaarige Abessinierkatze, wegen ihres buschigen Schwanzes „Fuchskatze“ genannt.",
+          "fr": "Un Abyssin à poil long, surnommé le « chat renard » pour sa queue touffue.",
+          "es": "Un abisinio de pelo largo, apodado «gato zorro» por su cola tupida.",
+          "pt-BR": "Um Abissínio de pelo longo, apelidado de \"gato-raposa\" por causa da cauda peluda.",
+          "ko": "장모 아비시니안으로, 풍성한 꼬리 덕분에 '여우 고양이'라는 별명이 있어요."
         },
         "about": {
           "en": "The Somali is the long-haired form of the Abyssinian, recognized as a separate breed in the late 1970s. Its ticked coat and full, bushy tail give it a fox-like look. Somalis are energetic, clever and endlessly curious.",
-          "tr": "Somali, Habeş kedisinin uzun tüylü biçimidir ve 1970'lerin sonunda ayrı bir tür olarak tanındı. Kırçıllı tüyü ve gür, kabarık kuyruğu ona tilki gibi bir görünüm verir. Enerjik, zeki ve bitmeyen bir merakla dolu kedilerdir."
+          "tr": "Somali, Habeş kedisinin uzun tüylü biçimidir ve 1970'lerin sonunda ayrı bir tür olarak tanındı. Kırçıllı tüyü ve gür, kabarık kuyruğu ona tilki gibi bir görünüm verir. Enerjik, zeki ve bitmeyen bir merakla dolu kedilerdir.",
+          "ja": "ソマリはアビシニアンの長毛タイプで、1970年代後半に独立した品種として公認されました。ティックドの被毛と豊かでふさふさしたしっぽが、キツネのような見た目を生み出します。エネルギッシュで賢く、尽きることのない好奇心をもっています。",
+          "de": "Die Somali ist die langhaarige Form der Abessinierkatze und wurde Ende der 1970er-Jahre als eigene Rasse anerkannt. Ihr geticktes Fell und der volle, buschige Schwanz verleihen ihr ein fuchsähnliches Aussehen. Somalis sind energiegeladen, klug und unendlich neugierig.",
+          "fr": "Le Somali est la version à poil long de l'Abyssin, reconnue comme race distincte à la fin des années 1970. Son pelage tiqueté et sa queue fournie et touffue lui donnent un air de renard. Le Somali est énergique, malin et d'une curiosité sans fin.",
+          "es": "El somalí es la variedad de pelo largo del abisinio, reconocida como raza independiente a finales de la década de 1970. Su pelaje ticked y su cola espesa y tupida le dan un aspecto de zorro. Los somalíes son enérgicos, listos e infinitamente curiosos.",
+          "pt-BR": "O Somali é a versão de pelo longo do Abissínio, reconhecido como raça separada no fim dos anos 1970. Sua pelagem tiquetada e a cauda cheia e peluda lhe dão uma aparência de raposa. Os Somalis são enérgicos, espertos e infinitamente curiosos.",
+          "ko": "소말리는 아비시니안의 장모 버전으로, 1970년대 후반에 별도의 품종으로 인정받았어요. 티킹 털과 풍성한 꼬리 덕분에 여우 같은 모습이에요. 소말리는 활기차고 영리하며 호기심이 끝이 없어요."
         }
       },
       "premiumFile": "chapter_25_somali_premium"

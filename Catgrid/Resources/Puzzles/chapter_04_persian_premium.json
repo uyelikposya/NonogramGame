@@ -6,7 +6,13 @@
       "id": "persian-p01",
       "title": {
         "en": "Golden Paw",
-        "tr": "Altın Pati"
+        "tr": "Altın Pati",
+        "ja": "金の肉球",
+        "de": "Goldene Pfote",
+        "fr": "Patte dorée",
+        "es": "Patita dorada",
+        "pt-BR": "Patinha Dourada",
+        "ko": "황금 발바닥"
       },
       "palette": {
         "y": "#F4D35E"
@@ -26,7 +32,13 @@
       "id": "persian-p02",
       "title": {
         "en": "Purr Love",
-        "tr": "Mırıl Sevgi"
+        "tr": "Mırıl Sevgi",
+        "ja": "ゴロゴロ大好き",
+        "de": "Schnurrliebe",
+        "fr": "Ronron d'amour",
+        "es": "Amor ronroneante",
+        "pt-BR": "Amor Ronronado",
+        "ko": "골골송 사랑"
       },
       "palette": {
         "n": "#E8A3A8",
@@ -47,7 +59,13 @@
       "id": "persian-p03",
       "title": {
         "en": "Fish Snack",
-        "tr": "Balık Atıştırması"
+        "tr": "Balık Atıştırması",
+        "ja": "おさかなおやつ",
+        "de": "Fischsnack",
+        "fr": "Goûter poisson",
+        "es": "Tentempié de pescado",
+        "pt-BR": "Petisco de Peixe",
+        "ko": "생선 간식"
       },
       "palette": {
         "o": "#8E5BA8"
@@ -67,7 +85,13 @@
       "id": "persian-p04",
       "title": {
         "en": "Yarn Ball",
-        "tr": "Yün Yumak"
+        "tr": "Yün Yumak",
+        "ja": "毛糸玉",
+        "de": "Wollknäuel",
+        "fr": "Pelote de laine",
+        "es": "Ovillo de lana",
+        "pt-BR": "Novelo de Lã",
+        "ko": "털실 뭉치"
       },
       "palette": {
         "o": "#8E5BA8"
@@ -89,7 +113,13 @@
       "id": "persian-p05",
       "title": {
         "en": "Toy Mouse",
-        "tr": "Oyuncak Fare"
+        "tr": "Oyuncak Fare",
+        "ja": "ネズミのおもちゃ",
+        "de": "Spielmaus",
+        "fr": "Souris jouet",
+        "es": "Ratón de juguete",
+        "pt-BR": "Ratinho de Brinquedo",
+        "ko": "장난감 쥐"
       },
       "palette": {
         "n": "#E8A3A8",
@@ -112,7 +142,13 @@
       "id": "persian-p06",
       "title": {
         "en": "Portrait",
-        "tr": "Portre"
+        "tr": "Portre",
+        "ja": "肖像画",
+        "de": "Porträt",
+        "fr": "Portrait",
+        "es": "Retrato",
+        "pt-BR": "Retrato",
+        "ko": "초상화"
       },
       "palette": {
         "b": "#EFE7DC",
@@ -135,7 +171,13 @@
       "id": "persian-p07",
       "title": {
         "en": "Royal Cushion",
-        "tr": "Saray Minderi"
+        "tr": "Saray Minderi",
+        "ja": "王様のクッション",
+        "de": "Königskissen",
+        "fr": "Coussin royal",
+        "es": "Cojín real",
+        "pt-BR": "Almofada Real",
+        "ko": "왕실 방석"
       },
       "palette": {
         "b": "#EFE7DC",
@@ -162,7 +204,13 @@
       "id": "persian-p08",
       "title": {
         "en": "Nap Time",
-        "tr": "Şekerleme"
+        "tr": "Şekerleme",
+        "ja": "お昼寝タイム",
+        "de": "Nickerchen",
+        "fr": "L'heure de la sieste",
+        "es": "Hora de la siesta",
+        "pt-BR": "Hora da Soneca",
+        "ko": "낮잠 시간"
       },
       "palette": {
         "b": "#EFE7DC"
@@ -186,7 +234,13 @@
       "id": "persian-p09",
       "title": {
         "en": "Lucky Cat",
-        "tr": "Şans Kedisi"
+        "tr": "Şans Kedisi",
+        "ja": "招き猫",
+        "de": "Glückskatze",
+        "fr": "Chat porte-bonheur",
+        "es": "Gato de la suerte",
+        "pt-BR": "Gato da Sorte",
+        "ko": "행운의 고양이"
       },
       "palette": {
         "b": "#EFE7DC",

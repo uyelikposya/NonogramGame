@@ -19,6 +19,7 @@ import sys
 from pathlib import Path
 
 MIN_PUZZLES = {"tutorial": 10, "breed": 15}
+LANGUAGES = ["en", "tr", "ja", "de", "fr", "es", "pt-BR", "ko"]
 PREMIUM_SIZES = ["8x8"] * 3 + ["10x10"] * 3 + ["12x12"] * 3
 HEX = re.compile(r"^#?[0-9A-Fa-f]{6}$")
 LESSONS = {
@@ -132,8 +133,8 @@ def validate_puzzle(puzzle, errors):
             if symbol != "." and symbol not in palette:
                 errors.append(f"{pid}: palette olmayan piksel '{symbol}'")
                 return None
-    if "title" not in puzzle or not {"en", "tr"} <= puzzle["title"].keys():
-        errors.append(f"{pid}: title için en ve tr gerekli")
+    if "title" not in puzzle or not set(LANGUAGES) <= puzzle["title"].keys():
+        errors.append(f"{pid}: title için tüm diller gerekli ({', '.join(LANGUAGES)})")
     if puzzle.get("lesson") not in (None, *LESSONS):
         errors.append(f"{pid}: bilinmeyen lesson {puzzle['lesson']}")
 

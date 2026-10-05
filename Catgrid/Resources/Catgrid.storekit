@@ -1,11 +1,7 @@
 {
   "identifier" : "C47A9D10",
-  "nonRenewingSubscriptions" : [
-
-  ],
-  "products" : [
-
-  ],
+  "nonRenewingSubscriptions" : [],
+  "products" : [],
   "settings" : {
     "_locale" : "tr",
     "_storefront" : "USA"
@@ -23,17 +19,43 @@
           "description" : "",
           "displayName" : "Catgrid Premium",
           "locale" : "tr"
+        },
+        {
+          "description" : "",
+          "displayName" : "Catgrid Premium",
+          "locale" : "ja"
+        },
+        {
+          "description" : "",
+          "displayName" : "Catgrid Premium",
+          "locale" : "de"
+        },
+        {
+          "description" : "",
+          "displayName" : "Catgrid Premium",
+          "locale" : "fr"
+        },
+        {
+          "description" : "",
+          "displayName" : "Catgrid Premium",
+          "locale" : "es"
+        },
+        {
+          "description" : "",
+          "displayName" : "Catgrid Premium",
+          "locale" : "pt_BR"
+        },
+        {
+          "description" : "",
+          "displayName" : "Catgrid Premium",
+          "locale" : "ko"
         }
       ],
       "name" : "Premium",
       "subscriptions" : [
         {
-          "adHocOffers" : [
-
-          ],
-          "codeOffers" : [
-
-          ],
+          "adHocOffers" : [],
+          "codeOffers" : [],
           "displayPrice" : "11.99",
           "familyShareable" : false,
           "groupNumber" : 1,
@@ -49,6 +71,36 @@
               "description" : "Bir yıl boyunca reklamsız oyun, altın bulmacalar ve altın kartlar.",
               "displayName" : "Yıllık Premium",
               "locale" : "tr"
+            },
+            {
+              "description" : "広告なし、ゴールデンパズルとゴールデンカードを1年間お楽しみいただけます。",
+              "displayName" : "Premium 年額",
+              "locale" : "ja"
+            },
+            {
+              "description" : "Keine Werbung, Goldene Rätsel und Goldene Karten für ein ganzes Jahr.",
+              "displayName" : "Premium Jährlich",
+              "locale" : "de"
+            },
+            {
+              "description" : "Sans pubs, avec grilles dorées et cartes dorées pendant toute une année.",
+              "displayName" : "Premium annuel",
+              "locale" : "fr"
+            },
+            {
+              "description" : "Sin anuncios, puzles dorados y cartas doradas durante todo un año.",
+              "displayName" : "Premium anual",
+              "locale" : "es"
+            },
+            {
+              "description" : "Sem anúncios, quebra-cabeças e cartas douradas por um ano inteiro.",
+              "displayName" : "Premium Anual",
+              "locale" : "pt_BR"
+            },
+            {
+              "description" : "1년 내내 광고 없이 골든 퍼즐과 골든 카드를 즐겨요.",
+              "displayName" : "프리미엄 연간",
+              "locale" : "ko"
             }
           ],
           "productID" : "com.catgridcollection.nonogram.premium.yearly",
@@ -58,12 +110,8 @@
           "type" : "RecurringSubscription"
         },
         {
-          "adHocOffers" : [
-
-          ],
-          "codeOffers" : [
-
-          ],
+          "adHocOffers" : [],
+          "codeOffers" : [],
           "displayPrice" : "1.99",
           "familyShareable" : false,
           "groupNumber" : 1,
@@ -79,6 +127,36 @@
               "description" : "Reklamsız oyun, altın bulmacalar ve altın kartlar; her ay yenilenir.",
               "displayName" : "Aylık Premium",
               "locale" : "tr"
+            },
+            {
+              "description" : "広告なし、ゴールデンパズルとゴールデンカード。毎月自動更新されます。",
+              "displayName" : "Premium 月額",
+              "locale" : "ja"
+            },
+            {
+              "description" : "Keine Werbung, Goldene Rätsel und Goldene Karten, monatlich verlängert.",
+              "displayName" : "Premium Monatlich",
+              "locale" : "de"
+            },
+            {
+              "description" : "Sans pubs, avec grilles dorées et cartes dorées, renouvelé chaque mois.",
+              "displayName" : "Premium mensuel",
+              "locale" : "fr"
+            },
+            {
+              "description" : "Sin anuncios, puzles dorados y cartas doradas, con renovación mensual.",
+              "displayName" : "Premium mensual",
+              "locale" : "es"
+            },
+            {
+              "description" : "Sem anúncios, quebra-cabeças e cartas douradas, renovado todo mês.",
+              "displayName" : "Premium Mensal",
+              "locale" : "pt_BR"
+            },
+            {
+              "description" : "광고 없이 골든 퍼즐과 골든 카드를 즐겨요. 매월 갱신돼요.",
+              "displayName" : "프리미엄 월간",
+              "locale" : "ko"
             }
           ],
           "productID" : "com.catgridcollection.nonogram.premium.monthly",
