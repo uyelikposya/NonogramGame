@@ -5,36 +5,6 @@
     {
       "id": "exotic-shorthair-001",
       "title": {
-        "en": "Toe Beans",
-        "tr": "Pati Yastıkları",
-        "ja": "肉球",
-        "de": "Pfotenballen",
-        "fr": "Coussinets",
-        "es": "Almohadillas",
-        "pt-BR": "Almofadinhas",
-        "ko": "말랑 젤리"
-      },
-      "palette": {
-        "b": "#E8B26A",
-        "n": "#D98A7A"
-      },
-      "pixels": [
-        "...bb.bb...",
-        "..bnnbnnb..",
-        "bbbbb.bnbbb",
-        "bnb.....bnb",
-        "bnbbbbbbbnb",
-        "..bbbbbbb..",
-        "..bbnnnbb..",
-        ".bbnnnnnbb.",
-        ".bbnnnnnbb.",
-        "..bbnnnbb..",
-        "...bbbbb..."
-      ]
-    },
-    {
-      "id": "exotic-shorthair-002",
-      "title": {
         "en": "Purr Love",
         "tr": "Mırıl Sevgi",
         "ja": "ゴロゴロ大好き",
@@ -45,24 +15,18 @@
         "ko": "골골송 사랑"
       },
       "palette": {
-        "n": "#D98A7A",
-        "w": "#F7E7CF"
+        "n": "#D98A7A"
       },
       "pixels": [
-        ".nnnn.nnnn.",
-        "nnwnnnnnnnn",
-        "nnwwnnnnnnn",
-        "nnnnnnnnnnn",
-        ".nnnnnnnnn.",
-        ".nnnnnnnnn.",
-        "..nnnnnnn..",
-        "...nnnnn...",
-        "....nnn....",
-        ".....n....."
+        "nnnnn",
+        "nnnnn",
+        "nnnnn",
+        ".nnn.",
+        "..n.."
       ]
     },
     {
-      "id": "exotic-shorthair-003",
+      "id": "exotic-shorthair-002",
       "title": {
         "en": "Fish Snack",
         "tr": "Balık Atıştırması",
@@ -74,20 +38,18 @@
         "ko": "생선 간식"
       },
       "palette": {
-        "o": "#7A9E7E",
-        "p": "#E9C46A"
+        "o": "#7A9E7E"
       },
       "pixels": [
-        "..oooo....o",
-        ".ooopooo.oo",
-        "o.oopoooooo",
-        "oooopoooooo",
-        ".ooopooo.oo",
-        "..oooo....o"
+        "..o....",
+        "ooooo.o",
+        "ooooooo",
+        "ooooo.o",
+        "..o...."
       ]
     },
     {
-      "id": "exotic-shorthair-004",
+      "id": "exotic-shorthair-003",
       "title": {
         "en": "Yarn Ball",
         "tr": "Yün Yumak",
@@ -102,21 +64,16 @@
         "o": "#7A9E7E"
       },
       "pixels": [
-        "..ooooo.....",
-        ".ooooooo....",
-        "o.oooo.oo...",
-        "oo....oooo..",
-        "oooo..oooo..",
-        "ooo..o.ooo..",
-        "ooo.ooo.o...",
-        ".o.ooooo....",
-        "..ooooooo...",
-        "....oo..oo..",
-        "..........oo"
+        ".ooo..",
+        "ooooo.",
+        "oo.oo.",
+        "o.ooo.",
+        ".oooo.",
+        "......"
       ]
     },
     {
-      "id": "exotic-shorthair-005",
+      "id": "exotic-shorthair-004",
       "title": {
         "en": "Dinner Bowl",
         "tr": "Mama Kabı",
@@ -133,69 +90,87 @@
         "w": "#F7E7CF"
       },
       "pixels": [
-        "....p.pp....",
-        "..pppppppp..",
-        ".pppppppppp.",
-        "ooppppppppoo",
-        "oooooooooooo",
-        ".oowwwwwwoo.",
-        ".oooooooooo.",
-        "..oooooooo.."
+        "....p..",
+        ".ppppp.",
+        "opppppo",
+        "oowwwoo",
+        ".ooooo.",
+        ".ooooo."
+      ]
+    },
+    {
+      "id": "exotic-shorthair-005",
+      "title": {
+        "en": "Toy Mouse",
+        "tr": "Oyuncak Fare",
+        "ja": "ネズミのおもちゃ",
+        "de": "Spielmaus",
+        "fr": "Souris jouet",
+        "es": "Ratón de juguete",
+        "pt-BR": "Ratinho de Brinquedo",
+        "ko": "장난감 쥐"
+      },
+      "palette": {
+        "n": "#D98A7A",
+        "p": "#E9C46A"
+      },
+      "pixels": [
+        "....p..",
+        "...pnp.",
+        "..pppp.",
+        "..ppppp",
+        "..pppp.",
+        ".n.pp..",
+        "......."
       ]
     },
     {
       "id": "exotic-shorthair-006",
       "title": {
-        "en": "If I Fits",
-        "tr": "Kutu Sevdası",
-        "ja": "入れるなら入る",
-        "de": "Passt, sitzt",
-        "fr": "Si ça rentre…",
-        "es": "Si quepo, me siento",
-        "pt-BR": "Se Cabe, Eu Entro",
-        "ko": "들어가면 내 자리"
+        "en": "Toe Beans",
+        "tr": "Pati Yastıkları",
+        "ja": "肉球",
+        "de": "Pfotenballen",
+        "fr": "Coussinets",
+        "es": "Almohadillas",
+        "pt-BR": "Almofadinhas",
+        "ko": "말랑 젤리"
       },
       "palette": {
         "b": "#E8B26A",
-        "e": "#B5652A",
-        "o": "#7A9E7E",
-        "p": "#E9C46A"
+        "n": "#D98A7A"
       },
       "pixels": [
-        "...b....b...",
-        "...bbbbbb...",
-        "...bbbbbb...",
-        "...beebeb...",
-        "..obbbbbbo..",
-        "ppoobbbboopp",
-        ".oooooooooo.",
-        "............",
-        ".oooooooooo.",
-        ".oooooooooo."
+        "..bb..",
+        "bbnnbb",
+        "bbbbbb",
+        ".bnnb.",
+        ".bnnb.",
+        ".bbbb."
       ]
     },
     {
       "id": "exotic-shorthair-007",
       "title": {
-        "en": "Leftovers",
-        "tr": "Artıklar",
-        "ja": "食べ残し",
-        "de": "Reste",
-        "fr": "Restes",
-        "es": "Sobras",
-        "pt-BR": "Restinho",
-        "ko": "남은 음식"
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak",
+        "ja": "毛糸玉",
+        "de": "Wollknäuel",
+        "fr": "Pelote de laine",
+        "es": "Ovillo de lana",
+        "pt-BR": "Novelo de Lã",
+        "ko": "털실 뭉치"
       },
       "palette": {
-        "p": "#E9C46A"
+        "o": "#7A9E7E"
       },
       "pixels": [
-        "...p.p.p....",
-        ".ppppp.p...p",
-        "pppppppppppp",
-        "pppppppppppp",
-        ".ppppp.p...p",
-        "...p.p.p...."
+        ".oooo..",
+        "o.o.o..",
+        "oo..oo.",
+        "oooo...",
+        ".oooo..",
+        ".....o."
       ]
     },
     {
@@ -212,81 +187,101 @@
       },
       "palette": {
         "b": "#E8B26A",
-        "d": "#C47A2C",
         "e": "#B5652A"
       },
       "pixels": [
-        ".....bb...b.",
-        ".bbbbbbbbbb.",
-        ".bbbdbdbdbb.",
-        ".bbebbbbebbb",
-        "bbbeebbbeebb",
-        ".bbbbbbbbbbb",
-        ".bbbbbbbbbb.",
-        "..bbbbbbbb..",
-        "....bbbb...."
+        "...b...",
+        "bbbbbbb",
+        "bbbbbbb",
+        "beebeeb",
+        "bbbbbbb",
+        ".bbbbb.",
+        "..bbb.."
       ]
     },
     {
       "id": "exotic-shorthair-009",
       "title": {
-        "en": "Teddy Face",
-        "tr": "Oyuncak Ayı Yüzü",
-        "ja": "テディベア顔",
-        "de": "Teddygesicht",
-        "fr": "Bouille de nounours",
-        "es": "Cara de osito",
-        "pt-BR": "Cara de Ursinho",
-        "ko": "테디베어 얼굴"
+        "en": "Dinner Bowl",
+        "tr": "Mama Kabı",
+        "ja": "ごはん皿",
+        "de": "Futternapf",
+        "fr": "Gamelle",
+        "es": "Cuenco de comida",
+        "pt-BR": "Potinho de Ração",
+        "ko": "밥그릇"
       },
       "palette": {
-        "b": "#E8B26A",
-        "d": "#C47A2C",
-        "e": "#B5652A",
+        "o": "#7A9E7E",
+        "p": "#E9C46A",
         "w": "#F7E7CF"
       },
       "pixels": [
-        ".b..bbbbbb.b.",
-        ".bbbdbbbbdbbb",
-        ".bbbdbbbbdbbb",
-        ".bbbebbbbebbb",
-        "bbbeebbbeeebb",
-        "bbbeebbbbebbb",
-        ".bbbbbwwbbbbb",
-        ".bbbbwwwwbbb.",
-        "..bbbbwwbbb..",
-        ".....bbbb...."
+        ".......",
+        ".ppppp.",
+        "ppppppp",
+        "oopppoo",
+        "oowwwoo",
+        ".ooooo.",
+        ".ooooo."
       ]
     },
     {
       "id": "exotic-shorthair-010",
       "title": {
-        "en": "Nap Time",
-        "tr": "Şekerleme",
-        "ja": "お昼寝タイム",
-        "de": "Nickerchen",
-        "fr": "L'heure de la sieste",
-        "es": "Hora de la siesta",
-        "pt-BR": "Hora da Soneca",
-        "ko": "낮잠 시간"
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi",
+        "ja": "ゴロゴロ大好き",
+        "de": "Schnurrliebe",
+        "fr": "Ronron d'amour",
+        "es": "Amor ronroneante",
+        "pt-BR": "Amor Ronronado",
+        "ko": "골골송 사랑"
       },
       "palette": {
-        "b": "#E8B26A",
-        "d": "#C47A2C"
+        "n": "#D98A7A",
+        "w": "#F7E7CF"
       },
       "pixels": [
-        ".....bbbbb...",
-        "bbbbbbdbbdbb.",
-        "bbbbbbdbbdbbb",
-        "bb...bbbbbbbb",
-        ".bbbbbbbbbbbd",
-        "..bbbbbbbbbdd",
-        "...bbbbbbbdd.",
-        "...dddddddd.."
+        ".nn..nn.",
+        "nwnnnnnn",
+        "nnnnnnnn",
+        "nnnnnnnn",
+        ".nnnnnn.",
+        "..nnnn..",
+        "...nn...",
+        "........"
       ]
     },
     {
       "id": "exotic-shorthair-011",
+      "title": {
+        "en": "Portrait",
+        "tr": "Portre",
+        "ja": "肖像画",
+        "de": "Porträt",
+        "fr": "Portrait",
+        "es": "Retrato",
+        "pt-BR": "Retrato",
+        "ko": "초상화"
+      },
+      "palette": {
+        "b": "#E8B26A",
+        "e": "#B5652A"
+      },
+      "pixels": [
+        "........",
+        ".bbbbbb.",
+        "bbbbbbbb",
+        "bbebbebb",
+        "bbebbebb",
+        "bbbbbbbb",
+        ".bbbbbb.",
+        "........"
+      ]
+    },
+    {
+      "id": "exotic-shorthair-012",
       "title": {
         "en": "Sitting Pretty",
         "tr": "Uslu Oturuş",
@@ -302,23 +297,107 @@
         "d": "#C47A2C"
       },
       "pixels": [
-        ".....b.....",
-        "bbbbbb.....",
-        "bbbbbbb....",
-        ".bbbbb.....",
-        ".bbbbb.....",
-        "...bbbb....",
-        "..bbdddb..d",
-        "..bbdddb..d",
-        ".bbbbbbb..d",
-        ".bbbbbbb..d",
-        "..bbbbbb.dd",
-        "..bbbbbbdd.",
-        "..bbbb....."
+        "........",
+        "bbbbb...",
+        ".bbb....",
+        ".bbb....",
+        "..bbbb.d",
+        ".bbbbb.d",
+        ".bbbbb.d",
+        ".bbbbbdd",
+        ".bbbb..."
       ]
     },
     {
-      "id": "exotic-shorthair-012",
+      "id": "exotic-shorthair-013",
+      "title": {
+        "en": "Lake Swimmer",
+        "tr": "Göl Yüzücüsü",
+        "ja": "湖のスイマー",
+        "de": "Seeschwimmerin",
+        "fr": "Nageur du lac",
+        "es": "Nadador del lago",
+        "pt-BR": "Nadador do Lago",
+        "ko": "호수의 수영 선수"
+      },
+      "palette": {
+        "b": "#E8B26A",
+        "e": "#B5652A",
+        "u": "#4A90C2"
+      },
+      "pixels": [
+        "....b....",
+        "..bbbbbb.",
+        ".bbebbbb.",
+        ".bbebeeb.",
+        "..bbbbbb.",
+        "..bbbbb..",
+        ".uuu.uuuu",
+        ".uuuuuuuu"
+      ]
+    },
+    {
+      "id": "exotic-shorthair-014",
+      "title": {
+        "en": "Teacup Cat",
+        "tr": "Fincandaki Kedi",
+        "ja": "ティーカップ猫",
+        "de": "Teetassenkatze",
+        "fr": "Chat dans une tasse",
+        "es": "Gato en una taza",
+        "pt-BR": "Gato na Xícara",
+        "ko": "찻잔 고양이"
+      },
+      "palette": {
+        "b": "#E8B26A",
+        "e": "#B5652A",
+        "o": "#7A9E7E"
+      },
+      "pixels": [
+        "..........",
+        "..........",
+        "...bbbbbb.",
+        "...bebebb.",
+        "..obbbbboo",
+        ".oooobboo.",
+        ".o.oooooo.",
+        "..ooooooo.",
+        "...ooooo.."
+      ]
+    },
+    {
+      "id": "exotic-shorthair-015",
+      "title": {
+        "en": "Owl Pose",
+        "tr": "Baykuş Duruşu",
+        "ja": "フクロウのポーズ",
+        "de": "Eulenpose",
+        "fr": "Pose de chouette",
+        "es": "Pose de búho",
+        "pt-BR": "Pose de Coruja",
+        "ko": "부엉이 포즈"
+      },
+      "palette": {
+        "b": "#E8B26A",
+        "d": "#C47A2C",
+        "e": "#B5652A",
+        "w": "#F7E7CF"
+      },
+      "pixels": [
+        ".b.......b",
+        ".bbbbdbbbb",
+        ".bbebdeebb",
+        ".beeebeeeb",
+        ".bbbbbbbb.",
+        ".bbbwwbbbb",
+        "bbbwwwwwbb",
+        ".bbwwwwwbb",
+        "..bbwwwbb.",
+        "...bbbb..."
+      ]
+    },
+    {
+      "id": "exotic-shorthair-016",
       "title": {
         "en": "Strut",
         "tr": "Salınarak Yürüyüş",
@@ -334,115 +413,17 @@
         "d": "#C47A2C"
       },
       "pixels": [
-        "............d",
-        "............d",
-        "bbbbb.......d",
-        "bbbbbbbb...dd",
-        ".bbbbbddbbdd.",
-        "..bbbbbbbbb..",
-        "...bbbbbbbb..",
-        "...bbbbbbbb..",
-        "...b.b..b.b..",
-        "...b.bb.b.b..",
-        "...b..b.b.b.."
-      ]
-    },
-    {
-      "id": "exotic-shorthair-013",
-      "title": {
-        "en": "If I Fits",
-        "tr": "Kutu Sevdası",
-        "ja": "入れるなら入る",
-        "de": "Passt, sitzt",
-        "fr": "Si ça rentre…",
-        "es": "Si quepo, me siento",
-        "pt-BR": "Se Cabe, Eu Entro",
-        "ko": "들어가면 내 자리"
-      },
-      "palette": {
-        "b": "#E8B26A",
-        "e": "#B5652A",
-        "o": "#7A9E7E",
-        "p": "#E9C46A"
-      },
-      "pixels": [
-        "....b.....b...",
-        "....bbbbbbb...",
-        "....bbbbbbb...",
-        "....bbebebb...",
-        "....beebeeb...",
-        "..oobbbbbbboo.",
-        ".ppoobbbbooopp",
-        "..ooooooooooo.",
-        "..............",
-        "..ooooooooooo.",
-        "..ooooooooooo.",
-        "..ooooooooooo."
-      ]
-    },
-    {
-      "id": "exotic-shorthair-014",
-      "title": {
-        "en": "Moon Gazer",
-        "tr": "Ay Seyri",
-        "ja": "月を見る猫",
-        "de": "Mondgucker",
-        "fr": "Rêveur de lune",
-        "es": "Mirando la luna",
-        "pt-BR": "Admirador da Lua",
-        "ko": "달 바라기"
-      },
-      "palette": {
-        "b": "#E8B26A",
-        "y": "#F4D35E"
-      },
-      "pixels": [
-        "....yyy.....",
-        "...yyy......",
-        "..yyyy......",
-        "..yyyy......",
-        "..yyyy......",
-        "..yyyy......",
-        "..yyyyy.....",
-        "..yyyyyy....",
-        "bbbyyyyyyyy.",
-        "bb..yyyyyy..",
-        ".bbb..b.....",
-        "bbbb..b.....",
-        "bbbb..b.....",
-        ".bbbbb......"
-      ]
-    },
-    {
-      "id": "exotic-shorthair-015",
-      "title": {
-        "en": "Royal Cushion",
-        "tr": "Saray Minderi",
-        "ja": "王様のクッション",
-        "de": "Königskissen",
-        "fr": "Coussin royal",
-        "es": "Cojín real",
-        "pt-BR": "Almofada Real",
-        "ko": "왕실 방석"
-      },
-      "palette": {
-        "b": "#E8B26A",
-        "n": "#D98A7A",
-        "o": "#7A9E7E",
-        "p": "#E9C46A"
-      },
-      "pixels": [
-        "..b...b.......",
-        ".bbbbbb.......",
-        ".bbbbbb.......",
-        ".bbbbbbbb.....",
-        "..bbnbbbbbbb..",
-        ".bbbbbbbbbbbb.",
-        ".bbbbbbbbbbbb.",
-        ".obbbbbbbbbbo.",
-        "ooobbbbbbbbooo",
-        "pppppppppppppp",
-        "oooooooooooooo"
+        "..........d",
+        "..........d",
+        "bbbb......d",
+        "bbbbbbb..d.",
+        ".bbbbbdbbd.",
+        "..bbbbbbb..",
+        "...bbbbbb..",
+        "...bb..bb..",
+        "...b...bb..",
+        "...b.b.bb..",
+        "..........."
       ]
     }
   ]

@@ -68,9 +68,12 @@ struct CollectionSummary: View {
 struct CardDetailSheet: View {
     @Environment(\.dismiss) private var dismiss
     @Environment(\.appTheme) private var theme
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
     let chapter: Chapter
     var isNewCard = false
     var isGolden = false
+    /// Yeni kartın ekrana geliş animasyonu bitti mi? Bitene kadar düğme görünmez.
+    @State private var hasArrived = false
 
     var body: some View {
         ScrollView {
@@ -95,20 +98,54 @@ struct CardDetailSheet: View {
                 if let card = chapter.card {
                     FlippableBreedCard(chapter: chapter, card: card, isGolden: isGolden)
                         .frame(maxWidth: 360)
+                        .background { if isNewCard { arrivalGlow } }
+                        // Yeni kart: küçük ve dönük gelir, ışık patlamasıyla yerine oturur
+                        .scaleEffect(isNewCard && !hasArrived && !reduceMotion ? 0.25 : 1)
+                        .rotation3DEffect(
+                            .degrees(isNewCard && !hasArrived && !reduceMotion ? -200 : 0),
+                            axis: (x: 0, y: 1, z: 0), perspective: 0.6
+                        )
+                        .opacity(isNewCard && !hasArrived ? 0 : 1)
                     Label("Tap the card to flip it", systemImage: "hand.tap.fill")
                         .font(.footnote)
                         .foregroundStyle(theme.textSecondary)
+                        .opacity(hasArrived || !isNewCard ? 1 : 0)
                 }
                 Button(isNewCard ? "Add to Collection" : "Close") { dismiss() }
                     .buttonStyle(PrimaryButtonStyle())
                     .frame(maxWidth: 360)
+                    .opacity(hasArrived || !isNewCard ? 1 : 0)
+                    .disabled(isNewCard && !hasArrived)
+                    .accessibilityIdentifier("card.add")
             }
             .padding(24)
             .frame(maxWidth: .infinity)
         }
         .background(theme.background.ignoresSafeArea())
         .appChrome()
-        .presentationDragIndicator(.visible)
+        .presentationDragIndicator(isNewCard ? .hidden : .visible)
+        // Yeni kart yanlışlıkla aşağı kaydırılıp kaçırılmasın; yalnızca düğmeyle eklenir
+        .interactiveDismissDisabled(isNewCard)
+        .task {
+            guard isNewCard, !hasArrived else { return }
+            try? await Task.sleep(for: .milliseconds(250))
+            withAnimation(reduceMotion ? .easeIn(duration: 0.3) : .spring(duration: 1.1, bounce: 0.25)) {
+                hasArrived = true
+            }
+            Haptics.play(.solved)
+        }
+    }
+
+    /// Kartın arkasında genişleyip sönen ışık halkası.
+    private var arrivalGlow: some View {
+        let color = isGolden ? Gold.bright : theme.accent
+        return Circle()
+            .fill(RadialGradient(colors: [color.opacity(0.6), color.opacity(0)], center: .center, startRadius: 10, endRadius: 220))
+            .scaleEffect(hasArrived ? 1.6 : 0.2)
+            .opacity(hasArrived ? 0 : 1)
+            .animation(.easeOut(duration: 1.6), value: hasArrived)
+            .allowsHitTesting(false)
+            .accessibilityHidden(true)
     }
 }
 

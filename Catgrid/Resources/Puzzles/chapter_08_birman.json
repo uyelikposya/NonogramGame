@@ -5,33 +5,6 @@
     {
       "id": "birman-001",
       "title": {
-        "en": "Toe Beans",
-        "tr": "Pati Yastıkları",
-        "ja": "肉球",
-        "de": "Pfotenballen",
-        "fr": "Coussinets",
-        "es": "Almohadillas",
-        "pt-BR": "Almofadinhas",
-        "ko": "말랑 젤리"
-      },
-      "palette": {
-        "n": "#D9A0A0",
-        "w": "#FBF8F3"
-      },
-      "pixels": [
-        "..wwww..",
-        "..nwwn..",
-        "wn....nw",
-        "wwwwwwww",
-        ".wwwwww.",
-        ".wnnnnw.",
-        ".wwnnnw.",
-        "..wwww.."
-      ]
-    },
-    {
-      "id": "birman-002",
-      "title": {
         "en": "Purr Love",
         "tr": "Mırıl Sevgi",
         "ja": "ゴロゴロ大好き",
@@ -42,21 +15,18 @@
         "ko": "골골송 사랑"
       },
       "palette": {
-        "n": "#D9A0A0",
-        "w": "#FBF8F3"
+        "n": "#D9A0A0"
       },
       "pixels": [
-        ".nnnnnn.",
-        "nwwnnnnn",
-        "nnnnnnnn",
-        ".nnnnnn.",
-        "..nnnn..",
-        "...nn...",
-        "...nn..."
+        "nnnnn",
+        "nnnnn",
+        "nnnnn",
+        ".nnn.",
+        "..n.."
       ]
     },
     {
-      "id": "birman-003",
+      "id": "birman-002",
       "title": {
         "en": "Fish Snack",
         "tr": "Balık Atıştırması",
@@ -68,17 +38,19 @@
         "ko": "생선 간식"
       },
       "palette": {
-        "o": "#C9A227"
+        "o": "#C9A227",
+        "p": "#9AA5B1"
       },
       "pixels": [
-        ".oooo..o",
-        "o.oooooo",
-        "oooooooo",
-        ".oooo..o"
+        "..o...",
+        "oopo.o",
+        "oopooo",
+        "oopo.o",
+        "..o..."
       ]
     },
     {
-      "id": "birman-004",
+      "id": "birman-003",
       "title": {
         "en": "Yarn Ball",
         "tr": "Yün Yumak",
@@ -93,18 +65,15 @@
         "o": "#C9A227"
       },
       "pixels": [
-        "..oooo...",
-        ".ooo.oo..",
-        "o....oo..",
-        "ooo..oo..",
-        "oo.oo.o..",
-        ".ooooo...",
-        "..ooooo..",
-        ".......oo"
+        ".oooo..",
+        "o.o.oo.",
+        "oo..oo.",
+        ".oooo..",
+        ".....o."
       ]
     },
     {
-      "id": "birman-005",
+      "id": "birman-004",
       "title": {
         "en": "Dinner Bowl",
         "tr": "Mama Kabı",
@@ -121,16 +90,16 @@
         "w": "#FBF8F3"
       },
       "pixels": [
-        "...ppp...",
-        ".ppppppp.",
-        "opppppppo",
-        "oooowoooo",
-        ".ooooooo.",
-        ".ooooooo."
+        "....p..",
+        ".ppppp.",
+        "opppppo",
+        "oowwwoo",
+        ".ooooo.",
+        ".ooooo."
       ]
     },
     {
-      "id": "birman-006",
+      "id": "birman-005",
       "title": {
         "en": "Toy Mouse",
         "tr": "Oyuncak Fare",
@@ -146,33 +115,63 @@
         "p": "#9AA5B1"
       },
       "pixels": [
-        "..pp.....",
-        "..pppp...",
-        "..pppp...",
-        ".pppppn.n",
-        "...p...n."
+        "....p..",
+        "...pnp.",
+        "..pppp.",
+        "..ppppp",
+        "..pppp.",
+        ".n.pp..",
+        "......."
+      ]
+    },
+    {
+      "id": "birman-006",
+      "title": {
+        "en": "Dinner Bowl",
+        "tr": "Mama Kabı",
+        "ja": "ごはん皿",
+        "de": "Futternapf",
+        "fr": "Gamelle",
+        "es": "Cuenco de comida",
+        "pt-BR": "Potinho de Ração",
+        "ko": "밥그릇"
+      },
+      "palette": {
+        "o": "#C9A227",
+        "p": "#9AA5B1",
+        "w": "#FBF8F3"
+      },
+      "pixels": [
+        "...p..",
+        ".pppp.",
+        "oppppo",
+        "oowwoo",
+        ".oooo.",
+        ".oooo."
       ]
     },
     {
       "id": "birman-007",
       "title": {
-        "en": "Leftovers",
-        "tr": "Artıklar",
-        "ja": "食べ残し",
-        "de": "Reste",
-        "fr": "Restes",
-        "es": "Sobras",
-        "pt-BR": "Restinho",
-        "ko": "남은 음식"
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi",
+        "ja": "ゴロゴロ大好き",
+        "de": "Schnurrliebe",
+        "fr": "Ronron d'amour",
+        "es": "Amor ronroneante",
+        "pt-BR": "Amor Ronronado",
+        "ko": "골골송 사랑"
       },
       "palette": {
-        "p": "#9AA5B1"
+        "n": "#D9A0A0"
       },
       "pixels": [
-        "....pp...",
-        ".pppppppp",
-        ".p..pp..p",
-        "........."
+        ".nnnnn.",
+        "nnnnnnn",
+        "nnnnnnn",
+        ".nnnnn.",
+        "..nnn..",
+        "...n..."
       ]
     },
     {
@@ -194,68 +193,68 @@
         "w": "#FBF8F3"
       },
       "pixels": [
-        ".d......d.",
-        ".dbbbbbbd.",
-        ".dbbbbbbd.",
-        ".bbeddebb.",
-        ".beeddeeb.",
-        "bbbdwwdbbb",
-        "bbbwwwwbbb",
-        "...wwww..."
+        ".......",
+        ".dbbbd.",
+        ".bedeb.",
+        "bbedebb",
+        "bbwwwbb",
+        "..www.."
       ]
     },
     {
       "id": "birman-009",
       "title": {
-        "en": "White Gloves",
-        "tr": "Beyaz Eldivenler",
-        "ja": "白い手袋",
-        "de": "Weiße Handschuhe",
-        "fr": "Gants blancs",
-        "es": "Guantes blancos",
-        "pt-BR": "Luvas Brancas",
-        "ko": "하얀 장갑"
+        "en": "Toe Beans",
+        "tr": "Pati Yastıkları",
+        "ja": "肉球",
+        "de": "Pfotenballen",
+        "fr": "Coussinets",
+        "es": "Almohadillas",
+        "pt-BR": "Almofadinhas",
+        "ko": "말랑 젤리"
       },
       "palette": {
-        "b": "#F2E6D3",
+        "n": "#D9A0A0",
         "w": "#FBF8F3"
       },
       "pixels": [
-        "..bb..bbb.",
-        ".bbbbbbbbb",
-        "bbbbbbbbbb",
-        "bbbbbbbbbb",
-        "bbbbbbbbbb",
-        "bbbbbbbbbb",
-        ".bwwb.bww.",
-        ".wwwwwww.w",
-        ".wwwwwww.w",
-        ".wwww.www."
+        "..w.w..",
+        ".wn.nw.",
+        "nn.w.nn",
+        ".wwwww.",
+        ".wnnnw.",
+        ".wnnnw.",
+        "..www.."
       ]
     },
     {
       "id": "birman-010",
       "title": {
-        "en": "Nap Time",
-        "tr": "Şekerleme",
-        "ja": "お昼寝タイム",
-        "de": "Nickerchen",
-        "fr": "L'heure de la sieste",
-        "es": "Hora de la siesta",
-        "pt-BR": "Hora da Soneca",
-        "ko": "낮잠 시간"
+        "en": "If I Fits",
+        "tr": "Kutu Sevdası",
+        "ja": "入れるなら入る",
+        "de": "Passt, sitzt",
+        "fr": "Si ça rentre…",
+        "es": "Si quepo, me siento",
+        "pt-BR": "Se Cabe, Eu Entro",
+        "ko": "들어가면 내 자리"
       },
       "palette": {
         "b": "#F2E6D3",
-        "d": "#6B5544"
+        "d": "#6B5544",
+        "e": "#3F7FCF",
+        "o": "#C9A227",
+        "p": "#9AA5B1"
       },
       "pixels": [
-        "....dbb...",
-        "ddbddbbbb.",
-        "d...dbbbbb",
-        ".bbbbbbbbd",
-        "..bbbbbbdd",
-        "..ddddddd."
+        "........",
+        "..d..d..",
+        "..dbbd..",
+        "..beeb..",
+        "poobboop",
+        ".oooooo.",
+        ".oooooo.",
+        ".oooooo."
       ]
     },
     {
@@ -278,50 +277,18 @@
         "p": "#9AA5B1"
       },
       "pixels": [
-        "..........",
-        "..dd..dd..",
-        "..ddbbdd..",
-        "..beeeeb..",
-        ".obbbbbbo.",
-        "ppoobboopp",
-        ".oooooooo.",
-        ".oooooooo.",
-        ".oooooooo."
+        "........",
+        "..dbbd..",
+        "..bbbb..",
+        "..beeb..",
+        "poobbbop",
+        ".oooooo.",
+        ".oooooo.",
+        ".oooooo."
       ]
     },
     {
       "id": "birman-012",
-      "title": {
-        "en": "If I Fits",
-        "tr": "Kutu Sevdası",
-        "ja": "入れるなら入る",
-        "de": "Passt, sitzt",
-        "fr": "Si ça rentre…",
-        "es": "Si quepo, me siento",
-        "pt-BR": "Se Cabe, Eu Entro",
-        "ko": "들어가면 내 자리"
-      },
-      "palette": {
-        "b": "#F2E6D3",
-        "d": "#6B5544",
-        "e": "#3F7FCF",
-        "o": "#C9A227",
-        "p": "#9AA5B1"
-      },
-      "pixels": [
-        "..........",
-        "..dd..d...",
-        "..ddbbdd..",
-        "..bebebb..",
-        ".obbbbboo.",
-        "ppoobboopp",
-        ".oooooooo.",
-        ".oooooooo.",
-        ".oooooooo."
-      ]
-    },
-    {
-      "id": "birman-013",
       "title": {
         "en": "Moon Gazer",
         "tr": "Ay Seyri",
@@ -337,51 +304,19 @@
         "y": "#F4D35E"
       },
       "pixels": [
-        "...yyy....",
-        "..yyy.....",
-        "..yyy.....",
-        ".yyyy.....",
-        ".yyyy.....",
-        "..yyyy....",
-        "bbyyyyyyy.",
-        "bb.yyyyy..",
-        ".bb..b....",
-        "bbbb.b....",
-        ".bbbb....."
+        "....y...",
+        "....yy..",
+        "....yy..",
+        "....yyy.",
+        "...yyy..",
+        ".yyyyybb",
+        "...y..b.",
+        "...b.bb.",
+        "....bbb."
       ]
     },
     {
-      "id": "birman-014",
-      "title": {
-        "en": "Toe Beans",
-        "tr": "Pati Yastıkları",
-        "ja": "肉球",
-        "de": "Pfotenballen",
-        "fr": "Coussinets",
-        "es": "Almohadillas",
-        "pt-BR": "Almofadinhas",
-        "ko": "말랑 젤리"
-      },
-      "palette": {
-        "n": "#D9A0A0",
-        "w": "#FBF8F3"
-      },
-      "pixels": [
-        "...ww.ww...",
-        "..wnnwnnw..",
-        "wwwww.wnwww",
-        "wnw.....wnw",
-        "wnwwwwwwwnw",
-        "..wwwwwww..",
-        "..wwnnnww..",
-        ".wwnnnnnww.",
-        ".wwnnnnnww.",
-        "..wwnnnww..",
-        "...wwwww..."
-      ]
-    },
-    {
-      "id": "birman-015",
+      "id": "birman-013",
       "title": {
         "en": "Sitting Pretty",
         "tr": "Uslu Oturuş",
@@ -398,17 +333,104 @@
         "w": "#FBF8F3"
       },
       "pixels": [
-        "d...d....",
-        "ddbdd....",
-        "ddbdd....",
-        ".bdbb....",
-        ".bdb.....",
-        "..bbbb.dd",
-        ".bbbbb.dd",
-        ".bbbbbbdd",
-        ".bbbbbbdd",
-        "..bbbbddd",
-        ".wwww.d.."
+        "........",
+        "....dbdd",
+        "....dbdd",
+        "....bdd.",
+        ".d.bbb..",
+        "dd.bbbb.",
+        "ddbbbbb.",
+        ".ddbbbb.",
+        "..d.www."
+      ]
+    },
+    {
+      "id": "birman-014",
+      "title": {
+        "en": "Teacup Cat",
+        "tr": "Fincandaki Kedi",
+        "ja": "ティーカップ猫",
+        "de": "Teetassenkatze",
+        "fr": "Chat dans une tasse",
+        "es": "Gato en una taza",
+        "pt-BR": "Gato na Xícara",
+        "ko": "찻잔 고양이"
+      },
+      "palette": {
+        "b": "#F2E6D3",
+        "d": "#6B5544",
+        "o": "#C9A227"
+      },
+      "pixels": [
+        ".........",
+        ".d...d...",
+        ".ddbbd...",
+        ".ddbbd...",
+        ".bbbbb...",
+        "oobbbooo.",
+        ".oooooo.o",
+        ".ooooooo.",
+        ".ooooo..."
+      ]
+    },
+    {
+      "id": "birman-015",
+      "title": {
+        "en": "Owl Pose",
+        "tr": "Baykuş Duruşu",
+        "ja": "フクロウのポーズ",
+        "de": "Eulenpose",
+        "fr": "Pose de chouette",
+        "es": "Pose de búho",
+        "pt-BR": "Pose de Coruja",
+        "ko": "부엉이 포즈"
+      },
+      "palette": {
+        "b": "#F2E6D3",
+        "d": "#6B5544",
+        "e": "#3F7FCF",
+        "w": "#FBF8F3"
+      },
+      "pixels": [
+        "..........",
+        "..d..b..d.",
+        "..ddbbbdd.",
+        "..beebeeb.",
+        "..beebeeb.",
+        "..bbbbbbb.",
+        ".bbbwwwbb.",
+        ".bbwwwwbb.",
+        "..bbwwwbb.",
+        "...bbbb..."
+      ]
+    },
+    {
+      "id": "birman-016",
+      "title": {
+        "en": "Mighty Tail",
+        "tr": "Görkemli Kuyruk",
+        "ja": "立派なしっぽ",
+        "de": "Prachtschwanz",
+        "fr": "Queue majestueuse",
+        "es": "Gran cola",
+        "pt-BR": "Cauda Poderosa",
+        "ko": "늠름한 꼬리"
+      },
+      "palette": {
+        "b": "#F2E6D3",
+        "d": "#6B5544"
+      },
+      "pixels": [
+        "..........",
+        ".d..d..d..",
+        ".dddd..dd.",
+        ".bbbb..ddd",
+        "..bbb...dd",
+        "..bbbb..bd",
+        ".bbbbb..bd",
+        "..bbbbddbd",
+        "..bbbdbdd.",
+        ".....dd..."
       ]
     }
   ]

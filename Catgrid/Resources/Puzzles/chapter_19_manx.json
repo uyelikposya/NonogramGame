@@ -5,6 +5,53 @@
     {
       "id": "manx-001",
       "title": {
+        "en": "Toy Mouse",
+        "tr": "Oyuncak Fare",
+        "ja": "ネズミのおもちゃ",
+        "de": "Spielmaus",
+        "fr": "Souris jouet",
+        "es": "Ratón de juguete",
+        "pt-BR": "Ratinho de Brinquedo",
+        "ko": "장난감 쥐"
+      },
+      "palette": {
+        "n": "#C9705A",
+        "p": "#9AA5B1"
+      },
+      "pixels": [
+        "...p..",
+        "..ppp.",
+        ".pppp.",
+        ".pppp.",
+        "n..p.."
+      ]
+    },
+    {
+      "id": "manx-002",
+      "title": {
+        "en": "Leftovers",
+        "tr": "Artıklar",
+        "ja": "食べ残し",
+        "de": "Reste",
+        "fr": "Restes",
+        "es": "Sobras",
+        "pt-BR": "Restinho",
+        "ko": "남은 음식"
+      },
+      "palette": {
+        "p": "#9AA5B1"
+      },
+      "pixels": [
+        "..ppp..",
+        ".pppp.p",
+        "ppppppp",
+        ".pppp.p",
+        "..ppp.."
+      ]
+    },
+    {
+      "id": "manx-003",
+      "title": {
         "en": "Toe Beans",
         "tr": "Pati Yastıkları",
         "ja": "肉球",
@@ -19,23 +66,16 @@
         "n": "#C9705A"
       },
       "pixels": [
-        "...bbb.bbb...",
-        "...bnb.bnb...",
-        ".b.bnb.bnb.b.",
-        "bbb.b...b.bbb",
-        "bnb.......bnb",
-        "bnb.bbbbb.bnb",
-        "..bbbbbbbbb..",
-        "..bbbnnnbbb..",
-        "..bbnnnnnbb..",
-        "..bbnnnnnbb..",
-        "..bbnnnnnbb..",
-        "...bbnnnbb...",
-        "....bbbbb...."
+        "..bb..",
+        "bbnnbb",
+        "bbbbbb",
+        ".bnnb.",
+        ".bnnb.",
+        ".bbbb."
       ]
     },
     {
-      "id": "manx-002",
+      "id": "manx-004",
       "title": {
         "en": "Purr Love",
         "tr": "Mırıl Sevgi",
@@ -47,78 +87,15 @@
         "ko": "골골송 사랑"
       },
       "palette": {
-        "n": "#C9705A",
-        "w": "#F5E6D0"
+        "n": "#C9705A"
       },
       "pixels": [
-        ".nnnnn.nnnnn.",
-        "nnnnnnnnnnnnn",
-        "nnwwnnnnnnnnn",
-        "nnnnnnnnnnnnn",
-        "nnnnnnnnnnnnn",
-        ".nnnnnnnnnnn.",
-        "..nnnnnnnnn..",
-        "..nnnnnnnnn..",
-        "...nnnnnnn...",
-        "....nnnnn....",
-        ".....nnn.....",
-        "......n......"
-      ]
-    },
-    {
-      "id": "manx-003",
-      "title": {
-        "en": "Fish Snack",
-        "tr": "Balık Atıştırması",
-        "ja": "おさかなおやつ",
-        "de": "Fischsnack",
-        "fr": "Goûter poisson",
-        "es": "Tentempié de pescado",
-        "pt-BR": "Petisco de Peixe",
-        "ko": "생선 간식"
-      },
-      "palette": {
-        "o": "#5B8FB9",
-        "p": "#9AA5B1"
-      },
-      "pixels": [
-        "...oooo.....o",
-        ".oooopooo..oo",
-        "o..oopooooooo",
-        "oo.oopooooooo",
-        "ooooopooooooo",
-        ".oooopooo..oo",
-        "...oooo.....o"
-      ]
-    },
-    {
-      "id": "manx-004",
-      "title": {
-        "en": "Yarn Ball",
-        "tr": "Yün Yumak",
-        "ja": "毛糸玉",
-        "de": "Wollknäuel",
-        "fr": "Pelote de laine",
-        "es": "Ovillo de lana",
-        "pt-BR": "Novelo de Lã",
-        "ko": "털실 뭉치"
-      },
-      "palette": {
-        "o": "#5B8FB9"
-      },
-      "pixels": [
-        "......ooo....",
-        "....ooooooo..",
-        "...oo.oooooo.",
-        "..oooo.oo..o.",
-        "..oooo...oooo",
-        "..ooo...ooooo",
-        "..oo..oo.oooo",
-        ".....oooo.oo.",
-        "....oooooooo.",
-        "...oooooooo..",
-        "..oo..ooo....",
-        "ooo.........."
+        ".nnnnn.",
+        "nnnnnnn",
+        "nnnnnnn",
+        ".nnnnn.",
+        "..nnn..",
+        "...n..."
       ]
     },
     {
@@ -139,163 +116,119 @@
         "w": "#F5E6D0"
       },
       "pixels": [
-        "....pp.ppp....",
-        "..pppppppppp..",
-        ".pppppppppppp.",
-        "ooppppppppppoo",
-        "ooooppppppoooo",
-        ".oowwwwwwwwoo.",
-        ".oowwwwwwwwoo.",
-        ".oooooooooooo.",
-        "..oooooooooo.."
+        ".......",
+        ".ppppp.",
+        "ppppppp",
+        "oopppoo",
+        "oowwwoo",
+        ".ooooo.",
+        ".ooooo."
       ]
     },
     {
       "id": "manx-006",
       "title": {
-        "en": "Toy Mouse",
-        "tr": "Oyuncak Fare",
-        "ja": "ネズミのおもちゃ",
-        "de": "Spielmaus",
-        "fr": "Souris jouet",
-        "es": "Ratón de juguete",
-        "pt-BR": "Ratinho de Brinquedo",
-        "ko": "장난감 쥐"
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi",
+        "ja": "ゴロゴロ大好き",
+        "de": "Schnurrliebe",
+        "fr": "Ronron d'amour",
+        "es": "Amor ronroneante",
+        "pt-BR": "Amor Ronronado",
+        "ko": "골골송 사랑"
       },
       "palette": {
         "n": "#C9705A",
-        "p": "#9AA5B1"
+        "w": "#F5E6D0"
       },
       "pixels": [
-        "....pp........",
-        "....nnp.......",
-        "...ppppppp....",
-        "...pppppppp...",
-        ".pppppppppp...",
-        "...pppppppp...",
-        "...ppppppp.n.n",
-        "......pp....n."
+        ".nnnn.",
+        "nwnnnn",
+        "nnnnnn",
+        ".nnnn.",
+        "..nn..",
+        "......"
       ]
     },
     {
       "id": "manx-007",
       "title": {
-        "en": "Leftovers",
-        "tr": "Artıklar",
-        "ja": "食べ残し",
-        "de": "Reste",
-        "fr": "Restes",
-        "es": "Sobras",
-        "pt-BR": "Restinho",
-        "ko": "남은 음식"
+        "en": "Portrait",
+        "tr": "Portre",
+        "ja": "肖像画",
+        "de": "Porträt",
+        "fr": "Portrait",
+        "es": "Retrato",
+        "pt-BR": "Retrato",
+        "ko": "초상화"
       },
       "palette": {
-        "p": "#9AA5B1"
+        "b": "#D9A066",
+        "e": "#C9A53F"
       },
       "pixels": [
-        "....p.p.pp....",
-        "..p.p.p.pp...p",
-        ".pp.p.p.pp..pp",
-        "pppppppppppppp",
-        ".pp.p.p.pp..pp",
-        "..p.p.p.pp...p",
-        "....p.p.pp...."
+        ".b.b..b",
+        "bbbbbbb",
+        "bbebbbb",
+        "bbebbbb",
+        ".bbbbbb",
+        "..bbb.."
       ]
     },
     {
       "id": "manx-008",
       "title": {
-        "en": "Nap Time",
-        "tr": "Şekerleme",
-        "ja": "お昼寝タイム",
-        "de": "Nickerchen",
-        "fr": "L'heure de la sieste",
-        "es": "Hora de la siesta",
-        "pt-BR": "Hora da Soneca",
-        "ko": "낮잠 시간"
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak",
+        "ja": "毛糸玉",
+        "de": "Wollknäuel",
+        "fr": "Pelote de laine",
+        "es": "Ovillo de lana",
+        "pt-BR": "Novelo de Lã",
+        "ko": "털실 뭉치"
       },
       "palette": {
-        "b": "#D9A066",
-        "d": "#9C6233"
+        "o": "#5B8FB9"
       },
       "pixels": [
-        "..............",
-        "bb.bbbbbbbbb..",
-        "bbbbbbbbdbdbb.",
-        "bbbbbbbbdbbbbb",
-        ".bbbbbbbbbbbbb",
-        ".bbbbbbbbbbbbb",
-        "...bbbbbbbbbb.",
-        ".....bbbbbbb.."
+        ".oooo..",
+        "ooo.o..",
+        "oo..oo.",
+        "oo.ooo.",
+        "o.ooo..",
+        ".oooo..",
+        ".....oo"
       ]
     },
     {
       "id": "manx-009",
       "title": {
-        "en": "Sitting Pretty",
-        "tr": "Uslu Oturuş",
-        "ja": "おすましおすわり",
-        "de": "Brav sitzen",
-        "fr": "Sage comme une image",
-        "es": "Sentado con estilo",
-        "pt-BR": "Pose Elegante",
-        "ko": "얌전히 앉기"
+        "en": "Dinner Bowl",
+        "tr": "Mama Kabı",
+        "ja": "ごはん皿",
+        "de": "Futternapf",
+        "fr": "Gamelle",
+        "es": "Cuenco de comida",
+        "pt-BR": "Potinho de Ração",
+        "ko": "밥그릇"
       },
       "palette": {
-        "b": "#D9A066",
-        "d": "#9C6233"
+        "o": "#5B8FB9",
+        "p": "#9AA5B1",
+        "w": "#F5E6D0"
       },
       "pixels": [
-        "......b..",
-        "bb...bb..",
-        "bbbbbbb..",
-        "bbbbbbb..",
-        ".bbbbb...",
-        ".bbbbb...",
-        "...bbbb..",
-        "..bbddbb.",
-        "..bbddbbb",
-        ".bbbbbbbb",
-        ".bbbbbbbb",
-        "..bbbbbbb",
-        "..bbbbbb.",
-        "..bbbbb.."
+        "..ppp..",
+        ".ppppp.",
+        "ppppppp",
+        "oopppoo",
+        "oowwwoo",
+        ".ooooo.",
+        ".ooooo."
       ]
     },
     {
       "id": "manx-010",
-      "title": {
-        "en": "Strut",
-        "tr": "Salınarak Yürüyüş",
-        "ja": "おすまし歩き",
-        "de": "Stolzieren",
-        "fr": "Pavane",
-        "es": "Pavoneo",
-        "pt-BR": "Desfile",
-        "ko": "당당한 걸음"
-      },
-      "palette": {
-        "b": "#D9A066",
-        "d": "#9C6233"
-      },
-      "pixels": [
-        "..............",
-        ".b...b........",
-        "bbbbbbb.......",
-        "bbbbbbb.bb....",
-        "bbbbbbbbbdbbb.",
-        "..bbbbbbbdbbbb",
-        "....bbbbbbbbbb",
-        "....bbbbbbbbbb",
-        "....bbbbbbbbbb",
-        "....bb.b..bb.b",
-        "....bb.b..bb.b",
-        "....b..b..bb.b",
-        "....b..b..b..b"
-      ]
-    },
-    {
-      "id": "manx-011",
       "title": {
         "en": "If I Fits",
         "tr": "Kutu Sevdası",
@@ -313,23 +246,18 @@
         "p": "#9AA5B1"
       },
       "pixels": [
-        "..............",
-        "....b....b....",
-        "...bbbbbbbb...",
-        "...bbbbbbbb...",
-        "...bbebbebb...",
-        "...bbebbebb...",
-        "..obbbbbbbbo..",
-        "ppoobbbbbboopp",
-        ".oooooooooooo.",
-        "..oooooooooo..",
-        ".oooooooooooo.",
-        ".oooooooooooo.",
-        ".oooooooooooo."
+        "........",
+        "..b..b..",
+        "..bbbb..",
+        "..beeb..",
+        "poobboop",
+        ".oooooo.",
+        ".oooooo.",
+        ".oooooo."
       ]
     },
     {
-      "id": "manx-012",
+      "id": "manx-011",
       "title": {
         "en": "Moon Gazer",
         "tr": "Ay Seyri",
@@ -345,88 +273,98 @@
         "y": "#F4D35E"
       },
       "pixels": [
-        ".....yy......",
-        "......yyy....",
-        ".......yyy...",
-        ".......yyyy..",
-        ".......yyyy..",
-        ".......yyyy..",
-        "......yyyyy..",
-        "......yyyyy..",
-        "....yyyyyyy.b",
-        ".yyyyyyyyybbb",
-        "...yyyyyy.bbb",
-        ".....yb..bbb.",
-        "......b..bbbb",
-        "......b.bbbbb",
-        "......bbbbbb."
+        "...y....",
+        "..yy....",
+        ".yyy....",
+        ".yyy....",
+        ".byyyyy.",
+        ".b.yyy..",
+        ".bb.b...",
+        ".bbb...."
+      ]
+    },
+    {
+      "id": "manx-012",
+      "title": {
+        "en": "Fish Snack",
+        "tr": "Balık Atıştırması",
+        "ja": "おさかなおやつ",
+        "de": "Fischsnack",
+        "fr": "Goûter poisson",
+        "es": "Tentempié de pescado",
+        "pt-BR": "Petisco de Peixe",
+        "ko": "생선 간식"
+      },
+      "palette": {
+        "o": "#5B8FB9",
+        "p": "#9AA5B1"
+      },
+      "pixels": [
+        ".........",
+        "..ooo....",
+        ".oopoo..o",
+        "o.opooooo",
+        "ooopooooo",
+        ".oopoo..o",
+        "..ooo....",
+        "........."
       ]
     },
     {
       "id": "manx-013",
       "title": {
-        "en": "Toe Beans",
-        "tr": "Pati Yastıkları",
-        "ja": "肉球",
-        "de": "Pfotenballen",
-        "fr": "Coussinets",
-        "es": "Almohadillas",
-        "pt-BR": "Almofadinhas",
-        "ko": "말랑 젤리"
+        "en": "Lucky Cat",
+        "tr": "Şans Kedisi",
+        "ja": "招き猫",
+        "de": "Glückskatze",
+        "fr": "Chat porte-bonheur",
+        "es": "Gato de la suerte",
+        "pt-BR": "Gato da Sorte",
+        "ko": "행운의 고양이"
       },
       "palette": {
         "b": "#D9A066",
-        "n": "#C9705A"
+        "e": "#C9A53F",
+        "y": "#F4D35E"
       },
       "pixels": [
-        "....bb...bb....",
-        "...bnnb.bnnb...",
-        "...bnnb.bnnb...",
-        ".bb.bnb.bnb.bb.",
-        "bnnb.......bnnb",
-        "bnnb...b...bnnb",
-        "bnb.bbbbbbb.bnb",
-        "...bbbbbbbbb...",
-        "..bbbbbbbbbbb..",
-        "..bbbnnnnnbbb..",
-        "..bbnnnnnnnbb..",
-        "..bbnnnnnnnbb..",
-        "..bbbnnnnnbbb..",
-        "...bbbnnnbbb...",
-        ".....bbbbb....."
+        ".b...b..",
+        ".bbbbbb.",
+        ".bbbbbb.",
+        ".bebebb.",
+        "..bbbbb.",
+        ".bbybb..",
+        ".bbybb..",
+        ".bbyyb..",
+        "..bbb..."
       ]
     },
     {
       "id": "manx-014",
       "title": {
-        "en": "Purr Love",
-        "tr": "Mırıl Sevgi",
-        "ja": "ゴロゴロ大好き",
-        "de": "Schnurrliebe",
-        "fr": "Ronron d'amour",
-        "es": "Amor ronroneante",
-        "pt-BR": "Amor Ronronado",
-        "ko": "골골송 사랑"
+        "en": "Silver Night",
+        "tr": "Gümüş Gece",
+        "ja": "銀色の夜",
+        "de": "Silbernacht",
+        "fr": "Nuit argentée",
+        "es": "Noche plateada",
+        "pt-BR": "Noite Prateada",
+        "ko": "은빛 밤"
       },
       "palette": {
-        "n": "#C9705A",
-        "w": "#F5E6D0"
+        "b": "#D9A066",
+        "y": "#F4D35E"
       },
       "pixels": [
-        "..nnnnn.nnnnn..",
-        ".nnnnnnnnnnnnn.",
-        "nnnwwnnnnnnnnnn",
-        "nnnwwnnnnnnnnnn",
-        "nnnnnnnnnnnnnnn",
-        "nnnnnnnnnnnnnnn",
-        ".nnnnnnnnnnnnn.",
-        "..nnnnnnnnnnn..",
-        "...nnnnnnnnn...",
-        "...nnnnnnnnn...",
-        "....nnnnnnn....",
-        ".....nnnnn.....",
-        "......nnn......",
-        ".......n......."
+        "....y.....",
+        ".....yy..y",
+        ".....yyy..",
+        ".....yyy..",
+        "....yyyy..",
+        ".yyyyyybb.",
+        "..yyyy.bb.",
+        "....b.bbb.",
+        "y...b.bbb."
       ]
     },
     {
@@ -447,19 +385,47 @@
         "e": "#C9A53F"
       },
       "pixels": [
-        "..b..........b.",
-        ".bb..bbbbb...b.",
-        ".bbbbdbbbbdbbbb",
-        ".bbbbdbbbbdbbbb",
-        ".bbbbdbbbbdbbbb",
-        ".bbbeebbbbeebbb",
-        ".bbbeebbbbeebbb",
-        ".bbbeebbbbeebbb",
-        ".bbbbbbbbbbbbbb",
-        ".bbbbbbbbbbbbb.",
-        "..bbbbbbbbbbbb.",
-        "....bbbbbbbb...",
-        "......bbb......"
+        ".b.......b",
+        ".bbbbbbbbb",
+        ".bbbbdbbbb",
+        ".bbbbdbbbb",
+        ".bbebbbebb",
+        "bbbebbbebb",
+        ".bbbbbbbbb",
+        ".bbbbbbbb.",
+        "..bbbbbbb.",
+        "....bb...."
+      ]
+    },
+    {
+      "id": "manx-016",
+      "title": {
+        "en": "Sitting Pretty",
+        "tr": "Uslu Oturuş",
+        "ja": "おすましおすわり",
+        "de": "Brav sitzen",
+        "fr": "Sage comme une image",
+        "es": "Sentado con estilo",
+        "pt-BR": "Pose Elegante",
+        "ko": "얌전히 앉기"
+      },
+      "palette": {
+        "b": "#D9A066",
+        "d": "#9C6233"
+      },
+      "pixels": [
+        "..b....b....",
+        "..bbbbbb....",
+        ".bbbbbbbb...",
+        "..bbbbbbb...",
+        "...bbbbb....",
+        "....bbbbb...",
+        "...bbbdddb..",
+        "...bbbdddbb.",
+        "...bbbbbbbb.",
+        "...bbbbbbbb.",
+        "....bbbbbb..",
+        "...bbbbbb..."
       ]
     }
   ]

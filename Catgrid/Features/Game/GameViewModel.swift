@@ -95,6 +95,12 @@ final class GameViewModel {
         game.undo()
     }
 
+    /// "Kolay": tamamlanan satır/sütuna X otomatik gelir. "Zor": oyuncu X'leri kendisi koyar.
+    /// "Tekrar Dene" ile yeni oyun açılınca da korunur.
+    var autoCrosses = true {
+        didSet { game.autoCrossesCompletedLines = autoCrosses }
+    }
+
     /// Ödüllü reklam karşılığı bir kez devam hakkı (bulmaca başına).
     private(set) var hasRevived = false
 
@@ -116,6 +122,7 @@ final class GameViewModel {
     func restart() {
         stop()
         game = NonogramGame(puzzle: puzzle, rules: rules)
+        game.autoCrossesCompletedLines = autoCrosses
         lastMistake = nil
         hasRevived = false
         activeCell = nil

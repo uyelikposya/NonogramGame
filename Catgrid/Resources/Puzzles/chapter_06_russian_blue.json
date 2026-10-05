@@ -5,6 +5,28 @@
     {
       "id": "russian-blue-001",
       "title": {
+        "en": "Leftovers",
+        "tr": "Artıklar",
+        "ja": "食べ残し",
+        "de": "Reste",
+        "fr": "Restes",
+        "es": "Sobras",
+        "pt-BR": "Restinho",
+        "ko": "남은 음식"
+      },
+      "palette": {
+        "p": "#B8C4CF"
+      },
+      "pixels": [
+        ".p...",
+        "ppppp",
+        "ppppp",
+        ".p..."
+      ]
+    },
+    {
+      "id": "russian-blue-002",
+      "title": {
         "en": "Toe Beans",
         "tr": "Pati Yastıkları",
         "ja": "肉球",
@@ -19,17 +41,16 @@
         "n": "#6E8090"
       },
       "pixels": [
-        "..b.b..",
-        "bbn.nbb",
-        "nn.b.nn",
-        ".bbbbb.",
-        ".bnnnb.",
-        ".bnnnb.",
-        "..bbb.."
+        ".....",
+        ".b.b.",
+        "nbbbn",
+        ".bnb.",
+        ".nnn.",
+        "..b.."
       ]
     },
     {
-      "id": "russian-blue-002",
+      "id": "russian-blue-003",
       "title": {
         "en": "Purr Love",
         "tr": "Mırıl Sevgi",
@@ -41,21 +62,18 @@
         "ko": "골골송 사랑"
       },
       "palette": {
-        "n": "#6E8090",
-        "w": "#DCE3EA"
+        "n": "#6E8090"
       },
       "pixels": [
         ".nnnnn.",
-        "nwnnnnn",
         "nnnnnnn",
-        ".nnnnn.",
         ".nnnnn.",
         "..nnn..",
         "...n..."
       ]
     },
     {
-      "id": "russian-blue-003",
+      "id": "russian-blue-004",
       "title": {
         "en": "Fish Snack",
         "tr": "Balık Atıştırması",
@@ -70,14 +88,16 @@
         "o": "#5C6B7A"
       },
       "pixels": [
-        ".ooo..o",
+        "..oo...",
+        "ooooo.o",
         "o.ooooo",
         "ooooooo",
-        ".ooo..o"
+        "ooooo.o",
+        "..oo..."
       ]
     },
     {
-      "id": "russian-blue-004",
+      "id": "russian-blue-005",
       "title": {
         "en": "Yarn Ball",
         "tr": "Yün Yumak",
@@ -92,17 +112,41 @@
         "o": "#5C6B7A"
       },
       "pixels": [
-        ".oooo...",
-        "o.oo.o..",
-        "oo..ooo.",
-        "oo.o.o..",
-        ".oooo...",
-        "..ooo...",
-        "......o."
+        ".oooo..",
+        "ooo.o..",
+        "oo..oo.",
+        "oo.ooo.",
+        "o.ooo..",
+        ".oooo..",
+        ".....oo"
       ]
     },
     {
-      "id": "russian-blue-005",
+      "id": "russian-blue-006",
+      "title": {
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak",
+        "ja": "毛糸玉",
+        "de": "Wollknäuel",
+        "fr": "Pelote de laine",
+        "es": "Ovillo de lana",
+        "pt-BR": "Novelo de Lã",
+        "ko": "털실 뭉치"
+      },
+      "palette": {
+        "o": "#5C6B7A"
+      },
+      "pixels": [
+        ".ooo..",
+        "ooooo.",
+        "oo.oo.",
+        "o.ooo.",
+        ".oooo.",
+        "......"
+      ]
+    },
+    {
+      "id": "russian-blue-007",
       "title": {
         "en": "Dinner Bowl",
         "tr": "Mama Kabı",
@@ -119,144 +163,68 @@
         "w": "#DCE3EA"
       },
       "pixels": [
-        "..pppp..",
-        ".pppppp.",
-        "ooppppoo",
-        ".owwwwo.",
-        ".oooooo."
-      ]
-    },
-    {
-      "id": "russian-blue-006",
-      "title": {
-        "en": "If I Fits",
-        "tr": "Kutu Sevdası",
-        "ja": "入れるなら入る",
-        "de": "Passt, sitzt",
-        "fr": "Si ça rentre…",
-        "es": "Si quepo, me siento",
-        "pt-BR": "Se Cabe, Eu Entro",
-        "ko": "들어가면 내 자리"
-      },
-      "palette": {
-        "b": "#8FA3B5",
-        "e": "#59B36B",
-        "o": "#5C6B7A",
-        "p": "#B8C4CF"
-      },
-      "pixels": [
-        "........",
-        "..b..b..",
-        "..bbbb..",
-        "..beeb..",
-        ".pobboop",
-        ".oooooo.",
-        ".oooooo.",
-        ".oooooo."
-      ]
-    },
-    {
-      "id": "russian-blue-007",
-      "title": {
-        "en": "Leftovers",
-        "tr": "Artıklar",
-        "ja": "食べ残し",
-        "de": "Reste",
-        "fr": "Restes",
-        "es": "Sobras",
-        "pt-BR": "Restinho",
-        "ko": "남은 음식"
-      },
-      "palette": {
-        "p": "#B8C4CF"
-      },
-      "pixels": [
-        "...ppp..",
-        "pppppppp",
-        "p..ppppp",
-        "....pp.."
+        "....p..",
+        ".ppppp.",
+        "opppppo",
+        "oowwwoo",
+        ".ooooo.",
+        ".ooooo."
       ]
     },
     {
       "id": "russian-blue-008",
       "title": {
-        "en": "Moon Gazer",
-        "tr": "Ay Seyri",
-        "ja": "月を見る猫",
-        "de": "Mondgucker",
-        "fr": "Rêveur de lune",
-        "es": "Mirando la luna",
-        "pt-BR": "Admirador da Lua",
-        "ko": "달 바라기"
+        "en": "Dinner Bowl",
+        "tr": "Mama Kabı",
+        "ja": "ごはん皿",
+        "de": "Futternapf",
+        "fr": "Gamelle",
+        "es": "Cuenco de comida",
+        "pt-BR": "Potinho de Ração",
+        "ko": "밥그릇"
       },
       "palette": {
-        "b": "#8FA3B5",
-        "y": "#F1E3A0"
+        "o": "#5C6B7A",
+        "p": "#B8C4CF",
+        "w": "#DCE3EA"
       },
       "pixels": [
-        "..yy...",
-        ".yy....",
-        ".yy....",
-        ".yyy...",
-        "byyyyy.",
-        "bbyyyy.",
-        "bb.b...",
-        "bbbb..."
+        "..ppp..",
+        ".ppppp.",
+        "opppppo",
+        "ooowooo",
+        ".ooooo.",
+        ".ooooo."
       ]
     },
     {
       "id": "russian-blue-009",
       "title": {
-        "en": "Toy Mouse",
-        "tr": "Oyuncak Fare",
-        "ja": "ネズミのおもちゃ",
-        "de": "Spielmaus",
-        "fr": "Souris jouet",
-        "es": "Ratón de juguete",
-        "pt-BR": "Ratinho de Brinquedo",
-        "ko": "장난감 쥐"
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi",
+        "ja": "ゴロゴロ大好き",
+        "de": "Schnurrliebe",
+        "fr": "Ronron d'amour",
+        "es": "Amor ronroneante",
+        "pt-BR": "Amor Ronronado",
+        "ko": "골골송 사랑"
       },
       "palette": {
         "n": "#6E8090",
-        "p": "#B8C4CF"
+        "w": "#DCE3EA"
       },
       "pixels": [
-        ".....pn..",
-        "...pppp..",
-        "..ppppp..",
-        "n.nppppp.",
-        ".n...p..."
+        ".nn.nn.",
+        "nwnnnnn",
+        "nnnnnnn",
+        ".nnnnn.",
+        ".nnnnn.",
+        "..nnn..",
+        "...n..."
       ]
     },
     {
       "id": "russian-blue-010",
-      "title": {
-        "en": "Sitting Pretty",
-        "tr": "Uslu Oturuş",
-        "ja": "おすましおすわり",
-        "de": "Brav sitzen",
-        "fr": "Sage comme une image",
-        "es": "Sentado con estilo",
-        "pt-BR": "Pose Elegante",
-        "ko": "얌전히 앉기"
-      },
-      "palette": {
-        "b": "#8FA3B5"
-      },
-      "pixels": [
-        ".......",
-        "bb.bb..",
-        "bbbbb..",
-        ".bbb...",
-        "..bb...",
-        ".bbbb.b",
-        ".bbbbbb",
-        ".bbbbbb",
-        "..bbbb."
-      ]
-    },
-    {
-      "id": "russian-blue-011",
       "title": {
         "en": "Portrait",
         "tr": "Portre",
@@ -272,19 +240,72 @@
         "e": "#59B36B"
       },
       "pixels": [
-        ".........",
-        "bb.....bb",
-        "bbbbbbbbb",
-        "bbbbbbbbb",
-        ".bebbbeb.",
-        "bbeebeebb",
-        ".bbbbbbb.",
-        ".bbbbbbb.",
-        "..bbbbb.."
+        "........",
+        "bb....bb",
+        "bbbbbbbb",
+        "bbbbbbbb",
+        "bbebbebb",
+        ".bbbbbb.",
+        ".bbbbbb.",
+        "..bbbb.."
+      ]
+    },
+    {
+      "id": "russian-blue-011",
+      "title": {
+        "en": "If I Fits",
+        "tr": "Kutu Sevdası",
+        "ja": "入れるなら入る",
+        "de": "Passt, sitzt",
+        "fr": "Si ça rentre…",
+        "es": "Si quepo, me siento",
+        "pt-BR": "Se Cabe, Eu Entro",
+        "ko": "들어가면 내 자리"
+      },
+      "palette": {
+        "b": "#8FA3B5",
+        "e": "#59B36B",
+        "o": "#5C6B7A"
+      },
+      "pixels": [
+        "........",
+        "..b..b..",
+        ".bbbbbb.",
+        "..beeb..",
+        ".obbbbo.",
+        ".oooooo.",
+        ".oooooo.",
+        ".oooooo."
       ]
     },
     {
       "id": "russian-blue-012",
+      "title": {
+        "en": "Nap Time",
+        "tr": "Şekerleme",
+        "ja": "お昼寝タイム",
+        "de": "Nickerchen",
+        "fr": "L'heure de la sieste",
+        "es": "Hora de la siesta",
+        "pt-BR": "Hora da Soneca",
+        "ko": "낮잠 시간"
+      },
+      "palette": {
+        "b": "#8FA3B5"
+      },
+      "pixels": [
+        ".........",
+        "b...b....",
+        "bbbbbbb..",
+        "bbbbbbbbb",
+        ".bbbbbbbb",
+        "..bbbbbbb",
+        "...bbbbb.",
+        "........."
+      ]
+    },
+    {
+      "id": "russian-blue-013",
       "title": {
         "en": "If I Fits",
         "tr": "Kutu Sevdası",
@@ -302,102 +323,103 @@
         "p": "#B8C4CF"
       },
       "pixels": [
-        ".........",
-        "..b...b..",
-        "..bbbbb..",
-        "..bbbbb..",
-        "..bebeb..",
-        "ppobbbopp",
-        ".ooooooo.",
-        ".ooooooo.",
-        ".ooooooo."
+        ".....b..",
+        ".bb..b..",
+        ".bbbbb..",
+        "..bbeb..",
+        "pobbbop.",
+        ".ooooo..",
+        ".oooooo.",
+        ".ooooo.."
       ]
     },
     {
-      "id": "russian-blue-013",
+      "id": "russian-blue-014",
       "title": {
-        "en": "Moon Gazer",
-        "tr": "Ay Seyri",
-        "ja": "月を見る猫",
-        "de": "Mondgucker",
-        "fr": "Rêveur de lune",
-        "es": "Mirando la luna",
-        "pt-BR": "Admirador da Lua",
-        "ko": "달 바라기"
+        "en": "Cozy Sweater",
+        "tr": "Sıcak Kazak",
+        "ja": "ぬくぬくセーター",
+        "de": "Kuschelpulli",
+        "fr": "Pull douillet",
+        "es": "Jersey calentito",
+        "pt-BR": "Suéter Quentinho",
+        "ko": "포근한 스웨터"
+      },
+      "palette": {
+        "b": "#8FA3B5",
+        "e": "#59B36B",
+        "o": "#5C6B7A"
+      },
+      "pixels": [
+        ".........",
+        ".b.....bb",
+        ".bbbbbbbb",
+        ".bbbbbbbb",
+        ".beebbeb.",
+        ".bbbbbbb.",
+        "..bbbbbb.",
+        "..oooooo.",
+        "..oooooo."
+      ]
+    },
+    {
+      "id": "russian-blue-015",
+      "title": {
+        "en": "Teacup Cat",
+        "tr": "Fincandaki Kedi",
+        "ja": "ティーカップ猫",
+        "de": "Teetassenkatze",
+        "fr": "Chat dans une tasse",
+        "es": "Gato en una taza",
+        "pt-BR": "Gato na Xícara",
+        "ko": "찻잔 고양이"
+      },
+      "palette": {
+        "b": "#8FA3B5",
+        "e": "#59B36B",
+        "o": "#5C6B7A",
+        "p": "#B8C4CF"
+      },
+      "pixels": [
+        "..........",
+        "..b.....b.",
+        "..bb...bb.",
+        "..bbbbbbb.",
+        "...bebebb.",
+        "..obbbbbo.",
+        "oooobbboo.",
+        "o.ppppppp.",
+        ".oooooooo.",
+        "...ooooo.."
+      ]
+    },
+    {
+      "id": "russian-blue-016",
+      "title": {
+        "en": "Silver Night",
+        "tr": "Gümüş Gece",
+        "ja": "銀色の夜",
+        "de": "Silbernacht",
+        "fr": "Nuit argentée",
+        "es": "Noche plateada",
+        "pt-BR": "Noite Prateada",
+        "ko": "은빛 밤"
       },
       "palette": {
         "b": "#8FA3B5",
         "y": "#F1E3A0"
       },
       "pixels": [
-        "...yy....",
-        "..yy.....",
-        ".yyy.....",
-        ".yyy.....",
-        ".yyyy....",
-        ".byyyyy..",
-        "bb.yyyyy.",
-        "bbb.yy...",
-        "bbb.b....",
-        ".bbbb...."
-      ]
-    },
-    {
-      "id": "russian-blue-014",
-      "title": {
-        "en": "Toe Beans",
-        "tr": "Pati Yastıkları",
-        "ja": "肉球",
-        "de": "Pfotenballen",
-        "fr": "Coussinets",
-        "es": "Almohadillas",
-        "pt-BR": "Almofadinhas",
-        "ko": "말랑 젤리"
-      },
-      "palette": {
-        "b": "#8FA3B5",
-        "n": "#6E8090"
-      },
-      "pixels": [
-        "...b..b...",
-        "..bnbbnb..",
-        "bbbb..bbbb",
-        "nnb....bnn",
-        "bbbbbbbbbb",
-        "..bbbbbb..",
-        ".bbnnnnbb.",
-        ".bbnnnnbb.",
-        "..bnnnnb..",
-        "...bbbb..."
-      ]
-    },
-    {
-      "id": "russian-blue-015",
-      "title": {
-        "en": "Portrait",
-        "tr": "Portre",
-        "ja": "肖像画",
-        "de": "Porträt",
-        "fr": "Portrait",
-        "es": "Retrato",
-        "pt-BR": "Retrato",
-        "ko": "초상화"
-      },
-      "palette": {
-        "b": "#8FA3B5",
-        "e": "#59B36B"
-      },
-      "pixels": [
-        "b........b",
-        "bb......bb",
-        "bbbbbbbbbb",
-        "bbbbbbbbbb",
-        ".bbbbbbbb.",
-        ".beebbeeb.",
-        ".bbebbebb.",
-        ".bbbbbbbb.",
-        ".bbbbbbbb.",
-        "...bbbb..."
+        ".....y....",
+        "y..yy.....",
+        "..yyy.....",
+        "..yyy.....",
+        "..yyy.....",
+        "..yyyyy...",
+        ".bbyyyyy..",
+        "..b..y....",
+        ".bbb.b....",
+        "..bbb....."
       ]
     }
   ]

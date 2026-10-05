@@ -11,6 +11,23 @@ final class GameViewModelTests: XCTestCase {
         GridPosition(row: row, column: column)
     }
 
+    /// "Zor" mod: tamamlanan satıra otomatik X gelmez; "Tekrar Dene"den sonra da öyle kalır.
+    func testHardModeSurvivesRestart() {
+        let plus = Puzzle(id: "plus", pattern: [".#.", "###", ".#."])
+        let viewModel = GameViewModel(puzzle: plus, rules: .classic)
+        viewModel.autoCrosses = false
+        viewModel.tap(position(0, 1))
+        XCTAssertEqual(viewModel.game.board[position(0, 0)], .blank)
+
+        viewModel.restart()
+        viewModel.tap(position(0, 1))
+        XCTAssertEqual(viewModel.game.board[position(0, 0)], .blank)
+
+        viewModel.autoCrosses = true
+        viewModel.tap(position(2, 1))
+        XCTAssertEqual(viewModel.game.board[position(2, 0)], .crossed)
+    }
+
     func testDragFillsOnlyBlankCells() {
         let viewModel = GameViewModel(puzzle: puzzle, rules: freeRules)
         viewModel.tool = .cross

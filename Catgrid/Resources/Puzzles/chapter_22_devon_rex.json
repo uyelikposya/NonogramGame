@@ -5,39 +5,6 @@
     {
       "id": "devon-rex-001",
       "title": {
-        "en": "Toe Beans",
-        "tr": "Pati Yastıkları",
-        "ja": "肉球",
-        "de": "Pfotenballen",
-        "fr": "Coussinets",
-        "es": "Almohadillas",
-        "pt-BR": "Almofadinhas",
-        "ko": "말랑 젤리"
-      },
-      "palette": {
-        "b": "#C8B8A6",
-        "n": "#D9827A"
-      },
-      "pixels": [
-        "....bb..bb....",
-        "...bnnbbnnb...",
-        "...bnnbbnnb...",
-        "bbbbbb..bbbbbb",
-        "bnn........nnb",
-        "bnn..bbbb..bnb",
-        ".bbbbbbbbbbbb.",
-        "..bbbbbbbbbb..",
-        "..bbbnnnnbbb..",
-        "..bbnnnnnnbb..",
-        "..bbnnnnnnbb..",
-        "..bbnnnnnnbb..",
-        "...bbbnnbbb...",
-        "....bbbbbb...."
-      ]
-    },
-    {
-      "id": "devon-rex-002",
-      "title": {
         "en": "Purr Love",
         "tr": "Mırıl Sevgi",
         "ja": "ゴロゴロ大好き",
@@ -48,27 +15,18 @@
         "ko": "골골송 사랑"
       },
       "palette": {
-        "n": "#D9827A",
-        "w": "#EFE6DA"
+        "n": "#D9827A"
       },
       "pixels": [
-        ".nnnnn..nnnnn.",
-        "nnnnnnnnnnnnnn",
-        "nnwwwnnnnnnnnn",
-        "nnnwnnnnnnnnnn",
-        "nnnnnnnnnnnnnn",
-        "nnnnnnnnnnnnnn",
-        ".nnnnnnnnnnnn.",
-        "..nnnnnnnnnn..",
-        "...nnnnnnnn...",
-        "....nnnnnn....",
-        ".....nnnn.....",
-        "......nn......",
-        "......nn......"
+        ".nnnn.",
+        "nnnnnn",
+        ".nnnn.",
+        "..nn..",
+        "..nn.."
       ]
     },
     {
-      "id": "devon-rex-003",
+      "id": "devon-rex-002",
       "title": {
         "en": "Fish Snack",
         "tr": "Balık Atıştırması",
@@ -80,22 +38,18 @@
         "ko": "생선 간식"
       },
       "palette": {
-        "o": "#7A9E7E",
-        "p": "#F2C14E"
+        "o": "#7A9E7E"
       },
       "pixels": [
-        "...oooo......o",
-        ".oooopooo...oo",
-        "oo.oopoooo.ooo",
-        "o..oopoooooooo",
-        "ooooopoooooooo",
-        "ooooopoooo.ooo",
-        ".oooopooo...oo",
-        "...oooo......o"
+        "..o....",
+        "ooooo.o",
+        "ooooooo",
+        "ooooo.o",
+        "..o...."
       ]
     },
     {
-      "id": "devon-rex-004",
+      "id": "devon-rex-003",
       "title": {
         "en": "Yarn Ball",
         "tr": "Yün Yumak",
@@ -110,23 +64,16 @@
         "o": "#7A9E7E"
       },
       "pixels": [
-        "......ooooo...",
-        ".....ooooooo..",
-        "....oo.oooooo.",
-        "...oooo.oo..o.",
-        "...oooo...oooo",
-        "...ooo....oooo",
-        "...oo..oo.oooo",
-        "...o..oooo.oo.",
-        ".....oooooo.o.",
-        "....oooooooo..",
-        "...oo..ooo....",
-        ".ooo..........",
-        ".............."
+        ".ooo..",
+        "ooooo.",
+        "oo.oo.",
+        "o.ooo.",
+        ".oooo.",
+        "......"
       ]
     },
     {
-      "id": "devon-rex-005",
+      "id": "devon-rex-004",
       "title": {
         "en": "Dinner Bowl",
         "tr": "Mama Kabı",
@@ -143,15 +90,38 @@
         "w": "#EFE6DA"
       },
       "pixels": [
-        "....pp.ppp....",
-        "..pppppppppp..",
-        ".pppppppppppp.",
-        "ooppppppppppoo",
-        "ooooppppppoooo",
-        ".oowwwwwwwwoo.",
-        ".oowwwwwwwwoo.",
-        ".oooooooooooo.",
-        "..oooooooooo.."
+        "....p..",
+        ".ppppp.",
+        "opppppo",
+        "oowwwoo",
+        ".ooooo.",
+        ".ooooo."
+      ]
+    },
+    {
+      "id": "devon-rex-005",
+      "title": {
+        "en": "Toe Beans",
+        "tr": "Pati Yastıkları",
+        "ja": "肉球",
+        "de": "Pfotenballen",
+        "fr": "Coussinets",
+        "es": "Almohadillas",
+        "pt-BR": "Almofadinhas",
+        "ko": "말랑 젤리"
+      },
+      "palette": {
+        "b": "#C8B8A6",
+        "n": "#D9827A"
+      },
+      "pixels": [
+        "..b.b..",
+        ".bn.nb.",
+        "nn.b.nn",
+        ".bbbbb.",
+        ".bnnnb.",
+        ".bnnnb.",
+        "..bbb.."
       ]
     },
     {
@@ -171,273 +141,16 @@
         "p": "#F2C14E"
       },
       "pixels": [
-        "...ppp........",
-        "...pnppp......",
-        "...pppppp.....",
-        ".p.ppppppp....",
-        "..pppppppp....",
-        "..ppppppppn..n",
-        "....ppppp..nn.",
-        ".............."
+        "..n....",
+        "..ppp..",
+        "..ppp..",
+        ".pppp..",
+        "..pppnn",
+        "......."
       ]
     },
     {
       "id": "devon-rex-007",
-      "title": {
-        "en": "Leftovers",
-        "tr": "Artıklar",
-        "ja": "食べ残し",
-        "de": "Reste",
-        "fr": "Restes",
-        "es": "Sobras",
-        "pt-BR": "Restinho",
-        "ko": "남은 음식"
-      },
-      "palette": {
-        "p": "#F2C14E"
-      },
-      "pixels": [
-        "....p.p.pp....",
-        "..p.p.p.pp...p",
-        ".pp.p.p.pp..pp",
-        "pppppppppppppp",
-        ".pp.p.p.pp..pp",
-        "..p.p.p.pp...p",
-        "....p.p.pp...."
-      ]
-    },
-    {
-      "id": "devon-rex-008",
-      "title": {
-        "en": "Nap Time",
-        "tr": "Şekerleme",
-        "ja": "お昼寝タイム",
-        "de": "Nickerchen",
-        "fr": "L'heure de la sieste",
-        "es": "Hora de la siesta",
-        "pt-BR": "Hora da Soneca",
-        "ko": "낮잠 시간"
-      },
-      "palette": {
-        "b": "#C8B8A6"
-      },
-      "pixels": [
-        "..............",
-        ".b....b.......",
-        "bbb..bbbbbb...",
-        "bbbbbbbbbbbbb.",
-        "bbbbbbbbbbbbbb",
-        ".bbbbbbbbbbbbb",
-        "..bbbbbbbbbbbb",
-        "...bbbbbbbbbbb",
-        "....bbbbbbbbb.",
-        "....bbbbbbbb.."
-      ]
-    },
-    {
-      "id": "devon-rex-009",
-      "title": {
-        "en": "Cozy Sweater",
-        "tr": "Sıcak Kazak",
-        "ja": "ぬくぬくセーター",
-        "de": "Kuschelpulli",
-        "fr": "Pull douillet",
-        "es": "Jersey calentito",
-        "pt-BR": "Suéter Quentinho",
-        "ko": "포근한 스웨터"
-      },
-      "palette": {
-        "b": "#C8B8A6",
-        "e": "#D9A441",
-        "o": "#7A9E7E",
-        "p": "#F2C14E"
-      },
-      "pixels": [
-        ".............",
-        ".b.........b.",
-        "bbb..bbb..bbb",
-        "bbbbbbbbbbbbb",
-        "bbbbbbbbbbbbb",
-        "bbbbbbbbbbbbb",
-        ".bbbebbbebbb.",
-        ".bbe.bbbeebb.",
-        ".bbeebbbeebb.",
-        ".bbbbbbbbbbb.",
-        ".bbbbbbbbbbb.",
-        "..bbbbbbbbb..",
-        ".ooooooooooo.",
-        ".ppppppppppp.",
-        ".ooooooooooo."
-      ]
-    },
-    {
-      "id": "devon-rex-010",
-      "title": {
-        "en": "Sitting Pretty",
-        "tr": "Uslu Oturuş",
-        "ja": "おすましおすわり",
-        "de": "Brav sitzen",
-        "fr": "Sage comme une image",
-        "es": "Sentado con estilo",
-        "pt-BR": "Pose Elegante",
-        "ko": "얌전히 앉기"
-      },
-      "palette": {
-        "b": "#C8B8A6"
-      },
-      "pixels": [
-        ".......b....",
-        ".b....bb....",
-        "bbb...bb....",
-        "bbbbbbbb....",
-        "bbbbbbbb....",
-        "..bbbbb.....",
-        "..bbbb......",
-        "...bbbbb....",
-        "...bbbbbb..b",
-        "..bbbbbbb..b",
-        "..bbbbbbb..b",
-        "..bbbbbbb..b",
-        "..bbbbbbb.bb",
-        "...bbbbbbbb.",
-        "...bbbb....."
-      ]
-    },
-    {
-      "id": "devon-rex-011",
-      "title": {
-        "en": "Strut",
-        "tr": "Salınarak Yürüyüş",
-        "ja": "おすまし歩き",
-        "de": "Stolzieren",
-        "fr": "Pavane",
-        "es": "Pavoneo",
-        "pt-BR": "Desfile",
-        "ko": "당당한 걸음"
-      },
-      "palette": {
-        "b": "#C8B8A6"
-      },
-      "pixels": [
-        ".b......b....b.",
-        "b.......bb...bb",
-        "b.......bbbbbbb",
-        "bb......bbbbbbb",
-        ".bbbbbbbbbbbbbb",
-        "..bbbbbbbbbbb..",
-        "..bbbbbbbbb....",
-        "...bbbbbbb.....",
-        "..bbb..bbbb....",
-        "..bbb..b.bb....",
-        "..b.bb.b..b....",
-        "..b....b..b...."
-      ]
-    },
-    {
-      "id": "devon-rex-012",
-      "title": {
-        "en": "If I Fits",
-        "tr": "Kutu Sevdası",
-        "ja": "入れるなら入る",
-        "de": "Passt, sitzt",
-        "fr": "Si ça rentre…",
-        "es": "Si quepo, me siento",
-        "pt-BR": "Se Cabe, Eu Entro",
-        "ko": "들어가면 내 자리"
-      },
-      "palette": {
-        "b": "#C8B8A6",
-        "e": "#D9A441",
-        "o": "#7A9E7E",
-        "p": "#F2C14E"
-      },
-      "pixels": [
-        "....b......b...",
-        "....b......b...",
-        "...bbb....bb...",
-        "...bbbbbbbbbb..",
-        "...bbbbbbbbbb..",
-        "....bbebbebb...",
-        "....bbebbebb...",
-        "..ooobbbbbboop.",
-        ".ppooobbbbooopp",
-        "..oooooooooooo.",
-        "...............",
-        "..oooooooooooo.",
-        "..oooooooooooo.",
-        "..ooooooooooo.."
-      ]
-    },
-    {
-      "id": "devon-rex-013",
-      "title": {
-        "en": "Moon Gazer",
-        "tr": "Ay Seyri",
-        "ja": "月を見る猫",
-        "de": "Mondgucker",
-        "fr": "Rêveur de lune",
-        "es": "Mirando la luna",
-        "pt-BR": "Admirador da Lua",
-        "ko": "달 바라기"
-      },
-      "palette": {
-        "b": "#C8B8A6",
-        "y": "#F4D35E"
-      },
-      "pixels": [
-        "......y......",
-        "......yyy....",
-        ".......yyy...",
-        ".......yyyy..",
-        ".......yyyy..",
-        ".......yyyy..",
-        "......yyyyy..",
-        ".....yyyyyy..",
-        ".yyyyyyyyybbb",
-        "..yyyyyyyybbb",
-        "...yyyyy..bbb",
-        "......b..bbb.",
-        "......b..bbbb",
-        "......b..bbb.",
-        ".......bbbbb."
-      ]
-    },
-    {
-      "id": "devon-rex-014",
-      "title": {
-        "en": "Toe Beans",
-        "tr": "Pati Yastıkları",
-        "ja": "肉球",
-        "de": "Pfotenballen",
-        "fr": "Coussinets",
-        "es": "Almohadillas",
-        "pt-BR": "Almofadinhas",
-        "ko": "말랑 젤리"
-      },
-      "palette": {
-        "b": "#C8B8A6",
-        "n": "#D9827A"
-      },
-      "pixels": [
-        "....bb...bb....",
-        "...bnnb.bnnb...",
-        "...bnnb.bnnb...",
-        ".bb.bnb.bnb.bb.",
-        "bnnb.......bnnb",
-        "bnnb...b...bnnb",
-        "bnb.bbbbbbb.bnb",
-        "...bbbbbbbbb...",
-        "..bbbbbbbbbbb..",
-        "..bbbnnnnnbbb..",
-        "..bbnnnnnnnbb..",
-        "..bbnnnnnnnbb..",
-        "..bbbnnnnnbbb..",
-        "...bbbnnnbbb...",
-        ".....bbbbb....."
-      ]
-    },
-    {
-      "id": "devon-rex-015",
       "title": {
         "en": "Portrait",
         "tr": "Portre",
@@ -450,25 +163,270 @@
       },
       "palette": {
         "b": "#C8B8A6",
-        "e": "#D9A441",
-        "n": "#D9827A"
+        "e": "#D9A441"
       },
       "pixels": [
-        "...............",
-        ".............b.",
-        ".bb.........bb.",
-        ".bbb...b....bb.",
-        ".bbbbbbbbbbbbb.",
-        ".bbbbbbbbbbbbbb",
-        ".bbbbbbbbbbbbbb",
-        "..bbbebbbbebb..",
-        "..bbe.bbbe.ebb.",
-        "..bbeebbbeebbb.",
-        "..bbbbbbbbbbbb.",
-        "..bbbbbnbbbbb..",
-        "...bbbbbbbbbb..",
-        "....bbbbbbbb...",
-        ".....bbbbb....."
+        ".......",
+        "bbbbbbb",
+        "bbbbbbb",
+        ".bebeb.",
+        ".bbbbb.",
+        "..bbb.."
+      ]
+    },
+    {
+      "id": "devon-rex-008",
+      "title": {
+        "en": "Dinner Bowl",
+        "tr": "Mama Kabı",
+        "ja": "ごはん皿",
+        "de": "Futternapf",
+        "fr": "Gamelle",
+        "es": "Cuenco de comida",
+        "pt-BR": "Potinho de Ração",
+        "ko": "밥그릇"
+      },
+      "palette": {
+        "o": "#7A9E7E",
+        "p": "#F2C14E",
+        "w": "#EFE6DA"
+      },
+      "pixels": [
+        ".......",
+        ".ppppp.",
+        "ppppppp",
+        "oopppoo",
+        "oowwwoo",
+        ".ooooo.",
+        ".ooooo."
+      ]
+    },
+    {
+      "id": "devon-rex-009",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi",
+        "ja": "ゴロゴロ大好き",
+        "de": "Schnurrliebe",
+        "fr": "Ronron d'amour",
+        "es": "Amor ronroneante",
+        "pt-BR": "Amor Ronronado",
+        "ko": "골골송 사랑"
+      },
+      "palette": {
+        "n": "#D9827A",
+        "w": "#EFE6DA"
+      },
+      "pixels": [
+        ".nn.nn.",
+        "nwnnnnn",
+        "nnnnnnn",
+        ".nnnnn.",
+        ".nnnnn.",
+        "..nnn..",
+        "...n..."
+      ]
+    },
+    {
+      "id": "devon-rex-010",
+      "title": {
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak",
+        "ja": "毛糸玉",
+        "de": "Wollknäuel",
+        "fr": "Pelote de laine",
+        "es": "Ovillo de lana",
+        "pt-BR": "Novelo de Lã",
+        "ko": "털실 뭉치"
+      },
+      "palette": {
+        "o": "#7A9E7E"
+      },
+      "pixels": [
+        "...ooo..",
+        "..o.oo..",
+        ".ooo..oo",
+        ".oo..ooo",
+        "...oo.oo",
+        "..ooooo.",
+        "....oo..",
+        "........"
+      ]
+    },
+    {
+      "id": "devon-rex-011",
+      "title": {
+        "en": "Toy Mouse",
+        "tr": "Oyuncak Fare",
+        "ja": "ネズミのおもちゃ",
+        "de": "Spielmaus",
+        "fr": "Souris jouet",
+        "es": "Ratón de juguete",
+        "pt-BR": "Ratinho de Brinquedo",
+        "ko": "장난감 쥐"
+      },
+      "palette": {
+        "n": "#D9827A",
+        "p": "#F2C14E"
+      },
+      "pixels": [
+        "........",
+        "..np....",
+        "..ppp...",
+        "..pppp..",
+        ".ppppp..",
+        ".ppppp.n",
+        "..ppp.nn",
+        "........"
+      ]
+    },
+    {
+      "id": "devon-rex-012",
+      "title": {
+        "en": "Dinner Bowl",
+        "tr": "Mama Kabı",
+        "ja": "ごはん皿",
+        "de": "Futternapf",
+        "fr": "Gamelle",
+        "es": "Cuenco de comida",
+        "pt-BR": "Potinho de Ração",
+        "ko": "밥그릇"
+      },
+      "palette": {
+        "o": "#7A9E7E",
+        "p": "#F2C14E",
+        "w": "#EFE6DA"
+      },
+      "pixels": [
+        ".........",
+        "...ppp...",
+        ".ppppppp.",
+        "opppppppo",
+        "oooowoooo",
+        ".ooooooo.",
+        ".ooooooo.",
+        "........."
+      ]
+    },
+    {
+      "id": "devon-rex-013",
+      "title": {
+        "en": "Owl Pose",
+        "tr": "Baykuş Duruşu",
+        "ja": "フクロウのポーズ",
+        "de": "Eulenpose",
+        "fr": "Pose de chouette",
+        "es": "Pose de búho",
+        "pt-BR": "Pose de Coruja",
+        "ko": "부엉이 포즈"
+      },
+      "palette": {
+        "b": "#C8B8A6",
+        "e": "#D9A441",
+        "w": "#EFE6DA"
+      },
+      "pixels": [
+        ".........",
+        ".bb....b.",
+        ".bbbbbbbb",
+        "..bebbeb.",
+        "..bebbeb.",
+        "..bbbbbb.",
+        ".bbwwwbb.",
+        "..bwwwbb.",
+        "...bbbb.."
+      ]
+    },
+    {
+      "id": "devon-rex-014",
+      "title": {
+        "en": "Floppy Hug",
+        "tr": "Gevşek Kucaklama",
+        "ja": "ぐにゃっとハグ",
+        "de": "Schlappe Umarmung",
+        "fr": "Câlin tout mou",
+        "es": "Abrazo blandito",
+        "pt-BR": "Abraço Molinho",
+        "ko": "축 늘어진 포옹"
+      },
+      "palette": {
+        "b": "#C8B8A6",
+        "d": "#9C8B78",
+        "w": "#EFE6DA"
+      },
+      "pixels": [
+        "...d..d...",
+        "...b..b...",
+        "...b..b...",
+        "...b..bbb.",
+        "..bbbbbbbb",
+        "..bwwwwbbb",
+        ".dbwwwwbb.",
+        "ddbbwwbb..",
+        "d...bb...."
+      ]
+    },
+    {
+      "id": "devon-rex-015",
+      "title": {
+        "en": "Silk Ribbon",
+        "tr": "İpek Kurdele",
+        "ja": "シルクのリボン",
+        "de": "Seidenband",
+        "fr": "Ruban de soie",
+        "es": "Cinta de seda",
+        "pt-BR": "Fita de Seda",
+        "ko": "실크 리본"
+      },
+      "palette": {
+        "b": "#C8B8A6",
+        "e": "#D9A441",
+        "n": "#D9827A",
+        "o": "#7A9E7E"
+      },
+      "pixels": [
+        ".b......b.",
+        "bb..bb.bb.",
+        "bbbbbbbbb.",
+        ".bbbbbbbb.",
+        ".beebbebb.",
+        ".bbebbebb.",
+        ".bbbbbbbb.",
+        "..bbbbbb..",
+        "..nnonn...",
+        ".........."
+      ]
+    },
+    {
+      "id": "devon-rex-016",
+      "title": {
+        "en": "Forest Guardian",
+        "tr": "Orman Bekçisi",
+        "ja": "森の守り神",
+        "de": "Waldhüter",
+        "fr": "Gardien de la forêt",
+        "es": "Guardián del bosque",
+        "pt-BR": "Guardião da Floresta",
+        "ko": "숲의 수호자"
+      },
+      "palette": {
+        "b": "#C8B8A6",
+        "g": "#4E8F4A",
+        "o": "#7A9E7E"
+      },
+      "pixels": [
+        "............",
+        "..g.........",
+        "..gg..b...b.",
+        ".ggg..bb.bb.",
+        ".gggg.bbbbb.",
+        "ggggg..bbb..",
+        ".ggg...bb...",
+        ".gggb.bbbb..",
+        ".ggggbbbbb..",
+        "gggbgbbbbb..",
+        "..o.bbbbb...",
+        ".......bb..."
       ]
     }
   ]
