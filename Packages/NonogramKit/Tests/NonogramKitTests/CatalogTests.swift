@@ -54,6 +54,7 @@ final class CatalogTests: XCTestCase {
       "chapters": [
         { "id": "tutorial", "kind": "tutorial", "title": { "en": "School" }, "file": "tutorial", "expectedPuzzleCount": 2 },
         { "id": "siamese", "kind": "breed", "title": { "en": "Siamese" }, "file": "siamese", "expectedPuzzleCount": 2,
+          "premiumFile": "siamese_premium",
           "portrait": { "palette": { "a": "#4A3B35" }, "pixels": ["a.a", "aaa"] },
           "card": { "number": 1, "rarity": "common", "origin": { "en": "Thailand" }, "lifespan": "15–20",
                     "coat": { "en": "Short" }, "fact": { "en": "Talkative." }, "about": { "en": "An old breed." },
@@ -78,6 +79,7 @@ final class CatalogTests: XCTestCase {
         try load(files: [
             "tutorial": Self.chapter("tutorial", puzzles: ["t1", "t2"]),
             "siamese": Self.chapter("siamese", puzzles: ["s1", "s2"]),
+            "siamese_premium": Self.chapter("siamese", puzzles: ["sp1", "sp2"]),
         ])
     }
 
@@ -132,5 +134,34 @@ final class CatalogTests: XCTestCase {
         XCTAssertTrue(progression.isUnlocked(catalog.chapters[1]))
         XCTAssertEqual(progression.completedCount(in: catalog.chapters[0]), 2)
         XCTAssertEqual(progression.nextPlayable?.id, "s1")
+    }
+
+    func testPremiumPuzzlesStayOutOfRegularOrder() throws {
+        let catalog = try sampleCatalog()
+        let siamese = catalog.chapters[1]
+        XCTAssertEqual(siamese.premiumPuzzles.map(\.id), ["sp1", "sp2"])
+        XCTAssertFalse(catalog.orderedPuzzles.contains { $0.id.hasPrefix("sp") })
+        XCTAssertEqual(catalog.puzzle(withID: "sp2")?.id, "sp2")
+        XCTAssertTrue(catalog.isPremium("sp1"))
+        XCTAssertFalse(catalog.isPremium("s1"))
+        XCTAssertEqual(catalog.chapter(containing: "sp1")?.id, "siamese")
+        XCTAssertEqual(catalog.puzzle(after: "sp1")?.id, "sp2")
+        XCTAssertNil(catalog.puzzle(after: "sp2"))
+        XCTAssertEqual(catalog.rules(for: siamese.premiumPuzzles[0]), .classic)
+    }
+
+    func testPremiumUnlocksAfterBreedIsReachedThenInOrder() throws {
+        let catalog = try sampleCatalog()
+        var progression = Progression(catalog: catalog, completedIDs: ["t1"])
+        XCTAssertFalse(progression.isPremiumUnlocked("sp1"), "Tür daha açılmadı")
+
+        progression = Progression(catalog: catalog, completedIDs: ["t1", "t2"])
+        XCTAssertTrue(progression.isPremiumUnlocked("sp1"))
+        XCTAssertFalse(progression.isPremiumUnlocked("sp2"))
+
+        progression = Progression(catalog: catalog, completedIDs: ["t1", "t2", "sp1"])
+        XCTAssertTrue(progression.isPremiumUnlocked("sp2"))
+        XCTAssertEqual(progression.completedPremiumCount(in: catalog.chapters[1]), 1)
+        XCTAssertEqual(progression.nextPlayable?.id, "s1", "Premium bulmacalar normal sırayı etkilemez")
     }
 }

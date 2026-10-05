@@ -1,0 +1,216 @@
+{
+  "schemaVersion": 1,
+  "chapterID": "egyptian-mau",
+  "puzzles": [
+    {
+      "id": "egyptian-mau-p01",
+      "title": {
+        "en": "Golden Paw",
+        "tr": "Altın Pati"
+      },
+      "palette": {
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        ".yy..yy.",
+        ".yy..yy.",
+        "........",
+        "yy....yy",
+        "yy.yy.yy",
+        "..yyyy..",
+        ".yyyyyy.",
+        "..yyyy.."
+      ]
+    },
+    {
+      "id": "egyptian-mau-p02",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi"
+      },
+      "palette": {
+        "n": "#B87F72",
+        "w": "#EDEDE6"
+      },
+      "pixels": [
+        ".nn..nn.",
+        "nwnnnnnn",
+        "nnnnnnnn",
+        "nnnnnnnn",
+        ".nnnnnn.",
+        "..nnnn..",
+        "...nn...",
+        "........"
+      ]
+    },
+    {
+      "id": "egyptian-mau-p03",
+      "title": {
+        "en": "Fish Snack",
+        "tr": "Balık Atıştırması"
+      },
+      "palette": {
+        "o": "#E0B66A"
+      },
+      "pixels": [
+        "........",
+        "..oo....",
+        "ooooo..o",
+        "o.oooooo",
+        "oooooooo",
+        "ooooo..o",
+        "..oo....",
+        "........"
+      ]
+    },
+    {
+      "id": "egyptian-mau-p04",
+      "title": {
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak"
+      },
+      "palette": {
+        "o": "#E0B66A"
+      },
+      "pixels": [
+        ".....oo...",
+        "...oooooo.",
+        "...o.ooo.o",
+        "..ooo...oo",
+        "..oo...ooo",
+        "..o..oo.oo",
+        "....ooooo.",
+        "...ooooo..",
+        "ooo.......",
+        ".........."
+      ]
+    },
+    {
+      "id": "egyptian-mau-p05",
+      "title": {
+        "en": "Toy Mouse",
+        "tr": "Oyuncak Fare"
+      },
+      "palette": {
+        "n": "#B87F72",
+        "p": "#7D5A44"
+      },
+      "pixels": [
+        "..........",
+        "...p......",
+        "..nnp.....",
+        "..ppppp...",
+        "..ppppp...",
+        ".ppppppp..",
+        "..pppppn.n",
+        "..pppp..nn",
+        "........n.",
+        ".........."
+      ]
+    },
+    {
+      "id": "egyptian-mau-p06",
+      "title": {
+        "en": "Portrait",
+        "tr": "Portre"
+      },
+      "palette": {
+        "b": "#C9CBC4",
+        "d": "#4D4A44",
+        "e": "#8DBF4A"
+      },
+      "pixels": [
+        "..........",
+        "bb......bb",
+        "bbbbbbbbbb",
+        "bbbbbbbbbb",
+        ".bbbbbdbb.",
+        ".beebbeeb.",
+        ".bbebbebb.",
+        ".bbbbbbbb.",
+        "..bbbdbb..",
+        "...bbbb..."
+      ]
+    },
+    {
+      "id": "egyptian-mau-p07",
+      "title": {
+        "en": "Ancient Grace",
+        "tr": "Kadim Zarafet"
+      },
+      "palette": {
+        "b": "#C9CBC4",
+        "d": "#4D4A44",
+        "o": "#E0B66A",
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        ".....b..b...",
+        ".....bbbb...",
+        ".....bbbb...",
+        ".....bbbb...",
+        ".....bbb....",
+        ".....byyb...",
+        ".....bbbb...",
+        "....bbbbb..d",
+        "..o.bbbbbb.d",
+        ".ooobbbbbb.d",
+        ".ooobbbbb.dd",
+        "ooooobbb.d.."
+      ]
+    },
+    {
+      "id": "egyptian-mau-p08",
+      "title": {
+        "en": "Nap Time",
+        "tr": "Şekerleme"
+      },
+      "palette": {
+        "b": "#C9CBC4",
+        "d": "#4D4A44"
+      },
+      "pixels": [
+        "............",
+        "............",
+        "bb...bb.....",
+        "bbbbbbbbbb..",
+        "bbbbbbbbbdb.",
+        "bbbbbbbbbdbb",
+        ".b...ddbbbbb",
+        "..bbbbbbdbbb",
+        "..bbbbbbbbbb",
+        "....bbbbbbb.",
+        "...bbbbbbbb.",
+        ".........b.."
+      ]
+    },
+    {
+      "id": "egyptian-mau-p09",
+      "title": {
+        "en": "Lucky Cat",
+        "tr": "Şans Kedisi"
+      },
+      "palette": {
+        "b": "#C9CBC4",
+        "d": "#4D4A44",
+        "e": "#8DBF4A",
+        "o": "#E0B66A",
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        "............",
+        ".bb.....bbb.",
+        ".bbbbbbbbbb.",
+        ".bbbbbbbbbb.",
+        "..bbebeebbb.",
+        "..bbebebbb..",
+        "...bddbbbb..",
+        "..bbbybbb...",
+        "..bbbbbbb...",
+        "..bbooobb...",
+        "..bbyyybb...",
+        "...bbbbb...."
+      ]
+    }
+  ]
+}

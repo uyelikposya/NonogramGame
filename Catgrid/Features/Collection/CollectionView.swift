@@ -6,7 +6,7 @@ import SwiftUI
 struct CollectionView: View {
     @Environment(AppModel.self) private var model
     @Environment(\.appTheme) private var theme
-    @State private var selected: Chapter?
+    @State private var selected: CardSelection?
 
     private let columns = [GridItem(.adaptive(minimum: 150), spacing: 14)]
 
@@ -16,12 +16,12 @@ struct CollectionView: View {
                 CollectionSummary()
 
                 LazyVGrid(columns: columns, spacing: 14) {
-                    ForEach(model.collectedBreeds) { chapter in
-                        if let card = chapter.card {
+                    ForEach(model.collectedCards) { selection in
+                        if let card = selection.chapter.card {
                             Button {
-                                selected = chapter
+                                selected = selection
                             } label: {
-                                BreedCardView(chapter: chapter, card: card, style: .compact)
+                                BreedCardView(chapter: selection.chapter, card: card, style: .compact, isGolden: selection.isGolden)
                             }
                             .buttonStyle(PressableButtonStyle())
                         }
@@ -35,8 +35,8 @@ struct CollectionView: View {
         }
         .themedScreen()
         .screenTitle("Card Collection")
-        .sheet(item: $selected) { chapter in
-            CardDetailSheet(chapter: chapter)
+        .sheet(item: $selected) { selection in
+            CardDetailSheet(chapter: selection.chapter, isGolden: selection.isGolden)
         }
     }
 }
@@ -70,19 +70,22 @@ struct CardDetailSheet: View {
     @Environment(\.appTheme) private var theme
     let chapter: Chapter
     var isNewCard = false
+    var isGolden = false
 
     var body: some View {
         ScrollView {
             VStack(spacing: 20) {
                 if isNewCard {
                     VStack(spacing: 6) {
-                        Image(systemName: "sparkles")
+                        Image(systemName: isGolden ? "crown.fill" : "sparkles")
                             .font(.largeTitle)
-                            .foregroundStyle(theme.accent)
-                        Text("New card unlocked!")
+                            .foregroundStyle(isGolden ? AnyShapeStyle(Gold.foil) : AnyShapeStyle(theme.accent))
+                        Text(isGolden ? LocalizedStringKey("Golden Card unlocked!") : LocalizedStringKey("New card unlocked!"))
                             .font(.title2.bold())
                             .foregroundStyle(theme.textPrimary)
-                        Text("You solved every \(chapter.title.resolved) puzzle.")
+                        Text(isGolden
+                             ? LocalizedStringKey("You solved every golden \(chapter.title.resolved) puzzle.")
+                             : LocalizedStringKey("You solved every \(chapter.title.resolved) puzzle."))
                             .font(.subheadline)
                             .multilineTextAlignment(.center)
                             .foregroundStyle(theme.textSecondary)
@@ -90,7 +93,7 @@ struct CardDetailSheet: View {
                     .padding(.top, 8)
                 }
                 if let card = chapter.card {
-                    FlippableBreedCard(chapter: chapter, card: card)
+                    FlippableBreedCard(chapter: chapter, card: card, isGolden: isGolden)
                         .frame(maxWidth: 360)
                     Label("Tap the card to flip it", systemImage: "hand.tap.fill")
                         .font(.footnote)
@@ -129,12 +132,12 @@ struct CollectionShelf: View {
             CollectionSummary()
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 12) {
-                    ForEach(model.collectedBreeds.reversed()) { chapter in
-                        if let card = chapter.card {
+                    ForEach(model.collectedCards.reversed()) { selection in
+                        if let card = selection.chapter.card {
                             Button {
                                 router.push(.collection)
                             } label: {
-                                BreedCardView(chapter: chapter, card: card, style: .compact)
+                                BreedCardView(chapter: selection.chapter, card: card, style: .compact, isGolden: selection.isGolden)
                                     .frame(width: 104)
                             }
                             .buttonStyle(PressableButtonStyle())

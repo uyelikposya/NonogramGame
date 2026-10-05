@@ -1,0 +1,216 @@
+{
+  "schemaVersion": 1,
+  "chapterID": "scottish-fold",
+  "puzzles": [
+    {
+      "id": "scottish-fold-p01",
+      "title": {
+        "en": "Golden Paw",
+        "tr": "Altın Pati"
+      },
+      "palette": {
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        ".yy..yy.",
+        ".yy..yy.",
+        "........",
+        "yy....yy",
+        "yy.yy.yy",
+        "..yyyy..",
+        ".yyyyyy.",
+        "..yyyy.."
+      ]
+    },
+    {
+      "id": "scottish-fold-p02",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi"
+      },
+      "palette": {
+        "n": "#D9A0A0",
+        "w": "#F2F2F2"
+      },
+      "pixels": [
+        ".nn..nn.",
+        "nwnnnnnn",
+        "nnnnnnnn",
+        "nnnnnnnn",
+        ".nnnnnn.",
+        "..nnnn..",
+        "...nn...",
+        "........"
+      ]
+    },
+    {
+      "id": "scottish-fold-p03",
+      "title": {
+        "en": "Fish Snack",
+        "tr": "Balık Atıştırması"
+      },
+      "palette": {
+        "o": "#7FB3D5"
+      },
+      "pixels": [
+        "........",
+        "..oo....",
+        "ooooo..o",
+        "o.oooooo",
+        "oooooooo",
+        "ooooo..o",
+        "..oo....",
+        "........"
+      ]
+    },
+    {
+      "id": "scottish-fold-p04",
+      "title": {
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak"
+      },
+      "palette": {
+        "o": "#7FB3D5"
+      },
+      "pixels": [
+        "....oooo..",
+        "...o.oooo.",
+        "..oo.oo...",
+        "..ooo..ooo",
+        "..oo.o.ooo",
+        "..o.oo.oo.",
+        "...oooo.o.",
+        "..oooooo..",
+        "o.........",
+        ".........."
+      ]
+    },
+    {
+      "id": "scottish-fold-p05",
+      "title": {
+        "en": "Toy Mouse",
+        "tr": "Oyuncak Fare"
+      },
+      "palette": {
+        "n": "#D9A0A0",
+        "p": "#B0B7BF"
+      },
+      "pixels": [
+        "..........",
+        "...p......",
+        "..nnp.....",
+        "..ppppp...",
+        "..ppppp...",
+        ".ppppppp..",
+        "..pppppn.n",
+        "..pppp..nn",
+        "........n.",
+        ".........."
+      ]
+    },
+    {
+      "id": "scottish-fold-p06",
+      "title": {
+        "en": "Portrait",
+        "tr": "Portre"
+      },
+      "palette": {
+        "b": "#C9CDD2",
+        "d": "#6F767D",
+        "e": "#D9A441"
+      },
+      "pixels": [
+        "..........",
+        "..bbbbbb..",
+        ".bbdbbbbb.",
+        "bbbbbbbbbb",
+        "bbeebbeebb",
+        "bbeebbeebb",
+        "bbbbbbbbbb",
+        ".bbbbbbbb.",
+        "..bbbbbb..",
+        ".........."
+      ]
+    },
+    {
+      "id": "scottish-fold-p07",
+      "title": {
+        "en": "Owl Pose",
+        "tr": "Baykuş Duruşu"
+      },
+      "palette": {
+        "b": "#C9CDD2",
+        "e": "#D9A441",
+        "w": "#F2F2F2"
+      },
+      "pixels": [
+        "...bbbbbb...",
+        "..bbbbbbbb..",
+        "..beebbeeb..",
+        "..beebbeeb..",
+        "..bbebbebb..",
+        "..bbbbbbbb..",
+        "..bbbwwbbb..",
+        ".bbbwwwwbbb.",
+        ".bbbwwwwbbb.",
+        "..bbwwwwbb..",
+        "..bbwwwwbb..",
+        "...bbbbbb..."
+      ]
+    },
+    {
+      "id": "scottish-fold-p08",
+      "title": {
+        "en": "Nap Time",
+        "tr": "Şekerleme"
+      },
+      "palette": {
+        "b": "#C9CDD2",
+        "d": "#6F767D"
+      },
+      "pixels": [
+        "............",
+        ".....bbb....",
+        "..bbbbbbdb..",
+        ".bbbbbbddbb.",
+        "b...bbbbbbbb",
+        "bbbbbbbbbbbb",
+        ".bbbbbbbbbbd",
+        "..bbbbbbbbdd",
+        "...bbbbbbbd.",
+        "...dddddddd.",
+        "......dddd..",
+        "............"
+      ]
+    },
+    {
+      "id": "scottish-fold-p09",
+      "title": {
+        "en": "Lucky Cat",
+        "tr": "Şans Kedisi"
+      },
+      "palette": {
+        "b": "#C9CDD2",
+        "d": "#6F767D",
+        "e": "#D9A441",
+        "n": "#D9A0A0",
+        "o": "#7FB3D5",
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        ".........bb.",
+        "...dbbd..bb.",
+        "..bdbbdb.bb.",
+        ".bbebbebbbb.",
+        ".bbebbebbbb.",
+        "..bbbbbbbb..",
+        "..nnyynnbb..",
+        ".bbbbbbbb...",
+        ".bbbyybbb...",
+        ".bbyooybb...",
+        ".bbbyybbb...",
+        "...bbbb....."
+      ]
+    }
+  ]
+}

@@ -50,6 +50,25 @@ final class AppModel {
         breeds.filter { isCollected($0) }
     }
 
+    /// Türün 9 Altın bulmacası çözülünce Altın Kart kazanılır. Abonelik bitse de kart kalır.
+    func isGoldenCollected(_ chapter: Chapter) -> Bool {
+        let completed = progress.completedIDs
+        return chapter.card != nil && !chapter.premiumPuzzles.isEmpty
+            && chapter.premiumPuzzles.allSatisfy { completed.contains($0.id) }
+    }
+
+    var goldenBreeds: [Chapter] {
+        breeds.filter { isGoldenCollected($0) }
+    }
+
+    /// Koleksiyonda gösterilen kartlar: türün normal kartı ve (kazanıldıysa) hemen ardından Altın Kartı.
+    var collectedCards: [CardSelection] {
+        breeds.flatMap { chapter in
+            (isCollected(chapter) ? [CardSelection(chapter: chapter, isGolden: false)] : [])
+                + (isGoldenCollected(chapter) ? [CardSelection(chapter: chapter, isGolden: true)] : [])
+        }
+    }
+
     var hasUnmetBreeds: Bool {
         collectedBreeds.count < breeds.count
     }
@@ -63,9 +82,11 @@ final class AppModel {
         catalog.chapters.first { $0.id == id }
     }
 
-    /// Bölüm içindeki 1'den başlayan sıra numarası.
+    /// Bölüm içindeki 1'den başlayan sıra numarası (premium bulmacalarda kendi sırası).
     func number(of puzzle: Puzzle) -> Int {
-        (catalog.chapter(containing: puzzle.id)?.puzzles.firstIndex(of: puzzle) ?? 0) + 1
+        let chapter = catalog.chapter(containing: puzzle.id)
+        let list = catalog.isPremium(puzzle.id) ? chapter?.premiumPuzzles : chapter?.puzzles
+        return (list?.firstIndex(of: puzzle) ?? 0) + 1
     }
 
     func nextPuzzle(after puzzle: Puzzle) -> Puzzle? {
@@ -85,4 +106,12 @@ final class AppModel {
     func resetProgress() {
         progress.resetAll()
     }
+}
+
+/// Koleksiyonda seçilen kart: bir tür + normal mi Altın mı.
+struct CardSelection: Identifiable, Hashable {
+    let chapter: Chapter
+    let isGolden: Bool
+
+    var id: String { isGolden ? "\(chapter.id)#golden" : chapter.id }
 }

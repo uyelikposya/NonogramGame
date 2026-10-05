@@ -1,0 +1,210 @@
+{
+  "schemaVersion": 1,
+  "chapterID": "oriental-shorthair",
+  "puzzles": [
+    {
+      "id": "oriental-shorthair-p01",
+      "title": {
+        "en": "Golden Paw",
+        "tr": "Altın Pati"
+      },
+      "palette": {
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        ".yy..yy.",
+        ".yy..yy.",
+        "........",
+        "yy....yy",
+        "yy.yy.yy",
+        "..yyyy..",
+        ".yyyyyy.",
+        "..yyyy.."
+      ]
+    },
+    {
+      "id": "oriental-shorthair-p02",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi"
+      },
+      "palette": {
+        "n": "#9C6B5A",
+        "w": "#CFE3D6"
+      },
+      "pixels": [
+        ".nn..nn.",
+        "nwnnnnnn",
+        "nnnnnnnn",
+        "nnnnnnnn",
+        ".nnnnnn.",
+        "..nnnn..",
+        "...nn...",
+        "........"
+      ]
+    },
+    {
+      "id": "oriental-shorthair-p03",
+      "title": {
+        "en": "Fish Snack",
+        "tr": "Balık Atıştırması"
+      },
+      "palette": {
+        "o": "#E07A5F"
+      },
+      "pixels": [
+        "........",
+        "..oo....",
+        "ooooo..o",
+        "o.oooooo",
+        "oooooooo",
+        "ooooo..o",
+        "..oo....",
+        "........"
+      ]
+    },
+    {
+      "id": "oriental-shorthair-p04",
+      "title": {
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak"
+      },
+      "palette": {
+        "o": "#E07A5F"
+      },
+      "pixels": [
+        ".....oo...",
+        "...oooooo.",
+        "..ooo.oo.o",
+        "..ooo...oo",
+        "..oo...ooo",
+        "..o..oo.oo",
+        "....oooooo",
+        "...oooooo.",
+        "..o.......",
+        ".........."
+      ]
+    },
+    {
+      "id": "oriental-shorthair-p05",
+      "title": {
+        "en": "Toy Mouse",
+        "tr": "Oyuncak Fare"
+      },
+      "palette": {
+        "n": "#9C6B5A",
+        "p": "#9AA5B1"
+      },
+      "pixels": [
+        "..........",
+        "...p......",
+        "..nnp.....",
+        "..ppppp...",
+        "..ppppp...",
+        ".ppppppp..",
+        "..pppppn.n",
+        "..pppp..nn",
+        "........n.",
+        ".........."
+      ]
+    },
+    {
+      "id": "oriental-shorthair-p06",
+      "title": {
+        "en": "Portrait",
+        "tr": "Portre"
+      },
+      "palette": {
+        "b": "#3F7A5A",
+        "e": "#8BC34A"
+      },
+      "pixels": [
+        "..........",
+        "bb......bb",
+        "bbbbbbbbbb",
+        "bbbbbbbbbb",
+        ".bbbbbbbb.",
+        ".beebbeeb.",
+        ".bbebbebb.",
+        ".bbbbbbbb.",
+        "..bbbbbb..",
+        "...bbbb..."
+      ]
+    },
+    {
+      "id": "oriental-shorthair-p07",
+      "title": {
+        "en": "Strut",
+        "tr": "Salınarak Yürüyüş"
+      },
+      "palette": {
+        "b": "#3F7A5A"
+      },
+      "pixels": [
+        "............",
+        "b....b.....b",
+        "bb..bb.....b",
+        "bbbbbb.....b",
+        "bbbbbbbb..b.",
+        "..bbbbbbbbb.",
+        "...bbbbbbb..",
+        "....bbbbbb..",
+        "....bb..bb..",
+        "...b.b..bb..",
+        "...b.b...b..",
+        "............"
+      ]
+    },
+    {
+      "id": "oriental-shorthair-p08",
+      "title": {
+        "en": "Nap Time",
+        "tr": "Şekerleme"
+      },
+      "palette": {
+        "b": "#3F7A5A"
+      },
+      "pixels": [
+        "............",
+        "............",
+        "bb...bb.....",
+        "bbbbbbbbbb..",
+        "bbbbbbbbbbb.",
+        "bbbbbbbbbbbb",
+        ".b...bbbbbbb",
+        "..bbbbbbbbbb",
+        "..bbbbbbbbbb",
+        "....bbbbbbb.",
+        "...bbbbbbbb.",
+        ".........b.."
+      ]
+    },
+    {
+      "id": "oriental-shorthair-p09",
+      "title": {
+        "en": "Lucky Cat",
+        "tr": "Şans Kedisi"
+      },
+      "palette": {
+        "b": "#3F7A5A",
+        "e": "#8BC34A",
+        "o": "#E07A5F",
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        "............",
+        ".bb.....bbb.",
+        ".bbbbbbbbbb.",
+        ".bbbbbbbbbb.",
+        "..bbebebbbb.",
+        "..bbebbbbb..",
+        "...bbbbbbb..",
+        "..bbbybbb...",
+        "..bbbbbbb...",
+        "..bbooobb...",
+        "..bbyyybb...",
+        "...bbbbb...."
+      ]
+    }
+  ]
+}

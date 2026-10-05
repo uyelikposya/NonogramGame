@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "chapterID": "siamese",
+  "puzzles": [
+    {
+      "id": "siamese-p01",
+      "title": {
+        "en": "Golden Paw",
+        "tr": "Altın Pati"
+      },
+      "palette": {
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        ".yy..yy.",
+        ".yy..yy.",
+        "........",
+        "yy....yy",
+        "yy.yy.yy",
+        "..yyyy..",
+        ".yyyyyy.",
+        "..yyyy.."
+      ]
+    },
+    {
+      "id": "siamese-p02",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi"
+      },
+      "palette": {
+        "n": "#D99A9A",
+        "w": "#FBF8F3"
+      },
+      "pixels": [
+        ".nn..nn.",
+        "nwnnnnnn",
+        "nnnnnnnn",
+        "nnnnnnnn",
+        ".nnnnnn.",
+        "..nnnn..",
+        "...nn...",
+        "........"
+      ]
+    },
+    {
+      "id": "siamese-p03",
+      "title": {
+        "en": "Fish Snack",
+        "tr": "Balık Atıştırması"
+      },
+      "palette": {
+        "o": "#E07A5F"
+      },
+      "pixels": [
+        "........",
+        "..oo....",
+        "ooooo..o",
+        "o.oooooo",
+        "oooooooo",
+        "ooooo..o",
+        "..oo....",
+        "........"
+      ]
+    },
+    {
+      "id": "siamese-p04",
+      "title": {
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak"
+      },
+      "palette": {
+        "o": "#E07A5F"
+      },
+      "pixels": [
+        "....oooo..",
+        "...o.oooo.",
+        "..ooo.o...",
+        "..ooo..ooo",
+        "..oo.o.ooo",
+        "..o.ooo.oo",
+        "...oooo.o.",
+        "...ooooo..",
+        "ooo.......",
+        ".........."
+      ]
+    },
+    {
+      "id": "siamese-p05",
+      "title": {
+        "en": "Toy Mouse",
+        "tr": "Oyuncak Fare"
+      },
+      "palette": {
+        "n": "#D99A9A",
+        "p": "#9AA5B1"
+      },
+      "pixels": [
+        "..........",
+        "...p......",
+        "..nnp.....",
+        "..ppppp...",
+        "..ppppp...",
+        ".ppppppp..",
+        "..pppppn.n",
+        "..pppp..nn",
+        "........n.",
+        ".........."
+      ]
+    },
+    {
+      "id": "siamese-p06",
+      "title": {
+        "en": "Portrait",
+        "tr": "Portre"
+      },
+      "palette": {
+        "b": "#F2E3CF",
+        "d": "#4A3B35",
+        "e": "#5B9BD5"
+      },
+      "pixels": [
+        "..........",
+        "dd......dd",
+        "ddbbbbbbdd",
+        "ddbbbbbbbd",
+        ".bbbbbbbb.",
+        ".beeddeeb.",
+        ".bbedddbb.",
+        ".bbddddbb.",
+        "..bddddb..",
+        "...bbbb..."
+      ]
+    },
+    {
+      "id": "siamese-p07",
+      "title": {
+        "en": "Strut",
+        "tr": "Salınarak Yürüyüş"
+      },
+      "palette": {
+        "b": "#F2E3CF",
+        "d": "#4A3B35"
+      },
+      "pixels": [
+        "............",
+        "d....d.....d",
+        "dd..dd.....d",
+        "dddddd.....d",
+        "ddddddbb..d.",
+        "..bbbbbbbbd.",
+        "...bbbbbbb..",
+        "....ddbbdd..",
+        "....dd..dd..",
+        "...d.d..dd..",
+        "...d.d...d..",
+        "............"
+      ]
+    },
+    {
+      "id": "siamese-p08",
+      "title": {
+        "en": "Nap Time",
+        "tr": "Şekerleme"
+      },
+      "palette": {
+        "b": "#F2E3CF",
+        "d": "#4A3B35"
+      },
+      "pixels": [
+        "............",
+        "............",
+        "dd...dd.....",
+        "dddbdddbbb..",
+        "dddbdddbbbb.",
+        "dddddddbbbbb",
+        ".b...bbbbbbb",
+        "..bbbbbbbbbd",
+        "..bbbbbbbbbd",
+        "....bbbbbbd.",
+        "...dddddddd.",
+        ".........d.."
+      ]
+    },
+    {
+      "id": "siamese-p09",
+      "title": {
+        "en": "Lucky Cat",
+        "tr": "Şans Kedisi"
+      },
+      "palette": {
+        "b": "#F2E3CF",
+        "d": "#4A3B35",
+        "e": "#5B9BD5",
+        "o": "#E07A5F",
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        "............",
+        ".dd.....dbb.",
+        ".dddbbbddbb.",
+        ".dddbbbddbb.",
+        "..bbebebbbb.",
+        "..bbebbbbb..",
+        "...bbbbbbb..",
+        "..bbbybbb...",
+        "..bbbbbbb...",
+        "..bbooobb...",
+        "..bbyyybb...",
+        "...bbbbb...."
+      ]
+    }
+  ]
+}

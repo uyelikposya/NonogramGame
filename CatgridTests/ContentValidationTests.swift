@@ -22,6 +22,22 @@ final class ContentValidationTests: XCTestCase {
         }
     }
 
+    /// Her türde abonelere özel 9 Altın bulmaca: üçer tane 8x8, 10x10, 12x12; biri pati.
+    func testEveryBreedHasNineGoldenPuzzles() {
+        for breed in catalog.chapters.filter({ $0.kind == .breed }) {
+            let premium = breed.premiumPuzzles
+            XCTAssertEqual(premium.count, 9, "\(breed.id) 9 premium bulmaca içermeli")
+            XCTAssertTrue(premium.allSatisfy { $0.rows == $0.columns }, "\(breed.id) premium bulmacalar kare olmalı")
+            XCTAssertEqual(premium.map(\.rows).sorted(), [8, 8, 8, 10, 10, 10, 12, 12, 12], breed.id)
+            XCTAssertTrue(premium.contains { $0.title.translations["en"] == "Golden Paw" }, "\(breed.id) pati yok")
+            for puzzle in premium {
+                XCTAssertTrue(catalog.isPremium(puzzle.id))
+                XCTAssertTrue(PuzzleSolver.isLogicallySolvable(puzzle), "\(puzzle.id) mantıkla çözülemiyor")
+                XCTAssertNotNil(puzzle.title.translations["tr"], "\(puzzle.id) başlığı Türkçe değil")
+            }
+        }
+    }
+
     /// Telefonda yakınlaştırmasız rahat oynanması için en büyük tahta 15x15.
     func testBoardsGrowUpTo15() {
         let sides = catalog.orderedPuzzles.map { max($0.rows, $0.columns) }

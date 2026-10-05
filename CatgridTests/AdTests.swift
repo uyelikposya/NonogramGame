@@ -33,6 +33,19 @@ final class AdPolicyTests: XCTestCase {
         XCTAssertFalse(policy.isInterstitialDue(now: start.addingTimeInterval(30)))
         XCTAssertTrue(policy.isInterstitialDue(now: start.addingTimeInterval(AdPolicy.minimumInterval)))
     }
+
+    func testPremiumPromoAfterSecondAdThenEveryThird() {
+        let policy = makePolicy()
+        var promoAfter: [Int] = []
+        for ad in 1...8 {
+            policy.recordInterstitialShown()
+            if policy.isPremiumPromoDue {
+                promoAfter.append(ad)
+                policy.recordPremiumPromoShown()
+            }
+        }
+        XCTAssertEqual(promoAfter, [2, 5, 8])
+    }
 }
 
 @MainActor
@@ -57,6 +70,27 @@ final class AdCoordinatorTests: XCTestCase {
         await fulfillment(of: [shown], timeout: 2)
         XCTAssertEqual(navigations, 2)
         XCTAssertEqual(service.interstitialsShown, 1)
+        XCTAssertFalse(coordinator.isPremiumPromoPresented, "İlk reklamdan sonra tanıtım yok")
+    }
+
+    func testPremiumPromoOpensAfterSecondAd() async {
+        let service = NoAdService()
+        let policy = AdPolicy(defaults: UserDefaults(suiteName: "Promo-\(UUID().uuidString)")!)
+        var clock = Date(timeIntervalSinceReferenceDate: 0)
+        let coordinator = AdCoordinator(service: service, policy: policy, now: { clock })
+
+        for round in 1...2 {
+            coordinator.puzzleCompleted(isTutorial: false)
+            coordinator.puzzleCompleted(isTutorial: false)
+            let done = expectation(description: "reklam \(round)")
+            coordinator.continueAfterPuzzle { done.fulfill() }
+            await fulfillment(of: [done], timeout: 2)
+            clock.addTimeInterval(AdPolicy.minimumInterval)
+        }
+        // Tanıtım, devam eyleminden hemen sonra açılır
+        try? await Task.sleep(for: .milliseconds(50))
+        XCTAssertEqual(service.interstitialsShown, 2)
+        XCTAssertTrue(coordinator.isPremiumPromoPresented)
     }
 }
 
@@ -86,9 +120,9 @@ final class RemoveAdsTests: XCTestCase {
     @MainActor
     func testCachedSubscriptionStateIsRestoredOnLaunch() throws {
         let defaults = try XCTUnwrap(UserDefaults(suiteName: "Store-\(UUID().uuidString)"))
-        XCTAssertFalse(StoreManager(defaults: defaults).isAdsRemoved)
+        XCTAssertFalse(StoreManager(defaults: defaults).isPremium)
         defaults.set(true, forKey: StoreManager.cacheKey)
-        XCTAssertTrue(StoreManager(defaults: defaults).isAdsRemoved)
+        XCTAssertTrue(StoreManager(defaults: defaults).isPremium)
     }
 
     func testSubscriptionProductsAreConfiguredLocally() throws {

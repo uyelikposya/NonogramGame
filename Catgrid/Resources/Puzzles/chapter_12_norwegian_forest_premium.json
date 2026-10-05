@@ -1,0 +1,215 @@
+{
+  "schemaVersion": 1,
+  "chapterID": "norwegian-forest",
+  "puzzles": [
+    {
+      "id": "norwegian-forest-p01",
+      "title": {
+        "en": "Golden Paw",
+        "tr": "Altın Pati"
+      },
+      "palette": {
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        ".yy..yy.",
+        ".yy..yy.",
+        "........",
+        "yy....yy",
+        "yy.yy.yy",
+        "..yyyy..",
+        ".yyyyyy.",
+        "..yyyy.."
+      ]
+    },
+    {
+      "id": "norwegian-forest-p02",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi"
+      },
+      "palette": {
+        "n": "#B5654A",
+        "w": "#F3EDE4"
+      },
+      "pixels": [
+        ".nn..nn.",
+        "nwnnnnnn",
+        "nnnnnnnn",
+        "nnnnnnnn",
+        ".nnnnnn.",
+        "..nnnn..",
+        "...nn...",
+        "........"
+      ]
+    },
+    {
+      "id": "norwegian-forest-p03",
+      "title": {
+        "en": "Fish Snack",
+        "tr": "Balık Atıştırması"
+      },
+      "palette": {
+        "o": "#6B4F3A"
+      },
+      "pixels": [
+        "........",
+        "..oo....",
+        "ooooo..o",
+        "o.oooooo",
+        "oooooooo",
+        "ooooo..o",
+        "..oo....",
+        "........"
+      ]
+    },
+    {
+      "id": "norwegian-forest-p04",
+      "title": {
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak"
+      },
+      "palette": {
+        "o": "#6B4F3A"
+      },
+      "pixels": [
+        ".....o....",
+        "...ooooo..",
+        "..oo.ooo..",
+        "..ooo...o.",
+        ".ooo..oooo",
+        "..o.oo.oo.",
+        "...oooo.o.",
+        "..oooooo..",
+        "oo........",
+        ".........."
+      ]
+    },
+    {
+      "id": "norwegian-forest-p05",
+      "title": {
+        "en": "Toy Mouse",
+        "tr": "Oyuncak Fare"
+      },
+      "palette": {
+        "n": "#B5654A",
+        "p": "#C8B6A6"
+      },
+      "pixels": [
+        "..........",
+        "...p......",
+        "..nnp.....",
+        "..ppppp...",
+        "..ppppp...",
+        ".ppppppp..",
+        "..pppppn.n",
+        "..pppp..nn",
+        "........n.",
+        ".........."
+      ]
+    },
+    {
+      "id": "norwegian-forest-p06",
+      "title": {
+        "en": "Portrait",
+        "tr": "Portre"
+      },
+      "palette": {
+        "b": "#B07A4A",
+        "e": "#8DB04A",
+        "w": "#F3EDE4"
+      },
+      "pixels": [
+        "..........",
+        "..........",
+        ".bbbbbbbb.",
+        ".bbbbbbbb.",
+        ".bbbbbbbb.",
+        ".bbebbebb.",
+        ".bbebbebb.",
+        "bbbbwwbbbb",
+        "bbbwwwwbbb",
+        "...wwww..."
+      ]
+    },
+    {
+      "id": "norwegian-forest-p07",
+      "title": {
+        "en": "Forest Guardian",
+        "tr": "Orman Bekçisi"
+      },
+      "palette": {
+        "b": "#B07A4A",
+        "d": "#6B4528",
+        "g": "#2F6B3B",
+        "o": "#6B4F3A"
+      },
+      "pixels": [
+        "............",
+        "........g...",
+        "........gg..",
+        ".b..b..ggg..",
+        "bbbbb..gggg.",
+        ".bbbb.ggggg.",
+        "..bb...ggg..",
+        "..bbdb.dgg..",
+        ".bbddbgdggg.",
+        ".bbbbbgdggg.",
+        "..bbbbddo...",
+        "..bbbdd.o..."
+      ]
+    },
+    {
+      "id": "norwegian-forest-p08",
+      "title": {
+        "en": "Nap Time",
+        "tr": "Şekerleme"
+      },
+      "palette": {
+        "b": "#B07A4A",
+        "d": "#6B4528"
+      },
+      "pixels": [
+        "............",
+        "............",
+        "b...b.......",
+        "bbb.bbbbbb..",
+        "bbbbbbbbbbb.",
+        "bbbbbbbbbbb.",
+        "b...bbbbbbbb",
+        ".bbbbbbbbbbd",
+        "..bbbbbbbbdd",
+        "...bbbbbbdd.",
+        "...dddddddd.",
+        "...ddddddd.."
+      ]
+    },
+    {
+      "id": "norwegian-forest-p09",
+      "title": {
+        "en": "Lucky Cat",
+        "tr": "Şans Kedisi"
+      },
+      "palette": {
+        "b": "#B07A4A",
+        "d": "#6B4528",
+        "e": "#8DB04A",
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        "............",
+        ".b......b...",
+        ".bb....bbbb.",
+        ".bbdbbdbbbb.",
+        ".bbebbebbbb.",
+        ".bbebbebbbb.",
+        "..bbbbbbbb..",
+        "..bbyybbb...",
+        ".bbbbbbbb...",
+        ".bbyyyybb...",
+        ".bbyyyybb...",
+        "...bbbbb...."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,216 @@
+{
+  "schemaVersion": 1,
+  "chapterID": "turkish-angora",
+  "puzzles": [
+    {
+      "id": "turkish-angora-p01",
+      "title": {
+        "en": "Golden Paw",
+        "tr": "Altın Pati"
+      },
+      "palette": {
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        ".yy..yy.",
+        ".yy..yy.",
+        "........",
+        "yy....yy",
+        "yy.yy.yy",
+        "..yyyy..",
+        ".yyyyyy.",
+        "..yyyy.."
+      ]
+    },
+    {
+      "id": "turkish-angora-p02",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi"
+      },
+      "palette": {
+        "n": "#F2A3B0",
+        "w": "#FBF8F3"
+      },
+      "pixels": [
+        ".nn..nn.",
+        "nwnnnnnn",
+        "nnnnnnnn",
+        "nnnnnnnn",
+        ".nnnnnn.",
+        "..nnnn..",
+        "...nn...",
+        "........"
+      ]
+    },
+    {
+      "id": "turkish-angora-p03",
+      "title": {
+        "en": "Fish Snack",
+        "tr": "Balık Atıştırması"
+      },
+      "palette": {
+        "o": "#D1495B"
+      },
+      "pixels": [
+        "........",
+        "..oo....",
+        "ooooo..o",
+        "o.oooooo",
+        "oooooooo",
+        "ooooo..o",
+        "..oo....",
+        "........"
+      ]
+    },
+    {
+      "id": "turkish-angora-p04",
+      "title": {
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak"
+      },
+      "palette": {
+        "o": "#D1495B"
+      },
+      "pixels": [
+        "....oooo..",
+        "...oooooo.",
+        "...oo.o..o",
+        "..ooo..ooo",
+        "..oo...ooo",
+        ".....oo.oo",
+        "....ooooo.",
+        "...ooooo..",
+        "..o.......",
+        ".........."
+      ]
+    },
+    {
+      "id": "turkish-angora-p05",
+      "title": {
+        "en": "Toy Mouse",
+        "tr": "Oyuncak Fare"
+      },
+      "palette": {
+        "n": "#F2A3B0",
+        "p": "#9AA5B1"
+      },
+      "pixels": [
+        "..........",
+        "...p......",
+        "..nnp.....",
+        "..ppppp...",
+        "..ppppp...",
+        ".ppppppp..",
+        "..pppppn.n",
+        "..pppp..nn",
+        "........n.",
+        ".........."
+      ]
+    },
+    {
+      "id": "turkish-angora-p06",
+      "title": {
+        "en": "Portrait",
+        "tr": "Portre"
+      },
+      "palette": {
+        "b": "#ECE8E1",
+        "e": "#4F86C6",
+        "f": "#E1B33F"
+      },
+      "pixels": [
+        "..........",
+        ".b......b.",
+        ".bbbbbbbb.",
+        ".bbbbbbbb.",
+        ".bbebbfbb.",
+        ".bbebbffb.",
+        "bbbbbbbbbb",
+        "bbbbbbbbbb",
+        "...bbbb...",
+        ".........."
+      ]
+    },
+    {
+      "id": "turkish-angora-p07",
+      "title": {
+        "en": "Silk Ribbon",
+        "tr": "İpek Kurdele"
+      },
+      "palette": {
+        "b": "#ECE8E1",
+        "e": "#4F86C6",
+        "f": "#E1B33F",
+        "n": "#F2A3B0",
+        "o": "#D1495B"
+      },
+      "pixels": [
+        "............",
+        "..b......b..",
+        ".bbbbbbbbbb.",
+        ".bbbbbbbbbb.",
+        ".bbbbbbbbbb.",
+        ".bbeebbffbb.",
+        "bbbeebbffbbb",
+        "bbbbbbbbbbbb",
+        "bbbbbbbbbbbb",
+        "...nnoonn...",
+        "...nn..nn...",
+        "............"
+      ]
+    },
+    {
+      "id": "turkish-angora-p08",
+      "title": {
+        "en": "Nap Time",
+        "tr": "Şekerleme"
+      },
+      "palette": {
+        "b": "#ECE8E1"
+      },
+      "pixels": [
+        "............",
+        "b...bbbb....",
+        "bbbbbbbbbb..",
+        "bbbbbbbbbbb.",
+        "bbbbbbbbbbb.",
+        "b...bbbbbbbb",
+        ".bbbbbbbbbbb",
+        ".bbbbbbbbbbb",
+        "..bbbbbbbbbb",
+        "...bbbbbbbb.",
+        "...bbbbbbb..",
+        "....bbbbbb.."
+      ]
+    },
+    {
+      "id": "turkish-angora-p09",
+      "title": {
+        "en": "Lucky Cat",
+        "tr": "Şans Kedisi"
+      },
+      "palette": {
+        "b": "#ECE8E1",
+        "e": "#4F86C6",
+        "f": "#E1B33F",
+        "n": "#F2A3B0",
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        "............",
+        ".bb....bbbb.",
+        ".bbbbbbbbbb.",
+        ".bbbbbbbbbb.",
+        ".bbebbfbbbb.",
+        "..bbbbbbbb..",
+        "..nbnnbnbb..",
+        ".bbbbybbb...",
+        ".bbbbbbbb...",
+        ".bbyyyybb...",
+        "..bbyybb....",
+        "...bbbb....."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 1,
+  "chapterID": "sphynx",
+  "puzzles": [
+    {
+      "id": "sphynx-p01",
+      "title": {
+        "en": "Golden Paw",
+        "tr": "Altın Pati"
+      },
+      "palette": {
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        ".yy..yy.",
+        ".yy..yy.",
+        "........",
+        "yy....yy",
+        "yy.yy.yy",
+        "..yyyy..",
+        ".yyyyyy.",
+        "..yyyy.."
+      ]
+    },
+    {
+      "id": "sphynx-p02",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi"
+      },
+      "palette": {
+        "n": "#D9827A",
+        "w": "#F6DDD4"
+      },
+      "pixels": [
+        ".nn..nn.",
+        "nwnnnnnn",
+        "nnnnnnnn",
+        "nnnnnnnn",
+        ".nnnnnn.",
+        "..nnnn..",
+        "...nn...",
+        "........"
+      ]
+    },
+    {
+      "id": "sphynx-p03",
+      "title": {
+        "en": "Fish Snack",
+        "tr": "Balık Atıştırması"
+      },
+      "palette": {
+        "o": "#5B7DB1"
+      },
+      "pixels": [
+        "........",
+        "..oo....",
+        "ooooo..o",
+        "o.oooooo",
+        "oooooooo",
+        "ooooo..o",
+        "..oo....",
+        "........"
+      ]
+    },
+    {
+      "id": "sphynx-p04",
+      "title": {
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak"
+      },
+      "palette": {
+        "o": "#5B7DB1"
+      },
+      "pixels": [
+        ".....ooo..",
+        "...oooooo.",
+        "...oo.oo.o",
+        "..ooo...oo",
+        "..oo...ooo",
+        ".....oo.oo",
+        "....ooooo.",
+        "...ooooo..",
+        ".oo.......",
+        ".........."
+      ]
+    },
+    {
+      "id": "sphynx-p05",
+      "title": {
+        "en": "Toy Mouse",
+        "tr": "Oyuncak Fare"
+      },
+      "palette": {
+        "n": "#D9827A",
+        "p": "#F2C14E"
+      },
+      "pixels": [
+        "..........",
+        "...p......",
+        "..nnp.....",
+        "..ppppp...",
+        "..ppppp...",
+        ".ppppppp..",
+        "..pppppn.n",
+        "..pppp..nn",
+        "........n.",
+        ".........."
+      ]
+    },
+    {
+      "id": "sphynx-p06",
+      "title": {
+        "en": "Portrait",
+        "tr": "Portre"
+      },
+      "palette": {
+        "b": "#E9B8A7",
+        "e": "#7FB069"
+      },
+      "pixels": [
+        "..........",
+        "bb......bb",
+        "bbbbbbbbbb",
+        "bbbbbbbbbb",
+        ".bbbbbbbb.",
+        ".beebbeeb.",
+        ".bbebbbbb.",
+        ".bbbbbbbb.",
+        "..bbbbbb..",
+        "...bbbb..."
+      ]
+    },
+    {
+      "id": "sphynx-p07",
+      "title": {
+        "en": "Cozy Sweater",
+        "tr": "Sıcak Kazak"
+      },
+      "palette": {
+        "b": "#E9B8A7",
+        "e": "#7FB069",
+        "o": "#5B7DB1",
+        "p": "#F2C14E"
+      },
+      "pixels": [
+        ".b........b.",
+        ".b........b.",
+        ".bbbbbbbbbb.",
+        "bbbbbbbbbbbb",
+        ".bbbbbbbbbb.",
+        ".bbeebbeebb.",
+        ".bbeebbeebb.",
+        ".bbbbbbbbbb.",
+        "..bbbbbbbb..",
+        "..obbbbbbo..",
+        ".poooooooop.",
+        ".oooooooooo."
+      ]
+    },
+    {
+      "id": "sphynx-p08",
+      "title": {
+        "en": "Nap Time",
+        "tr": "Şekerleme"
+      },
+      "palette": {
+        "b": "#E9B8A7"
+      },
+      "pixels": [
+        "............",
+        "............",
+        "bb...bb.....",
+        "bbbbbbbbbb..",
+        "bbbbbbbbbbb.",
+        "bbbbbbbbbbbb",
+        ".b...bbbbbbb",
+        "..bbbbbbbbbb",
+        "..bbbbbbbbbb",
+        "....bbbbbbb.",
+        "...bbbbbbbb.",
+        ".........b.."
+      ]
+    },
+    {
+      "id": "sphynx-p09",
+      "title": {
+        "en": "Lucky Cat",
+        "tr": "Şans Kedisi"
+      },
+      "palette": {
+        "b": "#E9B8A7",
+        "e": "#7FB069",
+        "o": "#5B7DB1",
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        "............",
+        ".bb.....bbb.",
+        ".bbbbbbbbbb.",
+        ".bbbbbbbbbb.",
+        "..bbebebbbb.",
+        "..bbebbbbb..",
+        "...bbbbbbb..",
+        "..bbbybbb...",
+        "..bbbbbbb...",
+        "..bbooobb...",
+        "..bbyyybb...",
+        "...bbbbb...."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,215 @@
+{
+  "schemaVersion": 1,
+  "chapterID": "siberian",
+  "puzzles": [
+    {
+      "id": "siberian-p01",
+      "title": {
+        "en": "Golden Paw",
+        "tr": "Altın Pati"
+      },
+      "palette": {
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        ".yy..yy.",
+        ".yy..yy.",
+        "........",
+        "yy....yy",
+        "yy.yy.yy",
+        "..yyyy..",
+        ".yyyyyy.",
+        "..yyyy.."
+      ]
+    },
+    {
+      "id": "siberian-p02",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi"
+      },
+      "palette": {
+        "n": "#B5654A",
+        "w": "#F1EBE2"
+      },
+      "pixels": [
+        ".nn..nn.",
+        "nwnnnnnn",
+        "nnnnnnnn",
+        "nnnnnnnn",
+        ".nnnnnn.",
+        "..nnnn..",
+        "...nn...",
+        "........"
+      ]
+    },
+    {
+      "id": "siberian-p03",
+      "title": {
+        "en": "Fish Snack",
+        "tr": "Balık Atıştırması"
+      },
+      "palette": {
+        "o": "#6B4F3A"
+      },
+      "pixels": [
+        "........",
+        "..oo....",
+        "ooooo..o",
+        "o.oooooo",
+        "oooooooo",
+        "ooooo..o",
+        "..oo....",
+        "........"
+      ]
+    },
+    {
+      "id": "siberian-p04",
+      "title": {
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak"
+      },
+      "palette": {
+        "o": "#6B4F3A"
+      },
+      "pixels": [
+        "..........",
+        "....oooo..",
+        "...oooooo.",
+        "...oo.o..o",
+        "..ooo..ooo",
+        "...o.oo.oo",
+        "....ooo.oo",
+        "...oooooo.",
+        "......o...",
+        ".........."
+      ]
+    },
+    {
+      "id": "siberian-p05",
+      "title": {
+        "en": "Toy Mouse",
+        "tr": "Oyuncak Fare"
+      },
+      "palette": {
+        "n": "#B5654A",
+        "p": "#C8B6A6"
+      },
+      "pixels": [
+        "..........",
+        "...p......",
+        "..nnp.....",
+        "..ppppp...",
+        "..ppppp...",
+        ".ppppppp..",
+        "..pppppn.n",
+        "..pppp..nn",
+        "........n.",
+        ".........."
+      ]
+    },
+    {
+      "id": "siberian-p06",
+      "title": {
+        "en": "Portrait",
+        "tr": "Portre"
+      },
+      "palette": {
+        "b": "#A58B6F",
+        "e": "#8DB04A",
+        "w": "#F1EBE2"
+      },
+      "pixels": [
+        "..........",
+        "..........",
+        ".b..bb..b.",
+        ".bbbbbbbb.",
+        ".bbbbbbbb.",
+        ".bbebbebb.",
+        "bbbebbebbb",
+        "bbbbwwbbbb",
+        "b.bwwwwb.b",
+        "...wwww..."
+      ]
+    },
+    {
+      "id": "siberian-p07",
+      "title": {
+        "en": "Forest Guardian",
+        "tr": "Orman Bekçisi"
+      },
+      "palette": {
+        "b": "#A58B6F",
+        "d": "#5E4B3A",
+        "g": "#2F6B3B",
+        "o": "#6B4F3A"
+      },
+      "pixels": [
+        "............",
+        "........g...",
+        "........gg..",
+        ".b..b..ggg..",
+        "bbbbb..gggg.",
+        ".bbbb.ggggg.",
+        "..bb...ggg..",
+        "..bbdb.dgg..",
+        ".bbddbgdggg.",
+        ".bbbbbgdggg.",
+        "..bbbbddo...",
+        "..bbbdd.o..."
+      ]
+    },
+    {
+      "id": "siberian-p08",
+      "title": {
+        "en": "Nap Time",
+        "tr": "Şekerleme"
+      },
+      "palette": {
+        "b": "#A58B6F",
+        "d": "#5E4B3A"
+      },
+      "pixels": [
+        "............",
+        "............",
+        "b...b.......",
+        "bbb.bbbbbb..",
+        "bbbbbbbbbbb.",
+        "bbbbbbbbbbb.",
+        "b...bbbbbbbb",
+        ".bbbbbbbbbbd",
+        "..bbbbbbbbdd",
+        "...bbbbbbdd.",
+        "...dddddddd.",
+        "...ddddddd.."
+      ]
+    },
+    {
+      "id": "siberian-p09",
+      "title": {
+        "en": "Lucky Cat",
+        "tr": "Şans Kedisi"
+      },
+      "palette": {
+        "b": "#A58B6F",
+        "d": "#5E4B3A",
+        "e": "#8DB04A",
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        "............",
+        ".b......b...",
+        ".bb....bbbb.",
+        ".bbdbbdbbbb.",
+        ".bbebbebbbb.",
+        ".bbebbebbbb.",
+        "..bbbbbbbb..",
+        "..bbyybbb...",
+        ".bbbbbbbb...",
+        ".bbyyyybb...",
+        ".bbyyyybb...",
+        "...bbbbb...."
+      ]
+    }
+  ]
+}

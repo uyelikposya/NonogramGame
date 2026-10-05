@@ -12,6 +12,7 @@ struct RootView: View {
 
     var body: some View {
         @Bindable var router = router
+        @Bindable var ads = ads
         NavigationStack(path: $router.path) {
             HomeView()
                 .navigationDestination(for: Route.self) { route in
@@ -36,7 +37,12 @@ struct RootView: View {
         // Onay formu, izleme izni ve reklam SDK'sı; ekran çizildikten sonra
         .task { await ads.start() }
         .task { await store.start() }
-        .onChange(of: store.isAdsRemoved, initial: true) { _, removed in
+        // Birkaç reklamdan sonra Premium tanıtımı
+        .sheet(isPresented: $ads.isPremiumPromoPresented) {
+            PremiumPaywall(isPromo: true)
+                .environment(\.appTheme, themeManager.theme(for: colorScheme))
+        }
+        .onChange(of: store.isPremium, initial: true) { _, removed in
             ads.interstitialsDisabled = removed
         }
         .onChange(of: scenePhase) { _, phase in

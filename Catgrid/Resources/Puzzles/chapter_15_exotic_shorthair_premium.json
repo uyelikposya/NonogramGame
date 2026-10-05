@@ -1,0 +1,217 @@
+{
+  "schemaVersion": 1,
+  "chapterID": "exotic-shorthair",
+  "puzzles": [
+    {
+      "id": "exotic-shorthair-p01",
+      "title": {
+        "en": "Golden Paw",
+        "tr": "Altın Pati"
+      },
+      "palette": {
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        ".yy..yy.",
+        ".yy..yy.",
+        "........",
+        "yy....yy",
+        "yy.yy.yy",
+        "..yyyy..",
+        ".yyyyyy.",
+        "..yyyy.."
+      ]
+    },
+    {
+      "id": "exotic-shorthair-p02",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi"
+      },
+      "palette": {
+        "n": "#D98A7A",
+        "w": "#F7E7CF"
+      },
+      "pixels": [
+        ".nn..nn.",
+        "nwnnnnnn",
+        "nnnnnnnn",
+        "nnnnnnnn",
+        ".nnnnnn.",
+        "..nnnn..",
+        "...nn...",
+        "........"
+      ]
+    },
+    {
+      "id": "exotic-shorthair-p03",
+      "title": {
+        "en": "Fish Snack",
+        "tr": "Balık Atıştırması"
+      },
+      "palette": {
+        "o": "#7A9E7E"
+      },
+      "pixels": [
+        "........",
+        "..oo....",
+        "ooooo..o",
+        "o.oooooo",
+        "oooooooo",
+        "ooooo..o",
+        "..oo....",
+        "........"
+      ]
+    },
+    {
+      "id": "exotic-shorthair-p04",
+      "title": {
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak"
+      },
+      "palette": {
+        "o": "#7A9E7E"
+      },
+      "pixels": [
+        ".....oo...",
+        "...oooooo.",
+        "..oo.ooo..",
+        "..ooo...oo",
+        "..oo.o.ooo",
+        "..o.ooo.oo",
+        "...oooo.o.",
+        "...ooooo..",
+        "ooo.......",
+        ".........."
+      ]
+    },
+    {
+      "id": "exotic-shorthair-p05",
+      "title": {
+        "en": "Toy Mouse",
+        "tr": "Oyuncak Fare"
+      },
+      "palette": {
+        "n": "#D98A7A",
+        "p": "#E9C46A"
+      },
+      "pixels": [
+        "..........",
+        "...p......",
+        "..nnp.....",
+        "..ppppp...",
+        "..ppppp...",
+        ".ppppppp..",
+        "..pppppn.n",
+        "..pppp..nn",
+        "........n.",
+        ".........."
+      ]
+    },
+    {
+      "id": "exotic-shorthair-p06",
+      "title": {
+        "en": "Portrait",
+        "tr": "Portre"
+      },
+      "palette": {
+        "b": "#E8B26A",
+        "d": "#C47A2C",
+        "e": "#B5652A"
+      },
+      "pixels": [
+        "..........",
+        "...bbbb...",
+        ".bbdbbbbb.",
+        "bbbdbbbbbb",
+        "bbeebbeebb",
+        "bbeebbeebb",
+        "bbbbbbbbbb",
+        ".bbbbbbbb.",
+        "...bbbb...",
+        ".........."
+      ]
+    },
+    {
+      "id": "exotic-shorthair-p07",
+      "title": {
+        "en": "Teddy Face",
+        "tr": "Oyuncak Ayı Yüzü"
+      },
+      "palette": {
+        "b": "#E8B26A",
+        "d": "#C47A2C",
+        "e": "#B5652A",
+        "w": "#F7E7CF"
+      },
+      "pixels": [
+        "............",
+        ".....bb.....",
+        ".bbbbbbbbbb.",
+        "bbbbbbbbdbbb",
+        "bbbbbbbbdbbb",
+        "bbeeebbeeebb",
+        "bbbebbbbebbb",
+        "bbbbbwwbbbbb",
+        ".bbbwwwwbbb.",
+        "..bbbwwbbb..",
+        "....bbbb....",
+        "............"
+      ]
+    },
+    {
+      "id": "exotic-shorthair-p08",
+      "title": {
+        "en": "Nap Time",
+        "tr": "Şekerleme"
+      },
+      "palette": {
+        "b": "#E8B26A",
+        "d": "#C47A2C"
+      },
+      "pixels": [
+        "............",
+        "......bb....",
+        "bbbbbbbbbb..",
+        "bbbbbbbddbb.",
+        "bbbbbbbbdbbb",
+        ".bbbbbbbbbbb",
+        ".bbbbbbbbbbd",
+        "..bbbbbbbbdd",
+        "...bbbbbbbd.",
+        "...dddddddd.",
+        ".....ddddd..",
+        "............"
+      ]
+    },
+    {
+      "id": "exotic-shorthair-p09",
+      "title": {
+        "en": "Lucky Cat",
+        "tr": "Şans Kedisi"
+      },
+      "palette": {
+        "b": "#E8B26A",
+        "d": "#C47A2C",
+        "e": "#B5652A",
+        "n": "#D98A7A",
+        "o": "#7A9E7E",
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        ".b......bbb.",
+        ".bbdbbdbbbb.",
+        ".bbdbbdbbbb.",
+        ".bbebbebbbb.",
+        ".bbebbebbbb.",
+        "..bbbbbbbb..",
+        "..nnyynnbb..",
+        ".bbbbbbbb...",
+        ".bbbyybbb...",
+        ".bbyooybb...",
+        ".bbbyybbb...",
+        "...bbbb....."
+      ]
+    }
+  ]
+}

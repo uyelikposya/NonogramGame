@@ -55,25 +55,25 @@ struct SettingsView: View {
                     .pickerStyle(.segmented)
                 }
 
-                section("Ad-Free") {
+                section("Premium") {
                     VStack(alignment: .leading, spacing: 12) {
-                        if store.isAdsRemoved {
-                            Label("You're Ad-Free. Thank you for supporting Catgrid!", systemImage: "checkmark.seal.fill")
+                        if store.isPremium {
+                            Label("You're Premium. Thank you for supporting Catgrid!", systemImage: "crown.fill")
                                 .foregroundStyle(theme.success)
                             subscriptionDetail
                             Button("Manage Subscription") { isManagingSubscription = true }
                                 .buttonStyle(SecondaryButtonStyle())
                         } else {
-                            Text("Remove the ads between puzzles with a monthly or yearly subscription. Optional rewarded ads for extra paws stay available.")
+                            Text("No ads, 9 golden puzzles for every breed and Golden Cards. Monthly or yearly subscription.")
                                 .font(.subheadline)
                                 .foregroundStyle(theme.textSecondary)
                             Button {
                                 isShowingPaywall = true
                             } label: {
-                                Label("Go Ad-Free", systemImage: "sparkles")
+                                Label("Go Premium", systemImage: "crown.fill")
                             }
                             .buttonStyle(PrimaryButtonStyle())
-                            .accessibilityIdentifier("settings.adFree")
+                            .accessibilityIdentifier("settings.premium")
                         }
                         Button("Restore Purchases") {
                             Task { await store.restorePurchases() }
@@ -176,7 +176,7 @@ struct SettingsView: View {
         .themedScreen()
         .screenTitle("Settings")
         .sheet(isPresented: $isShowingPaywall) {
-            AdFreePaywall()
+            PremiumPaywall()
         }
         .manageSubscriptionsSheet(isPresented: $isManagingSubscription)
     }

@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "chapterID": "persian",
+  "puzzles": [
+    {
+      "id": "persian-p01",
+      "title": {
+        "en": "Golden Paw",
+        "tr": "Altın Pati"
+      },
+      "palette": {
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        ".yy..yy.",
+        ".yy..yy.",
+        "........",
+        "yy....yy",
+        "yy.yy.yy",
+        "..yyyy..",
+        ".yyyyyy.",
+        "..yyyy.."
+      ]
+    },
+    {
+      "id": "persian-p02",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi"
+      },
+      "palette": {
+        "n": "#E8A3A8",
+        "w": "#FBF8F3"
+      },
+      "pixels": [
+        ".nn..nn.",
+        "nwnnnnnn",
+        "nnnnnnnn",
+        "nnnnnnnn",
+        ".nnnnnn.",
+        "..nnnn..",
+        "...nn...",
+        "........"
+      ]
+    },
+    {
+      "id": "persian-p03",
+      "title": {
+        "en": "Fish Snack",
+        "tr": "Balık Atıştırması"
+      },
+      "palette": {
+        "o": "#8E5BA8"
+      },
+      "pixels": [
+        "........",
+        "..oo....",
+        "ooooo..o",
+        "o.oooooo",
+        "oooooooo",
+        "ooooo..o",
+        "..oo....",
+        "........"
+      ]
+    },
+    {
+      "id": "persian-p04",
+      "title": {
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak"
+      },
+      "palette": {
+        "o": "#8E5BA8"
+      },
+      "pixels": [
+        "..........",
+        "....ooooo.",
+        "...o.oooo.",
+        "...oo....o",
+        "..ooo..ooo",
+        "..oo.oo.oo",
+        "....ooo.oo",
+        "...oooooo.",
+        "...o.ooo..",
+        ".oo......."
+      ]
+    },
+    {
+      "id": "persian-p05",
+      "title": {
+        "en": "Toy Mouse",
+        "tr": "Oyuncak Fare"
+      },
+      "palette": {
+        "n": "#E8A3A8",
+        "p": "#E9C46A"
+      },
+      "pixels": [
+        "..........",
+        "...p......",
+        "..nnp.....",
+        "..ppppp...",
+        "..ppppp...",
+        ".ppppppp..",
+        "..pppppn.n",
+        "..pppp..nn",
+        "........n.",
+        ".........."
+      ]
+    },
+    {
+      "id": "persian-p06",
+      "title": {
+        "en": "Portrait",
+        "tr": "Portre"
+      },
+      "palette": {
+        "b": "#EFE7DC",
+        "e": "#3E8EDE"
+      },
+      "pixels": [
+        "..........",
+        "....bb....",
+        ".bbbbbbbb.",
+        ".bbbbbbbb.",
+        ".bbebbebb.",
+        "bbbebbebbb",
+        "bbbbbbbbbb",
+        "b.bbbbbb.b",
+        "...bbbb...",
+        ".........."
+      ]
+    },
+    {
+      "id": "persian-p07",
+      "title": {
+        "en": "Royal Cushion",
+        "tr": "Saray Minderi"
+      },
+      "palette": {
+        "b": "#EFE7DC",
+        "n": "#E8A3A8",
+        "o": "#8E5BA8",
+        "p": "#E9C46A"
+      },
+      "pixels": [
+        "............",
+        ".bb..b......",
+        ".bbbbb......",
+        ".bbbbbb.....",
+        ".bbnbbbbb...",
+        ".bbbbbbbbb..",
+        ".bbbbbbbbbb.",
+        ".bbbbbbbbbb.",
+        "oobbbbbbbboo",
+        "ooopbbbbpooo",
+        "oooooooooooo",
+        "oooooooooooo"
+      ]
+    },
+    {
+      "id": "persian-p08",
+      "title": {
+        "en": "Nap Time",
+        "tr": "Şekerleme"
+      },
+      "palette": {
+        "b": "#EFE7DC"
+      },
+      "pixels": [
+        "............",
+        "......b.....",
+        "bbbbbbbbbb..",
+        "bbbbbbbbbbb.",
+        "bbbbbbbbbbb.",
+        ".bbbbbbbbbbb",
+        ".bbbbbbbbbbb",
+        "..bbbbbbbbbb",
+        "...bbbbbbbb.",
+        "...bbbbbbb..",
+        "....bbbbbb..",
+        "............"
+      ]
+    },
+    {
+      "id": "persian-p09",
+      "title": {
+        "en": "Lucky Cat",
+        "tr": "Şans Kedisi"
+      },
+      "palette": {
+        "b": "#EFE7DC",
+        "e": "#3E8EDE",
+        "n": "#E8A3A8",
+        "o": "#8E5BA8",
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        ".b......bbb.",
+        ".bbbbbbbbbb.",
+        ".bbbbbbbbbb.",
+        ".bbebbebbbb.",
+        ".bbebbebbbb.",
+        "..bbbbbbbb..",
+        "..nnyynnbb..",
+        ".bbbbbbbb...",
+        ".bbbyybbb...",
+        ".bbyooybb...",
+        ".bbbyybbb...",
+        "...bbbb....."
+      ]
+    }
+  ]
+}

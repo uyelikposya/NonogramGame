@@ -5,13 +5,18 @@ import SwiftUI
 struct HomeView: View {
     @Environment(AppModel.self) private var model
     @Environment(Router.self) private var router
+    @Environment(StoreManager.self) private var store
     @Environment(\.appTheme) private var theme
+    @State private var isShowingPaywall = false
 
     var body: some View {
         // Tek ekrana sığacak kadar sıkı; çok küçük ekranlarda (iPhone SE) yine kaydırılabilir
         ScrollView {
-            VStack(spacing: 20) {
+            VStack(spacing: 18) {
                 header
+                if !store.isPremium {
+                    PremiumBanner { isShowingPaywall = true }
+                }
                 continueCard
                 CollectionShelf()
                 HStack(spacing: 12) {
@@ -33,6 +38,9 @@ struct HomeView: View {
         }
         .scrollBounceBehavior(.basedOnSize)
         .themedScreen()
+        .sheet(isPresented: $isShowingPaywall) {
+            PremiumPaywall()
+        }
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
                 Button {

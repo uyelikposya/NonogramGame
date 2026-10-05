@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "chapterID": "bombay",
+  "puzzles": [
+    {
+      "id": "bombay-p01",
+      "title": {
+        "en": "Golden Paw",
+        "tr": "Altın Pati"
+      },
+      "palette": {
+        "y": "#F1E3A0"
+      },
+      "pixels": [
+        ".yy..yy.",
+        ".yy..yy.",
+        "........",
+        "yy....yy",
+        "yy.yy.yy",
+        "..yyyy..",
+        ".yyyyyy.",
+        "..yyyy.."
+      ]
+    },
+    {
+      "id": "bombay-p02",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi"
+      },
+      "palette": {
+        "n": "#4A4148",
+        "w": "#55525A"
+      },
+      "pixels": [
+        ".nn..nn.",
+        "nwnnnnnn",
+        "nnnnnnnn",
+        "nnnnnnnn",
+        ".nnnnnn.",
+        "..nnnn..",
+        "...nn...",
+        "........"
+      ]
+    },
+    {
+      "id": "bombay-p03",
+      "title": {
+        "en": "Fish Snack",
+        "tr": "Balık Atıştırması"
+      },
+      "palette": {
+        "o": "#5C6B7A"
+      },
+      "pixels": [
+        "........",
+        "..oo....",
+        "ooooo..o",
+        "o.oooooo",
+        "oooooooo",
+        "ooooo..o",
+        "..oo....",
+        "........"
+      ]
+    },
+    {
+      "id": "bombay-p04",
+      "title": {
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak"
+      },
+      "palette": {
+        "o": "#5C6B7A"
+      },
+      "pixels": [
+        "..........",
+        "...ooooo..",
+        "..oo.ooo..",
+        "..ooo...o.",
+        "..oo..ooo.",
+        "..o.oo.oo.",
+        "...oooo.o.",
+        "..oooooo..",
+        "oo........",
+        ".........."
+      ]
+    },
+    {
+      "id": "bombay-p05",
+      "title": {
+        "en": "Toy Mouse",
+        "tr": "Oyuncak Fare"
+      },
+      "palette": {
+        "n": "#4A4148",
+        "p": "#8E8A93"
+      },
+      "pixels": [
+        "..........",
+        "...p......",
+        "..nnp.....",
+        "..ppppp...",
+        "..ppppp...",
+        ".ppppppp..",
+        "..pppppn.n",
+        "..pppp..nn",
+        "........n.",
+        ".........."
+      ]
+    },
+    {
+      "id": "bombay-p06",
+      "title": {
+        "en": "Portrait",
+        "tr": "Portre"
+      },
+      "palette": {
+        "b": "#2B2A2E",
+        "e": "#D9822B"
+      },
+      "pixels": [
+        "..........",
+        "bb.bbbb.bb",
+        "bbbbbbbbbb",
+        "bbbbbbbbbb",
+        "bbeebbeebb",
+        "bbeebbeebb",
+        "bbbbbbbbbb",
+        "bbbbbbbbbb",
+        ".bbbbbbbb.",
+        "...bbbb..."
+      ]
+    },
+    {
+      "id": "bombay-p07",
+      "title": {
+        "en": "Silver Night",
+        "tr": "Gümüş Gece"
+      },
+      "palette": {
+        "b": "#2B2A2E",
+        "y": "#F1E3A0"
+      },
+      "pixels": [
+        ".....yy.....",
+        ".....yyy...y",
+        "......yyy...",
+        "......yyy...",
+        ".....yyyy...",
+        "....yyyyy...",
+        "..yyyyyybb..",
+        ".yyyyyyybb..",
+        "...yyy..bb..",
+        "....b..bbb..",
+        ".......bbb..",
+        "......bbb..."
+      ]
+    },
+    {
+      "id": "bombay-p08",
+      "title": {
+        "en": "Nap Time",
+        "tr": "Şekerleme"
+      },
+      "palette": {
+        "b": "#2B2A2E"
+      },
+      "pixels": [
+        "............",
+        "b...bbbb....",
+        "bbbbbbbbbb..",
+        "bbbbbbbbbbb.",
+        "bbbbbbbbbbbb",
+        "b....bbbbbbb",
+        ".bbbbbbbbbbb",
+        ".bbbbbbbbbbb",
+        "..bbbbbbbbbb",
+        "...bbbbbbbb.",
+        "...bbbbbbbb.",
+        ".....bbbbb.."
+      ]
+    },
+    {
+      "id": "bombay-p09",
+      "title": {
+        "en": "Lucky Cat",
+        "tr": "Şans Kedisi"
+      },
+      "palette": {
+        "b": "#2B2A2E",
+        "e": "#D9822B",
+        "n": "#4A4148",
+        "y": "#F1E3A0"
+      },
+      "pixels": [
+        "............",
+        ".bb....bbbb.",
+        ".bbbbbbbbbb.",
+        ".bbbbbbbbbb.",
+        ".bbebbebbbb.",
+        "..bbbbbbbb..",
+        "..nbnnbnbb..",
+        ".bbbbybbb...",
+        ".bbbbbbbb...",
+        ".bbyyyybb...",
+        "..bbyybb....",
+        "...bbbb....."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 1,
+  "chapterID": "maine-coon",
+  "puzzles": [
+    {
+      "id": "maine-coon-p01",
+      "title": {
+        "en": "Golden Paw",
+        "tr": "Altın Pati"
+      },
+      "palette": {
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        ".yy..yy.",
+        ".yy..yy.",
+        "........",
+        "yy....yy",
+        "yy.yy.yy",
+        "..yyyy..",
+        ".yyyyyy.",
+        "..yyyy.."
+      ]
+    },
+    {
+      "id": "maine-coon-p02",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi"
+      },
+      "palette": {
+        "n": "#A0624A",
+        "w": "#EFE6DA"
+      },
+      "pixels": [
+        ".nn..nn.",
+        "nwnnnnnn",
+        "nnnnnnnn",
+        "nnnnnnnn",
+        ".nnnnnn.",
+        "..nnnn..",
+        "...nn...",
+        "........"
+      ]
+    },
+    {
+      "id": "maine-coon-p03",
+      "title": {
+        "en": "Fish Snack",
+        "tr": "Balık Atıştırması"
+      },
+      "palette": {
+        "o": "#6B4F3A"
+      },
+      "pixels": [
+        "........",
+        "..oo....",
+        "ooooo..o",
+        "o.oooooo",
+        "oooooooo",
+        "ooooo..o",
+        "..oo....",
+        "........"
+      ]
+    },
+    {
+      "id": "maine-coon-p04",
+      "title": {
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak"
+      },
+      "palette": {
+        "o": "#6B4F3A"
+      },
+      "pixels": [
+        ".....ooo..",
+        "...oooooo.",
+        "...oo.oo.o",
+        "..ooo...oo",
+        "..oo...ooo",
+        ".....oo.oo",
+        "....ooooo.",
+        "...ooooo..",
+        ".oo.......",
+        ".........."
+      ]
+    },
+    {
+      "id": "maine-coon-p05",
+      "title": {
+        "en": "Toy Mouse",
+        "tr": "Oyuncak Fare"
+      },
+      "palette": {
+        "n": "#A0624A",
+        "p": "#C8B6A6"
+      },
+      "pixels": [
+        "..........",
+        "...p......",
+        "..nnp.....",
+        "..ppppp...",
+        "..ppppp...",
+        ".ppppppp..",
+        "..pppppn.n",
+        "..pppp..nn",
+        "........n.",
+        ".........."
+      ]
+    },
+    {
+      "id": "maine-coon-p06",
+      "title": {
+        "en": "Portrait",
+        "tr": "Portre"
+      },
+      "palette": {
+        "b": "#8A6A4E",
+        "e": "#C9A53F",
+        "w": "#EFE6DA"
+      },
+      "pixels": [
+        "..........",
+        "..........",
+        ".b..bb..b.",
+        ".bbbbbbbb.",
+        ".bbbbbbbb.",
+        ".bbebbebb.",
+        "bbbebbebbb",
+        "bbbbwwbbbb",
+        "b.bwwwwb.b",
+        "...wwww..."
+      ]
+    },
+    {
+      "id": "maine-coon-p07",
+      "title": {
+        "en": "Mighty Tail",
+        "tr": "Görkemli Kuyruk"
+      },
+      "palette": {
+        "b": "#8A6A4E",
+        "d": "#4E3A2A"
+      },
+      "pixels": [
+        "............",
+        ".b...b......",
+        ".b..bb..d...",
+        ".bbbbb..dd..",
+        ".bbbbb..ddd.",
+        "..bbb....dd.",
+        "..bbbb...dd.",
+        "..bbdbb..dd.",
+        "..bbbbb..dd.",
+        "..bbbbbddbd.",
+        "..bbbbdbbd..",
+        "....b.dd...."
+      ]
+    },
+    {
+      "id": "maine-coon-p08",
+      "title": {
+        "en": "Nap Time",
+        "tr": "Şekerleme"
+      },
+      "palette": {
+        "b": "#8A6A4E",
+        "d": "#4E3A2A"
+      },
+      "pixels": [
+        "............",
+        "............",
+        "b...b.......",
+        "bbb.bbbbbb..",
+        "bbbbbbbbbbb.",
+        "bbbbbbbbbbb.",
+        "b...bbbbbbbb",
+        ".bbbbbbbbbbd",
+        "..bbbbbbbbdd",
+        "...bbbbbbdd.",
+        "...dddddddd.",
+        "...ddddddd.."
+      ]
+    },
+    {
+      "id": "maine-coon-p09",
+      "title": {
+        "en": "Lucky Cat",
+        "tr": "Şans Kedisi"
+      },
+      "palette": {
+        "b": "#8A6A4E",
+        "d": "#4E3A2A",
+        "e": "#C9A53F",
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        "............",
+        ".b......b...",
+        ".bb....bbbb.",
+        ".bbdbbdbbbb.",
+        ".bbebbebbbb.",
+        ".bbebbebbbb.",
+        "..bbbbbbbb..",
+        "..bbyybbb...",
+        ".bbbbbbbb...",
+        ".bbyyyybb...",
+        ".bbyyyybb...",
+        "...bbbbb...."
+      ]
+    }
+  ]
+}

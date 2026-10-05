@@ -1,0 +1,218 @@
+{
+  "schemaVersion": 1,
+  "chapterID": "japanese-bobtail",
+  "puzzles": [
+    {
+      "id": "japanese-bobtail-p01",
+      "title": {
+        "en": "Golden Paw",
+        "tr": "Altın Pati"
+      },
+      "palette": {
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        ".yy..yy.",
+        ".yy..yy.",
+        "........",
+        "yy....yy",
+        "yy.yy.yy",
+        "..yyyy..",
+        ".yyyyyy.",
+        "..yyyy.."
+      ]
+    },
+    {
+      "id": "japanese-bobtail-p02",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi"
+      },
+      "palette": {
+        "n": "#E59AA0",
+        "w": "#FFFFFF"
+      },
+      "pixels": [
+        ".nn..nn.",
+        "nwnnnnnn",
+        "nnnnnnnn",
+        "nnnnnnnn",
+        ".nnnnnn.",
+        "..nnnn..",
+        "...nn...",
+        "........"
+      ]
+    },
+    {
+      "id": "japanese-bobtail-p03",
+      "title": {
+        "en": "Fish Snack",
+        "tr": "Balık Atıştırması"
+      },
+      "palette": {
+        "o": "#D1495B"
+      },
+      "pixels": [
+        "........",
+        "..oo....",
+        "ooooo..o",
+        "o.oooooo",
+        "oooooooo",
+        "ooooo..o",
+        "..oo....",
+        "........"
+      ]
+    },
+    {
+      "id": "japanese-bobtail-p04",
+      "title": {
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak"
+      },
+      "palette": {
+        "o": "#D1495B"
+      },
+      "pixels": [
+        "..........",
+        "....ooooo.",
+        "...oo.oooo",
+        "...oo....o",
+        "..ooo..ooo",
+        "...o.oo.oo",
+        "....oooooo",
+        "...oooooo.",
+        ".oo.......",
+        ".........."
+      ]
+    },
+    {
+      "id": "japanese-bobtail-p05",
+      "title": {
+        "en": "Toy Mouse",
+        "tr": "Oyuncak Fare"
+      },
+      "palette": {
+        "n": "#E59AA0",
+        "p": "#9AA5B1"
+      },
+      "pixels": [
+        "..........",
+        "...p......",
+        "..nnp.....",
+        "..ppppp...",
+        "..ppppp...",
+        ".ppppppp..",
+        "..pppppn.n",
+        "..pppp..nn",
+        "........n.",
+        ".........."
+      ]
+    },
+    {
+      "id": "japanese-bobtail-p06",
+      "title": {
+        "en": "Portrait",
+        "tr": "Portre"
+      },
+      "palette": {
+        "b": "#F5F1EA",
+        "d": "#E08A3C",
+        "e": "#D9A441",
+        "k": "#2E2A2B"
+      },
+      "pixels": [
+        "..........",
+        "bb.bbbb.bb",
+        "bbbbbbbbbb",
+        "bddddbbbbb",
+        "bdeedbeebb",
+        "bbeebbeebb",
+        "bbbbbkkkkb",
+        "bbbbbbkkbb",
+        ".bbbbbbbb.",
+        "...bbbb..."
+      ]
+    },
+    {
+      "id": "japanese-bobtail-p07",
+      "title": {
+        "en": "Sitting Pretty",
+        "tr": "Uslu Oturuş"
+      },
+      "palette": {
+        "b": "#F5F1EA",
+        "d": "#E08A3C",
+        "k": "#2E2A2B"
+      },
+      "pixels": [
+        "......b.....",
+        ".bb.bbb.....",
+        ".bbbbbbb....",
+        ".bbbbbb.....",
+        "..bbbbb.....",
+        "...bbbbb....",
+        "...bbbbbb...",
+        "..bbddbbb...",
+        "..bbbbbkbb..",
+        "..bbbbbkbb..",
+        "...bbbbbbdd.",
+        "...bbbbb...."
+      ]
+    },
+    {
+      "id": "japanese-bobtail-p08",
+      "title": {
+        "en": "Nap Time",
+        "tr": "Şekerleme"
+      },
+      "palette": {
+        "b": "#F5F1EA",
+        "d": "#E08A3C",
+        "k": "#2E2A2B"
+      },
+      "pixels": [
+        "............",
+        "............",
+        "bb..bbbbbb..",
+        "bbbbbbbbbbb.",
+        "bbbbdddbbbbb",
+        "bb..dddbbbbb",
+        ".bbbbbbbkkbb",
+        ".bbbbbbbkkbb",
+        "..bbbbbbbbdd",
+        "...bbbbbbbdd",
+        "....bbbbbb..",
+        "......b....."
+      ]
+    },
+    {
+      "id": "japanese-bobtail-p09",
+      "title": {
+        "en": "Lucky Cat",
+        "tr": "Şans Kedisi"
+      },
+      "palette": {
+        "b": "#F5F1EA",
+        "d": "#E08A3C",
+        "e": "#D9A441",
+        "k": "#2E2A2B",
+        "n": "#E59AA0",
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        "............",
+        ".bb....bbbb.",
+        ".bbbbbbbbbb.",
+        ".bdddbbbbbb.",
+        ".bbebbebbbb.",
+        "..bbbbkbbb..",
+        "..nbnnbnbb..",
+        ".bbbbybbb...",
+        ".bbbbbbbb...",
+        ".bbyyyybb...",
+        "..bbyybb....",
+        "...bbbb....."
+      ]
+    }
+  ]
+}
