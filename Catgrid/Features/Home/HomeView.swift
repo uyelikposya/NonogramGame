@@ -25,6 +25,7 @@ struct HomeView: View {
                     } label: {
                         Label("All Levels", systemImage: "square.grid.2x2")
                     }
+                    .accessibilityIdentifier("home.levels")
                     Button {
                         router.push(.stats)
                     } label: {

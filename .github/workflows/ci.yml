@@ -30,6 +30,9 @@ jobs:
       - name: Çeviri dosyalarını doğrula
         run: python3 Tools/validate_strings.py
 
+      - name: App Store metinlerini doğrula
+        run: python3 Tools/validate_metadata.py
+
       - name: NonogramKit testleri
         working-directory: Packages/NonogramKit
         run: swift test

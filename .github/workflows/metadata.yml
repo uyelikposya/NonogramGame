@@ -1,0 +1,63 @@
+name: App Store metinlerini yükle
+
+# Elle başlatılır: GitHub → Actions → "App Store metinlerini yükle" → Run workflow.
+# fastlane/metadata/<dil>/ altındaki ad, alt başlık, açıklama, anahtar kelimeler, tanıtım
+# metni ve bağlantıları App Store Connect'teki 1.0.0 sürümüne 8 dilde yazar.
+# Derleme yüklemez, incelemeye göndermez. Sırlar: ASC_KEY_ID, ASC_ISSUER_ID, ASC_PRIVATE_KEY.
+on:
+  workflow_dispatch:
+    inputs:
+      screenshots:
+        description: "Ekran görüntülerini de yükle (fastlane/screenshots varsa)"
+        type: boolean
+        default: false
+
+jobs:
+  deliver:
+    runs-on: macos-15
+    timeout-minutes: 30
+    env:
+      ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
+      ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
+      ASC_PRIVATE_KEY: ${{ secrets.ASC_PRIVATE_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Metin sınırlarını kontrol et
+        run: python3 Tools/validate_metadata.py
+
+      - name: API anahtarı
+        run: |
+          python3 - <<'PY'
+          import json, os
+          json.dump({
+              "key_id": os.environ["ASC_KEY_ID"],
+              "issuer_id": os.environ["ASC_ISSUER_ID"],
+              "key": os.environ["ASC_PRIVATE_KEY"],
+              "in_house": False,
+          }, open(os.path.expanduser("~/asc_key.json"), "w"))
+          PY
+
+      - name: fastlane deliver
+        run: |
+          fastlane --version | tail -1
+          SHOTS=true
+          if [ "${{ inputs.screenshots }}" = "true" ] && [ -d fastlane/screenshots ]; then SHOTS=false; fi
+          fastlane deliver \
+            --api_key_path ~/asc_key.json \
+            --app_identifier com.catgridcollection.nonogram \
+            --platform ios \
+            --app_version 1.0.0 \
+            --metadata_path fastlane/metadata \
+            --screenshots_path fastlane/screenshots \
+            --skip_binary_upload true \
+            --skip_screenshots $SHOTS \
+            --overwrite_screenshots true \
+            --run_precheck_before_submit false \
+            --submit_for_review false \
+            --automatic_release false \
+            --force true
+
+      - name: Anahtarı sil
+        if: always()
+        run: rm -f ~/asc_key.json

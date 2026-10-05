@@ -24,6 +24,7 @@ struct ChaptersView: View {
                     }
                     .buttonStyle(PressableButtonStyle())
                     .disabled(!isUnlocked)
+                    .accessibilityIdentifier("chapter.\(chapter.id)")
                 }
             }
             .padding(20)

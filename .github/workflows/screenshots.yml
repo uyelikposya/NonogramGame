@@ -1,0 +1,94 @@
+name: Ekran görüntüleri
+
+# Elle başlatılır: GitHub → Actions → "Ekran görüntüleri" → Run workflow.
+# 6,9" iPhone simülatöründe 8 dilde 5'er App Store ekran görüntüsü çeker. Sonuç, çalıştırma
+# sayfasında "screenshots" adlı indirilebilir dosya olarak durur. "upload" seçilirse
+# App Store Connect'e de yüklenir (mevcutların yerine).
+on:
+  workflow_dispatch:
+    inputs:
+      upload:
+        description: "App Store Connect'e yükle"
+        type: boolean
+        default: false
+
+jobs:
+  screenshots:
+    runs-on: macos-15
+    timeout-minutes: 90
+    env:
+      ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
+      ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
+      ASC_PRIVATE_KEY: ${{ secrets.ASC_PRIVATE_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: En yeni Xcode 26'yı seç
+        run: |
+          XCODE=$(ls -d /Applications/Xcode_26*.app | sort -V | tail -1)
+          sudo xcode-select -s "$XCODE"
+          xcodebuild -version
+
+      - name: Xcode projesini üret
+        run: ./ProjeyiAc.command
+
+      - name: 6,9" simülatörü hazırla
+        run: |
+          DEVICE_ID=$(xcrun simctl list devices available -j | python3 -c '
+          import json, sys
+          data = json.load(sys.stdin)["devices"]
+          ios = sorted((r for r in data if "iOS" in r), key=lambda r: [int(x) for x in r.split("iOS-")[-1].split("-")], reverse=True)
+          for runtime in ios:
+              for device in data[runtime]:
+                  if "Pro Max" in device["name"]:
+                      print(device["udid"], device["name"], runtime, file=sys.stderr)
+                      print(device["udid"]); sys.exit()
+          ')
+          echo "DEVICE_ID=$DEVICE_ID" >> "$GITHUB_ENV"
+          xcrun simctl boot "$DEVICE_ID" || true
+          xcrun simctl bootstatus "$DEVICE_ID" -b
+          xcrun simctl status_bar "$DEVICE_ID" override --time "9:41" --dataNetwork wifi --wifiMode active --wifiBars 3 \
+            --cellularMode active --cellularBars 4 --batteryState charged --batteryLevel 100
+
+      - name: Testleri derle
+        run: |
+          xcodebuild build-for-testing -project Catgrid.xcodeproj -scheme Catgrid \
+            -destination "id=$DEVICE_ID" -derivedDataPath build/dd CODE_SIGNING_ALLOWED=NO > build.log 2>&1 \
+            || { grep -E "error:" build.log | head -30; tail -40 build.log; exit 1; }
+
+      - name: 8 dilde çek
+        run: |
+          set -e
+          mkdir -p results
+          for spec in "en-US en en_US" "tr tr tr_TR" "ja ja ja_JP" "de-DE de de_DE" "fr-FR fr fr_FR" "es-ES es es_ES" "pt-BR pt-BR pt_BR" "ko ko ko_KR"; do
+            set -- $spec
+            echo "== $1"
+            TEST_RUNNER_CATGRID_SCREENSHOTS=1 TEST_RUNNER_CATGRID_LANG="$2" TEST_RUNNER_CATGRID_LOCALE="$3" \
+            xcodebuild test-without-building -project Catgrid.xcodeproj -scheme Catgrid \
+              -destination "id=$DEVICE_ID" -derivedDataPath build/dd \
+              -only-testing:CatgridUITests/ScreenshotTests \
+              -resultBundlePath "results/$1.xcresult" > "results/$1.log" 2>&1 \
+              || { tail -40 "results/$1.log"; exit 1; }
+            xcrun xcresulttool export attachments --path "results/$1.xcresult" --output-path "results/$1"
+          done
+          python3 Tools/collect_screenshots.py results fastlane/screenshots
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: screenshots
+          path: fastlane/screenshots
+
+      - name: App Store Connect'e yükle
+        if: inputs.upload
+        run: |
+          python3 - <<'PY'
+          import json, os
+          json.dump({"key_id": os.environ["ASC_KEY_ID"], "issuer_id": os.environ["ASC_ISSUER_ID"],
+                     "key": os.environ["ASC_PRIVATE_KEY"], "in_house": False},
+                    open(os.path.expanduser("~/asc_key.json"), "w"))
+          PY
+          fastlane deliver --api_key_path ~/asc_key.json --app_identifier com.catgridcollection.nonogram \
+            --platform ios --app_version 1.0.0 --screenshots_path fastlane/screenshots \
+            --skip_binary_upload true --skip_metadata true --skip_screenshots false --overwrite_screenshots true \
+            --run_precheck_before_submit false --submit_for_review false --force true
+          rm -f ~/asc_key.json
