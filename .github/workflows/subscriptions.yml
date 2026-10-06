@@ -4,6 +4,11 @@ name: Abonelik metinlerini yükle
 # Premium grubunun ve iki aboneliğin 8 dildeki ad/açıklamalarını App Store Connect'e yazar.
 on:
   workflow_dispatch:
+    inputs:
+      report_only:
+        description: "Yalnızca durumu raporla (hiçbir şey değiştirme)"
+        type: boolean
+        default: false
 
 jobs:
   subscriptions:
@@ -16,4 +21,4 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: pip install --quiet pyjwt cryptography
-      - run: python3 Tools/asc_subscriptions.py
+      - run: python3 Tools/asc_subscriptions.py ${{ inputs.report_only && '--report' || '' }}

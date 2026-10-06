@@ -57,7 +57,7 @@ def token():
         os.environ["ASC_PRIVATE_KEY"], algorithm="ES256", headers={"kid": os.environ["ASC_KEY_ID"]})
 
 
-def call(method, path, body=None):
+def call(method, path, body=None, tolerant=False):
     request = urllib.request.Request(
         path if path.startswith("http") else API + path, method=method,
         data=json.dumps(body).encode() if body else None,
@@ -67,6 +67,8 @@ def call(method, path, body=None):
             raw = response.read()
             return json.loads(raw) if raw else {}
     except urllib.error.HTTPError as error:
+        if tolerant:
+            return {"error": error.code}
         sys.exit(f"{method} {path} → {error.code}\n{error.read().decode()}")
 
 
@@ -85,7 +87,26 @@ def upsert(kind, existing, locale, attributes, parent_type, parent_id):
     return "eklendi"
 
 
+def report():
+    """Her aboneliğin Apple tarafındaki durumunu, fiyat sayısını ve inceleme görselini yazar."""
+    app_id = call("GET", f"/apps?filter[bundleId]={BUNDLE_ID}")["data"][0]["id"]
+    for group in call("GET", f"/apps/{app_id}/subscriptionGroups?limit=50")["data"]:
+        for sub in call("GET", f"/subscriptionGroups/{group['id']}/subscriptions?limit=50")["data"]:
+            attrs = sub["attributes"]
+            prices = call("GET", f"/subscriptions/{sub['id']}/prices?limit=200")["data"]
+            locs = call("GET", f"/subscriptions/{sub['id']}/subscriptionLocalizations?limit=50")["data"]
+            shot = call("GET", f"/subscriptions/{sub['id']}/appStoreReviewScreenshot", tolerant=True).get("data")
+            shot_state = (shot or {}).get("attributes", {}).get("assetDeliveryState", {}) or {}
+            print(f"{attrs['productId']}: durum={attrs.get('state')} süre={attrs.get('subscriptionPeriod')} "
+                  f"fiyat_ülke_sayısı={len(prices)} dil_sayısı={len(locs)} "
+                  f"inceleme_görseli={'var (' + str(shot_state.get('state')) + ')' if shot else 'YOK'} "
+                  f"inceleme_notu={'var' if attrs.get('reviewNote') else 'yok'}")
+
+
 def main():
+    if "--report" in sys.argv:
+        report()
+        return
     check_limits()
     apps = call("GET", f"/apps?filter[bundleId]={BUNDLE_ID}")["data"]
     if not apps:
