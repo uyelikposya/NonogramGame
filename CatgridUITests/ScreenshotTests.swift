@@ -29,18 +29,23 @@ final class ScreenshotTests: XCTestCase {
         capture("01_home")
 
         // 2. Oyun: yarısı çözülmüş zor bölüm, yardımcı kedi
+        // İlk açılışta soğuk simülatör yavaş olabilir: bekle, dokunuş kaçtıysa bir kez daha dokun
         start.tap()
-        XCTAssertTrue(app.descendants(matching: .any)["game.board"].waitForExistence(timeout: 10))
+        let board = app.descendants(matching: .any)["game.board"]
+        if !board.waitForExistence(timeout: 20), start.exists {
+            start.tap()
+        }
+        XCTAssertTrue(board.waitForExistence(timeout: 30))
         settle(2.5)
         capture("02_game")
         goBack(app)
 
         // 3. Bir türün bölümleri: çözülen bulmacaların resimleri
         let levels = app.buttons["home.levels"]
-        XCTAssertTrue(levels.waitForExistence(timeout: 10))
+        XCTAssertTrue(levels.waitForExistence(timeout: 20))
         levels.tap()
         let chapter = app.buttons["chapter.siamese"]
-        XCTAssertTrue(chapter.waitForExistence(timeout: 10))
+        XCTAssertTrue(chapter.waitForExistence(timeout: 20))
         chapter.tap()
         settle()
         capture("03_chapter")
@@ -49,14 +54,14 @@ final class ScreenshotTests: XCTestCase {
 
         // 4. Kart koleksiyonu
         let collection = app.buttons["home.collection"]
-        XCTAssertTrue(collection.waitForExistence(timeout: 10))
+        XCTAssertTrue(collection.waitForExistence(timeout: 20))
         collection.tap()
         settle()
         capture("04_collection")
 
         // 5. Altın Kart
         let golden = app.buttons["collection.card.siamese#golden"]
-        XCTAssertTrue(golden.waitForExistence(timeout: 10))
+        XCTAssertTrue(golden.waitForExistence(timeout: 20))
         golden.tap()
         settle(2)
         capture("05_golden_card")
