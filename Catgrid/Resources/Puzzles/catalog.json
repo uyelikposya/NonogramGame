@@ -140,6 +140,16 @@
           "es": "Una de las razas reconocidas más antiguas, el siamés aparece descrito en manuscritos tailandeses de hace siglos. Sus «puntas» oscuras se deben a un gen sensible a la temperatura: en las partes más frías del cuerpo crece un pelo más oscuro. Los siameses son sociables, maúllan mucho y no les gusta quedarse solos durante mucho tiempo.",
           "pt-BR": "Uma das raças reconhecidas mais antigas, o Siamês é descrito em manuscritos tailandeses de séculos atrás. Suas \"extremidades\" escuras vêm de um gene sensível à temperatura: as partes mais frias do corpo desenvolvem pelos mais escuros. Os Siameses são sociáveis, vocais e não gostam de ficar sozinhos por muito tempo.",
           "ko": "샴은 공인된 품종 중 가장 오래된 품종 중 하나로, 수백 년 된 태국 필사본에도 등장해요. 짙은 '포인트'는 온도에 민감한 유전자 때문에 생기는데, 체온이 낮은 부위일수록 털이 더 짙게 자라요. 샴은 사교적이고 목소리가 많으며, 오랫동안 혼자 있는 걸 싫어해요."
+        },
+        "goldenFact": {
+          "en": "Siamese kittens are born almost white; their dark points fill in during the first months.",
+          "tr": "Siyam yavruları neredeyse beyaz doğar; koyu uçları ilk aylarda belirginleşir.",
+          "ja": "シャムの子猫はほぼ真っ白で生まれ、濃いポイントは生後数か月で現れます。",
+          "de": "Siamkätzchen kommen fast weiß zur Welt; ihre dunklen Abzeichen erscheinen erst in den ersten Monaten.",
+          "fr": "Les chatons siamois naissent presque blancs ; leurs extrémités foncées apparaissent au fil des premiers mois.",
+          "es": "Los gatitos siameses nacen casi blancos; sus puntas oscuras aparecen en los primeros meses.",
+          "pt-BR": "Os filhotes siameses nascem quase brancos; as extremidades escuras surgem nos primeiros meses.",
+          "ko": "샴 새끼 고양이는 거의 하얗게 태어나고, 짙은 포인트는 생후 몇 달 동안 나타나요."
         }
       },
       "premiumFile": "chapter_01_siamese_premium"
@@ -247,6 +257,16 @@
           "es": "Descendiente de los gatos callejeros de Gran Bretaña, la raza se perfeccionó a finales del siglo XIX y se hizo famosa por su pelaje gris azulado. Es robusto, de cara redonda y tranquilo; le gusta estar cerca de su gente sin exigir atención constante.",
           "pt-BR": "Descendente dos gatos de rua da Grã-Bretanha, a raça foi aprimorada no fim do século XIX e ficou famosa por sua pelagem cinza-azulada. É robusto, tem o rosto redondo e é calmo; gosta de ficar perto de seus humanos sem exigir atenção constante.",
           "ko": "영국의 길고양이에서 유래한 품종으로, 1800년대 후반에 개량되었고 청회색 털로 유명해졌어요. 튼튼하고 얼굴이 둥글며 차분해서, 끊임없이 관심을 바라지 않고도 사람 곁에 있는 걸 좋아해요."
+        },
+        "goldenFact": {
+          "en": "British Shorthairs grow slowly and may not reach full size until they are three to five years old.",
+          "tr": "British Shorthair'ler yavaş büyür; tam boyutlarına ancak üç ila beş yaşında ulaşabilirler.",
+          "ja": "ブリティッシュショートヘアはゆっくり成長し、3〜5歳でようやく大人の体格になります。",
+          "de": "Britisch Kurzhaar wachsen langsam und sind oft erst mit drei bis fünf Jahren ausgewachsen.",
+          "fr": "Le British Shorthair grandit lentement et n'atteint parfois sa taille adulte qu'entre trois et cinq ans.",
+          "es": "El British Shorthair crece despacio y puede no alcanzar su tamaño adulto hasta los tres o cinco años.",
+          "pt-BR": "O British Shorthair cresce devagar e pode só atingir o tamanho adulto entre três e cinco anos.",
+          "ko": "브리티시 쇼트헤어는 천천히 자라서 세 살에서 다섯 살쯤 되어야 다 큰 몸집이 돼요."
         }
       },
       "premiumFile": "chapter_02_british_shorthair_premium"
@@ -355,6 +375,16 @@
           "es": "Las orejas dobladas se deben a una mutación natural que afecta al cartílago. Los gatitos nacen con las orejas rectas, que pueden doblarse en pocas semanas. Como el mismo gen puede causar problemas en las articulaciones, los criadores responsables nunca cruzan dos gatos de orejas dobladas.",
           "pt-BR": "As orelhas dobradas vêm de uma mutação natural que afeta a cartilagem. Os filhotes nascem com orelhas retas, que podem se dobrar em poucas semanas. Como o mesmo gene pode causar problemas nas articulações, criadores responsáveis nunca cruzam dois gatos de orelhas dobradas.",
           "ko": "접힌 귀는 연골에 영향을 주는 자연 돌연변이에서 비롯돼요. 새끼 고양이는 곧은 귀로 태어나 몇 주 안에 귀가 접힐 수 있어요. 같은 유전자가 관절 문제를 일으킬 수 있기 때문에, 책임감 있는 브리더는 귀가 접힌 고양이끼리 절대 교배하지 않아요."
+        },
+        "goldenFact": {
+          "en": "Folds often sit upright with their legs stretched out, a pose fans call the 'Buddha sit'.",
+          "tr": "Fold'lar çoğu zaman bacaklarını uzatıp dik oturur; hayranları bu duruşa 'Buda oturuşu' der.",
+          "ja": "フォールドはよく後ろ足を投げ出して座り、ファンはこれを「スコ座り」と呼びます。",
+          "de": "Folds sitzen oft aufrecht mit ausgestreckten Beinen – Fans nennen das den „Buddha-Sitz“.",
+          "fr": "Les Folds s'assoient souvent bien droits, pattes tendues : les fans appellent cela la « pose du Bouddha ».",
+          "es": "Los Fold suelen sentarse erguidos con las patas estiradas, una postura que sus fans llaman «la pose de Buda».",
+          "pt-BR": "Os Folds costumam sentar eretos com as patas esticadas, pose que os fãs chamam de 'sentada de Buda'.",
+          "ko": "폴드는 다리를 쭉 뻗고 똑바로 앉곤 하는데, 팬들은 이를 '부처님 자세'라고 불러요."
         }
       },
       "premiumFile": "chapter_03_scottish_fold_premium"
@@ -458,6 +488,16 @@
           "es": "Los gatos de pelo largo llegaron a Europa desde Persia y regiones vecinas en el siglo XVII. El persa actual tiene la cabeza redonda, la nariz corta y un pelaje que necesita cepillado diario. Prefiere un hogar tranquilo y es conocido como una de las razas más relajadas.",
           "pt-BR": "Gatos de pelo longo chegaram à Europa vindos da Pérsia e de regiões vizinhas no século XVII. O Persa de hoje tem cabeça redonda, focinho curto e uma pelagem que precisa ser escovada todos os dias. Prefere um lar tranquilo e é conhecido como uma das raças mais relaxadas.",
           "ko": "장모 고양이는 1600년대에 페르시아와 그 주변 지역에서 유럽으로 건너왔어요. 오늘날의 페르시안은 둥근 머리와 짧은 코를 가졌고, 털은 매일 빗질해 줘야 해요. 조용한 집을 좋아하며 가장 느긋한 품종 중 하나로 알려져 있어요."
+        },
+        "goldenFact": {
+          "en": "Persians come in a rainbow of colors, from snowy white to smoky blue and cream.",
+          "tr": "İran kedileri bembeyazdan dumanlı maviye ve kremaya kadar pek çok renkte olur.",
+          "ja": "ペルシャの毛色は雪のような白からスモーキーブルー、クリームまでとても豊富です。",
+          "de": "Perser gibt es in vielen Farben, von Schneeweiß bis Rauchblau und Creme.",
+          "fr": "Le Persan existe dans une palette de couleurs, du blanc neige au bleu fumé en passant par le crème.",
+          "es": "Los persas tienen una gran variedad de colores, del blanco nieve al azul ahumado y el crema.",
+          "pt-BR": "Os persas aparecem em muitas cores, do branco-neve ao azul esfumaçado e ao creme.",
+          "ko": "페르시안은 눈처럼 흰색부터 스모키 블루, 크림색까지 색이 아주 다양해요."
         }
       },
       "premiumFile": "chapter_04_persian_premium"
@@ -566,6 +606,16 @@
           "es": "Desarrollado en California en la década de 1960, el ragdoll es un gato grande, colorpoint y de ojos azules. A menudo sigue a las personas de habitación en habitación y suele relajarse por completo cuando lo sostienen en brazos, lo que dio nombre a la raza.",
           "pt-BR": "Desenvolvido na Califórnia nos anos 1960, o Ragdoll é um gato grande, de olhos azuis e pelagem colorpoint. Costuma seguir as pessoas de cômodo em cômodo e tende a relaxar completamente quando está no colo, o que deu nome à raça.",
           "ko": "1960년대 캘리포니아에서 개발된 랙돌은 파란 눈을 가진 대형 컬러포인트 고양이예요. 사람을 따라 이 방 저 방 다니는 일이 많고, 안기면 몸에 힘을 완전히 빼는 경향이 있는데, 여기서 품종 이름이 나왔어요."
+        },
+        "goldenFact": {
+          "en": "Ragdolls mature slowly and reach their full size and color at around four years old.",
+          "tr": "Ragdoll'lar yavaş olgunlaşır; tam boyut ve rengine dört yaş civarında ulaşır.",
+          "ja": "ラグドールはゆっくり成長し、4歳ごろに体格と毛色が完成します。",
+          "de": "Ragdolls reifen langsam und erreichen ihre volle Größe und Farbe erst mit etwa vier Jahren.",
+          "fr": "Le Ragdoll mûrit lentement et n'atteint sa taille et sa couleur définitives que vers quatre ans.",
+          "es": "El Ragdoll madura despacio y alcanza su tamaño y color definitivos hacia los cuatro años.",
+          "pt-BR": "O Ragdoll amadurece devagar e atinge o tamanho e a cor finais por volta dos quatro anos.",
+          "ko": "랙돌은 천천히 자라서 네 살쯤 되어야 몸집과 털색이 완성돼요."
         }
       },
       "premiumFile": "chapter_05_ragdoll_premium"
@@ -676,6 +726,16 @@
           "es": "Se dice que procede del puerto de Arcángel y se exhibió en Inglaterra en la década de 1870. Su mullido pelaje de doble capa parece plateado porque cada pelo tiene la punta de color gris claro. Es dulce y algo tímido con los desconocidos.",
           "pt-BR": "Dizem que veio do porto de Arkhangelsk, e o Azul Russo foi exibido na Inglaterra na década de 1870. Sua pelagem dupla e aveludada parece prateada porque cada fio tem a ponta cinza-clara. É gentil e um pouco tímido com estranhos.",
           "ko": "아르한겔스크 항구에서 왔다고 전해지는 러시안 블루는 1870년대 영국의 캣쇼에 출품됐어요. 털 한 올 한 올의 끝이 옅은 회색이라 폭신한 이중모가 은빛으로 보여요. 온순하고, 낯선 사람에게는 다소 수줍어해요."
+        },
+        "goldenFact": {
+          "en": "Russian Blue kittens have yellow eyes that slowly turn a vivid green.",
+          "tr": "Rus Mavisi yavrularının sarı gözleri zamanla canlı bir yeşile döner.",
+          "ja": "ロシアンブルーの子猫の目は黄色く、少しずつ鮮やかな緑色に変わります。",
+          "de": "Kätzchen der Russisch Blau haben gelbe Augen, die langsam leuchtend grün werden.",
+          "fr": "Les chatons Bleu russe ont les yeux jaunes, qui deviennent peu à peu d'un vert éclatant.",
+          "es": "Los gatitos Azul ruso tienen ojos amarillos que poco a poco se vuelven de un verde intenso.",
+          "pt-BR": "Os filhotes de Azul-russo têm olhos amarelos que aos poucos ficam verde-vivo.",
+          "ko": "러시안 블루 새끼의 노란 눈은 천천히 선명한 초록색으로 바뀌어요."
         }
       },
       "premiumFile": "chapter_06_russian_blue_premium"
@@ -787,6 +847,16 @@
           "es": "El pelaje «ticked» del abisinio tiene bandas de color en cada pelo, lo que le da un aspecto cálido y brillante. Su verdadero origen es objeto de debate, pero la raza se consolidó en Gran Bretaña a finales del siglo XIX. Los abisinios son atléticos, curiosos y les encanta trepar.",
           "pt-BR": "A pelagem \"tiquetada\" do Abissínio tem faixas de cor em cada fio, o que lhe dá uma aparência quente e cintilante. Sua verdadeira origem é discutida, mas a raça se estabeleceu na Grã-Bretanha no fim do século XIX. Os Abissínios são atléticos, curiosos e adoram escalar.",
           "ko": "아비시니안의 '티킹' 털은 한 올마다 색 띠가 있어 따뜻하고 은은하게 반짝이는 느낌을 줘요. 정확한 기원은 논란이 있지만, 1800년대 후반 영국에서 품종으로 자리 잡았어요. 아비시니안은 운동 능력이 뛰어나고 호기심이 많으며 높은 곳에 오르는 걸 좋아해요."
+        },
+        "goldenFact": {
+          "en": "Always busy and on the move, Abyssinians are known as the clowns of the cat world.",
+          "tr": "Hep meşgul ve hareket hâlindeki Habeş kedileri, kedi dünyasının palyaçoları olarak bilinir.",
+          "ja": "いつも忙しく動き回るアビシニアンは、猫界のピエロと呼ばれています。",
+          "de": "Immer beschäftigt und in Bewegung gelten Abessinier als die Clowns der Katzenwelt.",
+          "fr": "Toujours occupés et en mouvement, les Abyssins sont surnommés les clowns du monde félin.",
+          "es": "Siempre ocupados y en movimiento, los abisinios son conocidos como los payasos del mundo felino.",
+          "pt-BR": "Sempre ocupados e em movimento, os abissínios são conhecidos como os palhaços do mundo felino.",
+          "ko": "늘 바쁘게 움직이는 아비시니안은 고양이 세계의 광대로 알려져 있어요."
         }
       },
       "premiumFile": "chapter_07_abyssinian_premium"
@@ -895,6 +965,16 @@
           "es": "Conocido como el «gato sagrado de Birmania», el birmano tiene un pelaje colorpoint sedoso, ojos de un azul intenso y patas de un blanco puro. La raza se desarrolló en Francia a principios del siglo XX. Los birmanos son compañeros dulces y tranquilos.",
           "pt-BR": "Conhecido como o \"Gato Sagrado da Birmânia\", ele tem pelagem colorpoint sedosa, olhos azul-profundos e patas totalmente brancas. A raça foi desenvolvida na França no início do século XX. São companheiros gentis e tranquilos.",
           "ko": "'버마의 신성한 고양이'로 알려진 버만은 실키한 컬러포인트 털, 깊고 파란 눈, 새하얀 발을 가졌어요. 이 품종은 1900년대 초 프랑스에서 개발됐어요. 버만은 온순하고 조용한 반려묘예요."
+        },
+        "goldenFact": {
+          "en": "Birmans speak in soft, gentle voices and love a calm daily routine.",
+          "tr": "Birman'lar yumuşak, nazik bir sesle konuşur ve sakin bir günlük düzeni sever.",
+          "ja": "バーマンは柔らかく優しい声で鳴き、穏やかな毎日を好みます。",
+          "de": "Birmas haben eine leise, sanfte Stimme und lieben einen ruhigen Tagesablauf.",
+          "fr": "Le Sacré de Birmanie a une voix douce et apprécie une routine paisible.",
+          "es": "Los birmanos hablan con voz suave y adoran una rutina tranquila.",
+          "pt-BR": "Os sagrados da Birmânia têm voz suave e adoram uma rotina tranquila.",
+          "ko": "버먼은 부드럽고 상냥한 목소리로 울고, 평온한 일상을 좋아해요."
         }
       },
       "premiumFile": "chapter_08_birman_premium"
@@ -1007,6 +1087,16 @@
           "es": "El bengalí se creó cruzando gatos domésticos con el gato leopardo asiático y fue reconocido como raza en la década de 1980. Su pelaje moteado o marmolado suele tener un brillo resplandeciente. Los bengalíes son muy activos y necesitan mucho juego.",
           "pt-BR": "O Bengal foi criado cruzando gatos domésticos com o gato-leopardo-asiático e foi reconhecido como raça nos anos 1980. Sua pelagem pintada ou marmorizada costuma ter um brilho cintilante. Os Bengals são muito ativos e precisam de muita brincadeira.",
           "ko": "벵갈은 집고양이와 아시아 표범고양이를 교배해 탄생했고, 1980년대에 품종으로 인정받았어요. 점박이나 마블 무늬 털에는 반짝이는 광택이 도는 경우가 많아요. 벵갈은 활동량이 아주 많아서 충분히 놀아 줘야 해요."
+        },
+        "goldenFact": {
+          "en": "Clever Bengals can learn tricks like fetch, and some even walk happily on a leash.",
+          "tr": "Zeki Bengal'ler top getirme gibi numaralar öğrenebilir; bazıları tasmayla yürümeyi bile sever.",
+          "ja": "賢いベンガルは「取ってこい」などの芸を覚え、リードで散歩を楽しむ子もいます。",
+          "de": "Kluge Bengalen lernen Tricks wie Apportieren, manche gehen sogar gern an der Leine.",
+          "fr": "Malins, les Bengals apprennent des tours comme rapporter la balle, et certains se promènent même en laisse.",
+          "es": "Los inteligentes bengalíes aprenden trucos como traer la pelota, y algunos hasta pasean con correa.",
+          "pt-BR": "Espertos, os bengals aprendem truques como buscar a bolinha, e alguns até passeiam de coleira.",
+          "ko": "영리한 벵갈은 공 물어오기 같은 재주를 배우고, 목줄 산책을 즐기는 아이도 있어요."
         }
       },
       "premiumFile": "chapter_09_bengal_premium"
@@ -1117,6 +1207,16 @@
           "es": "El esfinge moderno surgió en Canadá en 1966 con un gatito sin pelo nacido de una gata doméstica. Sin un pelaje completo pierde calor rápidamente, por lo que busca regazos cálidos y rincones soleados. Su piel necesita lavados regulares para eliminar los aceites naturales.",
           "pt-BR": "O Sphynx moderno surgiu no Canadá em 1966, com um filhote sem pelo nascido de uma gata doméstica. Sem uma pelagem completa, perde calor rapidamente, por isso procura colos quentinhos e cantinhos ensolarados. Sua pele precisa ser lavada regularmente para remover a oleosidade natural.",
           "ko": "현대의 스핑크스는 1966년 캐나다에서 집고양이가 낳은 털 없는 새끼 고양이에서 시작됐어요. 털이 거의 없어 체온을 빨리 잃기 때문에 따뜻한 무릎이나 햇볕 드는 곳을 찾아요. 피부의 천연 유분을 없애기 위해 정기적으로 씻겨 줘야 해요."
+        },
+        "goldenFact": {
+          "en": "A Sphynx's skin shows the same pattern its fur would have had, spots and stripes included.",
+          "tr": "Sfenks'in derisinde, tüyü olsaydı taşıyacağı desen görünür; benekler ve çizgiler dahil.",
+          "ja": "スフィンクスの皮膚には、毛があれば現れたはずの斑点や縞の模様がそのまま見えます。",
+          "de": "Auf der Haut einer Sphynx zeigt sich das Muster, das ihr Fell gehabt hätte – samt Tupfen und Streifen.",
+          "fr": "La peau du Sphynx montre le motif qu'aurait eu son pelage, taches et rayures comprises.",
+          "es": "La piel del Esfinge muestra el patrón que tendría su pelaje, con manchas y rayas incluidas.",
+          "pt-BR": "A pele do Sphynx mostra o padrão que a pelagem teria, com manchas e listras.",
+          "ko": "스핑크스의 피부에는 털이 있었다면 보였을 점과 줄무늬 무늬가 그대로 드러나요."
         }
       },
       "premiumFile": "chapter_10_sphynx_premium"
@@ -1224,6 +1324,16 @@
           "es": "Raza natural de Anatolia central, el angora turco tiene un pelaje sedoso de una sola capa y una cola larga y emplumada. El blanco es el color clásico, y es habitual que tenga ojos de distinto color. Los angoras son vivaces, inteligentes y muy cariñosos.",
           "pt-BR": "Raça natural da Anatólia central, o Angorá Turco tem pelagem sedosa de camada única e cauda longa e felpuda. O branco é a cor clássica, e olhos de cores diferentes são comuns. Os Angorás são animados, inteligentes e muito carinhosos.",
           "ko": "아나톨리아 중부에서 자연 발생한 터키시 앙고라는 실키한 단일모와 깃털처럼 풍성한 긴 꼬리를 가졌어요. 흰색이 대표적인 색이고, 오드아이도 흔해요. 앙고라는 활발하고 영리하며 애정이 아주 많아요."
+        },
+        "goldenFact": {
+          "en": "Ankara Zoo has run a breeding program since 1917 to protect the white Angora.",
+          "tr": "Ankara Hayvanat Bahçesi, beyaz Ankara kedisini korumak için 1917'den beri üretim programı yürütüyor.",
+          "ja": "アンカラ動物園では1917年から、白いアンゴラを守る繁殖計画が続いています。",
+          "de": "Der Zoo von Ankara betreibt seit 1917 ein Zuchtprogramm zum Schutz der weißen Angora.",
+          "fr": "Le zoo d'Ankara mène depuis 1917 un programme d'élevage pour protéger l'Angora blanc.",
+          "es": "El zoológico de Ankara mantiene desde 1917 un programa de cría para proteger al angora blanco.",
+          "pt-BR": "O zoológico de Ancara mantém desde 1917 um programa de criação para proteger o angorá branco.",
+          "ko": "앙카라 동물원은 1917년부터 하얀 앙고라를 지키기 위한 번식 프로그램을 운영해 왔어요."
         }
       },
       "premiumFile": "chapter_11_turkish_angora_premium"
@@ -1335,6 +1445,16 @@
           "es": "Adaptado a los fríos bosques escandinavos, este gato grande tiene un pelaje de doble capa resistente al agua, una espesa gorguera y orejas con penachos. Es un hábil trepador capaz de bajar de los árboles de cabeza. A pesar de su aspecto salvaje, es amistoso y tranquilo.",
           "pt-BR": "Adaptado às florestas frias da Escandinávia, este gato grande tem pelagem dupla resistente à água, uma juba espessa e tufos nas orelhas. É um escalador habilidoso, capaz de descer das árvores de cabeça para baixo. Apesar da aparência selvagem, é simpático e calmo.",
           "ko": "추운 스칸디나비아 숲에 적응한 이 대형 고양이는 방수성 이중모, 풍성한 목털, 끝에 털 뭉치가 난 귀를 가졌어요. 나무를 아주 잘 타서 머리부터 거꾸로 내려올 수도 있어요. 야생적인 외모와 달리 다정하고 차분해요."
+        },
+        "goldenFact": {
+          "en": "In Norway it is called skogkatt, which simply means 'forest cat'.",
+          "tr": "Norveç'te ona skogkatt denir; bu da basitçe 'orman kedisi' demektir.",
+          "ja": "ノルウェーでは「スコグカット」と呼ばれ、これは単に「森の猫」という意味です。",
+          "de": "In Norwegen heißt sie „Skogkatt“, was einfach „Waldkatze“ bedeutet.",
+          "fr": "En Norvège, on l'appelle skogkatt, ce qui veut tout simplement dire « chat des forêts ».",
+          "es": "En Noruega se le llama skogkatt, que significa simplemente «gato del bosque».",
+          "pt-BR": "Na Noruega ele é chamado de skogkatt, que significa simplesmente 'gato da floresta'.",
+          "ko": "노르웨이에서는 '스콕캇'이라고 부르는데, 그냥 '숲 고양이'라는 뜻이에요."
         }
       },
       "premiumFile": "chapter_12_norwegian_forest_premium"
@@ -1448,6 +1568,16 @@
           "es": "La raza se desarrolló en torno al lago Van, en el este de Turquía. Su patrón clásico es un cuerpo blanco con manchas de color en la cabeza y la cola. Su pelaje semilargo repele el agua, y a muchos vanes les encanta jugar en ella. Nota: el «Van kedisi» de Turquía, totalmente blanco y con ojos de distinto color, es un gato local emparentado.",
           "pt-BR": "A raça se desenvolveu ao redor do Lago Van, no leste da Turquia. Seu padrão clássico é o corpo branco com manchas coloridas na cabeça e na cauda. Sua pelagem semilonga resiste à água, e muitos Vans adoram brincar nela. Observação: o \"Van kedisi\" da Turquia, todo branco e de olhos de cores diferentes, é um gato local aparentado.",
           "ko": "이 품종은 튀르키예 동부의 반 호수 주변에서 발달했어요. 대표적인 무늬는 하얀 몸에 머리와 꼬리에만 색 무늬가 있는 형태예요. 중장모 털은 물에 잘 젖지 않고, 물놀이를 즐기는 반 고양이도 많아요. 참고로 튀르키예의 온몸이 하얀 오드아이 고양이 '반 케디시(Van kedisi)'는 이와 관련된 토종 고양이예요."
+        },
+        "goldenFact": {
+          "en": "Vans love high places and are often found perched on top of doors and shelves.",
+          "tr": "Van kedileri yüksek yerleri sever; çoğu zaman kapıların ve rafların tepesinde bulunurlar.",
+          "ja": "ターキッシュバンは高い所が大好きで、よくドアや棚の上に陣取っています。",
+          "de": "Vans lieben die Höhe und thronen oft oben auf Türen und Regalen.",
+          "fr": "Les Vans adorent les hauteurs et se perchent souvent sur les portes et les étagères.",
+          "es": "A los Van les encantan las alturas y suelen encaramarse sobre puertas y estanterías.",
+          "pt-BR": "Os vans adoram lugares altos e costumam se empoleirar em portas e prateleiras.",
+          "ko": "반은 높은 곳을 좋아해서 문 위나 선반 꼭대기에 올라가 있곤 해요."
         }
       },
       "premiumFile": "chapter_13_turkish_van_premium"
@@ -1557,6 +1687,16 @@
           "es": "Una de las razas naturales más antiguas de Norteamérica, el Maine Coon fue gato de trabajo en granjas y barcos. Tiene un pelaje lanudo y resistente al agua, patas grandes y una cola larga y tupida. Es dulce y juguetón, y a menudo lo llaman «gigante amable».",
           "pt-BR": "Uma das raças naturais mais antigas da América do Norte, o Maine Coon era um gato de trabalho em fazendas e navios. Tem pelagem farta e resistente à água, patas grandes e uma cauda longa e peluda. É gentil e brincalhão, muitas vezes chamado de \"gigante gentil\".",
           "ko": "북미에서 가장 오래된 자연 발생 품종 중 하나인 메인쿤은 농장과 배에서 일하던 고양이였어요. 덥수룩한 방수성 털, 큰 발, 길고 풍성한 꼬리를 가졌어요. 온순하고 장난기가 많아 '온순한 거인'이라고 불리곤 해요."
+        },
+        "goldenFact": {
+          "en": "It is the official state cat of Maine, and its tufted paws work like snowshoes.",
+          "tr": "ABD'nin Maine eyaletinin resmî kedisidir; püsküllü patileri kar ayakkabısı gibi çalışır.",
+          "ja": "メイン州の公式の州猫で、房毛のある足はかんじきのように雪の上で役立ちます。",
+          "de": "Sie ist die offizielle Staatskatze von Maine, und ihre behaarten Pfoten wirken wie Schneeschuhe.",
+          "fr": "C'est le chat officiel de l'État du Maine, et ses pattes touffues font office de raquettes à neige.",
+          "es": "Es el gato oficial del estado de Maine, y sus patas con mechones funcionan como raquetas de nieve.",
+          "pt-BR": "É o gato oficial do estado do Maine, e suas patas peludas funcionam como raquetes de neve.",
+          "ko": "미국 메인주의 공식 고양이로, 털이 난 발이 설피처럼 눈 위를 걷게 해 줘요."
         }
       },
       "premiumFile": "chapter_14_maine_coon_premium"
@@ -1664,6 +1804,16 @@
           "es": "Creado en las décadas de 1950 y 1960 cruzando persas con gatos de pelo corto, el exótico conserva la dulce cara chata y el carácter tranquilo del persa. Su pelaje denso y mullido es mucho más fácil de cuidar que el de un persa.",
           "pt-BR": "Criado nas décadas de 1950 e 1960 cruzando Persas com gatos de pelo curto, o Exótico mantém o rosto achatado e meigo e a natureza calma do Persa. Sua pelagem densa e aveludada é muito mais fácil de cuidar do que a de um Persa.",
           "ko": "1950~60년대에 페르시안과 단모 고양이를 교배해 만든 엑조틱은 페르시안의 사랑스럽고 납작한 얼굴과 차분한 성격을 그대로 지녔어요. 촘촘하고 폭신한 털은 페르시안보다 훨씬 관리하기 쉬워요."
+        },
+        "goldenFact": {
+          "en": "Exotics are so easygoing that they are nicknamed 'the lazy man's Persian'.",
+          "tr": "Egzotikler o kadar rahattır ki onlara 'tembelin İran kedisi' lakabı takılmıştır.",
+          "ja": "エキゾチックはとてもおおらかで、「ものぐさな人のペルシャ」というあだ名があります。",
+          "de": "Exoten sind so unkompliziert, dass man sie „den Perser für Faule“ nennt.",
+          "fr": "L'Exotic est si facile à vivre qu'on le surnomme « le Persan des paresseux ».",
+          "es": "Los exóticos son tan tranquilos que los apodan «el persa de los perezosos».",
+          "pt-BR": "Os exóticos são tão tranquilos que ganharam o apelido de 'persa dos preguiçosos'.",
+          "ko": "엑조틱은 너무 느긋해서 '게으른 사람의 페르시안'이라는 별명이 있어요."
         }
       },
       "premiumFile": "chapter_15_exotic_shorthair_premium"
@@ -1774,6 +1924,16 @@
           "es": "La raza se remonta a una sola gata marrón, Wong Mau, llevada de Birmania a Estados Unidos en 1930. Los burmeses son compactos, pesan más de lo que aparentan y tienen un pelaje satinado y brillante. Son famosos por lo mucho que les gusta la gente.",
           "pt-BR": "A raça remonta a uma única gata marrom, Wong Mau, levada da Birmânia para os Estados Unidos em 1930. Os Burmeses são compactos, mais pesados do que parecem e têm uma pelagem acetinada e brilhante. São famosos por serem muito apegados às pessoas.",
           "ko": "이 품종은 1930년 버마에서 미국으로 건너온 갈색 고양이 한 마리, 웡 마우에서 시작됐어요. 버미즈는 몸이 다부지고 보기보다 무거우며, 윤기 나는 새틴 같은 털을 가졌어요. 사람을 무척 좋아하는 것으로 유명해요."
+        },
+        "goldenFact": {
+          "en": "Burmese are so solid for their size that fans call them 'bricks wrapped in silk'.",
+          "tr": "Burma kedileri boylarına göre o kadar ağırdır ki hayranları onlara 'ipeğe sarılı tuğla' der.",
+          "ja": "バーミーズは体の割にずっしり重く、ファンは「絹に包まれたレンガ」と呼びます。",
+          "de": "Burmesen sind für ihre Größe so kompakt, dass Fans sie „in Seide gewickelte Ziegelsteine“ nennen.",
+          "fr": "Le Burmese est si dense pour sa taille que ses fans l'appellent « une brique enveloppée de soie ».",
+          "es": "Los burmeses son tan macizos para su tamaño que sus fans los llaman «ladrillos envueltos en seda».",
+          "pt-BR": "Os burmeses são tão sólidos para o tamanho que os fãs os chamam de 'tijolos embrulhados em seda'.",
+          "ko": "버미즈는 몸집에 비해 아주 묵직해서 팬들은 '실크로 감싼 벽돌'이라고 불러요."
         }
       },
       "premiumFile": "chapter_16_burmese_premium"
@@ -1881,6 +2041,16 @@
           "es": "Una raza francesa histórica con un pelaje lanoso gris azulado que repele el agua y ojos de color cobre a naranja. Su cabeza redondeada y su hocico algo estrecho le dan una expresión «sonriente». Los chartreux son tranquilos, observadores y leales.",
           "pt-BR": "Uma raça francesa histórica, com pelagem lanosa cinza-azulada e repelente à água, e olhos que vão do cobre ao laranja. A cabeça arredondada e o focinho levemente estreito lhe dão uma expressão \"sorridente\". Os Chartreux são tranquilos, observadores e leais.",
           "ko": "역사가 깊은 프랑스 품종으로, 물을 튕겨 내는 청회색 양털 같은 털과 구릿빛에서 주황빛 눈을 가졌어요. 둥근 머리와 살짝 좁은 주둥이 덕분에 '웃는' 표정이 돼요. 샤르트뢰는 조용하고 관찰력이 좋으며 충성스러워요."
+        },
+        "goldenFact": {
+          "en": "Legend links the breed to the Carthusian monks of the Grande Chartreuse monastery in France.",
+          "tr": "Efsaneye göre bu tür, Fransa'daki Grande Chartreuse manastırının Kartuziyen keşişlerine dayanır.",
+          "ja": "伝説では、この猫種はフランスのグランド・シャルトルーズ修道院の修道士たちと結びついています。",
+          "de": "Der Legende nach geht die Rasse auf die Kartäusermönche des Klosters Grande Chartreuse in Frankreich zurück.",
+          "fr": "La légende relie la race aux moines chartreux du monastère de la Grande Chartreuse.",
+          "es": "La leyenda vincula esta raza con los monjes cartujos del monasterio de la Grande Chartreuse, en Francia.",
+          "pt-BR": "A lenda liga a raça aos monges cartuxos do mosteiro da Grande Chartreuse, na França.",
+          "ko": "전설에 따르면 이 품종은 프랑스 그랑드 샤르트뢰즈 수도원의 수도사들과 관련이 있어요."
         }
       },
       "premiumFile": "chapter_17_chartreux_premium"
@@ -1992,6 +2162,16 @@
           "es": "Una de las pocas razas domésticas con manchas naturales, el mau egipcio tiene ojos verde grosella y un pliegue de piel suelta que le permite alargar la zancada. La raza moderna se desarrolló a partir de gatos traídos de Egipto en la década de 1950.",
           "pt-BR": "Uma das poucas raças domésticas com pintas naturais, o Mau Egípcio tem olhos verde-groselha e uma prega de pele solta que permite alongar a passada. A raça moderna foi desenvolvida a partir de gatos trazidos do Egito nos anos 1950.",
           "ko": "자연적으로 점박이 무늬를 가진 몇 안 되는 집고양이 품종인 이집션 마우는 구스베리 같은 초록 눈과, 보폭을 넓혀 주는 느슨한 옆구리 피부를 가졌어요. 현대의 품종은 1950년대에 이집트에서 데려온 고양이들로부터 개발됐어요."
+        },
+        "goldenFact": {
+          "en": "Its forehead often bears an 'M'-shaped marking known as the scarab mark.",
+          "tr": "Alnında çoğu zaman 'skarabe izi' denen M biçiminde bir desen bulunur.",
+          "ja": "額にはスカラベ・マークと呼ばれる「M」字形の模様があることが多いです。",
+          "de": "Auf der Stirn trägt sie oft eine M-förmige Zeichnung, das sogenannte Skarabäus-Zeichen.",
+          "fr": "Son front porte souvent un dessin en forme de « M », appelé la marque du scarabée.",
+          "es": "Su frente suele lucir una marca en forma de «M» conocida como la marca del escarabajo.",
+          "pt-BR": "A testa costuma ter uma marca em forma de 'M', conhecida como marca do escaravelho.",
+          "ko": "이마에는 흔히 '스카라브 무늬'라고 불리는 M자 모양 무늬가 있어요."
         }
       },
       "premiumFile": "chapter_18_egyptian_mau_premium"
@@ -2101,6 +2281,16 @@
           "es": "Originario de la isla de Man, el manx porta un gen natural que le da una cola corta o ninguna. Con las patas traseras más largas y el cuerpo redondeado, se mueve dando saltitos como un conejo. Los manx son conocidos por ser hábiles cazadores y compañeros leales.",
           "pt-BR": "Nativo da Ilha de Man, o Manx carrega um gene natural para cauda curta ou ausente. Com patas traseiras mais longas e corpo arredondado, ele se move aos pulinhos, como um coelho. Os gatos Manx são conhecidos como caçadores habilidosos e companheiros leais.",
           "ko": "맨섬 토종인 맹크스는 꼬리가 짧거나 없는 자연 유전자를 가지고 있어요. 뒷다리가 더 길고 몸이 둥글어서 토끼처럼 깡충깡충 움직여요. 맹크스는 뛰어난 사냥꾼이자 충성스러운 반려묘로 알려져 있어요."
+        },
+        "goldenFact": {
+          "en": "A Manx can be a 'rumpy' with no tail, a 'stumpy' with a short one, or even fully tailed.",
+          "tr": "Bir Manx kuyruksuz 'rumpy', kısa kuyruklu 'stumpy' ya da tam kuyruklu bile olabilir.",
+          "ja": "マンクスには尾のない「ランピー」、短い尾の「スタンピー」、さらには長い尾の子もいます。",
+          "de": "Eine Manx kann ein „Rumpy“ ohne Schwanz, ein „Stumpy“ mit Stummel oder sogar voll beschwänzt sein.",
+          "fr": "Un Manx peut être « rumpy » sans queue, « stumpy » avec une queue courte, ou même avoir une queue entière.",
+          "es": "Un manx puede ser «rumpy», sin cola; «stumpy», con cola corta; o incluso tener la cola completa.",
+          "pt-BR": "Um manx pode ser 'rumpy', sem cauda, 'stumpy', com cauda curta, ou até ter a cauda inteira.",
+          "ko": "맹크스는 꼬리가 없는 '럼피', 짧은 '스텀피', 심지어 긴 꼬리를 가진 아이도 있어요."
         }
       },
       "premiumFile": "chapter_19_manx_premium"
@@ -2212,6 +2402,16 @@
           "es": "Desarrollado en Estados Unidos en la década de 1950 a partir de burmeses y American Shorthair negros, el bombay tiene un pelaje negro azabache y brillante y ojos cobrizos. Le encantan el calor y la compañía, y a menudo se dice que se comporta como un perro.",
           "pt-BR": "Desenvolvido nos Estados Unidos nos anos 1950 a partir de Burmeses e de Americanos de Pelo Curto pretos, o Bombaim tem pelagem preta retinta e brilhante e olhos cor de cobre. Adora calor e companhia e muitas vezes é descrito como parecido com um cachorro.",
           "ko": "1950년대 미국에서 버미즈와 검은 아메리칸 쇼트헤어를 교배해 개발된 봄베이는 칠흑같이 윤기 나는 털과 구릿빛 눈을 가졌어요. 따뜻한 곳과 함께 있는 걸 좋아해서 강아지 같다는 말을 자주 들어요."
+        },
+        "goldenFact": {
+          "en": "Its name honors the Indian city of Bombay, a nod to India's black leopards.",
+          "tr": "Adını Hindistan'ın Bombay şehrinden alır; Hindistan'ın kara leoparlarına bir selamdır.",
+          "ja": "名前はインドの都市ボンベイにちなみ、インドの黒豹へのオマージュになっています。",
+          "de": "Ihr Name ehrt die indische Stadt Bombay – eine Anspielung auf Indiens schwarze Leoparden.",
+          "fr": "Son nom rend hommage à la ville indienne de Bombay, un clin d'œil aux léopards noirs de l'Inde.",
+          "es": "Su nombre homenajea a la ciudad india de Bombay, un guiño a los leopardos negros de la India.",
+          "pt-BR": "O nome homenageia a cidade indiana de Bombaim, uma referência aos leopardos-negros da Índia.",
+          "ko": "이름은 인도의 도시 봄베이에서 따왔는데, 인도의 흑표범을 떠올리게 하려는 뜻이에요."
         }
       },
       "premiumFile": "chapter_20_bombay_premium"
@@ -2321,6 +2521,16 @@
           "es": "Gato natural de los bosques de Rusia, el siberiano tiene un denso pelaje de triple capa adaptado a los duros inviernos. Es fuerte y ágil, y madura lentamente a lo largo de varios años. Los siberianos son juguetones, cariñosos y a menudo disfrutan del agua.",
           "pt-BR": "Gato florestal natural da Rússia, o Siberiano tem uma densa pelagem tripla, adequada a invernos rigorosos. É forte e ágil e amadurece devagar, ao longo de vários anos. Os Siberianos são brincalhões, carinhosos e muitas vezes gostam de água.",
           "ko": "러시아의 자연 발생 숲고양이인 시베리안은 혹독한 겨울에 알맞은 촘촘한 삼중모를 가졌어요. 힘이 세고 민첩하며, 몇 년에 걸쳐 천천히 성숙해요. 시베리안은 장난기와 애정이 많고, 물을 좋아하는 경우가 많아요."
+        },
+        "goldenFact": {
+          "en": "Powerful hind legs make Siberians remarkable jumpers that love the highest perch in the room.",
+          "tr": "Güçlü arka bacakları Sibirya kedilerini müthiş zıplayıcılar yapar; odanın en yüksek köşesini severler.",
+          "ja": "力強い後ろ足をもつサイベリアンはジャンプの名手で、部屋の一番高い場所が大好きです。",
+          "de": "Kräftige Hinterbeine machen Sibirier zu tollen Springern, die den höchsten Platz im Raum lieben.",
+          "fr": "Grâce à leurs puissantes pattes arrière, les Sibériens sont d'excellents sauteurs qui adorent le perchoir le plus haut.",
+          "es": "Sus potentes patas traseras hacen de los siberianos grandes saltadores que adoran el sitio más alto de la casa.",
+          "pt-BR": "As fortes patas traseiras fazem dos siberianos ótimos saltadores, que adoram o lugar mais alto da casa.",
+          "ko": "강한 뒷다리 덕분에 시베리안은 점프 실력이 뛰어나고, 방에서 가장 높은 곳을 좋아해요."
         }
       },
       "premiumFile": "chapter_21_siberian_premium"
@@ -2432,6 +2642,16 @@
           "es": "El devon rex comenzó con un gatito de pelo rizado encontrado en Devon (Inglaterra) en 1960. Su pelaje corto y ondulado, sus enormes orejas de implantación baja y sus grandes ojos le dan un aspecto de elfo. Es travieso, le encanta el calor y le gusta subirse a los hombros.",
           "pt-BR": "O Devon Rex começou com um filhote de pelo encaracolado encontrado em Devon, na Inglaterra, em 1960. A pelagem curta e ondulada, as orelhas enormes de implantação baixa e os olhos grandes lhe dão um ar de elfo. É travesso, adora calor e gosta de se empoleirar nos ombros.",
           "ko": "데본 렉스는 1960년 잉글랜드 데번에서 발견된 곱슬털 새끼 고양이에서 시작됐어요. 짧은 웨이브 털, 낮게 달린 커다란 귀, 큰 눈 덕분에 요정 같은 모습이에요. 장난꾸러기이고 따뜻한 걸 좋아하며, 사람 어깨 위에 올라앉는 걸 좋아해요."
+        },
+        "goldenFact": {
+          "en": "Its short, curly coat is so fine that it sheds far less than most cats.",
+          "tr": "Kısa, kıvırcık tüyü o kadar incedir ki çoğu kediden çok daha az tüy döker.",
+          "ja": "短い巻き毛はとても細く、ほかの多くの猫より抜け毛がずっと少なめです。",
+          "de": "Ihr kurzes, lockiges Fell ist so fein, dass sie viel weniger haart als die meisten Katzen.",
+          "fr": "Son pelage court et bouclé est si fin qu'il perd bien moins de poils que la plupart des chats.",
+          "es": "Su pelo corto y rizado es tan fino que suelta mucho menos pelo que la mayoría de los gatos.",
+          "pt-BR": "Sua pelagem curta e cacheada é tão fina que solta bem menos pelos que a maioria dos gatos.",
+          "ko": "짧고 곱슬한 털이 아주 가늘어서 대부분의 고양이보다 털이 훨씬 덜 빠져요."
         }
       },
       "premiumFile": "chapter_22_devon_rex_premium"
@@ -2543,6 +2763,16 @@
           "es": "Pariente cercano del siamés, el oriental de pelo corto tiene el mismo cuerpo esbelto y las mismas orejas grandes, pero existe en una enorme variedad de colores sólidos y patrones. La mayoría tiene los ojos verdes. Son habladores, curiosos y muy apegados a su gente.",
           "pt-BR": "Parente próximo do Siamês, o Oriental de Pelo Curto tem o mesmo corpo esguio e as orelhas grandes, mas existe em uma enorme variedade de cores sólidas e padrões. A maioria tem olhos verdes. São vocais, curiosos e muito apegados aos seus humanos.",
           "ko": "샴과 가까운 친척인 오리엔탈 쇼트헤어는 샴처럼 날씬한 몸과 큰 귀를 가졌지만, 단색과 무늬의 종류가 매우 다양해요. 대부분 초록 눈을 가졌어요. 목소리가 많고 호기심이 강하며 사람에게 깊은 애착을 보여요."
+        },
+        "goldenFact": {
+          "en": "With its long legs and sleek body, it moves with the grace of a tiny dancer.",
+          "tr": "Uzun bacakları ve zarif gövdesiyle minik bir dansçı gibi süzülerek hareket eder.",
+          "ja": "長い脚としなやかな体で、小さなダンサーのように優雅に動きます。",
+          "de": "Mit ihren langen Beinen und dem schlanken Körper bewegt sie sich anmutig wie eine kleine Tänzerin.",
+          "fr": "Avec ses longues pattes et son corps élancé, il se déplace avec la grâce d'un petit danseur.",
+          "es": "Con sus largas patas y su cuerpo esbelto, se mueve con la gracia de una pequeña bailarina.",
+          "pt-BR": "Com pernas longas e corpo esguio, ele se move com a graça de um pequeno bailarino.",
+          "ko": "긴 다리와 날렵한 몸으로 작은 무용수처럼 우아하게 움직여요."
         }
       },
       "premiumFile": "chapter_23_oriental_shorthair_premium"
@@ -2656,6 +2886,16 @@
           "es": "Los gatos de cola corta viven en Japón desde hace siglos y aparecen en pinturas y grabados antiguos. La cola corta en forma de pompón de cada bobtail es única. El patrón tricolor «mi-ke» es especialmente apreciado. Son activos, habladores y juguetones.",
           "pt-BR": "Gatos de cauda curta vivem no Japão há séculos e aparecem em pinturas e gravuras antigas. A cauda curta em forma de pompom de cada Bobtail é única. O padrão tricolor \"mi-ke\" é especialmente valorizado. São ativos, falantes e brincalhões.",
           "ko": "꼬리가 짧은 고양이는 수백 년 전부터 일본에 살아왔고 옛 그림과 판화에도 등장해요. 밥테일의 짧은 방울 꼬리는 저마다 모양이 달라요. 삼색 '미케' 무늬가 특히 귀하게 여겨져요. 활발하고 수다스러우며 장난기가 많아요."
+        },
+        "goldenFact": {
+          "en": "In Japanese folklore, bobtailed cats were believed to bring good fortune to their homes.",
+          "tr": "Japon halk inanışında kısa kuyruklu kedilerin yaşadıkları eve şans getirdiğine inanılırdı.",
+          "ja": "日本の言い伝えでは、尾の短い猫は家に幸運を招くと信じられていました。",
+          "de": "Im japanischen Volksglauben brachten Stummelschwanzkatzen ihrem Zuhause Glück.",
+          "fr": "Selon le folklore japonais, les chats à queue courte portaient bonheur à leur foyer.",
+          "es": "En el folclore japonés se creía que los gatos de cola corta traían buena suerte a su hogar.",
+          "pt-BR": "No folclore japonês, acreditava-se que gatos de cauda curta traziam sorte para o lar.",
+          "ko": "일본 민담에서는 꼬리가 짧은 고양이가 집에 행운을 가져온다고 믿었어요."
         }
       },
       "premiumFile": "chapter_24_japanese_bobtail_premium"
@@ -2765,6 +3005,16 @@
           "es": "El somalí es la variedad de pelo largo del abisinio, reconocida como raza independiente a finales de la década de 1970. Su pelaje ticked y su cola espesa y tupida le dan un aspecto de zorro. Los somalíes son enérgicos, listos e infinitamente curiosos.",
           "pt-BR": "O Somali é a versão de pelo longo do Abissínio, reconhecido como raça separada no fim dos anos 1970. Sua pelagem tiquetada e a cauda cheia e peluda lhe dão uma aparência de raposa. Os Somalis são enérgicos, espertos e infinitamente curiosos.",
           "ko": "소말리는 아비시니안의 장모 버전으로, 1970년대 후반에 별도의 품종으로 인정받았어요. 티킹 털과 풍성한 꼬리 덕분에 여우 같은 모습이에요. 소말리는 활기차고 영리하며 호기심이 끝이 없어요."
+        },
+        "goldenFact": {
+          "en": "Somali kittens are born dark, and their glowing ticked coat can take up to two years to develop.",
+          "tr": "Somali yavruları koyu renkli doğar; parıltılı kırçıllı tüylerinin oluşması iki yılı bulabilir.",
+          "ja": "ソマリの子猫は濃い色で生まれ、輝くティックドの毛並みが完成するまで最長2年かかります。",
+          "de": "Somali-Kätzchen kommen dunkel zur Welt; ihr leuchtendes, getictes Fell entwickelt sich über bis zu zwei Jahre.",
+          "fr": "Les chatons Somalis naissent foncés, et leur lumineux pelage tiqueté peut mettre jusqu'à deux ans à se développer.",
+          "es": "Los gatitos somalíes nacen oscuros, y su brillante pelaje moteado puede tardar hasta dos años en desarrollarse.",
+          "pt-BR": "Os filhotes de somali nascem escuros, e a pelagem tiqueada e brilhante pode levar até dois anos para se formar.",
+          "ko": "소말리 새끼는 짙은 색으로 태어나고, 빛나는 틱드 털이 완성되기까지 최대 2년이 걸려요."
         }
       },
       "premiumFile": "chapter_25_somali_premium"

@@ -17,22 +17,23 @@ from pathlib import Path
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 CAPTIONS = {
-    "en-US": ["Solve puzzles,\ncollect cats", "Relaxing picture\nlogic puzzles", "400 puzzles across\n25 cat breeds",
-              "A card for\nevery breed", "Shiny Golden Cards\nwith Premium"],
-    "tr": ["Bulmaca çöz,\nkedi topla", "Rahatlatan resimli\nmantık bulmacaları", "25 kedi türünde\n400 bulmaca",
-           "Her tür için\nbir kart", "Premium ile parıltılı\nAltın Kartlar"],
-    "de-DE": ["Rätsel lösen,\nKatzen sammeln", "Entspannende\nBilder-Logikrätsel", "400 Rätsel mit\n25 Katzenrassen",
-              "Eine Karte für\njede Rasse", "Glänzende Goldene\nKarten mit Premium"],
-    "fr-FR": ["Résolvez des grilles,\ncollectionnez des chats", "Des grilles logiques\nrelaxantes",
-              "400 grilles,\n25 races de chats", "Une carte pour\nchaque race", "De brillantes Cartes\ndorées avec Premium"],
-    "es-ES": ["Resuelve puzles,\ncolecciona gatos", "Relajantes puzles\nlógicos de imágenes", "400 puzles con\n25 razas de gatos",
-              "Una carta para\ncada raza", "Brillantes Cartas\ndoradas con Premium"],
-    "pt-BR": ["Resolva desafios,\ncolecione gatos", "Quebra-cabeças lógicos\nrelaxantes", "400 desafios com\n25 raças de gatos",
-              "Uma carta para\ncada raça", "Cartas Douradas\nbrilhantes no Premium"],
-    "ja": ["パズルを解いて\n猫を集めよう", "癒やしの\nお絵かきロジック", "25の猫種と\n400のパズル",
-           "猫種ごとの\nカードを集めよう", "Premiumで輝く\nゴールデンカード"],
-    "ko": ["퍼즐을 풀고\n고양이를 모아요", "힐링되는\n그림 로직 퍼즐", "25가지 고양이와\n400개의 퍼즐",
-           "품종마다\n카드를 모아요", "프리미엄으로 만나는\n반짝이는 골든 카드"],
+    "en-US": ["Solve puzzles,\ncollect\nCat Fact Cards", "Picture logic\npuzzles", "400 puzzles across\n25 cat breeds",
+              "A fact card for\nevery cat breed", "Premium: extra levels,\nGolden Fact Cards\nand no ads"],
+    "tr": ["Bulmacaları çöz,\nKedi Bilgi\nKartlarını Topla", "Resimli mantık\nbulmacaları", "25 kedi türüne özel\n400 bulmaca",
+           "Her kedi türüne özel\nbilgi kartları", "Premium ile\nekstra bölümler,\naltın bilgi kartı ve\nreklamsız deneyim"],
+    "de-DE": ["Rätsel lösen,\nKatzen-Infokarten\nsammeln", "Logikrätsel\nmit Bildern", "400 Rätsel für\n25 Katzenrassen",
+              "Infokarten für\njede Katzenrasse", "Premium: Extra-Level,\ngoldene Infokarten\nund keine Werbung"],
+    "fr-FR": ["Résolvez les grilles,\ncollectionnez\nles fiches chats", "Grilles logiques\nen images",
+              "400 grilles pour\n25 races de chats", "Une fiche pour\nchaque race de chat",
+              "Premium : niveaux bonus,\nfiches dorées\net zéro publicité"],
+    "es-ES": ["Resuelve puzles,\ncolecciona fichas\nde gatos", "Puzles lógicos\ncon imágenes", "400 puzles para\n25 razas de gatos",
+              "Una ficha para\ncada raza de gato", "Premium: niveles extra,\nfichas doradas\ny sin anuncios"],
+    "pt-BR": ["Resolva desafios,\ncolecione fichas\nde gatos", "Quebra-cabeças\nlógicos com imagens", "400 desafios para\n25 raças de gatos",
+              "Uma ficha para\ncada raça de gato", "Premium: fases extras,\nfichas douradas\ne sem anúncios"],
+    "ja": ["パズルを解いて\n猫の図鑑カードを\n集めよう", "イラスト\nロジックパズル", "25の猫種に\n400のパズル",
+           "猫種ごとの\n図鑑カード", "Premiumで追加ステージ、\nゴールデンカード、\n広告なし"],
+    "ko": ["퍼즐을 풀고\n고양이 정보 카드를\n모아요", "그림 로직\n퍼즐", "25가지 고양이를 위한\n400개의 퍼즐",
+           "품종마다 특별한\n정보 카드", "프리미엄: 추가 스테이지,\n골든 정보 카드,\n광고 없는 플레이"],
 }
 
 # Uygulamanın renkleri (Theme): sıcak krem zemin, mercan vurgu, koyu kahve yazı
@@ -100,8 +101,8 @@ def frame(shot_path, caption, locale):
     draw = ImageDraw.Draw(canvas)
     unit = width / 1320
 
-    # Başlık: en fazla iki satır, sığmazsa küçülür
-    caption_box = (round(90 * unit), round(150 * unit), width - round(90 * unit), round(560 * unit))
+    # Başlık: iki-üç satır, sığmazsa küçülür
+    caption_box = (round(70 * unit), round(110 * unit), width - round(70 * unit), round(585 * unit))
     size = round(118 * unit)
     while True:
         font = load_font(locale, size)
@@ -117,17 +118,17 @@ def frame(shot_path, caption, locale):
 
     # Başlığın altında küçük mercan çizgi
     bar_w, bar_h = round(120 * unit), round(14 * unit)
-    bar_y = caption_box[3] + round(10 * unit)
+    bar_y = round(y + bbox[3] + 44 * unit)
     draw.rounded_rectangle([(width - bar_w) / 2, bar_y, (width + bar_w) / 2, bar_y + bar_h], radius=bar_h / 2, fill=ACCENT)
 
     # Ekran görüntüsü: küçültülmüş, yuvarlak köşeli, beyaz kenarlı ve gölgeli
-    scale = 0.78
+    scale = 0.74
     inner = shot.resize((round(width * scale), round(height * scale)), Image.LANCZOS)
     border = round(14 * unit)
     radius = round(84 * unit)
     framed_size = (inner.width + 2 * border, inner.height + 2 * border)
     left = (width - framed_size[0]) // 2
-    top = height - framed_size[1] - round(70 * unit)
+    top = height - framed_size[1] - round(60 * unit)
 
     shadow = Image.new("L", (width, height), 0)
     ImageDraw.Draw(shadow).rounded_rectangle(

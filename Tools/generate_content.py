@@ -721,6 +721,61 @@ ABOUT = {
 }
 
 
+# Altın Kartın ön yüzü: normal karttaki bilgiden farklı, ikinci bir ilginç bilgi.
+GOLDEN_FACT = {
+    "siamese": ("Siamese kittens are born almost white; their dark points fill in during the first months.",
+                "Siyam yavruları neredeyse beyaz doğar; koyu uçları ilk aylarda belirginleşir."),
+    "british-shorthair": ("British Shorthairs grow slowly and may not reach full size until they are three to five years old.",
+                          "British Shorthair'ler yavaş büyür; tam boyutlarına ancak üç ila beş yaşında ulaşabilirler."),
+    "scottish-fold": ("Folds often sit upright with their legs stretched out, a pose fans call the 'Buddha sit'.",
+                      "Fold'lar çoğu zaman bacaklarını uzatıp dik oturur; hayranları bu duruşa 'Buda oturuşu' der."),
+    "persian": ("Persians come in a rainbow of colors, from snowy white to smoky blue and cream.",
+                "İran kedileri bembeyazdan dumanlı maviye ve kremaya kadar pek çok renkte olur."),
+    "ragdoll": ("Ragdolls mature slowly and reach their full size and color at around four years old.",
+                "Ragdoll'lar yavaş olgunlaşır; tam boyut ve rengine dört yaş civarında ulaşır."),
+    "russian-blue": ("Russian Blue kittens have yellow eyes that slowly turn a vivid green.",
+                     "Rus Mavisi yavrularının sarı gözleri zamanla canlı bir yeşile döner."),
+    "abyssinian": ("Always busy and on the move, Abyssinians are known as the clowns of the cat world.",
+                   "Hep meşgul ve hareket hâlindeki Habeş kedileri, kedi dünyasının palyaçoları olarak bilinir."),
+    "birman": ("Birmans speak in soft, gentle voices and love a calm daily routine.",
+               "Birman'lar yumuşak, nazik bir sesle konuşur ve sakin bir günlük düzeni sever."),
+    "bengal": ("Clever Bengals can learn tricks like fetch, and some even walk happily on a leash.",
+               "Zeki Bengal'ler top getirme gibi numaralar öğrenebilir; bazıları tasmayla yürümeyi bile sever."),
+    "sphynx": ("A Sphynx's skin shows the same pattern its fur would have had, spots and stripes included.",
+               "Sfenks'in derisinde, tüyü olsaydı taşıyacağı desen görünür; benekler ve çizgiler dahil."),
+    "turkish-angora": ("Ankara Zoo has run a breeding program since 1917 to protect the white Angora.",
+                       "Ankara Hayvanat Bahçesi, beyaz Ankara kedisini korumak için 1917'den beri üretim programı yürütüyor."),
+    "norwegian-forest": ("In Norway it is called skogkatt, which simply means 'forest cat'.",
+                         "Norveç'te ona skogkatt denir; bu da basitçe 'orman kedisi' demektir."),
+    "turkish-van": ("Vans love high places and are often found perched on top of doors and shelves.",
+                    "Van kedileri yüksek yerleri sever; çoğu zaman kapıların ve rafların tepesinde bulunurlar."),
+    "maine-coon": ("It is the official state cat of Maine, and its tufted paws work like snowshoes.",
+                   "ABD'nin Maine eyaletinin resmî kedisidir; püsküllü patileri kar ayakkabısı gibi çalışır."),
+    "exotic-shorthair": ("Exotics are so easygoing that they are nicknamed 'the lazy man's Persian'.",
+                         "Egzotikler o kadar rahattır ki onlara 'tembelin İran kedisi' lakabı takılmıştır."),
+    "burmese": ("Burmese are so solid for their size that fans call them 'bricks wrapped in silk'.",
+                "Burma kedileri boylarına göre o kadar ağırdır ki hayranları onlara 'ipeğe sarılı tuğla' der."),
+    "chartreux": ("Legend links the breed to the Carthusian monks of the Grande Chartreuse monastery in France.",
+                  "Efsaneye göre bu tür, Fransa'daki Grande Chartreuse manastırının Kartuziyen keşişlerine dayanır."),
+    "egyptian-mau": ("Its forehead often bears an 'M'-shaped marking known as the scarab mark.",
+                     "Alnında çoğu zaman 'skarabe izi' denen M biçiminde bir desen bulunur."),
+    "manx": ("A Manx can be a 'rumpy' with no tail, a 'stumpy' with a short one, or even fully tailed.",
+             "Bir Manx kuyruksuz 'rumpy', kısa kuyruklu 'stumpy' ya da tam kuyruklu bile olabilir."),
+    "bombay": ("Its name honors the Indian city of Bombay, a nod to India's black leopards.",
+               "Adını Hindistan'ın Bombay şehrinden alır; Hindistan'ın kara leoparlarına bir selamdır."),
+    "siberian": ("Powerful hind legs make Siberians remarkable jumpers that love the highest perch in the room.",
+                 "Güçlü arka bacakları Sibirya kedilerini müthiş zıplayıcılar yapar; odanın en yüksek köşesini severler."),
+    "devon-rex": ("Its short, curly coat is so fine that it sheds far less than most cats.",
+                  "Kısa, kıvırcık tüyü o kadar incedir ki çoğu kediden çok daha az tüy döker."),
+    "oriental-shorthair": ("With its long legs and sleek body, it moves with the grace of a tiny dancer.",
+                           "Uzun bacakları ve zarif gövdesiyle minik bir dansçı gibi süzülerek hareket eder."),
+    "japanese-bobtail": ("In Japanese folklore, bobtailed cats were believed to bring good fortune to their homes.",
+                         "Japon halk inanışında kısa kuyruklu kedilerin yaşadıkları eve şans getirdiğine inanılırdı."),
+    "somali": ("Somali kittens are born dark, and their glowing ticked coat can take up to two years to develop.",
+               "Somali yavruları koyu renkli doğar; parıltılı kırçıllı tüylerinin oluşması iki yılı bulabilir."),
+}
+
+
 TITLES = {
     "burmese": ("Burmese", "Burma Kedisi"), "chartreux": ("Chartreux", "Chartreux"),
     "egyptian-mau": ("Egyptian Mau", "Mısır Mau"), "manx": ("Manx", "Manx"), "bombay": ("Bombay", "Bombay"),
@@ -745,6 +800,7 @@ def card_json(breed, order):
         "stats": {"energy": energy, "affection": affection, "playfulness": play, "grooming": grooming},
         "fact": {"en": fact_en, "tr": fact_tr},
         "about": dict(zip(("en", "tr"), ABOUT[breed["id"]])),
+        "goldenFact": dict(zip(("en", "tr"), GOLDEN_FACT[breed["id"]])),
     }
 
 

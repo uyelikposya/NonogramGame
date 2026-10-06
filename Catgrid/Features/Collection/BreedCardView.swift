@@ -66,7 +66,7 @@ struct BreedCardView: View {
             if !isCompact {
                 details
                 statsView
-                Text(verbatim: card.fact.resolved)
+                Text(verbatim: (isGolden ? card.goldenFact ?? card.fact : card.fact).resolved)
                     .font(.footnote.italic())
                     .foregroundStyle(ink)
                     .fixedSize(horizontal: false, vertical: true)
@@ -189,12 +189,15 @@ struct BreedCardView: View {
         }
     }
 
+    /// Altın Kart efsanevi sürüm: tüm puanlar 5/5.
+    private func score(_ value: Int) -> Int { isGolden ? 5 : value }
+
     private var statsView: some View {
         VStack(spacing: 6) {
-            statRow("Energy", card.stats.energy)
-            statRow("Affection", card.stats.affection)
-            statRow("Playfulness", card.stats.playfulness)
-            statRow("Grooming", card.stats.grooming)
+            statRow("Energy", score(card.stats.energy))
+            statRow("Affection", score(card.stats.affection))
+            statRow("Playfulness", score(card.stats.playfulness))
+            statRow("Grooming", score(card.stats.grooming))
         }
         .padding(10)
         .background(RoundedRectangle(cornerRadius: 10).fill(panel.opacity(isGolden ? 1 : 0.6)))
