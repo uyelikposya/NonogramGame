@@ -60,6 +60,8 @@ final class ContentValidationTests: XCTestCase {
                 XCTAssertNotNil(card.fact.translations["tr"], "\(breed.id) kart bilgisi Türkçe değil")
                 XCTAssertNotNil(card.about?.translations["en"], "\(breed.id) kartının arka yüzü yok")
                 XCTAssertNotNil(card.about?.translations["tr"], "\(breed.id) kartının arka yüzü Türkçe değil")
+                XCTAssertNotNil(card.goldenFact, "\(breed.id) Altın Kart bilgisi yok")
+                XCTAssertNotEqual(card.goldenFact?.translations["en"], card.fact.translations["en"], "\(breed.id) Altın Kart bilgisi normal kartla aynı")
                 for value in [card.stats.energy, card.stats.affection, card.stats.playfulness, card.stats.grooming] {
                     XCTAssertTrue((1...5).contains(value), "\(breed.id) puanı 1-5 dışında")
                 }
@@ -86,7 +88,7 @@ final class ContentValidationTests: XCTestCase {
             for chapter in catalog.chapters {
                 XCTAssertNotNil(chapter.title.translations[language], "\(chapter.id) [\(language)] ad eksik")
                 guard let card = chapter.card else { continue }
-                for text in [card.origin, card.coat, card.fact, card.about].compactMap({ $0 }) {
+                for text in [card.origin, card.coat, card.fact, card.about, card.goldenFact].compactMap({ $0 }) {
                     XCTAssertNotNil(text.translations[language], "\(chapter.id) kartı [\(language)] eksik")
                 }
             }
