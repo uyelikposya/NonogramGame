@@ -7824,6 +7824,328 @@
           }
         }
       }
+    },
+    "A gift for you: these golden puzzles are free!": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Size bir hediye: bu altın bulmacalar ücretsiz!"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "プレゼント：このゴールデンパズルは無料です！"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ein Geschenk für dich: Diese goldenen Rätsel sind gratis!"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un cadeau pour vous : ces grilles dorées sont gratuites !"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Un regalo para ti: ¡estos puzles dorados son gratis!"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Um presente para você: estes quebra-cabeças dourados são grátis!"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "선물이에요: 이 골든 퍼즐은 무료예요!"
+          }
+        }
+      }
+    },
+    "Golden Puzzles: a gift!": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Altın Bulmacalar: hediye!"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ゴールデンパズル：プレゼント！"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Goldene Rätsel: ein Geschenk!"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Grilles dorées : un cadeau !"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Puzles dorados: ¡un regalo!"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Quebra-cabeças Dourados: um presente!"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "골든 퍼즐: 선물!"
+          }
+        }
+      }
+    },
+    "Solve every %@ puzzle to unlock its 9 golden puzzles for free.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ bulmacalarının hepsini çöz, 9 altın bulmacası ücretsiz açılsın."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@のパズルをすべて解くと、9つのゴールデンパズルが無料で解放されます。"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Löse alle %@-Rätsel, um die 9 goldenen Rätsel gratis freizuschalten."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Résolvez toutes les grilles %@ pour débloquer gratuitement ses 9 grilles dorées."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Resuelve todos los puzles de %@ para desbloquear gratis sus 9 puzles dorados."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Resolva todos os quebra-cabeças de %@ para desbloquear grátis os 9 dourados."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ 퍼즐을 모두 풀면 골든 퍼즐 9개가 무료로 열려요."
+          }
+        }
+      }
+    },
+    "Gift: this breed's 9 golden puzzles are now unlocked!": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hediye: bu türün 9 altın bulmacası artık açık!"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "プレゼント：この猫種の9つのゴールデンパズルが解放されました！"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geschenk: Die 9 goldenen Rätsel dieser Rasse sind jetzt freigeschaltet!"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cadeau : les 9 grilles dorées de cette race sont débloquées !"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Regalo: ¡los 9 puzles dorados de esta raza ya están desbloqueados!"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Presente: os 9 quebra-cabeças dourados desta raça foram desbloqueados!"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "선물: 이 품종의 골든 퍼즐 9개가 열렸어요!"
+          }
+        }
+      }
+    },
+    "New cat unlocked: %@": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yeni kedi açıldı: %@"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "新しい猫が解放：%@"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Neue Katze freigeschaltet: %@"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nouveau chat débloqué : %@"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nuevo gato desbloqueado: %@"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Novo gato desbloqueado: %@"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "새 고양이 등장: %@"
+          }
+        }
+      }
+    },
+    "Finish %@ to unlock": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Açmak için %@ bölümünü bitir"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@を終えると解放"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schließe %@ ab zum Freischalten"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Terminez %@ pour débloquer"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Termina %@ para desbloquear"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Conclua %@ para desbloquear"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ 완료 시 열림"
+          }
+        }
+      }
+    },
+    "Solve half of %@ to unlock": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Açmak için %@ bulmacalarının yarısını çöz"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@のパズルを半分解くと解放"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Löse die Hälfte von %@ zum Freischalten"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Résolvez la moitié de %@ pour débloquer"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Resuelve la mitad de %@ para desbloquear"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Resolva metade de %@ para desbloquear"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%@ 퍼즐 절반을 풀면 열림"
+          }
+        }
+      }
     }
   },
   "version": "1.0"

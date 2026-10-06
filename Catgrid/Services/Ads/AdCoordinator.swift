@@ -73,4 +73,6 @@ final class AdCoordinator {
     func presentPrivacyOptions() async {
         await service.presentPrivacyOptions()
     }
+
+    var diagnostics: String { service.diagnostics }
 }

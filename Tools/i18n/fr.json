@@ -173,7 +173,14 @@
   "Hard: you place every X yourself.": "Difficile : tu places toi-même chaque X.",
   "Choose your difficulty": "Choisis ta difficulté",
   "The button next to the timer sets the difficulty. On Easy, finished lines are crossed out for you. On Hard, you mark every empty square yourself. Try both!": "Le bouton à côté du chrono règle la difficulté. En Facile, les lignes terminées sont barrées pour toi. En Difficile, tu marques toi-même chaque case vide. Essaie les deux !",
-  "Your card is on its way…": "Ta carte arrive…"
+  "Your card is on its way…": "Ta carte arrive…",
+  "A gift for you: these golden puzzles are free!": "Un cadeau pour vous : ces grilles dorées sont gratuites !",
+  "Golden Puzzles: a gift!": "Grilles dorées : un cadeau !",
+  "Solve every %@ puzzle to unlock its 9 golden puzzles for free.": "Résolvez toutes les grilles %@ pour débloquer gratuitement ses 9 grilles dorées.",
+  "Gift: this breed's 9 golden puzzles are now unlocked!": "Cadeau : les 9 grilles dorées de cette race sont débloquées !",
+  "New cat unlocked: %@": "Nouveau chat débloqué : %@",
+  "Finish %@ to unlock": "Terminez %@ pour débloquer",
+  "Solve half of %@ to unlock": "Résolvez la moitié de %@ pour débloquer"
  },
  "infoplist": {
   "CFBundleDisplayName": "Catgrid",

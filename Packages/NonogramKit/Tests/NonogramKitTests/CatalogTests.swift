@@ -136,6 +136,36 @@ final class CatalogTests: XCTestCase {
         XCTAssertEqual(progression.nextPlayable?.id, "s1")
     }
 
+    func testNextBreedUnlocksWhenHalfOfPreviousIsSolved() throws {
+        let catalog = try load(files: [
+            "tutorial": Self.chapter("tutorial", puzzles: ["t1", "t2"]),
+            "siamese": Self.chapter("siamese", puzzles: ["s1", "s2", "s3", "s4"]),
+            "persian": Self.chapter("persian", puzzles: ["p1", "p2"]),
+        ])
+        let siamese = catalog.chapters[1], persian = catalog.chapters[2]
+        XCTAssertEqual(Progression(catalog: catalog, completedIDs: []).requiredCount(toUnlockAfter: siamese), 2)
+
+        var progression = Progression(catalog: catalog, completedIDs: ["t1"])
+        XCTAssertFalse(progression.isUnlocked(siamese), "Eğitimin tamamı gerekir")
+
+        progression = Progression(catalog: catalog, completedIDs: ["t1", "t2", "s1"])
+        XCTAssertFalse(progression.isUnlocked(persian))
+        XCTAssertFalse(progression.isUnlocked("p1"))
+
+        progression = Progression(catalog: catalog, completedIDs: ["t1", "t2", "s1", "s2"])
+        XCTAssertTrue(progression.isUnlocked(persian), "Siyam'ın yarısı çözüldü")
+        XCTAssertTrue(progression.isUnlocked("p1"))
+        XCTAssertFalse(progression.isUnlocked("p2"))
+        XCTAssertTrue(progression.isUnlocked("s3"))
+        XCTAssertFalse(progression.isUnlocked("s4"))
+        XCTAssertEqual(progression.unlockingChapter(for: persian)?.id, "siamese")
+        XCTAssertEqual(progression.nextPlayable?.id, "s3", "Devam Et sırayı korur")
+
+        progression = Progression(catalog: catalog, completedIDs: ["p1"])
+        XCTAssertTrue(progression.isUnlocked(persian), "Çözülmüş bulmacası olan tür kilitlenmez")
+        XCTAssertTrue(progression.isUnlocked("p2"))
+    }
+
     func testPremiumPuzzlesStayOutOfRegularOrder() throws {
         let catalog = try sampleCatalog()
         let siamese = catalog.chapters[1]

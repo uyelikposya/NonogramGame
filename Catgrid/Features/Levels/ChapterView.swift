@@ -58,8 +58,11 @@ struct ChapterView: View {
                     }
 
                     if !chapter.premiumPuzzles.isEmpty {
-                        if store.isPremium {
+                        if model.canPlayGolden(chapter, isPremium: store.isPremium) {
                             premiumSection(chapter, progression: progression)
+                        } else if model.isGoldenGift(chapter) {
+                            // Hediye tür: tamamı bitince Altın bulmacalar ücretsiz açılır
+                            GoldenGiftTeaser(chapterTitle: chapter.title.resolved)
                         } else {
                             // Abone olmayanlar bulmacaları görmez; yalnızca kısa bir tanıtım
                             PremiumTeaser { isShowingPaywall = true }
@@ -95,6 +98,11 @@ extension ChapterView {
                 Text("\(solved) of \(chapter.premiumPuzzles.count) solved")
                     .font(.subheadline)
                     .foregroundStyle(theme.textSecondary)
+            }
+            if model.isGoldenGift(chapter) && !store.isPremium {
+                Label("A gift for you: these golden puzzles are free!", systemImage: "gift.fill")
+                    .font(.subheadline.weight(.semibold))
+                    .foregroundStyle(Gold.deep)
             }
             Text(model.isGoldenCollected(chapter)
                  ? LocalizedStringKey("You won the Golden Card of this breed!")
@@ -163,6 +171,41 @@ struct PremiumTeaser: View {
         .buttonStyle(PressableButtonStyle())
         .padding(.top, 8)
         .accessibilityIdentifier("chapter.premiumTeaser")
+    }
+}
+
+/// Hediye türde, tür bitmeden önce: "Tüm bulmacaları çöz, Altın bulmacalar hediye".
+@MainActor
+struct GoldenGiftTeaser: View {
+    @Environment(\.appTheme) private var theme
+    let chapterTitle: String
+
+    var body: some View {
+        HStack(spacing: 12) {
+            Image(systemName: "gift.fill")
+                .font(.title3)
+                .foregroundStyle(Gold.deep)
+            VStack(alignment: .leading, spacing: 2) {
+                Text("Golden Puzzles: a gift!")
+                    .font(.headline)
+                    .foregroundStyle(theme.textPrimary)
+                Text("Solve every \(chapterTitle) puzzle to unlock its 9 golden puzzles for free.")
+                    .font(.caption)
+                    .foregroundStyle(theme.textSecondary)
+            }
+            Spacer(minLength: 4)
+            Image(systemName: "lock.fill")
+                .foregroundStyle(Gold.deep)
+        }
+        .padding(14)
+        .background(RoundedRectangle(cornerRadius: 16, style: .continuous).fill(theme.surface))
+        .overlay(
+            RoundedRectangle(cornerRadius: 16, style: .continuous)
+                .strokeBorder(Gold.foil, lineWidth: 2)
+        )
+        .padding(.top, 8)
+        .accessibilityElement(children: .combine)
+        .accessibilityIdentifier("chapter.goldenGift")
     }
 }
 

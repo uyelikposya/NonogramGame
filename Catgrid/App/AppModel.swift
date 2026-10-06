@@ -64,6 +64,19 @@ final class AppModel {
             && chapter.premiumPuzzles.allSatisfy { completed.contains($0.id) }
     }
 
+    /// Herkese hediye Altın bulmacalar: bu tür bitince 9 Altın bulmacası abonelik olmadan açılır,
+    /// oyuncu Premium'u denemiş olur.
+    static let giftedGoldenBreedID = "british-shorthair"
+
+    func isGoldenGift(_ chapter: Chapter) -> Bool {
+        chapter.id == Self.giftedGoldenBreedID && !chapter.premiumPuzzles.isEmpty
+    }
+
+    /// Altın bulmacalar oynanabilir mi: Premium abonelik ya da tür bitmiş hediye tür.
+    func canPlayGolden(_ chapter: Chapter, isPremium: Bool) -> Bool {
+        isPremium || (isGoldenGift(chapter) && isCollected(chapter))
+    }
+
     var goldenBreeds: [Chapter] {
         breeds.filter { isGoldenCollected($0) }
     }

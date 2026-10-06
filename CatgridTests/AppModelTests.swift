@@ -78,6 +78,30 @@ final class AppModelTests: XCTestCase {
         XCTAssertEqual(model.goldenBreeds.map(\.id), ["siamese"])
     }
 
+    func testGiftedBreedOpensGoldenPuzzlesWhenFinished() throws {
+        let catalog = try LevelCatalog(chapters: [
+            Chapter(id: AppModel.giftedGoldenBreedID, kind: .breed, title: ["en": "British Shorthair"], expectedPuzzleCount: 1,
+                    puzzles: [Puzzle(id: "b1", pattern: ["#"])],
+                    premiumPuzzles: [Puzzle(id: "bp1", pattern: ["#"])]),
+        ])
+        let model = AppModel(catalog: catalog, progress: .inMemory())
+        let gifted = catalog.chapters[0]
+        XCTAssertTrue(model.isGoldenGift(gifted))
+        XCTAssertFalse(model.canPlayGolden(gifted, isPremium: false), "Tür bitmeden hediye açılmaz")
+        XCTAssertTrue(model.canPlayGolden(gifted, isPremium: true))
+
+        model.record(completion("b1"))
+        XCTAssertTrue(model.canPlayGolden(gifted, isPremium: false))
+
+        let other = try makeModel()
+        other.record(completion("t1"))
+        other.record(completion("t2"))
+        other.record(completion("s1"))
+        let siamese = other.catalog.chapters[1]
+        XCTAssertFalse(other.isGoldenGift(siamese))
+        XCTAssertFalse(other.canPlayGolden(siamese, isPremium: false), "Diğer türler Premium ister")
+    }
+
     func testNumbersPremiumPuzzlesSeparately() throws {
         let model = try makeModel()
         let sp2 = try XCTUnwrap(model.catalog.puzzle(withID: "sp2"))

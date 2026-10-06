@@ -170,7 +170,14 @@
   "Hard: you place every X yourself.": "むずかしい：×はすべて自分で付けます。",
   "Choose your difficulty": "難易度を選ぼう",
   "The button next to the timer sets the difficulty. On Easy, finished lines are crossed out for you. On Hard, you mark every empty square yourself. Try both!": "タイマーの横のボタンで難易度を切り替えられます。かんたんでは完成した列に自動で×が付き、むずかしいでは空きマスに自分で印を付けます。両方試してみましょう！",
-  "Your card is on its way…": "カードが届きます…"
+  "Your card is on its way…": "カードが届きます…",
+  "A gift for you: these golden puzzles are free!": "プレゼント：このゴールデンパズルは無料です！",
+  "Golden Puzzles: a gift!": "ゴールデンパズル：プレゼント！",
+  "Solve every %@ puzzle to unlock its 9 golden puzzles for free.": "%@のパズルをすべて解くと、9つのゴールデンパズルが無料で解放されます。",
+  "Gift: this breed's 9 golden puzzles are now unlocked!": "プレゼント：この猫種の9つのゴールデンパズルが解放されました！",
+  "New cat unlocked: %@": "新しい猫が解放：%@",
+  "Finish %@ to unlock": "%@を終えると解放",
+  "Solve half of %@ to unlock": "%@のパズルを半分解くと解放"
  },
  "infoplist": {
   "CFBundleDisplayName": "Catgrid",

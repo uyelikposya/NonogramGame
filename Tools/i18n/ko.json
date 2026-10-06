@@ -170,7 +170,14 @@
   "Hard: you place every X yourself.": "어려움: X는 모두 직접 표시해요.",
   "Choose your difficulty": "난이도를 골라요",
   "The button next to the timer sets the difficulty. On Easy, finished lines are crossed out for you. On Hard, you mark every empty square yourself. Try both!": "타이머 옆 버튼으로 난이도를 바꿀 수 있어요. 쉬움에서는 완성된 줄에 X가 자동으로 표시되고, 어려움에서는 빈칸을 직접 표시해요. 둘 다 해 보세요!",
-  "Your card is on its way…": "카드가 도착하고 있어요…"
+  "Your card is on its way…": "카드가 도착하고 있어요…",
+  "A gift for you: these golden puzzles are free!": "선물이에요: 이 골든 퍼즐은 무료예요!",
+  "Golden Puzzles: a gift!": "골든 퍼즐: 선물!",
+  "Solve every %@ puzzle to unlock its 9 golden puzzles for free.": "%@ 퍼즐을 모두 풀면 골든 퍼즐 9개가 무료로 열려요.",
+  "Gift: this breed's 9 golden puzzles are now unlocked!": "선물: 이 품종의 골든 퍼즐 9개가 열렸어요!",
+  "New cat unlocked: %@": "새 고양이 등장: %@",
+  "Finish %@ to unlock": "%@ 완료 시 열림",
+  "Solve half of %@ to unlock": "%@ 퍼즐 절반을 풀면 열림"
  },
  "infoplist": {
   "CFBundleDisplayName": "Catgrid",

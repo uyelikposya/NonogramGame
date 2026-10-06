@@ -19,7 +19,8 @@ struct ChaptersView: View {
                         ChapterCard(
                             chapter: chapter,
                             completed: progression.completedCount(in: chapter),
-                            isUnlocked: isUnlocked
+                            isUnlocked: isUnlocked,
+                            unlockHint: isUnlocked ? nil : unlockHint(for: chapter, progression: progression)
                         )
                     }
                     .buttonStyle(PressableButtonStyle())
@@ -32,6 +33,15 @@ struct ChaptersView: View {
         .themedScreen()
         .screenTitle("Levels")
     }
+
+    /// Kilitli türün altında: neyin çözülmesi gerektiği.
+    private func unlockHint(for chapter: Chapter, progression: Progression) -> Text? {
+        guard !chapter.puzzles.isEmpty, let previous = progression.unlockingChapter(for: chapter) else { return nil }
+        let title = previous.title.resolved
+        return previous.kind == .tutorial
+            ? Text("Finish \(title) to unlock")
+            : Text("Solve half of \(title) to unlock")
+    }
 }
 
 @MainActor
@@ -40,6 +50,7 @@ struct ChapterCard: View {
     let chapter: Chapter
     let completed: Int
     let isUnlocked: Bool
+    var unlockHint: Text?
 
     private var isComingSoon: Bool { chapter.puzzles.isEmpty }
 
@@ -61,6 +72,10 @@ struct ChapterCard: View {
                 if isComingSoon {
                     Text("Coming soon")
                         .font(.subheadline)
+                        .foregroundStyle(theme.textSecondary)
+                } else if let unlockHint {
+                    Label { unlockHint } icon: { Image(systemName: "lock.fill") }
+                        .font(.caption.weight(.semibold))
                         .foregroundStyle(theme.textSecondary)
                 } else {
                     HStack(spacing: 10) {

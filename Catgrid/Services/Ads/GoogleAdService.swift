@@ -16,6 +16,13 @@ final class GoogleAdService: NSObject, AdService {
     private var rewarded: GADRewardedAd?
     private var isStarted = false
     private var dismissContinuation: CheckedContinuation<Void, Never>?
+    /// Teşhis için son durumlar (reklam yüklenemezse AdMob'un hata mesajı).
+    private var interstitialStatus = "not requested"
+    private var rewardedStatus = "not requested"
+    private var startStatus = "waiting"
+    /// Art arda başarısız yüklemelerde bekleme (30 sn, 60 sn, ... en çok 5 dk).
+    private var interstitialFailures = 0
+    private var rewardedFailures = 0
 
     init(configuration: AdConfiguration = .current) {
         self.configuration = configuration
@@ -31,12 +38,16 @@ final class GoogleAdService: NSObject, AdService {
         }
         await requestConsent()
         await requestTrackingAuthorization()
-        guard UMPConsentInformation.sharedInstance.canRequestAds else { return }
+        guard UMPConsentInformation.sharedInstance.canRequestAds else {
+            startStatus = "consent does not allow ads yet"
+            return
+        }
         // Her yaşa uygun, sakin bir kedi oyunu: yalnızca genel izleyici reklamları
         GADMobileAds.sharedInstance().requestConfiguration.maxAdContentRating = .general
         await withCheckedContinuation { continuation in
             GADMobileAds.sharedInstance().start { _ in continuation.resume() }
         }
+        startStatus = "SDK started"
         loadInterstitial()
         loadRewarded()
     }
@@ -74,22 +85,63 @@ final class GoogleAdService: NSObject, AdService {
     // MARK: - Yükleme
 
     private func loadInterstitial() {
-        GADInterstitialAd.load(withAdUnitID: configuration.interstitialUnitID, request: GADRequest()) { [weak self] ad, _ in
+        interstitialStatus = "loading"
+        GADInterstitialAd.load(withAdUnitID: configuration.interstitialUnitID, request: GADRequest()) { [weak self] ad, error in
             Task { @MainActor in
-                self?.interstitial = ad
+                guard let self else { return }
+                self.interstitial = ad
                 ad?.fullScreenContentDelegate = self
+                if ad != nil {
+                    self.interstitialFailures = 0
+                    self.interstitialStatus = "ready"
+                } else {
+                    self.interstitialFailures += 1
+                    self.interstitialStatus = "failed: \(error?.localizedDescription ?? "unknown")"
+                    self.retry(after: self.interstitialFailures) { $0.loadInterstitial() }
+                }
             }
         }
     }
 
     private func loadRewarded() {
-        GADRewardedAd.load(withAdUnitID: configuration.rewardedUnitID, request: GADRequest()) { [weak self] ad, _ in
+        rewardedStatus = "loading"
+        GADRewardedAd.load(withAdUnitID: configuration.rewardedUnitID, request: GADRequest()) { [weak self] ad, error in
             Task { @MainActor in
-                self?.rewarded = ad
+                guard let self else { return }
+                self.rewarded = ad
                 ad?.fullScreenContentDelegate = self
-                self?.isRewardedReady = ad != nil
+                self.isRewardedReady = ad != nil
+                if ad != nil {
+                    self.rewardedFailures = 0
+                    self.rewardedStatus = "ready"
+                } else {
+                    self.rewardedFailures += 1
+                    self.rewardedStatus = "failed: \(error?.localizedDescription ?? "unknown")"
+                    self.retry(after: self.rewardedFailures) { $0.loadRewarded() }
+                }
             }
         }
+    }
+
+    /// Reklam bulunamazsa (yeni hesaplarda sık) bir süre sonra yeniden dener.
+    private func retry(after failures: Int, _ load: @escaping @MainActor (GoogleAdService) -> Void) {
+        let delay = min(30.0 * pow(2, Double(failures - 1)), 300)
+        Task { [weak self] in
+            try? await Task.sleep(for: .seconds(delay))
+            guard let self else { return }
+            load(self)
+        }
+    }
+
+    var diagnostics: String {
+        let consent = UMPConsentInformation.sharedInstance
+        return """
+        Start: \(startStatus)
+        Consent: \(consent.consentStatus.rawValue), can request ads: \(consent.canRequestAds)
+        Tracking: \(ATTrackingManager.trackingAuthorizationStatus.rawValue)
+        Interstitial: \(interstitialStatus)
+        Rewarded: \(rewardedStatus)
+        """
     }
 
     // MARK: - Gösterme
