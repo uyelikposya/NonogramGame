@@ -26,6 +26,8 @@ struct SettingsView: View {
     @State private var restoreResult: StoreManager.RestoreResult?
     @State private var isRestoring = false
     @State private var isShowingAdDiagnostics = false
+    /// Teşhis: StoreKit'in gördüğü mağaza ülkesi (TestFlight'ta test mağazası olabilir).
+    @State private var storefrontInfo = ""
 
     private let paletteColumns = [GridItem(.flexible(), spacing: 12), GridItem(.flexible(), spacing: 12)]
 
@@ -200,11 +202,18 @@ struct SettingsView: View {
                         .foregroundStyle(theme.textSecondary)
                         .frame(maxWidth: .infinity)
                         // Gizli teşhis: uzun basınca reklam durumu (TestFlight'ta sorun ararken)
-                        .onLongPressGesture { isShowingAdDiagnostics = true }
+                        .onLongPressGesture {
+                            Task {
+                                let storefront = await Storefront.current
+                                storefrontInfo = "Store: \(storefront?.countryCode ?? "?")"
+                                    + " · App language: \(Bundle.main.preferredLocalizations.first ?? "?")"
+                                isShowingAdDiagnostics = true
+                            }
+                        }
                         .alert(Text(verbatim: "Ads"), isPresented: $isShowingAdDiagnostics) {
                             Button(role: .cancel) {} label: { Text(verbatim: "OK") }
                         } message: {
-                            Text(verbatim: ads.diagnostics)
+                            Text(verbatim: storefrontInfo + "\n" + ads.diagnostics)
                         }
                 }
             }

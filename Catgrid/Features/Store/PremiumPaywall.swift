@@ -55,6 +55,9 @@ struct PremiumPaywall: View {
                 .padding(.horizontal, 8)
             }
             .padding(.vertical, 12)
+            // Apple'ın ekranı dili App Store hesabının ülkesinden alır (ör. ABD hesabında İngilizce);
+            // kendi yazılarımız uygulamanın dilinde kalsın
+            .environment(\.locale, Self.appLocale)
         }
         .storeButton(.visible, for: .restorePurchases)
         .storeButton(.visible, for: .cancellation)
@@ -69,6 +72,11 @@ struct PremiumPaywall: View {
             if isPremium { dismiss() }
         }
         .tint(Gold.deep)
+    }
+
+    /// Uygulamanın o an kullandığı dil (telefonun ya da Ayarlar'dan seçilen uygulama dili).
+    private static var appLocale: Locale {
+        Locale(identifier: Bundle.main.preferredLocalizations.first ?? "en")
     }
 
     private func benefit(_ title: LocalizedStringKey, icon: String) -> some View {
