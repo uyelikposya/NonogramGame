@@ -13,6 +13,8 @@ protocol AdService: AnyObject {
     /// Oyuncu ödülü kazandıysa `true`.
     func showRewarded() async -> Bool
     func presentPrivacyOptions() async
+    /// Ayarlar'daki gizli teşhis satırı (sürüm yazısına uzun basınca): reklamlar neden gelmiyor?
+    var diagnostics: String { get }
 }
 
 @MainActor
@@ -34,6 +36,7 @@ final class NoAdService: AdService {
 
     func showRewarded() async -> Bool { isRewardedReady }
     func presentPrivacyOptions() async {}
+    var diagnostics: String { "Ads disabled" }
 }
 
 /// Reklam kimlikleri. AdMob hesabı onaylanınca `production` değerlerini doldur;

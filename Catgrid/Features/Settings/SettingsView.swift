@@ -25,6 +25,7 @@ struct SettingsView: View {
     @State private var isManagingSubscription = false
     @State private var restoreResult: StoreManager.RestoreResult?
     @State private var isRestoring = false
+    @State private var isShowingAdDiagnostics = false
 
     private let paletteColumns = [GridItem(.flexible(), spacing: 12), GridItem(.flexible(), spacing: 12)]
 
@@ -193,10 +194,18 @@ struct SettingsView: View {
                 }
 
                 if let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String {
-                    Text("Version \(version)")
+                    let build = Bundle.main.infoDictionary?["CFBundleVersion"] as? String ?? ""
+                    (Text("Version \(version)") + Text(verbatim: " (\(build))"))
                         .font(.footnote)
                         .foregroundStyle(theme.textSecondary)
                         .frame(maxWidth: .infinity)
+                        // Gizli teşhis: uzun basınca reklam durumu (TestFlight'ta sorun ararken)
+                        .onLongPressGesture { isShowingAdDiagnostics = true }
+                        .alert(Text(verbatim: "Ads"), isPresented: $isShowingAdDiagnostics) {
+                            Button(role: .cancel) {} label: { Text(verbatim: "OK") }
+                        } message: {
+                            Text(verbatim: ads.diagnostics)
+                        }
                 }
             }
             .padding(20)

@@ -17,10 +17,15 @@ public struct PuzzleCompletion: Codable, Hashable, Sendable {
 
 /// Kilit kuralları. Saf fonksiyonlardır; ilerleme verisi dışarıdan verilir.
 ///
-/// Kural: bir bulmaca, kendisi veya sıradaki bir önceki bulmaca tamamlanmışsa açıktır.
-/// "Öncekilerin hepsi" yerine "bir önceki" kullanılır ki ileride araya bölüm eklense
-/// oyuncunun daha önce bitirdiği bölümler kilitlenmesin.
+/// - Bölüm içinde: bir bulmaca, kendisi veya bölümdeki bir önceki bulmaca çözülmüşse açıktır.
+/// - Eğitim (ilk bölüm) her zaman açıktır; ilk kedi türü eğitimin tamamı bitince açılır.
+/// - Sonraki kedi türleri, bir önceki tür açıkken onun bulmacalarının **yarısı** çözülünce açılır:
+///   oyuncu zorlandığı bir türde takılıp kalmaz, yeni bir kediye geçebilir.
+/// - Bir türden tek bir bulmaca bile çözülmüşse o tür açık kalır (kural değişse de ilerleme kilitlenmez).
 public struct Progression: Sendable {
+    /// Sonraki türü açmak için bir önceki türde çözülmesi gereken oran.
+    public static let unlockFraction = 0.5
+
     public let catalog: LevelCatalog
     public let completedIDs: Set<String>
 
@@ -34,13 +39,37 @@ public struct Progression: Sendable {
     }
 
     public func isUnlocked(_ puzzleID: String) -> Bool {
-        guard let index = catalog.index(of: puzzleID) else { return false }
-        if index == 0 || isCompleted(puzzleID) { return true }
-        return isCompleted(catalog.orderedPuzzles[index - 1].id)
+        guard let chapter = catalog.chapter(containing: puzzleID),
+              let index = chapter.puzzles.firstIndex(where: { $0.id == puzzleID })
+        else { return false }
+        if isCompleted(puzzleID) { return true }
+        if index == 0 { return isUnlocked(chapter) }
+        return isCompleted(chapter.puzzles[index - 1].id)
     }
 
     public func isUnlocked(_ chapter: Chapter) -> Bool {
-        chapter.puzzles.first.map { isUnlocked($0.id) } ?? false
+        guard let index = playableChapters.firstIndex(where: { $0.id == chapter.id }) else { return false }
+        if index == 0 || chapter.puzzles.contains(where: { isCompleted($0.id) }) { return true }
+        let previous = playableChapters[index - 1]
+        guard isUnlocked(previous) else { return false }
+        return completedCount(in: previous) >= requiredCount(toUnlockAfter: previous)
+    }
+
+    /// `chapter` bölümünden sonra gelen türü açmak için çözülmesi gereken bulmaca sayısı.
+    /// Eğitimin tamamı gerekir; kedi türlerinde yarısı (yukarı yuvarlanır).
+    public func requiredCount(toUnlockAfter chapter: Chapter) -> Int {
+        if chapter.kind == .tutorial { return chapter.puzzles.count }
+        return Int((Double(chapter.puzzles.count) * Self.unlockFraction).rounded(.up))
+    }
+
+    /// Kilitli bir türün kilidini açan bir önceki tür.
+    public func unlockingChapter(for chapter: Chapter) -> Chapter? {
+        guard let index = playableChapters.firstIndex(where: { $0.id == chapter.id }), index > 0 else { return nil }
+        return playableChapters[index - 1]
+    }
+
+    private var playableChapters: [Chapter] {
+        catalog.chapters.filter { !$0.puzzles.isEmpty }
     }
 
     /// "Devam Et" butonu: ilk açık ve bitmemiş bulmaca.

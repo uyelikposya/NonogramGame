@@ -76,19 +76,27 @@ jobs:
           done
           python3 Tools/collect_screenshots.py results fastlane/screenshots
 
+      - name: Başlık ve çerçeve ekle
+        run: |
+          python3 -m venv /tmp/venv
+          /tmp/venv/bin/pip install --quiet pillow
+          /tmp/venv/bin/python Tools/frame_screenshots.py fastlane/screenshots
+
       - name: store-screenshots dalına kaydet
         run: |
           # Önizleme: her dilin 5 görüntüsü küçültülüp yan yana (inceleme için)
           rm -rf /tmp/shots && cp -R fastlane/screenshots /tmp/shots
           python3 Tools/collect_screenshots.py --contact-sheet /tmp/shots
+          # Yalnızca görüntüler: derleme klasörleri dala karışmasın diye ayrı, boş bir depodan gönderilir
+          REMOTE=$(git remote get-url origin)
+          AUTH=$(git config --get http.https://github.com/.extraheader)
+          cd /tmp/shots
+          git init -q -b store-screenshots
           git config user.name "github-actions"
           git config user.email "github-actions@users.noreply.github.com"
-          git checkout --orphan store-screenshots
-          git rm -rfq . >/dev/null
-          cp -R /tmp/shots/. .
           git add -A
           git commit -qm "App Store ekran görüntüleri (${GITHUB_SHA::7})"
-          git push -f origin store-screenshots
+          git -c http.https://github.com/.extraheader="$AUTH" push -f "$REMOTE" store-screenshots
 
       - uses: actions/upload-artifact@v4
         with:

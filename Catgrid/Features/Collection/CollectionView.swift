@@ -73,6 +73,8 @@ struct CardDetailSheet: View {
     let chapter: Chapter
     var isNewCard = false
     var isGolden = false
+    /// Hediye tür bitti: kartla birlikte Altın bulmacaları da açıldı.
+    var unlocksGoldenGift = false
     /// Yeni kartın ekrana geliş animasyonu bitti mi? Bitene kadar düğme görünmez.
     @State private var hasArrived = false
 
@@ -93,6 +95,13 @@ struct CardDetailSheet: View {
                             .font(.subheadline)
                             .multilineTextAlignment(.center)
                             .foregroundStyle(theme.textSecondary)
+                        if unlocksGoldenGift {
+                            Label("Gift: this breed's 9 golden puzzles are now unlocked!", systemImage: "gift.fill")
+                                .font(.subheadline.weight(.semibold))
+                                .multilineTextAlignment(.center)
+                                .foregroundStyle(Gold.deep)
+                                .padding(.top, 4)
+                        }
                     }
                     .padding(.top, 8)
                 }

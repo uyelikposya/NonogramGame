@@ -10,7 +10,9 @@ struct GameScreen: View {
     let puzzleID: String
 
     var body: some View {
-        if model.catalog.isPremium(puzzleID), !store.isPremium {
+        if model.catalog.isPremium(puzzleID),
+           let chapter = model.catalog.chapter(containing: puzzleID),
+           !model.canPlayGolden(chapter, isPremium: store.isPremium) {
             // Abonelik bitmişse Altın bulmacalar kapanır (kazanılan kartlar kalır)
             ContentUnavailableView(
                 "Premium puzzle",
@@ -50,6 +52,8 @@ struct GameView: View {
     /// Kart kazanıldı ama penceresi henüz kapanmadı: o sırada sonuç kartındaki düğmeler gizli,
     /// oyuncu yanlışlıkla sonraki bölüme geçip kartı kaçırmasın.
     @State private var isCardPending = false
+    /// Bu çözümle kilidi açılan yeni kedi türü (önceki türün yarısı çözülünce).
+    @State private var newlyUnlockedChapter: Chapter?
     @AppStorage(SettingsKeys.hardMode) private var isHardMode = false
     @State private var difficultyNote: Bool?
     /// Küçük kedinin o an söylediği (ipucu).
@@ -126,7 +130,10 @@ struct GameView: View {
                 let chapter = model.catalog.chapter(containing: completion.puzzleID)
                 let wasCollected = chapter.map { model.isCollected($0) } ?? true
                 let wasGolden = chapter.map { model.isGoldenCollected($0) } ?? true
+                let unlockedBefore = Set(model.catalog.chapters.filter { model.progression.isUnlocked($0) }.map(\.id))
                 completionResult = model.record(completion)
+                let progression = model.progression
+                newlyUnlockedChapter = model.breeds.first { !unlockedBefore.contains($0.id) && progression.isUnlocked($0) }
                 ads.puzzleCompleted(isTutorial: isTutorial)
                 var earned: CardSelection?
                 if let chapter, chapter.card != nil {
@@ -169,7 +176,12 @@ struct GameView: View {
             persistProgress()
         }
         .sheet(item: $newCard, onDismiss: { isCardPending = false }) { selection in
-            CardDetailSheet(chapter: selection.chapter, isNewCard: true, isGolden: selection.isGolden)
+            CardDetailSheet(
+                chapter: selection.chapter,
+                isNewCard: true,
+                isGolden: selection.isGolden,
+                unlocksGoldenGift: !selection.isGolden && model.isGoldenGift(selection.chapter) && !store.isPremium
+            )
         }
         // Uygulama arka plana geçince (ve kapatılmadan önce) yarım oyun kaydedilir
         .onChange(of: scenePhase) { _, phase in
@@ -313,8 +325,21 @@ struct GameView: View {
                     .foregroundStyle(theme.textSecondary)
                     .frame(maxWidth: .infinity, minHeight: 52)
                 } else {
-                    if let next = model.nextPuzzle(after: viewModel.puzzle) {
+                    let next = model.nextPuzzle(after: viewModel.puzzle)
+                    if let next {
                         nextButton(next)
+                    }
+                    if let unlocked = newlyUnlockedChapter,
+                       let first = unlocked.puzzles.first,
+                       next.flatMap({ model.catalog.chapter(containing: $0.id)?.id }) != unlocked.id {
+                        // Yeni tür açıldı: oyuncu isterse hemen yeni kediye geçebilir
+                        Button {
+                            leave(to: .game(puzzleID: first.id))
+                        } label: {
+                            Label("New cat unlocked: \(unlocked.title.resolved)", systemImage: "lock.open.fill")
+                        }
+                        .buttonStyle(SecondaryButtonStyle())
+                        .accessibilityIdentifier("result.newCat")
                     }
                     Button("Back to Levels") { leave(to: nil) }
                         .buttonStyle(SecondaryButtonStyle())
