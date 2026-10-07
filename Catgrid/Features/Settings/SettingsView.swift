@@ -6,6 +6,17 @@ enum SettingsKeys {
     static let haptics = "settings.haptics"
     /// "Zor": tamamlanan satırlara otomatik X konmaz.
     static let hardMode = "settings.hardMode"
+    /// Oyun havası: Rahat (sakin, mevcut hal) ya da Dopamin (efektli, yeni kartlar).
+    static let playMode = "settings.playMode"
+}
+
+/// Rahat mod uygulamanın mevcut sakin hali (varsayılan). Dopamin modu: efektler, kutlamalar,
+/// hareketli müzik ve çizimli tür kartları.
+enum PlayMode: String, CaseIterable, Identifiable {
+    case relax
+    case dopamine
+
+    var id: Self { self }
 }
 
 @MainActor
