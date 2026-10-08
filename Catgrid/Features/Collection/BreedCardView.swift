@@ -132,53 +132,38 @@ struct BreedCardView: View {
         }
     }
 
-    /// Türün çizim görseli: Assets'te "card-<tür>" (normal kart) ve "card-<tür>-golden" (Altın Kart).
-    /// Görsel varsa beyaz zemin üzerinde bütünüyle gösterilir; yoksa piksel portre.
-    private var cardImage: UIImage? {
-        UIImage(named: isGolden ? "card-\(chapter.id)-golden" : "card-\(chapter.id)")
-    }
-
-    /// Kartın görsel alanı. Altın Kartta piksel portre altın tonlarında, koyu kadife zemin üzerinde ve taçlı.
+    /// Assets'te "card-<tür>" adlı (lisanslı) bir fotoğraf varsa o, yoksa piksel portre.
+    /// Altın Kartta portre altın tonlarında, koyu kadife zemin üzerinde ve taçlı.
     @ViewBuilder
     private var artwork: some View {
         let radius: CGFloat = isCompact ? 10 : 16
-        let shape = RoundedRectangle(cornerRadius: radius)
         ZStack {
-            if let photo = cardImage {
-                shape.fill(Color.white)
-                Image(uiImage: photo)
-                    .resizable()
-                    .interpolation(.high)
-                    .scaledToFit()
-                    .padding(isCompact ? 2 : 6)
-                    .accessibilityHidden(true)
-            } else {
-                shape.fill(isGolden
+            RoundedRectangle(cornerRadius: radius)
+                .fill(isGolden
                     ? RadialGradient(colors: [Gold.dark.opacity(0.75), Gold.ink], center: .center, startRadius: 4, endRadius: 160)
                     : RadialGradient(colors: [accent.opacity(0.55), accent.opacity(0.15)], center: .top, startRadius: 0, endRadius: 220))
-                if let portrait = chapter.portrait {
-                    ArtworkThumbnail(artwork: portrait, goldTone: isGolden)
-                        .padding(isCompact ? 8 : 18)
-                        .padding(.top, isGolden ? (isCompact ? 8 : 18) : 0)
-                }
-                if isGolden {
-                    Image(systemName: "crown.fill")
-                        .font(isCompact ? .caption : .title2)
-                        .foregroundStyle(Gold.foil)
-                        .shadow(color: .black.opacity(0.4), radius: 1, y: 1)
-                        .frame(maxHeight: .infinity, alignment: .top)
-                        .padding(.top, isCompact ? 3 : 8)
-                        .accessibilityHidden(true)
-                }
+            if !isGolden, let photo = UIImage(named: "card-\(chapter.id)") {
+                Image(uiImage: photo)
+                    .resizable()
+                    .scaledToFill()
+                    .clipShape(RoundedRectangle(cornerRadius: radius))
+            } else if let portrait = chapter.portrait {
+                ArtworkThumbnail(artwork: portrait, goldTone: isGolden)
+                    .padding(isCompact ? 8 : 18)
+                    .padding(.top, isGolden ? (isCompact ? 8 : 18) : 0)
+            }
+            if isGolden {
+                Image(systemName: "crown.fill")
+                    .font(isCompact ? .caption : .title2)
+                    .foregroundStyle(Gold.foil)
+                    .shadow(color: .black.opacity(0.4), radius: 1, y: 1)
+                    .frame(maxHeight: .infinity, alignment: .top)
+                    .padding(.top, isCompact ? 3 : 8)
+                    .accessibilityHidden(true)
             }
         }
         .aspectRatio(isCompact ? 1 : 1.35, contentMode: .fit)
-        .clipShape(shape)
-        .overlay {
-            if cardImage != nil {
-                shape.strokeBorder(isGolden ? AnyShapeStyle(Gold.foil) : AnyShapeStyle(accent.opacity(0.35)), lineWidth: isCompact ? 1 : 2)
-            }
-        }
+        .clipped()
     }
 
     private var details: some View {
