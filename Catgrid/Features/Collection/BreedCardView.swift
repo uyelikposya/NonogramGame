@@ -145,8 +145,7 @@ struct BreedCardView: View {
         let shape = RoundedRectangle(cornerRadius: radius)
         ZStack {
             if let photo = cardImage {
-                // Görselin kendi zemin rengi (köşesi): kare görsel geniş alanda ayrı bir blok gibi görünmesin
-                shape.fill(Color(uiColor: photo.cornerColor ?? .white))
+                shape.fill(Color.white)
                 Image(uiImage: photo)
                     .resizable()
                     .interpolation(.high)
@@ -453,25 +452,5 @@ private struct CardFaceFlip: ViewModifier, Animatable {
         content
             .rotation3DEffect(.degrees(isBack ? angle - 180 : angle), axis: (x: 0, y: 1, z: 0), perspective: 0.5)
             .opacity(isVisible ? 1 : 0)
-    }
-}
-
-extension UIImage {
-    /// Sol üst köşedeki pikselin rengi (beyaz/açık gri zeminli kart görselleri için).
-    var cornerColor: UIColor? {
-        guard let cgImage else { return nil }
-        var pixel = [UInt8](repeating: 0, count: 4)
-        guard let context = CGContext(
-            data: &pixel, width: 1, height: 1, bitsPerComponent: 8, bytesPerRow: 4,
-            space: CGColorSpaceCreateDeviceRGB(),
-            bitmapInfo: CGImageAlphaInfo.premultipliedLast.rawValue
-        ) else { return nil }
-        // Görselin sol üstünden küçük bir kare 1×1'e küçültülür: köşenin ortalama rengi
-        let side = max(1, min(cgImage.width, cgImage.height) / 40)
-        guard let corner = cgImage.cropping(to: CGRect(x: 0, y: 0, width: side, height: side)) else { return nil }
-        context.interpolationQuality = .medium
-        context.draw(corner, in: CGRect(x: 0, y: 0, width: 1, height: 1))
-        return UIColor(red: CGFloat(pixel[0]) / 255, green: CGFloat(pixel[1]) / 255,
-                       blue: CGFloat(pixel[2]) / 255, alpha: 1)
     }
 }
