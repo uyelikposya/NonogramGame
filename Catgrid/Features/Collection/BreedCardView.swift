@@ -44,7 +44,6 @@ struct BreedCardView: View {
     }
 
     @Environment(\.appTheme) private var theme
-    @AppStorage(SettingsKeys.playMode) private var playMode = PlayMode.relax
     let chapter: Chapter
     let card: BreedCard
     var style: Style = .full
@@ -133,11 +132,10 @@ struct BreedCardView: View {
         }
     }
 
-    /// Dopamin modunda türün çizim görseli: Assets'te "card-<tür>" (normal kart) ve "card-<tür>-golden"
-    /// (Altın Kart), beyaz zemin üzerinde bütünüyle. Rahat modda (ve görsel yoksa) piksel portre.
+    /// Türün çizim görseli: Assets'te "card-<tür>" (normal kart) ve "card-<tür>-golden" (Altın Kart).
+    /// Görsel varsa beyaz zemin üzerinde bütünüyle gösterilir; yoksa piksel portre.
     private var cardImage: UIImage? {
-        guard playMode == .dopamine else { return nil }
-        return UIImage(named: isGolden ? "card-\(chapter.id)-golden" : "card-\(chapter.id)")
+        UIImage(named: isGolden ? "card-\(chapter.id)-golden" : "card-\(chapter.id)")
     }
 
     /// Kartın görsel alanı. Altın Kartta piksel portre altın tonlarında, koyu kadife zemin üzerinde ve taçlı.
