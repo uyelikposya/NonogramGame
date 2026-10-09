@@ -176,6 +176,35 @@ final class AppModelTests: XCTestCase {
         clock = clock.addingTimeInterval(24 * 3600)
         XCTAssertEqual(model.dailyStreak, 0)
     }
+
+    /// Rozetler çözümle birlikte bir kez gelir; sıfırlayınca silinir.
+    func testAwardsBadgesOnce() throws {
+        let model = try makeModel()
+        XCTAssertTrue(model.badges.earned.isEmpty)
+
+        // 1x1 bulmaca 10 sn'de hatasız: 4 yıldız
+        XCTAssertEqual(model.record(completion("t1")).newBadges, [.fourStars])
+        XCTAssertEqual(model.record(completion("t2")).newBadges, [.graduate])
+        XCTAssertEqual(model.record(completion("s1")).newBadges, [.firstCard])
+        XCTAssertTrue(model.record(completion("s1")).newBadges.isEmpty)
+        XCTAssertEqual(model.badges.perfectRun, 4)
+
+        model.record(PuzzleCompletion(puzzleID: "t1", completedAt: Date(), elapsed: 10, mistakes: 1))
+        XCTAssertEqual(model.badges.perfectRun, 0)
+
+        model.resetProgress()
+        XCTAssertTrue(model.badges.earned.isEmpty)
+    }
+
+    func testBadgeRules() {
+        var progress = BadgeProgress(totalBreeds: 26)
+        XCTAssertTrue(Badge.allCases.allSatisfy { !$0.isEarned(progress) })
+        progress.perfectRun = 5
+        progress.collectedBreeds = 26
+        XCTAssertTrue(Badge.perfectFive.isEarned(progress))
+        XCTAssertTrue(Badge.allBreeds.isEarned(progress))
+        XCTAssertFalse(Badge.dailyWeek.isEarned(progress))
+    }
 }
 
 @MainActor

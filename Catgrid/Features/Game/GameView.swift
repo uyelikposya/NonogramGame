@@ -390,7 +390,8 @@ struct GameView: View {
                 detail: completionResult.map { resultDetail($0) },
                 badge: isDaily ? nil : (completionResult?.isNewBest == true ? "New best time!" : nil),
                 stars: completionResult?.stars,
-                starNote: completionResult.flatMap { speedStarNote($0) }
+                starNote: completionResult.flatMap { speedStarNote($0) },
+                newBadges: completionResult?.newBadges ?? []
             ) {
                 if isCardPending {
                     // Kart penceresi açılana/kapanana kadar geçiş düğmeleri yok
@@ -662,6 +663,7 @@ struct ResultCard<Actions: View>: View {
     var badge: LocalizedStringKey?
     var stars: Int?
     var starNote: Text?
+    var newBadges: [Badge] = []
     @ViewBuilder let actions: () -> Actions
     @State private var showsStars = false
 
@@ -690,6 +692,19 @@ struct ResultCard<Actions: View>: View {
                         .multilineTextAlignment(.center)
                         .foregroundStyle(theme.textSecondary)
                 }
+            }
+            ForEach(newBadges) { badge in
+                Label {
+                    Text("New badge: \(String(localized: badge.title))")
+                } icon: {
+                    Image(systemName: badge.icon)
+                }
+                .font(.caption.bold())
+                .foregroundStyle(Gold.ink)
+                .padding(.horizontal, 12)
+                .padding(.vertical, 6)
+                .background(Capsule().fill(Gold.foil))
+                .accessibilityIdentifier("result.badge")
             }
             if let detail {
                 detail

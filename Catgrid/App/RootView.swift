@@ -25,6 +25,7 @@ struct RootView: View {
                     case .daily: DailyScreen()
                     case .settings: SettingsView()
                     case .stats: StatsView()
+                    case .badges: BadgesView()
                     case .collection: CollectionView()
                     }
                 }

@@ -9,26 +9,36 @@ final class AppModel {
     let progress: ProgressStore
     /// Günlük bulmaca havuzu (kedi dışı desenler).
     let daily: DailyPuzzles
+    let badges: BadgeStore
     /// Testlerde "bugün" sabitlenebilsin diye.
     private let now: () -> Date
 
-    init(catalog: LevelCatalog, progress: ProgressStore, daily: DailyPuzzles = .empty, now: @escaping () -> Date = { Date() }) {
+    init(
+        catalog: LevelCatalog,
+        progress: ProgressStore,
+        daily: DailyPuzzles = .empty,
+        badges: BadgeStore = .inMemory(),
+        now: @escaping () -> Date = { Date() }
+    ) {
         self.catalog = catalog
         self.progress = progress
         self.daily = daily
+        self.badges = badges
         self.now = now
+        // 1.0'dan gelen oyuncunun hak ettiği rozetler sessizce verilir
+        badges.update(with: badgeProgress)
     }
 
     static func live() -> AppModel {
         do {
             #if DEBUG
             if DemoContent.isEnabled {
-                let model = AppModel(catalog: try CatalogLoader.load(from: .main), progress: .inMemory(), daily: loadDaily())
+                let model = AppModel(catalog: try CatalogLoader.load(from: .main), progress: .inMemory(), daily: loadDaily(), badges: .inMemory())
                 DemoContent.seed(model)
                 return model
             }
             #endif
-            return AppModel(catalog: try CatalogLoader.load(from: .main), progress: ProgressStore.live(), daily: loadDaily())
+            return AppModel(catalog: try CatalogLoader.load(from: .main), progress: ProgressStore.live(), daily: loadDaily(), badges: BadgeStore(defaults: .standard))
         } catch {
             // Paketlenmiş içerik hatalıysa: testler (ContentValidationTests) bunu yayından önce yakalar
             fatalError("Bölüm içeriği yüklenemedi: \(error)")
@@ -79,7 +89,30 @@ final class AppModel {
         let stars = puzzle(withID: completion.puzzleID).map {
             StarRating.stars(mistakes: completion.mistakes, elapsed: completion.elapsed, rows: $0.rows, columns: $0.columns)
         }
-        return progress.recordCompletion(completion, stars: stars)
+        badges.recordSolve(mistakes: completion.mistakes)
+        var result = progress.recordCompletion(completion, stars: stars)
+        result.newBadges = badges.update(with: badgeProgress)
+        return result
+    }
+
+    // MARK: - Rozetler
+
+    var badgeProgress: BadgeProgress {
+        let completed = progress.completedIDs
+        let tutorial = catalog.chapters.first { $0.kind == .tutorial }
+        let solvedStars = catalog.chapters.flatMap { $0.puzzles + $0.premiumPuzzles }.compactMap { stars(for: $0) }
+        return BadgeProgress(
+            isTutorialDone: tutorial.map { !$0.puzzles.isEmpty && $0.puzzles.allSatisfy { completed.contains($0.id) } } ?? false,
+            collectedBreeds: collectedBreeds.count,
+            totalBreeds: breeds.count,
+            goldenCards: goldenBreeds.count,
+            hasFourStars: solvedStars.contains(StarRating.maximum)
+                || completed.compactMap(DayKey.init(puzzleID:)).contains { progress.record(for: $0.puzzleID)?.bestStars == StarRating.maximum },
+            perfectRun: badges.perfectRun,
+            dailyStreak: dailyStreak,
+            solvedCount: progress.stats.solvedCount,
+            totalStars: solvedStars.reduce(0, +)
+        )
     }
 
     // MARK: - Yıldızlar
@@ -192,6 +225,7 @@ final class AppModel {
     /// Ayarlardan ilerleme sıfırlanır.
     func resetProgress() {
         progress.resetAll()
+        badges.reset()
     }
 }
 

@@ -7,6 +7,7 @@ enum Route: Hashable {
     case daily
     case settings
     case stats
+    case badges
     case collection
 }
 

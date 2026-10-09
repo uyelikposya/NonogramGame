@@ -787,6 +787,102 @@
   "To get reminders, allow notifications for Catgrid in Settings.": {
    "en": "To get reminders, allow notifications for Catgrid in Settings.",
    "tr": "Hatırlatma almak için Ayarlar'dan Catgrid bildirimlerine izin ver."
+  },
+  "Badges": {
+   "en": "Badges",
+   "tr": "Rozetler"
+  },
+  "New badge: %@": {
+   "en": "New badge: %@",
+   "tr": "Yeni rozet: %@"
+  },
+  "Graduate": {
+   "en": "Graduate",
+   "tr": "Mezun"
+  },
+  "First Card": {
+   "en": "First Card",
+   "tr": "İlk Kart"
+  },
+  "Cat Collector": {
+   "en": "Cat Collector",
+   "tr": "Kedi Koleksiyoncusu"
+  },
+  "Cat Expert": {
+   "en": "Cat Expert",
+   "tr": "Kedi Uzmanı"
+  },
+  "Cat Encyclopedia": {
+   "en": "Cat Encyclopedia",
+   "tr": "Kedi Ansiklopedisi"
+  },
+  "Golden Touch": {
+   "en": "Golden Touch",
+   "tr": "Altın Dokunuş"
+  },
+  "Purrfect Score": {
+   "en": "Purrfect Score",
+   "tr": "Kusursuz Puan"
+  },
+  "Flawless Five": {
+   "en": "Flawless Five",
+   "tr": "Kusursuz Beşli"
+  },
+  "Daily Habit": {
+   "en": "Daily Habit",
+   "tr": "Günlük Alışkanlık"
+  },
+  "Puzzle Master": {
+   "en": "Puzzle Master",
+   "tr": "Bulmaca Ustası"
+  },
+  "Star Hunter": {
+   "en": "Star Hunter",
+   "tr": "Yıldız Avcısı"
+  },
+  "Finish Kitten School.": {
+   "en": "Finish Kitten School.",
+   "tr": "Yavru Okulu'nu bitir."
+  },
+  "Collect your first cat card.": {
+   "en": "Collect your first cat card.",
+   "tr": "İlk kedi kartını topla."
+  },
+  "Collect 5 cat breeds.": {
+   "en": "Collect 5 cat breeds.",
+   "tr": "5 kedi türü topla."
+  },
+  "Collect 10 cat breeds.": {
+   "en": "Collect 10 cat breeds.",
+   "tr": "10 kedi türü topla."
+  },
+  "Collect every cat breed.": {
+   "en": "Collect every cat breed.",
+   "tr": "Tüm kedi türlerini topla."
+  },
+  "Win your first Golden Card.": {
+   "en": "Win your first Golden Card.",
+   "tr": "İlk Altın Kartını kazan."
+  },
+  "Get 4 stars on a puzzle.": {
+   "en": "Get 4 stars on a puzzle.",
+   "tr": "Bir bulmacadan 4 yıldız al."
+  },
+  "Solve 5 puzzles in a row without a mistake.": {
+   "en": "Solve 5 puzzles in a row without a mistake.",
+   "tr": "Art arda 5 bulmacayı hatasız çöz."
+  },
+  "Solve the Daily Puzzle 7 days in a row.": {
+   "en": "Solve the Daily Puzzle 7 days in a row.",
+   "tr": "Günlük Bulmaca'yı 7 gün üst üste çöz."
+  },
+  "Solve 100 puzzles.": {
+   "en": "Solve 100 puzzles.",
+   "tr": "100 bulmaca çöz."
+  },
+  "Collect 100 stars.": {
+   "en": "Collect 100 stars.",
+   "tr": "100 yıldız topla."
   }
  },
  "infoplist": {

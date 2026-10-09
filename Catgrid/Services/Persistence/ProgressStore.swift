@@ -10,6 +10,8 @@ struct CompletionResult: Equatable {
     let previousBest: TimeInterval?
     /// Bu çözümün yıldızları (1-4).
     var stars: Int?
+    /// Bu çözümle kazanılan rozetler.
+    var newBadges: [Badge] = []
 
     var isNewBest: Bool {
         previousBest.map { elapsed < $0 } ?? false
