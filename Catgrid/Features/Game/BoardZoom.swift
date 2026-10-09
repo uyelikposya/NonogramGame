@@ -3,7 +3,7 @@ import UIKit
 
 /// Büyük tahtalarda yakınlaştırma durumu. Kaydırma görünümü günceller; ipucu şeritleri okur.
 /// Ayrı bir nesne olduğu için kaydırırken yalnızca şeritler yeniden çizilir, tahta değil.
-@MainActor
+/// (Ana aktöre bağlanmadı: eski SDK'larda UIViewRepresentable yöntemleri bağlı değil.)
 @Observable
 final class BoardZoom {
     /// Tahta bu ölçekte çizilir; en uzak görünümde 1/maxScale ile küçültülür (yakınlaşınca net kalır).
@@ -78,8 +78,9 @@ struct ZoomableBoard<Content: View>: UIViewRepresentable {
     }
 
     func makeUIView(context: Context) -> UIScrollView {
+        let coordinator = context.coordinator
         let scrollView = UIScrollView()
-        scrollView.delegate = context.coordinator
+        scrollView.delegate = coordinator
         scrollView.panGestureRecognizer.minimumNumberOfTouches = 2
         scrollView.delaysContentTouches = false
         scrollView.showsHorizontalScrollIndicator = false
@@ -88,12 +89,12 @@ struct ZoomableBoard<Content: View>: UIViewRepresentable {
         scrollView.backgroundColor = .clear
         scrollView.clipsToBounds = true
         scrollView.layer.cornerRadius = 6
-        let hosting = context.coordinator.hosting
+        let hosting = coordinator.hosting
         hosting.view.backgroundColor = .clear
         hosting.safeAreaRegions = []
         scrollView.addSubview(hosting.view)
         zoom.scrollView = scrollView
-        configure(scrollView, coordinator: context.coordinator)
+        configure(scrollView, coordinator: coordinator)
         return scrollView
     }
 
@@ -116,8 +117,7 @@ struct ZoomableBoard<Content: View>: UIViewRepresentable {
         scrollView.contentOffset = .zero
     }
 
-    @MainActor
-    final class Coordinator: NSObject, UIScrollViewDelegate {
+    final class Coordinator: NSObject {
         let zoom: BoardZoom
         let hosting: UIHostingController<Content>
         var contentSize: CGSize = .zero
@@ -126,28 +126,31 @@ struct ZoomableBoard<Content: View>: UIViewRepresentable {
             self.zoom = zoom
             self.hosting = hosting
         }
+    }
+}
 
-        func viewForZooming(in scrollView: UIScrollView) -> UIView? {
-            hosting.view
-        }
+// Temsilci uyumu uzantıda: sınıfın geri kalanı ana aktöre bağlanmaz (eski SDK uyumu)
+extension ZoomableBoard.Coordinator: UIScrollViewDelegate {
+    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+        hosting.view
+    }
 
-        func scrollViewDidZoom(_ scrollView: UIScrollView) {
-            publish(scrollView)
-        }
+    func scrollViewDidZoom(_ scrollView: UIScrollView) {
+        publish(scrollView)
+    }
 
-        func scrollViewDidScroll(_ scrollView: UIScrollView) {
-            publish(scrollView)
-        }
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        publish(scrollView)
+    }
 
-        /// Görünüm güncellenirken durum değiştirmemek için bir sonraki turda yayınlanır.
-        private func publish(_ scrollView: UIScrollView) {
-            let scale = scrollView.zoomScale * BoardZoom.maxScale
-            let offset = scrollView.contentOffset
-            let zoom = zoom
-            Task { @MainActor in
-                if abs(zoom.scale - scale) > 0.001 { zoom.scale = scale }
-                if zoom.offset != offset { zoom.offset = offset }
-            }
+    /// Görünüm güncellenirken durum değiştirmemek için bir sonraki turda yayınlanır.
+    private func publish(_ scrollView: UIScrollView) {
+        let scale = scrollView.zoomScale * BoardZoom.maxScale
+        let offset = scrollView.contentOffset
+        let zoom = zoom
+        DispatchQueue.main.async {
+            if abs(zoom.scale - scale) > 0.001 { zoom.scale = scale }
+            if zoom.offset != offset { zoom.offset = offset }
         }
     }
 }
