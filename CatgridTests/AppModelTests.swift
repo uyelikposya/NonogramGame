@@ -128,20 +128,6 @@ final class AppModelTests: XCTestCase {
         XCTAssertEqual(model.nextPuzzle(after: t2)?.id, "s1")
         XCTAssertEqual(model.chapter(withID: "siamese")?.puzzles.count, 1)
     }
-}
-
-@MainActor
-final class RouterTests: XCTestCase {
-    func testReplaceTopSwapsOnlyLastScreen() {
-        let router = Router()
-        router.push(.chapters)
-        router.push(.game(puzzleID: "a"))
-        router.replaceTop(with: .game(puzzleID: "b"))
-        XCTAssertEqual(router.path, [.chapters, .game(puzzleID: "b")])
-        router.pop()
-        XCTAssertEqual(router.path, [.chapters])
-    }
-
     /// Yıldızlar en iyi çözümü tutar; daha kötü bir tekrar düşürmez.
     func testKeepsBestStars() throws {
         let model = try makeModel()
@@ -189,5 +175,18 @@ final class RouterTests: XCTestCase {
         XCTAssertEqual(model.dailyStreak, 1)
         clock = clock.addingTimeInterval(24 * 3600)
         XCTAssertEqual(model.dailyStreak, 0)
+    }
+}
+
+@MainActor
+final class RouterTests: XCTestCase {
+    func testReplaceTopSwapsOnlyLastScreen() {
+        let router = Router()
+        router.push(.chapters)
+        router.push(.game(puzzleID: "a"))
+        router.replaceTop(with: .game(puzzleID: "b"))
+        XCTAssertEqual(router.path, [.chapters, .game(puzzleID: "b")])
+        router.pop()
+        XCTAssertEqual(router.path, [.chapters])
     }
 }
