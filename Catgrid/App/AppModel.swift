@@ -7,26 +7,62 @@ import NonogramKit
 final class AppModel {
     let catalog: LevelCatalog
     let progress: ProgressStore
+    /// Günlük bulmaca havuzu (kedi dışı desenler).
+    let daily: DailyPuzzles
+    /// Testlerde "bugün" sabitlenebilsin diye.
+    private let now: () -> Date
 
-    init(catalog: LevelCatalog, progress: ProgressStore) {
+    init(catalog: LevelCatalog, progress: ProgressStore, daily: DailyPuzzles = .empty, now: @escaping () -> Date = { Date() }) {
         self.catalog = catalog
         self.progress = progress
+        self.daily = daily
+        self.now = now
     }
 
     static func live() -> AppModel {
         do {
             #if DEBUG
             if DemoContent.isEnabled {
-                let model = AppModel(catalog: try CatalogLoader.load(from: .main), progress: .inMemory())
+                let model = AppModel(catalog: try CatalogLoader.load(from: .main), progress: .inMemory(), daily: loadDaily())
                 DemoContent.seed(model)
                 return model
             }
             #endif
-            return AppModel(catalog: try CatalogLoader.load(from: .main), progress: ProgressStore.live())
+            return AppModel(catalog: try CatalogLoader.load(from: .main), progress: ProgressStore.live(), daily: loadDaily())
         } catch {
             // Paketlenmiş içerik hatalıysa: testler (ContentValidationTests) bunu yayından önce yakalar
             fatalError("Bölüm içeriği yüklenemedi: \(error)")
         }
+    }
+
+    /// Günlük havuz yüklenemezse oyun yine açılır; yalnızca günlük kart görünmez.
+    private static func loadDaily() -> DailyPuzzles {
+        (try? DailyPuzzles.load(from: .main)) ?? .empty
+    }
+
+    /// Bölüm ya da günlük bulmaca.
+    func puzzle(withID id: String) -> Puzzle? {
+        catalog.puzzle(withID: id) ?? daily.puzzle(withID: id)
+    }
+
+    func rules(for puzzle: Puzzle) -> GameRules {
+        DailyPuzzles.isDaily(puzzle.id) ? catalog.defaultRules : catalog.rules(for: puzzle)
+    }
+
+    // MARK: - Günlük bulmaca
+
+    var today: DayKey { DayKey(now()) }
+
+    var todaysPuzzle: Puzzle? { daily.puzzle(for: today) }
+
+    var isTodaysPuzzleSolved: Bool {
+        progress.record(for: today.puzzleID)?.isCompleted ?? false
+    }
+
+    /// Kesintisiz günlük bulmaca serisi.
+    var dailyStreak: Int {
+        let days = progress.completedIDs.compactMap(DayKey.init(puzzleID:))
+        return DailyPuzzles.streak(solvedDays: Set(days), today: today)
     }
 
     var progression: Progression {
@@ -35,7 +71,7 @@ final class AppModel {
 
     @discardableResult
     func record(_ completion: PuzzleCompletion) -> CompletionResult {
-        let stars = catalog.puzzle(withID: completion.puzzleID).map {
+        let stars = puzzle(withID: completion.puzzleID).map {
             StarRating.stars(mistakes: completion.mistakes, elapsed: completion.elapsed, rows: $0.rows, columns: $0.columns)
         }
         return progress.recordCompletion(completion, stars: stars)

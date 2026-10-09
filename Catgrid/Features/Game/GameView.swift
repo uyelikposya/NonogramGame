@@ -1,6 +1,26 @@
 import NonogramKit
 import SwiftUI
 
+/// Günlük bulmaca: o günün bulmacası, kendi kaydıyla.
+@MainActor
+struct DailyScreen: View {
+    @Environment(AppModel.self) private var model
+
+    var body: some View {
+        if let puzzle = model.todaysPuzzle {
+            GameView(
+                puzzle: puzzle,
+                rules: model.rules(for: puzzle),
+                savedGame: model.progress.savedGame(for: puzzle.id)
+            )
+            .id(puzzle.id)
+        } else {
+            ContentUnavailableView("Puzzle not found", systemImage: "questionmark.circle")
+                .themedScreen()
+        }
+    }
+}
+
 /// Rota hedefi: kimliğe göre bulmacayı bulur. `.id` sayesinde "Sonraki Bulmaca"da
 /// ViewModel sıfırdan oluşur.
 @MainActor
@@ -71,6 +91,8 @@ struct GameView: View {
 
     private var game: NonogramGame { viewModel.game }
 
+    private var isDaily: Bool { DailyPuzzles.isDaily(viewModel.puzzle.id) }
+
     var body: some View {
         VStack(spacing: 16) {
             if let lesson = viewModel.puzzle.lesson, game.status == .playing {
@@ -139,7 +161,7 @@ struct GameView: View {
             }
         }
         .themedScreen()
-        .screenTitle(Text(verbatim: chapter?.title.resolved ?? ""), subtitle: subtitle)
+        .screenTitle(isDaily ? Text("Daily Puzzle") : Text(verbatim: chapter?.title.resolved ?? ""), subtitle: subtitle)
         .overlay(alignment: .bottom) {
             resultCard
                 .padding(20)
@@ -231,6 +253,9 @@ struct GameView: View {
     /// Başlığın altında: bölüm sırası; çözülünce resmin adı.
     private var subtitle: Text? {
         if game.status == .won { return Text(verbatim: viewModel.puzzle.title.resolved) }
+        if isDaily, let day = DayKey(puzzleID: viewModel.puzzle.id) {
+            return Text(day.date, format: .dateTime.day().month(.wide))
+        }
         guard let chapter else { return nil }
         let number = model.number(of: viewModel.puzzle)
         if model.catalog.isPremium(viewModel.puzzle.id) {
@@ -344,7 +369,7 @@ struct GameView: View {
                 title: "Purrfect!",
                 message: Text(verbatim: viewModel.puzzle.title.resolved),
                 detail: completionResult.map { resultDetail($0) },
-                badge: completionResult?.isNewBest == true ? "New best time!" : nil,
+                badge: isDaily ? nil : (completionResult?.isNewBest == true ? "New best time!" : nil),
                 stars: completionResult?.stars,
                 starNote: completionResult.flatMap { speedStarNote($0) }
             ) {
@@ -357,6 +382,16 @@ struct GameView: View {
                     .font(.subheadline.weight(.semibold))
                     .foregroundStyle(theme.textSecondary)
                     .frame(maxWidth: .infinity, minHeight: 52)
+                } else if isDaily {
+                    Label("\(model.dailyStreak)-day streak", systemImage: "flame.fill")
+                        .font(.headline)
+                        .foregroundStyle(theme.accent)
+                        .accessibilityIdentifier("result.streak")
+                    Text("A new puzzle is waiting tomorrow.")
+                        .font(.subheadline)
+                        .foregroundStyle(theme.textSecondary)
+                    Button("Home") { router.popToRoot() }
+                        .buttonStyle(PrimaryButtonStyle())
                 } else {
                     let next = model.nextPuzzle(after: viewModel.puzzle)
                     if let next {
@@ -413,8 +448,13 @@ struct GameView: View {
                     Button("Try Again") { viewModel.restart() }
                         .buttonStyle(PrimaryButtonStyle())
                 }
-                Button("Back to Levels") { router.pop() }
-                    .buttonStyle(SecondaryButtonStyle())
+                if isDaily {
+                    Button("Home") { router.popToRoot() }
+                        .buttonStyle(SecondaryButtonStyle())
+                } else {
+                    Button("Back to Levels") { router.pop() }
+                        .buttonStyle(SecondaryButtonStyle())
+                }
             }
             .transition(.move(edge: .bottom).combined(with: .opacity))
         }

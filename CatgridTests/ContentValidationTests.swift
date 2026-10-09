@@ -51,6 +51,18 @@ final class ContentValidationTests: XCTestCase {
         XCTAssertEqual(catalog.orderedPuzzles.map(side).max(), 12)
     }
 
+    /// Günlük havuz: en az bir yıl, genişlik en fazla 10, yükseklik en fazla 20, tahminsiz çözülebilir.
+    func testDailyPoolIsSolvableAndWithinSize() throws {
+        let daily = try DailyPuzzles.load(from: .main)
+        XCTAssertGreaterThanOrEqual(daily.pool.count, 365)
+        for puzzle in daily.pool {
+            XCTAssertLessThanOrEqual(puzzle.columns, 10, puzzle.id)
+            XCTAssertLessThanOrEqual(puzzle.rows, 20, puzzle.id)
+            XCTAssertNotNil(puzzle.title.translations["tr"], "\(puzzle.id) başlığı Türkçe değil")
+            XCTAssertTrue(PuzzleSolver.isLogicallySolvable(puzzle), "\(puzzle.id) mantıkla çözülemiyor")
+        }
+    }
+
     func testEveryBreedHasPortraitAndCard() {
         let breeds = catalog.chapters.filter { $0.kind == .breed }
         for breed in breeds {

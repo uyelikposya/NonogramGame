@@ -159,4 +159,34 @@ final class RouterTests: XCTestCase {
         XCTAssertEqual(model.stars(for: puzzle), 4)
         XCTAssertEqual(model.totalStars, 4)
     }
+
+    /// Günlük bulmaca: güne özel kimlik, seri bugün ya da dünden geriye sayılır.
+    func testDailyPuzzleAndStreak() throws {
+        let catalog = try makeModel().catalog
+        var clock = DayKey(year: 2026, month: 10, day: 9).date.addingTimeInterval(12 * 3600)
+        let model = AppModel(
+            catalog: catalog,
+            progress: .inMemory(),
+            daily: DailyPuzzles(pool: [Puzzle(id: "pool-1", pattern: ["#"])]),
+            now: { clock }
+        )
+        let today = try XCTUnwrap(model.todaysPuzzle)
+        XCTAssertEqual(today.id, "daily-2026-10-09")
+        XCTAssertEqual(model.puzzle(withID: today.id)?.id, today.id)
+        XCTAssertFalse(model.isTodaysPuzzleSolved)
+        XCTAssertEqual(model.dailyStreak, 0)
+
+        let result = model.record(PuzzleCompletion(puzzleID: today.id, completedAt: clock, elapsed: 5, mistakes: 0))
+        XCTAssertEqual(result.stars, 4)
+        XCTAssertTrue(model.isTodaysPuzzleSolved)
+        XCTAssertEqual(model.dailyStreak, 1)
+        // Günlük bulmaca bölüm ilerlemesini etkilemez
+        XCTAssertEqual(model.completedCount, 0)
+
+        clock = clock.addingTimeInterval(24 * 3600)
+        XCTAssertFalse(model.isTodaysPuzzleSolved)
+        XCTAssertEqual(model.dailyStreak, 1)
+        clock = clock.addingTimeInterval(24 * 3600)
+        XCTAssertEqual(model.dailyStreak, 0)
+    }
 }

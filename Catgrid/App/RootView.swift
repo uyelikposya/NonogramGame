@@ -20,6 +20,7 @@ struct RootView: View {
                     case .chapters: ChaptersView()
                     case .chapter(let id): ChapterView(chapterID: id)
                     case .game(let puzzleID): GameScreen(puzzleID: puzzleID)
+                    case .daily: DailyScreen()
                     case .settings: SettingsView()
                     case .stats: StatsView()
                     case .collection: CollectionView()

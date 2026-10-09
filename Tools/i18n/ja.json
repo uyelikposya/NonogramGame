@@ -184,7 +184,12 @@
   "Home": "ホーム",
   "Stars": "スター",
   "%lld of 4 stars": "スター %lld/4",
-  "Solve within %@ for the 4th star": "%@以内に解くと4つ目のスター"
+  "Solve within %@ for the 4th star": "%@以内に解くと4つ目のスター",
+  "Daily Puzzle": "デイリーパズル",
+  "%lld-day streak": "%lld日連続",
+  "A new puzzle is waiting tomorrow.": "明日は新しいパズルが待っています。",
+  "Solved! A new one tomorrow.": "クリア!明日また新しいパズル。",
+  "Expert · %lld×%lld": "エキスパート · %lld×%lld"
  },
  "infoplist": {
   "CFBundleDisplayName": "Catgrid",

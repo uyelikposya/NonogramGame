@@ -18,6 +18,9 @@ struct HomeView: View {
                     PremiumBanner { isShowingPaywall = true }
                 }
                 continueCard
+                if model.todaysPuzzle != nil {
+                    DailyCard()
+                }
                 CollectionShelf()
                 HStack(spacing: 12) {
                     Button {
@@ -127,6 +130,65 @@ struct HomeView: View {
             .padding(24)
             .card()
         }
+    }
+}
+
+/// Ana ekranda günün bulmacası ve seri.
+@MainActor
+struct DailyCard: View {
+    @Environment(AppModel.self) private var model
+    @Environment(Router.self) private var router
+    @Environment(\.appTheme) private var theme
+
+    var body: some View {
+        let isSolved = model.isTodaysPuzzleSolved
+        let streak = model.dailyStreak
+        Button {
+            router.push(.daily)
+        } label: {
+            HStack(spacing: 14) {
+                ZStack {
+                    Circle().fill(theme.accent.opacity(0.18).gradient)
+                    Image(systemName: isSolved ? "checkmark.seal.fill" : "calendar")
+                        .font(.title2)
+                        .foregroundStyle(isSolved ? theme.success : theme.accent)
+                }
+                .frame(width: 48, height: 48)
+                VStack(alignment: .leading, spacing: 4) {
+                    Text("Daily Puzzle")
+                        .font(.headline)
+                        .foregroundStyle(theme.textPrimary)
+                    Group {
+                        if isSolved {
+                            Text("Solved! A new one tomorrow.")
+                        } else if let puzzle = model.todaysPuzzle {
+                            Text("Expert · \(puzzle.columns)×\(puzzle.rows)")
+                        }
+                    }
+                    .font(.subheadline)
+                    .foregroundStyle(theme.textSecondary)
+                }
+                Spacer(minLength: 4)
+                if streak > 0 {
+                    Label {
+                        Text(verbatim: "\(streak)")
+                    } icon: {
+                        Image(systemName: "flame.fill")
+                    }
+                    .font(.headline.monospacedDigit())
+                    .foregroundStyle(theme.accent)
+                    .accessibilityElement()
+                    .accessibilityLabel(Text("\(streak)-day streak"))
+                }
+                Image(systemName: "chevron.right")
+                    .font(.footnote.weight(.bold))
+                    .foregroundStyle(theme.textSecondary)
+            }
+            .padding(16)
+            .card()
+        }
+        .buttonStyle(PressableButtonStyle())
+        .accessibilityIdentifier("home.daily")
     }
 }
 

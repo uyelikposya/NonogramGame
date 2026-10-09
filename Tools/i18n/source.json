@@ -699,6 +699,26 @@
   "Solve within %@ for the 4th star": {
    "en": "Solve within %@ for the 4th star",
    "tr": "4. yıldız için %@ içinde çöz"
+  },
+  "Daily Puzzle": {
+   "en": "Daily Puzzle",
+   "tr": "Günlük Bulmaca"
+  },
+  "%lld-day streak": {
+   "en": "%lld-day streak",
+   "tr": "%lld günlük seri"
+  },
+  "A new puzzle is waiting tomorrow.": {
+   "en": "A new puzzle is waiting tomorrow.",
+   "tr": "Yarın seni yeni bir bulmaca bekliyor."
+  },
+  "Solved! A new one tomorrow.": {
+   "en": "Solved! A new one tomorrow.",
+   "tr": "Çözüldü! Yarın yenisi gelecek."
+  },
+  "Expert · %lld×%lld": {
+   "en": "Expert · %lld×%lld",
+   "tr": "Uzman · %lld×%lld"
   }
  },
  "infoplist": {

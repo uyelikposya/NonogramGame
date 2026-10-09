@@ -4,6 +4,7 @@ enum Route: Hashable {
     case chapters
     case chapter(id: String)
     case game(puzzleID: String)
+    case daily
     case settings
     case stats
     case collection

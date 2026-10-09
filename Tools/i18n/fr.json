@@ -187,7 +187,12 @@
   "Home": "Accueil",
   "Stars": "Étoiles",
   "%lld of 4 stars": "%lld étoiles sur 4",
-  "Solve within %@ for the 4th star": "Résolvez en %@ pour la 4e étoile"
+  "Solve within %@ for the 4th star": "Résolvez en %@ pour la 4e étoile",
+  "Daily Puzzle": "Grille du jour",
+  "%lld-day streak": "Série de %lld jours",
+  "A new puzzle is waiting tomorrow.": "Une nouvelle grille vous attend demain.",
+  "Solved! A new one tomorrow.": "Résolue ! Une nouvelle demain.",
+  "Expert · %lld×%lld": "Expert · %lld×%lld"
  },
  "infoplist": {
   "CFBundleDisplayName": "Catgrid",
