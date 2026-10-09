@@ -156,10 +156,7 @@ def music(path):
             if rng.random() < 0.45:
                 f = rng.choice(melody_scale)
                 add(start + step * beat + rng.choice([0, 0.5]) * beat, tone(f, beat * 1.4, (1, 0.15), decay=0.5, attack=0.008), 0.09)
-    # Hafif hi-hat
-    hat = noise(0.05, 0.015, 0.9)
-    for step in range(int(length / (beat / 2))):
-        add(step * beat / 2, hat, 0.05 if step % 2 else 0.025)
+    # Hi-hat yok: ince "tık" sesi rahatsız ediyordu
     # Döngünün sonundaki kuyruk başa eklenir: dikişsiz tekrar
     loop = out[:at(length)].copy()
     tail = out[at(length):]
