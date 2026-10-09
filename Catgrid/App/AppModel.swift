@@ -17,16 +17,17 @@ final class AppModel {
         catalog: LevelCatalog,
         progress: ProgressStore,
         daily: DailyPuzzles = .empty,
-        badges: BadgeStore = .inMemory(),
+        badges: BadgeStore? = nil,
         now: @escaping () -> Date = { Date() }
     ) {
         self.catalog = catalog
         self.progress = progress
         self.daily = daily
-        self.badges = badges
+        // Varsayılan bağımsız değişken ana aktörde çalışmadığı için kayıt burada oluşturulur
+        self.badges = badges ?? .inMemory()
         self.now = now
         // 1.0'dan gelen oyuncunun hak ettiği rozetler sessizce verilir
-        badges.update(with: badgeProgress)
+        self.badges.update(with: badgeProgress)
     }
 
     static func live() -> AppModel {
