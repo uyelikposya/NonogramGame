@@ -185,7 +185,8 @@ final class AppModelTests: XCTestCase {
         // 1x1 bulmaca 10 sn'de hatasız: 4 yıldız
         XCTAssertEqual(model.record(completion("t1")).newBadges, [.fourStars])
         XCTAssertEqual(model.record(completion("t2")).newBadges, [.graduate])
-        XCTAssertEqual(model.record(completion("s1")).newBadges, [.firstCard])
+        // Örnek katalogda tek tür var: ilk kartla tüm türler de toplanmış olur
+        XCTAssertEqual(model.record(completion("s1")).newBadges, [.firstCard, .allBreeds])
         XCTAssertTrue(model.record(completion("s1")).newBadges.isEmpty)
         XCTAssertEqual(model.badges.perfectRun, 4)
 
