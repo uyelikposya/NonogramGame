@@ -172,7 +172,8 @@ final class RouterTests: XCTestCase {
         )
         let today = try XCTUnwrap(model.todaysPuzzle)
         XCTAssertEqual(today.id, "daily-2026-10-09")
-        XCTAssertEqual(model.puzzle(withID: today.id)?.id, today.id)
+        let found = try XCTUnwrap(model.puzzle(withID: today.id))
+        XCTAssertEqual(found.id, today.id)
         XCTAssertFalse(model.isTodaysPuzzleSolved)
         XCTAssertEqual(model.dailyStreak, 0)
 
