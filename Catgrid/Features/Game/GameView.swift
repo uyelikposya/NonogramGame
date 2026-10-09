@@ -218,6 +218,13 @@ struct GameView: View {
                 let progression = model.progression
                 newlyUnlockedChapter = model.breeds.first { !unlockedBefore.contains($0.id) && progression.isUnlocked($0) }
                 ads.puzzleCompleted(isTutorial: isTutorial)
+                // Ders bitti: Muffin sevinçle miyavlar
+                if viewModel.puzzle.lesson != nil {
+                    Task {
+                        try? await Task.sleep(for: .milliseconds(700))
+                        audio.play(.muffinJoy)
+                    }
+                }
                 var earned: CardSelection?
                 if let chapter, chapter.card != nil {
                     if !wasGolden, model.isGoldenCollected(chapter) {
@@ -268,6 +275,14 @@ struct GameView: View {
             }
             viewModel.autoCrosses = !isHardMode
             viewModel.start()
+            // Muffin dersi anlatmaya başlar: soru cümlesiyse soru tonunda miyavlar
+            if let lesson = viewModel.puzzle.lesson, game.status == .playing {
+                let isQuestion = String(localized: lesson.message).trimmingCharacters(in: .whitespaces).hasSuffix("?")
+                Task {
+                    try? await Task.sleep(for: .milliseconds(450))
+                    audio.play(isQuestion ? .muffinQuestion : .muffinTalk)
+                }
+            }
         }
         .onChange(of: isHardMode) { _, hard in
             viewModel.autoCrosses = !hard
@@ -307,6 +322,7 @@ struct GameView: View {
             guard newValue > 0 else { return }
             flashMistake()
             if viewModel.puzzle.lesson != nil {
+                audio.play(.muffinOops)
                 muffinReaction = .oops
                 Task {
                     try? await Task.sleep(for: .seconds(1.5))
