@@ -73,8 +73,8 @@ struct ZoomableBoard<Content: View>: UIViewRepresentable {
     let fitSize: CGSize
     @ViewBuilder let content: () -> Content
 
-    func makeCoordinator() -> Coordinator {
-        Coordinator(zoom: zoom, hosting: UIHostingController(rootView: content()))
+    func makeCoordinator() -> ZoomBoardCoordinator {
+        ZoomBoardCoordinator(zoom: zoom, hosting: UIHostingController(rootView: AnyView(content())))
     }
 
     func makeUIView(context: Context) -> UIScrollView {
@@ -99,11 +99,11 @@ struct ZoomableBoard<Content: View>: UIViewRepresentable {
     }
 
     func updateUIView(_ scrollView: UIScrollView, context: Context) {
-        context.coordinator.hosting.rootView = content()
+        context.coordinator.hosting.rootView = AnyView(content())
         configure(scrollView, coordinator: context.coordinator)
     }
 
-    private func configure(_ scrollView: UIScrollView, coordinator: Coordinator) {
+    private func configure(_ scrollView: UIScrollView, coordinator: ZoomBoardCoordinator) {
         let full = CGSize(width: fitSize.width * BoardZoom.maxScale, height: fitSize.height * BoardZoom.maxScale)
         guard coordinator.contentSize != full, full.width > 0, full.height > 0 else { return }
         coordinator.contentSize = full
@@ -117,20 +117,23 @@ struct ZoomableBoard<Content: View>: UIViewRepresentable {
         scrollView.contentOffset = .zero
     }
 
-    final class Coordinator: NSObject {
-        let zoom: BoardZoom
-        let hosting: UIHostingController<Content>
-        var contentSize: CGSize = .zero
+}
 
-        init(zoom: BoardZoom, hosting: UIHostingController<Content>) {
-            self.zoom = zoom
-            self.hosting = hosting
-        }
+/// Kaydırma görünümünün temsilcisi. Genel (generic) olmayan ayrı sınıf: Objective-C
+/// protokol uyumu genel türlerin uzantısında yazılamıyor.
+final class ZoomBoardCoordinator: NSObject {
+    let zoom: BoardZoom
+    let hosting: UIHostingController<AnyView>
+    var contentSize: CGSize = .zero
+
+    init(zoom: BoardZoom, hosting: UIHostingController<AnyView>) {
+        self.zoom = zoom
+        self.hosting = hosting
     }
 }
 
 // Temsilci uyumu uzantıda: sınıfın geri kalanı ana aktöre bağlanmaz (eski SDK uyumu)
-extension ZoomableBoard.Coordinator: UIScrollViewDelegate {
+extension ZoomBoardCoordinator: UIScrollViewDelegate {
     func viewForZooming(in scrollView: UIScrollView) -> UIView? {
         hosting.view
     }
