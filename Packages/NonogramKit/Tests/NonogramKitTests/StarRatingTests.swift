@@ -7,7 +7,7 @@ final class StarRatingTests: XCTestCase {
         for (size, seconds) in expected {
             XCTAssertEqual(StarRating.speedTarget(rows: size, columns: size), seconds, "\(size)×\(size)")
         }
-        XCTAssertEqual(StarRating.speedTarget(rows: 1, columns: 2), 10)
+        XCTAssertEqual(StarRating.speedTarget(rows: 1, columns: 2), 12)
         XCTAssertEqual(StarRating.speedTarget(rows: 20, columns: 10), 60)
     }
 

@@ -6,7 +6,7 @@ public enum StarRating {
     public static let maximum = 4
 
     /// Hız yıldızı için hedef süre. 5×5'te 20 sn, 12×12'de 60 sn; aradaki boyutlarda kare sayısıyla
-    /// doğrusal (6→24, 7→28, 8→33, 9→39, 10→45, 11→52). En fazla 60, küçük eğitim tahtalarında en az 10 sn.
+    /// doğrusal (6→24, 7→28, 8→33, 9→39, 10→45, 11→52). En fazla 60, en küçük eğitim tahtalarında ~12 sn (alt sınır 10).
     public static func speedTarget(rows: Int, columns: Int) -> TimeInterval {
         let seconds = 20 + (Double(rows * columns) - 25) * 40 / 119
         return min(60, max(10, seconds.rounded()))
