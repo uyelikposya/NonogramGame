@@ -77,7 +77,7 @@ struct CardDetailSheet: View {
     var unlocksGoldenGift = false
     /// Yeni kartın ekrana geliş animasyonu bitti mi? Bitene kadar düğme görünmez.
     @State private var hasArrived = false
-    @AppStorage(SettingsKeys.playMode) private var playMode = PlayMode.relax
+    @AppStorage(SettingsKeys.playMode) private var playMode = PlayMode.dopamine
     /// Dopamin modu: "Koleksiyona Ekle"ye basınca kart küçülüp yukarı, koleksiyona uçar.
     @State private var isFlyingAway = false
 

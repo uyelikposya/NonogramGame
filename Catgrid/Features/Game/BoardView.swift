@@ -14,7 +14,6 @@ struct LineGlow: Equatable {
 @MainActor
 struct BoardView: View {
     @Environment(\.appTheme) private var theme
-    @Environment(\.accessibilityReduceMotion) private var reduceMotion
 
     let game: NonogramGame
     var activeCell: GridPosition?
@@ -84,19 +83,7 @@ struct BoardView: View {
                 }
             }
             .opacity(isSolved ? 0 : 1)
-            .overlay {
-                // Çözülünce tahta kaybolur, yerine kedi resmi büyüyerek gelir.
-                // Resim hep hiyerarşide durur, yalnızca görünürlüğü değişir: dokunma alanının
-                // altında görünüm eklenip çıkarılması iOS 17'de dokunma sistemini bozabiliyor.
-                ArtworkThumbnail(artwork: puzzle.artwork)
-                    .padding(12)
-                    // Beyaz kediler açık zeminde kaybolmasın
-                    .background(RoundedRectangle(cornerRadius: 16).fill(theme.surfaceMuted))
-                    .padding(4)
-                    .scaleEffect(isSolved || reduceMotion ? 1 : 0.6)
-                    .opacity(isSolved ? 1 : 0)
-                    .allowsHitTesting(false)
-            }
+            // Çözülünce tahta kaybolur; renkli resim sonuç kartıyla birlikte gelir (GameView)
             .animation(.spring(duration: 0.7), value: isSolved)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
         }

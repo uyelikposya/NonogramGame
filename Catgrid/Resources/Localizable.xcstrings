@@ -11183,98 +11183,6 @@
         }
       }
     },
-    "Relax": {
-      "localizations": {
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Rahat"
-          }
-        },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "リラックス"
-          }
-        },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Entspannt"
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Détente"
-          }
-        },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Relax"
-          }
-        },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Relax"
-          }
-        },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "릴랙스"
-          }
-        }
-      }
-    },
-    "Dopamine": {
-      "localizations": {
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dopamin"
-          }
-        },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "ドーパミン"
-          }
-        },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dopamin"
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dopamine"
-          }
-        },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dopamina"
-          }
-        },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dopamina"
-          }
-        },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "도파민"
-          }
-        }
-      }
-    },
     "Calm and simple: soft music, no distractions.": {
       "localizations": {
         "tr": {
@@ -11367,52 +11275,6 @@
         }
       }
     },
-    "Tip: like it calm or lively? Pick Relax or Dopamine mode in Settings → Play Style.": {
-      "localizations": {
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "İpucu: Sakin mi seversin, hareketli mi? Ayarlar → Oyun Tarzı'ndan Rahat ya da Dopamin modunu seç."
-          }
-        },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "ヒント:のんびり派?にぎやか派?設定 → プレイスタイルで「リラックス」か「ドーパミン」を選べます。"
-          }
-        },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Tipp: Lieber ruhig oder lebhaft? Wähle unter Einstellungen → Spielstil den Modus Entspannt oder Dopamin."
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Astuce : plutôt calme ou animé ? Choisis le mode Détente ou Dopamine dans Réglages → Style de jeu."
-          }
-        },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Consejo: ¿tranquilo o animado? Elige el modo Relax o Dopamina en Ajustes → Estilo de juego."
-          }
-        },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Dica: prefere calmo ou animado? Escolha o modo Relax ou Dopamina em Ajustes → Estilo de Jogo."
-          }
-        },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "팁: 차분한 게 좋아요, 신나는 게 좋아요? 설정 → 플레이 스타일에서 릴랙스나 도파민 모드를 고르세요."
-          }
-        }
-      }
-    },
     "Zoom out": {
       "localizations": {
         "tr": {
@@ -11455,6 +11317,190 @@
           "stringUnit": {
             "state": "translated",
             "value": "축소"
+          }
+        }
+      }
+    },
+    "Calm": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sakin"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "おだやか"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ruhig"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Calme"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tranquilo"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Calmo"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "차분하게"
+          }
+        }
+      }
+    },
+    "Energetic": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enerjik"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "エネルギッシュ"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Energisch"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Énergique"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Enérgico"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Energético"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "신나게"
+          }
+        }
+      }
+    },
+    "Tip: like it calm or lively? Pick Calm or Energetic mode in Settings → Play Style.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İpucu: Sakin mi seversin, hareketli mi? Ayarlar → Oyun Tarzı'ndan Sakin ya da Enerjik modu seç."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ヒント:のんびり派?にぎやか派?設定 → プレイスタイルで「おだやか」か「エネルギッシュ」を選べます。"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tipp: Lieber ruhig oder lebhaft? Wähle unter Einstellungen → Spielstil den Modus Ruhig oder Energisch."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Astuce : plutôt calme ou animé ? Choisis le mode Calme ou Énergique dans Réglages → Style de jeu."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Consejo: ¿tranquilo o animado? Elige el modo Tranquilo o Enérgico en Ajustes → Estilo de juego."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dica: prefere calmo ou animado? Escolha o modo Calmo ou Energético em Ajustes → Estilo de Jogo."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "팁: 차분한 게 좋아요, 신나는 게 좋아요? 설정 → 플레이 스타일에서 차분하게나 신나게 모드를 고르세요."
+          }
+        }
+      }
+    },
+    "Start Over": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Baştan Başla"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "最初からやり直す"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Neu beginnen"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recommencer"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Empezar de nuevo"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Recomeçar"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "처음부터 다시"
           }
         }
       }

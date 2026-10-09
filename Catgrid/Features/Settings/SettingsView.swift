@@ -10,7 +10,8 @@ enum SettingsKeys {
     static let playMode = "settings.playMode"
 }
 
-/// Rahat: sakin, sade oyun. Dopamin: satır parıltıları, kutlamalar, hareketli müzik.
+/// Sakin: sade oyun. Enerjik (varsayılan): satır parıltıları, kutlamalar, hareketli müzik.
+/// Kayıtlı değerler (relax/dopamine) eski sürümlerle uyum için değişmedi.
 enum PlayMode: String, CaseIterable, Identifiable {
     case relax
     case dopamine
@@ -19,8 +20,8 @@ enum PlayMode: String, CaseIterable, Identifiable {
 
     var title: LocalizedStringResource {
         switch self {
-        case .relax: "Relax"
-        case .dopamine: "Dopamine"
+        case .relax: "Calm"
+        case .dopamine: "Energetic"
         }
     }
 
@@ -44,7 +45,7 @@ struct SettingsView: View {
     @Environment(\.openURL) private var openURL
     @Environment(\.requestReview) private var requestReview
     @AppStorage(SettingsKeys.haptics) private var hapticsEnabled = true
-    @AppStorage(SettingsKeys.playMode) private var playMode = PlayMode.relax
+    @AppStorage(SettingsKeys.playMode) private var playMode = PlayMode.dopamine
     @State private var isConfirmingReset = false
     @State private var isShowingPaywall = false
     @State private var isManagingSubscription = false

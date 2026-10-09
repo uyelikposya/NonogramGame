@@ -244,12 +244,13 @@
   "Skip the tutorial?": "튜토리얼을 건너뛸까요?",
   "The first cat breed opens right away. You can come back to Muffin's School any time from All Levels.": "첫 번째 고양이 품종이 바로 열려요. 머핀의 학교는 '모든 레벨'에서 언제든 다시 갈 수 있어요.",
   "Play Style": "플레이 스타일",
-  "Relax": "릴랙스",
-  "Dopamine": "도파민",
   "Calm and simple: soft music, no distractions.": "차분하고 단순하게: 부드러운 음악, 방해 요소 없음.",
   "Sparkles for every line, celebrations for every puzzle and upbeat music.": "줄마다 반짝임, 퍼즐마다 축하, 그리고 신나는 음악.",
-  "Tip: like it calm or lively? Pick Relax or Dopamine mode in Settings → Play Style.": "팁: 차분한 게 좋아요, 신나는 게 좋아요? 설정 → 플레이 스타일에서 릴랙스나 도파민 모드를 고르세요.",
-  "Zoom out": "축소"
+  "Zoom out": "축소",
+  "Calm": "차분하게",
+  "Energetic": "신나게",
+  "Tip: like it calm or lively? Pick Calm or Energetic mode in Settings → Play Style.": "팁: 차분한 게 좋아요, 신나는 게 좋아요? 설정 → 플레이 스타일에서 차분하게나 신나게 모드를 고르세요.",
+  "Start Over": "처음부터 다시"
  },
  "infoplist": {
   "CFBundleDisplayName": "Catgrid",

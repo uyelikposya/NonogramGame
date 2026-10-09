@@ -936,14 +936,6 @@
    "en": "Play Style",
    "tr": "Oyun Tarzı"
   },
-  "Relax": {
-   "en": "Relax",
-   "tr": "Rahat"
-  },
-  "Dopamine": {
-   "en": "Dopamine",
-   "tr": "Dopamin"
-  },
   "Calm and simple: soft music, no distractions.": {
    "en": "Calm and simple: soft music, no distractions.",
    "tr": "Sakin ve sade: yumuşak müzik, dikkat dağıtan hiçbir şey yok."
@@ -952,13 +944,25 @@
    "en": "Sparkles for every line, celebrations for every puzzle and upbeat music.",
    "tr": "Her satırda parıltı, her bulmacada kutlama ve hareketli müzik."
   },
-  "Tip: like it calm or lively? Pick Relax or Dopamine mode in Settings → Play Style.": {
-   "en": "Tip: like it calm or lively? Pick Relax or Dopamine mode in Settings → Play Style.",
-   "tr": "İpucu: Sakin mi seversin, hareketli mi? Ayarlar → Oyun Tarzı'ndan Rahat ya da Dopamin modunu seç."
-  },
   "Zoom out": {
    "en": "Zoom out",
    "tr": "Uzaklaştır"
+  },
+  "Calm": {
+   "en": "Calm",
+   "tr": "Sakin"
+  },
+  "Energetic": {
+   "en": "Energetic",
+   "tr": "Enerjik"
+  },
+  "Tip: like it calm or lively? Pick Calm or Energetic mode in Settings → Play Style.": {
+   "en": "Tip: like it calm or lively? Pick Calm or Energetic mode in Settings → Play Style.",
+   "tr": "İpucu: Sakin mi seversin, hareketli mi? Ayarlar → Oyun Tarzı'ndan Sakin ya da Enerjik modu seç."
+  },
+  "Start Over": {
+   "en": "Start Over",
+   "tr": "Baştan Başla"
   }
  },
  "infoplist": {

@@ -11,7 +11,7 @@ struct RootView: View {
     @Environment(ReminderManager.self) private var reminders
     @Environment(\.colorScheme) private var colorScheme
     @Environment(\.scenePhase) private var scenePhase
-    @AppStorage(SettingsKeys.playMode) private var playMode = PlayMode.relax
+    @AppStorage(SettingsKeys.playMode) private var playMode = PlayMode.dopamine
 
     var body: some View {
         @Bindable var router = router

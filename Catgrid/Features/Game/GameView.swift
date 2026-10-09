@@ -79,7 +79,7 @@ struct GameView: View {
     /// Bu çözümle kilidi açılan yeni kedi türü (önceki türün yarısı çözülünce).
     @State private var newlyUnlockedChapter: Chapter?
     @AppStorage(SettingsKeys.hardMode) private var isHardMode = false
-    @AppStorage(SettingsKeys.playMode) private var playMode = PlayMode.relax
+    @AppStorage(SettingsKeys.playMode) private var playMode = PlayMode.dopamine
     /// Dopamin modu: satır parıltısı ve bitişte konfeti.
     @State private var lineGlow: LineGlow?
     @State private var confettiStart: Date?
@@ -137,8 +137,8 @@ struct GameView: View {
                 game: game,
                 activeCell: viewModel.activeCell,
                 flashingCell: flashingCell,
-                hint: companionHint,
-                pointer: tutorialPointer,
+                hint: companionHint ?? guidedStep?.hint,
+                pointer: guidedStep?.cell,
                 lineGlow: lineGlow,
                 onDragBegan: { viewModel.dragBegan(at: $0) },
                 onDragMoved: { viewModel.dragMoved(to: $0) },
@@ -152,6 +152,8 @@ struct GameView: View {
             CatCompanionView(line: companionLine, isActive: game.status == .playing, coat: companionCoat) {
                 askCompanion()
             }
+            // Tahta büyüse de yardımcı kediye her zaman yer kalsın
+            .frame(minHeight: CatCompanionView.minimumHeight)
             .layoutPriority(-1)
 
             if game.status == .playing {
@@ -175,6 +177,10 @@ struct GameView: View {
                     onHome: {
                         audio.play(.tap)
                         router.popToRoot()
+                    },
+                    onRestart: {
+                        audio.play(.tap)
+                        withAnimation(.snappy) { viewModel.restart() }
                     }
                 )
                 .transition(.opacity)
@@ -182,6 +188,15 @@ struct GameView: View {
         }
         .themedScreen()
         .screenTitle(isDaily ? Text("Daily Puzzle") : Text(verbatim: chapter?.title.resolved ?? ""), subtitle: subtitle)
+        // Hangi kedi türündesin: başlığın yanında türün portresi
+        .toolbar {
+            ToolbarItem(placement: .topBarTrailing) {
+                if let chapter, chapter.kind == .breed {
+                    ChapterBadge(chapter: chapter, size: 38)
+                        .accessibilityHidden(true)
+                }
+            }
+        }
         .overlay {
             ConfettiView(start: confettiStart)
                 .ignoresSafeArea()
@@ -344,12 +359,35 @@ struct GameView: View {
         return muffinReaction ?? lesson.muffinPose
     }
 
-    /// İlk derste, oyuncu henüz dokunmadıysa pati dolacak kareyi gösterir.
-    private var tutorialPointer: GridPosition? {
-        guard viewModel.puzzle.lesson == .firstSquare, game.status == .playing,
-              !game.board.storage.contains(where: { $0 != .blank })
+    /// Eğitimin ilk 9 dersinde: mantıkla kesinleşen bir satır/sütun vurgulanır ve pati o
+    /// çizgide doldurulacak kareyi gösterir. Her hamleden sonra bir sonrakine geçer.
+    private static let guidedLessons: Set<TutorialLesson> = [
+        .firstSquare, .tapToFill, .fullLines, .emptyLines, .markWithCross,
+        .multipleBlocks, .overlap, .edges, .crossReference,
+    ]
+
+    private var guidedStep: (hint: HintFinder.Hint, cell: GridPosition)? {
+        let puzzle = viewModel.puzzle
+        guard let lesson = puzzle.lesson, Self.guidedLessons.contains(lesson),
+              game.status == .playing, !viewModel.isPaused,
+              let hint = HintFinder.bestHint(board: game.board, puzzle: puzzle)
         else { return nil }
-        return game.board.positions.first { viewModel.puzzle.solution[$0] }
+        let length = hint.axis == .row ? puzzle.columns : puzzle.rows
+        let positions = (0..<length).map {
+            hint.axis == .row ? GridPosition(row: hint.index, column: $0) : GridPosition(row: $0, column: hint.index)
+        }
+        let line: [Bool?] = positions.map { position in
+            switch game.board[position] {
+            case .filled: true
+            case .crossed: false
+            case .blank: nil
+            }
+        }
+        let clue = hint.axis == .row ? puzzle.rowClues[hint.index] : puzzle.columnClues[hint.index]
+        guard let solved = LineSolver.solve(line, clue: clue),
+              let index = positions.indices.first(where: { line[$0] == nil && solved[$0] == true })
+        else { return nil }
+        return (hint, positions[index])
     }
 
     /// Genişlik / yükseklik: ipucu sütunları dahil kare sayısı oranı.
@@ -469,7 +507,8 @@ struct GameView: View {
                 badge: isDaily ? nil : (completionResult?.isNewBest == true ? "New best time!" : nil),
                 stars: completionResult?.stars,
                 starNote: completionResult.flatMap { speedStarNote($0) },
-                newBadges: completionResult?.newBadges ?? []
+                newBadges: completionResult?.newBadges ?? [],
+                artwork: viewModel.puzzle.artwork
             ) {
                 if isCardPending {
                     // Kart penceresi açılana/kapanana kadar geçiş düğmeleri yok
@@ -640,6 +679,7 @@ struct PauseMenu: View {
     let onContinue: () -> Void
     let onSettings: () -> Void
     let onHome: () -> Void
+    let onRestart: () -> Void
 
     var body: some View {
         ZStack {
@@ -664,6 +704,11 @@ struct PauseMenu: View {
                     }
                     .buttonStyle(PrimaryButtonStyle())
                     .accessibilityIdentifier("pause.continue")
+                    Button(action: onRestart) {
+                        Label("Start Over", systemImage: "arrow.counterclockwise")
+                    }
+                    .buttonStyle(SecondaryButtonStyle())
+                    .accessibilityIdentifier("pause.restart")
                     Button(action: onSettings) {
                         Label("Settings", systemImage: "gearshape.fill")
                     }
@@ -742,14 +787,23 @@ struct ResultCard<Actions: View>: View {
     var stars: Int?
     var starNote: Text?
     var newBadges: [Badge] = []
+    /// Çözülen resim: kartla birlikte gelir (tahtanın kartın altında kalmaması için).
+    var artwork: Matrix<RGBColor?>?
     @ViewBuilder let actions: () -> Actions
     @State private var showsStars = false
 
     var body: some View {
         VStack(spacing: 14) {
-            Image(systemName: icon)
-                .font(.title)
-                .foregroundStyle(tint)
+            if let artwork {
+                ArtworkThumbnail(artwork: artwork)
+                    .padding(10)
+                    .frame(maxWidth: 150, maxHeight: 130)
+                    .background(RoundedRectangle(cornerRadius: 16).fill(theme.surfaceMuted))
+            } else {
+                Image(systemName: icon)
+                    .font(.title)
+                    .foregroundStyle(tint)
+            }
             Text(title)
                 .font(.title2.bold())
                 .foregroundStyle(theme.textPrimary)
