@@ -144,7 +144,9 @@ struct GameView: View {
                 onDragMoved: { viewModel.dragMoved(to: $0) },
                 onDragEnded: { viewModel.dragEnded() }
             )
-            .aspectRatio(1, contentMode: .fit)
+            // Tahta bulmacanın kendi oranında (ipuçlarıyla birlikte): uzun bulmacalar (10x20 gibi)
+            // kare bir alana sıkışmaz, ekranın boş yüksekliğini kullanır
+            .aspectRatio(boardAspectRatio, contentMode: .fit)
 
             // Tahtanın altındaki boşlukta dolaşan kedi; boşluk yoksa görünmez
             CatCompanionView(line: companionLine, isActive: game.status == .playing, coat: companionCoat) {
@@ -156,7 +158,9 @@ struct GameView: View {
                 GameControls(tool: $viewModel.tool, canUndo: game.canUndo) { viewModel.undo() }
             }
         }
-        .padding(20)
+        // Büyük tahtalarda kenar boşluğu daralır, kareler büyür
+        .padding(.horizontal, isLargeBoard ? 10 : 20)
+        .padding(.vertical, 20)
         .overlay {
             if viewModel.isPaused {
                 PauseMenu(
@@ -346,6 +350,18 @@ struct GameView: View {
               !game.board.storage.contains(where: { $0 != .blank })
         else { return nil }
         return game.board.positions.first { viewModel.puzzle.solution[$0] }
+    }
+
+    /// Genişlik / yükseklik: ipucu sütunları dahil kare sayısı oranı.
+    private var boardAspectRatio: CGFloat {
+        let puzzle = viewModel.puzzle
+        let rowClueSlots = max(puzzle.rowClues.map(\.count).max() ?? 1, 1)
+        let columnClueSlots = max(puzzle.columnClues.map(\.count).max() ?? 1, 1)
+        return CGFloat(puzzle.columns + rowClueSlots) / CGFloat(puzzle.rows + columnClueSlots)
+    }
+
+    private var isLargeBoard: Bool {
+        max(viewModel.puzzle.rows, viewModel.puzzle.columns) > 12
     }
 
     /// Kedi türü bölümünde yardımcı kedi o türün renklerinde.
