@@ -248,7 +248,8 @@
   "Dopamine": "도파민",
   "Calm and simple: soft music, no distractions.": "차분하고 단순하게: 부드러운 음악, 방해 요소 없음.",
   "Sparkles for every line, celebrations for every puzzle and upbeat music.": "줄마다 반짝임, 퍼즐마다 축하, 그리고 신나는 음악.",
-  "Tip: like it calm or lively? Pick Relax or Dopamine mode in Settings → Play Style.": "팁: 차분한 게 좋아요, 신나는 게 좋아요? 설정 → 플레이 스타일에서 릴랙스나 도파민 모드를 고르세요."
+  "Tip: like it calm or lively? Pick Relax or Dopamine mode in Settings → Play Style.": "팁: 차분한 게 좋아요, 신나는 게 좋아요? 설정 → 플레이 스타일에서 릴랙스나 도파민 모드를 고르세요.",
+  "Zoom out": "축소"
  },
  "infoplist": {
   "CFBundleDisplayName": "Catgrid",

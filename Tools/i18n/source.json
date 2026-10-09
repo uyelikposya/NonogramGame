@@ -955,6 +955,10 @@
   "Tip: like it calm or lively? Pick Relax or Dopamine mode in Settings → Play Style.": {
    "en": "Tip: like it calm or lively? Pick Relax or Dopamine mode in Settings → Play Style.",
    "tr": "İpucu: Sakin mi seversin, hareketli mi? Ayarlar → Oyun Tarzı'ndan Rahat ya da Dopamin modunu seç."
+  },
+  "Zoom out": {
+   "en": "Zoom out",
+   "tr": "Uzaklaştır"
   }
  },
  "infoplist": {

@@ -30,9 +30,12 @@ struct BoardView: View {
     let onDragMoved: (GridPosition) -> Void
     let onDragEnded: () -> Void
 
-    @State private var isDragging = false
+    /// Büyük tahtalarda yakınlaştırma durumu (her bulmaca için yeni).
+    @State private var zoom = BoardZoom()
 
     private var puzzle: Puzzle { game.puzzle }
+    /// Yakınlaştırma yalnızca büyük tahtalarda; küçüklerde tahta zaten yeterince büyük.
+    private var isZoomable: Bool { max(puzzle.rows, puzzle.columns) > 10 }
     private var isSolved: Bool { game.status == .won }
 
     var body: some View {
@@ -47,31 +50,37 @@ struct BoardView: View {
             VStack(alignment: .leading, spacing: 0) {
                 HStack(alignment: .bottom, spacing: 0) {
                     Color.clear.frame(width: cell * CGFloat(rowClueSlots), height: cell * CGFloat(columnClueSlots))
-                    ForEach(0..<puzzle.columns, id: \.self) { column in
-                        VStack(spacing: 0) {
-                            ForEach(clueTexts(puzzle.columnClues[column]), id: \.self) { text in
-                                clueLabel(text, size: cell)
-                            }
+                    if isZoomable {
+                        // Yakınlaşınca sütun ipuçları yerinde kalır, tahtayla birlikte yatay kayar
+                        PannedStrip(zoom: zoom, axis: .horizontal, fitCell: cell) { screenCell in
+                            columnClues(width: screenCell, height: cell)
                         }
-                        .frame(width: cell)
-                        .background(clueBackground(isActive: activeCell?.column == column, isHinted: isHinted(.column, column)))
-                        .foregroundStyle(clueColor(isSatisfied: game.isColumnSatisfied(column)))
+                        .frame(width: cell * CGFloat(puzzle.columns), height: cell * CGFloat(columnClueSlots), alignment: .bottomLeading)
+                        .clipped()
+                    } else {
+                        columnClues(width: cell, height: cell)
                     }
                 }
                 HStack(alignment: .top, spacing: 0) {
-                    VStack(alignment: .trailing, spacing: 0) {
-                        ForEach(0..<puzzle.rows, id: \.self) { row in
-                            HStack(spacing: 0) {
-                                ForEach(clueTexts(puzzle.rowClues[row]), id: \.self) { text in
-                                    clueLabel(text, size: cell)
-                                }
-                            }
-                            .frame(width: cell * CGFloat(rowClueSlots), height: cell, alignment: .trailing)
-                            .background(clueBackground(isActive: activeCell?.row == row, isHinted: isHinted(.row, row)))
-                            .foregroundStyle(clueColor(isSatisfied: game.isRowSatisfied(row)))
+                    if isZoomable {
+                        PannedStrip(zoom: zoom, axis: .vertical, fitCell: cell) { screenCell in
+                            rowClues(width: cell, height: screenCell, slots: rowClueSlots)
                         }
+                        .frame(width: cell * CGFloat(rowClueSlots), height: cell * CGFloat(puzzle.rows), alignment: .topLeading)
+                        .clipped()
+                        // Tek parmak boyar; iki parmak yakınlaştırır ve kaydırır
+                        ZoomableBoard(zoom: zoom, fitSize: CGSize(width: cell * CGFloat(puzzle.columns), height: cell * CGFloat(puzzle.rows))) {
+                            canvas(cell: cell * BoardZoom.maxScale)
+                        }
+                        .frame(width: cell * CGFloat(puzzle.columns), height: cell * CGFloat(puzzle.rows))
+                        .overlay(alignment: .topTrailing) {
+                            ZoomResetButton(zoom: zoom)
+                                .padding(6)
+                        }
+                    } else {
+                        rowClues(width: cell, height: cell, slots: rowClueSlots)
+                        canvas(cell: cell)
                     }
-                    board(cell: cell)
                 }
             }
             .opacity(isSolved ? 0 : 1)
@@ -94,6 +103,110 @@ struct BoardView: View {
     }
 
     // MARK: - Tahta
+
+    private func canvas(cell: CGFloat) -> BoardCanvas {
+        BoardCanvas(
+            game: game,
+            cell: cell,
+            theme: theme,
+            activeCell: activeCell,
+            flashingCell: flashingCell,
+            hint: hint,
+            pointer: pointer,
+            lineGlow: lineGlow,
+            onDragBegan: onDragBegan,
+            onDragMoved: onDragMoved,
+            onDragEnded: onDragEnded
+        )
+    }
+
+    // MARK: - İpuçları
+
+    private func columnClues(width: CGFloat, height: CGFloat) -> some View {
+        HStack(alignment: .bottom, spacing: 0) {
+            ForEach(0..<puzzle.columns, id: \.self) { column in
+                VStack(spacing: 0) {
+                    ForEach(clueTexts(puzzle.columnClues[column]), id: \.self) { text in
+                        clueLabel(text, width: width, height: height)
+                    }
+                }
+                .frame(width: width)
+                .background(clueBackground(isActive: activeCell?.column == column, isHinted: isHinted(.column, column)))
+                .foregroundStyle(clueColor(isSatisfied: game.isColumnSatisfied(column)))
+            }
+        }
+    }
+
+    private func rowClues(width: CGFloat, height: CGFloat, slots: Int) -> some View {
+        VStack(alignment: .trailing, spacing: 0) {
+            ForEach(0..<puzzle.rows, id: \.self) { row in
+                HStack(spacing: 0) {
+                    ForEach(clueTexts(puzzle.rowClues[row]), id: \.self) { text in
+                        clueLabel(text, width: width, height: height)
+                    }
+                }
+                .frame(width: width * CGFloat(slots), height: height, alignment: .trailing)
+                .background(clueBackground(isActive: activeCell?.row == row, isHinted: isHinted(.row, row)))
+                .foregroundStyle(clueColor(isSatisfied: game.isRowSatisfied(row)))
+            }
+        }
+    }
+
+    private func clueColor(isSatisfied: Bool) -> Color {
+        isSatisfied ? theme.textSecondary.opacity(0.45) : theme.textPrimary
+    }
+
+    private func clueBackground(isActive: Bool, isHinted: Bool) -> some View {
+        RoundedRectangle(cornerRadius: 4)
+            .fill(isHinted ? theme.accent.opacity(0.3) : (isActive ? theme.highlight : .clear))
+    }
+
+    private func isHinted(_ axis: HintFinder.Axis, _ index: Int) -> Bool {
+        hint?.axis == axis && hint?.index == index
+    }
+
+    /// Aynı sayı tekrar edebildiği için konumla birlikte benzersiz kimlik üretilir.
+    private func clueTexts(_ clue: [Int]) -> [String] {
+        let numbers = clue.isEmpty ? [0] : clue
+        return numbers.enumerated().map { "\($0.offset):\($0.element)" }
+    }
+
+    private func clueLabel(_ text: String, width: CGFloat, height: CGFloat) -> some View {
+        Text(verbatim: String(text.split(separator: ":").last ?? ""))
+            .font(.system(size: min(min(width, height) * 0.55, 22), weight: .semibold, design: .rounded))
+            .monospacedDigit()
+            .minimumScaleFactor(0.6)
+            .frame(width: width, height: height)
+    }
+}
+
+/// Tahtanın kareleri: tek `Canvas` ve tek parmakla boyama. Büyük tahtalarda
+/// yakınlaştırılabilir kaydırma görünümünün içinde, büyük ölçekte çizilir.
+@MainActor
+struct BoardCanvas: View {
+    let game: NonogramGame
+    let cell: CGFloat
+    let theme: AppTheme
+    var activeCell: GridPosition?
+    var flashingCell: GridPosition?
+    var hint: HintFinder.Hint?
+    var pointer: GridPosition?
+    var lineGlow: LineGlow?
+    let onDragBegan: (GridPosition) -> Void
+    let onDragMoved: (GridPosition) -> Void
+    let onDragEnded: () -> Void
+
+    @State private var isDragging = false
+    @GestureState private var isTouching = false
+
+    var body: some View {
+        board(cell: cell)
+            .onChange(of: isTouching) { _, touching in
+                guard !touching, isDragging else { return }
+                isDragging = false
+                onDragEnded()
+            }
+    }
 
     private func board(cell: CGFloat) -> some View {
         let board = game.board
@@ -152,7 +265,7 @@ struct BoardView: View {
                 )
                 context.fill(Path(roundedRect: rect, cornerRadius: cell * 0.16), with: .color(theme.mistake.opacity(0.55)))
             }
-            Self.drawGridLines(in: context, size: size, cell: cell, rows: board.rows, columns: board.columns, theme: theme)
+            BoardCanvas.drawGridLines(in: context, size: size, cell: cell, rows: board.rows, columns: board.columns, theme: theme)
             // İpucu çizgisi en üstte, kalın bir çerçeveyle
             if let hint {
                 let rect = hint.axis == .row
@@ -206,7 +319,7 @@ struct BoardView: View {
     }
 
     /// Her 5 karede bir kalın çizgi: büyük tahtalarda saymayı kolaylaştırır.
-    private static func drawGridLines(
+    static func drawGridLines(
         in context: GraphicsContext,
         size: CGSize,
         cell: CGFloat,
@@ -236,6 +349,9 @@ struct BoardView: View {
     /// Dokunma da sıfır mesafeli sürükleme olarak işlenir, böylece tek bir yol kalır.
     private func dragGesture(cell: CGFloat) -> some Gesture {
         DragGesture(minimumDistance: 0)
+            // İki parmakla yakınlaştırma başlayınca sürükleme iptal olur (onEnded gelmez);
+            // GestureState sıfırlanınca sürükleme yine de bitirilir
+            .updating($isTouching) { _, state, _ in state = true }
             .onChanged { value in
                 guard value.location.x >= 0, value.location.y >= 0 else { return }
                 let position = GridPosition(row: Int(value.location.y / cell), column: Int(value.location.x / cell))
@@ -252,32 +368,4 @@ struct BoardView: View {
             }
     }
 
-    // MARK: - İpuçları
-
-    private func clueColor(isSatisfied: Bool) -> Color {
-        isSatisfied ? theme.textSecondary.opacity(0.45) : theme.textPrimary
-    }
-
-    private func clueBackground(isActive: Bool, isHinted: Bool) -> some View {
-        RoundedRectangle(cornerRadius: 4)
-            .fill(isHinted ? theme.accent.opacity(0.3) : (isActive ? theme.highlight : .clear))
-    }
-
-    private func isHinted(_ axis: HintFinder.Axis, _ index: Int) -> Bool {
-        hint?.axis == axis && hint?.index == index
-    }
-
-    /// Aynı sayı tekrar edebildiği için konumla birlikte benzersiz kimlik üretilir.
-    private func clueTexts(_ clue: [Int]) -> [String] {
-        let numbers = clue.isEmpty ? [0] : clue
-        return numbers.enumerated().map { "\($0.offset):\($0.element)" }
-    }
-
-    private func clueLabel(_ text: String, size: CGFloat) -> some View {
-        Text(verbatim: String(text.split(separator: ":").last ?? ""))
-            .font(.system(size: min(size * 0.5, 22), weight: .semibold, design: .rounded))
-            .monospacedDigit()
-            .minimumScaleFactor(0.6)
-            .frame(width: size, height: size)
-    }
 }

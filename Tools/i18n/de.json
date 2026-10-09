@@ -251,7 +251,8 @@
   "Dopamine": "Dopamin",
   "Calm and simple: soft music, no distractions.": "Ruhig und schlicht: sanfte Musik, keine Ablenkung.",
   "Sparkles for every line, celebrations for every puzzle and upbeat music.": "Funkeln für jede Zeile, Feiern für jedes Rätsel und fröhliche Musik.",
-  "Tip: like it calm or lively? Pick Relax or Dopamine mode in Settings → Play Style.": "Tipp: Lieber ruhig oder lebhaft? Wähle unter Einstellungen → Spielstil den Modus Entspannt oder Dopamin."
+  "Tip: like it calm or lively? Pick Relax or Dopamine mode in Settings → Play Style.": "Tipp: Lieber ruhig oder lebhaft? Wähle unter Einstellungen → Spielstil den Modus Entspannt oder Dopamin.",
+  "Zoom out": "Verkleinern"
  },
  "infoplist": {
   "CFBundleDisplayName": "Catgrid",
