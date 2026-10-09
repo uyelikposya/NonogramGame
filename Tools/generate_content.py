@@ -586,6 +586,13 @@ BREEDS += [
          palette=dict(b="#C8743F", d="#8C4A24", e="#9CB84A", n="#C9705A", w="#F2D7B6", o="#E0B66A", p="#7D5A44", g="#3E7C4F")),
 ]
 
+# 1.1 ile gelen türler
+BREEDS += [
+    dict(id="himalayan", fact=("Persian coat, Siamese points", "İran tüyü, Siyam uçları"),
+         ears="small", pattern=["points"], fluffy=True, head_w=0.4, specials=["cushion", "teacup"],
+         palette=dict(b="#F3E9DA", d="#6B4F3F", e="#3E7BD6", n="#D99A9A", w="#FBF8F3", o="#8E5BA8", p="#C8B6A6", y="#F4D35E")),
+]
+
 # Koleksiyon kartı bilgileri. Puanlar 1-5: enerji, sevgi, oyunculuk, bakım ihtiyacı.
 # Kaynaklar türlerle ilgili genel kabul görmüş bilgiler; tartışmalı konularda temkinli ifade kullanıldı.
 CARDS = {
@@ -664,6 +671,9 @@ CARDS = {
     "somali": (("North America", "Kuzey Amerika"), "12–16", ("Semi-long, ticked", "Yarı uzun, kırçıllı"), (5, 4, 5, 2),
                ("A long-haired Abyssinian, nicknamed the 'fox cat' for its bushy tail.",
                 "Gür kuyruğu yüzünden 'tilki kedi' denen uzun tüylü bir Habeş kedisi.")),
+    "himalayan": (("United States & United Kingdom", "ABD ve Birleşik Krallık"), "9–15", ("Long, colorpoint", "Uzun, uçları koyu"), (2, 5, 2, 5),
+                  ("Created by crossing Persians with Siamese: a long coat with colorpoint markings and blue eyes.",
+                   "İran kedileriyle Siyamların melezlenmesiyle oluşturuldu: uzun tüy, koyu uçlar ve mavi gözler.")),
 }
 
 # Kartın arkası: türün geçmişi, görünüşü ve karakteri (ansiklopedi tarzı, kendi cümlelerimizle).
@@ -718,6 +728,8 @@ ABOUT = {
                          "Kısa kuyruklu kediler yüzyıllardır Japonya'da yaşar ve eski resim ve baskılarda görülür. Her Bobtail'in ponpon gibi kısa kuyruğu kendine özgüdür. Üç renkli 'mi-ke' deseni özellikle değerlidir. Hareketli, konuşkan ve oyunbazdırlar."),
     "somali": ("The Somali is the long-haired form of the Abyssinian, recognized as a separate breed in the late 1970s. Its ticked coat and full, bushy tail give it a fox-like look. Somalis are energetic, clever and endlessly curious.",
                "Somali, Habeş kedisinin uzun tüylü biçimidir ve 1970'lerin sonunda ayrı bir tür olarak tanındı. Kırçıllı tüyü ve gür, kabarık kuyruğu ona tilki gibi bir görünüm verir. Enerjik, zeki ve bitmeyen bir merakla dolu kedilerdir."),
+    "himalayan": ("Breeders in the United States and Britain worked from the 1930s to the 1950s to combine the Persian's long coat with the Siamese colorpoint pattern. The result is a calm, cuddly cat with sapphire-blue eyes. Some associations count it as a color variety of the Persian rather than a separate breed. Its long coat needs daily brushing.",
+                  "ABD ve İngiltere'deki üreticiler 1930'lardan 1950'lere kadar İran kedisinin uzun tüyünü Siyam'ın koyu uçlu deseniyle birleştirmeye çalıştı. Sonuç, safir mavisi gözlü, sakin ve sevgi dolu bir kedi oldu. Bazı kuruluşlar onu ayrı bir tür değil, İran kedisinin bir renk çeşidi sayar. Uzun tüyü her gün taranmalıdır."),
 }
 
 
@@ -773,6 +785,8 @@ GOLDEN_FACT = {
                          "Japon halk inanışında kısa kuyruklu kedilerin yaşadıkları eve şans getirdiğine inanılırdı."),
     "somali": ("Somali kittens are born dark, and their glowing ticked coat can take up to two years to develop.",
                "Somali yavruları koyu renkli doğar; parıltılı kırçıllı tüylerinin oluşması iki yılı bulabilir."),
+    "himalayan": ("Its name comes from the Himalayan rabbit, which has the same dark-pointed coloring, not from the mountains.",
+                  "Adını dağlardan değil, aynı koyu uçlu renklere sahip Himalaya tavşanından alır."),
 }
 
 
@@ -782,6 +796,7 @@ TITLES = {
     "siberian": ("Siberian", "Sibirya Kedisi"), "devon-rex": ("Devon Rex", "Devon Rex"),
     "oriental-shorthair": ("Oriental Shorthair", "Oryantal Kısa Tüylü"),
     "japanese-bobtail": ("Japanese Bobtail", "Japon Bobtail"), "somali": ("Somali", "Somali"),
+    "himalayan": ("Himalayan", "Himalaya Kedisi"),
 }
 
 

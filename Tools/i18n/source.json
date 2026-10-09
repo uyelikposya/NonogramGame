@@ -1535,6 +1535,34 @@
   "Emblem": {
    "tr": "Amblem",
    "kind": "title"
+  },
+  "Himalayan": {
+   "tr": "Himalaya Kedisi",
+   "kind": "title"
+  },
+  "Persian coat, Siamese points": {
+   "tr": "İran tüyü, Siyam uçları",
+   "kind": "subtitle"
+  },
+  "United States & United Kingdom": {
+   "tr": "ABD ve Birleşik Krallık",
+   "kind": "origin"
+  },
+  "Long, colorpoint": {
+   "tr": "Uzun, uçları koyu",
+   "kind": "coat"
+  },
+  "Created by crossing Persians with Siamese: a long coat with colorpoint markings and blue eyes.": {
+   "tr": "İran kedileriyle Siyamların melezlenmesiyle oluşturuldu: uzun tüy, koyu uçlar ve mavi gözler.",
+   "kind": "fact"
+  },
+  "Breeders in the United States and Britain worked from the 1930s to the 1950s to combine the Persian's long coat with the Siamese colorpoint pattern. The result is a calm, cuddly cat with sapphire-blue eyes. Some associations count it as a color variety of the Persian rather than a separate breed. Its long coat needs daily brushing.": {
+   "tr": "ABD ve İngiltere'deki üreticiler 1930'lardan 1950'lere kadar İran kedisinin uzun tüyünü Siyam'ın koyu uçlu deseniyle birleştirmeye çalıştı. Sonuç, safir mavisi gözlü, sakin ve sevgi dolu bir kedi oldu. Bazı kuruluşlar onu ayrı bir tür değil, İran kedisinin bir renk çeşidi sayar. Uzun tüyü her gün taranmalıdır.",
+   "kind": "about"
+  },
+  "Its name comes from the Himalayan rabbit, which has the same dark-pointed coloring, not from the mountains.": {
+   "tr": "Adını dağlardan değil, aynı koyu uçlu renklere sahip Himalaya tavşanından alır.",
+   "kind": "goldenFact"
   }
  },
  "storekit": {

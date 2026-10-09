@@ -1,0 +1,272 @@
+{
+  "schemaVersion": 1,
+  "chapterID": "himalayan",
+  "puzzles": [
+    {
+      "id": "himalayan-p01",
+      "title": {
+        "en": "Golden Paw",
+        "tr": "Altın Pati",
+        "ja": "金の肉球",
+        "de": "Goldene Pfote",
+        "fr": "Patte dorée",
+        "es": "Patita dorada",
+        "pt-BR": "Patinha Dourada",
+        "ko": "황금 발바닥"
+      },
+      "palette": {
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        ".yy..yy.",
+        ".yy..yy.",
+        "........",
+        "yy....yy",
+        "yy.yy.yy",
+        "..yyyy..",
+        ".yyyyyy.",
+        "..yyyy.."
+      ]
+    },
+    {
+      "id": "himalayan-p02",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi",
+        "ja": "ゴロゴロ大好き",
+        "de": "Schnurrliebe",
+        "fr": "Ronron d'amour",
+        "es": "Amor ronroneante",
+        "pt-BR": "Amor Ronronado",
+        "ko": "골골송 사랑"
+      },
+      "palette": {
+        "n": "#D99A9A",
+        "w": "#FBF8F3"
+      },
+      "pixels": [
+        ".nn..nn.",
+        "nwnnnnnn",
+        "nnnnnnnn",
+        "nnnnnnnn",
+        ".nnnnnn.",
+        "..nnnn..",
+        "...nn...",
+        "........"
+      ]
+    },
+    {
+      "id": "himalayan-p03",
+      "title": {
+        "en": "Fish Snack",
+        "tr": "Balık Atıştırması",
+        "ja": "おさかなおやつ",
+        "de": "Fischsnack",
+        "fr": "Goûter poisson",
+        "es": "Tentempié de pescado",
+        "pt-BR": "Petisco de Peixe",
+        "ko": "생선 간식"
+      },
+      "palette": {
+        "o": "#8E5BA8"
+      },
+      "pixels": [
+        "........",
+        "..oo....",
+        "ooooo..o",
+        "o.oooooo",
+        "oooooooo",
+        "ooooo..o",
+        "..oo....",
+        "........"
+      ]
+    },
+    {
+      "id": "himalayan-p04",
+      "title": {
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak",
+        "ja": "毛糸玉",
+        "de": "Wollknäuel",
+        "fr": "Pelote de laine",
+        "es": "Ovillo de lana",
+        "pt-BR": "Novelo de Lã",
+        "ko": "털실 뭉치"
+      },
+      "palette": {
+        "o": "#8E5BA8"
+      },
+      "pixels": [
+        ".....oo...",
+        "....ooooo.",
+        "...oo.oo.o",
+        "..ooo...oo",
+        "..ooo..ooo",
+        "...o.oo.oo",
+        "....ooooo.",
+        "...ooooo..",
+        ".oo.......",
+        ".........."
+      ]
+    },
+    {
+      "id": "himalayan-p05",
+      "title": {
+        "en": "Toy Mouse",
+        "tr": "Oyuncak Fare",
+        "ja": "ネズミのおもちゃ",
+        "de": "Spielmaus",
+        "fr": "Souris jouet",
+        "es": "Ratón de juguete",
+        "pt-BR": "Ratinho de Brinquedo",
+        "ko": "장난감 쥐"
+      },
+      "palette": {
+        "n": "#D99A9A",
+        "p": "#C8B6A6"
+      },
+      "pixels": [
+        "..........",
+        "...p......",
+        "..nnp.....",
+        "..ppppp...",
+        "..ppppp...",
+        ".ppppppp..",
+        "..pppppn.n",
+        "..pppp..nn",
+        "........n.",
+        ".........."
+      ]
+    },
+    {
+      "id": "himalayan-p06",
+      "title": {
+        "en": "Portrait",
+        "tr": "Portre",
+        "ja": "肖像画",
+        "de": "Porträt",
+        "fr": "Portrait",
+        "es": "Retrato",
+        "pt-BR": "Retrato",
+        "ko": "초상화"
+      },
+      "palette": {
+        "b": "#F3E9DA",
+        "d": "#6B4F3F",
+        "e": "#3E7BD6"
+      },
+      "pixels": [
+        "..........",
+        "....bb....",
+        ".dbbbbbbd.",
+        ".bbbbbbbb.",
+        ".bbeddebb.",
+        "bbbeddebbb",
+        "bbbddddbbb",
+        "b.bddddb.b",
+        "...bbbb...",
+        ".........."
+      ]
+    },
+    {
+      "id": "himalayan-p07",
+      "title": {
+        "en": "Royal Cushion",
+        "tr": "Saray Minderi",
+        "ja": "王様のクッション",
+        "de": "Königskissen",
+        "fr": "Coussin royal",
+        "es": "Cojín real",
+        "pt-BR": "Almofada Real",
+        "ko": "왕실 방석"
+      },
+      "palette": {
+        "b": "#F3E9DA",
+        "d": "#6B4F3F",
+        "n": "#D99A9A",
+        "o": "#8E5BA8",
+        "p": "#C8B6A6"
+      },
+      "pixels": [
+        "............",
+        ".dd..d......",
+        ".ddbdd......",
+        ".dbbbdd.....",
+        ".bbnbbbbb...",
+        ".bbbbbbbbb..",
+        ".bbbbbbbbbb.",
+        ".bbbbbbbbbb.",
+        "oobbbbbbbboo",
+        "ooopbbbbpooo",
+        "oooooooooooo",
+        "oooooooooooo"
+      ]
+    },
+    {
+      "id": "himalayan-p08",
+      "title": {
+        "en": "Nap Time",
+        "tr": "Şekerleme",
+        "ja": "お昼寝タイム",
+        "de": "Nickerchen",
+        "fr": "L'heure de la sieste",
+        "es": "Hora de la siesta",
+        "pt-BR": "Hora da Soneca",
+        "ko": "낮잠 시간"
+      },
+      "palette": {
+        "b": "#F3E9DA",
+        "d": "#6B4F3F"
+      },
+      "pixels": [
+        "............",
+        "......b.....",
+        "ddbbdbbbbb..",
+        "ddbbdbbbbbb.",
+        "ddddddbbbbb.",
+        ".bbbbbbbbbbb",
+        ".bbbbbbbbbdd",
+        "..bbbbbbbbdd",
+        "...dbbbbbdd.",
+        "...ddddddd..",
+        "....dddddd..",
+        "............"
+      ]
+    },
+    {
+      "id": "himalayan-p09",
+      "title": {
+        "en": "Lucky Cat",
+        "tr": "Şans Kedisi",
+        "ja": "招き猫",
+        "de": "Glückskatze",
+        "fr": "Chat porte-bonheur",
+        "es": "Gato de la suerte",
+        "pt-BR": "Gato da Sorte",
+        "ko": "행운의 고양이"
+      },
+      "palette": {
+        "b": "#F3E9DA",
+        "d": "#6B4F3F",
+        "e": "#3E7BD6",
+        "n": "#D99A9A",
+        "o": "#8E5BA8",
+        "y": "#F4D35E"
+      },
+      "pixels": [
+        ".d......dbb.",
+        ".ddbbbbddbb.",
+        ".dddbbdddbb.",
+        ".bbebbebbbb.",
+        ".bbebbebbbb.",
+        "..bbbbbbbb..",
+        "..nnyynnbb..",
+        ".bbbbbbbb...",
+        ".bbbyybbb...",
+        ".bbyooybb...",
+        ".bbbyybbb...",
+        "...bbbb....."
+      ]
+    }
+  ]
+}

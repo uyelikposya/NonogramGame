@@ -1,0 +1,437 @@
+{
+  "schemaVersion": 1,
+  "chapterID": "himalayan",
+  "puzzles": [
+    {
+      "id": "himalayan-001",
+      "title": {
+        "en": "Toy Mouse",
+        "tr": "Oyuncak Fare",
+        "ja": "ネズミのおもちゃ",
+        "de": "Spielmaus",
+        "fr": "Souris jouet",
+        "es": "Ratón de juguete",
+        "pt-BR": "Ratinho de Brinquedo",
+        "ko": "장난감 쥐"
+      },
+      "palette": {
+        "n": "#D99A9A",
+        "p": "#C8B6A6"
+      },
+      "pixels": [
+        "..n...",
+        ".ppp..",
+        ".pppp.",
+        ".pppn.",
+        "..p..n"
+      ]
+    },
+    {
+      "id": "himalayan-002",
+      "title": {
+        "en": "Leftovers",
+        "tr": "Artıklar",
+        "ja": "食べ残し",
+        "de": "Reste",
+        "fr": "Restes",
+        "es": "Sobras",
+        "pt-BR": "Restinho",
+        "ko": "남은 음식"
+      },
+      "palette": {
+        "p": "#C8B6A6"
+      },
+      "pixels": [
+        "..ppp..",
+        ".pppp.p",
+        "ppppppp",
+        ".pppp.p",
+        "..ppp.."
+      ]
+    },
+    {
+      "id": "himalayan-003",
+      "title": {
+        "en": "Toe Beans",
+        "tr": "Pati Yastıkları",
+        "ja": "肉球",
+        "de": "Pfotenballen",
+        "fr": "Coussinets",
+        "es": "Almohadillas",
+        "pt-BR": "Almofadinhas",
+        "ko": "말랑 젤리"
+      },
+      "palette": {
+        "b": "#F3E9DA",
+        "n": "#D99A9A"
+      },
+      "pixels": [
+        "..bb..",
+        "bbnnbb",
+        "bbbbbb",
+        ".bnnb.",
+        ".bnnb.",
+        ".bbbb."
+      ]
+    },
+    {
+      "id": "himalayan-004",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi",
+        "ja": "ゴロゴロ大好き",
+        "de": "Schnurrliebe",
+        "fr": "Ronron d'amour",
+        "es": "Amor ronroneante",
+        "pt-BR": "Amor Ronronado",
+        "ko": "골골송 사랑"
+      },
+      "palette": {
+        "n": "#D99A9A"
+      },
+      "pixels": [
+        ".nnnnn.",
+        "nnnnnnn",
+        "nnnnnnn",
+        ".nnnnn.",
+        "..nnn..",
+        "...n..."
+      ]
+    },
+    {
+      "id": "himalayan-005",
+      "title": {
+        "en": "Dinner Bowl",
+        "tr": "Mama Kabı",
+        "ja": "ごはん皿",
+        "de": "Futternapf",
+        "fr": "Gamelle",
+        "es": "Cuenco de comida",
+        "pt-BR": "Potinho de Ração",
+        "ko": "밥그릇"
+      },
+      "palette": {
+        "o": "#8E5BA8",
+        "p": "#C8B6A6",
+        "w": "#FBF8F3"
+      },
+      "pixels": [
+        ".......",
+        ".ppppp.",
+        "ppppppp",
+        "oopppoo",
+        "oowwwoo",
+        ".ooooo.",
+        ".ooooo."
+      ]
+    },
+    {
+      "id": "himalayan-006",
+      "title": {
+        "en": "Yarn Ball",
+        "tr": "Yün Yumak",
+        "ja": "毛糸玉",
+        "de": "Wollknäuel",
+        "fr": "Pelote de laine",
+        "es": "Ovillo de lana",
+        "pt-BR": "Novelo de Lã",
+        "ko": "털실 뭉치"
+      },
+      "palette": {
+        "o": "#8E5BA8"
+      },
+      "pixels": [
+        ".oooo..",
+        "o.o.o..",
+        "oo..oo.",
+        "oooo...",
+        ".oooo..",
+        ".....o."
+      ]
+    },
+    {
+      "id": "himalayan-007",
+      "title": {
+        "en": "Fish Snack",
+        "tr": "Balık Atıştırması",
+        "ja": "おさかなおやつ",
+        "de": "Fischsnack",
+        "fr": "Goûter poisson",
+        "es": "Tentempié de pescado",
+        "pt-BR": "Petisco de Peixe",
+        "ko": "생선 간식"
+      },
+      "palette": {
+        "o": "#8E5BA8"
+      },
+      "pixels": [
+        "..oo...",
+        "ooooo.o",
+        "o.ooooo",
+        "ooooooo",
+        "ooooo.o",
+        "..oo..."
+      ]
+    },
+    {
+      "id": "himalayan-008",
+      "title": {
+        "en": "Dinner Bowl",
+        "tr": "Mama Kabı",
+        "ja": "ごはん皿",
+        "de": "Futternapf",
+        "fr": "Gamelle",
+        "es": "Cuenco de comida",
+        "pt-BR": "Potinho de Ração",
+        "ko": "밥그릇"
+      },
+      "palette": {
+        "o": "#8E5BA8",
+        "p": "#C8B6A6",
+        "w": "#FBF8F3"
+      },
+      "pixels": [
+        "..ppp..",
+        ".ppppp.",
+        "ppppppp",
+        "oopppoo",
+        "oowwwoo",
+        ".ooooo.",
+        ".ooooo."
+      ]
+    },
+    {
+      "id": "himalayan-009",
+      "title": {
+        "en": "Purr Love",
+        "tr": "Mırıl Sevgi",
+        "ja": "ゴロゴロ大好き",
+        "de": "Schnurrliebe",
+        "fr": "Ronron d'amour",
+        "es": "Amor ronroneante",
+        "pt-BR": "Amor Ronronado",
+        "ko": "골골송 사랑"
+      },
+      "palette": {
+        "n": "#D99A9A",
+        "w": "#FBF8F3"
+      },
+      "pixels": [
+        ".nn.nn.",
+        "nwnnnnn",
+        "nnnnnnn",
+        ".nnnnn.",
+        ".nnnnn.",
+        "..nnn..",
+        "...n..."
+      ]
+    },
+    {
+      "id": "himalayan-010",
+      "title": {
+        "en": "Portrait",
+        "tr": "Portre",
+        "ja": "肖像画",
+        "de": "Porträt",
+        "fr": "Portrait",
+        "es": "Retrato",
+        "pt-BR": "Retrato",
+        "ko": "초상화"
+      },
+      "palette": {
+        "b": "#F3E9DA",
+        "d": "#6B4F3F",
+        "e": "#3E7BD6"
+      },
+      "pixels": [
+        "........",
+        "...bb...",
+        ".bbbbbb.",
+        ".beddeb.",
+        "bbeddebb",
+        "bbddddbb",
+        "...dd...",
+        "........"
+      ]
+    },
+    {
+      "id": "himalayan-011",
+      "title": {
+        "en": "If I Fits",
+        "tr": "Kutu Sevdası",
+        "ja": "入れるなら入る",
+        "de": "Passt, sitzt",
+        "fr": "Si ça rentre…",
+        "es": "Si quepo, me siento",
+        "pt-BR": "Se Cabe, Eu Entro",
+        "ko": "들어가면 내 자리"
+      },
+      "palette": {
+        "b": "#F3E9DA",
+        "d": "#6B4F3F",
+        "o": "#8E5BA8",
+        "p": "#C8B6A6"
+      },
+      "pixels": [
+        "........",
+        "..dbbd..",
+        "..bbbb..",
+        "..bbbb..",
+        "poobboop",
+        ".oooooo.",
+        ".oooooo.",
+        ".oooooo."
+      ]
+    },
+    {
+      "id": "himalayan-012",
+      "title": {
+        "en": "Nap Time",
+        "tr": "Şekerleme",
+        "ja": "お昼寝タイム",
+        "de": "Nickerchen",
+        "fr": "L'heure de la sieste",
+        "es": "Hora de la siesta",
+        "pt-BR": "Hora da Soneca",
+        "ko": "낮잠 시간"
+      },
+      "palette": {
+        "b": "#F3E9DA",
+        "d": "#6B4F3F"
+      },
+      "pixels": [
+        ".........",
+        "d.bdbbb..",
+        "ddbdbbbb.",
+        "d..bbbbbb",
+        ".bbbbbbbd",
+        "..bbbbbd.",
+        "..dddddd.",
+        "........."
+      ]
+    },
+    {
+      "id": "himalayan-013",
+      "title": {
+        "en": "Teacup Cat",
+        "tr": "Fincandaki Kedi",
+        "ja": "ティーカップ猫",
+        "de": "Teetassenkatze",
+        "fr": "Chat dans une tasse",
+        "es": "Gato en una taza",
+        "pt-BR": "Gato na Xícara",
+        "ko": "찻잔 고양이"
+      },
+      "palette": {
+        "b": "#F3E9DA",
+        "d": "#6B4F3F",
+        "e": "#3E7BD6",
+        "o": "#8E5BA8",
+        "p": "#C8B6A6"
+      },
+      "pixels": [
+        ".........",
+        ".ddb.d...",
+        ".ddbbd...",
+        ".bebee...",
+        "oobbbboo.",
+        "oopppoo.o",
+        "ooooooo..",
+        ".ooooooo.",
+        ".ooooo..."
+      ]
+    },
+    {
+      "id": "himalayan-014",
+      "title": {
+        "en": "Cozy Sweater",
+        "tr": "Sıcak Kazak",
+        "ja": "ぬくぬくセーター",
+        "de": "Kuschelpulli",
+        "fr": "Pull douillet",
+        "es": "Jersey calentito",
+        "pt-BR": "Suéter Quentinho",
+        "ko": "포근한 스웨터"
+      },
+      "palette": {
+        "b": "#F3E9DA",
+        "e": "#3E7BD6",
+        "o": "#8E5BA8"
+      },
+      "pixels": [
+        "..........",
+        ".bbbbbbb..",
+        ".bbbbbbb..",
+        ".bbebbeb..",
+        ".bbebbebb.",
+        "bbbbbbbbb.",
+        "..bbbbbbb.",
+        "..oooooo..",
+        "..oooooo.."
+      ]
+    },
+    {
+      "id": "himalayan-015",
+      "title": {
+        "en": "Floppy Hug",
+        "tr": "Gevşek Kucaklama",
+        "ja": "ぐにゃっとハグ",
+        "de": "Schlappe Umarmung",
+        "fr": "Câlin tout mou",
+        "es": "Abrazo blandito",
+        "pt-BR": "Abraço Molinho",
+        "ko": "축 늘어진 포옹"
+      },
+      "palette": {
+        "b": "#F3E9DA",
+        "d": "#6B4F3F",
+        "w": "#FBF8F3"
+      },
+      "pixels": [
+        "......d...",
+        "...b..b...",
+        "...b..b...",
+        "...b..b...",
+        "...bbbbbb.",
+        "..bbwbbbbb",
+        ".bbwwwwbb.",
+        ".dbwwwwb..",
+        "d.bbwwbb..",
+        "d...bb...."
+      ]
+    },
+    {
+      "id": "himalayan-016",
+      "title": {
+        "en": "Forest Guardian",
+        "tr": "Orman Bekçisi",
+        "ja": "森の守り神",
+        "de": "Waldhüter",
+        "fr": "Gardien de la forêt",
+        "es": "Guardián del bosque",
+        "pt-BR": "Guardião da Floresta",
+        "ko": "숲의 수호자"
+      },
+      "palette": {
+        "b": "#F3E9DA",
+        "d": "#6B4F3F",
+        "g": "#4E8F4A",
+        "o": "#8E5BA8"
+      },
+      "pixels": [
+        "............",
+        "..g.........",
+        "..gg........",
+        ".ggg........",
+        ".gggg..dbbd.",
+        ".gggg..dddd.",
+        ".ggg...bbd..",
+        ".gggd.bbbb..",
+        ".ggddbbbbb..",
+        "gggddbbbbb..",
+        "..odddbbbb..",
+        "..o..d.ddd.."
+      ]
+    }
+  ]
+}

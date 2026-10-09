@@ -3018,6 +3018,120 @@
         }
       },
       "premiumFile": "chapter_25_somali_premium"
+    },
+    {
+      "id": "himalayan",
+      "kind": "breed",
+      "title": {
+        "en": "Himalayan",
+        "tr": "Himalaya Kedisi",
+        "ja": "ヒマラヤン",
+        "de": "Himalaya-Katze",
+        "fr": "Himalayen",
+        "es": "Himalayo",
+        "pt-BR": "Himalaio",
+        "ko": "히말라얀"
+      },
+      "subtitle": {
+        "en": "Persian coat, Siamese points",
+        "tr": "İran tüyü, Siyam uçları",
+        "ja": "ペルシャの被毛にシャムのポイント",
+        "de": "Perserfell, Siam-Abzeichen",
+        "fr": "Fourrure de Persan, marques de Siamois",
+        "es": "Pelaje persa, puntas siamesas",
+        "pt-BR": "Pelo de persa, pontas de siamês",
+        "ko": "페르시안의 털, 샴의 포인트"
+      },
+      "accentColor": "#F3E9DA",
+      "file": "chapter_26_himalayan",
+      "portrait": {
+        "palette": {
+          "b": "#F3E9DA",
+          "d": "#6B4F3F",
+          "e": "#3E7BD6",
+          "n": "#D99A9A"
+        },
+        "pixels": [
+          "....d.....bbbb.....d....",
+          "...dd..bbbbbbbbbb..dd...",
+          "...ddbbbbbbbbbbbbbbdd...",
+          "...dbbbbbbbbbbbbbbbbd...",
+          "...bbbbbbbbbbbbbbbbbb...",
+          "...bbbbbbbbddbbbbbbbb...",
+          "..bbbbbeeddddddeebbbbb..",
+          "..bbbbe.eeddddee.ebbbb..",
+          "..bbbbe.edddddde.ebbbb..",
+          "bbbbbbbeedddddddebbbbbbb",
+          "bbbbbbbdddddddddddbbbbbb",
+          "bbbbbbbddddnnddddbbbbbbb",
+          "bbb.bbbddddddddddbbb.bbb",
+          ".b...bbbddddddddbbb...b.",
+          "......bbbddddddbbb......",
+          "........bbbbbbbb........"
+        ]
+      },
+      "card": {
+        "number": 26,
+        "rarity": "legendary",
+        "origin": {
+          "en": "United States & United Kingdom",
+          "tr": "ABD ve Birleşik Krallık",
+          "ja": "アメリカ・イギリス",
+          "de": "USA und Vereinigtes Königreich",
+          "fr": "États-Unis et Royaume-Uni",
+          "es": "Estados Unidos y Reino Unido",
+          "pt-BR": "Estados Unidos e Reino Unido",
+          "ko": "미국·영국"
+        },
+        "lifespan": "9–15",
+        "coat": {
+          "en": "Long, colorpoint",
+          "tr": "Uzun, uçları koyu",
+          "ja": "長毛、カラーポイント",
+          "de": "Lang, Colorpoint",
+          "fr": "Long, colourpoint",
+          "es": "Largo, colorpoint",
+          "pt-BR": "Longo, colorpoint",
+          "ko": "장모, 컬러포인트"
+        },
+        "stats": {
+          "energy": 2,
+          "affection": 5,
+          "playfulness": 2,
+          "grooming": 5
+        },
+        "fact": {
+          "en": "Created by crossing Persians with Siamese: a long coat with colorpoint markings and blue eyes.",
+          "tr": "İran kedileriyle Siyamların melezlenmesiyle oluşturuldu: uzun tüy, koyu uçlar ve mavi gözler.",
+          "ja": "ペルシャとシャムを交配して生まれました。長い被毛にカラーポイント、そして青い目が特徴です。",
+          "de": "Aus Perser- und Siamkatzen gezüchtet: langes Fell mit Colorpoint-Abzeichen und blauen Augen.",
+          "fr": "Issu du croisement de Persans et de Siamois : une longue fourrure aux extrémités foncées et des yeux bleus.",
+          "es": "Nació de cruzar persas con siameses: pelo largo con puntas oscuras y ojos azules.",
+          "pt-BR": "Criado pelo cruzamento de persas com siameses: pelo longo com pontas escuras e olhos azuis.",
+          "ko": "페르시안과 샴을 교배해 만든 품종으로, 긴 털에 컬러포인트 무늬와 파란 눈을 지녔어요."
+        },
+        "about": {
+          "en": "Breeders in the United States and Britain worked from the 1930s to the 1950s to combine the Persian's long coat with the Siamese colorpoint pattern. The result is a calm, cuddly cat with sapphire-blue eyes. Some associations count it as a color variety of the Persian rather than a separate breed. Its long coat needs daily brushing.",
+          "tr": "ABD ve İngiltere'deki üreticiler 1930'lardan 1950'lere kadar İran kedisinin uzun tüyünü Siyam'ın koyu uçlu deseniyle birleştirmeye çalıştı. Sonuç, safir mavisi gözlü, sakin ve sevgi dolu bir kedi oldu. Bazı kuruluşlar onu ayrı bir tür değil, İran kedisinin bir renk çeşidi sayar. Uzun tüyü her gün taranmalıdır.",
+          "ja": "1930年代から1950年代にかけて、アメリカとイギリスのブリーダーがペルシャの長い被毛とシャムのカラーポイント模様を組み合わせようと取り組みました。こうして、サファイアのような青い目をした、穏やかで甘えん坊の猫が生まれました。独立した品種ではなく、ペルシャの毛色のバリエーションとして扱う団体もあります。長い被毛は毎日のブラッシングが必要です。",
+          "de": "Züchter in den USA und Großbritannien arbeiteten von den 1930er- bis in die 1950er-Jahre daran, das lange Fell der Perserkatze mit dem Colorpoint-Muster der Siamkatze zu verbinden. Das Ergebnis ist eine ruhige, verschmuste Katze mit saphirblauen Augen. Manche Verbände führen sie als Farbvariante der Perserkatze statt als eigene Rasse. Ihr langes Fell muss täglich gebürstet werden.",
+          "fr": "Des éleveurs américains et britanniques ont cherché, des années 1930 aux années 1950, à associer la longue fourrure du Persan aux marques colourpoint du Siamois. Le résultat : un chat calme et câlin aux yeux bleu saphir. Certaines associations le considèrent comme une variété de couleur du Persan plutôt que comme une race à part. Sa longue fourrure doit être brossée chaque jour.",
+          "es": "Entre las décadas de 1930 y 1950, criadores de Estados Unidos y Gran Bretaña trabajaron para unir el pelo largo del persa con el patrón colorpoint del siamés. El resultado es un gato tranquilo y mimoso de ojos azul zafiro. Algunas asociaciones lo consideran una variedad de color del persa y no una raza aparte. Su pelo largo necesita cepillado diario.",
+          "pt-BR": "Entre as décadas de 1930 e 1950, criadores dos Estados Unidos e da Grã-Bretanha trabalharam para unir o pelo longo do persa ao padrão colorpoint do siamês. O resultado é um gato calmo e carinhoso, de olhos azul-safira. Algumas associações o consideram uma variedade de cor do persa, e não uma raça separada. Seu pelo longo precisa ser escovado todos os dias.",
+          "ko": "1930년대부터 1950년대까지 미국과 영국의 브리더들은 페르시안의 긴 털과 샴의 컬러포인트 무늬를 합치려고 노력했어요. 그 결과 사파이어처럼 파란 눈을 가진, 차분하고 애교 많은 고양이가 탄생했지요. 일부 협회에서는 독립된 품종이 아니라 페르시안의 털색 변종으로 분류해요. 긴 털은 매일 빗질해 주어야 해요."
+        },
+        "goldenFact": {
+          "en": "Its name comes from the Himalayan rabbit, which has the same dark-pointed coloring, not from the mountains.",
+          "tr": "Adını dağlardan değil, aynı koyu uçlu renklere sahip Himalaya tavşanından alır.",
+          "ja": "名前の由来は山ではなく、同じように先端が濃い毛色をもつヒマラヤンウサギです。",
+          "de": "Ihr Name stammt nicht von den Bergen, sondern vom Himalaya-Kaninchen, das dieselbe dunkle Abzeichenfärbung trägt.",
+          "fr": "Son nom ne vient pas des montagnes mais du lapin himalayen, qui a les mêmes extrémités foncées.",
+          "es": "Su nombre no viene de las montañas, sino del conejo himalayo, que tiene las mismas puntas oscuras.",
+          "pt-BR": "Seu nome não vem das montanhas, e sim do coelho himalaio, que tem as mesmas pontas escuras.",
+          "ko": "이름은 산이 아니라, 똑같이 끝부분이 짙은 털색을 지닌 히말라얀 토끼에서 왔어요."
+        }
+      },
+      "premiumFile": "chapter_26_himalayan_premium"
     }
   ]
 }
