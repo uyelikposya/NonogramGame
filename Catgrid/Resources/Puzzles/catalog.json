@@ -11,14 +11,14 @@
       "id": "tutorial",
       "kind": "tutorial",
       "title": {
-        "en": "Kitten School",
-        "tr": "Yavru Okulu",
-        "ja": "子猫の学校",
-        "de": "Kätzchenschule",
-        "fr": "École des chatons",
-        "es": "Escuela de gatitos",
-        "pt-BR": "Escola de Gatinhos",
-        "ko": "아기 고양이 학교"
+        "en": "Muffin's School",
+        "tr": "Muffin'in Okulu",
+        "ja": "マフィンの学校",
+        "de": "Muffins Schule",
+        "fr": "L'école de Muffin",
+        "es": "La escuela de Muffin",
+        "pt-BR": "Escola da Muffin",
+        "ko": "머핀의 학교"
       },
       "subtitle": {
         "en": "Learn the rules",
@@ -150,7 +150,28 @@
           "es": "Los gatitos siameses nacen casi blancos; sus puntas oscuras aparecen en los primeros meses.",
           "pt-BR": "Os filhotes siameses nascem quase brancos; as extremidades escuras surgem nos primeiros meses.",
           "ko": "샴 새끼 고양이는 거의 하얗게 태어나고, 짙은 포인트는 생후 몇 달 동안 나타나요."
-        }
+        },
+        "goldenAbout": {
+          "en": "The Siamese appears in the Tamra Maew, a book of cat poems from old Siam, where pointed cats were treasured by royalty and temples. The first Siamese reached Britain in the 1880s as gifts from the Siamese court. Early cats often had crossed eyes and kinked tails, traits breeders later bred away. Today's Siamese comes in two looks: the slender modern type and the rounder 'traditional' or 'applehead' type.",
+          "tr": "Siyam kedisi, eski Siyam'dan kalma bir kedi şiirleri kitabı olan Tamra Maew'de geçer; uçları koyu kediler saray ve tapınaklarda çok değerliydi. İlk Siyam kedileri 1880'lerde Siyam sarayının hediyesi olarak İngiltere'ye geldi. İlk kedilerde şaşı gözler ve kıvrık kuyruklar sık görülürdü; üreticiler bu özellikleri zamanla azalttı. Bugün iki tip vardır: ince yapılı modern tip ve daha yuvarlak 'geleneksel' ya da 'elma kafa' tipi.",
+          "ja": "シャムは、古いシャム王国の猫の詩集『タムラ・メーオ』に登場し、ポイント柄の猫は王族や寺院で大切にされていました。最初のシャムは1880年代に、シャム王室からの贈り物としてイギリスにやってきました。初期の猫には寄り目やカギしっぽが多く見られましたが、こうした特徴は後のブリーダーによって取り除かれました。現在のシャムには、ほっそりしたモダンタイプと、丸みのある「トラディショナル」または「アップルヘッド」タイプの2つのタイプがあります。",
+          "de": "Die Siamkatze taucht im Tamra Maew auf, einem Buch mit Katzengedichten aus dem alten Siam, wo Point-Katzen von Königshaus und Tempeln hochgeschätzt wurden. Die ersten Siamkatzen kamen in den 1880er-Jahren als Geschenke des siamesischen Hofes nach Großbritannien. Frühe Katzen schielten oft und hatten Knickschwänze – Merkmale, die Züchter später wegzüchteten. Heute gibt es die Siamkatze in zwei Typen: den schlanken modernen Typ und den runderen „traditionellen“ oder „Applehead“-Typ.",
+          "fr": "Le Siamois apparaît dans le Tamra Maew, un recueil de poèmes sur les chats de l'ancien Siam, où les chats colourpoint étaient chéris par la royauté et les temples. Les premiers Siamois sont arrivés en Grande-Bretagne dans les années 1880, offerts par la cour du Siam. Les premiers chats louchaient souvent et avaient la queue coudée, des traits que les éleveurs ont ensuite éliminés. Aujourd'hui, le Siamois existe sous deux formes : le type moderne, élancé, et le type plus rond dit « traditionnel » ou « applehead ».",
+          "es": "El siamés aparece en el Tamra Maew, un libro de poemas sobre gatos del antiguo Siam, donde los gatos de puntas oscuras eran apreciados por la realeza y los templos. Los primeros siameses llegaron a Gran Bretaña en la década de 1880 como regalos de la corte siamesa. Los primeros ejemplares solían tener los ojos bizcos y la cola torcida, rasgos que los criadores eliminaron después. Hoy el siamés tiene dos aspectos: el moderno, esbelto, y el «tradicional» o «cabeza de manzana», más redondeado.",
+          "pt-BR": "O siamês aparece no Tamra Maew, um livro de poemas sobre gatos do antigo Sião, onde os gatos com extremidades escuras eram valorizados pela realeza e pelos templos. Os primeiros siameses chegaram à Grã-Bretanha na década de 1880 como presentes da corte siamesa. Os primeiros gatos muitas vezes tinham olhos vesgos e cauda torta, características que os criadores depois eliminaram. Hoje o siamês tem dois visuais: o tipo moderno, esguio, e o tipo “tradicional” ou “applehead”, mais arredondado.",
+          "ko": "샴은 옛 시암 왕국의 고양이 시집 『땀라 매우』에 등장하는데, 포인트 무늬 고양이는 왕실과 사원에서 귀하게 여겨졌어요. 최초의 샴은 1880년대에 시암 왕실의 선물로 영국에 건너갔어요. 초기 고양이들은 사시나 꺾인 꼬리를 가진 경우가 많았지만, 이런 특징은 나중에 브리더들이 교배를 통해 없앴어요. 오늘날의 샴은 날씬한 모던 타입과 둥그스름한 '트래디셔널' 또는 '애플헤드' 타입, 두 가지 모습이 있어요."
+        },
+        "care": {
+          "en": "Its short coat needs only a weekly brush. Siamese need company and play every day; a bored Siamese will let you know loudly.",
+          "tr": "Kısa tüyü haftada bir taranması yeterlidir. Her gün arkadaşlık ve oyun ister; canı sıkılan bir Siyam bunu yüksek sesle belli eder.",
+          "ja": "短い被毛は週に1回のブラッシングで十分です。シャムには毎日の触れ合いと遊びが欠かせません。退屈したシャムは、大きな声でそれを知らせてくれます。",
+          "de": "Ihr kurzes Fell muss nur einmal pro Woche gebürstet werden. Siamkatzen brauchen jeden Tag Gesellschaft und Spiel; eine gelangweilte Siamkatze lässt es dich lautstark wissen.",
+          "fr": "Son poil court ne demande qu'un brossage par semaine. Le Siamois a besoin de compagnie et de jeu chaque jour ; un Siamois qui s'ennuie vous le fera savoir bruyamment.",
+          "es": "Su pelo corto solo necesita un cepillado semanal. El siamés necesita compañía y juego todos los días; si se aburre, te lo hará saber a voz en grito.",
+          "pt-BR": "A pelagem curta só precisa de uma escovação por semana. O siamês precisa de companhia e brincadeiras todos os dias; um siamês entediado vai deixar você saber disso em alto e bom som.",
+          "ko": "짧은 털은 일주일에 한 번만 빗어 주면 돼요. 샴은 매일 함께 있어 주고 놀아 줘야 해요. 심심한 샴은 큰 소리로 그 사실을 알려 줄 거예요."
+        },
+        "weight": "3–5 kg"
       },
       "premiumFile": "chapter_01_siamese_premium"
     },
@@ -267,7 +288,28 @@
           "es": "El British Shorthair crece despacio y puede no alcanzar su tamaño adulto hasta los tres o cinco años.",
           "pt-BR": "O British Shorthair cresce devagar e pode só atingir o tamanho adulto entre três e cinco anos.",
           "ko": "브리티시 쇼트헤어는 천천히 자라서 세 살에서 다섯 살쯤 되어야 다 큰 몸집이 돼요."
-        }
+        },
+        "goldenAbout": {
+          "en": "The British Shorthair was one of the stars of the first modern cat show, held at London's Crystal Palace in 1871. The breed nearly vanished during the two World Wars and was rebuilt with help from Persians and other cats. Although blue-grey is the classic color, it also comes in cream, black, lilac, golden and many patterns. It is famously independent and usually prefers sitting beside you rather than on your lap.",
+          "tr": "British Shorthair, 1871'de Londra'daki Crystal Palace'ta düzenlenen ilk modern kedi sergisinin yıldızlarından biriydi. Tür iki dünya savaşı sırasında neredeyse yok oldu ve İran kedileri gibi başka kedilerin yardımıyla yeniden kuruldu. Klasik rengi mavi-gri olsa da krem, siyah, lila, altın ve pek çok desende görülür. Bağımsızlığıyla ünlüdür; çoğu zaman kucağınızda değil, yanınızda oturmayı tercih eder.",
+          "ja": "ブリティッシュショートヘアは、1871年にロンドンのクリスタル・パレスで開かれた最初の近代的なキャットショーで、主役の一つとなった猫です。2度の世界大戦中にはほとんど姿を消しかけ、ペルシャなどの猫の力を借りて再興されました。ブルーグレーが代表的な毛色ですが、クリーム、ブラック、ライラック、ゴールデンのほか、さまざまな柄があります。独立心が強いことで知られ、たいていは膝の上よりも隣に座るのを好みます。",
+          "de": "Die Britisch Kurzhaar war einer der Stars der ersten modernen Katzenausstellung, die 1871 im Londoner Crystal Palace stattfand. Während der beiden Weltkriege verschwand die Rasse fast und wurde mithilfe von Perserkatzen und anderen Katzen neu aufgebaut. Blaugrau ist zwar die klassische Farbe, doch es gibt sie auch in Creme, Schwarz, Lilac, Golden und vielen Mustern. Sie ist bekannt für ihre Unabhängigkeit und sitzt meist lieber neben dir als auf deinem Schoß.",
+          "fr": "Le British Shorthair fut l'une des vedettes de la première exposition féline moderne, organisée au Crystal Palace de Londres en 1871. La race a failli disparaître pendant les deux guerres mondiales et a été reconstituée grâce à des Persans et d'autres chats. Si le bleu-gris est la couleur classique, il existe aussi en crème, noir, lilas, doré et dans de nombreux motifs. Réputé pour son indépendance, il préfère généralement s'asseoir à côté de vous plutôt que sur vos genoux.",
+          "es": "El británico de pelo corto fue una de las estrellas de la primera exposición felina moderna, celebrada en el Crystal Palace de Londres en 1871. La raza casi desapareció durante las dos guerras mundiales y se recuperó con ayuda de gatos persas y de otros gatos. Aunque el gris azulado es el color clásico, también lo hay en crema, negro, lila, dorado y muchos patrones. Es famoso por su independencia y suele preferir sentarse a tu lado antes que en tu regazo.",
+          "pt-BR": "O british shorthair foi uma das estrelas da primeira exposição felina moderna, realizada no Crystal Palace de Londres em 1871. A raça quase desapareceu durante as duas guerras mundiais e foi reconstruída com a ajuda de persas e outros gatos. Embora o cinza-azulado seja a cor clássica, ele também aparece em creme, preto, lilás, dourado e muitos padrões. É famoso por ser independente e geralmente prefere sentar ao seu lado em vez de no seu colo.",
+          "ko": "브리티시 쇼트헤어는 1871년 런던 크리스털 팰리스에서 열린 최초의 근대 캣쇼에서 스타로 활약한 고양이 중 하나예요. 두 차례의 세계대전 동안 거의 사라질 뻔했지만, 페르시안 등 다른 고양이들의 도움으로 다시 되살아났어요. 대표적인 털색은 블루그레이지만, 크림, 블랙, 라일락, 골든 등 다양한 색과 무늬가 있어요. 독립심이 강하기로 유명하고, 보통 무릎 위보다는 옆에 앉아 있는 걸 좋아해요."
+        },
+        "care": {
+          "en": "Brush its dense coat once or twice a week, more during seasonal shedding. It gains weight easily, so measured meals and daily play help.",
+          "tr": "Yoğun tüyünü haftada bir iki kez, mevsimsel tüy dökümünde daha sık tarayın. Kolay kilo alır; ölçülü öğünler ve günlük oyun iyi gelir.",
+          "ja": "密な被毛は週に1〜2回ブラッシングし、季節の換毛期には回数を増やしましょう。太りやすいので、量を計った食事と毎日の遊びが役立ちます。",
+          "de": "Bürste ihr dichtes Fell ein- bis zweimal pro Woche, während des saisonalen Fellwechsels öfter. Sie nimmt leicht zu, daher helfen abgemessene Mahlzeiten und tägliches Spielen.",
+          "fr": "Brossez son pelage dense une ou deux fois par semaine, davantage pendant la mue saisonnière. Il prend facilement du poids : des repas mesurés et du jeu quotidien l'aident.",
+          "es": "Cepilla su denso pelaje una o dos veces por semana, y más durante la muda de temporada. Engorda con facilidad, así que le vienen bien las raciones medidas y el juego diario.",
+          "pt-BR": "Escove a pelagem densa uma ou duas vezes por semana, e com mais frequência durante a troca de pelo sazonal. Ele engorda com facilidade, então refeições medidas e brincadeiras diárias ajudam.",
+          "ko": "촘촘한 털은 일주일에 한두 번 빗어 주고, 계절성 털갈이 시기에는 더 자주 빗어 주세요. 살이 찌기 쉬우니 양을 맞춘 식사와 매일의 놀이가 도움이 돼요."
+        },
+        "weight": "4–8 kg"
       },
       "premiumFile": "chapter_02_british_shorthair_premium"
     },
@@ -385,7 +427,28 @@
           "es": "Los Fold suelen sentarse erguidos con las patas estiradas, una postura que sus fans llaman «la pose de Buda».",
           "pt-BR": "Os Folds costumam sentar eretos com as patas esticadas, pose que os fãs chamam de 'sentada de Buda'.",
           "ko": "폴드는 다리를 쭉 뻗고 똑바로 앉곤 하는데, 팬들은 이를 '부처님 자세'라고 불러요."
-        }
+        },
+        "goldenAbout": {
+          "en": "In 1961 a shepherd named William Ross noticed Susie, a white farm cat with folded ears, near Coupar Angus in Scotland. Her kittens carried the same dominant gene, and the breed grew from them. Folds are calm, adaptable and often sleep flat on their backs. Because the fold gene also affects cartilage and joints, some cat associations do not register the breed, and responsible breeders always pair a Fold with a straight-eared cat.",
+          "tr": "1961'de William Ross adlı bir çoban, İskoçya'da Coupar Angus yakınlarında katlanmış kulaklı beyaz bir çiftlik kedisi olan Susie'yi fark etti. Yavruları aynı baskın geni taşıyordu ve tür onlardan çoğaldı. Fold'lar sakin ve uyumludur, çoğu zaman sırtüstü yatarak uyurlar. Kulak katlanmasına yol açan gen kıkırdağı ve eklemleri de etkilediği için bazı kedi kuruluşları türü kabul etmez; sorumlu üreticiler bir Fold'u her zaman düz kulaklı bir kediyle eşleştirir.",
+          "ja": "1961年、ウィリアム・ロスという羊飼いが、スコットランドのクーパー・アンガス近くで、耳の折れた白い農場猫スージーに気づきました。スージーの子猫たちも同じ優性遺伝子を受け継ぎ、そこからこの品種が広がりました。フォールドは穏やかで順応性が高く、仰向けにぺたんと寝ることもよくあります。折れ耳の遺伝子は軟骨や関節にも影響するため、この品種を登録していない猫の団体もあり、責任あるブリーダーは必ずフォールドと立ち耳の猫を組み合わせて交配します。",
+          "de": "1961 bemerkte ein Schäfer namens William Ross in der Nähe von Coupar Angus in Schottland Susie, eine weiße Hofkatze mit gefalteten Ohren. Ihre Kätzchen trugen dasselbe dominante Gen, und aus ihnen entstand die Rasse. Folds sind ruhig, anpassungsfähig und schlafen oft flach auf dem Rücken. Da das Fold-Gen auch Knorpel und Gelenke beeinflusst, registrieren manche Katzenverbände die Rasse nicht, und verantwortungsvolle Züchter verpaaren eine Fold immer mit einer Katze mit geraden Ohren.",
+          "fr": "En 1961, un berger nommé William Ross remarqua Susie, une chatte de ferme blanche aux oreilles repliées, près de Coupar Angus en Écosse. Ses chatons portaient le même gène dominant, et la race est née d'eux. Les Folds sont calmes, adaptables et dorment souvent à plat sur le dos. Comme le gène fold affecte aussi le cartilage et les articulations, certaines associations félines n'enregistrent pas la race, et les éleveurs responsables marient toujours un Fold avec un chat aux oreilles droites.",
+          "es": "En 1961, un pastor llamado William Ross se fijó en Susie, una gata blanca de granja con las orejas dobladas, cerca de Coupar Angus, en Escocia. Sus gatitos heredaron el mismo gen dominante, y la raza surgió a partir de ellos. Los Fold son tranquilos, adaptables y a menudo duermen tumbados boca arriba. Como el gen del pliegue también afecta al cartílago y a las articulaciones, algunas asociaciones felinas no registran la raza, y los criadores responsables siempre cruzan un Fold con un gato de orejas rectas.",
+          "pt-BR": "Em 1961, um pastor chamado William Ross reparou em Susie, uma gata branca de fazenda com orelhas dobradas, perto de Coupar Angus, na Escócia. Os filhotes dela herdaram o mesmo gene dominante, e a raça surgiu a partir deles. Os Folds são calmos, adaptáveis e muitas vezes dormem deitados de barriga para cima. Como o gene da dobra também afeta a cartilagem e as articulações, algumas associações felinas não registram a raça, e criadores responsáveis sempre cruzam um Fold com um gato de orelhas retas.",
+          "ko": "1961년, 윌리엄 로스라는 양치기가 스코틀랜드 쿠퍼앵거스 근처에서 귀가 접힌 하얀 농장 고양이 수지를 발견했어요. 수지의 새끼들도 같은 우성 유전자를 물려받았고, 이 품종은 그 고양이들로부터 퍼져 나갔어요. 폴드는 차분하고 적응력이 좋으며, 등을 바닥에 대고 납작하게 누워 자는 일이 많아요. 접힌 귀 유전자는 연골과 관절에도 영향을 주기 때문에 이 품종을 등록하지 않는 고양이 협회도 있고, 책임감 있는 브리더는 항상 폴드를 귀가 선 고양이와 짝지어요."
+        },
+        "care": {
+          "en": "Check and gently clean the folded ears regularly. Watch for stiffness in the tail or legs and have the joints checked at yearly vet visits.",
+          "tr": "Katlanmış kulakları düzenli kontrol edip nazikçe temizleyin. Kuyrukta ya da bacaklarda sertliğe dikkat edin; yıllık veteriner kontrolünde eklemlere de baktırın.",
+          "ja": "折れた耳を定期的にチェックし、やさしく掃除してあげましょう。しっぽや脚のこわばりに注意し、年1回の動物病院の健診で関節を診てもらいましょう。",
+          "de": "Kontrolliere die gefalteten Ohren regelmäßig und reinige sie sanft. Achte auf Steifheit in Schwanz oder Beinen und lass die Gelenke beim jährlichen Tierarztbesuch untersuchen.",
+          "fr": "Vérifiez et nettoyez délicatement ses oreilles repliées régulièrement. Surveillez toute raideur de la queue ou des pattes et faites contrôler ses articulations lors de la visite annuelle chez le vétérinaire.",
+          "es": "Revisa y limpia con suavidad sus orejas dobladas con regularidad. Vigila si aparece rigidez en la cola o las patas y haz que le revisen las articulaciones en las visitas anuales al veterinario.",
+          "pt-BR": "Verifique e limpe com delicadeza as orelhas dobradas regularmente. Fique atento a rigidez na cauda ou nas patas e peça para examinar as articulações nas consultas anuais ao veterinário.",
+          "ko": "접힌 귀를 정기적으로 확인하고 부드럽게 닦아 주세요. 꼬리나 다리가 뻣뻣하지 않은지 살펴보고, 매년 동물병원 검진 때 관절을 확인받으세요."
+        },
+        "weight": "3–6 kg"
       },
       "premiumFile": "chapter_03_scottish_fold_premium"
     },
@@ -498,7 +561,28 @@
           "es": "Los persas tienen una gran variedad de colores, del blanco nieve al azul ahumado y el crema.",
           "pt-BR": "Os persas aparecem em muitas cores, do branco-neve ao azul esfumaçado e ao creme.",
           "ko": "페르시안은 눈처럼 흰색부터 스모키 블루, 크림색까지 색이 아주 다양해요."
-        }
+        },
+        "goldenAbout": {
+          "en": "Queen Victoria kept blue Persians, which helped make the breed a favorite of Victorian Britain. Over the 20th century breeders gave it a rounder head and an ever shorter nose. Today many breeders and vets favor a more moderate face that makes breathing easier. Persians are gentle, quiet cats that enjoy a calm routine and rarely climb or leap like more athletic breeds.",
+          "tr": "Kraliçe Victoria'nın mavi İran kedileri vardı ve bu, türün Viktorya dönemi İngiltere'sinde gözde olmasına katkı sağladı. 20. yüzyıl boyunca üreticiler ona daha yuvarlak bir baş ve giderek kısalan bir burun kazandırdı. Bugün pek çok üretici ve veteriner, nefes almayı kolaylaştıran daha ılımlı bir yüzü tercih ediyor. İran kedileri sakin düzeni seven nazik, sessiz kedilerdir; atletik türler gibi pek tırmanıp zıplamazlar.",
+          "ja": "ヴィクトリア女王がブルーのペルシャを飼っていたことで、この品種はヴィクトリア朝のイギリスで人気者になりました。20世紀を通じて、ブリーダーたちは頭をより丸く、鼻をどんどん短くしていきました。現在では多くのブリーダーや獣医師が、呼吸がしやすい、より穏やかな顔立ちを好んでいます。ペルシャはやさしく静かな猫で、落ち着いた日課を好み、運動神経のよい品種のように登ったり跳んだりすることはめったにありません。",
+          "de": "Königin Victoria hielt blaue Perserkatzen, was dazu beitrug, die Rasse zu einem Liebling des viktorianischen Großbritanniens zu machen. Im Laufe des 20. Jahrhunderts gaben Züchter ihr einen runderen Kopf und eine immer kürzere Nase. Heute bevorzugen viele Züchter und Tierärzte ein gemäßigteres Gesicht, das das Atmen erleichtert. Perserkatzen sind sanfte, ruhige Katzen, die einen gleichmäßigen Alltag genießen und selten so klettern oder springen wie sportlichere Rassen.",
+          "fr": "La reine Victoria possédait des Persans bleus, ce qui contribua à faire de la race une favorite de la Grande-Bretagne victorienne. Au cours du XXe siècle, les éleveurs lui ont donné une tête plus ronde et un nez toujours plus court. Aujourd'hui, de nombreux éleveurs et vétérinaires privilégient une face plus modérée qui facilite la respiration. Les Persans sont des chats doux et calmes qui apprécient une routine paisible et grimpent ou sautent rarement comme les races plus sportives.",
+          "es": "La reina Victoria tenía persas azules, lo que ayudó a convertir la raza en una de las favoritas de la Gran Bretaña victoriana. A lo largo del siglo XX, los criadores le dieron una cabeza más redonda y una nariz cada vez más corta. Hoy muchos criadores y veterinarios prefieren una cara más moderada que facilita la respiración. Los persas son gatos dulces y tranquilos que disfrutan de una rutina calmada y rara vez trepan o saltan como las razas más atléticas.",
+          "pt-BR": "A rainha Vitória tinha persas azuis, o que ajudou a tornar a raça uma das favoritas da Grã-Bretanha vitoriana. Ao longo do século XX, os criadores deram a ela uma cabeça mais redonda e um focinho cada vez mais curto. Hoje muitos criadores e veterinários preferem um rosto mais moderado, que facilita a respiração. Os persas são gatos dóceis e quietos que gostam de uma rotina tranquila e raramente escalam ou pulam como as raças mais atléticas.",
+          "ko": "빅토리아 여왕이 블루 페르시안을 길렀던 덕분에, 이 품종은 빅토리아 시대 영국에서 사랑받는 고양이가 되었어요. 20세기 동안 브리더들은 머리를 더 둥글게, 코를 점점 더 짧게 만들었어요. 요즘은 많은 브리더와 수의사가 숨쉬기 편한, 좀 더 완만한 얼굴을 선호해요. 페르시안은 온순하고 조용한 고양이로, 차분한 일상을 좋아하고 활동적인 품종처럼 높이 오르거나 뛰어오르는 일은 드물어요."
+        },
+        "care": {
+          "en": "Comb the long coat every day to prevent mats, and wipe around the eyes gently. Regular baths keep the coat clean and silky.",
+          "tr": "Keçeleşmeyi önlemek için uzun tüyünü her gün tarayın, göz çevresini nazikçe silin. Düzenli banyo tüyü temiz ve ipeksi tutar.",
+          "ja": "毛玉を防ぐため、長い被毛は毎日コーミングし、目のまわりはやさしく拭いてあげましょう。定期的なシャンプーで、被毛を清潔でつややかに保てます。",
+          "de": "Kämme das lange Fell jeden Tag, um Verfilzungen vorzubeugen, und wische vorsichtig um die Augen herum. Regelmäßige Bäder halten das Fell sauber und seidig.",
+          "fr": "Peignez son long pelage tous les jours pour éviter les nœuds, et nettoyez délicatement le contour des yeux. Des bains réguliers gardent le pelage propre et soyeux.",
+          "es": "Peina su largo pelaje todos los días para evitar nudos y limpia con suavidad la zona de los ojos. Los baños regulares mantienen el pelo limpio y sedoso.",
+          "pt-BR": "Penteie a pelagem longa todos os dias para evitar nós e limpe com delicadeza ao redor dos olhos. Banhos regulares mantêm o pelo limpo e sedoso.",
+          "ko": "엉킴을 막기 위해 긴 털은 매일 빗질하고, 눈 주변은 부드럽게 닦아 주세요. 정기적으로 목욕시키면 털을 깨끗하고 윤기 있게 유지할 수 있어요."
+        },
+        "weight": "3–6 kg"
       },
       "premiumFile": "chapter_04_persian_premium"
     },
@@ -616,7 +700,28 @@
           "es": "El Ragdoll madura despacio y alcanza su tamaño y color definitivos hacia los cuatro años.",
           "pt-BR": "O Ragdoll amadurece devagar e atinge o tamanho e a cor finais por volta dos quatro anos.",
           "ko": "랙돌은 천천히 자라서 네 살쯤 되어야 몸집과 털색이 완성돼요."
-        }
+        },
+        "goldenAbout": {
+          "en": "The Ragdoll was developed by Ann Baker in Riverside, California, starting with a white longhaired cat named Josephine. It is one of the largest domestic breeds, and males can take four years to fully mature. Ragdolls come in colorpoint, mitted and bicolor patterns, always with blue eyes. Their easygoing nature makes them popular with families, and many learn to fetch toys.",
+          "tr": "Ragdoll, Kaliforniya'nın Riverside kentinde Ann Baker tarafından, Josephine adlı beyaz uzun tüylü bir kediyle başlanarak geliştirildi. En iri evcil türlerden biridir; erkeklerin tamamen olgunlaşması dört yıl sürebilir. Ragdoll'lar uçları koyu, eldivenli ve iki renkli desenlerde görülür; gözleri her zaman mavidir. Rahat yapıları onları ailelerin gözdesi yapar ve çoğu oyuncak getirmeyi öğrenir.",
+          "ja": "ラグドールは、カリフォルニア州リバーサイドのアン・ベイカーによって、ジョセフィンという白い長毛の猫から作出されました。家庭で飼われる猫の中でも最大級の品種で、オスは完全に成長するまで4年かかることもあります。ラグドールにはカラーポイント、ミテッド、バイカラーの柄があり、目はいつも青色です。のんびりした性格で家族に人気があり、おもちゃを取ってくることを覚える子も多くいます。",
+          "de": "Die Ragdoll wurde von Ann Baker in Riverside, Kalifornien, gezüchtet, ausgehend von einer weißen Langhaarkatze namens Josephine. Sie ist eine der größten Hauskatzenrassen, und Kater können bis zu vier Jahre brauchen, um ganz ausgewachsen zu sein. Ragdolls gibt es in den Mustern Colorpoint, Mitted und Bicolor, immer mit blauen Augen. Ihr gelassenes Wesen macht sie bei Familien beliebt, und viele lernen, Spielzeug zu apportieren.",
+          "fr": "Le Ragdoll a été créé par Ann Baker à Riverside, en Californie, à partir d'une chatte blanche à poil long nommée Joséphine. C'est l'une des plus grandes races domestiques, et les mâles peuvent mettre quatre ans à atteindre leur pleine maturité. Les Ragdolls existent en motifs colourpoint, mitted et bicolore, toujours avec les yeux bleus. Leur nature facile à vivre les rend populaires auprès des familles, et beaucoup apprennent à rapporter des jouets.",
+          "es": "El ragdoll fue creado por Ann Baker en Riverside (California) a partir de una gata blanca de pelo largo llamada Josephine. Es una de las razas domésticas más grandes, y los machos pueden tardar cuatro años en alcanzar su pleno desarrollo. Los ragdoll tienen patrones colorpoint, mitted y bicolor, siempre con ojos azules. Su carácter tranquilo los hace populares entre las familias, y muchos aprenden a traer juguetes.",
+          "pt-BR": "O ragdoll foi desenvolvido por Ann Baker em Riverside, na Califórnia, a partir de uma gata branca de pelo longo chamada Josephine. É uma das maiores raças domésticas, e os machos podem levar quatro anos para amadurecer por completo. Os ragdolls aparecem nos padrões colorpoint, mitted e bicolor, sempre com olhos azuis. Seu jeito tranquilo os torna populares entre as famílias, e muitos aprendem a buscar brinquedos.",
+          "ko": "랙돌은 캘리포니아주 리버사이드의 앤 베이커가 조세핀이라는 하얀 장모 고양이에서 시작해 만든 품종이에요. 집고양이 중 가장 큰 품종 중 하나로, 수컷은 완전히 자라는 데 4년이 걸리기도 해요. 랙돌에는 컬러포인트, 미티드, 바이컬러 무늬가 있고, 눈은 언제나 파란색이에요. 느긋한 성격 덕분에 가족들에게 인기가 많고, 장난감을 물어 오는 법을 배우는 아이도 많아요."
+        },
+        "care": {
+          "en": "Brush the silky coat two or three times a week; it mats less than many longhaired breeds. Indoor life suits this trusting cat best.",
+          "tr": "İpeksi tüyünü haftada iki üç kez tarayın; pek çok uzun tüylü türe göre daha az keçeleşir. Bu güvenen kedi için en uygunu ev içinde yaşamaktır.",
+          "ja": "絹のような被毛は週に2〜3回ブラッシングしましょう。多くの長毛種に比べて毛玉はできにくいです。人を信頼するこの猫には、室内での暮らしがいちばん合っています。",
+          "de": "Bürste das seidige Fell zwei- bis dreimal pro Woche; es verfilzt weniger als bei vielen Langhaarrassen. Ein Leben in der Wohnung passt am besten zu dieser vertrauensvollen Katze.",
+          "fr": "Brossez son pelage soyeux deux ou trois fois par semaine ; il s'emmêle moins que celui de nombreuses races à poil long. Une vie en intérieur convient le mieux à ce chat confiant.",
+          "es": "Cepilla su pelaje sedoso dos o tres veces por semana; se enreda menos que el de muchas razas de pelo largo. La vida en interior es la que mejor le sienta a este gato tan confiado.",
+          "pt-BR": "Escove a pelagem sedosa duas ou três vezes por semana; ela embaraça menos que a de muitas raças de pelo longo. A vida dentro de casa é a que mais combina com este gato tão confiante.",
+          "ko": "실크 같은 털은 일주일에 두세 번 빗어 주세요. 다른 장모종보다 털이 덜 엉켜요. 사람을 잘 믿는 이 고양이에게는 실내 생활이 가장 잘 맞아요."
+        },
+        "weight": "4.5–9 kg"
       },
       "premiumFile": "chapter_05_ragdoll_premium"
     },
@@ -736,7 +841,28 @@
           "es": "Los gatitos Azul ruso tienen ojos amarillos que poco a poco se vuelven de un verde intenso.",
           "pt-BR": "Os filhotes de Azul-russo têm olhos amarelos que aos poucos ficam verde-vivo.",
           "ko": "러시안 블루 새끼의 노란 눈은 천천히 선명한 초록색으로 바뀌어요."
-        }
+        },
+        "goldenAbout": {
+          "en": "Sailors are said to have brought the first Russian Blues from the White Sea port of Arkhangelsk, which is why early cats were called Archangel Blues. After World War II, breeders in Scandinavia and Britain crossed them with Siamese and British Blues to save the line. Its gentle, slightly upturned mouth gives it a quiet 'smile'. It bonds deeply with its family and likes a predictable routine.",
+          "tr": "İlk Rus Mavilerini Beyaz Deniz kıyısındaki Arhangelsk limanından denizcilerin getirdiği söylenir; ilk kedilere bu yüzden 'Archangel Blue' denirdi. II. Dünya Savaşı'ndan sonra İskandinav ve İngiliz üreticiler soyu korumak için onları Siyam ve British Blue kedileriyle melezledi. Hafif yukarı kıvrık ağzı ona sessiz bir 'gülümseme' verir. Ailesine derinden bağlanır ve öngörülebilir bir düzeni sever.",
+          "ja": "最初のロシアンブルーは、船乗りたちが白海の港町アルハンゲリスクから連れてきたといわれ、そのため初期の猫は「アークエンジェル・ブルー」と呼ばれていました。第二次世界大戦後、スカンジナビアとイギリスのブリーダーたちが、血統を守るためにシャムやブリティッシュブルーと交配させました。やさしく少し上がった口元が、静かな「微笑み」を浮かべているように見えます。家族と深い絆を結び、決まった日課を好みます。",
+          "de": "Seeleute sollen die ersten Russisch Blau aus der Hafenstadt Archangelsk am Weißen Meer mitgebracht haben, weshalb frühe Katzen „Archangel Blues“ genannt wurden. Nach dem Zweiten Weltkrieg kreuzten Züchter in Skandinavien und Großbritannien sie mit Siamkatzen und Britisch Blau, um die Linie zu retten. Ihr sanfter, leicht nach oben gezogener Mund verleiht ihr ein stilles „Lächeln“. Sie baut eine tiefe Bindung zu ihrer Familie auf und mag einen vorhersehbaren Alltag.",
+          "fr": "On raconte que des marins ont rapporté les premiers Bleus russes du port d'Arkhangelsk, sur la mer Blanche, d'où le nom d'« Archangel Blues » donné aux premiers chats. Après la Seconde Guerre mondiale, des éleveurs de Scandinavie et de Grande-Bretagne les ont croisés avec des Siamois et des British bleus pour sauver la lignée. Sa bouche douce, légèrement relevée, lui donne un discret « sourire ». Il s'attache profondément à sa famille et aime une routine prévisible.",
+          "es": "Se dice que unos marineros trajeron los primeros azules rusos desde el puerto de Arcángel, en el mar Blanco, y por eso a los primeros gatos se los llamaba «azules de Arcángel». Tras la Segunda Guerra Mundial, criadores de Escandinavia y Gran Bretaña los cruzaron con siameses y británicos azules para salvar la línea. Su boca suave y ligeramente curvada hacia arriba le da una discreta «sonrisa». Crea un vínculo muy fuerte con su familia y le gusta una rutina predecible.",
+          "pt-BR": "Dizem que marinheiros trouxeram os primeiros azuis-russos do porto de Arkhangelsk, no mar Branco, e por isso os primeiros gatos eram chamados de Archangel Blues. Depois da Segunda Guerra Mundial, criadores da Escandinávia e da Grã-Bretanha os cruzaram com siameses e british blues para salvar a linhagem. Sua boca suave e levemente voltada para cima lhe dá um discreto “sorriso”. Ele cria um vínculo profundo com a família e gosta de uma rotina previsível.",
+          "ko": "최초의 러시안 블루는 선원들이 백해의 항구 도시 아르한겔스크에서 데려왔다고 전해져서, 초기 고양이들은 '아크엔젤 블루'라고 불렸어요. 제2차 세계대전 이후 스칸디나비아와 영국의 브리더들이 혈통을 지키기 위해 샴, 브리티시 블루와 교배했어요. 살짝 올라간 부드러운 입꼬리 덕분에 조용히 '미소' 짓는 것처럼 보여요. 가족과 깊은 유대를 맺고, 예측 가능한 일상을 좋아해요."
+        },
+        "care": {
+          "en": "A weekly brush keeps the dense double coat shiny. It sheds little but loves food, so keep an eye on portion sizes.",
+          "tr": "Haftada bir tarama yoğun çift kat tüyünü parlak tutar. Az tüy döker ama yemeyi çok sever; porsiyonlara dikkat edin.",
+          "ja": "週に1回のブラッシングで、密なダブルコートのつやを保てます。抜け毛は少ないですが食べることが大好きなので、食事の量に気をつけましょう。",
+          "de": "Einmal pro Woche bürsten hält das dichte Doppelfell glänzend. Sie haart wenig, liebt aber Futter, also behalte die Portionsgrößen im Auge.",
+          "fr": "Un brossage hebdomadaire garde sa double fourrure dense bien brillante. Il perd peu de poils mais adore manger : surveillez donc la taille des portions.",
+          "es": "Un cepillado semanal mantiene brillante su denso doble manto. Suelta poco pelo, pero le encanta comer, así que controla bien las raciones.",
+          "pt-BR": "Uma escovação semanal mantém brilhante a densa pelagem dupla. Ele solta pouco pelo, mas adora comer, então fique de olho no tamanho das porções.",
+          "ko": "일주일에 한 번 빗어 주면 촘촘한 이중모가 반짝반짝 윤기 나요. 털은 적게 빠지지만 먹는 걸 정말 좋아하니 식사량을 잘 살펴 주세요."
+        },
+        "weight": "3–5.5 kg"
       },
       "premiumFile": "chapter_06_russian_blue_premium"
     },
@@ -857,7 +983,28 @@
           "es": "Siempre ocupados y en movimiento, los abisinios son conocidos como los payasos del mundo felino.",
           "pt-BR": "Sempre ocupados e em movimento, os abissínios são conhecidos como os palhaços do mundo felino.",
           "ko": "늘 바쁘게 움직이는 아비시니안은 고양이 세계의 광대로 알려져 있어요."
-        }
+        },
+        "goldenAbout": {
+          "en": "A cat named Zula, brought to England from Abyssinia in 1868 by the wife of a British officer, is often linked to the breed's beginnings. Each hair of its coat is 'ticked' with three or four bands of color, so the coat seems to glow. The classic color is a warm 'ruddy', and blue, fawn and sorrel are also seen. Abyssinians rarely sit still; they prefer exploring shelves and supervising whatever you are doing.",
+          "tr": "1868'de bir İngiliz subayının eşi tarafından Habeşistan'dan İngiltere'ye getirilen Zula adlı kedi, türün başlangıcıyla sık sık ilişkilendirilir. Tüyündeki her tel üç dört renk bandıyla 'kırçıllıdır', bu yüzden tüy parlıyormuş gibi görünür. Klasik rengi sıcak bir kızıl kahvedir; mavi, açık kahve ve kızıl tonları da görülür. Habeş kedileri pek yerinde durmaz; rafları keşfetmeyi ve ne yapıyorsanız denetlemeyi tercih eder.",
+          "ja": "1868年にイギリス人将校の妻がアビシニアからイギリスへ連れてきたズーラという猫が、この品種の始まりとよく結びつけられています。被毛の1本1本に3〜4色の帯が入った「ティッキング」があるため、毛並みが輝いて見えます。代表的な毛色は温かみのある「ルディ」で、ブルー、フォーン、ソレルも見られます。アビシニアンはじっとしていることがほとんどなく、棚の上を探検したり、飼い主のすることを見守ったりするのが好きです。",
+          "de": "Eine Katze namens Zula, die 1868 von der Frau eines britischen Offiziers aus Abessinien nach England gebracht wurde, wird oft mit den Anfängen der Rasse in Verbindung gebracht. Jedes Haar ihres Fells ist mit drei oder vier Farbbändern „getickt“, sodass das Fell zu leuchten scheint. Die klassische Farbe ist ein warmes „Ruddy“, daneben gibt es auch Blau, Fawn und Sorrel. Abessinier sitzen selten still; sie erkunden lieber Regale und beaufsichtigen alles, was du gerade tust.",
+          "fr": "Une chatte nommée Zula, rapportée d'Abyssinie en Angleterre en 1868 par l'épouse d'un officier britannique, est souvent associée aux débuts de la race. Chaque poil de son pelage est « tiqueté » de trois ou quatre bandes de couleur, si bien que le pelage semble briller. La couleur classique est un « lièvre » chaud, et l'on voit aussi du bleu, du faon et du sorrel. L'Abyssin tient rarement en place ; il préfère explorer les étagères et superviser tout ce que vous faites.",
+          "es": "A menudo se relaciona el origen de la raza con una gata llamada Zula, que la esposa de un oficial británico llevó de Abisinia a Inglaterra en 1868. Cada pelo de su manto tiene un «ticking» de tres o cuatro bandas de color, por lo que el pelaje parece brillar. El color clásico es un cálido «rojizo» (ruddy), y también los hay azules, beige (fawn) y alazanes (sorrel). Los abisinios rara vez se están quietos; prefieren explorar las estanterías y supervisar todo lo que haces.",
+          "pt-BR": "Uma gata chamada Zula, levada da Abissínia para a Inglaterra em 1868 pela esposa de um oficial britânico, costuma ser associada ao início da raça. Cada fio da pelagem é “tiquetado” com três ou quatro faixas de cor, por isso o pelo parece brilhar. A cor clássica é um “ruddy” quente, e também existem azul, fawn e sorrel. Os abissínios raramente ficam parados; preferem explorar as prateleiras e supervisionar tudo o que você está fazendo.",
+          "ko": "1868년 영국 장교의 아내가 아비시니아에서 영국으로 데려온 줄라라는 고양이가 이 품종의 시작과 자주 연결돼요. 털 한 가닥 한 가닥에 서너 가지 색의 띠가 있는 '티킹' 덕분에 털이 빛나는 것처럼 보여요. 대표적인 털색은 따뜻한 느낌의 '러디'이고, 블루, 폰, 소렐도 있어요. 아비시니안은 가만히 있는 법이 거의 없고, 선반을 탐험하거나 보호자가 하는 일을 감독하는 걸 좋아해요."
+        },
+        "care": {
+          "en": "The short coat needs little grooming. Give it climbing spaces, puzzle feeders and daily play to keep its busy mind happy.",
+          "tr": "Kısa tüyü az bakım ister. Meşgul zihnini mutlu tutmak için tırmanma alanları, zekâ mama kapları ve her gün oyun sağlayın.",
+          "ja": "短い被毛はほとんど手入れがいりません。活発な頭脳を満足させるため、キャットタワーなどの登れる場所、パズルフィーダー、毎日の遊びを用意してあげましょう。",
+          "de": "Das kurze Fell braucht wenig Pflege. Biete ihr Klettermöglichkeiten, Futterspiele und tägliches Spielen, damit ihr reger Geist zufrieden ist.",
+          "fr": "Son poil court demande peu d'entretien. Offrez-lui des espaces pour grimper, des distributeurs de nourriture ludiques et du jeu quotidien pour occuper son esprit vif.",
+          "es": "Su pelo corto necesita pocos cuidados. Dale espacios para trepar, comederos interactivos y juego diario para mantener contenta su mente inquieta.",
+          "pt-BR": "A pelagem curta precisa de poucos cuidados. Ofereça lugares para escalar, comedouros interativos e brincadeiras diárias para manter feliz essa mente agitada.",
+          "ko": "짧은 털은 손질이 거의 필요 없어요. 바쁘게 돌아가는 머리를 즐겁게 해 주도록 올라갈 공간, 퍼즐 급식기, 매일의 놀이를 마련해 주세요."
+        },
+        "weight": "3–5 kg"
       },
       "premiumFile": "chapter_07_abyssinian_premium"
     },
@@ -975,7 +1122,28 @@
           "es": "Los birmanos hablan con voz suave y adoran una rutina tranquila.",
           "pt-BR": "Os sagrados da Birmânia têm voz suave e adoram uma rotina tranquila.",
           "ko": "버먼은 부드럽고 상냥한 목소리로 울고, 평온한 일상을 좋아해요."
-        }
+        },
+        "goldenAbout": {
+          "en": "The Birman's legend tells of Sinh, a temple cat whose coat turned golden and paws turned white as he guarded his dying priest. The breed was established in France in the 1920s, and after World War II only a few cats remained to rebuild it. Its white 'gloves' on the front paws and 'laces' up the back legs are judged closely at shows. Every Birman has deep sapphire-blue eyes, and kittens are born almost white, with their points darkening over time.",
+          "tr": "Birman efsanesi, ölmekte olan rahibini korurken tüyü altın rengine, patileri beyaza dönen Sinh adlı bir tapınak kedisini anlatır. Tür 1920'lerde Fransa'da oluşturuldu; II. Dünya Savaşı'ndan sonra yeniden kurmak için yalnızca birkaç kedi kalmıştı. Ön patilerdeki beyaz 'eldivenler' ve arka bacaklardaki beyaz 'bağcıklar' sergilerde titizlikle değerlendirilir. Her Birman'ın gözleri koyu safir mavisidir; yavrular neredeyse beyaz doğar, koyu uçları zamanla belirginleşir.",
+          "ja": "バーマンの伝説では、死にゆく僧侶を守っていた寺院の猫シンの被毛が金色に、足先が白に変わったと語られています。この品種は1920年代にフランスで確立されましたが、第二次世界大戦後には再興のためにわずかな猫しか残っていませんでした。前足の白い「グローブ」と後ろ足を上る「レース」は、キャットショーで厳しく審査されます。バーマンはみな深いサファイアブルーの目をしており、子猫はほぼ真っ白で生まれ、成長とともにポイントの色が濃くなっていきます。",
+          "de": "Die Legende der Heiligen Birma erzählt von Sinh, einem Tempelkater, dessen Fell golden und dessen Pfoten weiß wurden, als er seinen sterbenden Priester bewachte. Die Rasse wurde in den 1920er-Jahren in Frankreich etabliert, und nach dem Zweiten Weltkrieg waren nur noch wenige Katzen übrig, um sie neu aufzubauen. Ihre weißen „Handschuhe“ an den Vorderpfoten und die „Sporen“ an den Hinterbeinen werden auf Ausstellungen genau bewertet. Jede Heilige Birma hat tiefe saphirblaue Augen, und Kätzchen kommen fast weiß zur Welt, wobei ihre Abzeichen mit der Zeit dunkler werden.",
+          "fr": "La légende du Sacré de Birmanie raconte l'histoire de Sinh, un chat de temple dont la robe devint dorée et les pattes blanches alors qu'il veillait sur son prêtre mourant. La race a été établie en France dans les années 1920, et après la Seconde Guerre mondiale, il ne restait que quelques chats pour la reconstituer. Ses « gants » blancs aux pattes avant et ses « éperons » le long des pattes arrière sont jugés de près en exposition. Chaque Sacré de Birmanie a des yeux bleu saphir profond, et les chatons naissent presque blancs, leurs extrémités fonçant avec le temps.",
+          "es": "La leyenda del sagrado de Birmania habla de Sinh, un gato de templo cuyo pelaje se volvió dorado y sus patas blancas mientras velaba a su sacerdote moribundo. La raza se estableció en Francia en la década de 1920 y, tras la Segunda Guerra Mundial, solo quedaban unos pocos gatos para recuperarla. Sus «guantes» blancos en las patas delanteras y sus «espuelas» en las traseras se juzgan con detalle en las exposiciones. Todos los sagrados de Birmania tienen unos intensos ojos azul zafiro, y los gatitos nacen casi blancos; sus puntas se oscurecen con el tiempo.",
+          "pt-BR": "A lenda do sagrado da Birmânia fala de Sinh, um gato de templo cuja pelagem ficou dourada e as patas ficaram brancas enquanto ele guardava seu sacerdote moribundo. A raça foi estabelecida na França na década de 1920 e, depois da Segunda Guerra Mundial, restavam apenas alguns gatos para reconstruí-la. Suas “luvas” brancas nas patas dianteiras e as “esporas” nas traseiras são avaliadas com atenção nas exposições. Todo sagrado da Birmânia tem olhos azul-safira profundos, e os filhotes nascem quase brancos, com as extremidades escurecendo com o tempo.",
+          "ko": "버만의 전설에 따르면, 신이라는 사원 고양이가 죽어 가는 사제를 지키는 동안 털은 황금빛으로, 발은 하얗게 변했다고 해요. 이 품종은 1920년대 프랑스에서 확립되었지만, 제2차 세계대전 이후에는 품종을 되살릴 고양이가 몇 마리밖에 남지 않았어요. 앞발의 하얀 '장갑'과 뒷다리를 타고 올라가는 '레이스'는 캣쇼에서 꼼꼼하게 심사돼요. 모든 버만은 깊은 사파이어 블루 눈을 가졌고, 새끼 고양이는 거의 하얀색으로 태어나 자라면서 포인트 색이 짙어져요."
+        },
+        "care": {
+          "en": "Brush the silky coat a few times a week; it has no thick undercoat, so it mats less than a Persian's. Birmans enjoy calm company and gentle play.",
+          "tr": "İpeksi tüyünü haftada birkaç kez tarayın; kalın alt tüyü olmadığından İran kedisininki kadar keçeleşmez. Birman'lar sakin bir arkadaşlık ve yumuşak oyunlardan hoşlanır.",
+          "ja": "絹のような被毛は週に数回ブラッシングしましょう。厚いアンダーコートがないので、ペルシャよりも毛玉ができにくいです。バーマンは穏やかな触れ合いとやさしい遊びが好きです。",
+          "de": "Bürste das seidige Fell ein paarmal pro Woche; es hat keine dicke Unterwolle und verfilzt daher weniger als das einer Perserkatze. Heilige Birmas genießen ruhige Gesellschaft und sanftes Spiel.",
+          "fr": "Brossez son pelage soyeux quelques fois par semaine ; sans sous-poil épais, il s'emmêle moins que celui d'un Persan. Le Sacré de Birmanie apprécie une compagnie calme et des jeux doux.",
+          "es": "Cepilla su pelaje sedoso unas cuantas veces por semana; no tiene una subcapa espesa, así que se enreda menos que el de un persa. Al sagrado de Birmania le gustan la compañía tranquila y el juego suave.",
+          "pt-BR": "Escove a pelagem sedosa algumas vezes por semana; ela não tem um subpelo grosso, então embaraça menos que a de um persa. O sagrado da Birmânia gosta de companhia tranquila e brincadeiras suaves.",
+          "ko": "실크 같은 털은 일주일에 몇 번 빗어 주세요. 두꺼운 속털이 없어서 페르시안보다 덜 엉켜요. 버만은 차분하게 함께하는 시간과 부드러운 놀이를 좋아해요."
+        },
+        "weight": "3–7 kg"
       },
       "premiumFile": "chapter_08_birman_premium"
     },
@@ -1097,7 +1265,28 @@
           "es": "Los inteligentes bengalíes aprenden trucos como traer la pelota, y algunos hasta pasean con correa.",
           "pt-BR": "Espertos, os bengals aprendem truques como buscar a bolinha, e alguns até passeiam de coleira.",
           "ko": "영리한 벵갈은 공 물어오기 같은 재주를 배우고, 목줄 산책을 즐기는 아이도 있어요."
-        }
+        },
+        "goldenAbout": {
+          "en": "Jean Mill of California began the modern Bengal program in the 1970s and 80s, crossing domestic cats with the Asian leopard cat. Pet Bengals are several generations removed from their wild ancestor. Some have a 'glitter' gene that makes the coat sparkle in the light, and rare snow Bengals are pale with blue or green eyes. They are agile climbers, many enjoy playing in water, and some can learn to open doors.",
+          "tr": "Kaliforniyalı Jean Mill, 1970'ler ve 80'lerde evcil kedileri Asya leopar kedisiyle melezleyerek modern Bengal çalışmalarını başlattı. Ev kedisi olarak yaşayan Bengal'ler vahşi atalarından birkaç kuşak uzaktır. Bazılarında tüyün ışıkta parlamasını sağlayan bir 'parıltı' geni vardır; nadir görülen kar Bengal'leri açık renkli ve mavi ya da yeşil gözlüdür. Çevik tırmanıcılardır, çoğu suyla oynamayı sever, bazıları kapı açmayı bile öğrenir.",
+          "ja": "カリフォルニアのジーン・ミルは、1970〜80年代にイエネコとアジアン・レオパード・キャット（ベンガルヤマネコ）を交配させ、現代のベンガルの繁殖計画を始めました。ペットのベンガルは、野生の祖先から数世代離れています。中には被毛が光にきらめく「グリッター」遺伝子を持つ子もいて、珍しいスノー・ベンガルは淡い毛色に青や緑の目をしています。身軽に登るのが得意で、水遊びが好きな子も多く、ドアの開け方を覚える子もいます。",
+          "de": "Jean Mill aus Kalifornien begann in den 1970er- und 80er-Jahren das moderne Bengal-Zuchtprogramm, indem sie Hauskatzen mit der Asiatischen Leopardkatze kreuzte. Bengalen, die als Haustiere leben, sind mehrere Generationen von ihrem wilden Vorfahren entfernt. Manche tragen ein „Glitter“-Gen, das das Fell im Licht funkeln lässt, und seltene Snow-Bengalen sind hell mit blauen oder grünen Augen. Sie sind geschickte Kletterer, viele spielen gern im Wasser, und manche lernen sogar, Türen zu öffnen.",
+          "fr": "Jean Mill, en Californie, a lancé le programme moderne du Bengal dans les années 1970 et 80 en croisant des chats domestiques avec le chat-léopard du Bengale. Les Bengals de compagnie sont éloignés de plusieurs générations de leur ancêtre sauvage. Certains portent un gène « glitter » qui fait scintiller le pelage à la lumière, et les rares Bengals snow sont pâles, aux yeux bleus ou verts. Ce sont des grimpeurs agiles, beaucoup aiment jouer dans l'eau, et certains apprennent à ouvrir les portes.",
+          "es": "Jean Mill, de California, inició el programa moderno del bengalí en las décadas de 1970 y 1980 cruzando gatos domésticos con el gato leopardo asiático. Los bengalíes de compañía están a varias generaciones de distancia de su antepasado salvaje. Algunos tienen un gen «glitter» que hace que el pelaje brille con la luz, y los raros bengalíes snow son claros, con ojos azules o verdes. Son trepadores ágiles, a muchos les encanta jugar con el agua y algunos aprenden a abrir puertas.",
+          "pt-BR": "Jean Mill, da Califórnia, iniciou o programa moderno do bengal nas décadas de 1970 e 80, cruzando gatos domésticos com o gato-leopardo-asiático. Os bengals de estimação estão a várias gerações de distância de seu ancestral selvagem. Alguns têm um gene “glitter” que faz a pelagem cintilar na luz, e os raros bengals snow são claros, com olhos azuis ou verdes. São escaladores ágeis, muitos adoram brincar na água e alguns conseguem aprender a abrir portas.",
+          "ko": "캘리포니아의 진 밀은 1970~80년대에 집고양이와 아시아 표범살쾡이를 교배해 현대 벵갈 번식 프로그램을 시작했어요. 반려묘 벵갈은 야생 조상과 여러 세대 떨어져 있어요. 어떤 벵갈은 털이 빛을 받으면 반짝이는 '글리터' 유전자를 가지고 있고, 희귀한 스노우 벵갈은 옅은 털색에 파란색이나 초록색 눈을 가졌어요. 날렵하게 잘 오르고, 물놀이를 좋아하는 아이가 많으며, 문 여는 법을 배우는 아이도 있어요."
+        },
+        "care": {
+          "en": "The sleek coat needs only a weekly brush. Plan daily active play, tall cat trees and toys that let it 'hunt'.",
+          "tr": "Parlak tüyü haftada bir taranması yeterlidir. Her gün hareketli oyun, yüksek kedi ağaçları ve 'avlanmasına' izin veren oyuncaklar sağlayın.",
+          "ja": "なめらかな被毛は週に1回のブラッシングで十分です。毎日の活発な遊び、背の高いキャットタワー、「狩り」ができるおもちゃを用意してあげましょう。",
+          "de": "Das glatte Fell muss nur einmal pro Woche gebürstet werden. Plane täglich aktives Spielen ein und biete hohe Kratzbäume sowie Spielzeug, mit dem sie „jagen“ kann.",
+          "fr": "Son pelage lisse ne demande qu'un brossage par semaine. Prévoyez du jeu actif chaque jour, de grands arbres à chat et des jouets qui lui permettent de « chasser ».",
+          "es": "Su pelaje liso solo necesita un cepillado semanal. Prevé juego activo a diario, rascadores altos y juguetes que le permitan «cazar».",
+          "pt-BR": "A pelagem lisa só precisa de uma escovação por semana. Planeje brincadeiras ativas diárias, arranhadores altos e brinquedos que deixem ele “caçar”.",
+          "ko": "매끈한 털은 일주일에 한 번만 빗어 주면 돼요. 매일 활발하게 놀아 주고, 높은 캣타워와 '사냥'할 수 있는 장난감을 마련해 주세요."
+        },
+        "weight": "3.5–7 kg"
       },
       "premiumFile": "chapter_09_bengal_premium"
     },
@@ -1217,7 +1406,28 @@
           "es": "La piel del Esfinge muestra el patrón que tendría su pelaje, con manchas y rayas incluidas.",
           "pt-BR": "A pele do Sphynx mostra o padrão que a pelagem teria, com manchas e listras.",
           "ko": "스핑크스의 피부에는 털이 있었다면 보였을 점과 줄무늬 무늬가 그대로 드러나요."
-        }
+        },
+        "goldenAbout": {
+          "en": "Hairless kittens have appeared naturally from time to time, but the modern Sphynx traces to Prune, born in Toronto in 1966, and to hairless cats found in Minnesota and Toronto in the 1970s. Its skin feels like warm suede and can tan or burn in the sun. Without fur to absorb oil, it needs regular baths and ear cleaning. Sphynx cats are famously social and often greet visitors at the door.",
+          "tr": "Tüysüz yavrular zaman zaman doğal olarak görülmüştür ama modern Sfenks, 1966'da Toronto'da doğan Prune'a ve 1970'lerde Minnesota ile Toronto'da bulunan tüysüz kedilere dayanır. Derisi sıcak bir süet gibidir; güneşte bronzlaşabilir ya da yanabilir. Yağı emecek tüyü olmadığı için düzenli banyo ve kulak temizliği gerekir. Sfenks kedileri çok sosyaldir ve misafirleri çoğu zaman kapıda karşılar.",
+          "ja": "毛のない子猫はときどき自然に生まれてきましたが、現代のスフィンクスは、1966年にトロントで生まれたプルーンと、1970年代にミネソタとトロントで見つかった無毛の猫たちがルーツです。肌は温かいスエードのような手触りで、日に当たると日焼けしたり、やけどしたりすることがあります。皮脂を吸収する毛がないため、定期的なシャンプーと耳掃除が必要です。スフィンクスはとても社交的なことで知られ、玄関でお客さんを出迎えることもよくあります。",
+          "de": "Haarlose Kätzchen sind immer wieder auf natürliche Weise aufgetaucht, doch die moderne Sphynx geht auf Prune zurück, der 1966 in Toronto geboren wurde, sowie auf haarlose Katzen, die in den 1970er-Jahren in Minnesota und Toronto gefunden wurden. Ihre Haut fühlt sich an wie warmes Wildleder und kann in der Sonne braun werden oder einen Sonnenbrand bekommen. Ohne Fell, das Hautfett aufnimmt, braucht sie regelmäßige Bäder und Ohrenreinigung. Sphynx-Katzen sind für ihre Geselligkeit bekannt und begrüßen Besucher oft schon an der Tür.",
+          "fr": "Des chatons sans poils sont apparus naturellement de temps à autre, mais le Sphynx moderne remonte à Prune, né à Toronto en 1966, et à des chats nus découverts au Minnesota et à Toronto dans les années 1970. Sa peau a le toucher d'un daim chaud et peut bronzer ou brûler au soleil. Sans fourrure pour absorber le sébum, il a besoin de bains et de nettoyages d'oreilles réguliers. Le Sphynx est réputé pour sa sociabilité et accueille souvent les visiteurs à la porte.",
+          "es": "De vez en cuando han nacido de forma natural gatitos sin pelo, pero el sphynx moderno se remonta a Prune, nacido en Toronto en 1966, y a gatos sin pelo encontrados en Minnesota y Toronto en la década de 1970. Su piel se siente como ante cálido y puede broncearse o quemarse al sol. Sin pelo que absorba la grasa, necesita baños regulares y limpieza de oídos. Los sphynx son famosos por lo sociables que son y a menudo reciben a las visitas en la puerta.",
+          "pt-BR": "Filhotes sem pelo surgiram naturalmente de tempos em tempos, mas o sphynx moderno remonta a Prune, nascido em Toronto em 1966, e a gatos sem pelo encontrados em Minnesota e Toronto na década de 1970. Sua pele parece camurça quente e pode bronzear ou queimar no sol. Sem pelo para absorver a oleosidade, ele precisa de banhos regulares e limpeza das orelhas. Os sphynx são famosos por serem sociáveis e muitas vezes recebem as visitas na porta.",
+          "ko": "털 없는 새끼 고양이는 가끔 자연적으로 태어나곤 했지만, 현대의 스핑크스는 1966년 토론토에서 태어난 프룬과 1970년대 미네소타와 토론토에서 발견된 털 없는 고양이들에서 시작됐어요. 피부는 따뜻한 스웨이드 같은 감촉이고, 햇볕에 그을리거나 화상을 입을 수 있어요. 기름기를 흡수해 줄 털이 없어서 정기적인 목욕과 귀 청소가 필요해요. 스핑크스는 사교성이 좋기로 유명해서, 손님을 현관에서 맞이하는 일도 많아요."
+        },
+        "care": {
+          "en": "Bathe it every week or two and clean the ears and nails often. Keep it warm indoors and protect it from strong sun.",
+          "tr": "Bir iki haftada bir yıkayın, kulaklarını ve tırnaklarını sık temizleyin. Ev içinde sıcak tutun ve güçlü güneşten koruyun.",
+          "ja": "1〜2週間に1回シャンプーし、耳と爪のお手入れもこまめにしましょう。室内で暖かく過ごさせ、強い日差しから守ってあげましょう。",
+          "de": "Bade sie alle ein bis zwei Wochen und reinige Ohren und Krallen häufig. Halte sie drinnen warm und schütze sie vor starker Sonne.",
+          "fr": "Baignez-le toutes les une à deux semaines et nettoyez souvent ses oreilles et ses griffes. Gardez-le au chaud à l'intérieur et protégez-le du soleil fort.",
+          "es": "Báñalo cada una o dos semanas y límpiale a menudo las orejas y las uñas. Mantenlo abrigado en casa y protégelo del sol fuerte.",
+          "pt-BR": "Dê banho a cada uma ou duas semanas e limpe as orelhas e as unhas com frequência. Mantenha-o aquecido dentro de casa e proteja-o do sol forte.",
+          "ko": "1~2주에 한 번 목욕시키고, 귀와 발톱도 자주 관리해 주세요. 실내에서 따뜻하게 지내게 하고 강한 햇볕으로부터 보호해 주세요."
+        },
+        "weight": "3–5 kg"
       },
       "premiumFile": "chapter_10_sphynx_premium"
     },
@@ -1334,7 +1544,28 @@
           "es": "El zoológico de Ankara mantiene desde 1917 un programa de cría para proteger al angora blanco.",
           "pt-BR": "O zoológico de Ancara mantém desde 1917 um programa de criação para proteger o angorá branco.",
           "ko": "앙카라 동물원은 1917년부터 하얀 앙고라를 지키기 위한 번식 프로그램을 운영해 왔어요."
-        }
+        },
+        "goldenAbout": {
+          "en": "Angoras from Ankara were among the first longhaired cats seen in Europe, arriving in France and Britain by the 1600s. In the early 1900s they were mixed into Persian lines and almost disappeared as a separate breed. Ankara Zoo's breeding program kept the pure white, odd-eyed Angora alive, and the modern breed was rebuilt from those cats. White cats with one or two blue eyes can be born deaf, so careful breeders test their kittens' hearing.",
+          "tr": "Ankara'nın kedileri Avrupa'da görülen ilk uzun tüylü kediler arasındaydı; 1600'lere kadar Fransa ve İngiltere'ye ulaşmışlardı. 1900'lerin başında İran kedisi soylarına karıştırıldılar ve ayrı bir tür olarak neredeyse yok oldular. Ankara Hayvanat Bahçesi'nin üretim programı saf beyaz, farklı renkte gözlü Ankara kedisini yaşattı; modern tür bu kedilerden yeniden kuruldu. Bir ya da iki gözü mavi olan beyaz kediler sağır doğabildiğinden özenli üreticiler yavruların işitmesini test eder.",
+          "ja": "アンカラのアンゴラは、ヨーロッパで見られた最初の長毛猫の一つで、1600年代までにはフランスやイギリスに渡っていました。1900年代初めにはペルシャの血統に混ぜられ、独立した品種としてはほとんど姿を消してしまいました。アンカラ動物園の繁殖計画が純白でオッドアイのアンゴラを守り、現代の品種はその猫たちから再興されました。片目または両目が青い白猫は耳が聞こえない状態で生まれることがあるため、慎重なブリーダーは子猫の聴力を検査しています。",
+          "de": "Angorakatzen aus Ankara gehörten zu den ersten Langhaarkatzen, die man in Europa sah; sie gelangten bis zum 17. Jahrhundert nach Frankreich und Großbritannien. Anfang des 20. Jahrhunderts wurden sie in Perserlinien eingekreuzt und verschwanden als eigene Rasse fast vollständig. Das Zuchtprogramm des Zoos von Ankara erhielt die reinweiße Angora mit verschiedenfarbigen Augen, und aus diesen Katzen wurde die moderne Rasse neu aufgebaut. Weiße Katzen mit einem oder zwei blauen Augen können taub geboren werden, deshalb lassen sorgfältige Züchter das Gehör ihrer Kätzchen testen.",
+          "fr": "Les Angoras d'Ankara furent parmi les premiers chats à poil long vus en Europe, arrivés en France et en Grande-Bretagne dès les années 1600. Au début des années 1900, ils furent mêlés aux lignées de Persans et faillirent disparaître en tant que race distincte. Le programme d'élevage du zoo d'Ankara a préservé l'Angora blanc pur aux yeux vairons, et la race moderne a été reconstituée à partir de ces chats. Les chats blancs aux yeux bleus (un ou deux) peuvent naître sourds ; les éleveurs consciencieux font donc tester l'audition de leurs chatons.",
+          "es": "Los angora de Ankara estuvieron entre los primeros gatos de pelo largo que se vieron en Europa: llegaron a Francia y Gran Bretaña hacia el siglo XVII. A principios del siglo XX se mezclaron con líneas de persas y casi desaparecieron como raza independiente. El programa de cría del zoo de Ankara mantuvo vivo el angora blanco puro con ojos de distinto color, y la raza moderna se recuperó a partir de esos gatos. Los gatos blancos con uno o los dos ojos azules pueden nacer sordos, por eso los criadores cuidadosos comprueban la audición de sus gatitos.",
+          "pt-BR": "Os angorás de Ancara estavam entre os primeiros gatos de pelo longo vistos na Europa, chegando à França e à Grã-Bretanha por volta do século XVII. No início do século XX, foram misturados às linhagens de persas e quase desapareceram como raça separada. O programa de criação do Zoológico de Ancara manteve vivo o angorá branco puro de olhos de cores diferentes, e a raça moderna foi reconstruída a partir desses gatos. Gatos brancos com um ou dois olhos azuis podem nascer surdos, por isso criadores cuidadosos testam a audição dos filhotes.",
+          "ko": "앙카라의 앙고라는 유럽에 소개된 최초의 장모 고양이 중 하나로, 1600년대에는 이미 프랑스와 영국에 들어와 있었어요. 1900년대 초에는 페르시안 혈통에 섞이면서 독립된 품종으로서는 거의 사라질 뻔했어요. 앙카라 동물원의 번식 프로그램이 순백색에 오드아이를 가진 앙고라를 지켜 냈고, 현대의 품종은 그 고양이들로부터 다시 만들어졌어요. 한쪽 또는 양쪽 눈이 파란 흰 고양이는 청각 장애를 갖고 태어날 수 있어서, 신중한 브리더는 새끼 고양이의 청력을 검사해요."
+        },
+        "care": {
+          "en": "The single-layer coat mats little; a weekly comb is enough. Angoras are athletic and curious, so give them high perches and interactive toys.",
+          "tr": "Tek katlı tüyü az keçeleşir; haftada bir taramak yeterlidir. Ankara kedileri atletik ve meraklıdır; yüksek tüneme yerleri ve etkileşimli oyuncaklar sağlayın.",
+          "ja": "シングルコートの被毛は毛玉ができにくく、週に1回のコーミングで十分です。アンゴラは運動能力が高く好奇心旺盛なので、高い場所と一緒に遊べるおもちゃを用意してあげましょう。",
+          "de": "Das einlagige Fell verfilzt kaum; einmal pro Woche kämmen reicht. Angoras sind sportlich und neugierig, also biete ihnen hohe Aussichtsplätze und interaktives Spielzeug.",
+          "fr": "Son pelage sans sous-poil s'emmêle peu ; un coup de peigne par semaine suffit. L'Angora est athlétique et curieux : offrez-lui des perchoirs en hauteur et des jouets interactifs.",
+          "es": "Su pelaje de una sola capa apenas se enreda; basta con peinarlo una vez por semana. Los angora son atléticos y curiosos, así que dales lugares altos y juguetes interactivos.",
+          "pt-BR": "A pelagem de camada única embaraça pouco; pentear uma vez por semana é suficiente. Os angorás são atléticos e curiosos, então ofereça lugares altos e brinquedos interativos.",
+          "ko": "단일모라서 잘 엉키지 않아 일주일에 한 번 빗질하면 충분해요. 앙고라는 운동 능력이 뛰어나고 호기심이 많으니, 높은 쉼터와 함께 놀 수 있는 장난감을 마련해 주세요."
+        },
+        "weight": "2.5–5 kg"
       },
       "premiumFile": "chapter_11_turkish_angora_premium"
     },
@@ -1455,7 +1686,28 @@
           "es": "En Noruega se le llama skogkatt, que significa simplemente «gato del bosque».",
           "pt-BR": "Na Noruega ele é chamado de skogkatt, que significa simplesmente 'gato da floresta'.",
           "ko": "노르웨이에서는 '스콕캇'이라고 부르는데, 그냥 '숲 고양이'라는 뜻이에요."
-        }
+        },
+        "goldenAbout": {
+          "en": "Forest cats have lived in Norway for centuries, and they may have travelled on Viking ships as mousers. After a near disappearance, enthusiasts began a breeding program in the 1930s, and King Olav V later named it Norway's official cat. Its glossy outer coat sheds water while a woolly undercoat keeps it warm. It reaches full size slowly, at around five years old.",
+          "tr": "Orman kedileri yüzyıllardır Norveç'te yaşıyor; fare avcısı olarak Viking gemileriyle yolculuk etmiş olabilirler. Neredeyse yok olduktan sonra meraklılar 1930'larda bir üretim programı başlattı; Kral V. Olav daha sonra onu Norveç'in resmî kedisi ilan etti. Parlak dış tüyü suyu iterken yünümsü alt tüyü onu sıcak tutar. Tam boyutuna yavaşça, yaklaşık beş yaşında ulaşır.",
+          "ja": "森の猫は何世紀にもわたってノルウェーで暮らしており、ネズミ捕りとしてヴァイキングの船に乗って旅をしていたのかもしれません。一度は姿を消しかけましたが、1930年代に愛好家たちが繁殖計画を始め、のちに国王オーラヴ5世がノルウェーの公式な猫に指定しました。つやのある上毛は水をはじき、羊毛のような下毛が体を暖かく保ちます。成長はゆっくりで、5歳ごろにようやく大人の大きさになります。",
+          "de": "Waldkatzen leben seit Jahrhunderten in Norwegen und reisten vielleicht als Mäusefänger auf Wikingerschiffen mit. Nachdem sie fast verschwunden waren, starteten Liebhaber in den 1930er-Jahren ein Zuchtprogramm, und König Olav V. erklärte sie später zur offiziellen Katze Norwegens. Ihr glänzendes Deckhaar weist Wasser ab, während eine wollige Unterwolle sie warm hält. Sie erreicht ihre volle Größe langsam, mit etwa fünf Jahren.",
+          "fr": "Les chats des forêts vivent en Norvège depuis des siècles et ont peut-être voyagé sur les navires vikings comme chasseurs de souris. Après avoir failli disparaître, des passionnés ont lancé un programme d'élevage dans les années 1930, et le roi Olav V en a plus tard fait le chat officiel de la Norvège. Son poil de couverture brillant repousse l'eau, tandis qu'un sous-poil laineux le garde au chaud. Il atteint sa taille adulte lentement, vers l'âge de cinq ans.",
+          "es": "Los gatos del bosque viven en Noruega desde hace siglos, y puede que viajaran en barcos vikingos como cazadores de ratones. Tras casi desaparecer, unos aficionados iniciaron un programa de cría en la década de 1930, y más tarde el rey Olav V lo nombró gato oficial de Noruega. Su brillante capa exterior repele el agua, mientras que una subcapa lanosa lo mantiene caliente. Alcanza su tamaño adulto lentamente, hacia los cinco años.",
+          "pt-BR": "Os gatos da floresta vivem na Noruega há séculos e talvez tenham viajado em navios vikings como caçadores de ratos. Depois de quase desaparecerem, entusiastas iniciaram um programa de criação na década de 1930, e mais tarde o rei Olavo V o declarou o gato oficial da Noruega. Sua pelagem externa brilhante repele a água, enquanto um subpelo lanoso o mantém aquecido. Ele atinge o tamanho adulto devagar, por volta dos cinco anos.",
+          "ko": "숲 고양이는 수 세기 동안 노르웨이에서 살아왔고, 쥐잡이로 바이킹 배를 타고 여행했을지도 몰라요. 거의 사라질 뻔한 뒤 1930년대에 애호가들이 번식 프로그램을 시작했고, 이후 올라브 5세 국왕이 노르웨이의 공식 고양이로 지정했어요. 윤기 나는 겉털은 물을 튕겨 내고, 양털 같은 속털이 몸을 따뜻하게 지켜 줘요. 다 자라는 데 시간이 오래 걸려서 다섯 살쯤 되어야 완전한 크기가 돼요."
+        },
+        "care": {
+          "en": "Brush once or twice a week and daily during the spring shed. Provide tall, sturdy cat trees for this natural climber.",
+          "tr": "Haftada bir iki kez, ilkbahardaki tüy dökümünde her gün tarayın. Bu doğuştan tırmanıcıya yüksek ve sağlam kedi ağaçları sağlayın.",
+          "ja": "週に1〜2回ブラッシングし、春の換毛期には毎日しましょう。木登りが得意なこの猫には、背が高く頑丈なキャットタワーを用意してあげましょう。",
+          "de": "Bürste sie ein- bis zweimal pro Woche und während des Fellwechsels im Frühling täglich. Biete dieser geborenen Kletterin hohe, stabile Kratzbäume.",
+          "fr": "Brossez-le une ou deux fois par semaine, et tous les jours pendant la mue de printemps. Offrez à ce grimpeur né des arbres à chat hauts et robustes.",
+          "es": "Cepíllalo una o dos veces por semana, y a diario durante la muda de primavera. Ofrece rascadores altos y robustos a este trepador nato.",
+          "pt-BR": "Escove uma ou duas vezes por semana, e todos os dias durante a troca de pelo da primavera. Ofereça arranhadores altos e firmes para este escalador nato.",
+          "ko": "일주일에 한두 번 빗어 주고, 봄 털갈이 시기에는 매일 빗어 주세요. 타고난 등반가인 이 고양이를 위해 높고 튼튼한 캣타워를 마련해 주세요."
+        },
+        "weight": "4–9 kg"
       },
       "premiumFile": "chapter_12_norwegian_forest_premium"
     },
@@ -1578,7 +1830,28 @@
           "es": "A los Van les encantan las alturas y suelen encaramarse sobre puertas y estanterías.",
           "pt-BR": "Os vans adoram lugares altos e costumam se empoleirar em portas e prateleiras.",
           "ko": "반은 높은 곳을 좋아해서 문 위나 선반 꼭대기에 올라가 있곤 해요."
-        }
+        },
+        "goldenAbout": {
+          "en": "Two British travellers brought the first Van cats from Türkiye to England in 1955, and the breed was recognized there in 1969. The 'Van pattern' keeps color only on the head and tail, sometimes with a small spot on the back that legend calls the 'thumbprint of Allah'. Its cashmere-like coat has no woolly undercoat, which helps it dry quickly after a swim. Vans are strong, energetic cats that stay playful well into adulthood.",
+          "tr": "İki İngiliz gezgin ilk Van kedilerini 1955'te Türkiye'den İngiltere'ye götürdü; tür orada 1969'da tanındı. 'Van deseni'nde renk yalnızca başta ve kuyrukta kalır; bazen sırtta, efsanede 'Allah'ın parmak izi' denen küçük bir leke de bulunur. Kaşmir gibi tüyünün yünümsü alt katmanı yoktur, bu da yüzdükten sonra çabuk kurumasını sağlar. Van kedileri güçlü ve enerjiktir, yetişkinlikte de oyunbazlığını korur.",
+          "ja": "1955年、2人のイギリス人旅行者がテュルキエから最初のヴァン猫をイギリスへ連れ帰り、1969年にイギリスで品種として認められました。「ヴァン・パターン」は頭としっぽにだけ色が残る柄で、背中に小さな斑点があることもあり、伝説では「アッラーの指紋」と呼ばれています。カシミヤのような被毛には羊毛のような下毛がないため、泳いだあともすぐに乾きます。ヴァンは力強くエネルギッシュな猫で、大人になってもずっと遊び好きです。",
+          "de": "Zwei britische Reisende brachten 1955 die ersten Van-Katzen aus der Türkei nach England, wo die Rasse 1969 anerkannt wurde. Beim „Van-Muster“ bleibt Farbe nur an Kopf und Schwanz, manchmal mit einem kleinen Fleck auf dem Rücken, den die Legende den „Daumenabdruck Allahs“ nennt. Ihr kaschmirartiges Fell hat keine wollige Unterwolle, wodurch sie nach dem Schwimmen schnell trocknet. Vans sind kräftige, energiegeladene Katzen, die bis weit ins Erwachsenenalter verspielt bleiben.",
+          "fr": "Deux voyageurs britanniques ont ramené les premiers chats Van de Türkiye en Angleterre en 1955, et la race y fut reconnue en 1969. Le « patron Van » ne garde la couleur que sur la tête et la queue, parfois avec une petite tache sur le dos que la légende appelle « l'empreinte du pouce d'Allah ». Son pelage semblable au cachemire n'a pas de sous-poil laineux, ce qui l'aide à sécher vite après une baignade. Les Vans sont des chats forts et énergiques qui restent joueurs bien après l'âge adulte.",
+          "es": "Dos viajeras británicas llevaron los primeros gatos van de Turquía a Inglaterra en 1955, y la raza fue reconocida allí en 1969. El «patrón van» solo tiene color en la cabeza y la cola, a veces con una pequeña mancha en el lomo que la leyenda llama la «huella del pulgar de Alá». Su pelaje, parecido al cachemir, no tiene subcapa lanosa, lo que le ayuda a secarse rápido después de nadar. Los van son gatos fuertes y enérgicos que siguen siendo juguetones hasta bien entrada la edad adulta.",
+          "pt-BR": "Duas viajantes britânicas levaram os primeiros gatos van da Turquia para a Inglaterra em 1955, e a raça foi reconhecida lá em 1969. O “padrão van” tem cor apenas na cabeça e na cauda, às vezes com uma pequena mancha nas costas que a lenda chama de “marca do polegar de Alá”. Sua pelagem, parecida com caxemira, não tem subpelo lanoso, o que o ajuda a secar rápido depois de nadar. Os vans são gatos fortes e cheios de energia que continuam brincalhões até bem depois de adultos.",
+          "ko": "1955년 영국인 여행자 두 명이 튀르키예에서 처음으로 반 고양이를 영국에 데려왔고, 이 품종은 1969년 영국에서 인정받았어요. '반 무늬'는 머리와 꼬리에만 색이 남는 무늬로, 가끔 등에 작은 점이 있는데 전설에서는 이를 '알라의 엄지 지문'이라고 불러요. 캐시미어 같은 털에는 양털 같은 속털이 없어서 수영한 뒤에도 빨리 말라요. 반은 힘세고 에너지 넘치는 고양이로, 어른이 되어서도 오랫동안 장난기가 많아요."
+        },
+        "care": {
+          "en": "A weekly brush is enough for its silky coat. Offer lots of active play, high perches and, if it likes, a shallow bowl of water to splash in.",
+          "tr": "İpeksi tüyü için haftada bir tarama yeterlidir. Bol hareketli oyun, yüksek tüneme yerleri ve isterse içinde su sıçratabileceği sığ bir kap sunun.",
+          "ja": "絹のような被毛は週に1回のブラッシングで十分です。たっぷりの活発な遊びと高い場所、そして好きなら水遊び用の浅いボウルも用意してあげましょう。",
+          "de": "Einmal pro Woche bürsten reicht für ihr seidiges Fell. Biete viel aktives Spiel, hohe Aussichtsplätze und, wenn sie mag, eine flache Wasserschale zum Planschen.",
+          "fr": "Un brossage hebdomadaire suffit pour son pelage soyeux. Offrez-lui beaucoup de jeu actif, des perchoirs en hauteur et, s'il aime ça, un bol d'eau peu profond pour barboter.",
+          "es": "Un cepillado semanal basta para su pelaje sedoso. Ofrécele mucho juego activo, lugares altos y, si le gusta, un cuenco poco profundo con agua para chapotear.",
+          "pt-BR": "Uma escovação semanal é suficiente para a pelagem sedosa. Ofereça muitas brincadeiras ativas, lugares altos e, se ele gostar, uma tigela rasa com água para chapinhar.",
+          "ko": "실크 같은 털은 일주일에 한 번 빗어 주면 충분해요. 활발한 놀이를 많이 해 주고 높은 쉼터를 마련해 주세요. 좋아한다면 물장난할 수 있는 얕은 물그릇도 놓아 주세요."
+        },
+        "weight": "3–8 kg"
       },
       "premiumFile": "chapter_13_turkish_van_premium"
     },
@@ -1697,7 +1970,28 @@
           "es": "Es el gato oficial del estado de Maine, y sus patas con mechones funcionan como raquetas de nieve.",
           "pt-BR": "É o gato oficial do estado do Maine, e suas patas peludas funcionam como raquetes de neve.",
           "ko": "미국 메인주의 공식 고양이로, 털이 난 발이 설피처럼 눈 위를 걷게 해 줘요."
-        }
+        },
+        "goldenAbout": {
+          "en": "A brown tabby Maine Coon named Cosey won the first major cat show in North America, held at Madison Square Garden in 1895. Its large, round paws, tufted ears and long bushy tail help it cope with snowy New England winters. Many Maine Coons have a chirping, trilling voice rather than a loud meow. Some have extra toes, a trait called polydactyly that was once common in the breed.",
+          "tr": "Cosey adlı kahverengi tekir bir Maine Coon, 1895'te Madison Square Garden'da düzenlenen Kuzey Amerika'nın ilk büyük kedi sergisini kazandı. İri, yuvarlak patileri, püsküllü kulakları ve uzun kabarık kuyruğu karlı New England kışlarına dayanmasına yardım eder. Pek çok Maine Coon yüksek sesle miyavlamak yerine cıvıltılı, titrek sesler çıkarır. Bazılarında fazladan parmak bulunur; polidaktili denen bu özellik bir zamanlar türde yaygındı.",
+          "ja": "コージーという名のブラウンタビーのメインクーンが、1895年にマディソン・スクエア・ガーデンで開かれた北米初の大規模なキャットショーで優勝しました。大きく丸い足、房毛のある耳、長くふさふさのしっぽは、雪の多いニューイングランドの冬を乗り切るのに役立ちます。多くのメインクーンは、大きな声のニャーではなく、さえずるような、トリルのような声で鳴きます。指の数が多い子もいて、この特徴は多指症と呼ばれ、かつてはこの品種によく見られました。",
+          "de": "Ein braun getigerter Maine-Coon-Kater namens Cosey gewann 1895 die erste große Katzenausstellung Nordamerikas im Madison Square Garden. Ihre großen, runden Pfoten, Ohrpinsel und der lange buschige Schwanz helfen ihr, die verschneiten Winter Neuenglands zu überstehen. Viele Maine Coons haben statt eines lauten Miaus eine zwitschernde, trillernde Stimme. Manche haben zusätzliche Zehen, ein Merkmal namens Polydaktylie, das früher in der Rasse häufig war.",
+          "fr": "Un Maine Coon tabby brun nommé Cosey remporta la première grande exposition féline d'Amérique du Nord, organisée au Madison Square Garden en 1895. Ses grandes pattes rondes, ses oreilles à plumets et sa longue queue touffue l'aident à affronter les hivers enneigés de la Nouvelle-Angleterre. Beaucoup de Maine Coons ont une voix qui gazouille et roucoule plutôt qu'un miaulement sonore. Certains ont des doigts supplémentaires, un trait appelé polydactylie, autrefois courant dans la race.",
+          "es": "Un maine coon atigrado marrón llamado Cosey ganó la primera gran exposición felina de Norteamérica, celebrada en el Madison Square Garden en 1895. Sus patas grandes y redondas, sus orejas con penachos y su larga cola tupida le ayudan a soportar los inviernos nevados de Nueva Inglaterra. Muchos maine coon tienen una voz de gorjeos y trinos en lugar de un maullido fuerte. Algunos tienen dedos de más, un rasgo llamado polidactilia que antes era común en la raza.",
+          "pt-BR": "Um maine coon tigrado marrom chamado Cosey venceu a primeira grande exposição felina da América do Norte, realizada no Madison Square Garden em 1895. Suas patas grandes e redondas, orelhas com tufos e cauda longa e peluda o ajudam a enfrentar os invernos nevados da Nova Inglaterra. Muitos maine coons têm uma voz de trinados e gorjeios em vez de um miado alto. Alguns têm dedos extras, uma característica chamada polidactilia que já foi comum na raça.",
+          "ko": "코지라는 이름의 브라운 태비 메인쿤이 1895년 매디슨 스퀘어 가든에서 열린 북미 최초의 대규모 캣쇼에서 우승했어요. 크고 둥근 발, 털 뭉치가 달린 귀, 길고 풍성한 꼬리는 눈 많은 뉴잉글랜드의 겨울을 견디는 데 도움이 돼요. 많은 메인쿤이 큰 소리로 야옹하기보다는 짹짹, 또르르 하는 소리를 내요. 발가락이 더 많은 아이도 있는데, 다지증이라고 불리는 이 특징은 한때 이 품종에서 흔했어요."
+        },
+        "care": {
+          "en": "Comb the shaggy coat two or three times a week, paying attention to the belly and back legs. Give this large cat sturdy scratching posts and roomy litter boxes.",
+          "tr": "Gür tüyünü haftada iki üç kez, karın ve arka bacaklara özen göstererek tarayın. Bu iri kediye sağlam tırmalama direkleri ve geniş kum kapları sağlayın.",
+          "ja": "ふさふさの被毛は週に2〜3回コーミングし、お腹と後ろ足は特に念入りにしましょう。大きなこの猫には、頑丈な爪とぎと広々としたトイレを用意してあげましょう。",
+          "de": "Kämme das zottelige Fell zwei- bis dreimal pro Woche und achte dabei besonders auf Bauch und Hinterbeine. Gib dieser großen Katze stabile Kratzbäume und geräumige Katzenklos.",
+          "fr": "Peignez son pelage hirsute deux ou trois fois par semaine, en prêtant attention au ventre et aux pattes arrière. Offrez à ce grand chat des griffoirs robustes et des litières spacieuses.",
+          "es": "Peina su pelaje largo y espeso dos o tres veces por semana, prestando atención a la barriga y las patas traseras. Dale a este gato tan grande rascadores robustos y areneros amplios.",
+          "pt-BR": "Penteie a pelagem farta duas ou três vezes por semana, com atenção à barriga e às patas traseiras. Dê a este gato grande arranhadores firmes e caixas de areia espaçosas.",
+          "ko": "덥수룩한 털은 일주일에 두세 번 빗어 주고, 특히 배와 뒷다리에 신경 써 주세요. 덩치 큰 이 고양이에게는 튼튼한 스크래처와 넉넉한 화장실을 마련해 주세요."
+        },
+        "weight": "4–8 kg"
       },
       "premiumFile": "chapter_14_maine_coon_premium"
     },
@@ -1814,7 +2108,28 @@
           "es": "Los exóticos son tan tranquilos que los apodan «el persa de los perezosos».",
           "pt-BR": "Os exóticos são tão tranquilos que ganharam o apelido de 'persa dos preguiçosos'.",
           "ko": "엑조틱은 너무 느긋해서 '게으른 사람의 페르시안'이라는 별명이 있어요."
-        }
+        },
+        "goldenAbout": {
+          "en": "American Shorthair breeders first crossed their cats with Persians to improve coat color, and the round-faced, plush-coated kittens became a breed of their own. The Exotic was recognized in the late 1960s. It shares the Persian's sweet temperament but tends to be a little more playful. Like the Persian, its short nose means it should be kept cool in hot weather.",
+          "tr": "Amerikan Kısa Tüylü üreticileri tüy rengini geliştirmek için önce kedilerini İran kedileriyle melezledi; ortaya çıkan yuvarlak yüzlü, peluş tüylü yavrular kendi türlerini oluşturdu. Egzotik, 1960'ların sonunda tanındı. İran kedisinin tatlı mizacını paylaşır ama biraz daha oyunbaz olma eğilimindedir. İran kedisi gibi burnu kısa olduğundan sıcak havalarda serin tutulmalıdır.",
+          "ja": "アメリカンショートヘアのブリーダーたちが毛色を改良するためにペルシャと交配させたところ、丸顔でぬいぐるみのような被毛の子猫が生まれ、独自の品種になりました。エキゾチックは1960年代後半に認められました。ペルシャのようなやさしい気質を持ちながら、少しだけ遊び好きな傾向があります。ペルシャと同じく鼻が短いため、暑い時期には涼しく過ごさせてあげる必要があります。",
+          "de": "Züchter der Amerikanisch Kurzhaar kreuzten ihre Katzen zunächst mit Perserkatzen, um die Fellfarbe zu verbessern, und die rundgesichtigen Kätzchen mit Plüschfell wurden zu einer eigenen Rasse. Die Exotic wurde Ende der 1960er-Jahre anerkannt. Sie teilt das liebenswerte Wesen der Perserkatze, ist aber meist etwas verspielter. Wie bei der Perserkatze bedeutet ihre kurze Nase, dass sie bei heißem Wetter kühl gehalten werden sollte.",
+          "fr": "Les éleveurs d'American Shorthair ont d'abord croisé leurs chats avec des Persans pour améliorer la couleur du pelage, et les chatons à la face ronde et au poil pelucheux sont devenus une race à part entière. L'Exotic a été reconnu à la fin des années 1960. Il partage le tempérament doux du Persan mais a tendance à être un peu plus joueur. Comme le Persan, son nez court impose de le garder au frais par temps chaud.",
+          "es": "Los criadores del americano de pelo corto cruzaron primero sus gatos con persas para mejorar el color del pelaje, y los gatitos de cara redonda y pelo afelpado se convirtieron en una raza propia. El exótico fue reconocido a finales de la década de 1960. Comparte el carácter dulce del persa, pero suele ser un poco más juguetón. Como el persa, tiene la nariz corta, así que conviene mantenerlo fresco cuando hace calor.",
+          "pt-BR": "Criadores de american shorthair cruzaram seus gatos com persas para melhorar a cor da pelagem, e os filhotes de rosto redondo e pelo de pelúcia se tornaram uma raça própria. O exótico foi reconhecido no fim da década de 1960. Ele tem o temperamento dócil do persa, mas costuma ser um pouco mais brincalhão. Assim como o persa, por ter o focinho curto, deve ser mantido fresco no tempo quente.",
+          "ko": "아메리칸 쇼트헤어 브리더들이 털색을 개선하려고 처음 페르시안과 교배했는데, 동그란 얼굴에 봉제 인형 같은 털을 가진 새끼 고양이들이 태어나 독자적인 품종이 되었어요. 엑조틱은 1960년대 후반에 인정받았어요. 페르시안처럼 다정한 성격이지만, 조금 더 장난기가 있는 편이에요. 페르시안처럼 코가 짧아서 더운 날씨에는 시원하게 지내게 해 줘야 해요."
+        },
+        "care": {
+          "en": "Comb the plush coat once or twice a week and wipe the eyes daily. Keep it indoors in a cool, calm home.",
+          "tr": "Peluş tüyünü haftada bir iki kez tarayın, gözlerini her gün silin. Serin ve sakin bir evde, ev içinde tutun.",
+          "ja": "ぬいぐるみのような被毛は週に1〜2回コーミングし、目は毎日拭いてあげましょう。涼しく落ち着いた室内で飼いましょう。",
+          "de": "Kämme das Plüschfell ein- bis zweimal pro Woche und wische täglich die Augen sauber. Halte sie drinnen in einem kühlen, ruhigen Zuhause.",
+          "fr": "Peignez son pelage pelucheux une ou deux fois par semaine et nettoyez ses yeux chaque jour. Gardez-le à l'intérieur, dans un foyer frais et calme.",
+          "es": "Peina su pelaje afelpado una o dos veces por semana y límpiale los ojos a diario. Mantenlo en interior, en un hogar fresco y tranquilo.",
+          "pt-BR": "Penteie a pelagem de pelúcia uma ou duas vezes por semana e limpe os olhos todos os dias. Mantenha-o dentro de casa, em um lar fresco e tranquilo.",
+          "ko": "봉제 인형 같은 털은 일주일에 한두 번 빗어 주고, 눈은 매일 닦아 주세요. 시원하고 조용한 실내에서 길러 주세요."
+        },
+        "weight": "3–6 kg"
       },
       "premiumFile": "chapter_15_exotic_shorthair_premium"
     },
@@ -1934,7 +2249,28 @@
           "es": "Los burmeses son tan macizos para su tamaño que sus fans los llaman «ladrillos envueltos en seda».",
           "pt-BR": "Os burmeses são tão sólidos para o tamanho que os fãs os chamam de 'tijolos embrulhados em seda'.",
           "ko": "버미즈는 몸집에 비해 아주 묵직해서 팬들은 '실크로 감싼 벽돌'이라고 불러요."
-        }
+        },
+        "goldenAbout": {
+          "en": "Dr. Joseph Thompson of San Francisco studied Wong Mau's kittens in the 1930s, and his work became one of the first genetic studies of a cat breed. American and European breeders later developed slightly different types: the American Burmese is rounder, the European more oriental. Beyond sable brown, the breed comes in blue, champagne, platinum and other colors. Burmese often stay kittenish and playful into old age.",
+          "tr": "San Franciscolu Dr. Joseph Thompson 1930'larda Wong Mau'nun yavrularını inceledi; çalışması bir kedi türü üzerine yapılan ilk genetik araştırmalardan biri oldu. Amerikan ve Avrupalı üreticiler zamanla biraz farklı tipler geliştirdi: Amerikan Burması daha yuvarlak, Avrupa Burması daha oryantal görünümlüdür. Samur kahvesi dışında mavi, şampanya, platin ve başka renklerde görülür. Burmalar çoğu zaman yaşlılıklarında bile yavru gibi oyunbaz kalır.",
+          "ja": "サンフランシスコのジョセフ・トンプソン博士は1930年代にウォン・マウの子猫たちを研究し、その成果は猫の品種に関する最初期の遺伝学研究の一つとなりました。その後、アメリカとヨーロッパのブリーダーが少しずつ異なるタイプを作り上げ、アメリカン・バーミーズはより丸く、ヨーロピアン・バーミーズはよりオリエンタルな体型です。セーブルブラウンのほか、ブルー、シャンパン、プラチナなどの毛色があります。バーミーズは年をとっても子猫のように遊び好きなことがよくあります。",
+          "de": "Dr. Joseph Thompson aus San Francisco untersuchte in den 1930er-Jahren die Kätzchen von Wong Mau, und seine Arbeit wurde zu einer der ersten genetischen Studien über eine Katzenrasse. Amerikanische und europäische Züchter entwickelten später leicht unterschiedliche Typen: Die Amerikanische Burma ist runder, die Europäische orientalischer. Neben Sable-Braun gibt es die Rasse in Blau, Champagne, Platin und anderen Farben. Burmakatzen bleiben oft bis ins hohe Alter verspielt wie Kätzchen.",
+          "fr": "Le Dr Joseph Thompson, de San Francisco, étudia les chatons de Wong Mau dans les années 1930, et ses travaux devinrent l'une des premières études génétiques d'une race féline. Les éleveurs américains et européens ont ensuite développé des types légèrement différents : le Burmese américain est plus rond, l'européen plus oriental. Outre le brun zibeline, la race existe en bleu, champagne, platine et d'autres couleurs. Le Burmese reste souvent joueur comme un chaton jusqu'à un âge avancé.",
+          "es": "El doctor Joseph Thompson, de San Francisco, estudió a los gatitos de Wong Mau en la década de 1930, y su trabajo se convirtió en uno de los primeros estudios genéticos de una raza felina. Más tarde, los criadores estadounidenses y europeos desarrollaron tipos ligeramente distintos: el burmés americano es más redondeado y el europeo, más oriental. Además del marrón sable, la raza se presenta en azul, champán, platino y otros colores. Los burmeses suelen seguir siendo juguetones como cachorros hasta la vejez.",
+          "pt-BR": "O Dr. Joseph Thompson, de São Francisco, estudou os filhotes de Wong Mau na década de 1930, e seu trabalho se tornou um dos primeiros estudos genéticos de uma raça felina. Mais tarde, criadores americanos e europeus desenvolveram tipos um pouco diferentes: o burmês americano é mais arredondado, e o europeu, mais oriental. Além do marrom sable, a raça aparece em azul, champanhe, platina e outras cores. Os burmeses muitas vezes continuam brincalhões como filhotes até a velhice.",
+          "ko": "샌프란시스코의 조지프 톰프슨 박사는 1930년대에 웡 마우의 새끼 고양이들을 연구했고, 그의 연구는 고양이 품종에 관한 최초의 유전학 연구 중 하나가 되었어요. 이후 미국과 유럽의 브리더들이 조금씩 다른 타입을 만들었는데, 아메리칸 버미즈는 더 둥글고 유러피언 버미즈는 더 오리엔탈한 체형이에요. 세이블 브라운 외에도 블루, 샴페인, 플래티넘 등 여러 털색이 있어요. 버미즈는 나이가 들어서도 새끼 고양이처럼 장난기 넘치는 경우가 많아요."
+        },
+        "care": {
+          "en": "The satin coat needs little more than a weekly stroke with a soft brush. Burmese dislike being alone, so they do well with company.",
+          "tr": "Saten tüyü haftada bir yumuşak fırçayla taramaktan fazlasını istemez. Burmalar yalnız kalmayı sevmez; yanlarında biri olduğunda mutlu olurlar.",
+          "ja": "サテンのような被毛は、週に1回やわらかいブラシでなでる程度で十分です。バーミーズはひとりぼっちが苦手なので、誰かと一緒にいるとうまく過ごせます。",
+          "de": "Für das Satinfell reicht kaum mehr als ein wöchentliches Streichen mit einer weichen Bürste. Burmakatzen sind nicht gern allein und fühlen sich mit Gesellschaft wohl.",
+          "fr": "Son pelage satiné ne demande guère plus qu'un passage hebdomadaire de brosse douce. Le Burmese n'aime pas être seul et s'épanouit en compagnie.",
+          "es": "Su pelaje satinado apenas necesita más que una pasada semanal con un cepillo suave. A los burmeses no les gusta estar solos, así que se sienten mejor acompañados.",
+          "pt-BR": "A pelagem acetinada precisa de pouco mais que uma passada semanal com uma escova macia. Os burmeses não gostam de ficar sozinhos, então se dão bem com companhia.",
+          "ko": "새틴 같은 털은 일주일에 한 번 부드러운 브러시로 쓸어 주기만 하면 돼요. 버미즈는 혼자 있는 걸 싫어해서 함께 지낼 누군가가 있으면 잘 지내요."
+        },
+        "weight": "3–6 kg"
       },
       "premiumFile": "chapter_16_burmese_premium"
     },
@@ -2051,7 +2387,28 @@
           "es": "La leyenda vincula esta raza con los monjes cartujos del monasterio de la Grande Chartreuse, en Francia.",
           "pt-BR": "A lenda liga a raça aos monges cartuxos do mosteiro da Grande Chartreuse, na França.",
           "ko": "전설에 따르면 이 품종은 프랑스 그랑드 샤르트뢰즈 수도원의 수도사들과 관련이 있어요."
-        }
+        },
+        "goldenAbout": {
+          "en": "Blue-grey cats were described in France as early as the 1700s, and the Léger sisters bred them on the island of Belle-Île in the 1920s. The breed is famous for its quiet nature; many Chartreux chirp instead of meowing. Its coat is so dense that it 'breaks' like sheepskin when the cat bends its neck. The French writer Colette and President Charles de Gaulle are both said to have kept Chartreux.",
+          "tr": "Mavi-gri kediler Fransa'da 1700'lerde bile anlatılmıştır; Léger kardeşler 1920'lerde Belle-Île adasında onları üretti. Tür sessizliğiyle ünlüdür; pek çok Chartreux miyavlamak yerine cıvıldar. Tüyü o kadar yoğundur ki kedi boynunu büktüğünde koyun postu gibi 'açılır'. Fransız yazar Colette'in ve Cumhurbaşkanı Charles de Gaulle'ün Chartreux beslediği söylenir.",
+          "ja": "フランスでは早くも1700年代にブルーグレーの猫について記されており、1920年代にはレジェ姉妹がベル・イル島でこの猫を繁殖させました。この品種は静かな性格で有名で、多くのシャルトリューはニャーと鳴く代わりにさえずるような声を出します。被毛はとても密で、首を曲げると羊の毛皮のように毛が「割れ」ます。フランスの作家コレットやシャルル・ド・ゴール大統領も、シャルトリューを飼っていたといわれています。",
+          "de": "Blaugraue Katzen wurden in Frankreich schon im 18. Jahrhundert beschrieben, und die Schwestern Léger züchteten sie in den 1920er-Jahren auf der Insel Belle-Île. Die Rasse ist für ihr stilles Wesen bekannt; viele Kartäuser zwitschern, statt zu miauen. Ihr Fell ist so dicht, dass es sich wie ein Schaffell „bricht“, wenn die Katze den Hals beugt. Die französische Schriftstellerin Colette und Präsident Charles de Gaulle sollen beide Kartäuser gehalten haben.",
+          "fr": "Des chats bleu-gris étaient décrits en France dès les années 1700, et les sœurs Léger les élevaient sur l'île de Belle-Île dans les années 1920. La race est célèbre pour sa nature discrète ; beaucoup de Chartreux gazouillent au lieu de miauler. Son pelage est si dense qu'il « s'ouvre » comme une peau de mouton quand le chat penche le cou. On dit que l'écrivaine française Colette et le président Charles de Gaulle avaient tous deux des Chartreux.",
+          "es": "Ya en el siglo XVIII se describían en Francia gatos de color gris azulado, y las hermanas Léger los criaron en la isla de Belle-Île en la década de 1920. La raza es famosa por su carácter silencioso; muchos cartujos gorjean en lugar de maullar. Su pelaje es tan denso que se «abre» como una piel de oveja cuando el gato dobla el cuello. Se dice que la escritora francesa Colette y el presidente Charles de Gaulle tuvieron cartujos.",
+          "pt-BR": "Gatos cinza-azulados já eram descritos na França no século XVIII, e as irmãs Léger os criaram na ilha de Belle-Île na década de 1920. A raça é famosa por seu jeito quieto; muitos chartreux gorjeiam em vez de miar. Sua pelagem é tão densa que se “abre” como pele de carneiro quando o gato curva o pescoço. Dizem que a escritora francesa Colette e o presidente Charles de Gaulle tiveram chartreux.",
+          "ko": "프랑스에서는 이미 1700년대에 블루그레이 고양이에 대한 기록이 있었고, 1920년대에는 레제 자매가 벨일섬에서 이 고양이를 번식시켰어요. 이 품종은 조용한 성격으로 유명해서, 많은 샤르트뢰가 야옹하는 대신 짹짹 소리를 내요. 털이 아주 촘촘해서 고양이가 목을 구부리면 양털 가죽처럼 털이 '갈라져요'. 프랑스 작가 콜레트와 샤를 드골 대통령도 샤르트뢰를 길렀다고 전해져요."
+        },
+        "care": {
+          "en": "Brush weekly, and more during the heavy seasonal shed. A patient, gentle cat, it enjoys quiet play and a regular routine.",
+          "tr": "Haftada bir, yoğun mevsimsel tüy dökümünde daha sık tarayın. Sabırlı ve nazik bir kedidir; sakin oyunları ve düzenli bir günlük akışı sever.",
+          "ja": "週に1回ブラッシングし、季節の大量の換毛期には回数を増やしましょう。辛抱強くやさしいこの猫は、静かな遊びと規則正しい日課を好みます。",
+          "de": "Bürste sie wöchentlich und während des starken saisonalen Fellwechsels öfter. Als geduldige, sanfte Katze genießt sie ruhiges Spiel und einen geregelten Alltag.",
+          "fr": "Brossez-le chaque semaine, et davantage pendant la forte mue saisonnière. Chat patient et doux, il apprécie les jeux calmes et une routine régulière.",
+          "es": "Cepíllalo cada semana, y más durante la intensa muda de temporada. Es un gato paciente y dulce que disfruta del juego tranquilo y de una rutina regular.",
+          "pt-BR": "Escove toda semana, e com mais frequência durante a intensa troca de pelo sazonal. Paciente e dócil, ele gosta de brincadeiras tranquilas e de uma rotina regular.",
+          "ko": "매주 빗어 주고, 계절에 따라 털이 많이 빠지는 시기에는 더 자주 빗어 주세요. 참을성 있고 온순한 고양이라 조용한 놀이와 규칙적인 일상을 좋아해요."
+        },
+        "weight": "3–7.5 kg"
       },
       "premiumFile": "chapter_17_chartreux_premium"
     },
@@ -2172,7 +2529,28 @@
           "es": "Su frente suele lucir una marca en forma de «M» conocida como la marca del escarabajo.",
           "pt-BR": "A testa costuma ter uma marca em forma de 'M', conhecida como marca do escaravelho.",
           "ko": "이마에는 흔히 '스카라브 무늬'라고 불리는 M자 모양 무늬가 있어요."
-        }
+        },
+        "goldenAbout": {
+          "en": "The modern breed began when Princess Nathalie Troubetzkoy brought spotted cats from Egypt to Italy and then to the United States in 1956. Its spots appear only on the tips of the hairs, and the coat comes in silver, bronze and smoke. When happy, a Mau may wiggle its tail and 'paddle' its front feet. It is loyal to its family and can be reserved with strangers.",
+          "tr": "Modern tür, Prenses Nathalie Troubetzkoy'un benekli kedileri Mısır'dan İtalya'ya, ardından 1956'da ABD'ye götürmesiyle başladı. Benekler yalnızca tüylerin uçlarında bulunur; tüy gümüş, bronz ve duman renklerinde görülür. Mutlu olduğunda Mau kuyruğunu titretip ön ayaklarıyla 'kürek çeker'. Ailesine sadıktır, yabancılara karşı mesafeli olabilir.",
+          "ja": "現代のこの品種は、ナタリー・トルベツコイ王女が斑点のある猫をエジプトからイタリアへ、そして1956年にアメリカへ連れてきたことから始まりました。斑点は毛先にだけ現れ、毛色はシルバー、ブロンズ、スモークがあります。うれしいとき、マウはしっぽを震わせたり、前足で「足踏み」をしたりすることがあります。家族には忠実で、知らない人には控えめなこともあります。",
+          "de": "Die moderne Rasse begann, als Prinzessin Nathalie Troubetzkoy gefleckte Katzen aus Ägypten nach Italien und 1956 dann in die Vereinigten Staaten brachte. Ihre Flecken erscheinen nur an den Haarspitzen, und das Fell gibt es in Silber, Bronze und Smoke. Wenn sie glücklich ist, wackelt eine Mau manchmal mit dem Schwanz und „paddelt“ mit den Vorderpfoten. Sie ist ihrer Familie treu und kann Fremden gegenüber zurückhaltend sein.",
+          "fr": "La race moderne est née lorsque la princesse Nathalie Troubetzkoy emmena des chats tachetés d'Égypte en Italie, puis aux États-Unis en 1956. Ses taches n'apparaissent qu'à la pointe des poils, et le pelage existe en argent, bronze et smoke. Quand il est heureux, le Mau peut remuer la queue et « pédaler » avec ses pattes avant. Il est fidèle à sa famille et peut se montrer réservé avec les inconnus.",
+          "es": "La raza moderna nació cuando la princesa Nathalie Troubetzkoy llevó gatos moteados de Egipto a Italia y después a Estados Unidos en 1956. Sus manchas solo aparecen en las puntas de los pelos, y el pelaje puede ser plateado, bronce o humo. Cuando está contento, el mau puede menear la cola y «amasar» con las patas delanteras. Es leal a su familia y puede mostrarse reservado con los desconocidos.",
+          "pt-BR": "A raça moderna começou quando a princesa Nathalie Troubetzkoy levou gatos pintados do Egito para a Itália e depois para os Estados Unidos em 1956. As manchas aparecem apenas nas pontas dos pelos, e a pelagem pode ser prata, bronze ou smoke. Quando está feliz, o mau pode balançar a cauda e “sapatear” com as patas dianteiras. É leal à família e pode ser reservado com estranhos.",
+          "ko": "현대의 이 품종은 나탈리 트루베츠코이 공주가 점박이 고양이를 이집트에서 이탈리아로, 그리고 1956년에 미국으로 데려오면서 시작됐어요. 점무늬는 털끝에만 나타나고, 털색은 실버, 브론즈, 스모크가 있어요. 기분이 좋으면 마우는 꼬리를 흔들거나 앞발로 '꾹꾹이'를 하기도 해요. 가족에게 충실하고, 낯선 사람에게는 조심스러울 수 있어요."
+        },
+        "care": {
+          "en": "A weekly brush is enough. Mau cats love chasing toys at full speed, so give them space to run and things to climb.",
+          "tr": "Haftada bir tarama yeterlidir. Mau kedileri oyuncakları son hızla kovalamayı sever; koşabilecekleri alan ve tırmanacakları yerler sağlayın.",
+          "ja": "週に1回のブラッシングで十分です。マウは全速力でおもちゃを追いかけるのが大好きなので、走り回れるスペースと登れる場所を用意してあげましょう。",
+          "de": "Einmal pro Woche bürsten reicht. Mau-Katzen jagen Spielzeug liebend gern in vollem Tempo hinterher, also gib ihnen Platz zum Rennen und Möglichkeiten zum Klettern.",
+          "fr": "Un brossage par semaine suffit. Les Maus adorent poursuivre leurs jouets à toute vitesse : donnez-leur de l'espace pour courir et de quoi grimper.",
+          "es": "Un cepillado semanal es suficiente. A los mau les encanta perseguir juguetes a toda velocidad, así que dales espacio para correr y sitios donde trepar.",
+          "pt-BR": "Uma escovação semanal é suficiente. Os maus adoram perseguir brinquedos a toda velocidade, então dê espaço para correr e coisas para escalar.",
+          "ko": "일주일에 한 번 빗어 주면 충분해요. 마우는 전속력으로 장난감을 쫓는 걸 정말 좋아하니, 달릴 공간과 올라갈 곳을 마련해 주세요."
+        },
+        "weight": "3–5 kg"
       },
       "premiumFile": "chapter_18_egyptian_mau_premium"
     },
@@ -2291,7 +2669,28 @@
           "es": "Un manx puede ser «rumpy», sin cola; «stumpy», con cola corta; o incluso tener la cola completa.",
           "pt-BR": "Um manx pode ser 'rumpy', sem cauda, 'stumpy', com cauda curta, ou até ter a cauda inteira.",
           "ko": "맹크스는 꼬리가 없는 '럼피', 짧은 '스텀피', 심지어 긴 꼬리를 가진 아이도 있어요."
-        }
+        },
+        "goldenAbout": {
+          "en": "The Manx has lived on the Isle of Man for centuries, and its tailless gene spread easily in the small island population. Folk stories joke that it lost its tail by being late to Noah's Ark. The same gene can cause spine problems, so breeders pair cats carefully. The Cymric is the longhaired version of the Manx.",
+          "tr": "Manx yüzyıllardır Man Adası'nda yaşıyor; kuyruksuzluk geni küçük ada nüfusunda kolayca yayıldı. Halk hikâyeleri, Nuh'un Gemisi'ne geç kaldığı için kuyruğunu kaybettiğini şakayla anlatır. Aynı gen omurga sorunlarına yol açabildiğinden üreticiler kedileri dikkatle eşleştirir. Cymric, Manx'in uzun tüylü biçimidir.",
+          "ja": "マンクスは何世紀にもわたってマン島で暮らしており、しっぽのない遺伝子は島の小さな猫の集団の中で広まりやすかったのです。民話では、ノアの方舟に乗り遅れてしっぽをなくしたと冗談めかして語られています。同じ遺伝子が背骨の問題を引き起こすことがあるため、ブリーダーは慎重に交配の組み合わせを選びます。キムリックはマンクスの長毛タイプです。",
+          "de": "Die Manx lebt seit Jahrhunderten auf der Isle of Man, und ihr Gen für Schwanzlosigkeit verbreitete sich in der kleinen Inselpopulation leicht. Volkserzählungen witzeln, sie habe ihren Schwanz verloren, weil sie zu spät zur Arche Noah kam. Dasselbe Gen kann Probleme mit der Wirbelsäule verursachen, deshalb verpaaren Züchter die Katzen sorgfältig. Die Cymric ist die Langhaarvariante der Manx.",
+          "fr": "Le Manx vit sur l'île de Man depuis des siècles, et son gène de l'absence de queue s'est facilement répandu dans la petite population de l'île. Les contes populaires plaisantent en disant qu'il a perdu sa queue en arrivant en retard à l'arche de Noé. Ce même gène peut causer des problèmes de colonne vertébrale, c'est pourquoi les éleveurs choisissent les couples avec soin. Le Cymric est la version à poil long du Manx.",
+          "es": "El manx vive en la isla de Man desde hace siglos, y su gen sin cola se extendió con facilidad en la pequeña población de la isla. Los cuentos populares bromean con que perdió la cola por llegar tarde al arca de Noé. El mismo gen puede causar problemas de columna, así que los criadores eligen las parejas con cuidado. El cymric es la versión de pelo largo del manx.",
+          "pt-BR": "O manx vive na Ilha de Man há séculos, e seu gene sem cauda se espalhou facilmente na pequena população da ilha. Histórias populares brincam que ele perdeu a cauda por chegar atrasado à Arca de Noé. O mesmo gene pode causar problemas na coluna, por isso os criadores escolhem os casais com cuidado. O cymric é a versão de pelo longo do manx.",
+          "ko": "맹크스는 수 세기 동안 맨섬에서 살아왔고, 꼬리 없는 유전자는 작은 섬의 고양이들 사이에서 쉽게 퍼졌어요. 민담에서는 노아의 방주에 늦게 타는 바람에 꼬리를 잃었다는 우스갯소리가 전해져요. 같은 유전자가 척추 문제를 일으킬 수 있어서 브리더들은 신중하게 짝을 지어요. 킴릭은 맹크스의 장모 버전이에요."
+        },
+        "care": {
+          "en": "Brush weekly; longhaired Cymrics need a little more. Manx cats are playful and smart, and many enjoy fetch and puzzle toys.",
+          "tr": "Haftada bir tarayın; uzun tüylü Cymric'ler biraz daha fazla bakım ister. Manx kedileri oyunbaz ve zekidir; çoğu top getirmeyi ve zekâ oyuncaklarını sever.",
+          "ja": "週に1回ブラッシングしましょう。長毛のキムリックは少し多めのお手入れが必要です。マンクスは遊び好きで賢く、ものを取ってくる遊びやパズルおもちゃを楽しむ子が多くいます。",
+          "de": "Bürste sie wöchentlich; langhaarige Cymrics brauchen etwas mehr. Manx-Katzen sind verspielt und klug, und viele mögen Apportierspiele und Intelligenzspielzeug.",
+          "fr": "Brossez-le chaque semaine ; les Cymrics à poil long en demandent un peu plus. Les Manx sont joueurs et intelligents, et beaucoup aiment rapporter et les jouets de réflexion.",
+          "es": "Cepíllalo una vez por semana; los cymric de pelo largo necesitan algo más. Los manx son juguetones e inteligentes, y a muchos les encanta traer cosas y los juguetes de ingenio.",
+          "pt-BR": "Escove toda semana; os cymrics de pelo longo precisam de um pouco mais. Os manx são brincalhões e inteligentes, e muitos adoram buscar objetos e brinquedos de raciocínio.",
+          "ko": "매주 빗어 주세요. 장모인 킴릭은 조금 더 손질이 필요해요. 맹크스는 장난기 많고 똑똑해서, 물어 오기 놀이와 퍼즐 장난감을 좋아하는 아이가 많아요."
+        },
+        "weight": "3.5–6 kg"
       },
       "premiumFile": "chapter_19_manx_premium"
     },
@@ -2412,7 +2811,28 @@
           "es": "Su nombre homenajea a la ciudad india de Bombay, un guiño a los leopardos negros de la India.",
           "pt-BR": "O nome homenageia a cidade indiana de Bombaim, uma referência aos leopardos-negros da Índia.",
           "ko": "이름은 인도의 도시 봄베이에서 따왔는데, 인도의 흑표범을 떠올리게 하려는 뜻이에요."
-        }
+        },
+        "goldenAbout": {
+          "en": "Breeder Nikki Horner in Kentucky set out in the 1950s to create a 'parlor panther' by crossing sable Burmese with black American Shorthairs. Recognition took years, and the breed was accepted for championship in 1976. A Bombay's coat is black to the roots, and its copper or gold eyes shine against it. Bombays love warm spots and are known for following their people from room to room.",
+          "tr": "Kentuckyli üretici Nikki Horner 1950'lerde samur Burma kedilerini siyah Amerikan Kısa Tüylülerle melezleyerek bir 'salon panteri' yaratmaya girişti. Tanınması yıllar sürdü; tür 1976'da şampiyonluk statüsü aldı. Bombay'ın tüyü köklerine kadar siyahtır; bakır ya da altın rengi gözleri bu siyahın üzerinde parlar. Bombay'lar sıcak köşeleri sever ve insanlarını odadan odaya takip etmeleriyle bilinir.",
+          "ja": "ケンタッキー州のブリーダー、ニッキー・ホーナーは1950年代に、セーブルのバーミーズと黒のアメリカンショートヘアを交配させて「パーラーパンサー（小さな黒ヒョウ）」を生み出そうとしました。公認までには何年もかかり、1976年にチャンピオンシップへの参加が認められました。ボンベイの被毛は根元まで真っ黒で、カッパーやゴールドの目がその黒に映えて輝きます。ボンベイは暖かい場所が大好きで、飼い主のあとを部屋から部屋へついて回ることで知られています。",
+          "de": "Die Züchterin Nikki Horner aus Kentucky wollte in den 1950er-Jahren einen „Wohnzimmer-Panther“ erschaffen, indem sie Sable-Burmakatzen mit schwarzen Amerikanisch Kurzhaar kreuzte. Die Anerkennung dauerte Jahre, und 1976 wurde die Rasse zur Championklasse zugelassen. Das Fell einer Bombay ist bis zu den Wurzeln schwarz, und ihre kupfer- oder goldfarbenen Augen leuchten darauf. Bombays lieben warme Plätzchen und sind dafür bekannt, ihren Menschen von Zimmer zu Zimmer zu folgen.",
+          "fr": "L'éleveuse Nikki Horner, dans le Kentucky, entreprit dans les années 1950 de créer une « panthère de salon » en croisant des Burmeses zibeline avec des American Shorthairs noirs. La reconnaissance prit des années, et la race fut admise en championnat en 1976. Le pelage du Bombay est noir jusqu'à la racine, et ses yeux cuivrés ou dorés y brillent. Les Bombays adorent les endroits chauds et sont connus pour suivre leurs humains de pièce en pièce.",
+          "es": "En la década de 1950, la criadora Nikki Horner, de Kentucky, se propuso crear una «pantera de salón» cruzando burmeses sable con americanos de pelo corto negros. El reconocimiento tardó años, y la raza fue aceptada para campeonato en 1976. El pelaje del bombay es negro hasta la raíz, y sus ojos cobrizos o dorados brillan sobre él. A los bombay les encantan los rincones cálidos y son conocidos por seguir a su gente de habitación en habitación.",
+          "pt-BR": "Na década de 1950, a criadora Nikki Horner, do Kentucky, decidiu criar uma “pantera de sala” cruzando burmeses sable com american shorthairs pretos. O reconhecimento levou anos, e a raça foi aceita para campeonato em 1976. A pelagem do bombaim é preta até a raiz, e seus olhos cor de cobre ou dourados brilham contra ela. Os bombaims adoram lugares quentinhos e são conhecidos por seguir seus humanos de cômodo em cômodo.",
+          "ko": "켄터키주의 브리더 니키 호너는 1950년대에 세이블 버미즈와 블랙 아메리칸 쇼트헤어를 교배해 '거실의 표범'을 만들어 내려고 했어요. 인정받기까지 여러 해가 걸렸고, 1976년에 챔피언십 출전이 승인됐어요. 봄베이의 털은 뿌리까지 새까맣고, 구리색이나 금색 눈이 그 위에서 반짝여요. 봄베이는 따뜻한 곳을 정말 좋아하고, 보호자를 따라 이 방 저 방 다니는 것으로 유명해요."
+        },
+        "care": {
+          "en": "Stroke the glossy coat with a soft cloth or brush once a week. Measured meals help, as Bombays love food.",
+          "tr": "Parlak tüyünü haftada bir yumuşak bir bez ya da fırçayla okşayın. Bombay'lar yemeği çok sevdiğinden ölçülü öğünler yararlı olur.",
+          "ja": "つややかな被毛は、週に1回やわらかい布かブラシでなでてあげましょう。ボンベイは食べることが大好きなので、量を計った食事が役立ちます。",
+          "de": "Streiche einmal pro Woche mit einem weichen Tuch oder einer Bürste über das glänzende Fell. Abgemessene Mahlzeiten helfen, denn Bombays lieben Futter.",
+          "fr": "Passez un chiffon doux ou une brosse sur son pelage brillant une fois par semaine. Des repas mesurés sont utiles, car le Bombay adore manger.",
+          "es": "Pasa un paño suave o un cepillo por su brillante pelaje una vez por semana. Las raciones medidas ayudan, porque a los bombay les encanta comer.",
+          "pt-BR": "Passe um pano macio ou uma escova na pelagem brilhante uma vez por semana. Refeições medidas ajudam, já que os bombaims adoram comer.",
+          "ko": "윤기 나는 털은 일주일에 한 번 부드러운 천이나 브러시로 쓸어 주세요. 봄베이는 먹는 걸 정말 좋아해서 양을 맞춘 식사가 도움이 돼요."
+        },
+        "weight": "3–5 kg"
       },
       "premiumFile": "chapter_20_bombay_premium"
     },
@@ -2531,7 +2951,28 @@
           "es": "Sus potentes patas traseras hacen de los siberianos grandes saltadores que adoran el sitio más alto de la casa.",
           "pt-BR": "As fortes patas traseiras fazem dos siberianos ótimos saltadores, que adoram o lugar mais alto da casa.",
           "ko": "강한 뒷다리 덕분에 시베리안은 점프 실력이 뛰어나고, 방에서 가장 높은 곳을 좋아해요."
-        }
+        },
+        "goldenAbout": {
+          "en": "Longhaired forest cats have lived in Russia for at least a thousand years, appearing in fairy tales and folk stories. The first Siberians arrived in the United States in 1990. Many owners say they react less to Siberians, possibly because some cats produce less of the main allergen, Fel d 1, but no cat is truly hypoallergenic. Siberians are strong jumpers and are often fascinated by water.",
+          "tr": "Uzun tüylü orman kedileri en az bin yıldır Rusya'da yaşıyor ve masallarla halk hikâyelerinde yer alıyor. İlk Sibirya kedileri 1990'da ABD'ye geldi. Pek çok sahibi Sibirya kedilerine daha az alerji gösterdiğini söyler; bunun nedeni bazı kedilerin ana alerjen olan Fel d 1'i daha az üretmesi olabilir, ama hiçbir kedi tamamen antialerjik değildir. Sibirya kedileri güçlü zıplayıcılardır ve çoğu zaman suya ilgi duyar.",
+          "ja": "長毛の森の猫は少なくとも1000年前からロシアで暮らしており、おとぎ話や民話にも登場します。最初のサイベリアンがアメリカに渡ったのは1990年です。サイベリアンにはアレルギー反応が出にくいという飼い主も多く、これは主なアレルゲンであるFel d 1の生成量が少ない猫がいるためかもしれませんが、本当に低アレルギーな猫はいません。サイベリアンはジャンプ力が強く、水に興味津々なことがよくあります。",
+          "de": "Langhaarige Waldkatzen leben seit mindestens tausend Jahren in Russland und tauchen in Märchen und Volkserzählungen auf. Die ersten Sibirischen Katzen kamen 1990 in die Vereinigten Staaten. Viele Halter sagen, sie reagierten weniger auf Sibirische Katzen, möglicherweise weil manche Katzen weniger vom Hauptallergen Fel d 1 bilden, doch keine Katze ist wirklich hypoallergen. Sibirische Katzen sind starke Springer und oft von Wasser fasziniert.",
+          "fr": "Des chats des forêts à poil long vivent en Russie depuis au moins mille ans et apparaissent dans les contes de fées et les récits populaires. Les premiers Sibériens sont arrivés aux États-Unis en 1990. Beaucoup de propriétaires disent réagir moins aux Sibériens, peut-être parce que certains chats produisent moins du principal allergène, Fel d 1, mais aucun chat n'est vraiment hypoallergénique. Les Sibériens sont de puissants sauteurs et sont souvent fascinés par l'eau.",
+          "es": "Los gatos de bosque de pelo largo viven en Rusia desde hace al menos mil años y aparecen en cuentos de hadas y relatos populares. Los primeros siberianos llegaron a Estados Unidos en 1990. Muchos dueños dicen que reaccionan menos a los siberianos, quizá porque algunos gatos producen menos del principal alérgeno, Fel d 1, pero ningún gato es realmente hipoalergénico. Los siberianos son grandes saltadores y a menudo les fascina el agua.",
+          "pt-BR": "Gatos da floresta de pelo longo vivem na Rússia há pelo menos mil anos e aparecem em contos de fadas e histórias populares. Os primeiros siberianos chegaram aos Estados Unidos em 1990. Muitos tutores dizem que reagem menos aos siberianos, talvez porque alguns gatos produzem menos do principal alérgeno, o Fel d 1, mas nenhum gato é realmente hipoalergênico. Os siberianos são ótimos saltadores e muitas vezes ficam fascinados pela água.",
+          "ko": "장모의 숲 고양이는 적어도 천 년 동안 러시아에서 살아왔고, 동화와 민담에도 등장해요. 최초의 시베리안은 1990년에 미국에 들어왔어요. 많은 보호자가 시베리안에게는 알레르기 반응이 덜하다고 말하는데, 일부 고양이가 주요 알레르겐인 Fel d 1을 덜 만들기 때문일 수도 있지만, 진정한 저알레르기 고양이는 없어요. 시베리안은 점프력이 뛰어나고, 물에 푹 빠져드는 경우가 많아요."
+        },
+        "care": {
+          "en": "Brush two or three times a week and more during the spring and autumn sheds. Tall cat trees and active play suit this athletic cat.",
+          "tr": "Haftada iki üç kez, ilkbahar ve sonbahar tüy dökümünde daha sık tarayın. Bu atletik kediye yüksek kedi ağaçları ve hareketli oyunlar uygundur.",
+          "ja": "週に2〜3回ブラッシングし、春と秋の換毛期には回数を増やしましょう。運動能力の高いこの猫には、背の高いキャットタワーと活発な遊びがぴったりです。",
+          "de": "Bürste sie zwei- bis dreimal pro Woche und öfter während des Fellwechsels im Frühling und Herbst. Hohe Kratzbäume und aktives Spiel passen zu dieser sportlichen Katze.",
+          "fr": "Brossez-le deux ou trois fois par semaine, et davantage pendant les mues de printemps et d'automne. De grands arbres à chat et du jeu actif conviennent à ce chat athlétique.",
+          "es": "Cepíllalo dos o tres veces por semana, y más durante las mudas de primavera y otoño. Los rascadores altos y el juego activo le sientan bien a este gato atlético.",
+          "pt-BR": "Escove duas ou três vezes por semana, e com mais frequência durante as trocas de pelo da primavera e do outono. Arranhadores altos e brincadeiras ativas combinam com este gato atlético.",
+          "ko": "일주일에 두세 번 빗어 주고, 봄과 가을 털갈이 시기에는 더 자주 빗어 주세요. 운동 신경이 좋은 이 고양이에게는 높은 캣타워와 활발한 놀이가 잘 맞아요."
+        },
+        "weight": "4–9 kg"
       },
       "premiumFile": "chapter_21_siberian_premium"
     },
@@ -2652,7 +3093,28 @@
           "es": "Su pelo corto y rizado es tan fino que suelta mucho menos pelo que la mayoría de los gatos.",
           "pt-BR": "Sua pelagem curta e cacheada é tão fina que solta bem menos pelos que a maioria dos gatos.",
           "ko": "짧고 곱슬한 털이 아주 가늘어서 대부분의 고양이보다 털이 훨씬 덜 빠져요."
-        }
+        },
+        "goldenAbout": {
+          "en": "Beryl Cox found the first Devon Rex, a curly kitten named Kirlee, in Buckfastleigh, England, in 1960. Breeders first thought it was related to the Cornish Rex, but the curls turned out to come from a different gene. Its short, soft coat lacks most of the longer guard hairs, so it feels warm and suede-like. Devons are clever and can learn tricks, and they love to sit on their people's shoulders.",
+          "tr": "Beryl Cox ilk Devon Rex'i, Kirlee adlı kıvırcık bir yavruyu 1960'ta İngiltere'nin Buckfastleigh kasabasında buldu. Üreticiler önce onun Cornish Rex'le akraba olduğunu düşündü ama kıvırcıklığın farklı bir genden geldiği ortaya çıktı. Kısa, yumuşak tüyünde uzun koruyucu tüylerin çoğu yoktur; bu yüzden sıcak ve süet gibi hissettirir. Devon'lar zekidir, numara öğrenebilir ve insanlarının omzuna oturmayı çok sever.",
+          "ja": "1960年、ベリル・コックスはイギリスのバックファストリーで、カーリーという名の巻き毛の子猫を見つけました。これが最初のデボンレックスです。ブリーダーたちは当初コーニッシュレックスと関係があると考えていましたが、巻き毛は別の遺伝子によるものだとわかりました。短くやわらかい被毛には長いガードヘアがほとんどないため、温かくスエードのような手触りです。デボンは賢くて芸を覚えることができ、飼い主の肩に乗るのが大好きです。",
+          "de": "Beryl Cox fand 1960 in Buckfastleigh, England, die erste Devon Rex, ein gelocktes Kätzchen namens Kirlee. Züchter hielten sie zunächst für verwandt mit der Cornish Rex, doch die Locken stellten sich als Folge eines anderen Gens heraus. Ihrem kurzen, weichen Fell fehlen die meisten längeren Grannenhaare, daher fühlt es sich warm und wildlederartig an. Devons sind klug, können Tricks lernen und sitzen liebend gern auf den Schultern ihrer Menschen.",
+          "fr": "Beryl Cox découvrit le premier Devon Rex, un chaton frisé nommé Kirlee, à Buckfastleigh, en Angleterre, en 1960. Les éleveurs ont d'abord cru qu'il était apparenté au Cornish Rex, mais ses boucles provenaient en fait d'un gène différent. Son poil court et doux est dépourvu de la plupart des longs poils de jarre, ce qui lui donne un toucher chaud, semblable au daim. Les Devons sont malins, peuvent apprendre des tours et adorent s'installer sur les épaules de leurs humains.",
+          "es": "Beryl Cox encontró el primer devon rex, un gatito de pelo rizado llamado Kirlee, en Buckfastleigh (Inglaterra) en 1960. Al principio los criadores creyeron que estaba emparentado con el cornish rex, pero resultó que los rizos venían de un gen distinto. Su pelaje corto y suave carece de la mayoría de los pelos de cobertura más largos, por lo que al tacto es cálido y parecido al ante. Los devon son listos, pueden aprender trucos y les encanta subirse a los hombros de su gente.",
+          "pt-BR": "Beryl Cox encontrou o primeiro devon rex, um filhote de pelo cacheado chamado Kirlee, em Buckfastleigh, na Inglaterra, em 1960. No início, os criadores acharam que ele era parente do cornish rex, mas os cachos vinham de um gene diferente. Sua pelagem curta e macia não tem a maior parte dos pelos de guarda mais longos, por isso parece quente e aveludada como camurça. Os devons são espertos, podem aprender truques e adoram ficar nos ombros de seus humanos.",
+          "ko": "1960년 베릴 콕스는 영국 버크패스트리에서 컬리라는 곱슬털 새끼 고양이를 발견했는데, 이 고양이가 최초의 데본 렉스예요. 브리더들은 처음에 코니시 렉스와 관련이 있다고 생각했지만, 곱슬털은 다른 유전자에서 비롯된 것으로 밝혀졌어요. 짧고 부드러운 털에는 긴 보호털이 대부분 없어서 따뜻하고 스웨이드 같은 감촉이에요. 데본은 영리해서 재주를 배울 수 있고, 보호자의 어깨 위에 앉는 걸 정말 좋아해요."
+        },
+        "care": {
+          "en": "Its delicate coat needs only gentle grooming; wipe the large ears clean regularly. Keep it warm, as it feels the cold.",
+          "tr": "Narin tüyü yalnızca nazik bir bakım ister; iri kulaklarını düzenli olarak silin. Soğuktan etkilendiği için sıcak tutun.",
+          "ja": "繊細な被毛はやさしいお手入れだけで十分です。大きな耳は定期的に拭いてきれいにしましょう。寒さに弱いので、暖かくしてあげましょう。",
+          "de": "Ihr zartes Fell braucht nur sanfte Pflege; wische die großen Ohren regelmäßig sauber. Halte sie warm, denn sie friert leicht.",
+          "fr": "Son pelage délicat ne demande qu'un entretien en douceur ; nettoyez régulièrement ses grandes oreilles. Gardez-le au chaud, car il est sensible au froid.",
+          "es": "Su delicado pelaje solo necesita un aseo suave; límpiale con regularidad sus grandes orejas. Mantenlo abrigado, porque es friolero.",
+          "pt-BR": "A pelagem delicada só precisa de cuidados suaves; limpe as orelhas grandes regularmente. Mantenha-o aquecido, pois ele sente frio.",
+          "ko": "섬세한 털은 부드럽게만 손질해 주면 돼요. 큰 귀는 정기적으로 닦아 주세요. 추위를 타니 따뜻하게 해 주세요."
+        },
+        "weight": "2.5–4 kg"
       },
       "premiumFile": "chapter_22_devon_rex_premium"
     },
@@ -2773,7 +3235,28 @@
           "es": "Con sus largas patas y su cuerpo esbelto, se mueve con la gracia de una pequeña bailarina.",
           "pt-BR": "Com pernas longas e corpo esguio, ele se move com a graça de um pequeno bailarino.",
           "ko": "긴 다리와 날렵한 몸으로 작은 무용수처럼 우아하게 움직여요."
-        }
+        },
+        "goldenAbout": {
+          "en": "British breeders in the 1950s and 60s set out to create Siamese-type cats in solid colors and patterns, and the Oriental Shorthair was the result. It is recognized in more than 300 color and pattern combinations. The longhaired version is called the Oriental Longhair. Orientals are as talkative as their Siamese cousins and want to be part of everything their people do.",
+          "tr": "1950'ler ve 60'larda İngiliz üreticiler düz renk ve desenlerde Siyam tipi kediler yaratmaya girişti; Oryantal Kısa Tüylü bunun sonucudur. 300'den fazla renk ve desen kombinasyonunda tanınır. Uzun tüylü biçimine Oryantal Uzun Tüylü denir. Oryantaller Siyam kuzenleri kadar konuşkandır ve insanlarının yaptığı her şeye katılmak ister.",
+          "ja": "1950〜60年代、イギリスのブリーダーたちは単色やさまざまな柄のシャムタイプの猫を作ろうとし、その結果生まれたのがオリエンタルショートヘアです。300以上の毛色と柄の組み合わせが認められています。長毛タイプはオリエンタルロングヘアと呼ばれます。オリエンタルはいとこのシャムと同じくらいおしゃべりで、飼い主のすることすべてに参加したがります。",
+          "de": "Britische Züchter wollten in den 1950er- und 60er-Jahren Katzen vom Siam-Typ in einfarbigen Farben und Mustern erschaffen, und das Ergebnis war die Orientalisch Kurzhaar. Sie ist in mehr als 300 Farb- und Musterkombinationen anerkannt. Die Langhaarvariante heißt Orientalisch Langhaar. Orientalen sind so gesprächig wie ihre Verwandten, die Siamkatzen, und wollen bei allem dabei sein, was ihre Menschen tun.",
+          "fr": "Dans les années 1950 et 60, des éleveurs britanniques entreprirent de créer des chats de type siamois en couleurs unies et en motifs, et l'Oriental à poil court en fut le résultat. Il est reconnu dans plus de 300 combinaisons de couleurs et de motifs. La version à poil long s'appelle l'Oriental à poil long. Les Orientaux sont aussi bavards que leurs cousins siamois et veulent participer à tout ce que font leurs humains.",
+          "es": "En las décadas de 1950 y 1960, unos criadores británicos se propusieron crear gatos de tipo siamés en colores sólidos y con patrones, y el resultado fue el oriental de pelo corto. Está reconocido en más de 300 combinaciones de color y patrón. La versión de pelo largo se llama oriental de pelo largo. Los orientales son tan parlanchines como sus primos siameses y quieren participar en todo lo que hace su gente.",
+          "pt-BR": "Nas décadas de 1950 e 60, criadores britânicos decidiram criar gatos do tipo siamês em cores sólidas e padrões, e o resultado foi o oriental de pelo curto. Ele é reconhecido em mais de 300 combinações de cor e padrão. A versão de pelo longo se chama oriental de pelo longo. Os orientais são tão falantes quanto seus primos siameses e querem participar de tudo o que seus humanos fazem.",
+          "ko": "1950~60년대 영국 브리더들은 단색과 여러 무늬를 가진 샴 타입 고양이를 만들고자 했고, 그 결과 탄생한 것이 오리엔탈 쇼트헤어예요. 300가지가 넘는 색과 무늬 조합이 인정되고 있어요. 장모 버전은 오리엔탈 롱헤어라고 불러요. 오리엔탈은 사촌인 샴만큼 수다스럽고, 보호자가 하는 모든 일에 함께하고 싶어 해요."
+        },
+        "care": {
+          "en": "A quick weekly brush keeps the fine coat glossy. Orientals need lots of attention and play, and they are happiest with company.",
+          "tr": "Haftada bir kısa bir tarama ince tüyünü parlak tutar. Oryantaller bol ilgi ve oyun ister, yanlarında biri olduğunda en mutludur.",
+          "ja": "週に1回さっとブラッシングすれば、細い被毛のつやを保てます。オリエンタルにはたくさんのかまいと遊びが必要で、誰かと一緒にいるときがいちばん幸せです。",
+          "de": "Kurzes wöchentliches Bürsten hält das feine Fell glänzend. Orientalen brauchen viel Aufmerksamkeit und Spiel und sind in Gesellschaft am glücklichsten.",
+          "fr": "Un rapide brossage hebdomadaire garde son poil fin bien brillant. Les Orientaux ont besoin de beaucoup d'attention et de jeu, et sont plus heureux en compagnie.",
+          "es": "Un cepillado rápido a la semana mantiene brillante su fino pelaje. Los orientales necesitan mucha atención y juego, y son más felices acompañados.",
+          "pt-BR": "Uma escovação rápida por semana mantém brilhante a pelagem fina. Os orientais precisam de muita atenção e brincadeiras, e são mais felizes com companhia.",
+          "ko": "일주일에 한 번 가볍게 빗어 주면 가는 털이 윤기 있게 유지돼요. 오리엔탈은 많은 관심과 놀이가 필요하고, 누군가와 함께 있을 때 가장 행복해요."
+        },
+        "weight": "2.5–5 kg"
       },
       "premiumFile": "chapter_23_oriental_shorthair_premium"
     },
@@ -2896,7 +3379,28 @@
           "es": "En el folclore japonés se creía que los gatos de cola corta traían buena suerte a su hogar.",
           "pt-BR": "No folclore japonês, acreditava-se que gatos de cauda curta traziam sorte para o lar.",
           "ko": "일본 민담에서는 꼬리가 짧은 고양이가 집에 행운을 가져온다고 믿었어요."
-        }
+        },
+        "goldenAbout": {
+          "en": "Bobtailed cats are said to have reached Japan from China or Korea more than a thousand years ago. In 1602, Japanese officials ordered cats to be set free to protect silkworms from rodents, and bobtails became familiar street and farm cats. The tail is formed by a natural gene and is curled or kinked into a unique pom-pom. Bobtails often 'sing' in a range of soft chirps and tones.",
+          "tr": "Kısa kuyruklu kedilerin bin yıldan uzun süre önce Çin ya da Kore'den Japonya'ya geldiği söylenir. 1602'de Japon yetkililer ipek böceklerini kemirgenlerden korumak için kedilerin serbest bırakılmasını emretti; bobtail'ler böylece sokak ve çiftlik kedisi olarak yaygınlaştı. Kuyruk doğal bir genle oluşur ve her kedide kendine özgü bir ponpon gibi kıvrılır. Bobtail'ler çoğu zaman yumuşak cıvıltılar ve tonlarla 'şarkı söyler'.",
+          "ja": "短いしっぽの猫は、1000年以上前に中国や朝鮮半島から日本に伝わったといわれています。1602年、日本の役人がネズミから蚕を守るために猫を放すよう命じ、ボブテイルはおなじみの街猫や農家の猫になりました。しっぽは自然な遺伝子によって作られ、丸まったり曲がったりして、一匹ごとに違うポンポンのような形になります。ボブテイルは、やわらかなさえずりやさまざまな声色で「歌う」ことがよくあります。",
+          "de": "Stummelschwänzige Katzen sollen vor mehr als tausend Jahren aus China oder Korea nach Japan gelangt sein. 1602 ordneten japanische Beamte an, Katzen freizulassen, um Seidenraupen vor Nagetieren zu schützen, und Bobtails wurden zu vertrauten Straßen- und Hofkatzen. Der Schwanz entsteht durch ein natürliches Gen und ist zu einem einzigartigen Pompon gekringelt oder geknickt. Bobtails „singen“ oft in vielen sanften Zwitscherlauten und Tönen.",
+          "fr": "On dit que les chats à queue courte sont arrivés au Japon depuis la Chine ou la Corée il y a plus de mille ans. En 1602, des fonctionnaires japonais ordonnèrent de libérer les chats pour protéger les vers à soie des rongeurs, et les Bobtails devinrent des chats familiers des rues et des fermes. Sa queue est formée par un gène naturel, enroulée ou coudée en un pompon unique. Les Bobtails « chantent » souvent avec toute une gamme de doux gazouillis et de sons.",
+          "es": "Se dice que los gatos de cola corta llegaron a Japón desde China o Corea hace más de mil años. En 1602, las autoridades japonesas ordenaron soltar a los gatos para proteger los gusanos de seda de los roedores, y los bobtail se convirtieron en gatos habituales de calles y granjas. Su cola se debe a un gen natural y está enroscada o doblada en un pompón único. Los bobtail suelen «cantar» con una variedad de gorjeos y tonos suaves.",
+          "pt-BR": "Dizem que os gatos de cauda curta chegaram ao Japão vindos da China ou da Coreia há mais de mil anos. Em 1602, autoridades japonesas mandaram soltar os gatos para proteger os bichos-da-seda dos roedores, e os bobtails se tornaram gatos comuns nas ruas e fazendas. A cauda é formada por um gene natural e é enrolada ou dobrada em um pompom único. Os bobtails muitas vezes “cantam” com uma variedade de gorjeios e tons suaves.",
+          "ko": "꼬리가 짧은 고양이는 천 년도 더 전에 중국이나 한반도에서 일본으로 건너갔다고 전해져요. 1602년 일본 관리들이 쥐로부터 누에를 지키기 위해 고양이를 풀어 주라고 명령했고, 밥테일은 거리와 농가에서 흔히 보는 고양이가 되었어요. 꼬리는 자연적인 유전자로 만들어지며, 말리거나 꺾여서 저마다 독특한 방울 모양이 돼요. 밥테일은 부드러운 짹짹 소리와 다양한 음색으로 '노래'하는 경우가 많아요."
+        },
+        "care": {
+          "en": "A weekly brush is enough for both short- and longhaired Bobtails; handle the tail gently. They love active games and learning tricks.",
+          "tr": "Kısa ve uzun tüylü Bobtail'ler için haftada bir tarama yeterlidir; kuyruğa nazik dokunun. Hareketli oyunları ve numara öğrenmeyi severler.",
+          "ja": "短毛でも長毛でも、ボブテイルは週に1回のブラッシングで十分です。しっぽはやさしく扱ってあげましょう。活発な遊びや芸を覚えることが大好きです。",
+          "de": "Einmal pro Woche bürsten reicht für kurz- wie langhaarige Bobtails; fasse den Schwanz behutsam an. Sie lieben aktive Spiele und lernen gern Tricks.",
+          "fr": "Un brossage hebdomadaire suffit pour les Bobtails à poil court comme à poil long ; manipulez la queue avec douceur. Ils adorent les jeux actifs et apprendre des tours.",
+          "es": "Un cepillado semanal basta tanto para los bobtail de pelo corto como para los de pelo largo; trata su cola con delicadeza. Les encantan los juegos activos y aprender trucos.",
+          "pt-BR": "Uma escovação semanal é suficiente tanto para bobtails de pelo curto quanto de pelo longo; manuseie a cauda com delicadeza. Eles adoram brincadeiras ativas e aprender truques.",
+          "ko": "단모든 장모든 밥테일은 일주일에 한 번 빗어 주면 충분해요. 꼬리는 부드럽게 다뤄 주세요. 활발한 놀이와 재주 배우기를 정말 좋아해요."
+        },
+        "weight": "2.5–4 kg"
       },
       "premiumFile": "chapter_24_japanese_bobtail_premium"
     },
@@ -3015,7 +3519,28 @@
           "es": "Los gatitos somalíes nacen oscuros, y su brillante pelaje moteado puede tardar hasta dos años en desarrollarse.",
           "pt-BR": "Os filhotes de somali nascem escuros, e a pelagem tiqueada e brilhante pode levar até dois anos para se formar.",
           "ko": "소말리 새끼는 짙은 색으로 태어나고, 빛나는 틱드 털이 완성되기까지 최대 2년이 걸려요."
-        }
+        },
+        "goldenAbout": {
+          "en": "Longhaired kittens occasionally appeared in Abyssinian litters, and in the 1960s and 70s breeders such as Evelyn Mague in the United States chose to develop them as a breed. The name refers to Somalia, Ethiopia's neighbor, as a nod to the Abyssinian. A Somali's coat can have as many as ten bands of color on a single hair. Somalis are clever problem-solvers and are known to open cupboards.",
+          "tr": "Habeş kedisi yavruları arasında zaman zaman uzun tüylüler doğuyordu; 1960'lar ve 70'lerde ABD'de Evelyn Mague gibi üreticiler onları ayrı bir tür olarak geliştirmeye karar verdi. Adı, Habeş kedisine selam olarak Etiyopya'nın komşusu Somali'den gelir. Somali'nin tüyünde tek bir telde ona kadar renk bandı bulunabilir. Somali'ler zeki problem çözücülerdir ve dolap kapaklarını açmalarıyla bilinirler.",
+          "ja": "アビシニアンの子猫の中にときどき長毛の子が生まれることがあり、1960〜70年代には、アメリカのエヴリン・マーグをはじめとするブリーダーたちが、それを品種として確立することにしました。名前は、アビシニアンにちなんで、エチオピアの隣国ソマリアに由来しています。ソマリの被毛には、1本の毛に最大10本もの色の帯が入ることがあります。ソマリは賢い問題解決の達人で、戸棚を開けることで知られています。",
+          "de": "In Abessinier-Würfen tauchten gelegentlich langhaarige Kätzchen auf, und in den 1960er- und 70er-Jahren beschlossen Züchter wie Evelyn Mague in den Vereinigten Staaten, sie als Rasse zu entwickeln. Der Name bezieht sich auf Somalia, den Nachbarn Äthiopiens, als Anspielung auf die Abessinier. Das Fell einer Somali kann bis zu zehn Farbbänder auf einem einzigen Haar haben. Somalis sind clevere Problemlöser und dafür bekannt, Schränke zu öffnen.",
+          "fr": "Des chatons à poil long apparaissaient parfois dans les portées d'Abyssins, et dans les années 1960 et 70, des éleveurs comme Evelyn Mague aux États-Unis choisirent d'en faire une race. Le nom fait référence à la Somalie, voisine de l'Éthiopie, en clin d'œil à l'Abyssin. Le pelage d'un Somali peut compter jusqu'à dix bandes de couleur sur un seul poil. Les Somalis sont d'habiles résolveurs de problèmes, connus pour ouvrir les placards.",
+          "es": "De vez en cuando nacían gatitos de pelo largo en camadas de abisinios, y en las décadas de 1960 y 1970 criadores como Evelyn Mague, en Estados Unidos, decidieron desarrollarlos como raza. El nombre hace referencia a Somalia, vecina de Etiopía, como guiño al abisinio. El pelaje del somalí puede tener hasta diez bandas de color en un solo pelo. Los somalíes son listos resolviendo problemas y se sabe que abren armarios.",
+          "pt-BR": "De vez em quando, filhotes de pelo longo apareciam em ninhadas de abissínios, e nas décadas de 1960 e 70 criadores como Evelyn Mague, nos Estados Unidos, decidiram desenvolvê-los como raça. O nome se refere à Somália, vizinha da Etiópia, como uma homenagem ao abissínio. A pelagem do somali pode ter até dez faixas de cor em um único fio. Os somalis são ótimos em resolver problemas e são conhecidos por abrir armários.",
+          "ko": "아비시니안 새끼들 사이에서 가끔 장모 새끼 고양이가 태어났는데, 1960~70년대에 미국의 에벌린 마그 같은 브리더들이 이들을 품종으로 발전시키기로 했어요. 이름은 아비시니안에 대한 경의로 에티오피아의 이웃 나라인 소말리아에서 따왔어요. 소말리의 털은 한 가닥에 최대 열 개의 색 띠가 있을 수 있어요. 소말리는 영리한 문제 해결사로, 찬장을 여는 것으로 유명해요."
+        },
+        "care": {
+          "en": "Brush two or three times a week, especially the ruff and tail. Give it plenty of play and puzzle toys to keep it busy.",
+          "tr": "Özellikle yele ve kuyruk olmak üzere haftada iki üç kez tarayın. Meşgul kalması için bol oyun ve zekâ oyuncakları sağlayın.",
+          "ja": "週に2〜3回、特に首まわりの飾り毛としっぽを中心にブラッシングしましょう。退屈しないように、たっぷりの遊びとパズルおもちゃを用意してあげましょう。",
+          "de": "Bürste sie zwei- bis dreimal pro Woche, besonders die Halskrause und den Schwanz. Gib ihr viel Spiel und Intelligenzspielzeug, damit sie beschäftigt ist.",
+          "fr": "Brossez-le deux ou trois fois par semaine, surtout la collerette et la queue. Offrez-lui beaucoup de jeu et des jouets de réflexion pour l'occuper.",
+          "es": "Cepíllalo dos o tres veces por semana, sobre todo la gorguera y la cola. Dale mucho juego y juguetes de ingenio para mantenerlo ocupado.",
+          "pt-BR": "Escove duas ou três vezes por semana, principalmente a juba e a cauda. Ofereça muitas brincadeiras e brinquedos de raciocínio para mantê-lo ocupado.",
+          "ko": "일주일에 두세 번, 특히 목 주변 털과 꼬리를 중심으로 빗어 주세요. 심심하지 않도록 놀이 시간과 퍼즐 장난감을 넉넉히 마련해 주세요."
+        },
+        "weight": "3–5 kg"
       },
       "premiumFile": "chapter_25_somali_premium"
     },
@@ -3129,7 +3654,28 @@
           "es": "Su nombre no viene de las montañas, sino del conejo himalayo, que tiene las mismas puntas oscuras.",
           "pt-BR": "Seu nome não vem das montanhas, e sim do coelho himalaio, que tem as mesmas pontas escuras.",
           "ko": "이름은 산이 아니라, 똑같이 끝부분이 짙은 털색을 지닌 히말라얀 토끼에서 왔어요."
-        }
+        },
+        "goldenAbout": {
+          "en": "In the 1930s, Harvard researchers Virginia Cobb and Clyde Keeler crossed Siamese and Persians to study how the colorpoint gene is inherited. Breeders in Britain and the United States later built on this work, and the breed was recognized in the 1950s. Himalayans come in seal, blue, chocolate, lilac, flame and many other point colors. They usually enjoy a quiet home and gentle attention more than climbing and racing around.",
+          "tr": "1930'larda Harvard araştırmacıları Virginia Cobb ve Clyde Keeler, uçlu renk geninin kalıtımını incelemek için Siyam ve İran kedilerini melezledi. İngiltere ve ABD'deki üreticiler bu çalışmayı geliştirdi ve tür 1950'lerde tanındı. Himalaya kedileri samur, mavi, çikolata, lila, alev ve daha pek çok uç renginde görülür. Tırmanıp koşturmaktan çok sakin bir evi ve nazik ilgiyi severler.",
+          "ja": "1930年代、ハーバード大学の研究者ヴァージニア・コブとクライド・キーラーは、カラーポイントの遺伝子がどのように受け継がれるかを調べるため、シャムとペルシャを交配させました。その後、イギリスとアメリカのブリーダーがこの研究をもとに品種を作り上げ、1950年代に認められました。ヒマラヤンには、シール、ブルー、チョコレート、ライラック、フレイムなど、さまざまなポイントカラーがあります。登ったり走り回ったりするよりも、静かな家とやさしいかまいを好むのがふつうです。",
+          "de": "In den 1930er-Jahren kreuzten die Harvard-Forscher Virginia Cobb und Clyde Keeler Siam- und Perserkatzen, um zu untersuchen, wie das Colorpoint-Gen vererbt wird. Züchter in Großbritannien und den Vereinigten Staaten bauten später auf dieser Arbeit auf, und die Rasse wurde in den 1950er-Jahren anerkannt. Himalayakatzen gibt es in Seal, Blau, Chocolate, Lilac, Flame und vielen weiteren Point-Farben. Meist genießen sie ein ruhiges Zuhause und sanfte Zuwendung mehr als Klettern und Herumrennen.",
+          "fr": "Dans les années 1930, les chercheurs de Harvard Virginia Cobb et Clyde Keeler croisèrent des Siamois et des Persans pour étudier la transmission du gène colourpoint. Des éleveurs en Grande-Bretagne et aux États-Unis s'appuyèrent ensuite sur ces travaux, et la race fut reconnue dans les années 1950. L'Himalayen existe en seal, bleu, chocolat, lilas, flamme et de nombreuses autres couleurs de points. Il apprécie généralement une maison calme et une attention douce plus que l'escalade et les courses effrénées.",
+          "es": "En la década de 1930, los investigadores de Harvard Virginia Cobb y Clyde Keeler cruzaron siameses y persas para estudiar cómo se hereda el gen colorpoint. Más tarde, criadores de Gran Bretaña y Estados Unidos se basaron en ese trabajo, y la raza fue reconocida en la década de 1950. Los himalayos tienen puntas de color seal, azul, chocolate, lila, flame y muchos otros. Normalmente disfrutan más de un hogar tranquilo y de atenciones suaves que de trepar y correr de un lado a otro.",
+          "pt-BR": "Na década de 1930, os pesquisadores de Harvard Virginia Cobb e Clyde Keeler cruzaram siameses e persas para estudar como o gene colorpoint é herdado. Mais tarde, criadores da Grã-Bretanha e dos Estados Unidos deram continuidade a esse trabalho, e a raça foi reconhecida na década de 1950. Os himalaios aparecem nas cores de extremidade seal, azul, chocolate, lilás, flame e muitas outras. Geralmente preferem um lar tranquilo e atenção carinhosa a escalar e correr pela casa.",
+          "ko": "1930년대 하버드 대학교의 연구자 버지니아 코브와 클라이드 킬러는 컬러포인트 유전자가 어떻게 유전되는지 연구하기 위해 샴과 페르시안을 교배했어요. 이후 영국과 미국의 브리더들이 이 연구를 바탕으로 품종을 발전시켰고, 1950년대에 인정받았어요. 히말라얀에는 실, 블루, 초콜릿, 라일락, 플레임 등 다양한 포인트 색이 있어요. 보통 높이 오르거나 뛰어다니기보다는 조용한 집과 다정한 관심을 더 좋아해요."
+        },
+        "care": {
+          "en": "Comb the long coat every day and wipe the eyes gently. Keep it in a cool, calm home and check its breathing in hot weather.",
+          "tr": "Uzun tüyünü her gün tarayın, gözlerini nazikçe silin. Serin ve sakin bir evde tutun, sıcak havalarda nefes alışına dikkat edin.",
+          "ja": "長い被毛は毎日コーミングし、目はやさしく拭いてあげましょう。涼しく落ち着いた家で飼い、暑い時期は呼吸の様子に気をつけましょう。",
+          "de": "Kämme das lange Fell jeden Tag und wische die Augen sanft sauber. Halte sie in einem kühlen, ruhigen Zuhause und achte bei heißem Wetter auf ihre Atmung.",
+          "fr": "Peignez son long pelage tous les jours et nettoyez délicatement ses yeux. Gardez-le dans un foyer frais et calme, et surveillez sa respiration par temps chaud.",
+          "es": "Peina su largo pelaje todos los días y límpiale los ojos con suavidad. Mantenlo en un hogar fresco y tranquilo, y vigila su respiración cuando haga calor.",
+          "pt-BR": "Penteie a pelagem longa todos os dias e limpe os olhos com delicadeza. Mantenha-o em um lar fresco e tranquilo e observe a respiração dele no tempo quente.",
+          "ko": "긴 털은 매일 빗질하고, 눈은 부드럽게 닦아 주세요. 시원하고 조용한 집에서 지내게 하고, 더운 날씨에는 숨쉬는 모습을 잘 살펴 주세요."
+        },
+        "weight": "3–6 kg"
       },
       "premiumFile": "chapter_26_himalayan_premium"
     }

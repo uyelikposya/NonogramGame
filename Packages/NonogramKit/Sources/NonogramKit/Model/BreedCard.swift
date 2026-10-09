@@ -37,6 +37,12 @@ public struct BreedCard: Hashable, Sendable, Decodable {
     public let about: LocalizedText?
     /// Altın Kartın ön yüzündeki bilgi: normal karttakinden farklı, ikinci bir ilginç bilgi.
     public let goldenFact: LocalizedText?
+    /// Altın Kartın arka yüzü: normal karttakinden daha ayrıntılı geçmiş ve ilginç bilgiler.
+    public let goldenAbout: LocalizedText?
+    /// Altın Kartın arka yüzü: bakım rehberi.
+    public let care: LocalizedText?
+    /// Yetişkin kilo aralığı, ör. "3–5 kg".
+    public let weight: String?
 
     public init(
         number: Int,
@@ -47,7 +53,10 @@ public struct BreedCard: Hashable, Sendable, Decodable {
         stats: Stats,
         fact: LocalizedText,
         about: LocalizedText? = nil,
-        goldenFact: LocalizedText? = nil
+        goldenFact: LocalizedText? = nil,
+        goldenAbout: LocalizedText? = nil,
+        care: LocalizedText? = nil,
+        weight: String? = nil
     ) {
         self.number = number
         self.rarity = rarity
@@ -58,5 +67,8 @@ public struct BreedCard: Hashable, Sendable, Decodable {
         self.fact = fact
         self.about = about
         self.goldenFact = goldenFact
+        self.goldenAbout = goldenAbout
+        self.care = care
+        self.weight = weight
     }
 }

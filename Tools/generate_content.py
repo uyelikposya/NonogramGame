@@ -790,6 +790,10 @@ GOLDEN_FACT = {
 }
 
 
+# Altın Kartın arka yüzü: daha ayrıntılı geçmiş, bakım rehberi ve kilo (Tools/golden_cards.json).
+GOLDEN_CARDS = json.loads((Path(__file__).resolve().parent / "golden_cards.json").read_text())
+
+
 TITLES = {
     "burmese": ("Burmese", "Burma Kedisi"), "chartreux": ("Chartreux", "Chartreux"),
     "egyptian-mau": ("Egyptian Mau", "Mısır Mau"), "manx": ("Manx", "Manx"), "bombay": ("Bombay", "Bombay"),
@@ -816,6 +820,9 @@ def card_json(breed, order):
         "fact": {"en": fact_en, "tr": fact_tr},
         "about": dict(zip(("en", "tr"), ABOUT[breed["id"]])),
         "goldenFact": dict(zip(("en", "tr"), GOLDEN_FACT[breed["id"]])),
+        "goldenAbout": dict(zip(("en", "tr"), GOLDEN_CARDS[breed["id"]]["goldenAbout"])),
+        "care": dict(zip(("en", "tr"), GOLDEN_CARDS[breed["id"]]["care"])),
+        "weight": GOLDEN_CARDS[breed["id"]]["weight"],
     }
 
 

@@ -44,7 +44,15 @@ final class GameplayUITests: XCTestCase {
         XCTAssertTrue(start.waitForExistence(timeout: 15))
         start.tap()
 
-        let board = app.descendants(matching: .any)["game.board"]
+        var board = app.descendants(matching: .any)["game.board"]
+        XCTAssertTrue(board.waitForExistence(timeout: 10))
+
+        // İlk ders (2x1): soldaki kareye dokununca biter; "Sonraki" ile 5x5 derse geçilir
+        board.coordinate(withNormalizedOffset: CGVector(dx: 0.25, dy: 0.5)).tap()
+        let next = app.buttons["result.next"]
+        XCTAssertTrue(next.waitForExistence(timeout: 10), "İlk ders bitmedi")
+        next.tap()
+        board = app.descendants(matching: .any)["game.board"]
         XCTAssertTrue(board.waitForExistence(timeout: 10))
 
         /// Eğitim 1 (5x5 "Mama Kutusu"): kenarlar boş, ortadaki 3x3 dolu.

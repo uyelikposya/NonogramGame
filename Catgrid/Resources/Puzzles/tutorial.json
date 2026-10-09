@@ -3,6 +3,26 @@
   "chapterID": "tutorial",
   "puzzles": [
     {
+      "id": "tutorial-00",
+      "title": {
+        "en": "First Square",
+        "tr": "İlk Kare",
+        "ja": "はじめてのマス",
+        "de": "Erstes Feld",
+        "fr": "Première case",
+        "es": "Primera casilla",
+        "pt-BR": "Primeiro Quadrado",
+        "ko": "첫 번째 칸"
+      },
+      "palette": {
+        "a": "#5B4636"
+      },
+      "pixels": [
+        "a."
+      ],
+      "lesson": "firstSquare"
+    },
+    {
       "id": "tutorial-01",
       "title": {
         "en": "Cat Food Box",

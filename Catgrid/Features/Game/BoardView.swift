@@ -14,6 +14,8 @@ struct BoardView: View {
     var flashingCell: GridPosition?
     /// Kedinin "şuna bak" dediği satır ya da sütun.
     var hint: HintFinder.Hint?
+    /// Eğitimde dokunulacak kareyi gösteren pati.
+    var pointer: GridPosition?
     let onDragBegan: (GridPosition) -> Void
     let onDragMoved: (GridPosition) -> Void
     let onDragEnded: () -> Void
@@ -150,6 +152,15 @@ struct BoardView: View {
         }
         .frame(width: cell * CGFloat(board.columns), height: cell * CGFloat(board.rows))
         .clipShape(RoundedRectangle(cornerRadius: 6))
+        // Pati hep hiyerarşide durur (yalnızca görünürlüğü değişir); dokunmayı engellemez
+        .overlay(alignment: .topLeading) {
+            PawPointer()
+                .offset(
+                    x: CGFloat(pointer?.column ?? 0) * cell + cell * 0.45,
+                    y: CGFloat(pointer?.row ?? 0) * cell + cell * 0.5
+                )
+                .opacity(pointer == nil ? 0 : 1)
+        }
         .contentShape(Rectangle())
         .gesture(dragGesture(cell: cell))
         .accessibilityElement()

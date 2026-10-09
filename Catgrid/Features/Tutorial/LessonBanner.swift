@@ -1,48 +1,11 @@
 import NonogramKit
 import SwiftUI
 
-/// Eğitim bulmacalarının üstünde, o bölümün öğrettiği kuralı anlatan balon.
-@MainActor
-struct LessonBanner: View {
-    @Environment(\.appTheme) private var theme
-    let lesson: TutorialLesson
-    @State private var isExpanded = true
-
-    var body: some View {
-        Button {
-            withAnimation(.snappy) { isExpanded.toggle() }
-        } label: {
-            HStack(alignment: .top, spacing: 12) {
-                Image(systemName: "lightbulb.fill")
-                    .foregroundStyle(theme.accent)
-                    .font(.title3)
-                VStack(alignment: .leading, spacing: 4) {
-                    Text(lesson.title)
-                        .font(.headline)
-                        .foregroundStyle(theme.textPrimary)
-                    if isExpanded {
-                        Text(lesson.message)
-                            .font(.subheadline)
-                            .foregroundStyle(theme.textSecondary)
-                            .fixedSize(horizontal: false, vertical: true)
-                    }
-                }
-                Spacer(minLength: 0)
-                Image(systemName: isExpanded ? "chevron.up" : "chevron.down")
-                    .font(.caption.weight(.bold))
-                    .foregroundStyle(theme.textSecondary)
-            }
-            .multilineTextAlignment(.leading)
-            .padding(16)
-            .card(fill: theme.surface, cornerRadius: 18)
-        }
-        .buttonStyle(.plain)
-    }
-}
-
+/// Derslerin başlığı ve Muffin'in anlattığı kural (MuffinLessonBanner gösterir).
 extension TutorialLesson {
     var title: LocalizedStringResource {
         switch self {
+        case .firstSquare: "Your first square"
         case .tapToFill: "Tap to fill"
         case .fullLines: "Full lines"
         case .emptyLines: "Empty lines"
@@ -59,6 +22,8 @@ extension TutorialLesson {
 
     var message: LocalizedStringResource {
         switch self {
+        case .firstSquare:
+            "Hi, I'm Muffin! The 1 next to the row means one square is filled. The 1 above a column shows which one. Tap it!"
         case .tapToFill:
             "Numbers tell you how many squares in a line are filled. A 3 means three filled squares side by side. Tap a square to fill it."
         case .fullLines:

@@ -28,10 +28,13 @@ public struct Progression: Sendable {
 
     public let catalog: LevelCatalog
     public let completedIDs: Set<String>
+    /// Oyuncu eğitimi atladıysa ilk kedi türü eğitim bitmeden açılır.
+    public let tutorialSkipped: Bool
 
-    public init(catalog: LevelCatalog, completedIDs: Set<String>) {
+    public init(catalog: LevelCatalog, completedIDs: Set<String>, tutorialSkipped: Bool = false) {
         self.catalog = catalog
         self.completedIDs = completedIDs
+        self.tutorialSkipped = tutorialSkipped
     }
 
     public func isCompleted(_ puzzleID: String) -> Bool {
@@ -51,6 +54,7 @@ public struct Progression: Sendable {
         guard let index = playableChapters.firstIndex(where: { $0.id == chapter.id }) else { return false }
         if index == 0 || chapter.puzzles.contains(where: { isCompleted($0.id) }) { return true }
         let previous = playableChapters[index - 1]
+        if previous.kind == .tutorial && tutorialSkipped { return true }
         guard isUnlocked(previous) else { return false }
         return completedCount(in: previous) >= requiredCount(toUnlockAfter: previous)
     }
@@ -74,7 +78,10 @@ public struct Progression: Sendable {
 
     /// "Devam Et" butonu: ilk açık ve bitmemiş bulmaca.
     public var nextPlayable: Puzzle? {
-        catalog.orderedPuzzles.first { isUnlocked($0.id) && !isCompleted($0.id) }
+        catalog.orderedPuzzles.first { puzzle in
+            if tutorialSkipped, catalog.chapter(containing: puzzle.id)?.kind == .tutorial { return false }
+            return isUnlocked(puzzle.id) && !isCompleted(puzzle.id)
+        }
     }
 
     /// Premium bulmaca: tür açıldıysa ve (ilkiyse ya da) bir önceki premium bulmaca çözüldüyse açık.

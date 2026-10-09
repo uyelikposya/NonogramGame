@@ -136,6 +136,16 @@ final class CatalogTests: XCTestCase {
         XCTAssertEqual(progression.nextPlayable?.id, "s1")
     }
 
+    /// Eğitimi atlayan oyuncu doğrudan ilk türe geçer; eğitim bulmacaları yine oynanabilir.
+    func testSkippedTutorialOpensFirstBreed() throws {
+        let catalog = try sampleCatalog()
+        let progression = Progression(catalog: catalog, completedIDs: [], tutorialSkipped: true)
+        XCTAssertTrue(progression.isUnlocked(catalog.chapters[1]))
+        XCTAssertTrue(progression.isUnlocked("s1"))
+        XCTAssertTrue(progression.isUnlocked("t1"))
+        XCTAssertEqual(progression.nextPlayable?.id, "s1")
+    }
+
     func testNextBreedUnlocksWhenHalfOfPreviousIsSolved() throws {
         let catalog = try load(files: [
             "tutorial": Self.chapter("tutorial", puzzles: ["t1", "t2"]),

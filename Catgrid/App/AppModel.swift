@@ -81,7 +81,19 @@ final class AppModel {
     }
 
     var progression: Progression {
-        Progression(catalog: catalog, completedIDs: progress.completedIDs)
+        Progression(catalog: catalog, completedIDs: progress.completedIDs, tutorialSkipped: isTutorialSkipped)
+    }
+
+    // MARK: - Eğitim
+
+    static let tutorialSkippedKey = "tutorial.skipped"
+
+    /// Oyuncu Muffin'in Okulu'nu atladı: ilk tür hemen açılır.
+    private(set) var isTutorialSkipped = UserDefaults.standard.bool(forKey: AppModel.tutorialSkippedKey)
+
+    func skipTutorial() {
+        isTutorialSkipped = true
+        UserDefaults.standard.set(true, forKey: Self.tutorialSkippedKey)
     }
 
     @discardableResult
@@ -226,6 +238,8 @@ final class AppModel {
     func resetProgress() {
         progress.resetAll()
         badges.reset()
+        isTutorialSkipped = false
+        UserDefaults.standard.removeObject(forKey: Self.tutorialSkippedKey)
     }
 }
 

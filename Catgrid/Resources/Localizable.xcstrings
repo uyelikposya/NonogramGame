@@ -10079,52 +10079,6 @@
         }
       }
     },
-    "Finish Kitten School.": {
-      "localizations": {
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Yavru Okulu'nu bitir."
-          }
-        },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "子猫の学校を卒業する。"
-          }
-        },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Schließe die Kätzchenschule ab."
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Terminez l'École des chatons."
-          }
-        },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Termina la Escuela de gatitos."
-          }
-        },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Conclua a Escola de Gatinhos."
-          }
-        },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "아기 고양이 학교를 마치세요."
-          }
-        }
-      }
-    },
     "Collect your first cat card.": {
       "localizations": {
         "tr": {
@@ -10581,6 +10535,604 @@
           "stringUnit": {
             "state": "translated",
             "value": "별 100개를 모으세요."
+          }
+        }
+      }
+    },
+    "Breed Story": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Türün Hikâyesi"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "品種の物語"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geschichte der Rasse"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Histoire de la race"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Historia de la raza"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "História da Raça"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "품종 이야기"
+          }
+        }
+      }
+    },
+    "Care Guide": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bakım Rehberi"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "お手入れガイド"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pflegetipps"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Guide d'entretien"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Guía de cuidados"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Guia de Cuidados"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "돌봄 가이드"
+          }
+        }
+      }
+    },
+    "Weight": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kilo"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "体重"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Gewicht"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Poids"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Peso"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Peso"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "체중"
+          }
+        }
+      }
+    },
+    "Finish Muffin's School.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Muffin'in Okulu'nu bitir."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "マフィンの学校を卒業する。"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Schließe Muffins Schule ab."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Terminez l'école de Muffin."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Termina la escuela de Muffin."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Conclua a Escola da Muffin."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "머핀의 학교를 마치세요."
+          }
+        }
+      }
+    },
+    "Your first square": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İlk karen"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "はじめてのマス"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dein erstes Feld"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ta première case"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tu primera casilla"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Seu primeiro quadrado"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "첫 번째 칸"
+          }
+        }
+      }
+    },
+    "Hi, I'm Muffin! The 1 next to the row means one square is filled. The 1 above a column shows which one. Tap it!": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Merhaba, ben Muffin! Satırın yanındaki 1, o satırda bir karenin dolu olduğunu söyler. Sütunun üstündeki 1 hangisi olduğunu gösterir. Ona dokun!"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "こんにちは、マフィンです!行の横の「1」は、マスが1つ塗られるという意味。列の上の「1」がどのマスかを教えてくれます。タップしてみて!"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hallo, ich bin Muffin! Die 1 neben der Zeile bedeutet: Ein Feld ist ausgefüllt. Die 1 über einer Spalte zeigt, welches. Tippe darauf!"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Salut, je suis Muffin ! Le 1 à côté de la ligne signifie qu'une case est remplie. Le 1 au-dessus d'une colonne indique laquelle. Touche-la !"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "¡Hola, soy Muffin! El 1 junto a la fila significa que hay una casilla rellena. El 1 encima de una columna te dice cuál. ¡Tócala!"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Oi, eu sou a Muffin! O 1 ao lado da linha quer dizer que um quadrado está preenchido. O 1 em cima de uma coluna mostra qual. Toque nele!"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "안녕, 나는 머핀이야! 줄 옆의 1은 칸 하나가 칠해진다는 뜻이야. 열 위의 1이 어느 칸인지 알려 줘. 눌러 봐!"
+          }
+        }
+      }
+    },
+    "Tip: pick your favorite colors in Settings → Color Palette.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İpucu: En sevdiğin renkleri Ayarlar → Renk Paleti'nden seçebilirsin."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ヒント:設定 → カラーパレットで好きな色を選べます。"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tipp: Wähle deine Lieblingsfarben unter Einstellungen → Farbpalette."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Astuce : choisis tes couleurs préférées dans Réglages → Palette de couleurs."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Consejo: elige tus colores favoritos en Ajustes → Paleta de colores."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dica: escolha suas cores favoritas em Ajustes → Paleta de Cores."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "팁: 설정 → 색상 팔레트에서 좋아하는 색을 고를 수 있어요."
+          }
+        }
+      }
+    },
+    "Tip: you can turn the music off in Settings → Sound.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İpucu: Müziği Ayarlar → Ses bölümünden kapatabilirsin."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ヒント:音楽は設定 → サウンドでオフにできます。"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tipp: Die Musik kannst du unter Einstellungen → Ton ausschalten."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Astuce : tu peux couper la musique dans Réglages → Son."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Consejo: puedes apagar la música en Ajustes → Sonido."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dica: você pode desligar a música em Ajustes → Som."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "팁: 설정 → 사운드에서 음악을 끌 수 있어요."
+          }
+        }
+      }
+    },
+    "Stuck? Pet the little cat below the board and it will show you a line to look at.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Takıldın mı? Tahtanın altındaki küçük kediyi sev, sana bakman gereken satırı göstersin."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "行き詰まったら、盤面の下の小さな猫をなでてみて。見るべき列を教えてくれます。"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hängst du fest? Streichle die kleine Katze unter dem Spielfeld – sie zeigt dir eine Zeile, die du dir ansehen solltest."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bloqué ? Caresse le petit chat sous la grille : il te montrera une ligne à regarder."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "¿Atascado? Acaricia al gatito bajo el tablero y te mostrará una línea en la que fijarte."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Travou? Faça carinho no gatinho embaixo do tabuleiro e ele mostra uma linha para você olhar."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "막혔나요? 판 아래의 작은 고양이를 쓰다듬으면 살펴볼 줄을 알려 줘요."
+          }
+        }
+      }
+    },
+    "Tip: pause any time with the button at the top right.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İpucu: Sağ üstteki düğmeyle istediğin zaman duraklatabilirsin."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ヒント:右上のボタンでいつでも一時停止できます。"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tipp: Mit der Taste oben rechts kannst du jederzeit pausieren."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Astuce : mets le jeu en pause à tout moment avec le bouton en haut à droite."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Consejo: pausa cuando quieras con el botón de arriba a la derecha."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Dica: pause quando quiser com o botão no canto superior direito."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "팁: 오른쪽 위 버튼으로 언제든 일시정지할 수 있어요."
+          }
+        }
+      }
+    },
+    "Skip tutorial": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eğitimi atla"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "チュートリアルをスキップ"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tutorial überspringen"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Passer le tutoriel"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saltar tutorial"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pular tutorial"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "튜토리얼 건너뛰기"
+          }
+        }
+      }
+    },
+    "Skip the tutorial?": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eğitim atlansın mı?"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "チュートリアルをスキップしますか?"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tutorial überspringen?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Passer le tutoriel ?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "¿Saltar el tutorial?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pular o tutorial?"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "튜토리얼을 건너뛸까요?"
+          }
+        }
+      }
+    },
+    "The first cat breed opens right away. You can come back to Muffin's School any time from All Levels.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İlk kedi türü hemen açılır. Muffin'in Okulu'na istediğin zaman Tüm Bölümler'den dönebilirsin."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "最初の猫の品種がすぐに開きます。マフィンの学校には「すべてのレベル」からいつでも戻れます。"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die erste Katzenrasse wird sofort freigeschaltet. Zu Muffins Schule kannst du jederzeit über „Alle Level“ zurückkehren."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La première race de chat s'ouvre tout de suite. Tu peux revenir à l'école de Muffin à tout moment depuis Tous les niveaux."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La primera raza de gato se abre enseguida. Puedes volver a la escuela de Muffin cuando quieras desde Todos los niveles."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "A primeira raça de gato abre na hora. Você pode voltar à Escola da Muffin quando quiser em Todos os Níveis."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "첫 번째 고양이 품종이 바로 열려요. 머핀의 학교는 '모든 레벨'에서 언제든 다시 갈 수 있어요."
           }
         }
       }

@@ -331,20 +331,36 @@ struct BreedCardBackView: View {
                     .foregroundStyle(inkSecondary)
             }
 
-            Label("About the Breed", systemImage: "book.closed.fill")
+            // Altın Kart: normal kartın arkasındakinden farklı, daha ayrıntılı geçmiş ve bakım rehberi
+            let golden = isGolden ? card.goldenAbout : nil
+            Label(golden == nil ? "About the Breed" : "Breed Story", systemImage: golden == nil ? "book.closed.fill" : "crown.fill")
                 .font(.headline)
                 .foregroundStyle(accent)
 
-            Text(verbatim: (card.about ?? card.fact).resolved)
-                .font(.callout)
+            Text(verbatim: (golden ?? card.about ?? card.fact).resolved)
+                .font(golden == nil ? .callout : .footnote)
                 .foregroundStyle(ink)
                 .lineSpacing(3)
                 .fixedSize(horizontal: false, vertical: true)
+
+            if isGolden, let care = card.care {
+                Label("Care Guide", systemImage: "heart.text.square.fill")
+                    .font(.headline)
+                    .foregroundStyle(accent)
+                Text(verbatim: care.resolved)
+                    .font(.footnote)
+                    .foregroundStyle(ink)
+                    .lineSpacing(3)
+                    .fixedSize(horizontal: false, vertical: true)
+            }
 
             Divider()
 
             VStack(alignment: .leading, spacing: 6) {
                 infoRow(icon: "hourglass", label: "Lifespan", value: Text("\(card.lifespan) years"))
+                if isGolden, let weight = card.weight {
+                    infoRow(icon: "scalemass.fill", label: "Weight", value: Text(verbatim: weight))
+                }
                 infoRow(icon: "paintbrush.pointed.fill", label: "Coat", value: Text(verbatim: card.coat.resolved))
             }
             .font(.subheadline)

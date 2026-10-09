@@ -1,0 +1,288 @@
+{
+ "siamese": {
+  "weight": "3–5 kg",
+  "goldenAbout": [
+   "The Siamese appears in the Tamra Maew, a book of cat poems from old Siam, where pointed cats were treasured by royalty and temples. The first Siamese reached Britain in the 1880s as gifts from the Siamese court. Early cats often had crossed eyes and kinked tails, traits breeders later bred away. Today's Siamese comes in two looks: the slender modern type and the rounder 'traditional' or 'applehead' type.",
+   "Siyam kedisi, eski Siyam'dan kalma bir kedi şiirleri kitabı olan Tamra Maew'de geçer; uçları koyu kediler saray ve tapınaklarda çok değerliydi. İlk Siyam kedileri 1880'lerde Siyam sarayının hediyesi olarak İngiltere'ye geldi. İlk kedilerde şaşı gözler ve kıvrık kuyruklar sık görülürdü; üreticiler bu özellikleri zamanla azalttı. Bugün iki tip vardır: ince yapılı modern tip ve daha yuvarlak 'geleneksel' ya da 'elma kafa' tipi."
+  ],
+  "care": [
+   "Its short coat needs only a weekly brush. Siamese need company and play every day; a bored Siamese will let you know loudly.",
+   "Kısa tüyü haftada bir taranması yeterlidir. Her gün arkadaşlık ve oyun ister; canı sıkılan bir Siyam bunu yüksek sesle belli eder."
+  ]
+ },
+ "british-shorthair": {
+  "weight": "4–8 kg",
+  "goldenAbout": [
+   "The British Shorthair was one of the stars of the first modern cat show, held at London's Crystal Palace in 1871. The breed nearly vanished during the two World Wars and was rebuilt with help from Persians and other cats. Although blue-grey is the classic color, it also comes in cream, black, lilac, golden and many patterns. It is famously independent and usually prefers sitting beside you rather than on your lap.",
+   "British Shorthair, 1871'de Londra'daki Crystal Palace'ta düzenlenen ilk modern kedi sergisinin yıldızlarından biriydi. Tür iki dünya savaşı sırasında neredeyse yok oldu ve İran kedileri gibi başka kedilerin yardımıyla yeniden kuruldu. Klasik rengi mavi-gri olsa da krem, siyah, lila, altın ve pek çok desende görülür. Bağımsızlığıyla ünlüdür; çoğu zaman kucağınızda değil, yanınızda oturmayı tercih eder."
+  ],
+  "care": [
+   "Brush its dense coat once or twice a week, more during seasonal shedding. It gains weight easily, so measured meals and daily play help.",
+   "Yoğun tüyünü haftada bir iki kez, mevsimsel tüy dökümünde daha sık tarayın. Kolay kilo alır; ölçülü öğünler ve günlük oyun iyi gelir."
+  ]
+ },
+ "scottish-fold": {
+  "weight": "3–6 kg",
+  "goldenAbout": [
+   "In 1961 a shepherd named William Ross noticed Susie, a white farm cat with folded ears, near Coupar Angus in Scotland. Her kittens carried the same dominant gene, and the breed grew from them. Folds are calm, adaptable and often sleep flat on their backs. Because the fold gene also affects cartilage and joints, some cat associations do not register the breed, and responsible breeders always pair a Fold with a straight-eared cat.",
+   "1961'de William Ross adlı bir çoban, İskoçya'da Coupar Angus yakınlarında katlanmış kulaklı beyaz bir çiftlik kedisi olan Susie'yi fark etti. Yavruları aynı baskın geni taşıyordu ve tür onlardan çoğaldı. Fold'lar sakin ve uyumludur, çoğu zaman sırtüstü yatarak uyurlar. Kulak katlanmasına yol açan gen kıkırdağı ve eklemleri de etkilediği için bazı kedi kuruluşları türü kabul etmez; sorumlu üreticiler bir Fold'u her zaman düz kulaklı bir kediyle eşleştirir."
+  ],
+  "care": [
+   "Check and gently clean the folded ears regularly. Watch for stiffness in the tail or legs and have the joints checked at yearly vet visits.",
+   "Katlanmış kulakları düzenli kontrol edip nazikçe temizleyin. Kuyrukta ya da bacaklarda sertliğe dikkat edin; yıllık veteriner kontrolünde eklemlere de baktırın."
+  ]
+ },
+ "persian": {
+  "weight": "3–6 kg",
+  "goldenAbout": [
+   "Queen Victoria kept blue Persians, which helped make the breed a favorite of Victorian Britain. Over the 20th century breeders gave it a rounder head and an ever shorter nose. Today many breeders and vets favor a more moderate face that makes breathing easier. Persians are gentle, quiet cats that enjoy a calm routine and rarely climb or leap like more athletic breeds.",
+   "Kraliçe Victoria'nın mavi İran kedileri vardı ve bu, türün Viktorya dönemi İngiltere'sinde gözde olmasına katkı sağladı. 20. yüzyıl boyunca üreticiler ona daha yuvarlak bir baş ve giderek kısalan bir burun kazandırdı. Bugün pek çok üretici ve veteriner, nefes almayı kolaylaştıran daha ılımlı bir yüzü tercih ediyor. İran kedileri sakin düzeni seven nazik, sessiz kedilerdir; atletik türler gibi pek tırmanıp zıplamazlar."
+  ],
+  "care": [
+   "Comb the long coat every day to prevent mats, and wipe around the eyes gently. Regular baths keep the coat clean and silky.",
+   "Keçeleşmeyi önlemek için uzun tüyünü her gün tarayın, göz çevresini nazikçe silin. Düzenli banyo tüyü temiz ve ipeksi tutar."
+  ]
+ },
+ "ragdoll": {
+  "weight": "4.5–9 kg",
+  "goldenAbout": [
+   "The Ragdoll was developed by Ann Baker in Riverside, California, starting with a white longhaired cat named Josephine. It is one of the largest domestic breeds, and males can take four years to fully mature. Ragdolls come in colorpoint, mitted and bicolor patterns, always with blue eyes. Their easygoing nature makes them popular with families, and many learn to fetch toys.",
+   "Ragdoll, Kaliforniya'nın Riverside kentinde Ann Baker tarafından, Josephine adlı beyaz uzun tüylü bir kediyle başlanarak geliştirildi. En iri evcil türlerden biridir; erkeklerin tamamen olgunlaşması dört yıl sürebilir. Ragdoll'lar uçları koyu, eldivenli ve iki renkli desenlerde görülür; gözleri her zaman mavidir. Rahat yapıları onları ailelerin gözdesi yapar ve çoğu oyuncak getirmeyi öğrenir."
+  ],
+  "care": [
+   "Brush the silky coat two or three times a week; it mats less than many longhaired breeds. Indoor life suits this trusting cat best.",
+   "İpeksi tüyünü haftada iki üç kez tarayın; pek çok uzun tüylü türe göre daha az keçeleşir. Bu güvenen kedi için en uygunu ev içinde yaşamaktır."
+  ]
+ },
+ "russian-blue": {
+  "weight": "3–5.5 kg",
+  "goldenAbout": [
+   "Sailors are said to have brought the first Russian Blues from the White Sea port of Arkhangelsk, which is why early cats were called Archangel Blues. After World War II, breeders in Scandinavia and Britain crossed them with Siamese and British Blues to save the line. Its gentle, slightly upturned mouth gives it a quiet 'smile'. It bonds deeply with its family and likes a predictable routine.",
+   "İlk Rus Mavilerini Beyaz Deniz kıyısındaki Arhangelsk limanından denizcilerin getirdiği söylenir; ilk kedilere bu yüzden 'Archangel Blue' denirdi. II. Dünya Savaşı'ndan sonra İskandinav ve İngiliz üreticiler soyu korumak için onları Siyam ve British Blue kedileriyle melezledi. Hafif yukarı kıvrık ağzı ona sessiz bir 'gülümseme' verir. Ailesine derinden bağlanır ve öngörülebilir bir düzeni sever."
+  ],
+  "care": [
+   "A weekly brush keeps the dense double coat shiny. It sheds little but loves food, so keep an eye on portion sizes.",
+   "Haftada bir tarama yoğun çift kat tüyünü parlak tutar. Az tüy döker ama yemeyi çok sever; porsiyonlara dikkat edin."
+  ]
+ },
+ "abyssinian": {
+  "weight": "3–5 kg",
+  "goldenAbout": [
+   "A cat named Zula, brought to England from Abyssinia in 1868 by the wife of a British officer, is often linked to the breed's beginnings. Each hair of its coat is 'ticked' with three or four bands of color, so the coat seems to glow. The classic color is a warm 'ruddy', and blue, fawn and sorrel are also seen. Abyssinians rarely sit still; they prefer exploring shelves and supervising whatever you are doing.",
+   "1868'de bir İngiliz subayının eşi tarafından Habeşistan'dan İngiltere'ye getirilen Zula adlı kedi, türün başlangıcıyla sık sık ilişkilendirilir. Tüyündeki her tel üç dört renk bandıyla 'kırçıllıdır', bu yüzden tüy parlıyormuş gibi görünür. Klasik rengi sıcak bir kızıl kahvedir; mavi, açık kahve ve kızıl tonları da görülür. Habeş kedileri pek yerinde durmaz; rafları keşfetmeyi ve ne yapıyorsanız denetlemeyi tercih eder."
+  ],
+  "care": [
+   "The short coat needs little grooming. Give it climbing spaces, puzzle feeders and daily play to keep its busy mind happy.",
+   "Kısa tüyü az bakım ister. Meşgul zihnini mutlu tutmak için tırmanma alanları, zekâ mama kapları ve her gün oyun sağlayın."
+  ]
+ },
+ "birman": {
+  "weight": "3–7 kg",
+  "goldenAbout": [
+   "The Birman's legend tells of Sinh, a temple cat whose coat turned golden and paws turned white as he guarded his dying priest. The breed was established in France in the 1920s, and after World War II only a few cats remained to rebuild it. Its white 'gloves' on the front paws and 'laces' up the back legs are judged closely at shows. Every Birman has deep sapphire-blue eyes, and kittens are born almost white, with their points darkening over time.",
+   "Birman efsanesi, ölmekte olan rahibini korurken tüyü altın rengine, patileri beyaza dönen Sinh adlı bir tapınak kedisini anlatır. Tür 1920'lerde Fransa'da oluşturuldu; II. Dünya Savaşı'ndan sonra yeniden kurmak için yalnızca birkaç kedi kalmıştı. Ön patilerdeki beyaz 'eldivenler' ve arka bacaklardaki beyaz 'bağcıklar' sergilerde titizlikle değerlendirilir. Her Birman'ın gözleri koyu safir mavisidir; yavrular neredeyse beyaz doğar, koyu uçları zamanla belirginleşir."
+  ],
+  "care": [
+   "Brush the silky coat a few times a week; it has no thick undercoat, so it mats less than a Persian's. Birmans enjoy calm company and gentle play.",
+   "İpeksi tüyünü haftada birkaç kez tarayın; kalın alt tüyü olmadığından İran kedisininki kadar keçeleşmez. Birman'lar sakin bir arkadaşlık ve yumuşak oyunlardan hoşlanır."
+  ]
+ },
+ "bengal": {
+  "weight": "3.5–7 kg",
+  "goldenAbout": [
+   "Jean Mill of California began the modern Bengal program in the 1970s and 80s, crossing domestic cats with the Asian leopard cat. Pet Bengals are several generations removed from their wild ancestor. Some have a 'glitter' gene that makes the coat sparkle in the light, and rare snow Bengals are pale with blue or green eyes. They are agile climbers, many enjoy playing in water, and some can learn to open doors.",
+   "Kaliforniyalı Jean Mill, 1970'ler ve 80'lerde evcil kedileri Asya leopar kedisiyle melezleyerek modern Bengal çalışmalarını başlattı. Ev kedisi olarak yaşayan Bengal'ler vahşi atalarından birkaç kuşak uzaktır. Bazılarında tüyün ışıkta parlamasını sağlayan bir 'parıltı' geni vardır; nadir görülen kar Bengal'leri açık renkli ve mavi ya da yeşil gözlüdür. Çevik tırmanıcılardır, çoğu suyla oynamayı sever, bazıları kapı açmayı bile öğrenir."
+  ],
+  "care": [
+   "The sleek coat needs only a weekly brush. Plan daily active play, tall cat trees and toys that let it 'hunt'.",
+   "Parlak tüyü haftada bir taranması yeterlidir. Her gün hareketli oyun, yüksek kedi ağaçları ve 'avlanmasına' izin veren oyuncaklar sağlayın."
+  ]
+ },
+ "sphynx": {
+  "weight": "3–5 kg",
+  "goldenAbout": [
+   "Hairless kittens have appeared naturally from time to time, but the modern Sphynx traces to Prune, born in Toronto in 1966, and to hairless cats found in Minnesota and Toronto in the 1970s. Its skin feels like warm suede and can tan or burn in the sun. Without fur to absorb oil, it needs regular baths and ear cleaning. Sphynx cats are famously social and often greet visitors at the door.",
+   "Tüysüz yavrular zaman zaman doğal olarak görülmüştür ama modern Sfenks, 1966'da Toronto'da doğan Prune'a ve 1970'lerde Minnesota ile Toronto'da bulunan tüysüz kedilere dayanır. Derisi sıcak bir süet gibidir; güneşte bronzlaşabilir ya da yanabilir. Yağı emecek tüyü olmadığı için düzenli banyo ve kulak temizliği gerekir. Sfenks kedileri çok sosyaldir ve misafirleri çoğu zaman kapıda karşılar."
+  ],
+  "care": [
+   "Bathe it every week or two and clean the ears and nails often. Keep it warm indoors and protect it from strong sun.",
+   "Bir iki haftada bir yıkayın, kulaklarını ve tırnaklarını sık temizleyin. Ev içinde sıcak tutun ve güçlü güneşten koruyun."
+  ]
+ },
+ "turkish-angora": {
+  "weight": "2.5–5 kg",
+  "goldenAbout": [
+   "Angoras from Ankara were among the first longhaired cats seen in Europe, arriving in France and Britain by the 1600s. In the early 1900s they were mixed into Persian lines and almost disappeared as a separate breed. Ankara Zoo's breeding program kept the pure white, odd-eyed Angora alive, and the modern breed was rebuilt from those cats. White cats with one or two blue eyes can be born deaf, so careful breeders test their kittens' hearing.",
+   "Ankara'nın kedileri Avrupa'da görülen ilk uzun tüylü kediler arasındaydı; 1600'lere kadar Fransa ve İngiltere'ye ulaşmışlardı. 1900'lerin başında İran kedisi soylarına karıştırıldılar ve ayrı bir tür olarak neredeyse yok oldular. Ankara Hayvanat Bahçesi'nin üretim programı saf beyaz, farklı renkte gözlü Ankara kedisini yaşattı; modern tür bu kedilerden yeniden kuruldu. Bir ya da iki gözü mavi olan beyaz kediler sağır doğabildiğinden özenli üreticiler yavruların işitmesini test eder."
+  ],
+  "care": [
+   "The single-layer coat mats little; a weekly comb is enough. Angoras are athletic and curious, so give them high perches and interactive toys.",
+   "Tek katlı tüyü az keçeleşir; haftada bir taramak yeterlidir. Ankara kedileri atletik ve meraklıdır; yüksek tüneme yerleri ve etkileşimli oyuncaklar sağlayın."
+  ]
+ },
+ "norwegian-forest": {
+  "weight": "4–9 kg",
+  "goldenAbout": [
+   "Forest cats have lived in Norway for centuries, and they may have travelled on Viking ships as mousers. After a near disappearance, enthusiasts began a breeding program in the 1930s, and King Olav V later named it Norway's official cat. Its glossy outer coat sheds water while a woolly undercoat keeps it warm. It reaches full size slowly, at around five years old.",
+   "Orman kedileri yüzyıllardır Norveç'te yaşıyor; fare avcısı olarak Viking gemileriyle yolculuk etmiş olabilirler. Neredeyse yok olduktan sonra meraklılar 1930'larda bir üretim programı başlattı; Kral V. Olav daha sonra onu Norveç'in resmî kedisi ilan etti. Parlak dış tüyü suyu iterken yünümsü alt tüyü onu sıcak tutar. Tam boyutuna yavaşça, yaklaşık beş yaşında ulaşır."
+  ],
+  "care": [
+   "Brush once or twice a week and daily during the spring shed. Provide tall, sturdy cat trees for this natural climber.",
+   "Haftada bir iki kez, ilkbahardaki tüy dökümünde her gün tarayın. Bu doğuştan tırmanıcıya yüksek ve sağlam kedi ağaçları sağlayın."
+  ]
+ },
+ "turkish-van": {
+  "weight": "3–8 kg",
+  "goldenAbout": [
+   "Two British travellers brought the first Van cats from Türkiye to England in 1955, and the breed was recognized there in 1969. The 'Van pattern' keeps color only on the head and tail, sometimes with a small spot on the back that legend calls the 'thumbprint of Allah'. Its cashmere-like coat has no woolly undercoat, which helps it dry quickly after a swim. Vans are strong, energetic cats that stay playful well into adulthood.",
+   "İki İngiliz gezgin ilk Van kedilerini 1955'te Türkiye'den İngiltere'ye götürdü; tür orada 1969'da tanındı. 'Van deseni'nde renk yalnızca başta ve kuyrukta kalır; bazen sırtta, efsanede 'Allah'ın parmak izi' denen küçük bir leke de bulunur. Kaşmir gibi tüyünün yünümsü alt katmanı yoktur, bu da yüzdükten sonra çabuk kurumasını sağlar. Van kedileri güçlü ve enerjiktir, yetişkinlikte de oyunbazlığını korur."
+  ],
+  "care": [
+   "A weekly brush is enough for its silky coat. Offer lots of active play, high perches and, if it likes, a shallow bowl of water to splash in.",
+   "İpeksi tüyü için haftada bir tarama yeterlidir. Bol hareketli oyun, yüksek tüneme yerleri ve isterse içinde su sıçratabileceği sığ bir kap sunun."
+  ]
+ },
+ "maine-coon": {
+  "weight": "4–8 kg",
+  "goldenAbout": [
+   "A brown tabby Maine Coon named Cosey won the first major cat show in North America, held at Madison Square Garden in 1895. Its large, round paws, tufted ears and long bushy tail help it cope with snowy New England winters. Many Maine Coons have a chirping, trilling voice rather than a loud meow. Some have extra toes, a trait called polydactyly that was once common in the breed.",
+   "Cosey adlı kahverengi tekir bir Maine Coon, 1895'te Madison Square Garden'da düzenlenen Kuzey Amerika'nın ilk büyük kedi sergisini kazandı. İri, yuvarlak patileri, püsküllü kulakları ve uzun kabarık kuyruğu karlı New England kışlarına dayanmasına yardım eder. Pek çok Maine Coon yüksek sesle miyavlamak yerine cıvıltılı, titrek sesler çıkarır. Bazılarında fazladan parmak bulunur; polidaktili denen bu özellik bir zamanlar türde yaygındı."
+  ],
+  "care": [
+   "Comb the shaggy coat two or three times a week, paying attention to the belly and back legs. Give this large cat sturdy scratching posts and roomy litter boxes.",
+   "Gür tüyünü haftada iki üç kez, karın ve arka bacaklara özen göstererek tarayın. Bu iri kediye sağlam tırmalama direkleri ve geniş kum kapları sağlayın."
+  ]
+ },
+ "exotic-shorthair": {
+  "weight": "3–6 kg",
+  "goldenAbout": [
+   "American Shorthair breeders first crossed their cats with Persians to improve coat color, and the round-faced, plush-coated kittens became a breed of their own. The Exotic was recognized in the late 1960s. It shares the Persian's sweet temperament but tends to be a little more playful. Like the Persian, its short nose means it should be kept cool in hot weather.",
+   "Amerikan Kısa Tüylü üreticileri tüy rengini geliştirmek için önce kedilerini İran kedileriyle melezledi; ortaya çıkan yuvarlak yüzlü, peluş tüylü yavrular kendi türlerini oluşturdu. Egzotik, 1960'ların sonunda tanındı. İran kedisinin tatlı mizacını paylaşır ama biraz daha oyunbaz olma eğilimindedir. İran kedisi gibi burnu kısa olduğundan sıcak havalarda serin tutulmalıdır."
+  ],
+  "care": [
+   "Comb the plush coat once or twice a week and wipe the eyes daily. Keep it indoors in a cool, calm home.",
+   "Peluş tüyünü haftada bir iki kez tarayın, gözlerini her gün silin. Serin ve sakin bir evde, ev içinde tutun."
+  ]
+ },
+ "burmese": {
+  "weight": "3–6 kg",
+  "goldenAbout": [
+   "Dr. Joseph Thompson of San Francisco studied Wong Mau's kittens in the 1930s, and his work became one of the first genetic studies of a cat breed. American and European breeders later developed slightly different types: the American Burmese is rounder, the European more oriental. Beyond sable brown, the breed comes in blue, champagne, platinum and other colors. Burmese often stay kittenish and playful into old age.",
+   "San Franciscolu Dr. Joseph Thompson 1930'larda Wong Mau'nun yavrularını inceledi; çalışması bir kedi türü üzerine yapılan ilk genetik araştırmalardan biri oldu. Amerikan ve Avrupalı üreticiler zamanla biraz farklı tipler geliştirdi: Amerikan Burması daha yuvarlak, Avrupa Burması daha oryantal görünümlüdür. Samur kahvesi dışında mavi, şampanya, platin ve başka renklerde görülür. Burmalar çoğu zaman yaşlılıklarında bile yavru gibi oyunbaz kalır."
+  ],
+  "care": [
+   "The satin coat needs little more than a weekly stroke with a soft brush. Burmese dislike being alone, so they do well with company.",
+   "Saten tüyü haftada bir yumuşak fırçayla taramaktan fazlasını istemez. Burmalar yalnız kalmayı sevmez; yanlarında biri olduğunda mutlu olurlar."
+  ]
+ },
+ "chartreux": {
+  "weight": "3–7.5 kg",
+  "goldenAbout": [
+   "Blue-grey cats were described in France as early as the 1700s, and the Léger sisters bred them on the island of Belle-Île in the 1920s. The breed is famous for its quiet nature; many Chartreux chirp instead of meowing. Its coat is so dense that it 'breaks' like sheepskin when the cat bends its neck. The French writer Colette and President Charles de Gaulle are both said to have kept Chartreux.",
+   "Mavi-gri kediler Fransa'da 1700'lerde bile anlatılmıştır; Léger kardeşler 1920'lerde Belle-Île adasında onları üretti. Tür sessizliğiyle ünlüdür; pek çok Chartreux miyavlamak yerine cıvıldar. Tüyü o kadar yoğundur ki kedi boynunu büktüğünde koyun postu gibi 'açılır'. Fransız yazar Colette'in ve Cumhurbaşkanı Charles de Gaulle'ün Chartreux beslediği söylenir."
+  ],
+  "care": [
+   "Brush weekly, and more during the heavy seasonal shed. A patient, gentle cat, it enjoys quiet play and a regular routine.",
+   "Haftada bir, yoğun mevsimsel tüy dökümünde daha sık tarayın. Sabırlı ve nazik bir kedidir; sakin oyunları ve düzenli bir günlük akışı sever."
+  ]
+ },
+ "egyptian-mau": {
+  "weight": "3–5 kg",
+  "goldenAbout": [
+   "The modern breed began when Princess Nathalie Troubetzkoy brought spotted cats from Egypt to Italy and then to the United States in 1956. Its spots appear only on the tips of the hairs, and the coat comes in silver, bronze and smoke. When happy, a Mau may wiggle its tail and 'paddle' its front feet. It is loyal to its family and can be reserved with strangers.",
+   "Modern tür, Prenses Nathalie Troubetzkoy'un benekli kedileri Mısır'dan İtalya'ya, ardından 1956'da ABD'ye götürmesiyle başladı. Benekler yalnızca tüylerin uçlarında bulunur; tüy gümüş, bronz ve duman renklerinde görülür. Mutlu olduğunda Mau kuyruğunu titretip ön ayaklarıyla 'kürek çeker'. Ailesine sadıktır, yabancılara karşı mesafeli olabilir."
+  ],
+  "care": [
+   "A weekly brush is enough. Mau cats love chasing toys at full speed, so give them space to run and things to climb.",
+   "Haftada bir tarama yeterlidir. Mau kedileri oyuncakları son hızla kovalamayı sever; koşabilecekleri alan ve tırmanacakları yerler sağlayın."
+  ]
+ },
+ "manx": {
+  "weight": "3.5–6 kg",
+  "goldenAbout": [
+   "The Manx has lived on the Isle of Man for centuries, and its tailless gene spread easily in the small island population. Folk stories joke that it lost its tail by being late to Noah's Ark. The same gene can cause spine problems, so breeders pair cats carefully. The Cymric is the longhaired version of the Manx.",
+   "Manx yüzyıllardır Man Adası'nda yaşıyor; kuyruksuzluk geni küçük ada nüfusunda kolayca yayıldı. Halk hikâyeleri, Nuh'un Gemisi'ne geç kaldığı için kuyruğunu kaybettiğini şakayla anlatır. Aynı gen omurga sorunlarına yol açabildiğinden üreticiler kedileri dikkatle eşleştirir. Cymric, Manx'in uzun tüylü biçimidir."
+  ],
+  "care": [
+   "Brush weekly; longhaired Cymrics need a little more. Manx cats are playful and smart, and many enjoy fetch and puzzle toys.",
+   "Haftada bir tarayın; uzun tüylü Cymric'ler biraz daha fazla bakım ister. Manx kedileri oyunbaz ve zekidir; çoğu top getirmeyi ve zekâ oyuncaklarını sever."
+  ]
+ },
+ "bombay": {
+  "weight": "3–5 kg",
+  "goldenAbout": [
+   "Breeder Nikki Horner in Kentucky set out in the 1950s to create a 'parlor panther' by crossing sable Burmese with black American Shorthairs. Recognition took years, and the breed was accepted for championship in 1976. A Bombay's coat is black to the roots, and its copper or gold eyes shine against it. Bombays love warm spots and are known for following their people from room to room.",
+   "Kentuckyli üretici Nikki Horner 1950'lerde samur Burma kedilerini siyah Amerikan Kısa Tüylülerle melezleyerek bir 'salon panteri' yaratmaya girişti. Tanınması yıllar sürdü; tür 1976'da şampiyonluk statüsü aldı. Bombay'ın tüyü köklerine kadar siyahtır; bakır ya da altın rengi gözleri bu siyahın üzerinde parlar. Bombay'lar sıcak köşeleri sever ve insanlarını odadan odaya takip etmeleriyle bilinir."
+  ],
+  "care": [
+   "Stroke the glossy coat with a soft cloth or brush once a week. Measured meals help, as Bombays love food.",
+   "Parlak tüyünü haftada bir yumuşak bir bez ya da fırçayla okşayın. Bombay'lar yemeği çok sevdiğinden ölçülü öğünler yararlı olur."
+  ]
+ },
+ "siberian": {
+  "weight": "4–9 kg",
+  "goldenAbout": [
+   "Longhaired forest cats have lived in Russia for at least a thousand years, appearing in fairy tales and folk stories. The first Siberians arrived in the United States in 1990. Many owners say they react less to Siberians, possibly because some cats produce less of the main allergen, Fel d 1, but no cat is truly hypoallergenic. Siberians are strong jumpers and are often fascinated by water.",
+   "Uzun tüylü orman kedileri en az bin yıldır Rusya'da yaşıyor ve masallarla halk hikâyelerinde yer alıyor. İlk Sibirya kedileri 1990'da ABD'ye geldi. Pek çok sahibi Sibirya kedilerine daha az alerji gösterdiğini söyler; bunun nedeni bazı kedilerin ana alerjen olan Fel d 1'i daha az üretmesi olabilir, ama hiçbir kedi tamamen antialerjik değildir. Sibirya kedileri güçlü zıplayıcılardır ve çoğu zaman suya ilgi duyar."
+  ],
+  "care": [
+   "Brush two or three times a week and more during the spring and autumn sheds. Tall cat trees and active play suit this athletic cat.",
+   "Haftada iki üç kez, ilkbahar ve sonbahar tüy dökümünde daha sık tarayın. Bu atletik kediye yüksek kedi ağaçları ve hareketli oyunlar uygundur."
+  ]
+ },
+ "devon-rex": {
+  "weight": "2.5–4 kg",
+  "goldenAbout": [
+   "Beryl Cox found the first Devon Rex, a curly kitten named Kirlee, in Buckfastleigh, England, in 1960. Breeders first thought it was related to the Cornish Rex, but the curls turned out to come from a different gene. Its short, soft coat lacks most of the longer guard hairs, so it feels warm and suede-like. Devons are clever and can learn tricks, and they love to sit on their people's shoulders.",
+   "Beryl Cox ilk Devon Rex'i, Kirlee adlı kıvırcık bir yavruyu 1960'ta İngiltere'nin Buckfastleigh kasabasında buldu. Üreticiler önce onun Cornish Rex'le akraba olduğunu düşündü ama kıvırcıklığın farklı bir genden geldiği ortaya çıktı. Kısa, yumuşak tüyünde uzun koruyucu tüylerin çoğu yoktur; bu yüzden sıcak ve süet gibi hissettirir. Devon'lar zekidir, numara öğrenebilir ve insanlarının omzuna oturmayı çok sever."
+  ],
+  "care": [
+   "Its delicate coat needs only gentle grooming; wipe the large ears clean regularly. Keep it warm, as it feels the cold.",
+   "Narin tüyü yalnızca nazik bir bakım ister; iri kulaklarını düzenli olarak silin. Soğuktan etkilendiği için sıcak tutun."
+  ]
+ },
+ "oriental-shorthair": {
+  "weight": "2.5–5 kg",
+  "goldenAbout": [
+   "British breeders in the 1950s and 60s set out to create Siamese-type cats in solid colors and patterns, and the Oriental Shorthair was the result. It is recognized in more than 300 color and pattern combinations. The longhaired version is called the Oriental Longhair. Orientals are as talkative as their Siamese cousins and want to be part of everything their people do.",
+   "1950'ler ve 60'larda İngiliz üreticiler düz renk ve desenlerde Siyam tipi kediler yaratmaya girişti; Oryantal Kısa Tüylü bunun sonucudur. 300'den fazla renk ve desen kombinasyonunda tanınır. Uzun tüylü biçimine Oryantal Uzun Tüylü denir. Oryantaller Siyam kuzenleri kadar konuşkandır ve insanlarının yaptığı her şeye katılmak ister."
+  ],
+  "care": [
+   "A quick weekly brush keeps the fine coat glossy. Orientals need lots of attention and play, and they are happiest with company.",
+   "Haftada bir kısa bir tarama ince tüyünü parlak tutar. Oryantaller bol ilgi ve oyun ister, yanlarında biri olduğunda en mutludur."
+  ]
+ },
+ "japanese-bobtail": {
+  "weight": "2.5–4 kg",
+  "goldenAbout": [
+   "Bobtailed cats are said to have reached Japan from China or Korea more than a thousand years ago. In 1602, Japanese officials ordered cats to be set free to protect silkworms from rodents, and bobtails became familiar street and farm cats. The tail is formed by a natural gene and is curled or kinked into a unique pom-pom. Bobtails often 'sing' in a range of soft chirps and tones.",
+   "Kısa kuyruklu kedilerin bin yıldan uzun süre önce Çin ya da Kore'den Japonya'ya geldiği söylenir. 1602'de Japon yetkililer ipek böceklerini kemirgenlerden korumak için kedilerin serbest bırakılmasını emretti; bobtail'ler böylece sokak ve çiftlik kedisi olarak yaygınlaştı. Kuyruk doğal bir genle oluşur ve her kedide kendine özgü bir ponpon gibi kıvrılır. Bobtail'ler çoğu zaman yumuşak cıvıltılar ve tonlarla 'şarkı söyler'."
+  ],
+  "care": [
+   "A weekly brush is enough for both short- and longhaired Bobtails; handle the tail gently. They love active games and learning tricks.",
+   "Kısa ve uzun tüylü Bobtail'ler için haftada bir tarama yeterlidir; kuyruğa nazik dokunun. Hareketli oyunları ve numara öğrenmeyi severler."
+  ]
+ },
+ "somali": {
+  "weight": "3–5 kg",
+  "goldenAbout": [
+   "Longhaired kittens occasionally appeared in Abyssinian litters, and in the 1960s and 70s breeders such as Evelyn Mague in the United States chose to develop them as a breed. The name refers to Somalia, Ethiopia's neighbor, as a nod to the Abyssinian. A Somali's coat can have as many as ten bands of color on a single hair. Somalis are clever problem-solvers and are known to open cupboards.",
+   "Habeş kedisi yavruları arasında zaman zaman uzun tüylüler doğuyordu; 1960'lar ve 70'lerde ABD'de Evelyn Mague gibi üreticiler onları ayrı bir tür olarak geliştirmeye karar verdi. Adı, Habeş kedisine selam olarak Etiyopya'nın komşusu Somali'den gelir. Somali'nin tüyünde tek bir telde ona kadar renk bandı bulunabilir. Somali'ler zeki problem çözücülerdir ve dolap kapaklarını açmalarıyla bilinirler."
+  ],
+  "care": [
+   "Brush two or three times a week, especially the ruff and tail. Give it plenty of play and puzzle toys to keep it busy.",
+   "Özellikle yele ve kuyruk olmak üzere haftada iki üç kez tarayın. Meşgul kalması için bol oyun ve zekâ oyuncakları sağlayın."
+  ]
+ },
+ "himalayan": {
+  "weight": "3–6 kg",
+  "goldenAbout": [
+   "In the 1930s, Harvard researchers Virginia Cobb and Clyde Keeler crossed Siamese and Persians to study how the colorpoint gene is inherited. Breeders in Britain and the United States later built on this work, and the breed was recognized in the 1950s. Himalayans come in seal, blue, chocolate, lilac, flame and many other point colors. They usually enjoy a quiet home and gentle attention more than climbing and racing around.",
+   "1930'larda Harvard araştırmacıları Virginia Cobb ve Clyde Keeler, uçlu renk geninin kalıtımını incelemek için Siyam ve İran kedilerini melezledi. İngiltere ve ABD'deki üreticiler bu çalışmayı geliştirdi ve tür 1950'lerde tanındı. Himalaya kedileri samur, mavi, çikolata, lila, alev ve daha pek çok uç renginde görülür. Tırmanıp koşturmaktan çok sakin bir evi ve nazik ilgiyi severler."
+  ],
+  "care": [
+   "Comb the long coat every day and wipe the eyes gently. Keep it in a cool, calm home and check its breathing in hot weather.",
+   "Uzun tüyünü her gün tarayın, gözlerini nazikçe silin. Serin ve sakin bir evde tutun, sıcak havalarda nefes alışına dikkat edin."
+  ]
+ }
+}

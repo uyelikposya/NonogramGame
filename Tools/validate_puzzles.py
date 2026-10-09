@@ -24,7 +24,7 @@ PREMIUM_SIZES = ["8x8"] * 3 + ["10x10"] * 3 + ["12x12"] * 3
 HEX = re.compile(r"^#?[0-9A-Fa-f]{6}$")
 LESSONS = {
     "tapToFill", "fullLines", "emptyLines", "markWithCross", "multipleBlocks",
-    "overlap", "edges", "crossReference", "mistakesAndLives", "difficulty", "graduation",
+    "overlap", "edges", "crossReference", "mistakesAndLives", "difficulty", "graduation", "firstSquare",
 }
 
 

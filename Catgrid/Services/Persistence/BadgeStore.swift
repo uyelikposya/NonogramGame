@@ -50,7 +50,7 @@ enum Badge: String, CaseIterable, Identifiable, Codable {
 
     var detail: LocalizedStringResource {
         switch self {
-        case .graduate: "Finish Kitten School."
+        case .graduate: "Finish Muffin's School."
         case .firstCard: "Collect your first cat card."
         case .fiveBreeds: "Collect 5 cat breeds."
         case .tenBreeds: "Collect 10 cat breeds."

@@ -3,6 +3,7 @@ import Foundation
 /// Eğitici bölümlerde arayüzün hangi kuralı anlatacağı.
 /// Metinler String Catalog'da `tutorial.<rawValue>.title` / `.body` anahtarlarıyla durur.
 public enum TutorialLesson: String, Codable, Sendable, CaseIterable {
+    case firstSquare
     case tapToFill
     case fullLines
     case emptyLines

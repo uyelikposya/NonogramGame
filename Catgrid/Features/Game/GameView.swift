@@ -83,6 +83,9 @@ struct GameView: View {
     /// Küçük kedinin o an söylediği (ipucu).
     @State private var companionLine: CompanionLine?
     @State private var companionLineID = 0
+    /// Muffin her yeni sözde kısa bir süre konuşur; hata yapınca bir an şaşırır.
+    @State private var muffinSpeech = 1
+    @State private var muffinReaction: MuffinView.Pose?
 
     init(puzzle: Puzzle, rules: GameRules, savedGame: GameSnapshot? = nil) {
         self.init(viewModel: GameViewModel(puzzle: puzzle, rules: rules, savedGame: savedGame))
@@ -99,9 +102,12 @@ struct GameView: View {
 
     var body: some View {
         VStack(spacing: 16) {
-            if let lesson = viewModel.puzzle.lesson, game.status == .playing {
-                LessonBanner(lesson: lesson)
-                    .transition(.move(edge: .top).combined(with: .opacity))
+            if let lesson = viewModel.puzzle.lesson, game.status != .lost(.outOfTime) {
+                MuffinLessonBanner(lesson: lesson, pose: muffinPose(for: lesson), speechID: muffinSpeech) {
+                    model.skipTutorial()
+                    router.popToRoot()
+                }
+                .transition(.move(edge: .top).combined(with: .opacity))
             }
 
             GameStatusBar(game: game, isHardMode: $isHardMode) {
@@ -128,6 +134,7 @@ struct GameView: View {
                 activeCell: viewModel.activeCell,
                 flashingCell: flashingCell,
                 hint: companionHint,
+                pointer: tutorialPointer,
                 onDragBegan: { viewModel.dragBegan(at: $0) },
                 onDragMoved: { viewModel.dragMoved(to: $0) },
                 onDragEnded: { viewModel.dragEnded() }
@@ -256,6 +263,13 @@ struct GameView: View {
         .onChange(of: game.mistakes) { _, newValue in
             guard newValue > 0 else { return }
             flashMistake()
+            if viewModel.puzzle.lesson != nil {
+                muffinReaction = .oops
+                Task {
+                    try? await Task.sleep(for: .seconds(1.5))
+                    muffinReaction = nil
+                }
+            }
         }
     }
 
@@ -295,6 +309,19 @@ struct GameView: View {
         }
         .buttonStyle(PrimaryButtonStyle())
         .accessibilityIdentifier("result.next")
+    }
+
+    private func muffinPose(for lesson: TutorialLesson) -> MuffinView.Pose {
+        if game.status == .won { return .cheer }
+        return muffinReaction ?? lesson.muffinPose
+    }
+
+    /// İlk derste, oyuncu henüz dokunmadıysa pati dolacak kareyi gösterir.
+    private var tutorialPointer: GridPosition? {
+        guard viewModel.puzzle.lesson == .firstSquare, game.status == .playing,
+              !game.board.storage.contains(where: { $0 != .blank })
+        else { return nil }
+        return game.board.positions.first { viewModel.puzzle.solution[$0] }
     }
 
     /// Kedi türü bölümünde yardımcı kedi o türün renklerinde.
