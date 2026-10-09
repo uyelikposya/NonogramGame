@@ -1,4 +1,5 @@
 import NonogramKit
+import StoreKit
 import SwiftUI
 
 /// Günlük bulmaca: o günün bulmacası, kendi kaydıyla.
@@ -63,6 +64,9 @@ struct GameView: View {
     @Environment(StoreManager.self) private var store
     @Environment(\.appTheme) private var theme
     @Environment(\.scenePhase) private var scenePhase
+    @Environment(\.requestReview) private var requestReview
+    /// Değerlendirme isteğinin en son sorulduğu çözüm eşiği.
+    @AppStorage(RatingPolicy.lastThresholdKey) private var lastRatingThreshold = 0
 
     @State private var viewModel: GameViewModel
     @State private var flashingCell: GridPosition?
@@ -185,6 +189,15 @@ struct GameView: View {
                         earned = CardSelection(chapter: chapter, isGolden: true)
                     } else if !wasCollected, model.isCollected(chapter) {
                         earned = CardSelection(chapter: chapter, isGolden: false)
+                    }
+                }
+                // Mutlu bir an: hatasız çözüm, kart beklenmiyor, belli sayıda bulmacadan sonra
+                if earned == nil, !isTutorial, completion.mistakes == 0,
+                   let threshold = RatingPolicy.threshold(solved: model.progress.stats.solvedCount, lastPrompted: lastRatingThreshold) {
+                    lastRatingThreshold = threshold
+                    Task {
+                        try? await Task.sleep(for: .seconds(1.5))
+                        requestReview()
                     }
                 }
                 if let earned {
@@ -693,6 +706,18 @@ struct ResultCard<Actions: View>: View {
         .padding(24)
         .frame(maxWidth: 420)
         .card()
+    }
+}
+
+/// Uygulamayı değerlendirme isteği: belli çözüm sayılarında, en fazla eşik başına bir kez.
+/// iOS ayrıca yılda en fazla üç kez gösterir.
+enum RatingPolicy {
+    static let lastThresholdKey = "rating.lastThreshold"
+    static let thresholds = [10, 40, 120]
+
+    /// Bu çözümle ulaşılan ve henüz sorulmamış en yüksek eşik.
+    static func threshold(solved: Int, lastPrompted: Int) -> Int? {
+        thresholds.last { $0 <= solved && $0 > lastPrompted }
     }
 }
 

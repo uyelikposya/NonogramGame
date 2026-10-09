@@ -6,8 +6,10 @@ struct HomeView: View {
     @Environment(AppModel.self) private var model
     @Environment(Router.self) private var router
     @Environment(StoreManager.self) private var store
+    @Environment(ReminderManager.self) private var reminders
     @Environment(\.appTheme) private var theme
     @State private var isShowingPaywall = false
+    @State private var isOfferingReminder = false
 
     var body: some View {
         // Tek ekrana sığacak kadar sıkı; çok küçük ekranlarda (iPhone SE) yine kaydırılabilir
@@ -45,6 +47,20 @@ struct HomeView: View {
         .sheet(isPresented: $isShowingPaywall) {
             PremiumPaywall()
         }
+        // Birkaç bulmacadan sonra bir kez: günlük hatırlatma ister misin?
+        .task {
+            guard canOfferReminder else { return }
+            try? await Task.sleep(for: .seconds(0.8))
+            isOfferingReminder = true
+        }
+        .alert("Daily reminder?", isPresented: $isOfferingReminder) {
+            Button("Remind Me") {
+                Task { _ = await reminders.enable() }
+            }
+            Button("Not Now", role: .cancel) { reminders.markAsked() }
+        } message: {
+            Text("We'll send one gentle reminder a day, only on days you haven't played. You can change this in Settings.")
+        }
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
                 Button {
@@ -56,6 +72,14 @@ struct HomeView: View {
                 .accessibilityLabel(Text("Settings"))
             }
         }
+    }
+
+    private var canOfferReminder: Bool {
+        #if DEBUG
+        // Ekran görüntüsü çekimini bölmesin
+        if DemoContent.isEnabled { return false }
+        #endif
+        return reminders.shouldOffer(solvedCount: model.completedCount)
     }
 
     /// Uygulama simgesiyle aynı logo + oyunun adı.

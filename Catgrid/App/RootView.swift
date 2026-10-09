@@ -7,6 +7,8 @@ struct RootView: View {
     @Environment(AudioManager.self) private var audio
     @Environment(AdCoordinator.self) private var ads
     @Environment(StoreManager.self) private var store
+    @Environment(AppModel.self) private var model
+    @Environment(ReminderManager.self) private var reminders
     @Environment(\.colorScheme) private var colorScheme
     @Environment(\.scenePhase) private var scenePhase
 
@@ -53,6 +55,10 @@ struct RootView: View {
                 Task { await store.refreshEntitlements() }
             } else if phase == .background {
                 audio.pauseMusic()
+                // Bugün oynandıysa bugünün hatırlatması atlanır
+                let lastPlayed = model.lastPlayedAt
+                let streak = model.dailyStreak
+                Task { await reminders.reschedule(lastPlayedAt: lastPlayed, streak: streak) }
             }
         }
     }

@@ -719,6 +719,74 @@
   "Expert · %lld×%lld": {
    "en": "Expert · %lld×%lld",
    "tr": "Uzman · %lld×%lld"
+  },
+  "Meowminder 🐾": {
+   "en": "Meowminder 🐾",
+   "tr": "Miyavdirim 🐾"
+  },
+  "Don't break your %lld-day streak! Today's puzzle is waiting.": {
+   "en": "Don't break your %lld-day streak! Today's puzzle is waiting.",
+   "tr": "%lld günlük serini bozma! Bugünün bulmacası seni bekliyor."
+  },
+  "The cats have a new puzzle ready for you.": {
+   "en": "The cats have a new puzzle ready for you.",
+   "tr": "Kediler senin için yeni bir bulmaca hazırladı."
+  },
+  "Today's Daily Puzzle is waiting. Can you get 4 stars?": {
+   "en": "Today's Daily Puzzle is waiting. Can you get 4 stars?",
+   "tr": "Günün bulmacası seni bekliyor. 4 yıldız alabilir misin?"
+  },
+  "A few minutes of logic, a lot of cats. Ready to play?": {
+   "en": "A few minutes of logic, a lot of cats. Ready to play?",
+   "tr": "Biraz mantık, bolca kedi. Oynamaya hazır mısın?"
+  },
+  "A new cat card could be one puzzle away!": {
+   "en": "A new cat card could be one puzzle away!",
+   "tr": "Yeni bir kedi kartı belki de bir bulmaca uzağında!"
+  },
+  "Daily reminder?": {
+   "en": "Daily reminder?",
+   "tr": "Günlük hatırlatma ister misin?"
+  },
+  "Remind Me": {
+   "en": "Remind Me",
+   "tr": "Hatırlat"
+  },
+  "Not Now": {
+   "en": "Not Now",
+   "tr": "Şimdi Değil"
+  },
+  "We'll send one gentle reminder a day, only on days you haven't played. You can change this in Settings.": {
+   "en": "We'll send one gentle reminder a day, only on days you haven't played. You can change this in Settings.",
+   "tr": "Günde tek bir nazik hatırlatma göndeririz, yalnızca oynamadığın günlerde. Bunu Ayarlar'dan değiştirebilirsin."
+  },
+  "Reminders": {
+   "en": "Reminders",
+   "tr": "Hatırlatmalar"
+  },
+  "Daily Reminder": {
+   "en": "Daily Reminder",
+   "tr": "Günlük Hatırlatma"
+  },
+  "Time": {
+   "en": "Time",
+   "tr": "Saat"
+  },
+  "Only on days you haven't played.": {
+   "en": "Only on days you haven't played.",
+   "tr": "Yalnızca oynamadığın günlerde."
+  },
+  "Notifications are off": {
+   "en": "Notifications are off",
+   "tr": "Bildirimler kapalı"
+  },
+  "Open Settings": {
+   "en": "Open Settings",
+   "tr": "Ayarları Aç"
+  },
+  "To get reminders, allow notifications for Catgrid in Settings.": {
+   "en": "To get reminders, allow notifications for Catgrid in Settings.",
+   "tr": "Hatırlatma almak için Ayarlar'dan Catgrid bildirimlerine izin ver."
   }
  },
  "infoplist": {

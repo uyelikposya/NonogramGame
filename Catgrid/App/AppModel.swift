@@ -49,6 +49,11 @@ final class AppModel {
         DailyPuzzles.isDaily(puzzle.id) ? catalog.defaultRules : catalog.rules(for: puzzle)
     }
 
+    /// En son oynanan an (çözüm ya da yarım bırakılan oyun); hatırlatmalar için.
+    var lastPlayedAt: Date? {
+        progress.records.values.map(\.lastPlayedAt).max()
+    }
+
     // MARK: - Günlük bulmaca
 
     var today: DayKey { DayKey(now()) }

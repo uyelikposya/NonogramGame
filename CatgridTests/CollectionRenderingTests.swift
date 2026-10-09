@@ -64,6 +64,7 @@ final class CollectionRenderingTests: XCTestCase {
                     .environment(model)
                     .environment(Router())
                     .environment(makeStore(isPremium: isPremium))
+                    .environment(ReminderManager(defaults: UserDefaults(suiteName: "render-reminder-\(UUID().uuidString)")!, center: nil))
                     .environment(\.appTheme, .default)
             )
         }
@@ -80,6 +81,7 @@ final class CollectionRenderingTests: XCTestCase {
                     .environment(model)
                     .environment(Router())
                     .environment(makeStore(isPremium: isPremium))
+                    .environment(ReminderManager(defaults: UserDefaults(suiteName: "render-reminder-\(UUID().uuidString)")!, center: nil))
                     .environment(\.appTheme, .default)
             )
         }
@@ -101,6 +103,7 @@ final class CollectionRenderingTests: XCTestCase {
                 .environment(AudioManager(defaults: UserDefaults(suiteName: "settings-audio-\(suffix)")!))
                 .environment(AdCoordinator(service: NoAdService()))
                 .environment(StoreManager(defaults: UserDefaults(suiteName: "settings-store-\(suffix)")!))
+                .environment(ReminderManager(defaults: UserDefaults(suiteName: "settings-reminder-\(suffix)")!, center: nil))
                 .environment(\.appTheme, .default)
         )
     }

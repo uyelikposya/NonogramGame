@@ -25,6 +25,8 @@ struct SettingsView: View {
     @State private var isManagingSubscription = false
     @State private var restoreResult: StoreManager.RestoreResult?
     @State private var isRestoring = false
+    @Environment(ReminderManager.self) private var reminders
+    @State private var isShowingNotificationsOff = false
 
     private let paletteColumns = [GridItem(.flexible(), spacing: 12), GridItem(.flexible(), spacing: 12)]
 
@@ -140,6 +142,12 @@ struct SettingsView: View {
                     .card(cornerRadius: 16)
                 }
 
+                section("Reminders") {
+                    reminderSettings
+                        .padding(16)
+                        .card(cornerRadius: 16)
+                }
+
                 section("Progress") {
                     Button(role: .destructive) {
                         isConfirmingReset = true
@@ -208,6 +216,60 @@ struct SettingsView: View {
             PremiumPaywall()
         }
         .manageSubscriptionsSheet(isPresented: $isManagingSubscription)
+    }
+
+    private var reminderSettings: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            Toggle(isOn: Binding(
+                get: { reminders.isEnabled },
+                set: { isOn in
+                    if isOn {
+                        Task {
+                            if await reminders.enable() {
+                                await reschedule()
+                            } else {
+                                isShowingNotificationsOff = true
+                            }
+                        }
+                    } else {
+                        reminders.disable()
+                    }
+                }
+            )) {
+                Label("Daily Reminder", systemImage: "bell.fill")
+                    .foregroundStyle(theme.textPrimary)
+            }
+            .accessibilityIdentifier("settings.reminder")
+            if reminders.isEnabled {
+                DatePicker(selection: Binding(
+                    get: { Calendar.current.date(bySettingHour: reminders.hour, minute: reminders.minute, second: 0, of: Date()) ?? Date() },
+                    set: { date in
+                        let parts = Calendar.current.dateComponents([.hour, .minute], from: date)
+                        reminders.hour = parts.hour ?? 19
+                        reminders.minute = parts.minute ?? 0
+                        Task { await reschedule() }
+                    }
+                ), displayedComponents: .hourAndMinute) {
+                    Label("Time", systemImage: "clock.fill")
+                        .foregroundStyle(theme.textPrimary)
+                }
+            }
+            Text("Only on days you haven't played.")
+                .font(.footnote)
+                .foregroundStyle(theme.textSecondary)
+        }
+        .alert("Notifications are off", isPresented: $isShowingNotificationsOff) {
+            Button("Open Settings") {
+                if let url = URL(string: UIApplication.openNotificationSettingsURLString) { openURL(url) }
+            }
+            Button("Not Now", role: .cancel) {}
+        } message: {
+            Text("To get reminders, allow notifications for Catgrid in Settings.")
+        }
+    }
+
+    private func reschedule() async {
+        await reminders.reschedule(lastPlayedAt: model.lastPlayedAt, streak: model.dailyStreak)
     }
 
     @ViewBuilder
