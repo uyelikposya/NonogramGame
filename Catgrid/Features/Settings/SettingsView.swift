@@ -6,6 +6,30 @@ enum SettingsKeys {
     static let haptics = "settings.haptics"
     /// "Zor": tamamlanan satırlara otomatik X konmaz.
     static let hardMode = "settings.hardMode"
+    /// Rahat ya da Dopamin modu.
+    static let playMode = "settings.playMode"
+}
+
+/// Rahat: sakin, sade oyun. Dopamin: satır parıltıları, kutlamalar, hareketli müzik.
+enum PlayMode: String, CaseIterable, Identifiable {
+    case relax
+    case dopamine
+
+    var id: String { rawValue }
+
+    var title: LocalizedStringResource {
+        switch self {
+        case .relax: "Relax"
+        case .dopamine: "Dopamine"
+        }
+    }
+
+    var musicTrack: String {
+        switch self {
+        case .relax: "music_cozy"
+        case .dopamine: "music_upbeat"
+        }
+    }
 }
 
 @MainActor
@@ -20,6 +44,7 @@ struct SettingsView: View {
     @Environment(\.openURL) private var openURL
     @Environment(\.requestReview) private var requestReview
     @AppStorage(SettingsKeys.haptics) private var hapticsEnabled = true
+    @AppStorage(SettingsKeys.playMode) private var playMode = PlayMode.relax
     @State private var isConfirmingReset = false
     @State private var isShowingPaywall = false
     @State private var isManagingSubscription = false
@@ -49,6 +74,23 @@ struct SettingsView: View {
                             }
                             .buttonStyle(PressableButtonStyle())
                         }
+                    }
+                }
+
+                section("Play Style") {
+                    VStack(alignment: .leading, spacing: 10) {
+                        Picker("Play Style", selection: $playMode) {
+                            ForEach(PlayMode.allCases) { mode in
+                                Text(mode.title).tag(mode)
+                            }
+                        }
+                        .pickerStyle(.segmented)
+                        .accessibilityIdentifier("settings.playMode")
+                        Text(playMode == .relax
+                             ? LocalizedStringKey("Calm and simple: soft music, no distractions.")
+                             : LocalizedStringKey("Sparkles for every line, celebrations for every puzzle and upbeat music."))
+                            .font(.footnote)
+                            .foregroundStyle(theme.textSecondary)
                     }
                 }
 

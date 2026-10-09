@@ -79,6 +79,10 @@ struct GameView: View {
     /// Bu çözümle kilidi açılan yeni kedi türü (önceki türün yarısı çözülünce).
     @State private var newlyUnlockedChapter: Chapter?
     @AppStorage(SettingsKeys.hardMode) private var isHardMode = false
+    @AppStorage(SettingsKeys.playMode) private var playMode = PlayMode.relax
+    /// Dopamin modu: satır parıltısı ve bitişte konfeti.
+    @State private var lineGlow: LineGlow?
+    @State private var confettiStart: Date?
     @State private var difficultyNote: Bool?
     /// Küçük kedinin o an söylediği (ipucu).
     @State private var companionLine: CompanionLine?
@@ -135,6 +139,7 @@ struct GameView: View {
                 flashingCell: flashingCell,
                 hint: companionHint,
                 pointer: tutorialPointer,
+                lineGlow: lineGlow,
                 onDragBegan: { viewModel.dragBegan(at: $0) },
                 onDragMoved: { viewModel.dragMoved(to: $0) },
                 onDragEnded: { viewModel.dragEnded() }
@@ -173,6 +178,10 @@ struct GameView: View {
         }
         .themedScreen()
         .screenTitle(isDaily ? Text("Daily Puzzle") : Text(verbatim: chapter?.title.resolved ?? ""), subtitle: subtitle)
+        .overlay {
+            ConfettiView(start: confettiStart)
+                .ignoresSafeArea()
+        }
         .overlay(alignment: .bottom) {
             resultCard
                 .padding(20)
@@ -220,7 +229,22 @@ struct GameView: View {
             viewModel.onEvent = { event in
                 // Oyuncu hamle yapınca kedi susar
                 if companionLine != nil, event != .mistake { companionLine = nil }
-                audio.play(event.soundEffect)
+                let isDopamine = playMode == .dopamine
+                switch event {
+                case .lineCompleted where isDopamine:
+                    audio.play(.combo)
+                    celebrateLine()
+                case .solved where isDopamine:
+                    audio.play(.fanfare)
+                    let start = Date()
+                    confettiStart = start
+                    Task {
+                        try? await Task.sleep(for: .seconds(2.8))
+                        if confettiStart == start { confettiStart = nil }
+                    }
+                default:
+                    audio.play(event.soundEffect)
+                }
                 Haptics.play(event)
             }
             viewModel.autoCrosses = !isHardMode
@@ -370,6 +394,17 @@ struct GameView: View {
             model.progress.saveGame(snapshot)
         } else {
             model.progress.clearSavedGame(for: viewModel.puzzle.id)
+        }
+    }
+
+    /// Dopamin modu: tamamlanan satır/sütun kısa bir süre parlar.
+    private func celebrateLine() {
+        let lines = viewModel.completedLines
+        let glow = LineGlow(row: lines.row, column: lines.column, start: Date())
+        lineGlow = glow
+        Task {
+            try? await Task.sleep(for: .seconds(LineGlow.duration + 0.05))
+            if lineGlow == glow { lineGlow = nil }
         }
     }
 

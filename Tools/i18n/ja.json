@@ -242,7 +242,13 @@
   "Tip: pause any time with the button at the top right.": "ヒント:右上のボタンでいつでも一時停止できます。",
   "Skip tutorial": "チュートリアルをスキップ",
   "Skip the tutorial?": "チュートリアルをスキップしますか?",
-  "The first cat breed opens right away. You can come back to Muffin's School any time from All Levels.": "最初の猫の品種がすぐに開きます。マフィンの学校には「すべてのレベル」からいつでも戻れます。"
+  "The first cat breed opens right away. You can come back to Muffin's School any time from All Levels.": "最初の猫の品種がすぐに開きます。マフィンの学校には「すべてのレベル」からいつでも戻れます。",
+  "Play Style": "プレイスタイル",
+  "Relax": "リラックス",
+  "Dopamine": "ドーパミン",
+  "Calm and simple: soft music, no distractions.": "穏やかでシンプル:やさしい音楽、気が散るものはありません。",
+  "Sparkles for every line, celebrations for every puzzle and upbeat music.": "列ごとにキラキラ、パズルごとにお祝い、そしてノリのいい音楽。",
+  "Tip: like it calm or lively? Pick Relax or Dopamine mode in Settings → Play Style.": "ヒント:のんびり派?にぎやか派?設定 → プレイスタイルで「リラックス」か「ドーパミン」を選べます。"
  },
  "infoplist": {
   "CFBundleDisplayName": "Catgrid",

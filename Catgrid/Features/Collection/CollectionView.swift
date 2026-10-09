@@ -77,6 +77,23 @@ struct CardDetailSheet: View {
     var unlocksGoldenGift = false
     /// Yeni kartın ekrana geliş animasyonu bitti mi? Bitene kadar düğme görünmez.
     @State private var hasArrived = false
+    @AppStorage(SettingsKeys.playMode) private var playMode = PlayMode.relax
+    /// Dopamin modu: "Koleksiyona Ekle"ye basınca kart küçülüp yukarı, koleksiyona uçar.
+    @State private var isFlyingAway = false
+
+    /// Dopamin modunda yeni kart önce koleksiyona uçar, sonra pencere kapanır.
+    private func addToCollection() {
+        guard isNewCard, playMode == .dopamine, !reduceMotion, !isFlyingAway else {
+            dismiss()
+            return
+        }
+        Haptics.selection()
+        withAnimation(.easeIn(duration: 0.45)) { isFlyingAway = true }
+        Task {
+            try? await Task.sleep(for: .seconds(0.5))
+            dismiss()
+        }
+    }
 
     var body: some View {
         ScrollView {
@@ -115,13 +132,16 @@ struct CardDetailSheet: View {
                             .degrees(isNewCard && !hasArrived && !reduceMotion ? -200 : 0),
                             axis: (x: 0, y: 1, z: 0), perspective: 0.6
                         )
-                        .opacity(isNewCard && !hasArrived ? 0 : 1)
+                        .opacity(isNewCard && !hasArrived ? 0 : (isFlyingAway ? 0 : 1))
+                        .scaleEffect(isFlyingAway ? 0.15 : 1)
+                        .offset(y: isFlyingAway ? -520 : 0)
+                        .rotationEffect(.degrees(isFlyingAway ? -25 : 0))
                     Label("Tap the card to flip it", systemImage: "hand.tap.fill")
                         .font(.footnote)
                         .foregroundStyle(theme.textSecondary)
                         .opacity(hasArrived || !isNewCard ? 1 : 0)
                 }
-                Button(isNewCard ? "Add to Collection" : "Close") { dismiss() }
+                Button(isNewCard ? "Add to Collection" : "Close") { addToCollection() }
                     .buttonStyle(PrimaryButtonStyle())
                     .frame(maxWidth: 360)
                     .opacity(hasArrived || !isNewCard ? 1 : 0)

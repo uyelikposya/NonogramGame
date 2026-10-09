@@ -12,6 +12,13 @@ enum GameEvent: Equatable {
     case failed
 }
 
+/// Tamamlanan satır/sütun. `serial` her yeni tamamlamada artar (aynı satır tekrar parlasın diye).
+struct CompletedLines: Equatable {
+    var row: Int?
+    var column: Int?
+    var serial = 0
+}
+
 /// Oyun ekranının durumu. Kurallar `NonogramGame`'de; burası yalnızca arayüz akışını
 /// (seçili araç, sürükleme, zamanlayıcı, bitiş bildirimi) yönetir.
 @MainActor
@@ -23,6 +30,8 @@ final class GameViewModel {
     private(set) var lastMistake: GridPosition?
     /// Parmağın altındaki kare; satırı ve sütunu vurgulanır.
     private(set) var activeCell: GridPosition?
+    /// Son hamleyle tamamlanan satır ve/veya sütun (Dopamin modunda parıldar).
+    private(set) var completedLines = CompletedLines()
 
     /// Bulmaca çözülünce çağrılır (ilerleme kaydı, reklam sayacı).
     var onSolved: ((PuzzleCompletion) -> Void)?
@@ -174,6 +183,11 @@ final class GameViewModel {
         switch outcome {
         case .changed:
             if target == .filled, game.isRowSatisfied(position.row) || game.isColumnSatisfied(position.column) {
+                completedLines = CompletedLines(
+                    row: game.isRowSatisfied(position.row) ? position.row : nil,
+                    column: game.isColumnSatisfied(position.column) ? position.column : nil,
+                    serial: completedLines.serial + 1
+                )
                 onEvent?(.lineCompleted)
             } else {
                 onEvent?(target == .filled ? .filled : (target == .crossed ? .crossed : .erased))

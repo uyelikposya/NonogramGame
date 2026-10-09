@@ -11,6 +11,7 @@ struct RootView: View {
     @Environment(ReminderManager.self) private var reminders
     @Environment(\.colorScheme) private var colorScheme
     @Environment(\.scenePhase) private var scenePhase
+    @AppStorage(SettingsKeys.playMode) private var playMode = PlayMode.relax
 
     var body: some View {
         @Bindable var router = router
@@ -36,7 +37,11 @@ struct RootView: View {
         .onAppear {
             themeManager.applyInterfaceStyle()
             audio.prepare()
+            audio.setMusicTrack(playMode.musicTrack)
             audio.startMusic()
+        }
+        .onChange(of: playMode) { _, mode in
+            audio.setMusicTrack(mode.musicTrack)
         }
         // Onay formu, izleme izni ve reklam SDK'sı; ekran çizildikten sonra
         .task { await ads.start() }

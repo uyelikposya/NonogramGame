@@ -14,6 +14,10 @@ enum SoundEffect: String, CaseIterable {
     case card
     /// Oyun ekranındaki küçük kediye dokununca.
     case mew
+    /// Dopamin modu: satır/sütun tamamlanınca parıltı.
+    case combo
+    /// Dopamin modu: bulmaca çözülünce fanfar.
+    case fanfare
 }
 
 /// Arka plan müziği ve ses efektleri. Ayarlar (aç/kapa, seviye) kalıcıdır.
@@ -69,6 +73,8 @@ final class AudioManager {
     private var effectPlayers: [SoundEffect: [AVAudioPlayer]] = [:]
     private var lastPlayed: [SoundEffect: Date] = [:]
     private var isMusicRequested = false
+    /// Çalan müzik: Rahat modda sakin, Dopamin modunda hareketli döngü.
+    private var musicTrack = "music_cozy"
 
     init(defaults: UserDefaults = .standard, bundle: Bundle = .main) {
         self.defaults = defaults
@@ -101,10 +107,19 @@ final class AudioManager {
         musicPlayer?.pause()
     }
 
+    /// Oyun moduna göre müziği değiştirir; aynıysa bir şey yapmaz.
+    func setMusicTrack(_ name: String) {
+        guard name != musicTrack else { return }
+        musicTrack = name
+        musicPlayer?.stop()
+        musicPlayer = nil
+        resumeMusic()
+    }
+
     func resumeMusic() {
         guard isMusicRequested, musicEnabled else { return }
         if musicPlayer == nil {
-            musicPlayer = makePlayer("music_cozy", extension: "m4a")
+            musicPlayer = makePlayer(musicTrack, extension: "m4a")
             musicPlayer?.numberOfLoops = -1
         }
         musicPlayer?.volume = Float(musicVolume) * Self.musicHeadroom

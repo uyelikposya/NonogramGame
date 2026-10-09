@@ -185,4 +185,15 @@ final class GameViewModelTests: XCTestCase {
         viewModel.pause()
         XCTAssertFalse(viewModel.isPaused)
     }
+
+    /// Dopamin modunun parıltısı için tamamlanan satır/sütun bilinir.
+    func testReportsCompletedLines() {
+        let viewModel = GameViewModel(puzzle: puzzle, rules: GameRules(autoCrossCompletedLines: false))
+        viewModel.tap(position(0, 0))
+        XCTAssertEqual(viewModel.completedLines.column, 0)
+        XCTAssertNil(viewModel.completedLines.row)
+        viewModel.tap(position(0, 1))
+        XCTAssertEqual(viewModel.completedLines.column, 1)
+        XCTAssertEqual(viewModel.completedLines.serial, 2)
+    }
 }

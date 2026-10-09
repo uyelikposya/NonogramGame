@@ -1,6 +1,14 @@
 import NonogramKit
 import SwiftUI
 
+/// Tamamlanan satır/sütunun parıltısı (Dopamin modu).
+struct LineGlow: Equatable {
+    static let duration: TimeInterval = 0.6
+    var row: Int?
+    var column: Int?
+    var start: Date
+}
+
 /// İpuçları + tahta. Kareler tek bir `Canvas` ile çizilir; 20x20'de 400 ayrı View yerine
 /// tek çizim, sürüklemede akıcı kalır.
 @MainActor
@@ -16,6 +24,8 @@ struct BoardView: View {
     var hint: HintFinder.Hint?
     /// Eğitimde dokunulacak kareyi gösteren pati.
     var pointer: GridPosition?
+    /// Dopamin modu: az önce tamamlanan satır/sütunun kısa parıltısı.
+    var lineGlow: LineGlow?
     let onDragBegan: (GridPosition) -> Void
     let onDragMoved: (GridPosition) -> Void
     let onDragEnded: () -> Void
@@ -91,8 +101,11 @@ struct BoardView: View {
         let activeCell = activeCell
         let flashingCell = flashingCell
         let hint = hint
+        let lineGlow = lineGlow
 
-        return Canvas { context, size in
+        // Parıltı yalnızca varken zaman çizelgesi işler; yoksa duraklar
+        return TimelineView(.animation(paused: lineGlow == nil)) { timeline in
+        Canvas { context, size in
             context.fill(Path(CGRect(origin: .zero, size: size)), with: .color(theme.surface))
 
             if let active = activeCell {
@@ -149,6 +162,29 @@ struct BoardView: View {
                 context.fill(frame, with: .color(theme.accent.opacity(0.12)))
                 context.stroke(frame, with: .color(theme.accent), lineWidth: 3)
             }
+            if let glow = lineGlow {
+                let age = timeline.date.timeIntervalSince(glow.start)
+                if age >= 0, age < LineGlow.duration {
+                    let fade = 1 - age / LineGlow.duration
+                    var rects: [CGRect] = []
+                    if let row = glow.row { rects.append(CGRect(x: 0, y: CGFloat(row) * cell, width: size.width, height: cell)) }
+                    if let column = glow.column { rects.append(CGRect(x: CGFloat(column) * cell, y: 0, width: cell, height: size.height)) }
+                    for rect in rects {
+                        // Satır boyunca soldan sağa (sütunda yukarıdan aşağı) kayan ışık
+                        let sweep = age / LineGlow.duration
+                        let path = Path(roundedRect: rect.insetBy(dx: 1, dy: 1), cornerRadius: cell * 0.2)
+                        context.fill(path, with: .color(Gold.bright.opacity(0.35 * fade)))
+                        context.stroke(path, with: .color(Gold.mid.opacity(fade)), lineWidth: 3)
+                        let spot = rect.width > rect.height
+                            ? CGPoint(x: rect.minX + rect.width * sweep, y: rect.midY)
+                            : CGPoint(x: rect.midX, y: rect.minY + rect.height * sweep)
+                        let radius = cell * 0.45
+                        context.fill(Path(ellipseIn: CGRect(x: spot.x - radius, y: spot.y - radius, width: radius * 2, height: radius * 2)),
+                                     with: .color(.white.opacity(0.7 * fade)))
+                    }
+                }
+            }
+        }
         }
         .frame(width: cell * CGFloat(board.columns), height: cell * CGFloat(board.rows))
         .clipShape(RoundedRectangle(cornerRadius: 6))

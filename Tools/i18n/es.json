@@ -245,7 +245,13 @@
   "Tip: pause any time with the button at the top right.": "Consejo: pausa cuando quieras con el botón de arriba a la derecha.",
   "Skip tutorial": "Saltar tutorial",
   "Skip the tutorial?": "¿Saltar el tutorial?",
-  "The first cat breed opens right away. You can come back to Muffin's School any time from All Levels.": "La primera raza de gato se abre enseguida. Puedes volver a la escuela de Muffin cuando quieras desde Todos los niveles."
+  "The first cat breed opens right away. You can come back to Muffin's School any time from All Levels.": "La primera raza de gato se abre enseguida. Puedes volver a la escuela de Muffin cuando quieras desde Todos los niveles.",
+  "Play Style": "Estilo de juego",
+  "Relax": "Relax",
+  "Dopamine": "Dopamina",
+  "Calm and simple: soft music, no distractions.": "Tranquilo y sencillo: música suave, sin distracciones.",
+  "Sparkles for every line, celebrations for every puzzle and upbeat music.": "Destellos en cada línea, celebraciones en cada puzle y música animada.",
+  "Tip: like it calm or lively? Pick Relax or Dopamine mode in Settings → Play Style.": "Consejo: ¿tranquilo o animado? Elige el modo Relax o Dopamina en Ajustes → Estilo de juego."
  },
  "infoplist": {
   "CFBundleDisplayName": "Catgrid",
