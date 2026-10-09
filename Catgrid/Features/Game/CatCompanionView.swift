@@ -20,6 +20,8 @@ struct CatCompanionView: View {
     /// Balonda gösterilecek söz; `nil` ise kedi kendi işinde.
     var line: CompanionLine?
     var isActive = true
+    /// Oynanan türün renkleri; eğitim ve günlük bulmacada turuncu tekir.
+    var coat: CatCoat = .ginger
     let onTap: () -> Void
 
     @State private var position: CGFloat = 0.15
@@ -72,7 +74,7 @@ struct CatCompanionView: View {
     }
 
     private var cat: some View {
-        CatSprite(pose: pose, pixel: Self.pixel, fur: Color(hex: "#F7A862"), furShade: Color(hex: "#E68C50"))
+        CatSprite(pose: pose, pixel: Self.pixel, coat: coat)
             .scaleEffect(x: facingRight ? 1 : -1)
             .overlay(alignment: .top) {
                 ZStack {
@@ -233,17 +235,18 @@ enum CatPose: CaseIterable {
     static let columns = 16
     static let rows = 11
 
-    /// `#` tüy, `r` gölgeli tüy (pati), `d`/`-` göz, `p`/`t` burun/dil, `w` krem.
+    /// `#` tüy, `k` kulak ve kuyruk (koyu uçlu türlerde koyu), `r` gölgeli tüy (pati),
+    /// `d`/`-` göz, `p`/`t` burun/dil, `w` krem.
     var pattern: [String] {
         switch self {
         case .walk1: [
             "................",
-            "...........#...#",
-            "...........##.##",
+            "...........k...k",
+            "...........kk.kk",
             "...........#####",
-            "#..........#d#d#",
-            "#..........##p##",
-            ".#..#########w#.",
+            "k..........#d#d#",
+            "k..........##p##",
+            ".k..#########w#.",
             "..###########...",
             "...##########...",
             "...#.#....#.#...",
@@ -251,20 +254,20 @@ enum CatPose: CaseIterable {
         ]
         case .walk2: [
             "................",
-            "...........#...#",
-            "...........##.##",
+            "...........k...k",
+            "...........kk.kk",
             "...........#####",
-            "..#........#d#d#",
-            ".#.........##p##",
-            ".#..#########w#.",
+            "..k........#d#d#",
+            ".k.........##p##",
+            ".k..#########w#.",
             "..###########...",
             "...##########...",
             "....#.#..#.#....",
             "....#.#..#.#....",
         ]
         case .sit: [
-            "......#...#.....",
-            "......##.##.....",
+            "......k...k.....",
+            "......kk.kk.....",
             "......#####.....",
             "......#d#d#.....",
             "......##p##.....",
@@ -272,12 +275,12 @@ enum CatPose: CaseIterable {
             "......#####.....",
             ".....#######....",
             ".....###w###....",
-            "..##.#######....",
+            "..kk.#######....",
             "...########.....",
         ]
         case .lick1: [
-            "......#...#.....",
-            "......##.##.....",
+            "......k...k.....",
+            "......kk.kk.....",
             "......#####.....",
             "......#-#-#.....",
             "....r.##p##.....",
@@ -285,12 +288,12 @@ enum CatPose: CaseIterable {
             "......#####.....",
             ".....#######....",
             ".....#######....",
-            "..##.#######....",
+            "..kk.#######....",
             "...########.....",
         ]
         case .lick2: [
-            "......#...#.....",
-            "......##.##.....",
+            "......k...k.....",
+            "......kk.kk.....",
             "......#####.....",
             "......#-#-#.....",
             "......##p##.....",
@@ -298,7 +301,7 @@ enum CatPose: CaseIterable {
             "....rr#####.....",
             ".....#######....",
             ".....#######....",
-            "..##.#######....",
+            "..kk.#######....",
             "...########.....",
         ]
         case .sleep: [
@@ -307,8 +310,8 @@ enum CatPose: CaseIterable {
             "................",
             "................",
             "................",
-            "...........#...#",
-            "...........##.##",
+            "...........k...k",
+            "...........kk.kk",
             "....#######-#-##",
             "..###########p##",
             ".#############w.",
@@ -318,15 +321,63 @@ enum CatPose: CaseIterable {
     }
 }
 
+/// Yardımcı kedinin renkleri. Tür bölümlerinde türün piksel portresinden çıkarılır:
+/// en çok kullanılan renk tüy, belirgin şekilde koyu ikinci renk kulak ve kuyruk (Siyam'ın
+/// koyu uçları gibi). Koyu tüylü kedide gözler açık renk olur ki görünsün.
+struct CatCoat: Equatable {
+    var fur: Color
+    var shade: Color
+    var points: Color
+    var eyes: Color
+
+    static let ginger = CatCoat(
+        fur: Color(hex: "#F7A862"), shade: Color(hex: "#E68C50"),
+        points: Color(hex: "#F7A862"), eyes: Color(hex: "#3B2F2F")
+    )
+
+    init(fur: Color, shade: Color, points: Color, eyes: Color) {
+        self.fur = fur
+        self.shade = shade
+        self.points = points
+        self.eyes = eyes
+    }
+
+    init?(portrait: Matrix<RGBColor?>) {
+        var counts: [RGBColor: Int] = [:]
+        for case let color? in portrait.storage { counts[color, default: 0] += 1 }
+        guard let fur = counts.max(by: { $0.value < $1.value })?.key else { return nil }
+        let total = counts.values.reduce(0, +)
+        let furLight = fur.luminance
+        // Koyu uçlar: tüyden belirgin koyu ve portrenin en az %8'i
+        let points = counts
+            .filter { $0.key.luminance < furLight - 0.25 && Double($0.value) >= Double(total) * 0.08 }
+            .max { $0.value < $1.value }?.key
+        self.fur = Color(fur)
+        shade = Color(fur.scaled(0.85))
+        self.points = Color(points ?? fur)
+        eyes = furLight < 0.3 ? Color(hex: "#E8B04A") : Color(hex: "#3B2F2F")
+    }
+}
+
+extension RGBColor {
+    /// Algısal parlaklık (0 koyu, 1 açık).
+    var luminance: Double {
+        (0.299 * Double(red) + 0.587 * Double(green) + 0.114 * Double(blue)) / 255
+    }
+
+    func scaled(_ factor: Double) -> RGBColor {
+        func channel(_ value: UInt8) -> UInt8 { UInt8(max(0, min(255, (Double(value) * factor).rounded()))) }
+        return RGBColor(red: channel(red), green: channel(green), blue: channel(blue))
+    }
+}
+
 /// Bir pozu tek `Canvas` ile çizer.
 @MainActor
 struct CatSprite: View {
     let pose: CatPose
     let pixel: CGFloat
-    let fur: Color
-    let furShade: Color
+    let coat: CatCoat
 
-    private static let dark = Color(hex: "#3B2F2F")
     private static let pink = Color(hex: "#E8707E")
     private static let cream = Color(hex: "#FFF3E4")
 
@@ -334,7 +385,7 @@ struct CatSprite: View {
         let pattern = pose.pattern
         let pixel = pixel
         let colors: [Character: Color] = [
-            "#": fur, "r": furShade, "d": Self.dark, "-": Self.dark,
+            "#": coat.fur, "k": coat.points, "r": coat.shade, "d": coat.eyes, "-": coat.eyes,
             "p": Self.pink, "t": Self.pink, "w": Self.cream,
         ]
         Canvas { context, _ in

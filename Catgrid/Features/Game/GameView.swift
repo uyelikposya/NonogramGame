@@ -135,7 +135,7 @@ struct GameView: View {
             .aspectRatio(1, contentMode: .fit)
 
             // Tahtanın altındaki boşlukta dolaşan kedi; boşluk yoksa görünmez
-            CatCompanionView(line: companionLine, isActive: game.status == .playing) {
+            CatCompanionView(line: companionLine, isActive: game.status == .playing, coat: companionCoat) {
                 askCompanion()
             }
             .layoutPriority(-1)
@@ -295,6 +295,12 @@ struct GameView: View {
         }
         .buttonStyle(PrimaryButtonStyle())
         .accessibilityIdentifier("result.next")
+    }
+
+    /// Kedi türü bölümünde yardımcı kedi o türün renklerinde.
+    private var companionCoat: CatCoat {
+        guard let chapter, chapter.kind == .breed, let portrait = chapter.portrait else { return .ginger }
+        return CatCoat(portrait: portrait) ?? .ginger
     }
 
     private var companionHint: HintFinder.Hint? {
