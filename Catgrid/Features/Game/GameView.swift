@@ -78,7 +78,10 @@ struct GameView: View {
                     .transition(.move(edge: .top).combined(with: .opacity))
             }
 
-            GameStatusBar(game: game, isHardMode: $isHardMode)
+            GameStatusBar(game: game, isHardMode: $isHardMode) {
+                audio.play(.tap)
+                withAnimation(.snappy) { viewModel.pause() }
+            }
                 .overlay(alignment: .bottom) {
                     if let hard = difficultyNote {
                         Text(hard ? LocalizedStringKey("Hard: you place every X yourself.") : LocalizedStringKey("Easy: finished lines are crossed out for you."))
@@ -116,6 +119,25 @@ struct GameView: View {
             }
         }
         .padding(20)
+        .overlay {
+            if viewModel.isPaused {
+                PauseMenu(
+                    onContinue: {
+                        audio.play(.tap)
+                        withAnimation(.snappy) { viewModel.resume() }
+                    },
+                    onSettings: {
+                        audio.play(.tap)
+                        router.push(.settings)
+                    },
+                    onHome: {
+                        audio.play(.tap)
+                        router.popToRoot()
+                    }
+                )
+                .transition(.opacity)
+            }
+        }
         .themedScreen()
         .screenTitle(Text(verbatim: chapter?.title.resolved ?? ""), subtitle: subtitle)
         .overlay(alignment: .bottom) {
@@ -183,12 +205,13 @@ struct GameView: View {
                 unlocksGoldenGift: !selection.isGolden && model.isGoldenGift(selection.chapter) && !store.isPremium
             )
         }
-        // Uygulama arka plana geçince (ve kapatılmadan önce) yarım oyun kaydedilir
+        // Uygulama arka plana geçince (ve kapatılmadan önce) oyun duraklar ve yarım oyun kaydedilir;
+        // dönünce duraklatma menüsü karşılar
         .onChange(of: scenePhase) { _, phase in
             switch phase {
             case .active: viewModel.start()
             default:
-                viewModel.stop()
+                viewModel.pause()
                 persistProgress()
             }
         }
@@ -396,6 +419,7 @@ struct GameStatusBar: View {
     @Environment(\.appTheme) private var theme
     let game: NonogramGame
     @Binding var isHardMode: Bool
+    let onPause: () -> Void
 
     var body: some View {
         HStack {
@@ -438,12 +462,79 @@ struct GameStatusBar: View {
             .accessibilityLabel(Text("Difficulty"))
             .accessibilityValue(isHardMode ? Text("Hard") : Text("Easy"))
             .accessibilityIdentifier("game.difficulty")
+
+            if game.status == .playing {
+                Button(action: onPause) {
+                    Image(systemName: "pause.fill")
+                        .font(.subheadline.weight(.bold))
+                        .frame(width: 34, height: 34)
+                        .background(Circle().fill(theme.surfaceMuted))
+                        .foregroundStyle(theme.textPrimary)
+                }
+                .buttonStyle(PressableButtonStyle())
+                .padding(.leading, 4)
+                .accessibilityLabel(Text("Pause"))
+                .accessibilityIdentifier("game.pause")
+            }
         }
         .font(.headline)
     }
 
     private var isRunningOut: Bool {
         (game.remainingTime ?? .infinity) <= 10
+    }
+}
+
+/// Duraklatınca tahtanın üstünü kapatan menü: Devam, Ayarlar, Ana Sayfa.
+@MainActor
+struct PauseMenu: View {
+    @Environment(\.appTheme) private var theme
+    let onContinue: () -> Void
+    let onSettings: () -> Void
+    let onHome: () -> Void
+
+    var body: some View {
+        ZStack {
+            // Tahta görünmesin: duraklatıp düşünmek hile olmasın
+            theme.background
+                .opacity(0.97)
+                .contentShape(Rectangle())
+            VStack(spacing: 14) {
+                Image(systemName: "pause.circle.fill")
+                    .font(.system(size: 44))
+                    .foregroundStyle(theme.accent)
+                Text("Paused")
+                    .font(.title2.bold())
+                    .foregroundStyle(theme.textPrimary)
+                Text("Take a break. Your puzzle will wait for you.")
+                    .font(.subheadline)
+                    .multilineTextAlignment(.center)
+                    .foregroundStyle(theme.textSecondary)
+                VStack(spacing: 10) {
+                    Button(action: onContinue) {
+                        Label("Continue", systemImage: "play.fill")
+                    }
+                    .buttonStyle(PrimaryButtonStyle())
+                    .accessibilityIdentifier("pause.continue")
+                    Button(action: onSettings) {
+                        Label("Settings", systemImage: "gearshape.fill")
+                    }
+                    .buttonStyle(SecondaryButtonStyle())
+                    .accessibilityIdentifier("pause.settings")
+                    Button(action: onHome) {
+                        Label("Home", systemImage: "house.fill")
+                    }
+                    .buttonStyle(SecondaryButtonStyle())
+                    .accessibilityIdentifier("pause.home")
+                }
+                .padding(.top, 4)
+            }
+            .padding(24)
+            .frame(maxWidth: 420)
+            .card()
+            .padding(.horizontal, 4)
+            .dynamicTypeSize(...DynamicTypeSize.accessibility2)
+        }
     }
 }
 

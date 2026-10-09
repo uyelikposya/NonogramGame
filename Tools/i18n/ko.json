@@ -177,7 +177,11 @@
   "Gift: this breed's 9 golden puzzles are now unlocked!": "선물: 이 품종의 골든 퍼즐 9개가 열렸어요!",
   "New cat unlocked: %@": "새 고양이 등장: %@",
   "Finish %@ to unlock": "%@ 완료 시 열림",
-  "Solve half of %@ to unlock": "%@ 퍼즐 절반을 풀면 열림"
+  "Solve half of %@ to unlock": "%@ 퍼즐 절반을 풀면 열림",
+  "Pause": "일시정지",
+  "Paused": "일시정지됨",
+  "Take a break. Your puzzle will wait for you.": "잠시 쉬어 가세요. 퍼즐이 기다리고 있어요.",
+  "Home": "홈"
  },
  "infoplist": {
   "CFBundleDisplayName": "Catgrid",

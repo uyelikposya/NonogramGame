@@ -671,6 +671,22 @@
   "Your card is on its way…": {
    "en": "Your card is on its way…",
    "tr": "Kartın geliyor…"
+  },
+  "Pause": {
+   "en": "Pause",
+   "tr": "Duraklat"
+  },
+  "Paused": {
+   "en": "Paused",
+   "tr": "Duraklatıldı"
+  },
+  "Take a break. Your puzzle will wait for you.": {
+   "en": "Take a break. Your puzzle will wait for you.",
+   "tr": "Biraz mola ver. Bulmacan seni bekliyor."
+  },
+  "Home": {
+   "en": "Home",
+   "tr": "Ana Sayfa"
   }
  },
  "infoplist": {

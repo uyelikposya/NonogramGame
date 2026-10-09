@@ -154,4 +154,35 @@ final class GameViewModelTests: XCTestCase {
 
         XCTAssertEqual(events, [.lineCompleted, .crossed, .erased, .mistake, .solved])
     }
+
+    /// Duraklatınca süre durur; arka plandan dönünce (start) menü açık kalır, Devam ile sürer.
+    func testPauseHoldsUntilResumed() {
+        let viewModel = GameViewModel(puzzle: puzzle, rules: .classic)
+        viewModel.tap(position(0, 0))
+        viewModel.dragMoved(to: position(1, 1))
+        viewModel.pause()
+        XCTAssertTrue(viewModel.isPaused)
+        XCTAssertNil(viewModel.activeCell)
+
+        viewModel.start()
+        XCTAssertTrue(viewModel.isPaused)
+
+        viewModel.resume()
+        XCTAssertFalse(viewModel.isPaused)
+        viewModel.stop()
+    }
+
+    func testFinishedGameCannotBePausedAndRestartClearsPause() {
+        let viewModel = GameViewModel(puzzle: puzzle, rules: .classic)
+        viewModel.pause()
+        viewModel.restart()
+        XCTAssertFalse(viewModel.isPaused)
+
+        viewModel.tap(position(0, 0))
+        viewModel.tap(position(0, 1))
+        viewModel.tap(position(0, 2))
+        XCTAssertEqual(viewModel.game.status, .won)
+        viewModel.pause()
+        XCTAssertFalse(viewModel.isPaused)
+    }
 }

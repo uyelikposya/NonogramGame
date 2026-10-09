@@ -29,4 +29,9 @@ final class Router {
     func pop() {
         if !path.isEmpty { path.removeLast() }
     }
+
+    /// Ana sayfaya döner.
+    func popToRoot() {
+        path.removeAll()
+    }
 }

@@ -45,6 +45,9 @@ final class GameViewModel {
     var puzzle: Puzzle { game.puzzle }
     var isFinished: Bool { game.status != .playing }
 
+    /// Duraklatıldı: süre durur, tahta duraklatma menüsünün altında gizlenir.
+    private(set) var isPaused = false
+
     /// Kaydedilecek yarım oyun. Bitmiş ya da hiç dokunulmamış oyunda `nil`:
     /// o durumda varsa eski kayıt silinmelidir.
     var snapshotToSave: GameSnapshot? {
@@ -126,13 +129,14 @@ final class GameViewModel {
         lastMistake = nil
         hasRevived = false
         activeCell = nil
+        isPaused = false
         start()
     }
 
     // MARK: - Zamanlayıcı
 
     func start() {
-        guard timerTask == nil, !isFinished else { return }
+        guard timerTask == nil, !isFinished, !isPaused else { return }
         timerTask = Task { [weak self] in
             while !Task.isCancelled {
                 try? await Task.sleep(for: .seconds(1))
@@ -148,6 +152,20 @@ final class GameViewModel {
     func stop() {
         timerTask?.cancel()
         timerTask = nil
+    }
+
+    /// Duraklat düğmesi ya da uygulama arka plana geçince. Biten oyunda bir şey yapmaz.
+    func pause() {
+        guard !isFinished else { return }
+        isPaused = true
+        dragTarget = nil
+        activeCell = nil
+        stop()
+    }
+
+    func resume() {
+        isPaused = false
+        start()
     }
 
     // MARK: - Yardımcılar

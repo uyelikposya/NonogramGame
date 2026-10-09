@@ -180,7 +180,11 @@
   "Gift: this breed's 9 golden puzzles are now unlocked!": "Cadeau : les 9 grilles dorées de cette race sont débloquées !",
   "New cat unlocked: %@": "Nouveau chat débloqué : %@",
   "Finish %@ to unlock": "Terminez %@ pour débloquer",
-  "Solve half of %@ to unlock": "Résolvez la moitié de %@ pour débloquer"
+  "Solve half of %@ to unlock": "Résolvez la moitié de %@ pour débloquer",
+  "Pause": "Pause",
+  "Paused": "En pause",
+  "Take a break. Your puzzle will wait for you.": "Faites une pause. Votre grille vous attend.",
+  "Home": "Accueil"
  },
  "infoplist": {
   "CFBundleDisplayName": "Catgrid",

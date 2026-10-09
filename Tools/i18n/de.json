@@ -180,7 +180,11 @@
   "Gift: this breed's 9 golden puzzles are now unlocked!": "Geschenk: Die 9 goldenen Rätsel dieser Rasse sind jetzt freigeschaltet!",
   "New cat unlocked: %@": "Neue Katze freigeschaltet: %@",
   "Finish %@ to unlock": "Schließe %@ ab zum Freischalten",
-  "Solve half of %@ to unlock": "Löse die Hälfte von %@ zum Freischalten"
+  "Solve half of %@ to unlock": "Löse die Hälfte von %@ zum Freischalten",
+  "Pause": "Pause",
+  "Paused": "Pausiert",
+  "Take a break. Your puzzle will wait for you.": "Mach eine Pause. Dein Rätsel wartet auf dich.",
+  "Home": "Startseite"
  },
  "infoplist": {
   "CFBundleDisplayName": "Catgrid",
