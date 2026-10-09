@@ -161,7 +161,7 @@ def main():
         if len(puzzles) % 50 == 0:
             print(f"{len(puzzles)} desen", file=sys.stderr)
     OUT.write_text(json.dumps({"schemaVersion": 1, "chapterID": "daily", "puzzles": puzzles},
-                              ensure_ascii=False, indent=1) + "\n")
+                              ensure_ascii=False, indent=2) + "\n")
     print(f"✓ {len(puzzles)} günlük bulmaca → {OUT.relative_to(ROOT)}")
 
 

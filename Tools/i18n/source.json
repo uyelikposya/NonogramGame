@@ -1487,6 +1487,54 @@
   "Cat Basket": {
    "tr": "Kedi Sepeti",
    "kind": "title"
+  },
+  "Mosaic": {
+   "tr": "Mozaik",
+   "kind": "title"
+  },
+  "Totem": {
+   "tr": "Totem",
+   "kind": "title"
+  },
+  "Lantern": {
+   "tr": "Fener",
+   "kind": "title"
+  },
+  "Tapestry": {
+   "tr": "Duvar Halısı",
+   "kind": "title"
+  },
+  "Ornament": {
+   "tr": "Süsleme",
+   "kind": "title"
+  },
+  "Crystal": {
+   "tr": "Kristal",
+   "kind": "title"
+  },
+  "Labyrinth": {
+   "tr": "Labirent",
+   "kind": "title"
+  },
+  "Kilim": {
+   "tr": "Kilim",
+   "kind": "title"
+  },
+  "Stained Glass": {
+   "tr": "Vitray",
+   "kind": "title"
+  },
+  "Snowflake": {
+   "tr": "Kar Tanesi",
+   "kind": "title"
+  },
+  "Mask": {
+   "tr": "Maske",
+   "kind": "title"
+  },
+  "Emblem": {
+   "tr": "Amblem",
+   "kind": "title"
   }
  },
  "storekit": {
