@@ -11,6 +11,9 @@ final class PuzzleRecord {
     var timesCompleted: Int
     var bestTime: TimeInterval?
     var fewestMistakes: Int?
+    /// En iyi yıldız sayısı (1-4). 1.1'den önceki çözümlerde `nil`; o zaman en iyi süre ve
+    /// en az hatadan tahmin edilir.
+    var bestStars: Int?
     /// Tüm başarılı çözümlerin toplam süresi (istatistik ekranı için).
     var totalSolveTime: TimeInterval
     /// Yarım kalan oyunun JSON'a çevrilmiş `GameSnapshot`'ı.

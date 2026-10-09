@@ -18,6 +18,7 @@ struct StatsView: View {
                     StatTile(icon: "cat.fill", title: "Breeds Collected", value: Text(verbatim: "\(model.collectedBreeds.count)"))
                     StatTile(icon: "crown.fill", title: "Golden Cards", value: Text(verbatim: "\(model.goldenBreeds.count)"))
                     StatTile(icon: "sparkles", title: "Perfect", value: Text(verbatim: "\(stats.perfectCount)"))
+                    StatTile(icon: "star.fill", title: "Stars", value: Text(verbatim: "\(model.totalStars)"))
                     StatTile(icon: "clock.fill", title: "Total Time", value: Text(formatDuration(stats.totalSolveTime)))
                     StatTile(
                         icon: "speedometer",

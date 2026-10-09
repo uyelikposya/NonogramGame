@@ -687,6 +687,18 @@
   "Home": {
    "en": "Home",
    "tr": "Ana Sayfa"
+  },
+  "Stars": {
+   "en": "Stars",
+   "tr": "Yıldız"
+  },
+  "%lld of 4 stars": {
+   "en": "%lld of 4 stars",
+   "tr": "4 yıldızdan %lld"
+  },
+  "Solve within %@ for the 4th star": {
+   "en": "Solve within %@ for the 4th star",
+   "tr": "4. yıldız için %@ içinde çöz"
   }
  },
  "infoplist": {

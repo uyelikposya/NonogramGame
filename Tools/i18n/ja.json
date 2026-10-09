@@ -181,7 +181,10 @@
   "Pause": "一時停止",
   "Paused": "一時停止中",
   "Take a break. Your puzzle will wait for you.": "ひと休みしましょう。パズルはそのまま待っています。",
-  "Home": "ホーム"
+  "Home": "ホーム",
+  "Stars": "スター",
+  "%lld of 4 stars": "スター %lld/4",
+  "Solve within %@ for the 4th star": "%@以内に解くと4つ目のスター"
  },
  "infoplist": {
   "CFBundleDisplayName": "Catgrid",

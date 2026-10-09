@@ -141,4 +141,22 @@ final class RouterTests: XCTestCase {
         router.pop()
         XCTAssertEqual(router.path, [.chapters])
     }
+
+    /// Yıldızlar en iyi çözümü tutar; daha kötü bir tekrar düşürmez.
+    func testKeepsBestStars() throws {
+        let model = try makeModel()
+        let puzzle = try XCTUnwrap(model.catalog.puzzle(withID: "t1"))
+        XCTAssertNil(model.stars(for: puzzle))
+
+        let slow = model.record(PuzzleCompletion(puzzleID: "t1", completedAt: Date(), elapsed: 30, mistakes: 1))
+        XCTAssertEqual(slow.stars, 2)
+        XCTAssertEqual(model.stars(for: puzzle), 2)
+
+        model.record(PuzzleCompletion(puzzleID: "t1", completedAt: Date(), elapsed: 5, mistakes: 0))
+        XCTAssertEqual(model.stars(for: puzzle), 4)
+
+        model.record(PuzzleCompletion(puzzleID: "t1", completedAt: Date(), elapsed: 90, mistakes: 3))
+        XCTAssertEqual(model.stars(for: puzzle), 4)
+        XCTAssertEqual(model.totalStars, 4)
+    }
 }

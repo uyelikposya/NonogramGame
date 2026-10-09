@@ -324,6 +324,14 @@ struct GameView: View {
         return time + separator + Text("\(result.mistakes) mistakes")
     }
 
+    /// Hız yıldızı kaçtıysa hedef süre hatırlatılır.
+    private func speedStarNote(_ result: CompletionResult) -> Text? {
+        let puzzle = viewModel.puzzle
+        let target = StarRating.speedTarget(rows: puzzle.rows, columns: puzzle.columns)
+        guard result.elapsed > target else { return nil }
+        return Text("Solve within \(formatDuration(target)) for the 4th star")
+    }
+
     @ViewBuilder
     private var resultCard: some View {
         switch game.status {
@@ -336,7 +344,9 @@ struct GameView: View {
                 title: "Purrfect!",
                 message: Text(verbatim: viewModel.puzzle.title.resolved),
                 detail: completionResult.map { resultDetail($0) },
-                badge: completionResult?.isNewBest == true ? "New best time!" : nil
+                badge: completionResult?.isNewBest == true ? "New best time!" : nil,
+                stars: completionResult?.stars,
+                starNote: completionResult.flatMap { speedStarNote($0) }
             ) {
                 if isCardPending {
                     // Kart penceresi açılana/kapanana kadar geçiş düğmeleri yok
@@ -591,7 +601,10 @@ struct ResultCard<Actions: View>: View {
     let message: Text
     var detail: Text?
     var badge: LocalizedStringKey?
+    var stars: Int?
+    var starNote: Text?
     @ViewBuilder let actions: () -> Actions
+    @State private var showsStars = false
 
     var body: some View {
         VStack(spacing: 14) {
@@ -605,6 +618,20 @@ struct ResultCard<Actions: View>: View {
                 .font(.subheadline)
                 .multilineTextAlignment(.center)
                 .foregroundStyle(theme.textSecondary)
+            if let stars {
+                StarsView(count: stars, size: 26)
+                    .scaleEffect(showsStars ? 1 : 0.4)
+                    .opacity(showsStars ? 1 : 0)
+                    .onAppear {
+                        withAnimation(.spring(response: 0.45, dampingFraction: 0.55).delay(0.25)) { showsStars = true }
+                    }
+                if let starNote {
+                    starNote
+                        .font(.caption)
+                        .multilineTextAlignment(.center)
+                        .foregroundStyle(theme.textSecondary)
+                }
+            }
             if let detail {
                 detail
                     .font(.subheadline.monospacedDigit())

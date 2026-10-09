@@ -8,6 +8,8 @@ struct CompletionResult: Equatable {
     let mistakes: Int
     /// Bu çözümden önceki en iyi süre; ilk çözümde `nil`.
     let previousBest: TimeInterval?
+    /// Bu çözümün yıldızları (1-4).
+    var stars: Int?
 
     var isNewBest: Bool {
         previousBest.map { elapsed < $0 } ?? false
@@ -86,13 +88,15 @@ final class ProgressStore {
     }
 
     @discardableResult
-    func recordCompletion(_ completion: PuzzleCompletion) -> CompletionResult {
+    func recordCompletion(_ completion: PuzzleCompletion, stars: Int? = nil) -> CompletionResult {
         let record = fetchOrCreate(completion.puzzleID)
         let result = CompletionResult(
             elapsed: completion.elapsed,
             mistakes: completion.mistakes,
-            previousBest: record.bestTime
+            previousBest: record.bestTime,
+            stars: stars
         )
+        if let stars { record.bestStars = max(record.bestStars ?? 0, stars) }
         if record.firstCompletedAt == nil { record.firstCompletedAt = completion.completedAt }
         record.timesCompleted += 1
         record.totalSolveTime += completion.elapsed

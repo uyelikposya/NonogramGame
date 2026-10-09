@@ -184,7 +184,10 @@
   "Pause": "Pausar",
   "Paused": "Pausado",
   "Take a break. Your puzzle will wait for you.": "Faça uma pausa. Seu desafio vai esperar por você.",
-  "Home": "Início"
+  "Home": "Início",
+  "Stars": "Estrelas",
+  "%lld of 4 stars": "%lld de 4 estrelas",
+  "Solve within %@ for the 4th star": "Resolva em %@ para ganhar a 4ª estrela"
  },
  "infoplist": {
   "CFBundleDisplayName": "Catgrid",

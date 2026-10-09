@@ -35,7 +35,33 @@ final class AppModel {
 
     @discardableResult
     func record(_ completion: PuzzleCompletion) -> CompletionResult {
-        progress.recordCompletion(completion)
+        let stars = catalog.puzzle(withID: completion.puzzleID).map {
+            StarRating.stars(mistakes: completion.mistakes, elapsed: completion.elapsed, rows: $0.rows, columns: $0.columns)
+        }
+        return progress.recordCompletion(completion, stars: stars)
+    }
+
+    // MARK: - Yıldızlar
+
+    /// Bulmacanın en iyi yıldızı; çözülmediyse `nil`. Eski (1.0) çözümlerde en iyi süre ve en az
+    /// hatadan tahmin edilir.
+    func stars(for puzzle: Puzzle) -> Int? {
+        guard let record = progress.record(for: puzzle.id), record.isCompleted else { return nil }
+        if let stars = record.bestStars { return stars }
+        return StarRating.stars(
+            mistakes: record.fewestMistakes ?? 0,
+            elapsed: record.bestTime ?? .infinity,
+            rows: puzzle.rows,
+            columns: puzzle.columns
+        )
+    }
+
+    /// Tüm çözülen bulmacaların yıldız toplamı (istatistik ekranı).
+    var totalStars: Int {
+        catalog.chapters
+            .flatMap { $0.puzzles + $0.premiumPuzzles }
+            .compactMap { stars(for: $0) }
+            .reduce(0, +)
     }
 
     // MARK: - Ekranlar için özetler

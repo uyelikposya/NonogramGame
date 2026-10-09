@@ -49,7 +49,8 @@ struct ChapterView: View {
                                     puzzle: puzzle,
                                     number: offset + 1,
                                     state: state,
-                                    isInProgress: model.progress.hasSavedGame(for: puzzle.id)
+                                    isInProgress: model.progress.hasSavedGame(for: puzzle.id),
+                                    stars: model.stars(for: puzzle)
                                 )
                             }
                             .buttonStyle(PressableButtonStyle())
@@ -124,7 +125,8 @@ extension ChapterView {
                             number: offset + 1,
                             state: state,
                             isInProgress: model.progress.hasSavedGame(for: puzzle.id),
-                            isGolden: true
+                            isGolden: true,
+                            stars: model.stars(for: puzzle)
                         )
                     }
                     .buttonStyle(PressableButtonStyle())
@@ -229,10 +231,24 @@ struct PuzzleTile: View {
     var isInProgress = false
     /// Abonelere özel Altın bulmaca: altın zemin/çerçeve.
     var isGolden = false
+    /// Çözülmüşse en iyi yıldız sayısı; karonun altında gösterilir.
+    var stars: Int?
 
     var body: some View {
+        VStack(spacing: 5) {
+            tile
+            // Satırlar hizalı kalsın: yıldızı olmayan karoda da aynı yükseklik
+            StarsView(count: stars ?? 0, size: 10)
+                .opacity(stars == nil ? 0 : 1)
+                .accessibilityHidden(true)
+        }
+        .accessibilityElement()
+        .accessibilityLabel(accessibilityText)
+    }
+
+    private var tile: some View {
         let shape = RoundedRectangle(cornerRadius: 16, style: .continuous)
-        ZStack {
+        return ZStack {
             switch state {
             case .completed:
                 ArtworkThumbnail(artwork: puzzle.artwork)
@@ -273,13 +289,13 @@ struct PuzzleTile: View {
             }
         }
         .shadow(color: state == .locked ? .clear : theme.cardShadow, radius: 6, y: 2)
-        .accessibilityElement()
-        .accessibilityLabel(accessibilityText)
     }
 
     private var accessibilityText: Text {
         switch state {
-        case .completed: Text("Puzzle \(number), solved: \(puzzle.title.resolved)")
+        case .completed:
+            Text("Puzzle \(number), solved: \(puzzle.title.resolved)")
+                + Text(verbatim: ", ") + Text("\(stars ?? 0) of 4 stars")
         case .playable: isInProgress ? Text("Puzzle \(number), in progress") : Text("Puzzle \(number)")
         case .locked: Text("Puzzle \(number), locked")
         }
