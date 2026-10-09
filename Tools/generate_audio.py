@@ -199,7 +199,6 @@ def music_upbeat(path):
 
     kick = glide(150, 45, 0.18, 0.12)
     clap = noise(0.12, 0.05, 0.7)
-    hat = noise(0.04, 0.01, 0.95)
     for bar_index in range(16):
         start = bar_index * bar
         chord = chords[bar_index % 4]
@@ -208,8 +207,7 @@ def music_upbeat(path):
             if b in (1, 3):
                 add(start + b * beat, clap, 0.22)
         for step in range(8):
-            add(start + step * beat / 2 + beat / 4, hat, 0.06)
-            # Arpej (sekizlik)
+            # Arpej (sekizlik); hi-hat yok: ince "tık" sesi rahatsız ediyordu
             f = chord[step % 3] * (2 if step >= 4 else 1)
             add(start + step * beat / 2, tone(f * 2, beat * 0.45, (1, 0.3), decay=0.12, attack=0.004), 0.08)
         for hit in (0, 1.5, 2, 3.5):
