@@ -71,7 +71,7 @@ final class CatPuzzleTests: XCTestCase {
             cats.record(.init(level: level, score: 100, mistakes: 0, usedHints: false, elapsed: 30, bestCombo: 1, perfectlyMarked: 0))
         }
         XCTAssertFalse(cats.isUnlocked(firstSix), "9 bölüm yetmez")
-        XCTAssertEqual(cats.stats.flawlessRun, 1)
+        XCTAssertEqual(cats.stats.flawlessRun, 9)
         XCTAssertEqual(cats.results[first.id]?.flawless, true)
 
         cats.record(.init(level: second, score: 500, mistakes: 1, usedHints: true, elapsed: 90, bestCombo: 1, perfectlyMarked: 0))
