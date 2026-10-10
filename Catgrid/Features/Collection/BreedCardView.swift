@@ -134,44 +134,54 @@ struct BreedCardView: View {
 
     /// Assets'te "card-<tür>" adlı (lisanslı) bir fotoğraf varsa o, yoksa piksel portre.
     /// Altın Kartta portre altın tonlarında, koyu kadife zemin üzerinde ve taçlı.
-    @ViewBuilder
+    /// Resim her boyutta yatay dikdörtgen (1350×1000 oranı). Fotoğraf bir kaplama olarak
+    /// çizilir: "doldur" ölçeklemesi kartı genişletip komşu kartların üstüne taşırmasın.
     private var artwork: some View {
         let radius: CGFloat = isCompact ? 10 : 16
-        ZStack {
-            RoundedRectangle(cornerRadius: radius)
-                .fill(isGolden
-                    ? RadialGradient(colors: [Gold.dark.opacity(0.75), Gold.ink], center: .center, startRadius: 4, endRadius: 160)
-                    : RadialGradient(colors: [accent.opacity(0.55), accent.opacity(0.15)], center: .top, startRadius: 0, endRadius: 220))
-            if let photo = BreedPhoto.card(chapter.id) {
-                // Altın Kartta aynı resim altın tonlarında
-                Image(uiImage: photo)
-                    .resizable()
-                    .scaledToFill()
-                    .grayscale(isGolden ? 1 : 0)
-                    .colorMultiply(isGolden ? Gold.bright : .white)
-                    .overlay {
-                        if isGolden {
-                            LinearGradient(colors: [Gold.light.opacity(0.35), .clear, Gold.deep.opacity(0.35)], startPoint: .topLeading, endPoint: .bottomTrailing)
-                        }
+        return RoundedRectangle(cornerRadius: radius)
+            .fill(isGolden
+                ? RadialGradient(colors: [Gold.dark.opacity(0.75), Gold.ink], center: .center, startRadius: 4, endRadius: 160)
+                : RadialGradient(colors: [accent.opacity(0.55), accent.opacity(0.15)], center: .top, startRadius: 0, endRadius: 220))
+            .aspectRatio(1.35, contentMode: .fit)
+            .frame(maxWidth: .infinity)
+            .overlay { artworkImage }
+            .overlay(alignment: .top) {
+                if isGolden {
+                    Image(systemName: "crown.fill")
+                        .font(isCompact ? .caption : .title2)
+                        .foregroundStyle(Gold.foil)
+                        .shadow(color: .black.opacity(0.4), radius: 1, y: 1)
+                        .padding(.top, isCompact ? 3 : 8)
+                        .accessibilityHidden(true)
+                }
+            }
+            .clipShape(RoundedRectangle(cornerRadius: radius))
+    }
+
+    /// Assets'te "card-<tür>" adlı bir fotoğraf varsa o, yoksa piksel portre.
+    /// Altın Kartta aynı resim altın tonlarında.
+    @ViewBuilder
+    private var artworkImage: some View {
+        if let photo = BreedPhoto.card(chapter.id) {
+            Color.clear
+                .overlay {
+                    Image(uiImage: photo)
+                        .resizable()
+                        .scaledToFill()
+                        .grayscale(isGolden ? 1 : 0)
+                        .colorMultiply(isGolden ? Gold.bright : .white)
+                }
+                .overlay {
+                    if isGolden {
+                        LinearGradient(colors: [Gold.light.opacity(0.35), .clear, Gold.deep.opacity(0.35)], startPoint: .topLeading, endPoint: .bottomTrailing)
                     }
-                    .clipShape(RoundedRectangle(cornerRadius: radius))
-            } else if let portrait = chapter.portrait {
-                ArtworkThumbnail(artwork: portrait, goldTone: isGolden)
-                    .padding(isCompact ? 8 : 18)
-                    .padding(.top, isGolden ? (isCompact ? 8 : 18) : 0)
-            }
-            if isGolden {
-                Image(systemName: "crown.fill")
-                    .font(isCompact ? .caption : .title2)
-                    .foregroundStyle(Gold.foil)
-                    .shadow(color: .black.opacity(0.4), radius: 1, y: 1)
-                    .frame(maxHeight: .infinity, alignment: .top)
-                    .padding(.top, isCompact ? 3 : 8)
-                    .accessibilityHidden(true)
-            }
+                }
+                .clipped()
+        } else if let portrait = chapter.portrait {
+            ArtworkThumbnail(artwork: portrait, goldTone: isGolden)
+                .padding(isCompact ? 6 : 18)
+                .padding(.top, isGolden ? (isCompact ? 8 : 18) : 0)
         }
-        .aspectRatio(isCompact ? 1 : 1.35, contentMode: .fit)
-        .clipped()
     }
 
     private var details: some View {
@@ -300,7 +310,7 @@ struct MysteryCardView: View {
         }
         .padding(8)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .aspectRatio(0.72, contentMode: .fit)
+        .aspectRatio(0.95, contentMode: .fit)
         .background(RoundedRectangle(cornerRadius: 14, style: .continuous).fill(theme.surfaceMuted))
         .overlay(
             RoundedRectangle(cornerRadius: 14, style: .continuous)

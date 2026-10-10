@@ -97,8 +97,12 @@ struct JoystickPad: View {
     @Environment(\.appTheme) private var theme
     /// Satır ve sütun değişimi (-1, 0, 1).
     let onStep: (Int, Int) -> Void
+    /// Kaydırmadan kısa dokunuş (joystick alanının koordinatlarında): alttaki kedi gibi
+    /// öğelere ulaşmak için.
+    var onTap: ((CGPoint) -> Void)?
 
     @State private var origin: CGPoint?
+    @State private var touchStart: Date?
     @State private var offset: CGSize = .zero
     @State private var repeatTask: Task<Void, Never>?
 
@@ -119,15 +123,20 @@ struct JoystickPad: View {
                 .onChanged { value in
                     if origin == nil {
                         origin = value.startLocation
+                        touchStart = .now
                         startRepeating()
                     }
                     offset = Self.clamp(value.translation)
                 }
-                .onEnded { _ in
+                .onEnded { value in
                     repeatTask?.cancel()
                     repeatTask = nil
+                    let isTap = hypot(value.translation.width, value.translation.height) < Self.deadZone
+                        && Date.now.timeIntervalSince(touchStart ?? .now) < 0.3
                     origin = nil
                     offset = .zero
+                    touchStart = nil
+                    if isTap { onTap?(value.location) }
                 }
         )
         .accessibilityHidden(true)

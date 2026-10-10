@@ -93,7 +93,7 @@ struct HomeView: View {
             }
             .accessibilityIdentifier("home.mode.cats")
 
-            CollectionShelf(cardWidth: compact ? 70 : 88, showsSummary: !compact)
+            CollectionShelf(cardWidth: compact ? 104 : 124, showsSummary: !compact)
 
             Button {
                 router.push(.settings)
