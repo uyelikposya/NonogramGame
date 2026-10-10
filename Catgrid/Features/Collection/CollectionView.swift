@@ -185,6 +185,9 @@ struct CollectionShelf: View {
     @Environment(AppModel.self) private var model
     @Environment(Router.self) private var router
     @Environment(\.appTheme) private var theme
+    /// Ana sayfa ekrana sığsın diye küçük ekranlarda kartlar küçülür, özet gizlenir.
+    var cardWidth: CGFloat = 104
+    var showsSummary = true
 
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
@@ -197,7 +200,9 @@ struct CollectionShelf: View {
                     .accessibilityIdentifier("home.collection")
                     .font(.subheadline.bold())
             }
-            CollectionSummary()
+            if showsSummary {
+                CollectionSummary()
+            }
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 12) {
                     ForEach(model.collectedCards.reversed()) { selection in
@@ -206,17 +211,17 @@ struct CollectionShelf: View {
                                 router.push(.collection)
                             } label: {
                                 BreedCardView(chapter: selection.chapter, card: card, style: .compact, isGolden: selection.isGolden)
-                                    .frame(width: 104)
+                                    .frame(width: cardWidth)
                             }
                             .buttonStyle(PressableButtonStyle())
                         }
                     }
                     if model.hasUnmetBreeds {
                         MysteryCardView()
-                            .frame(width: 104)
+                            .frame(width: cardWidth)
                     }
                 }
-                .padding(.vertical, 6)
+                .padding(.vertical, 4)
                 .padding(.horizontal, 2)
             }
         }

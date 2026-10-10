@@ -5,6 +5,8 @@ import SwiftUI
 struct BoardCursorControls {
     var position: GridPosition
     var lockedTool: MarkTool?
+    /// Tek el imleçte imlecin yanındaki panel görünür; çift elde düğmeler altta.
+    var showsPad = true
     let onMark: (MarkTool) -> Void
     let onLock: (MarkTool) -> Void
     let onUnlock: () -> Void

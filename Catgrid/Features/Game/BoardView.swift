@@ -84,7 +84,7 @@ struct BoardView: View {
                         canvas(cell: cell)
                             // İmleç paneli tahtanın üstünde, tahtanın dokunma alanının dışında bir katman
                             .overlay(alignment: .topLeading) {
-                                if let cursor, !isSolved, game.status == .playing {
+                                if let cursor, cursor.showsPad, !isSolved, game.status == .playing {
                                     CursorPad(controls: cursor, cell: cell, rows: puzzle.rows, columns: puzzle.columns)
                                 }
                             }

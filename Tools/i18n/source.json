@@ -1851,6 +1851,70 @@
   "Solve %lld levels of %lld×%lld to unlock.": {
    "en": "Solve %lld levels of %lld×%lld to unlock.",
    "tr": "Açmak için %lld adet %lld×%lld bölüm çöz."
+  },
+  "Two-Hand Cursor": {
+   "en": "Two-Hand Cursor",
+   "tr": "Çift el imleç"
+  },
+  "One-Hand Cursor": {
+   "en": "One-Hand Cursor",
+   "tr": "Tek el imleç"
+  },
+  "Cursor Type": {
+   "en": "Cursor Type",
+   "tr": "İmleç türü"
+  },
+  "Fill and X on the left. Touch anywhere on the right side to steer the cursor with a joystick.": {
+   "en": "Fill and X on the left. Touch anywhere on the right side to steer the cursor with a joystick.",
+   "tr": "Doldur ve X solda. Sağ tarafta herhangi bir yere dokununca çıkan joystick ile imleci yönlendir."
+  },
+  "A small panel next to the cursor: Fill, X and a move button.": {
+   "en": "A small panel next to the cursor: Fill, X and a move button.",
+   "tr": "İmlecin yanında küçük bir panel: Doldur, X ve taşıma düğmesi."
+  },
+  "What's New": {
+   "en": "What's New",
+   "tr": "Yenilikler"
+  },
+  "A brand-new mode: find the hidden cats, one per color, row and column. 335 levels!": {
+   "en": "A brand-new mode: find the hidden cats, one per color, row and column. 335 levels!",
+   "tr": "Yepyeni bir mod: her renkte, satırda ve sütunda bir tane olan gizli kedileri bul. 335 bölüm!"
+  },
+  "Daily Puzzle history": {
+   "en": "Daily Puzzle history",
+   "tr": "Günlük bulmaca geçmişi"
+  },
+  "Missed a day? Solve the puzzles of the last 10 days.": {
+   "en": "Missed a day? Solve the puzzles of the last 10 days.",
+   "tr": "Bir günü mü kaçırdın? Son 10 günün bulmacalarını çöz."
+  },
+  "More badges": {
+   "en": "More badges",
+   "tr": "Daha çok rozet"
+  },
+  "At least 20 badges for every mode.": {
+   "en": "At least 20 badges for every mode.",
+   "tr": "Her mod için en az 20 rozet."
+  },
+  "Cursor for big puzzles": {
+   "en": "Cursor for big puzzles",
+   "tr": "Büyük bulmacalar için imleç"
+  },
+  "Play puzzles bigger than 10×10 with a two-hand cursor.": {
+   "en": "Play puzzles bigger than 10×10 with a two-hand cursor.",
+   "tr": "10×10'dan büyük bulmacaları çift el imleçle oyna."
+  },
+  "New music": {
+   "en": "New music",
+   "tr": "Yeni müzikler"
+  },
+  "Fresh tracks for Energetic mode.": {
+   "en": "Fresh tracks for Energetic mode.",
+   "tr": "Enerjik mod için yeni parçalar."
+  },
+  "Let's Play!": {
+   "en": "Let's Play!",
+   "tr": "Hadi oynayalım!"
   }
  },
  "infoplist": {

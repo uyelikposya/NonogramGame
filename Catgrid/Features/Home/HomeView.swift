@@ -10,71 +10,38 @@ struct HomeView: View {
     @Environment(\.appTheme) private var theme
     @State private var isShowingPaywall = false
     @State private var isOfferingReminder = false
+    @State private var isShowingWhatsNew = false
 
     var body: some View {
-        // Üstte günlük bulmaca, altında iki mod; altında kart koleksiyonu, en altta ayarlar
-        ScrollView {
-            VStack(spacing: 16) {
-                header
-                if !store.isPremium {
-                    PremiumBanner { isShowingPaywall = true }
-                }
-                if model.todaysPuzzle != nil {
-                    DailyBanner()
-                }
-                ModeBanner(
-                    title: BadgeMode.collection.title,
-                    subtitle: Text("Solve picture puzzles, collect cat cards"),
-                    detail: Text("\(model.collectedBreeds.count)/\(model.breeds.count) breeds"),
-                    progress: model.breeds.isEmpty ? 0 : Double(model.collectedBreeds.count) / Double(model.breeds.count),
-                    colors: [Color(red: 0.98, green: 0.62, blue: 0.45), Color(red: 0.86, green: 0.36, blue: 0.48)]
-                ) {
-                    if let chapter = model.collectedBreeds.last ?? model.breeds.first {
-                        ChapterBadge(chapter: chapter, size: 72)
-                    }
-                } action: {
-                    router.push(.collectionHub)
-                }
-                .accessibilityIdentifier("home.mode.collection")
-
-                ModeBanner(
-                    title: BadgeMode.cats.title,
-                    subtitle: Text("One cat per color, row and column"),
-                    detail: Text("Level \(min(model.cats.solvedCount + 1, max(model.cats.levels.count, 1)))"),
-                    progress: model.cats.levels.isEmpty ? 0 : Double(model.cats.solvedCount) / Double(model.cats.levels.count),
-                    colors: [Color(red: 0.36, green: 0.72, blue: 0.70), Color(red: 0.45, green: 0.38, blue: 0.80)]
-                ) {
-                    CatGridArt()
-                        .frame(width: 72, height: 72)
-                } action: {
-                    router.push(.catHub)
-                }
-                .accessibilityIdentifier("home.mode.cats")
-
-                CollectionShelf()
-                    .padding(.top, 4)
-
-                Button {
-                    router.push(.settings)
-                } label: {
-                    Label("Settings", systemImage: "gearshape.fill")
-                }
-                .buttonStyle(SecondaryButtonStyle())
-                .accessibilityIdentifier("home.settings")
+        // Üstte günlük bulmaca, altında iki mod; altında kart koleksiyonu, en altta ayarlar.
+        // Ekrana sığan ilk düzen seçilir: önce rahat, sonra sıkı; o da sığmazsa (çok küçük
+        // ekran ya da büyük yazı boyutu) kaydırılabilir.
+        ViewThatFits(in: .vertical) {
+            content(compact: false)
+            content(compact: true)
+            ScrollView {
+                content(compact: true)
             }
-            .padding(.horizontal, 20)
-            .padding(.bottom, 16)
+            .scrollBounceBehavior(.basedOnSize)
         }
-        .scrollBounceBehavior(.basedOnSize)
         .themedScreen()
         .sheet(isPresented: $isShowingPaywall) {
             PremiumPaywall()
         }
         // Birkaç bulmacadan sonra bir kez: günlük hatırlatma ister misin?
         .task {
+            // Güncellemeden sonra önce "Yenilikler"; o gün hatırlatma sorulmaz
+            if WhatsNew.shouldShow(isReturningPlayer: isReturningPlayer) {
+                try? await Task.sleep(for: .seconds(0.6))
+                isShowingWhatsNew = true
+                return
+            }
             guard canOfferReminder else { return }
             try? await Task.sleep(for: .seconds(0.8))
             isOfferingReminder = true
+        }
+        .sheet(isPresented: $isShowingWhatsNew) {
+            WhatsNewView()
         }
         .alert("Daily reminder?", isPresented: $isOfferingReminder) {
             Button("Remind Me") {
@@ -86,6 +53,73 @@ struct HomeView: View {
         }
     }
 
+    private func content(compact: Bool) -> some View {
+        VStack(spacing: compact ? 10 : 14) {
+            header(compact: compact)
+            if !store.isPremium {
+                PremiumBanner { isShowingPaywall = true }
+            }
+            if model.todaysPuzzle != nil {
+                DailyBanner(compact: compact)
+            }
+            ModeBanner(
+                title: BadgeMode.collection.title,
+                subtitle: Text("Solve picture puzzles, collect cat cards"),
+                detail: Text("\(model.collectedBreeds.count)/\(model.breeds.count) breeds"),
+                progress: model.breeds.isEmpty ? 0 : Double(model.collectedBreeds.count) / Double(model.breeds.count),
+                colors: [Color(red: 0.98, green: 0.62, blue: 0.45), Color(red: 0.86, green: 0.36, blue: 0.48)],
+                compact: compact
+            ) {
+                if let chapter = model.collectedBreeds.last ?? model.breeds.first {
+                    ChapterBadge(chapter: chapter, size: compact ? 52 : 68)
+                }
+            } action: {
+                router.push(.collectionHub)
+            }
+            .accessibilityIdentifier("home.mode.collection")
+
+            ModeBanner(
+                title: BadgeMode.cats.title,
+                subtitle: Text("One cat per color, row and column"),
+                detail: Text("Level \(min(model.cats.solvedCount + 1, max(model.cats.levels.count, 1)))"),
+                progress: model.cats.levels.isEmpty ? 0 : Double(model.cats.solvedCount) / Double(model.cats.levels.count),
+                colors: [Color(red: 0.36, green: 0.72, blue: 0.70), Color(red: 0.45, green: 0.38, blue: 0.80)],
+                compact: compact
+            ) {
+                CatGridArt()
+                    .frame(width: compact ? 52 : 68, height: compact ? 52 : 68)
+            } action: {
+                router.push(.catHub)
+            }
+            .accessibilityIdentifier("home.mode.cats")
+
+            CollectionShelf(cardWidth: compact ? 70 : 88, showsSummary: !compact)
+
+            Button {
+                router.push(.settings)
+            } label: {
+                Label("Settings", systemImage: "gearshape.fill")
+                    .font(.subheadline.weight(.semibold))
+                    .foregroundStyle(theme.textSecondary)
+                    .padding(.horizontal, 18)
+                    .padding(.vertical, 10)
+                    .background(Capsule().fill(theme.surfaceMuted))
+            }
+            .buttonStyle(PressableButtonStyle())
+            .accessibilityIdentifier("home.settings")
+        }
+        .padding(.horizontal, 20)
+        .padding(.bottom, compact ? 6 : 12)
+    }
+
+    /// Daha önce oynamış oyuncu (güncelleme yapan): çözülmüş bulmaca ya da atlanmış eğitim.
+    private var isReturningPlayer: Bool {
+        #if DEBUG
+        if DemoContent.isEnabled || ProcessInfo.processInfo.arguments.contains("-disableAds") { return false }
+        #endif
+        return !model.progress.completedIDs.isEmpty || model.isTutorialSkipped
+    }
+
     private var canOfferReminder: Bool {
         #if DEBUG
         // Ekran görüntüsü çekimini bölmesin
@@ -95,30 +129,29 @@ struct HomeView: View {
     }
 
     /// Uygulama simgesiyle aynı logo + oyunun adı.
-    private var header: some View {
-        HStack(spacing: 14) {
+    private func header(compact: Bool) -> some View {
+        HStack(spacing: 12) {
             Image("AppLogo")
                 .resizable()
                 .scaledToFit()
-                .frame(width: 76, height: 76)
-                .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
+                .frame(width: compact ? 46 : 60, height: compact ? 46 : 60)
+                .clipShape(RoundedRectangle(cornerRadius: compact ? 12 : 15, style: .continuous))
                 .shadow(color: .black.opacity(0.12), radius: 6, y: 3)
                 .accessibilityHidden(true)
 
-            VStack(alignment: .leading, spacing: 2) {
+            VStack(alignment: .leading, spacing: 0) {
                 Text(verbatim: "Catgrid Collection")
-                    .font(.title.bold())
+                    .font(compact ? .title3.bold() : .title2.bold())
                     .foregroundStyle(theme.textPrimary)
                     .lineLimit(1)
                     .minimumScaleFactor(0.7)
                 Text(verbatim: "Nonogram")
-                    .font(.headline)
+                    .font(.subheadline)
                     .foregroundStyle(theme.textSecondary)
             }
             Spacer(minLength: 0)
         }
     }
-
 }
 
 /// Ana ekranın en üstündeki günlük bulmaca kartı: bugünün durumu ve seri.
@@ -126,6 +159,7 @@ struct HomeView: View {
 struct DailyBanner: View {
     @Environment(AppModel.self) private var model
     @Environment(Router.self) private var router
+    var compact = false
 
     var body: some View {
         let isSolved = model.isTodaysPuzzleSolved
@@ -145,7 +179,7 @@ struct DailyBanner: View {
                             .font(.title2.bold().monospacedDigit())
                     }
                 }
-                .frame(width: 56, height: 56)
+                .frame(width: compact ? 46 : 54, height: compact ? 46 : 54)
                 VStack(alignment: .leading, spacing: 3) {
                     Text("Daily Puzzle")
                         .font(.title3.bold())
@@ -177,7 +211,7 @@ struct DailyBanner: View {
                     .font(isSolved ? .title3 : .footnote.weight(.bold))
             }
             .foregroundStyle(.white)
-            .padding(16)
+            .padding(compact ? 12 : 15)
             .background(
                 RoundedRectangle(cornerRadius: 24, style: .continuous)
                     .fill(LinearGradient(colors: [Color(red: 0.42, green: 0.55, blue: 0.95), Color(red: 0.55, green: 0.35, blue: 0.85)], startPoint: .topLeading, endPoint: .bottomTrailing))
@@ -197,6 +231,7 @@ struct ModeBanner<Art: View>: View {
     let detail: Text
     let progress: Double
     let colors: [Color]
+    var compact = false
     @ViewBuilder let art: () -> Art
     let action: () -> Void
 
@@ -228,8 +263,8 @@ struct ModeBanner<Art: View>: View {
                     .opacity(0.8)
             }
             .foregroundStyle(.white)
-            .padding(18)
-            .frame(maxWidth: .infinity, minHeight: 120, alignment: .leading)
+            .padding(compact ? 13 : 16)
+            .frame(maxWidth: .infinity, minHeight: compact ? 0 : 104, alignment: .leading)
             .background(
                 RoundedRectangle(cornerRadius: 24, style: .continuous)
                     .fill(LinearGradient(colors: colors, startPoint: .topLeading, endPoint: .bottomTrailing))

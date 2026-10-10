@@ -65,6 +65,7 @@ struct GameView: View {
     @AppStorage(SettingsKeys.hardMode) private var isHardMode = false
     @AppStorage(SettingsKeys.playMode) private var playMode = PlayMode.dopamine
     @AppStorage(SettingsKeys.largeBoardCursor) private var largeBoardCursor = true
+    @AppStorage(SettingsKeys.cursorStyle) private var cursorStyle = CursorStyle.twoHands
     /// Dopamin modu: satır parıltısı ve bitişte konfeti.
     @State private var lineGlow: LineGlow?
     @State private var confettiStart: Date?
@@ -119,34 +120,7 @@ struct GameView: View {
                 }
                 .zIndex(1)
 
-            BoardView(
-                game: game,
-                activeCell: viewModel.activeCell ?? (usesCursor && game.status == .playing ? viewModel.cursor : nil),
-                flashingCell: flashingCell,
-                hint: companionHint ?? guideHighlight,
-                pointer: guidePointer,
-                lineGlow: lineGlow,
-                cursor: cursorControls,
-                // İmleç modunda tahtaya dokunmak yalnızca imleci taşır
-                onDragBegan: { usesCursor ? viewModel.moveCursor(to: $0) : viewModel.dragBegan(at: $0) },
-                onDragMoved: { usesCursor ? viewModel.moveCursor(to: $0) : viewModel.dragMoved(to: $0) },
-                onDragEnded: { if !usesCursor { viewModel.dragEnded() } }
-            )
-            // Tahta bulmacanın kendi oranında (ipuçlarıyla birlikte): uzun bulmacalar (10x20 gibi)
-            // kare bir alana sıkışmaz, ekranın boş yüksekliğini kullanır
-            .aspectRatio(boardAspectRatio, contentMode: .fit)
-
-            // Tahtanın altındaki boşlukta dolaşan kedi; boşluk yoksa görünmez
-            CatCompanionView(line: companionLine, isActive: game.status == .playing, coat: companionCoat) {
-                askCompanion()
-            }
-            // Tahta büyüse de yardımcı kediye her zaman yer kalsın
-            .frame(minHeight: CatCompanionView.minimumHeight)
-            .layoutPriority(-1)
-
-            if game.status == .playing {
-                GameControls(tool: $viewModel.tool, canUndo: game.canUndo, guidedTool: guidedTool, showsTools: !usesCursor) { viewModel.undo() }
-            }
+            playArea
         }
         // Büyük tahtalarda kenar boşluğu daralır, kareler büyür
         .padding(.horizontal, isLargeBoard ? 10 : 20)
@@ -355,6 +329,66 @@ struct GameView: View {
         return muffinReaction ?? lesson.muffinPose
     }
 
+    /// Tahta, yardımcı kedi ve alt düğmeler. Çift el imleçte sağ %60'lık kısım joystick alanıdır.
+    private var playArea: some View {
+        VStack(spacing: 16) {
+            BoardView(
+                game: game,
+                activeCell: viewModel.activeCell ?? (usesCursor && game.status == .playing ? viewModel.cursor : nil),
+                flashingCell: flashingCell,
+                hint: companionHint ?? guideHighlight,
+                pointer: guidePointer,
+                lineGlow: lineGlow,
+                cursor: cursorControls,
+                // İmleç modunda tahtaya dokunmak yalnızca imleci taşır
+                onDragBegan: { usesCursor ? viewModel.moveCursor(to: $0) : viewModel.dragBegan(at: $0) },
+                onDragMoved: { usesCursor ? viewModel.moveCursor(to: $0) : viewModel.dragMoved(to: $0) },
+                onDragEnded: { if !usesCursor { viewModel.dragEnded() } }
+            )
+            // Tahta bulmacanın kendi oranında (ipuçlarıyla birlikte): uzun bulmacalar (10x20 gibi)
+            // kare bir alana sıkışmaz, ekranın boş yüksekliğini kullanır
+            .aspectRatio(boardAspectRatio, contentMode: .fit)
+
+            // Tahtanın altındaki boşlukta dolaşan kedi; boşluk yoksa görünmez
+            CatCompanionView(line: companionLine, isActive: game.status == .playing, coat: companionCoat) {
+                askCompanion()
+            }
+            // Tahta büyüse de yardımcı kediye her zaman yer kalsın
+            .frame(minHeight: CatCompanionView.minimumHeight)
+            .layoutPriority(-1)
+
+            if game.status == .playing {
+                if usesTwoHandCursor {
+                    TwoHandControls(
+                        lockedTool: viewModel.cursorLock,
+                        canUndo: game.canUndo,
+                        onPress: { viewModel.lockCursor(with: $0) },
+                        onRelease: { viewModel.unlockCursor() },
+                        undo: { viewModel.undo() }
+                    )
+                } else {
+                    GameControls(tool: $viewModel.tool, canUndo: game.canUndo, guidedTool: guidedTool, showsTools: !usesCursor) { viewModel.undo() }
+                }
+            }
+        }
+        .overlay {
+            if usesTwoHandCursor {
+                GeometryReader { proxy in
+                    JoystickPad { dRow, dColumn in
+                        let cursor = viewModel.cursor
+                        viewModel.moveCursor(to: GridPosition(row: cursor.row + dRow, column: cursor.column + dColumn))
+                    }
+                    .frame(width: proxy.size.width * 0.6, height: proxy.size.height)
+                    .frame(maxWidth: .infinity, alignment: .trailing)
+                }
+            }
+        }
+    }
+
+    private var usesTwoHandCursor: Bool {
+        usesCursor && cursorStyle == .twoHands
+    }
+
     /// 10x10'dan büyük bulmacalarda kareler küçük: imleçle oynanır (Ayarlar'dan kapatılabilir).
     private var usesCursor: Bool {
         largeBoardCursor && max(viewModel.puzzle.rows, viewModel.puzzle.columns) > 10
@@ -365,6 +399,7 @@ struct GameView: View {
         return BoardCursorControls(
             position: viewModel.cursor,
             lockedTool: viewModel.cursorLock,
+            showsPad: cursorStyle == .oneHand,
             onMark: { viewModel.markAtCursor(with: $0) },
             onLock: { viewModel.lockCursor(with: $0) },
             onUnlock: { viewModel.unlockCursor() },
