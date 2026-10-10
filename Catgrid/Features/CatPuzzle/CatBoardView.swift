@@ -268,11 +268,11 @@ struct ComboWord: View {
     @ViewBuilder
     private var word: some View {
         switch count {
-        case 2: Text("Nice")
-        case 3: Text("Great")
-        case 4: Text("Perfect")
-        case 5: Text("Excellent")
-        case 6: Text("Amazing")
+        case 2: Text("Nice!")
+        case 3: Text("Great!")
+        case 4: Text("Perfect!")
+        case 5: Text("Excellent!")
+        case 6: Text("Amazing!")
         default: Text("Unstoppable!")
         }
     }

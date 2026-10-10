@@ -6,13 +6,7 @@
       "id": "british-shorthair-p01",
       "title": {
         "en": "Golden Paw",
-        "tr": "Altın Pati",
-        "ja": "金の肉球",
-        "de": "Goldene Pfote",
-        "fr": "Patte dorée",
-        "es": "Patita dorada",
-        "pt-BR": "Patinha Dourada",
-        "ko": "황금 발바닥"
+        "tr": "Altın Pati"
       },
       "palette": {
         "y": "#F4D35E"
@@ -32,13 +26,7 @@
       "id": "british-shorthair-p02",
       "title": {
         "en": "Purr Love",
-        "tr": "Mırıl Sevgi",
-        "ja": "ゴロゴロ大好き",
-        "de": "Schnurrliebe",
-        "fr": "Ronron d'amour",
-        "es": "Amor ronroneante",
-        "pt-BR": "Amor Ronronado",
-        "ko": "골골송 사랑"
+        "tr": "Mırıl Sevgi"
       },
       "palette": {
         "n": "#6E7A86",
@@ -59,13 +47,7 @@
       "id": "british-shorthair-p03",
       "title": {
         "en": "Fish Snack",
-        "tr": "Balık Atıştırması",
-        "ja": "おさかなおやつ",
-        "de": "Fischsnack",
-        "fr": "Goûter poisson",
-        "es": "Tentempié de pescado",
-        "pt-BR": "Petisco de Peixe",
-        "ko": "생선 간식"
+        "tr": "Balık Atıştırması"
       },
       "palette": {
         "o": "#F2E8DC"
@@ -85,13 +67,7 @@
       "id": "british-shorthair-p04",
       "title": {
         "en": "Yarn Ball",
-        "tr": "Yün Yumak",
-        "ja": "毛糸玉",
-        "de": "Wollknäuel",
-        "fr": "Pelote de laine",
-        "es": "Ovillo de lana",
-        "pt-BR": "Novelo de Lã",
-        "ko": "털실 뭉치"
+        "tr": "Yün Yumak"
       },
       "palette": {
         "o": "#F2E8DC"
@@ -113,13 +89,7 @@
       "id": "british-shorthair-p05",
       "title": {
         "en": "Toy Mouse",
-        "tr": "Oyuncak Fare",
-        "ja": "ネズミのおもちゃ",
-        "de": "Spielmaus",
-        "fr": "Souris jouet",
-        "es": "Ratón de juguete",
-        "pt-BR": "Ratinho de Brinquedo",
-        "ko": "장난감 쥐"
+        "tr": "Oyuncak Fare"
       },
       "palette": {
         "n": "#6E7A86",
@@ -142,13 +112,7 @@
       "id": "british-shorthair-p06",
       "title": {
         "en": "Portrait",
-        "tr": "Portre",
-        "ja": "肖像画",
-        "de": "Porträt",
-        "fr": "Portrait",
-        "es": "Retrato",
-        "pt-BR": "Retrato",
-        "ko": "초상화"
+        "tr": "Portre"
       },
       "palette": {
         "b": "#8E9AA6",
@@ -171,13 +135,7 @@
       "id": "british-shorthair-p07",
       "title": {
         "en": "Teacup Cat",
-        "tr": "Fincandaki Kedi",
-        "ja": "ティーカップ猫",
-        "de": "Teetassenkatze",
-        "fr": "Chat dans une tasse",
-        "es": "Gato en una taza",
-        "pt-BR": "Gato na Xícara",
-        "ko": "찻잔 고양이"
+        "tr": "Fincandaki Kedi"
       },
       "palette": {
         "b": "#8E9AA6",
@@ -204,13 +162,7 @@
       "id": "british-shorthair-p08",
       "title": {
         "en": "Nap Time",
-        "tr": "Şekerleme",
-        "ja": "お昼寝タイム",
-        "de": "Nickerchen",
-        "fr": "L'heure de la sieste",
-        "es": "Hora de la siesta",
-        "pt-BR": "Hora da Soneca",
-        "ko": "낮잠 시간"
+        "tr": "Şekerleme"
       },
       "palette": {
         "b": "#8E9AA6"
@@ -234,13 +186,7 @@
       "id": "british-shorthair-p09",
       "title": {
         "en": "Lucky Cat",
-        "tr": "Şans Kedisi",
-        "ja": "招き猫",
-        "de": "Glückskatze",
-        "fr": "Chat porte-bonheur",
-        "es": "Gato de la suerte",
-        "pt-BR": "Gato da Sorte",
-        "ko": "행운의 고양이"
+        "tr": "Şans Kedisi"
       },
       "palette": {
         "b": "#8E9AA6",

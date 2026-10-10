@@ -177,8 +177,9 @@ struct CatGameView: View {
         .aspectRatio(1, contentMode: .fit)
         .overlay(alignment: .top) {
             if let hint = viewModel.pendingHint {
+                // Kart tahtanın hemen üstünde (kedi şeridinin üzerine biner), tahtayı örtmez
                 CatHintCard(hint: hint)
-                    .offset(y: -8)
+                    .alignmentGuide(.top) { $0[.bottom] + 6 }
                     .transition(.opacity.combined(with: .scale(scale: 0.95)))
                     .allowsHitTesting(false)
             }

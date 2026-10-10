@@ -971,6 +971,854 @@
   "One row is empty and one is completely full. Find those first and you won't get confused. Your turn!": {
    "en": "One row is empty and one is completely full. Find those first and you won't get confused. Your turn!",
    "tr": "Bir satır boş, bir satır tamamen dolu. Öncelikle buraları bulursan kafan karışmaz. Hadi sıra sende!"
+  },
+  "Cursor on Large Puzzles": {
+   "en": "Cursor on Large Puzzles",
+   "tr": "Büyük bulmacalarda imleç"
+  },
+  "Puzzles bigger than 10×10 are played with a cursor: pick a square, then Fill or X.": {
+   "en": "Puzzles bigger than 10×10 are played with a cursor: pick a square, then Fill or X.",
+   "tr": "10×10'dan büyük bulmacalar imleçle oynanır: kareyi seç, sonra Doldur ya da X."
+  },
+  "Tap a square to move the cursor. Hold Fill or X and slide right to lock it.": {
+   "en": "Tap a square to move the cursor. Hold Fill or X and slide right to lock it.",
+   "tr": "İmleci taşımak için kareye dokun. Kilitlemek için Doldur ya da X'e basılı tutup sağa kaydır."
+  },
+  "Lock": {
+   "en": "Lock",
+   "tr": "Kilitle"
+  },
+  "Move cursor": {
+   "en": "Move cursor",
+   "tr": "İmleci taşı"
+  },
+  "Cat Card Collection": {
+   "en": "Cat Card Collection",
+   "tr": "Kedi Kart Koleksiyonu"
+  },
+  "Cat Puzzle": {
+   "en": "Cat Puzzle",
+   "tr": "Kedi Bulmaca"
+  },
+  "Solve picture puzzles, collect cat cards": {
+   "en": "Solve picture puzzles, collect cat cards",
+   "tr": "Resimli bulmacaları çöz, kedi kartlarını topla"
+  },
+  "One cat per color, row and column": {
+   "en": "One cat per color, row and column",
+   "tr": "Her renkte, satırda ve sütunda bir kedi"
+  },
+  "%lld/%lld breeds": {
+   "en": "%lld/%lld breeds",
+   "tr": "%lld/%lld tür"
+  },
+  "Level %lld": {
+   "en": "Level %lld",
+   "tr": "Bölüm %lld"
+  },
+  "Continue where you left off": {
+   "en": "Continue where you left off",
+   "tr": "Kaldığın yerden devam et"
+  },
+  "%@ · Puzzle %lld": {
+   "en": "%@ · Puzzle %lld",
+   "tr": "%@ · Bulmaca %lld"
+  },
+  "Level %lld · %lld×%lld": {
+   "en": "Level %lld · %lld×%lld",
+   "tr": "Bölüm %lld · %lld×%lld"
+  },
+  "%lld×%lld": {
+   "en": "%lld×%lld",
+   "tr": "%lld×%lld"
+  },
+  "%lld of %lld breeds collected": {
+   "en": "%lld of %lld breeds collected",
+   "tr": "%lld/%lld tür toplandı"
+  },
+  "%lld of %lld levels solved": {
+   "en": "%lld of %lld levels solved",
+   "tr": "%lld/%lld bölüm çözüldü"
+  },
+  "%lld of %lld cats found": {
+   "en": "%lld of %lld cats found",
+   "tr": "%lld/%lld kedi bulundu"
+  },
+  "More cats are on their way.": {
+   "en": "More cats are on their way.",
+   "tr": "Yeni kediler yolda."
+  },
+  "My Badges": {
+   "en": "My Badges",
+   "tr": "Rozetlerim"
+  },
+  "Cat Finder: %lld": {
+   "en": "Cat Finder: %lld",
+   "tr": "Kedi bulucu: %lld"
+  },
+  "Hints: %lld": {
+   "en": "Hints: %lld",
+   "tr": "İpucu: %lld"
+  },
+  "Premium refills both to 6 every day at midnight.": {
+   "en": "Premium refills both to 6 every day at midnight.",
+   "tr": "Premium'da ikisi de her gece 00:00'da 6'ya tamamlanır."
+  },
+  "When they run out, watch a short video for one more. Premium refills them to 6 every day.": {
+   "en": "When they run out, watch a short video for one more. Premium refills them to 6 every day.",
+   "tr": "Bitince kısa bir video izleyerek bir hak daha alabilirsin. Premium'da her gün 6'ya tamamlanır."
+  },
+  "Levels Solved": {
+   "en": "Levels Solved",
+   "tr": "Çözülen bölüm"
+  },
+  "Cats Found": {
+   "en": "Cats Found",
+   "tr": "Bulunan kedi"
+  },
+  "Flawless": {
+   "en": "Flawless",
+   "tr": "Kusursuz"
+  },
+  "Best Flawless Run": {
+   "en": "Best Flawless Run",
+   "tr": "En uzun kusursuz seri"
+  },
+  "Best Combo": {
+   "en": "Best Combo",
+   "tr": "En iyi kombo"
+  },
+  "Perfectly Marked": {
+   "en": "Perfectly Marked",
+   "tr": "Tam isabet"
+  },
+  "Total Score": {
+   "en": "Total Score",
+   "tr": "Toplam puan"
+  },
+  "Fastest": {
+   "en": "Fastest",
+   "tr": "En hızlı"
+  },
+  "Mistakes": {
+   "en": "Mistakes",
+   "tr": "Hatalar"
+  },
+  "Cat Finders Used": {
+   "en": "Cat Finders Used",
+   "tr": "Kullanılan kedi bulucu"
+  },
+  "Hints Used": {
+   "en": "Hints Used",
+   "tr": "Kullanılan ipucu"
+  },
+  "Today": {
+   "en": "Today",
+   "tr": "Bugün"
+  },
+  "Play": {
+   "en": "Play",
+   "tr": "Oyna"
+  },
+  "Play Again": {
+   "en": "Play Again",
+   "tr": "Tekrar oyna"
+  },
+  "Streak": {
+   "en": "Streak",
+   "tr": "Seri"
+  },
+  "Missed a day? You can solve the puzzles of the last 10 days.": {
+   "en": "Missed a day? You can solve the puzzles of the last 10 days.",
+   "tr": "Bir günü mü kaçırdın? Son 10 günün bulmacalarını çözebilirsin."
+  },
+  "Daily Puzzles": {
+   "en": "Daily Puzzles",
+   "tr": "Günlük bulmacalar"
+  },
+  "Score": {
+   "en": "Score",
+   "tr": "Skor"
+  },
+  "More": {
+   "en": "More",
+   "tr": "Diğer"
+  },
+  "Start over?": {
+   "en": "Start over?",
+   "tr": "Baştan başlansın mı?"
+  },
+  "Level not found": {
+   "en": "Level not found",
+   "tr": "Bölüm bulunamadı"
+  },
+  "No Cat Finders Left": {
+   "en": "No Cat Finders Left",
+   "tr": "Kedi bulucu kalmadı"
+  },
+  "No Hints Left": {
+   "en": "No Hints Left",
+   "tr": "İpucu kalmadı"
+  },
+  "Watch Video": {
+   "en": "Watch Video",
+   "tr": "Video izle"
+  },
+  "Watch a short video for one more. Premium refills to 6 every day at midnight.": {
+   "en": "Watch a short video for one more. Premium refills to 6 every day at midnight.",
+   "tr": "Kısa bir video izleyerek bir hak daha al. Premium'da her gece 00:00'da 6'ya tamamlanır."
+  },
+  "Watch a short video for one more. With Premium you get 6 every day.": {
+   "en": "Watch a short video for one more. With Premium you get 6 every day.",
+   "tr": "Kısa bir video izleyerek bir hak daha al. Premium'da her gün 6 hakkın olur."
+  },
+  "Cancel": {
+   "en": "Cancel",
+   "tr": "Vazgeç"
+  },
+  "Apply": {
+   "en": "Apply",
+   "tr": "Uygula"
+  },
+  "Find a Cat": {
+   "en": "Find a Cat",
+   "tr": "Kedi bul"
+  },
+  "Hint": {
+   "en": "Hint",
+   "tr": "İpucu"
+  },
+  "No sure step right now. Try placing X's first.": {
+   "en": "No sure step right now. Try placing X's first.",
+   "tr": "Şu an kesin bir adım yok. Önce X koymayı dene."
+  },
+  "%lld left": {
+   "en": "%lld left",
+   "tr": "%lld kaldı"
+  },
+  "1 cat per color": {
+   "en": "1 cat per color",
+   "tr": "Renk başına 1 kedi"
+  },
+  "1 per row & column": {
+   "en": "1 per row & column",
+   "tr": "Satır ve sütun başına 1"
+  },
+  "Cats can't touch": {
+   "en": "Cats can't touch",
+   "tr": "Kediler birbirine değemez"
+  },
+  "Found!": {
+   "en": "Found!",
+   "tr": "Bulundu!"
+  },
+  "Perfectly marked!": {
+   "en": "Perfectly marked!",
+   "tr": "Tam isabet!"
+  },
+  "Nice!": {
+   "en": "Nice!",
+   "tr": "Güzel!"
+  },
+  "Great!": {
+   "en": "Great!",
+   "tr": "Harika!"
+  },
+  "Perfect!": {
+   "en": "Perfect!",
+   "tr": "Mükemmel!"
+  },
+  "Excellent!": {
+   "en": "Excellent!",
+   "tr": "Muhteşem!"
+  },
+  "Amazing!": {
+   "en": "Amazing!",
+   "tr": "İnanılmaz!"
+  },
+  "Unstoppable!": {
+   "en": "Unstoppable!",
+   "tr": "Durdurulamaz!"
+  },
+  "Flawless!": {
+   "en": "Flawless!",
+   "tr": "Kusursuz!"
+  },
+  "Clever!": {
+   "en": "Clever!",
+   "tr": "Zeki!"
+  },
+  "Solved!": {
+   "en": "Solved!",
+   "tr": "Çözdün!"
+  },
+  "0 mistakes! Every cat is right where it belongs!": {
+   "en": "0 mistakes! Every cat is right where it belongs!",
+   "tr": "0 hata! Her kedi tam yerinde!"
+  },
+  "Outstanding logic!": {
+   "en": "Outstanding logic!",
+   "tr": "Olağanüstü bir mantık gösterdin!"
+  },
+  "Just one slip. Well done!": {
+   "en": "Just one slip. Well done!",
+   "tr": "Yalnızca bir küçük hata. Aferin!"
+  },
+  "You found every cat!": {
+   "en": "You found every cat!",
+   "tr": "Bütün kedileri buldun!"
+  },
+  "Out of paws!": {
+   "en": "Out of paws!",
+   "tr": "Patiler bitti!"
+  },
+  "A cat slipped through your paws. Keep going with one more paw, or start this level over.": {
+   "en": "A cat slipped through your paws. Keep going with one more paw, or start this level over.",
+   "tr": "Bir kedi patilerinden kaçtı. Bir pati daha alarak devam et ya da bölüme baştan başla."
+  },
+  "Continue (+1 Paw)": {
+   "en": "Continue (+1 Paw)",
+   "tr": "Devam et (+1 pati)"
+  },
+  "Watch Video (+1 Paw)": {
+   "en": "Watch Video (+1 Paw)",
+   "tr": "Video izle (+1 pati)"
+  },
+  "Cat Puzzle: 6 Cat Finders and 6 hints every day": {
+   "en": "Cat Puzzle: 6 Cat Finders and 6 hints every day",
+   "tr": "Kedi Bulmaca: her gün 6 kedi bulucu ve 6 ipucu"
+  },
+  "No other cat can be in this cat's row, column or color, or right next to it.": {
+   "en": "No other cat can be in this cat's row, column or color, or right next to it.",
+   "tr": "Bu kedinin satırında, sütununda, renginde ve hemen yanında başka kedi olamaz."
+  },
+  "This row has only one spot left for its cat.": {
+   "en": "This row has only one spot left for its cat.",
+   "tr": "Bu satırda kedi için tek bir yer kaldı."
+  },
+  "This column has only one spot left for its cat.": {
+   "en": "This column has only one spot left for its cat.",
+   "tr": "Bu sütunda kedi için tek bir yer kaldı."
+  },
+  "This color has only one spot left for its cat.": {
+   "en": "This color has only one spot left for its cat.",
+   "tr": "Bu renkte kedi için tek bir yer kaldı."
+  },
+  "This color fits in a single row, so no other cat can be in the rest of that row.": {
+   "en": "This color fits in a single row, so no other cat can be in the rest of that row.",
+   "tr": "Bu renk tek bir satıra sığıyor; o satırın geri kalanında başka kedi olamaz."
+  },
+  "This color fits in a single column, so no other cat can be in the rest of that column.": {
+   "en": "This color fits in a single column, so no other cat can be in the rest of that column.",
+   "tr": "Bu renk tek bir sütuna sığıyor; o sütunun geri kalanında başka kedi olamaz."
+  },
+  "These colors fit in exactly as many rows, so other colors can't have a cat in those rows.": {
+   "en": "These colors fit in exactly as many rows, so other colors can't have a cat in those rows.",
+   "tr": "Bu renkler tam kendi sayıları kadar satıra sığıyor; o satırlarda başka renklerin kedisi olamaz."
+  },
+  "These colors fit in exactly as many columns, so other colors can't have a cat in those columns.": {
+   "en": "These colors fit in exactly as many columns, so other colors can't have a cat in those columns.",
+   "tr": "Bu renkler tam kendi sayıları kadar sütuna sığıyor; o sütunlarda başka renklerin kedisi olamaz."
+  },
+  "Every free spot in this row belongs to one color, so that color's cat can't be anywhere else.": {
+   "en": "Every free spot in this row belongs to one color, so that color's cat can't be anywhere else.",
+   "tr": "Bu satırdaki tüm boş yerler tek bir renge ait; o rengin kedisi başka yerde olamaz."
+  },
+  "Every free spot in this column belongs to one color, so that color's cat can't be anywhere else.": {
+   "en": "Every free spot in this column belongs to one color, so that color's cat can't be anywhere else.",
+   "tr": "Bu sütundaki tüm boş yerler tek bir renge ait; o rengin kedisi başka yerde olamaz."
+  },
+  "These rows only have free spots in as many colors, so those colors' cats can't be anywhere else.": {
+   "en": "These rows only have free spots in as many colors, so those colors' cats can't be anywhere else.",
+   "tr": "Bu satırlardaki boş yerler satır sayısı kadar renge ait; o renklerin kedileri başka yerde olamaz."
+  },
+  "These columns only have free spots in as many colors, so those colors' cats can't be anywhere else.": {
+   "en": "These columns only have free spots in as many colors, so those colors' cats can't be anywhere else.",
+   "tr": "Bu sütunlardaki boş yerler sütun sayısı kadar renge ait; o renklerin kedileri başka yerde olamaz."
+  },
+  "A cat here would leave no room for a cat in the highlighted row.": {
+   "en": "A cat here would leave no room for a cat in the highlighted row.",
+   "tr": "Buraya kedi konursa vurgulanan satırda kediye yer kalmaz."
+  },
+  "A cat here would leave no room for a cat in the highlighted column.": {
+   "en": "A cat here would leave no room for a cat in the highlighted column.",
+   "tr": "Buraya kedi konursa vurgulanan sütunda kediye yer kalmaz."
+  },
+  "A cat here would leave no room for a cat in the highlighted color.": {
+   "en": "A cat here would leave no room for a cat in the highlighted color.",
+   "tr": "Buraya kedi konursa vurgulanan renkte kediye yer kalmaz."
+  },
+  "A cat here leads to a dead end: the highlighted row would soon have no room left.": {
+   "en": "A cat here leads to a dead end: the highlighted row would soon have no room left.",
+   "tr": "Buraya kedi konursa çıkmaza girilir: vurgulanan satırda kısa sürede yer kalmaz."
+  },
+  "A cat here leads to a dead end: the highlighted column would soon have no room left.": {
+   "en": "A cat here leads to a dead end: the highlighted column would soon have no room left.",
+   "tr": "Buraya kedi konursa çıkmaza girilir: vurgulanan sütunda kısa sürede yer kalmaz."
+  },
+  "A cat here leads to a dead end: the highlighted color would soon have no room left.": {
+   "en": "A cat here leads to a dead end: the highlighted color would soon have no room left.",
+   "tr": "Buraya kedi konursa çıkmaza girilir: vurgulanan renkte kısa sürede yer kalmaz."
+  },
+  "Every color hides one cat. Each row and column has one cat too, and cats never touch, not even diagonally. This color is a single square, so its cat is there. Tap it twice: once for X, once for the cat!": {
+   "en": "Every color hides one cat. Each row and column has one cat too, and cats never touch, not even diagonally. This color is a single square, so its cat is there. Tap it twice: once for X, once for the cat!",
+   "tr": "Her renkte bir kedi saklanıyor. Her satırda ve sütunda da bir kedi var; kediler birbirine çaprazdan bile değmez. Bu renk tek bir kare, yani kedisi orada. İki kez dokun: önce X, sonra kedi!"
+  },
+  "Well done! Squares where no cat can be were crossed out for you. Now this color has only one free square. Find its cat!": {
+   "en": "Well done! Squares where no cat can be were crossed out for you. Now this color has only one free square. Find its cat!",
+   "tr": "Aferin! Kedi olamayacak kareler senin için X'lendi. Şimdi bu renkte tek bir boş kare kaldı. Kedisini bul!"
+  },
+  "You've got it! Tap once for X, twice for a cat, and swipe to place many X's. Find the rest of the cats!": {
+   "en": "You've got it! Tap once for X, twice for a cat, and swipe to place many X's. Find the rest of the cats!",
+   "tr": "Kaptın! Bir dokunuş X, iki dokunuş kedi; kaydırarak çok sayıda X koyabilirsin. Kalan kedileri bul!"
+  },
+  "Warming Up": {
+   "en": "Warming Up",
+   "tr": "Isınma Turu"
+  },
+  "Cat Scholar": {
+   "en": "Cat Scholar",
+   "tr": "Kedi Bilgini"
+  },
+  "Cat Professor": {
+   "en": "Cat Professor",
+   "tr": "Kedi Profesörü"
+  },
+  "Golden Paws": {
+   "en": "Golden Paws",
+   "tr": "Altın Patiler"
+  },
+  "Treasure Hunter": {
+   "en": "Treasure Hunter",
+   "tr": "Hazine Avcısı"
+  },
+  "Purrfectionist": {
+   "en": "Purrfectionist",
+   "tr": "Mırmükemmeliyetçi"
+  },
+  "Steady Paws": {
+   "en": "Steady Paws",
+   "tr": "Sağlam Patiler"
+  },
+  "Untouchable": {
+   "en": "Untouchable",
+   "tr": "Dokunulmaz"
+  },
+  "Puzzle Fan": {
+   "en": "Puzzle Fan",
+   "tr": "Bulmaca Sever"
+  },
+  "Puzzle Legend": {
+   "en": "Puzzle Legend",
+   "tr": "Bulmaca Efsanesi"
+  },
+  "Star Collector": {
+   "en": "Star Collector",
+   "tr": "Yıldız Koleksiyoncusu"
+  },
+  "Big Thinker": {
+   "en": "Big Thinker",
+   "tr": "Büyük Düşünür"
+  },
+  "Solve 10 puzzles.": {
+   "en": "Solve 10 puzzles.",
+   "tr": "10 bulmaca çöz."
+  },
+  "Collect 15 cat breeds.": {
+   "en": "Collect 15 cat breeds.",
+   "tr": "15 kedi türü topla."
+  },
+  "Collect 20 cat breeds.": {
+   "en": "Collect 20 cat breeds.",
+   "tr": "20 kedi türü topla."
+  },
+  "Win 3 Golden Cards.": {
+   "en": "Win 3 Golden Cards.",
+   "tr": "3 Altın Kart kazan."
+  },
+  "Win 10 Golden Cards.": {
+   "en": "Win 10 Golden Cards.",
+   "tr": "10 Altın Kart kazan."
+  },
+  "Get 4 stars on 10 puzzles.": {
+   "en": "Get 4 stars on 10 puzzles.",
+   "tr": "10 bulmacada 4 yıldız al."
+  },
+  "Solve 10 puzzles in a row without a mistake.": {
+   "en": "Solve 10 puzzles in a row without a mistake.",
+   "tr": "Art arda 10 bulmacayı hatasız çöz."
+  },
+  "Solve 25 puzzles in a row without a mistake.": {
+   "en": "Solve 25 puzzles in a row without a mistake.",
+   "tr": "Art arda 25 bulmacayı hatasız çöz."
+  },
+  "Solve 50 puzzles.": {
+   "en": "Solve 50 puzzles.",
+   "tr": "50 bulmaca çöz."
+  },
+  "Solve 200 puzzles.": {
+   "en": "Solve 200 puzzles.",
+   "tr": "200 bulmaca çöz."
+  },
+  "Collect 500 stars.": {
+   "en": "Collect 500 stars.",
+   "tr": "500 yıldız topla."
+  },
+  "Solve a puzzle 15 squares wide or bigger.": {
+   "en": "Solve a puzzle 15 squares wide or bigger.",
+   "tr": "15 kare genişliğinde ya da daha büyük bir bulmaca çöz."
+  },
+  "Daily Debut": {
+   "en": "Daily Debut",
+   "tr": "Günlük İlk Adım"
+  },
+  "Three in a Row": {
+   "en": "Three in a Row",
+   "tr": "Üst Üste Üç"
+  },
+  "Two Weeks Strong": {
+   "en": "Two Weeks Strong",
+   "tr": "İki Hafta Boyunca"
+  },
+  "Monthly Regular": {
+   "en": "Monthly Regular",
+   "tr": "Ayın Müdavimi"
+  },
+  "Unbreakable": {
+   "en": "Unbreakable",
+   "tr": "Kırılmaz"
+  },
+  "Century Streak": {
+   "en": "Century Streak",
+   "tr": "Yüz Günlük Seri"
+  },
+  "Daily Ten": {
+   "en": "Daily Ten",
+   "tr": "Günlük On"
+  },
+  "Daily Regular": {
+   "en": "Daily Regular",
+   "tr": "Günlük Müdavim"
+  },
+  "Daily Fan": {
+   "en": "Daily Fan",
+   "tr": "Günlük Hayranı"
+  },
+  "Daily Hundred": {
+   "en": "Daily Hundred",
+   "tr": "Günlük Yüz"
+  },
+  "Daily Devotee": {
+   "en": "Daily Devotee",
+   "tr": "Günlük Tutkunu"
+  },
+  "A Year of Puzzles": {
+   "en": "A Year of Puzzles",
+   "tr": "Bir Yıl Bulmaca"
+  },
+  "Flawless Day": {
+   "en": "Flawless Day",
+   "tr": "Kusursuz Gün"
+  },
+  "Steady Hands": {
+   "en": "Steady Hands",
+   "tr": "Sağlam Eller"
+  },
+  "Daily Star": {
+   "en": "Daily Star",
+   "tr": "Günün Yıldızı"
+  },
+  "Star of the Day": {
+   "en": "Star of the Day",
+   "tr": "Günlerin Yıldızı"
+  },
+  "Time Traveler": {
+   "en": "Time Traveler",
+   "tr": "Zaman Yolcusu"
+  },
+  "Catching Up": {
+   "en": "Catching Up",
+   "tr": "Telafi Ustası"
+  },
+  "Weekend Warrior": {
+   "en": "Weekend Warrior",
+   "tr": "Hafta Sonu Savaşçısı"
+  },
+  "Speedy Daily": {
+   "en": "Speedy Daily",
+   "tr": "Hızlı Günlük"
+  },
+  "Solve your first Daily Puzzle.": {
+   "en": "Solve your first Daily Puzzle.",
+   "tr": "İlk günlük bulmacanı çöz."
+  },
+  "Solve the Daily Puzzle 3 days in a row.": {
+   "en": "Solve the Daily Puzzle 3 days in a row.",
+   "tr": "Günlük bulmacayı 3 gün üst üste çöz."
+  },
+  "Solve the Daily Puzzle 14 days in a row.": {
+   "en": "Solve the Daily Puzzle 14 days in a row.",
+   "tr": "Günlük bulmacayı 14 gün üst üste çöz."
+  },
+  "Solve the Daily Puzzle 30 days in a row.": {
+   "en": "Solve the Daily Puzzle 30 days in a row.",
+   "tr": "Günlük bulmacayı 30 gün üst üste çöz."
+  },
+  "Solve the Daily Puzzle 60 days in a row.": {
+   "en": "Solve the Daily Puzzle 60 days in a row.",
+   "tr": "Günlük bulmacayı 60 gün üst üste çöz."
+  },
+  "Solve the Daily Puzzle 100 days in a row.": {
+   "en": "Solve the Daily Puzzle 100 days in a row.",
+   "tr": "Günlük bulmacayı 100 gün üst üste çöz."
+  },
+  "Solve 10 Daily Puzzles.": {
+   "en": "Solve 10 Daily Puzzles.",
+   "tr": "10 günlük bulmaca çöz."
+  },
+  "Solve 25 Daily Puzzles.": {
+   "en": "Solve 25 Daily Puzzles.",
+   "tr": "25 günlük bulmaca çöz."
+  },
+  "Solve 50 Daily Puzzles.": {
+   "en": "Solve 50 Daily Puzzles.",
+   "tr": "50 günlük bulmaca çöz."
+  },
+  "Solve 100 Daily Puzzles.": {
+   "en": "Solve 100 Daily Puzzles.",
+   "tr": "100 günlük bulmaca çöz."
+  },
+  "Solve 200 Daily Puzzles.": {
+   "en": "Solve 200 Daily Puzzles.",
+   "tr": "200 günlük bulmaca çöz."
+  },
+  "Solve 365 Daily Puzzles.": {
+   "en": "Solve 365 Daily Puzzles.",
+   "tr": "365 günlük bulmaca çöz."
+  },
+  "Solve a Daily Puzzle without a mistake.": {
+   "en": "Solve a Daily Puzzle without a mistake.",
+   "tr": "Bir günlük bulmacayı hatasız çöz."
+  },
+  "Solve 10 Daily Puzzles without a mistake.": {
+   "en": "Solve 10 Daily Puzzles without a mistake.",
+   "tr": "10 günlük bulmacayı hatasız çöz."
+  },
+  "Get 4 stars on a Daily Puzzle.": {
+   "en": "Get 4 stars on a Daily Puzzle.",
+   "tr": "Bir günlük bulmacada 4 yıldız al."
+  },
+  "Get 4 stars on 10 Daily Puzzles.": {
+   "en": "Get 4 stars on 10 Daily Puzzles.",
+   "tr": "10 günlük bulmacada 4 yıldız al."
+  },
+  "Solve a Daily Puzzle from a past day.": {
+   "en": "Solve a Daily Puzzle from a past day.",
+   "tr": "Geçmiş bir günün bulmacasını çöz."
+  },
+  "Solve 10 Daily Puzzles from past days.": {
+   "en": "Solve 10 Daily Puzzles from past days.",
+   "tr": "Geçmiş günlerden 10 bulmaca çöz."
+  },
+  "Solve both the Saturday and Sunday puzzles of a weekend.": {
+   "en": "Solve both the Saturday and Sunday puzzles of a weekend.",
+   "tr": "Bir hafta sonunun hem cumartesi hem pazar bulmacasını çöz."
+  },
+  "Solve a Daily Puzzle in under 3 minutes.": {
+   "en": "Solve a Daily Puzzle in under 3 minutes.",
+   "tr": "Bir günlük bulmacayı 3 dakikadan kısa sürede çöz."
+  },
+  "First Whiskers": {
+   "en": "First Whiskers",
+   "tr": "İlk Bıyıklar"
+  },
+  "Cat Puzzle Graduate": {
+   "en": "Cat Puzzle Graduate",
+   "tr": "Kedi Bulmaca Mezunu"
+  },
+  "Cat Spotter": {
+   "en": "Cat Spotter",
+   "tr": "Kedi Gözcüsü"
+  },
+  "Cat Seeker": {
+   "en": "Cat Seeker",
+   "tr": "Kedi Arayıcı"
+  },
+  "Cat Tracker": {
+   "en": "Cat Tracker",
+   "tr": "Kedi İz Sürücüsü"
+  },
+  "Cat Detective": {
+   "en": "Cat Detective",
+   "tr": "Kedi Dedektifi"
+  },
+  "Cat Whisperer": {
+   "en": "Cat Whisperer",
+   "tr": "Kedi Fısıldayan"
+  },
+  "Queen of Cats": {
+   "en": "Queen of Cats",
+   "tr": "Kedilerin Kraliçesi"
+  },
+  "Hundred Whiskers": {
+   "en": "Hundred Whiskers",
+   "tr": "Yüz Bıyık"
+  },
+  "Cat Crowd": {
+   "en": "Cat Crowd",
+   "tr": "Kedi Kalabalığı"
+  },
+  "Thousand Cats": {
+   "en": "Thousand Cats",
+   "tr": "Bin Kedi"
+  },
+  "Cat Kingdom": {
+   "en": "Cat Kingdom",
+   "tr": "Kedi Krallığı"
+  },
+  "Clean Sweep": {
+   "en": "Clean Sweep",
+   "tr": "Tertemiz"
+  },
+  "Sharp Mind": {
+   "en": "Sharp Mind",
+   "tr": "Keskin Zekâ"
+  },
+  "Logic Wizard": {
+   "en": "Logic Wizard",
+   "tr": "Mantık Büyücüsü"
+  },
+  "Hot Streak": {
+   "en": "Hot Streak",
+   "tr": "Seri Başladı"
+  },
+  "On Fire": {
+   "en": "On Fire",
+   "tr": "Alev Alev"
+  },
+  "Combo Cat": {
+   "en": "Combo Cat",
+   "tr": "Kombo Kedi"
+  },
+  "Unstoppable": {
+   "en": "Unstoppable",
+   "tr": "Durdurulamaz"
+  },
+  "Sharp Eye": {
+   "en": "Sharp Eye",
+   "tr": "Keskin Göz"
+  },
+  "Grid Master": {
+   "en": "Grid Master",
+   "tr": "Tahta Ustası"
+  },
+  "Giant Grid": {
+   "en": "Giant Grid",
+   "tr": "Dev Tahta"
+  },
+  "High Scorer": {
+   "en": "High Scorer",
+   "tr": "Rekortmen"
+  },
+  "Quick Paws": {
+   "en": "Quick Paws",
+   "tr": "Hızlı Patiler"
+  },
+  "Find your first cat.": {
+   "en": "Find your first cat.",
+   "tr": "İlk kedini bul."
+  },
+  "Finish the first Cat Puzzle level.": {
+   "en": "Finish the first Cat Puzzle level.",
+   "tr": "Kedi Bulmaca'nın ilk bölümünü bitir."
+  },
+  "Solve 10 Cat Puzzle levels.": {
+   "en": "Solve 10 Cat Puzzle levels.",
+   "tr": "Kedi Bulmaca'da 10 bölüm çöz."
+  },
+  "Solve 25 Cat Puzzle levels.": {
+   "en": "Solve 25 Cat Puzzle levels.",
+   "tr": "Kedi Bulmaca'da 25 bölüm çöz."
+  },
+  "Solve 50 Cat Puzzle levels.": {
+   "en": "Solve 50 Cat Puzzle levels.",
+   "tr": "Kedi Bulmaca'da 50 bölüm çöz."
+  },
+  "Solve 100 Cat Puzzle levels.": {
+   "en": "Solve 100 Cat Puzzle levels.",
+   "tr": "Kedi Bulmaca'da 100 bölüm çöz."
+  },
+  "Solve 200 Cat Puzzle levels.": {
+   "en": "Solve 200 Cat Puzzle levels.",
+   "tr": "Kedi Bulmaca'da 200 bölüm çöz."
+  },
+  "Solve every Cat Puzzle level.": {
+   "en": "Solve every Cat Puzzle level.",
+   "tr": "Kedi Bulmaca'nın tüm bölümlerini çöz."
+  },
+  "Find 100 cats.": {
+   "en": "Find 100 cats.",
+   "tr": "100 kedi bul."
+  },
+  "Find 500 cats.": {
+   "en": "Find 500 cats.",
+   "tr": "500 kedi bul."
+  },
+  "Find 1,000 cats.": {
+   "en": "Find 1,000 cats.",
+   "tr": "1.000 kedi bul."
+  },
+  "Find 2,500 cats.": {
+   "en": "Find 2,500 cats.",
+   "tr": "2.500 kedi bul."
+  },
+  "Solve a level with no mistakes and no hints.": {
+   "en": "Solve a level with no mistakes and no hints.",
+   "tr": "Bir bölümü hatasız ve ipucusuz çöz."
+  },
+  "Solve 10 levels with no mistakes and no hints.": {
+   "en": "Solve 10 levels with no mistakes and no hints.",
+   "tr": "10 bölümü hatasız ve ipucusuz çöz."
+  },
+  "Solve 50 levels with no mistakes and no hints.": {
+   "en": "Solve 50 levels with no mistakes and no hints.",
+   "tr": "50 bölümü hatasız ve ipucusuz çöz."
+  },
+  "Solve 5 levels in a row with no mistakes and no hints.": {
+   "en": "Solve 5 levels in a row with no mistakes and no hints.",
+   "tr": "Art arda 5 bölümü hatasız ve ipucusuz çöz."
+  },
+  "Solve 15 levels in a row with no mistakes and no hints.": {
+   "en": "Solve 15 levels in a row with no mistakes and no hints.",
+   "tr": "Art arda 15 bölümü hatasız ve ipucusuz çöz."
+  },
+  "Find 4 cats in a quick combo.": {
+   "en": "Find 4 cats in a quick combo.",
+   "tr": "Hızlı bir komboyla 4 kedi bul."
+  },
+  "Find 7 cats in a quick combo.": {
+   "en": "Find 7 cats in a quick combo.",
+   "tr": "Hızlı bir komboyla 7 kedi bul."
+  },
+  "Find 25 cats after crossing out the rest of their color.": {
+   "en": "Find 25 cats after crossing out the rest of their color.",
+   "tr": "Renginin geri kalanını X'ledikten sonra 25 kedi bul."
+  },
+  "Solve a 10×10 level.": {
+   "en": "Solve a 10×10 level.",
+   "tr": "10×10 bir bölüm çöz."
+  },
+  "Solve a 15×15 level.": {
+   "en": "Solve a 15×15 level.",
+   "tr": "15×15 bir bölüm çöz."
+  },
+  "Score 100,000 points in total.": {
+   "en": "Score 100,000 points in total.",
+   "tr": "Toplamda 100.000 puan topla."
+  },
+  "Solve a level in under a minute.": {
+   "en": "Solve a level in under a minute.",
+   "tr": "Bir bölümü bir dakikadan kısa sürede çöz."
   }
  },
  "infoplist": {

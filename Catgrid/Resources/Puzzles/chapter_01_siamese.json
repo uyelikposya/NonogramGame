@@ -6,13 +6,7 @@
       "id": "siamese-001",
       "title": {
         "en": "Siamese Face",
-        "tr": "Siyam Yüzü",
-        "ja": "シャムの顔",
-        "de": "Siamesengesicht",
-        "fr": "Visage siamois",
-        "es": "Cara de siamés",
-        "pt-BR": "Rosto Siamês",
-        "ko": "샴 얼굴"
+        "tr": "Siyam Yüzü"
       },
       "palette": {
         "b": "#F2E3CF",
@@ -30,13 +24,7 @@
       "id": "siamese-002",
       "title": {
         "en": "Curious Cat",
-        "tr": "Meraklı Kedi",
-        "ja": "好奇心旺盛な猫",
-        "de": "Neugierige Katze",
-        "fr": "Chat curieux",
-        "es": "Gato curioso",
-        "pt-BR": "Gato Curioso",
-        "ko": "호기심 냥이"
+        "tr": "Meraklı Kedi"
       },
       "palette": {
         "b": "#F2E3CF",
@@ -54,13 +42,7 @@
       "id": "siamese-003",
       "title": {
         "en": "Sitting Kitten",
-        "tr": "Oturan Yavru",
-        "ja": "おすわり子猫",
-        "de": "Sitzendes Kätzchen",
-        "fr": "Chaton assis",
-        "es": "Gatito sentado",
-        "pt-BR": "Gatinho Sentado",
-        "ko": "앉아 있는 아기 고양이"
+        "tr": "Oturan Yavru"
       },
       "palette": {
         "b": "#F2E3CF",
@@ -78,13 +60,7 @@
       "id": "siamese-004",
       "title": {
         "en": "Blue Gaze",
-        "tr": "Mavi Bakış",
-        "ja": "青いまなざし",
-        "de": "Blauer Blick",
-        "fr": "Regard bleu",
-        "es": "Mirada azul",
-        "pt-BR": "Olhar Azul",
-        "ko": "파란 눈빛"
+        "tr": "Mavi Bakış"
       },
       "palette": {
         "b": "#F2E3CF",
@@ -103,13 +79,7 @@
       "id": "siamese-005",
       "title": {
         "en": "Tail Up",
-        "tr": "Kuyruk Havada",
-        "ja": "しっぽピーン",
-        "de": "Schwanz hoch",
-        "fr": "Queue en l'air",
-        "es": "Cola arriba",
-        "pt-BR": "Rabo pra Cima",
-        "ko": "꼬리 번쩍"
+        "tr": "Kuyruk Havada"
       },
       "palette": {
         "b": "#F2E3CF",
@@ -127,13 +97,7 @@
       "id": "siamese-006",
       "title": {
         "en": "Dinner Bowl",
-        "tr": "Mama Kabı",
-        "ja": "ごはん皿",
-        "de": "Futternapf",
-        "fr": "Gamelle",
-        "es": "Cuenco de comida",
-        "pt-BR": "Potinho de Ração",
-        "ko": "밥그릇"
+        "tr": "Mama Kabı"
       },
       "palette": {
         "o": "#E07A5F",
@@ -153,13 +117,7 @@
       "id": "siamese-007",
       "title": {
         "en": "Fish Snack",
-        "tr": "Balık Atıştırması",
-        "ja": "おさかなおやつ",
-        "de": "Fischsnack",
-        "fr": "Goûter poisson",
-        "es": "Tentempié de pescado",
-        "pt-BR": "Petisco de Peixe",
-        "ko": "생선 간식"
+        "tr": "Balık Atıştırması"
       },
       "palette": {
         "o": "#E07A5F"
@@ -177,13 +135,7 @@
       "id": "siamese-008",
       "title": {
         "en": "Purr Love",
-        "tr": "Mırıl Sevgi",
-        "ja": "ゴロゴロ大好き",
-        "de": "Schnurrliebe",
-        "fr": "Ronron d'amour",
-        "es": "Amor ronroneante",
-        "pt-BR": "Amor Ronronado",
-        "ko": "골골송 사랑"
+        "tr": "Mırıl Sevgi"
       },
       "palette": {
         "n": "#D99A9A"
@@ -201,13 +153,7 @@
       "id": "siamese-009",
       "title": {
         "en": "Toe Beans",
-        "tr": "Pati Yastıkları",
-        "ja": "肉球",
-        "de": "Pfotenballen",
-        "fr": "Coussinets",
-        "es": "Almohadillas",
-        "pt-BR": "Almofadinhas",
-        "ko": "말랑 젤리"
+        "tr": "Pati Yastıkları"
       },
       "palette": {
         "b": "#F2E3CF",
@@ -227,13 +173,7 @@
       "id": "siamese-010",
       "title": {
         "en": "Fish Snack",
-        "tr": "Balık Atıştırması",
-        "ja": "おさかなおやつ",
-        "de": "Fischsnack",
-        "fr": "Goûter poisson",
-        "es": "Tentempié de pescado",
-        "pt-BR": "Petisco de Peixe",
-        "ko": "생선 간식"
+        "tr": "Balık Atıştırması"
       },
       "palette": {
         "o": "#E07A5F"
@@ -253,13 +193,7 @@
       "id": "siamese-011",
       "title": {
         "en": "Yarn Ball",
-        "tr": "Yün Yumak",
-        "ja": "毛糸玉",
-        "de": "Wollknäuel",
-        "fr": "Pelote de laine",
-        "es": "Ovillo de lana",
-        "pt-BR": "Novelo de Lã",
-        "ko": "털실 뭉치"
+        "tr": "Yün Yumak"
       },
       "palette": {
         "o": "#E07A5F"
@@ -279,13 +213,7 @@
       "id": "siamese-012",
       "title": {
         "en": "Toy Mouse",
-        "tr": "Oyuncak Fare",
-        "ja": "ネズミのおもちゃ",
-        "de": "Spielmaus",
-        "fr": "Souris jouet",
-        "es": "Ratón de juguete",
-        "pt-BR": "Ratinho de Brinquedo",
-        "ko": "장난감 쥐"
+        "tr": "Oyuncak Fare"
       },
       "palette": {
         "n": "#D99A9A",
@@ -306,13 +234,7 @@
       "id": "siamese-013",
       "title": {
         "en": "Moon Gazer",
-        "tr": "Ay Seyri",
-        "ja": "月を見る猫",
-        "de": "Mondgucker",
-        "fr": "Rêveur de lune",
-        "es": "Mirando la luna",
-        "pt-BR": "Admirador da Lua",
-        "ko": "달 바라기"
+        "tr": "Ay Seyri"
       },
       "palette": {
         "b": "#F2E3CF",
@@ -333,13 +255,7 @@
       "id": "siamese-014",
       "title": {
         "en": "Owl Pose",
-        "tr": "Baykuş Duruşu",
-        "ja": "フクロウのポーズ",
-        "de": "Eulenpose",
-        "fr": "Pose de chouette",
-        "es": "Pose de búho",
-        "pt-BR": "Pose de Coruja",
-        "ko": "부엉이 포즈"
+        "tr": "Baykuş Duruşu"
       },
       "palette": {
         "b": "#F2E3CF",
@@ -363,13 +279,7 @@
       "id": "siamese-015",
       "title": {
         "en": "Ancient Grace",
-        "tr": "Kadim Zarafet",
-        "ja": "古代の気品",
-        "de": "Uralte Anmut",
-        "fr": "Grâce ancestrale",
-        "es": "Gracia antigua",
-        "pt-BR": "Graça Ancestral",
-        "ko": "고대의 우아함"
+        "tr": "Kadim Zarafet"
       },
       "palette": {
         "b": "#F2E3CF",
@@ -393,13 +303,7 @@
       "id": "siamese-016",
       "title": {
         "en": "Floppy Hug",
-        "tr": "Gevşek Kucaklama",
-        "ja": "ぐにゃっとハグ",
-        "de": "Schlappe Umarmung",
-        "fr": "Câlin tout mou",
-        "es": "Abrazo blandito",
-        "pt-BR": "Abraço Molinho",
-        "ko": "축 늘어진 포옹"
+        "tr": "Gevşek Kucaklama"
       },
       "palette": {
         "b": "#F2E3CF",

@@ -6,13 +6,7 @@
       "id": "ragdoll-001",
       "title": {
         "en": "Toy Mouse",
-        "tr": "Oyuncak Fare",
-        "ja": "ネズミのおもちゃ",
-        "de": "Spielmaus",
-        "fr": "Souris jouet",
-        "es": "Ratón de juguete",
-        "pt-BR": "Ratinho de Brinquedo",
-        "ko": "장난감 쥐"
+        "tr": "Oyuncak Fare"
       },
       "palette": {
         "p": "#9AA5B1"
@@ -28,13 +22,7 @@
       "id": "ragdoll-002",
       "title": {
         "en": "Dinner Bowl",
-        "tr": "Mama Kabı",
-        "ja": "ごはん皿",
-        "de": "Futternapf",
-        "fr": "Gamelle",
-        "es": "Cuenco de comida",
-        "pt-BR": "Potinho de Ração",
-        "ko": "밥그릇"
+        "tr": "Mama Kabı"
       },
       "palette": {
         "o": "#B5838D",
@@ -53,13 +41,7 @@
       "id": "ragdoll-003",
       "title": {
         "en": "Toe Beans",
-        "tr": "Pati Yastıkları",
-        "ja": "肉球",
-        "de": "Pfotenballen",
-        "fr": "Coussinets",
-        "es": "Almohadillas",
-        "pt-BR": "Almofadinhas",
-        "ko": "말랑 젤리"
+        "tr": "Pati Yastıkları"
       },
       "palette": {
         "n": "#E2A3A3",
@@ -79,13 +61,7 @@
       "id": "ragdoll-004",
       "title": {
         "en": "Purr Love",
-        "tr": "Mırıl Sevgi",
-        "ja": "ゴロゴロ大好き",
-        "de": "Schnurrliebe",
-        "fr": "Ronron d'amour",
-        "es": "Amor ronroneante",
-        "pt-BR": "Amor Ronronado",
-        "ko": "골골송 사랑"
+        "tr": "Mırıl Sevgi"
       },
       "palette": {
         "n": "#E2A3A3"
@@ -103,13 +79,7 @@
       "id": "ragdoll-005",
       "title": {
         "en": "Portrait",
-        "tr": "Portre",
-        "ja": "肖像画",
-        "de": "Porträt",
-        "fr": "Portrait",
-        "es": "Retrato",
-        "pt-BR": "Retrato",
-        "ko": "초상화"
+        "tr": "Portre"
       },
       "palette": {
         "b": "#F4EEE6",
@@ -131,13 +101,7 @@
       "id": "ragdoll-006",
       "title": {
         "en": "Yarn Ball",
-        "tr": "Yün Yumak",
-        "ja": "毛糸玉",
-        "de": "Wollknäuel",
-        "fr": "Pelote de laine",
-        "es": "Ovillo de lana",
-        "pt-BR": "Novelo de Lã",
-        "ko": "털실 뭉치"
+        "tr": "Yün Yumak"
       },
       "palette": {
         "o": "#B5838D"
@@ -155,13 +119,7 @@
       "id": "ragdoll-007",
       "title": {
         "en": "Yarn Ball",
-        "tr": "Yün Yumak",
-        "ja": "毛糸玉",
-        "de": "Wollknäuel",
-        "fr": "Pelote de laine",
-        "es": "Ovillo de lana",
-        "pt-BR": "Novelo de Lã",
-        "ko": "털실 뭉치"
+        "tr": "Yün Yumak"
       },
       "palette": {
         "o": "#B5838D"
@@ -179,13 +137,7 @@
       "id": "ragdoll-008",
       "title": {
         "en": "Toy Mouse",
-        "tr": "Oyuncak Fare",
-        "ja": "ネズミのおもちゃ",
-        "de": "Spielmaus",
-        "fr": "Souris jouet",
-        "es": "Ratón de juguete",
-        "pt-BR": "Ratinho de Brinquedo",
-        "ko": "장난감 쥐"
+        "tr": "Oyuncak Fare"
       },
       "palette": {
         "n": "#E2A3A3",
@@ -204,13 +156,7 @@
       "id": "ragdoll-009",
       "title": {
         "en": "Dinner Bowl",
-        "tr": "Mama Kabı",
-        "ja": "ごはん皿",
-        "de": "Futternapf",
-        "fr": "Gamelle",
-        "es": "Cuenco de comida",
-        "pt-BR": "Potinho de Ração",
-        "ko": "밥그릇"
+        "tr": "Mama Kabı"
       },
       "palette": {
         "o": "#B5838D",
@@ -231,13 +177,7 @@
       "id": "ragdoll-010",
       "title": {
         "en": "Purr Love",
-        "tr": "Mırıl Sevgi",
-        "ja": "ゴロゴロ大好き",
-        "de": "Schnurrliebe",
-        "fr": "Ronron d'amour",
-        "es": "Amor ronroneante",
-        "pt-BR": "Amor Ronronado",
-        "ko": "골골송 사랑"
+        "tr": "Mırıl Sevgi"
       },
       "palette": {
         "n": "#E2A3A3",
@@ -258,13 +198,7 @@
       "id": "ragdoll-011",
       "title": {
         "en": "Portrait",
-        "tr": "Portre",
-        "ja": "肖像画",
-        "de": "Porträt",
-        "fr": "Portrait",
-        "es": "Retrato",
-        "pt-BR": "Retrato",
-        "ko": "초상화"
+        "tr": "Portre"
       },
       "palette": {
         "b": "#F4EEE6",
@@ -287,13 +221,7 @@
       "id": "ragdoll-012",
       "title": {
         "en": "Sitting Pretty",
-        "tr": "Uslu Oturuş",
-        "ja": "おすましおすわり",
-        "de": "Brav sitzen",
-        "fr": "Sage comme une image",
-        "es": "Sentado con estilo",
-        "pt-BR": "Pose Elegante",
-        "ko": "얌전히 앉기"
+        "tr": "Uslu Oturuş"
       },
       "palette": {
         "b": "#F4EEE6",
@@ -316,13 +244,7 @@
       "id": "ragdoll-013",
       "title": {
         "en": "Teddy Face",
-        "tr": "Oyuncak Ayı Yüzü",
-        "ja": "テディベア顔",
-        "de": "Teddygesicht",
-        "fr": "Bouille de nounours",
-        "es": "Cara de osito",
-        "pt-BR": "Cara de Ursinho",
-        "ko": "테디베어 얼굴"
+        "tr": "Oyuncak Ayı Yüzü"
       },
       "palette": {
         "b": "#F4EEE6",
@@ -345,13 +267,7 @@
       "id": "ragdoll-014",
       "title": {
         "en": "Nap Time",
-        "tr": "Şekerleme",
-        "ja": "お昼寝タイム",
-        "de": "Nickerchen",
-        "fr": "L'heure de la sieste",
-        "es": "Hora de la siesta",
-        "pt-BR": "Hora da Soneca",
-        "ko": "낮잠 시간"
+        "tr": "Şekerleme"
       },
       "palette": {
         "b": "#F4EEE6",
@@ -373,13 +289,7 @@
       "id": "ragdoll-015",
       "title": {
         "en": "Lucky Cat",
-        "tr": "Şans Kedisi",
-        "ja": "招き猫",
-        "de": "Glückskatze",
-        "fr": "Chat porte-bonheur",
-        "es": "Gato de la suerte",
-        "pt-BR": "Gato da Sorte",
-        "ko": "행운의 고양이"
+        "tr": "Şans Kedisi"
       },
       "palette": {
         "b": "#F4EEE6",
@@ -404,13 +314,7 @@
       "id": "ragdoll-016",
       "title": {
         "en": "Floppy Hug",
-        "tr": "Gevşek Kucaklama",
-        "ja": "ぐにゃっとハグ",
-        "de": "Schlappe Umarmung",
-        "fr": "Câlin tout mou",
-        "es": "Abrazo blandito",
-        "pt-BR": "Abraço Molinho",
-        "ko": "축 늘어진 포옹"
+        "tr": "Gevşek Kucaklama"
       },
       "palette": {
         "b": "#F4EEE6",

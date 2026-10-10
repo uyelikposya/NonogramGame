@@ -6,13 +6,7 @@
       "id": "persian-001",
       "title": {
         "en": "Dinner Bowl",
-        "tr": "Mama Kabı",
-        "ja": "ごはん皿",
-        "de": "Futternapf",
-        "fr": "Gamelle",
-        "es": "Cuenco de comida",
-        "pt-BR": "Potinho de Ração",
-        "ko": "밥그릇"
+        "tr": "Mama Kabı"
       },
       "palette": {
         "o": "#8E5BA8",
@@ -29,13 +23,7 @@
       "id": "persian-002",
       "title": {
         "en": "Fish Snack",
-        "tr": "Balık Atıştırması",
-        "ja": "おさかなおやつ",
-        "de": "Fischsnack",
-        "fr": "Goûter poisson",
-        "es": "Tentempié de pescado",
-        "pt-BR": "Petisco de Peixe",
-        "ko": "생선 간식"
+        "tr": "Balık Atıştırması"
       },
       "palette": {
         "o": "#8E5BA8",
@@ -53,13 +41,7 @@
       "id": "persian-003",
       "title": {
         "en": "Leftovers",
-        "tr": "Artıklar",
-        "ja": "食べ残し",
-        "de": "Reste",
-        "fr": "Restes",
-        "es": "Sobras",
-        "pt-BR": "Restinho",
-        "ko": "남은 음식"
+        "tr": "Artıklar"
       },
       "palette": {
         "p": "#E9C46A"
@@ -76,13 +58,7 @@
       "id": "persian-004",
       "title": {
         "en": "Toe Beans",
-        "tr": "Pati Yastıkları",
-        "ja": "肉球",
-        "de": "Pfotenballen",
-        "fr": "Coussinets",
-        "es": "Almohadillas",
-        "pt-BR": "Almofadinhas",
-        "ko": "말랑 젤리"
+        "tr": "Pati Yastıkları"
       },
       "palette": {
         "b": "#EFE7DC",
@@ -102,13 +78,7 @@
       "id": "persian-005",
       "title": {
         "en": "Purr Love",
-        "tr": "Mırıl Sevgi",
-        "ja": "ゴロゴロ大好き",
-        "de": "Schnurrliebe",
-        "fr": "Ronron d'amour",
-        "es": "Amor ronroneante",
-        "pt-BR": "Amor Ronronado",
-        "ko": "골골송 사랑"
+        "tr": "Mırıl Sevgi"
       },
       "palette": {
         "n": "#E8A3A8",
@@ -128,13 +98,7 @@
       "id": "persian-006",
       "title": {
         "en": "Yarn Ball",
-        "tr": "Yün Yumak",
-        "ja": "毛糸玉",
-        "de": "Wollknäuel",
-        "fr": "Pelote de laine",
-        "es": "Ovillo de lana",
-        "pt-BR": "Novelo de Lã",
-        "ko": "털실 뭉치"
+        "tr": "Yün Yumak"
       },
       "palette": {
         "o": "#8E5BA8"
@@ -152,13 +116,7 @@
       "id": "persian-007",
       "title": {
         "en": "Fish Snack",
-        "tr": "Balık Atıştırması",
-        "ja": "おさかなおやつ",
-        "de": "Fischsnack",
-        "fr": "Goûter poisson",
-        "es": "Tentempié de pescado",
-        "pt-BR": "Petisco de Peixe",
-        "ko": "생선 간식"
+        "tr": "Balık Atıştırması"
       },
       "palette": {
         "o": "#8E5BA8"
@@ -176,13 +134,7 @@
       "id": "persian-008",
       "title": {
         "en": "Yarn Ball",
-        "tr": "Yün Yumak",
-        "ja": "毛糸玉",
-        "de": "Wollknäuel",
-        "fr": "Pelote de laine",
-        "es": "Ovillo de lana",
-        "pt-BR": "Novelo de Lã",
-        "ko": "털실 뭉치"
+        "tr": "Yün Yumak"
       },
       "palette": {
         "o": "#8E5BA8"
@@ -200,13 +152,7 @@
       "id": "persian-009",
       "title": {
         "en": "Portrait",
-        "tr": "Portre",
-        "ja": "肖像画",
-        "de": "Porträt",
-        "fr": "Portrait",
-        "es": "Retrato",
-        "pt-BR": "Retrato",
-        "ko": "초상화"
+        "tr": "Portre"
       },
       "palette": {
         "b": "#EFE7DC",
@@ -226,13 +172,7 @@
       "id": "persian-010",
       "title": {
         "en": "Dinner Bowl",
-        "tr": "Mama Kabı",
-        "ja": "ごはん皿",
-        "de": "Futternapf",
-        "fr": "Gamelle",
-        "es": "Cuenco de comida",
-        "pt-BR": "Potinho de Ração",
-        "ko": "밥그릇"
+        "tr": "Mama Kabı"
       },
       "palette": {
         "o": "#8E5BA8",
@@ -254,13 +194,7 @@
       "id": "persian-011",
       "title": {
         "en": "Purr Love",
-        "tr": "Mırıl Sevgi",
-        "ja": "ゴロゴロ大好き",
-        "de": "Schnurrliebe",
-        "fr": "Ronron d'amour",
-        "es": "Amor ronroneante",
-        "pt-BR": "Amor Ronronado",
-        "ko": "골골송 사랑"
+        "tr": "Mırıl Sevgi"
       },
       "palette": {
         "n": "#E8A3A8",
@@ -281,13 +215,7 @@
       "id": "persian-012",
       "title": {
         "en": "Portrait",
-        "tr": "Portre",
-        "ja": "肖像画",
-        "de": "Porträt",
-        "fr": "Portrait",
-        "es": "Retrato",
-        "pt-BR": "Retrato",
-        "ko": "초상화"
+        "tr": "Portre"
       },
       "palette": {
         "b": "#EFE7DC",
@@ -308,13 +236,7 @@
       "id": "persian-013",
       "title": {
         "en": "Portrait",
-        "tr": "Portre",
-        "ja": "肖像画",
-        "de": "Porträt",
-        "fr": "Portrait",
-        "es": "Retrato",
-        "pt-BR": "Retrato",
-        "ko": "초상화"
+        "tr": "Portre"
       },
       "palette": {
         "b": "#EFE7DC",
@@ -335,13 +257,7 @@
       "id": "persian-014",
       "title": {
         "en": "Sitting Pretty",
-        "tr": "Uslu Oturuş",
-        "ja": "おすましおすわり",
-        "de": "Brav sitzen",
-        "fr": "Sage comme une image",
-        "es": "Sentado con estilo",
-        "pt-BR": "Pose Elegante",
-        "ko": "얌전히 앉기"
+        "tr": "Uslu Oturuş"
       },
       "palette": {
         "b": "#EFE7DC"
@@ -362,13 +278,7 @@
       "id": "persian-015",
       "title": {
         "en": "Lake Swimmer",
-        "tr": "Göl Yüzücüsü",
-        "ja": "湖のスイマー",
-        "de": "Seeschwimmerin",
-        "fr": "Nageur du lac",
-        "es": "Nadador del lago",
-        "pt-BR": "Nadador do Lago",
-        "ko": "호수의 수영 선수"
+        "tr": "Göl Yüzücüsü"
       },
       "palette": {
         "b": "#EFE7DC",
@@ -392,13 +302,7 @@
       "id": "persian-016",
       "title": {
         "en": "Silver Night",
-        "tr": "Gümüş Gece",
-        "ja": "銀色の夜",
-        "de": "Silbernacht",
-        "fr": "Nuit argentée",
-        "es": "Noche plateada",
-        "pt-BR": "Noite Prateada",
-        "ko": "은빛 밤"
+        "tr": "Gümüş Gece"
       },
       "palette": {
         "b": "#EFE7DC",
