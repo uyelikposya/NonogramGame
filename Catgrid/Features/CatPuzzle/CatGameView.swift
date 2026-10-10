@@ -553,6 +553,7 @@ struct CatStrip: View {
             HStack(spacing: 4) {
                 ForEach(0..<level.size, id: \.self) { region in
                     CatToken(
+                        breedID: level.breeds[region],
                         portrait: cats.breed(level.breeds[region])?.portrait,
                         color: CatPalette.color(region),
                         isFound: found.contains(region)
@@ -570,6 +571,7 @@ struct CatStrip: View {
 
 @MainActor
 struct CatToken: View {
+    let breedID: String
     let portrait: Matrix<RGBColor?>?
     let color: Color
     let isFound: Bool
@@ -577,7 +579,17 @@ struct CatToken: View {
     var body: some View {
         ZStack {
             Circle().fill(color.opacity(isFound ? 0.95 : 0.25))
-            if let portrait {
+            if let photo = BreedPhoto.portrait(breedID) {
+                Image(uiImage: photo)
+                    .resizable()
+                    .scaledToFill()
+                    .clipShape(Circle())
+                    .padding(2)
+                    // Bulunmadıysa: rengin tonunda soluk
+                    .grayscale(isFound ? 0 : 1)
+                    .colorMultiply(isFound ? .white : color)
+                    .opacity(isFound ? 1 : 0.5)
+            } else if let portrait {
                 ArtworkThumbnail(artwork: portrait, outlined: false)
                     .padding(3)
                     // Bulunmadıysa: rengin tonunda soluk silüet

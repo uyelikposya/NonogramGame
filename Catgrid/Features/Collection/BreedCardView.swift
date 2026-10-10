@@ -142,10 +142,18 @@ struct BreedCardView: View {
                 .fill(isGolden
                     ? RadialGradient(colors: [Gold.dark.opacity(0.75), Gold.ink], center: .center, startRadius: 4, endRadius: 160)
                     : RadialGradient(colors: [accent.opacity(0.55), accent.opacity(0.15)], center: .top, startRadius: 0, endRadius: 220))
-            if !isGolden, let photo = UIImage(named: "card-\(chapter.id)") {
+            if let photo = BreedPhoto.card(chapter.id) {
+                // Altın Kartta aynı resim altın tonlarında
                 Image(uiImage: photo)
                     .resizable()
                     .scaledToFill()
+                    .grayscale(isGolden ? 1 : 0)
+                    .colorMultiply(isGolden ? Gold.bright : .white)
+                    .overlay {
+                        if isGolden {
+                            LinearGradient(colors: [Gold.light.opacity(0.35), .clear, Gold.deep.opacity(0.35)], startPoint: .topLeading, endPoint: .bottomTrailing)
+                        }
+                    }
                     .clipShape(RoundedRectangle(cornerRadius: radius))
             } else if let portrait = chapter.portrait {
                 ArtworkThumbnail(artwork: portrait, goldTone: isGolden)

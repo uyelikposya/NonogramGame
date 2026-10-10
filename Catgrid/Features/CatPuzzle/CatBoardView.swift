@@ -217,7 +217,11 @@ struct CatBoardPainter {
         let inner = rect.insetBy(dx: cell * 0.08, dy: cell * 0.08)
         let width = inner.width * scale
         let height = inner.height * scale
-        context.draw(image, in: CGRect(x: inner.midX - width / 2, y: inner.midY - height / 2, width: width, height: height))
+        let target = CGRect(x: inner.midX - width / 2, y: inner.midY - height / 2, width: width, height: height)
+        // Fotoğraf portreler yuvarlak kırpılır
+        var clipped = context
+        clipped.clip(to: Path(ellipseIn: target))
+        clipped.draw(image, in: target)
     }
 
     /// İpucu önizlemesi: nedeni gösteren kareler aydınlık, diğerleri karartılır;
@@ -269,6 +273,11 @@ enum PortraitImages {
 
     static func image(for chapter: Chapter) -> Image? {
         if let image = cache[chapter.id] { return image }
+        if let photo = BreedPhoto.portrait(chapter.id) {
+            let image = Image(uiImage: photo)
+            cache[chapter.id] = image
+            return image
+        }
         guard let portrait = chapter.portrait else { return nil }
         let renderer = ImageRenderer(content: ArtworkThumbnail(artwork: portrait, outlined: false).frame(width: 96, height: 96))
         renderer.scale = 2

@@ -275,6 +275,18 @@ struct ModeBanner<Art: View>: View {
     }
 }
 
+/// Kullanıcının hazırladığı tür görselleri (Assets: Cards/card-<tür>, Portraits/portrait-<tür>).
+/// Yoksa piksel portreye dönülür.
+enum BreedPhoto {
+    static func portrait(_ breedID: String) -> UIImage? {
+        UIImage(named: "portrait-\(breedID)")
+    }
+
+    static func card(_ breedID: String) -> UIImage? {
+        UIImage(named: "card-\(breedID)")
+    }
+}
+
 /// Bölümün vurgu renginde kedi rozeti.
 @MainActor
 struct ChapterBadge: View {
@@ -286,7 +298,15 @@ struct ChapterBadge: View {
         let tint = chapter.accentColor.map { Color($0) } ?? theme.accent
         ZStack {
             Circle().fill(tint.opacity(0.3).gradient)
-            if let portrait = chapter.portrait {
+            if let photo = BreedPhoto.portrait(chapter.id) {
+                // Türün portre fotoğrafı (yuvarlak)
+                Image(uiImage: photo)
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: size, height: size)
+                    .clipShape(Circle())
+                    .overlay(Circle().stroke(tint.opacity(0.6), lineWidth: max(size * 0.03, 1)))
+            } else if let portrait = chapter.portrait {
                 // Türün piksel portresi
                 ArtworkThumbnail(artwork: portrait)
                     .padding(size * 0.14)
