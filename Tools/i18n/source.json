@@ -40,10 +40,6 @@
    "en": "9 golden puzzles for every breed",
    "tr": "Her tür için 9 altın bulmaca"
   },
-  "A 0 means the line has no filled squares at all.": {
-   "en": "A 0 means the line has no filled squares at all.",
-   "tr": "0, o satırda hiç dolu kare olmadığı anlamına gelir."
-  },
   "A filled square touching the edge tells you exactly where a block begins.": {
    "en": "A filled square touching the edge tells you exactly where a block begins.",
    "tr": "Kenara değen dolu bir kare, bloğun tam olarak nerede başladığını söyler."
@@ -164,10 +160,6 @@
    "en": "Dark",
    "tr": "Koyu"
   },
-  "Empty lines": {
-   "en": "Empty lines",
-   "tr": "Boş satırlar"
-  },
   "Ends on %@": {
    "en": "Ends on %@",
    "tr": "Bitiş: %@"
@@ -284,10 +276,6 @@
    "en": "Manage Subscription",
    "tr": "Aboneliği Yönet"
   },
-  "Mark with X": {
-   "en": "Mark with X",
-   "tr": "X ile işaretle"
-  },
   "Match System": {
    "en": "Match System",
    "tr": "Sistemle Aynı"
@@ -339,10 +327,6 @@
   "No ads, 9 golden puzzles for every breed and Golden Cards. Monthly or yearly subscription.": {
    "en": "No ads, 9 golden puzzles for every breed and Golden Cards. Monthly or yearly subscription.",
    "tr": "Reklamsız oyun, her tür için 9 altın bulmaca ve Altın Kartlar. Aylık ya da yıllık abonelik."
-  },
-  "Numbers tell you how many squares in a line are filled. A 3 means three filled squares side by side. Tap a square to fill it.": {
-   "en": "Numbers tell you how many squares in a line are filled. A 3 means three filled squares side by side. Tap a square to fill it.",
-   "tr": "Sayılar bir satırda kaç karenin dolu olduğunu söyler. 3, yan yana üç dolu kare demektir. Doldurmak için bir kareye dokun."
   },
   "Origin": {
    "en": "Origin",
@@ -496,10 +480,6 @@
    "en": "Support new cat breeds and puzzles",
    "tr": "Yeni kedi türlerine ve bulmacalara destek ol"
   },
-  "Switch to the X tool to mark squares you know are empty. It keeps your thinking tidy.": {
-   "en": "Switch to the X tool to mark squares you know are empty. It keeps your thinking tidy.",
-   "tr": "Boş olduğunu bildiğin kareleri X aracıyla işaretle. Böylece kafan karışmaz."
-  },
   "Tap for a hint": {
    "en": "Tap for a hint",
    "tr": "İpucu için dokun"
@@ -507,10 +487,6 @@
   "Tap the card to flip it": {
    "en": "Tap the card to flip it",
    "tr": "Kartı çevirmek için üstüne dokun"
-  },
-  "Tap to fill": {
-   "en": "Tap to fill",
-   "tr": "Doldurmak için dokun"
   },
   "Tap to flip the card": {
    "en": "Tap to flip the card",
@@ -559,10 +535,6 @@
   "Watch an ad: +60 seconds": {
    "en": "Watch an ad: +60 seconds",
    "tr": "Reklam izle: +60 saniye"
-  },
-  "When a clue is as long as the line, the whole line is filled. Start there!": {
-   "en": "When a clue is as long as the line, the whole line is filled. Start there!",
-   "tr": "İpucu satır kadar uzunsa satırın tamamı doludur. Oradan başla!"
   },
   "Yearly plan": {
    "en": "Yearly plan",
@@ -963,6 +935,42 @@
   "Start Over": {
    "en": "Start Over",
    "tr": "Baştan Başla"
+  },
+  "Zeros and crosses": {
+   "en": "Zeros and crosses",
+   "tr": "Sıfırlar ve çarpılar"
+  },
+  "Blocks side by side": {
+   "en": "Blocks side by side",
+   "tr": "Yan yana kareler"
+  },
+  "Your turn": {
+   "en": "Your turn",
+   "tr": "Sıra sende"
+  },
+  "Numbers show how many squares in a row are filled. A 0 means the row has no filled squares. Tap the X below to add crosses.": {
+   "en": "Numbers show how many squares in a row are filled. A 0 means the row has no filled squares. Tap the X below to add crosses.",
+   "tr": "Sayılar bir satırda kaç karenin dolu olduğunu gösterir. 0, satırda dolu kare olmadığı anlamına gelir. Çarpı işareti eklemek için alttaki çarpıya dokun."
+  },
+  "If a clue is as long as the row, the whole row is filled. Starting there makes it easier.": {
+   "en": "If a clue is as long as the row, the whole row is filled. Starting there makes it easier.",
+   "tr": "İpucu satır kadar uzunsa satırın tamamı dolu demektir. Oradan başlamak işini kolaylaştırır."
+  },
+  "Remember, a 0 means that row has no filled squares? Let's start by placing crosses.": {
+   "en": "Remember, a 0 means that row has no filled squares? Let's start by placing crosses.",
+   "tr": "0, o satırda dolu kare olmadığı anlamına geliyordu hatırladın mı? Hadi çarpı koyarak başlayalım."
+  },
+  "There's a row that's completely full. Let's pick Fill again and find the filled squares.": {
+   "en": "There's a row that's completely full. Let's pick Fill again and find the filled squares.",
+   "tr": "Tamamı dolu olan bir satır var. Tekrar doldurmayı seçelim ve dolu kareleri bulalım."
+  },
+  "Numbers tell you how many squares sit side by side in a row or column. How can 2 squares together and 1 square alone fit?": {
+   "en": "Numbers tell you how many squares sit side by side in a row or column. How can 2 squares together and 1 square alone fit?",
+   "tr": "Sayılar bir satırda veya sütunda kaç karenin yan yana dolu olduğunu söyler. 2 kare yan yana ve 1 kare tek başına nasıl olabilir?"
+  },
+  "One row is empty and one is completely full. Find those first and you won't get confused. Your turn!": {
+   "en": "One row is empty and one is completely full. Find those first and you won't get confused. Your turn!",
+   "tr": "Bir satır boş, bir satır tamamen dolu. Öncelikle buraları bulursan kafan karışmaz. Hadi sıra sende!"
   }
  },
  "infoplist": {

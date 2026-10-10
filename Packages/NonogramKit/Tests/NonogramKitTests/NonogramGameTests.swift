@@ -73,6 +73,22 @@ final class NonogramGameTests: XCTestCase {
         XCTAssertEqual(game.board[position(2, 0)], .crossed)
     }
 
+    /// "Kolay" mod: satırdaki tüm X'ler konunca dolu kareler kendiliğinden gelir.
+    func testEasyModeFillsLineWhenAllCrossesPlaced() {
+        var game = NonogramGame(puzzle: plus, rules: .classic)
+        game.mark(.crossed, at: position(0, 0))
+        XCTAssertEqual(game.board[position(0, 1)], .blank)
+        game.mark(.crossed, at: position(0, 2))
+        XCTAssertEqual(game.board[position(0, 1)], .filled)
+
+        XCTAssertTrue(game.undo())
+        XCTAssertEqual(game.board[position(0, 1)], .blank)
+
+        game.autoCrossesCompletedLines = false
+        game.mark(.crossed, at: position(0, 2))
+        XCTAssertEqual(game.board[position(0, 1)], .blank)
+    }
+
     func testUndoRevertsMoveWithAutoCrosses() {
         var game = NonogramGame(puzzle: plus, rules: .classic)
         game.mark(.filled, at: position(0, 1))

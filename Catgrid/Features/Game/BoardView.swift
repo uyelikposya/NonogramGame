@@ -21,8 +21,8 @@ struct BoardView: View {
     var flashingCell: GridPosition?
     /// Kedinin "şuna bak" dediği satır ya da sütun.
     var hint: HintFinder.Hint?
-    /// Eğitimde dokunulacak kareyi gösteren pati.
-    var pointer: GridPosition?
+    /// Eğitimde patinin gösterdiği dokunuş ya da kaydırma.
+    var pointer: PointerPath?
     /// Dopamin modu: az önce tamamlanan satır/sütunun kısa parıltısı.
     var lineGlow: LineGlow?
     let onDragBegan: (GridPosition) -> Void
@@ -33,8 +33,9 @@ struct BoardView: View {
     @State private var zoom = BoardZoom()
 
     private var puzzle: Puzzle { game.puzzle }
-    /// Yakınlaştırma yalnızca büyük tahtalarda; küçüklerde tahta zaten yeterince büyük.
-    private var isZoomable: Bool { max(puzzle.rows, puzzle.columns) > 10 }
+    /// Yakınlaştırma şimdilik kapalı: büyük tahta da ekrana tamamen sığar
+    /// (oyuncu denemesinden sonra yeniden açılabilir: `max(rows, columns) > 10`).
+    private var isZoomable: Bool { false }
     private var isSolved: Bool { game.status == .won }
 
     var body: some View {
@@ -177,7 +178,7 @@ struct BoardCanvas: View {
     var activeCell: GridPosition?
     var flashingCell: GridPosition?
     var hint: HintFinder.Hint?
-    var pointer: GridPosition?
+    var pointer: PointerPath?
     var lineGlow: LineGlow?
     let onDragBegan: (GridPosition) -> Void
     let onDragMoved: (GridPosition) -> Void
@@ -290,12 +291,7 @@ struct BoardCanvas: View {
         .clipShape(RoundedRectangle(cornerRadius: 6))
         // Pati hep hiyerarşide durur (yalnızca görünürlüğü değişir); dokunmayı engellemez
         .overlay(alignment: .topLeading) {
-            PawPointer()
-                .offset(
-                    x: CGFloat(pointer?.column ?? 0) * cell + cell * 0.45,
-                    y: CGFloat(pointer?.row ?? 0) * cell + cell * 0.5
-                )
-                .opacity(pointer == nil ? 0 : 1)
+            GuidePaw(path: pointer, cell: cell)
         }
         .contentShape(Rectangle())
         .gesture(dragGesture(cell: cell))

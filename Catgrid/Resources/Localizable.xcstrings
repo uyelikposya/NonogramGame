@@ -525,52 +525,6 @@
         }
       }
     },
-    "A 0 means the line has no filled squares at all.": {
-      "localizations": {
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "0, o satırda hiç dolu kare olmadığı anlamına gelir."
-          }
-        },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "「0」は、その列に塗るマスがひとつもないという意味です。"
-          }
-        },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Eine 0 bedeutet, dass die Zeile gar keine gefüllten Felder hat."
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Un 0 signifie que la ligne n'a aucune case remplie."
-          }
-        },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Un 0 significa que la línea no tiene ninguna casilla rellena."
-          }
-        },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Um 0 significa que a linha não tem nenhum quadrado preenchido."
-          }
-        },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "0은 그 줄에 칠할 칸이 하나도 없다는 뜻이에요."
-          }
-        }
-      }
-    },
     "A filled square touching the edge tells you exactly where a block begins.": {
       "localizations": {
         "tr": {
@@ -2273,52 +2227,6 @@
         }
       }
     },
-    "Empty lines": {
-      "localizations": {
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Boş satırlar"
-          }
-        },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "空の列"
-          }
-        },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Leere Zeilen"
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Lignes vides"
-          }
-        },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Líneas vacías"
-          }
-        },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Linhas vazias"
-          }
-        },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "빈 줄"
-          }
-        }
-      }
-    },
     "Ends on %@": {
       "localizations": {
         "tr": {
@@ -3837,52 +3745,6 @@
         }
       }
     },
-    "Mark with X": {
-      "localizations": {
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "X ile işaretle"
-          }
-        },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "×で印をつける"
-          }
-        },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Mit X markieren"
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Marquer d'une croix"
-          }
-        },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Marcar con X"
-          }
-        },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Marcar com X"
-          }
-        },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "X로 표시하기"
-          }
-        }
-      }
-    },
     "Match System": {
       "localizations": {
         "tr": {
@@ -4569,52 +4431,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "광고 없이, 품종마다 골든 퍼즐 9개와 골든 카드까지. 월간 또는 연간 구독이에요."
-          }
-        }
-      }
-    },
-    "Numbers tell you how many squares in a line are filled. A 3 means three filled squares side by side. Tap a square to fill it.": {
-      "localizations": {
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Sayılar bir satırda kaç karenin dolu olduğunu söyler. 3, yan yana üç dolu kare demektir. Doldurmak için bir kareye dokun."
-          }
-        },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "数字は、その列で塗られるマスの数を表します。「3」は塗りマスが3つ連続して並ぶという意味です。マスをタップすると塗れます。"
-          }
-        },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Die Zahlen zeigen dir, wie viele Felder einer Zeile gefüllt sind. Eine 3 bedeutet drei gefüllte Felder nebeneinander. Tippe auf ein Feld, um es zu füllen."
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Les nombres indiquent combien de cases d'une ligne sont remplies. Un 3 signifie trois cases remplies côte à côte. Touche une case pour la remplir."
-          }
-        },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Los números indican cuántas casillas de una línea están rellenas. Un 3 significa tres casillas rellenas seguidas. Toca una casilla para rellenarla."
-          }
-        },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Os números mostram quantos quadrados de uma linha estão preenchidos. Um 3 significa três quadrados preenchidos lado a lado. Toque em um quadrado para preenchê-lo."
-          }
-        },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "숫자는 그 줄에서 칠해진 칸이 몇 개인지 알려 줘요. 3은 칠한 칸 세 개가 나란히 있다는 뜻이에요. 칸을 탭하면 칠해져요."
           }
         }
       }
@@ -6459,52 +6275,6 @@
         }
       }
     },
-    "Switch to the X tool to mark squares you know are empty. It keeps your thinking tidy.": {
-      "localizations": {
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Boş olduğunu bildiğin kareleri X aracıyla işaretle. Böylece kafan karışmaz."
-          }
-        },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "×ツールに切り替えて、空白だとわかったマスに印をつけましょう。考えを整理しやすくなります。"
-          }
-        },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Wechsle zum X-Werkzeug, um Felder zu markieren, die sicher leer sind. So behältst du den Überblick."
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Passe à l'outil X pour marquer les cases que tu sais vides. Ça garde ton raisonnement bien rangé."
-          }
-        },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Cambia a la herramienta X para marcar las casillas que sabes que están vacías. Así mantendrás tus ideas ordenadas."
-          }
-        },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Use a ferramenta X para marcar os quadrados que você sabe que estão vazios. Assim seu raciocínio fica organizado."
-          }
-        },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "X 도구로 바꿔서 빈칸이 확실한 곳을 표시해 보세요. 생각을 깔끔하게 정리할 수 있어요."
-          }
-        }
-      }
-    },
     "Tap for a hint": {
       "localizations": {
         "tr": {
@@ -6593,52 +6363,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "카드를 탭해서 뒤집어 보세요"
-          }
-        }
-      }
-    },
-    "Tap to fill": {
-      "localizations": {
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Doldurmak için dokun"
-          }
-        },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "タップして塗る"
-          }
-        },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Tippen zum Füllen"
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Touche pour remplir"
-          }
-        },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Toca para rellenar"
-          }
-        },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Toque para preencher"
-          }
-        },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "탭해서 칠하기"
           }
         }
       }
@@ -7237,52 +6961,6 @@
           "stringUnit": {
             "state": "translated",
             "value": "광고 보고 +60초"
-          }
-        }
-      }
-    },
-    "When a clue is as long as the line, the whole line is filled. Start there!": {
-      "localizations": {
-        "tr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "İpucu satır kadar uzunsa satırın tamamı doludur. Oradan başla!"
-          }
-        },
-        "ja": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "ヒントの数字が列の長さと同じなら、その列はすべて塗られます。まずはそこから！"
-          }
-        },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Ist eine Zahl so lang wie die Zeile, ist die ganze Zeile gefüllt. Fang dort an!"
-          }
-        },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Quand un indice est aussi long que la ligne, toute la ligne est remplie. Commence par là !"
-          }
-        },
-        "es": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Cuando una pista es tan larga como la línea, toda la línea está rellena. ¡Empieza por ahí!"
-          }
-        },
-        "pt-BR": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Quando uma dica é do tamanho da linha, a linha inteira é preenchida. Comece por aí!"
-          }
-        },
-        "ko": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "숫자가 줄 길이와 같으면 줄 전체를 칠해요. 거기서부터 시작해 봐요!"
           }
         }
       }
@@ -11501,6 +11179,420 @@
           "stringUnit": {
             "state": "translated",
             "value": "처음부터 다시"
+          }
+        }
+      }
+    },
+    "Zeros and crosses": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sıfırlar ve çarpılar"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0と×"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Nullen und Kreuze"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zéros et croix"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ceros y cruces"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Zeros e X"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0과 X"
+          }
+        }
+      }
+    },
+    "Blocks side by side": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Yan yana kareler"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "となり合うマス"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Blöcke nebeneinander"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Blocs côte à côte"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bloques juntos"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Blocos lado a lado"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "나란히 있는 칸"
+          }
+        }
+      }
+    },
+    "Your turn": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sıra sende"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "あなたの番"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du bist dran"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "À toi de jouer"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tu turno"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sua vez"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "네 차례야"
+          }
+        }
+      }
+    },
+    "Numbers show how many squares in a row are filled. A 0 means the row has no filled squares. Tap the X below to add crosses.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sayılar bir satırda kaç karenin dolu olduğunu gösterir. 0, satırda dolu kare olmadığı anlamına gelir. Çarpı işareti eklemek için alttaki çarpıya dokun."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "数字は、その行で塗られるマスの数を表します。0は塗られるマスがないという意味。×をつけるには、下の×をタップしてね。"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Zahlen zeigen, wie viele Felder einer Zeile ausgefüllt sind. Eine 0 heißt: kein Feld ist ausgefüllt. Tippe unten auf das X, um Kreuze zu setzen."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les nombres indiquent combien de cases d'une ligne sont remplies. Un 0 veut dire qu'aucune case n'est remplie. Touche le X en bas pour placer des croix."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Los números indican cuántas casillas de una fila están rellenas. Un 0 significa que la fila no tiene casillas rellenas. Toca la X de abajo para poner cruces."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Os números mostram quantos quadrados de uma linha estão preenchidos. Um 0 quer dizer que a linha não tem nenhum. Toque no X lá embaixo para marcar com X."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "숫자는 한 줄에서 몇 칸이 칠해지는지 알려 줘. 0은 칠해지는 칸이 없다는 뜻이야. 아래의 X를 눌러 X를 표시해 봐."
+          }
+        }
+      }
+    },
+    "If a clue is as long as the row, the whole row is filled. Starting there makes it easier.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "İpucu satır kadar uzunsa satırın tamamı dolu demektir. Oradan başlamak işini kolaylaştırır."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "数字が行の長さと同じなら、その行はぜんぶ塗られます。そこから始めると楽になるよ。"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ist ein Hinweis so lang wie die Zeile, ist die ganze Zeile ausgefüllt. Wenn du dort anfängst, wird es leichter."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Si un indice est aussi long que la ligne, toute la ligne est remplie. Commencer par là te facilite la tâche."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Si una pista es tan larga como la fila, la fila entera está rellena. Empezar por ahí te lo pone más fácil."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se a dica é do tamanho da linha, a linha inteira está preenchida. Começar por ela facilita tudo."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "힌트가 줄 길이와 같으면 그 줄은 전부 칠해져. 거기서 시작하면 훨씬 쉬워."
+          }
+        }
+      }
+    },
+    "Remember, a 0 means that row has no filled squares? Let's start by placing crosses.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0, o satırda dolu kare olmadığı anlamına geliyordu hatırladın mı? Hadi çarpı koyarak başlayalım."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0は、その行に塗るマスがないという意味だったよね?まずは×をつけるところから始めよう。"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Weißt du noch? Eine 0 heißt, dass in der Zeile kein Feld ausgefüllt ist. Fangen wir mit Kreuzen an."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tu te souviens ? Un 0 veut dire qu'aucune case de la ligne n'est remplie. Commençons par placer des croix."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "¿Recuerdas que un 0 significa que la fila no tiene casillas rellenas? Empecemos poniendo cruces."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Lembra que 0 quer dizer que a linha não tem quadrados preenchidos? Vamos começar marcando com X."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "0은 그 줄에 칠해지는 칸이 없다는 뜻이었지, 기억나? X를 표시하는 것부터 시작하자."
+          }
+        }
+      }
+    },
+    "There's a row that's completely full. Let's pick Fill again and find the filled squares.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tamamı dolu olan bir satır var. Tekrar doldurmayı seçelim ve dolu kareleri bulalım."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "ぜんぶ塗られる行があるよ。もう一度「塗る」を選んで、塗るマスを見つけよう。"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Es gibt eine Zeile, die ganz ausgefüllt ist. Wähle wieder Füllen und finde die ausgefüllten Felder."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Il y a une ligne entièrement remplie. Reprends Remplir et trouvons les cases remplies."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hay una fila completamente rellena. Elige de nuevo Rellenar y busquemos las casillas rellenas."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tem uma linha totalmente preenchida. Escolha Preencher de novo e vamos achar os quadrados preenchidos."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "전부 칠해지는 줄이 있어. 다시 '칠하기'를 골라서 칠할 칸을 찾아보자."
+          }
+        }
+      }
+    },
+    "Numbers tell you how many squares sit side by side in a row or column. How can 2 squares together and 1 square alone fit?": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Sayılar bir satırda veya sütunda kaç karenin yan yana dolu olduğunu söyler. 2 kare yan yana ve 1 kare tek başına nasıl olabilir?"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "数字は、行や列でとなり合って塗られるマスの数を表します。2マス並びと1マスだけ、どう置けるかな?"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Zahlen sagen, wie viele Felder in einer Zeile oder Spalte nebeneinander ausgefüllt sind. Wie passen 2 Felder zusammen und 1 Feld allein hinein?"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les nombres indiquent combien de cases sont remplies côte à côte dans une ligne ou une colonne. Comment placer 2 cases ensemble et 1 case seule ?"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Los números indican cuántas casillas seguidas están rellenas en una fila o columna. ¿Cómo caben 2 casillas juntas y 1 casilla sola?"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Os números dizem quantos quadrados lado a lado estão preenchidos numa linha ou coluna. Como cabem 2 quadrados juntos e 1 sozinho?"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "숫자는 한 줄이나 열에서 몇 칸이 나란히 칠해지는지 알려 줘. 2칸이 붙어 있고 1칸이 따로 있으려면 어떻게 될까?"
+          }
+        }
+      }
+    },
+    "One row is empty and one is completely full. Find those first and you won't get confused. Your turn!": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bir satır boş, bir satır tamamen dolu. Öncelikle buraları bulursan kafan karışmaz. Hadi sıra sende!"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "空っぽの行と、ぜんぶ塗られる行があるよ。先にそこを見つければ迷わないよ。さあ、あなたの番!"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Eine Zeile ist leer, eine ist ganz ausgefüllt. Wenn du die zuerst findest, kommst du nicht durcheinander. Du bist dran!"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Une ligne est vide et une autre est entièrement remplie. Trouve-les d'abord et tu ne t'embrouilleras pas. À toi !"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Una fila está vacía y otra completamente rellena. Si las encuentras primero, no te liarás. ¡Tu turno!"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Uma linha está vazia e outra totalmente preenchida. Ache essas primeiro e você não se confunde. Sua vez!"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "한 줄은 비어 있고 한 줄은 전부 칠해져. 그 줄부터 찾으면 헷갈리지 않아. 이제 네 차례야!"
           }
         }
       }

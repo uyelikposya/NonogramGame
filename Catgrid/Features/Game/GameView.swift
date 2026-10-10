@@ -107,14 +107,15 @@ struct GameView: View {
     var body: some View {
         VStack(spacing: 16) {
             if let lesson = viewModel.puzzle.lesson, game.status != .lost(.outOfTime) {
-                MuffinLessonBanner(lesson: lesson, pose: muffinPose(for: lesson), speechID: muffinSpeech) {
+                MuffinLessonBanner(lesson: lesson, message: tutorialScript?.message(on: game.board), pose: muffinPose(for: lesson), speechID: muffinSpeech) {
                     model.skipTutorial()
                     router.popToRoot()
                 }
                 .transition(.move(edge: .top).combined(with: .opacity))
             }
 
-            GameStatusBar(game: game, isHardMode: $isHardMode) {
+            // Zorluk dersine kadar eğitim "Kolay" modda, düğme kilitli
+            GameStatusBar(game: game, isHardMode: isEasyLocked ? .constant(false) : $isHardMode, isDifficultyLocked: isEasyLocked) {
                 audio.play(.tap)
                 withAnimation(.snappy) { viewModel.pause() }
             }
@@ -137,8 +138,8 @@ struct GameView: View {
                 game: game,
                 activeCell: viewModel.activeCell,
                 flashingCell: flashingCell,
-                hint: companionHint ?? guidedStep?.hint,
-                pointer: guidedStep?.cell,
+                hint: companionHint ?? guideHighlight,
+                pointer: guidePointer,
                 lineGlow: lineGlow,
                 onDragBegan: { viewModel.dragBegan(at: $0) },
                 onDragMoved: { viewModel.dragMoved(to: $0) },
@@ -157,7 +158,7 @@ struct GameView: View {
             .layoutPriority(-1)
 
             if game.status == .playing {
-                GameControls(tool: $viewModel.tool, canUndo: game.canUndo) { viewModel.undo() }
+                GameControls(tool: $viewModel.tool, canUndo: game.canUndo, guidedTool: guidedTool) { viewModel.undo() }
             }
         }
         // Büyük tahtalarda kenar boşluğu daralır, kareler büyür
@@ -218,13 +219,6 @@ struct GameView: View {
                 let progression = model.progression
                 newlyUnlockedChapter = model.breeds.first { !unlockedBefore.contains($0.id) && progression.isUnlocked($0) }
                 ads.puzzleCompleted(isTutorial: isTutorial)
-                // Ders bitti: Muffin sevinçle miyavlar
-                if viewModel.puzzle.lesson != nil {
-                    Task {
-                        try? await Task.sleep(for: .milliseconds(700))
-                        audio.play(.muffinJoy)
-                    }
-                }
                 var earned: CardSelection?
                 if let chapter, chapter.card != nil {
                     if !wasGolden, model.isGoldenCollected(chapter) {
@@ -273,18 +267,12 @@ struct GameView: View {
                 }
                 Haptics.play(event)
             }
-            viewModel.autoCrosses = !isHardMode
+            viewModel.autoCrosses = !isHardMode || isEasyLocked
+            viewModel.autoFills = tutorialScript?.autoFills ?? true
             viewModel.start()
-            // Muffin dersi anlatmaya başlar: soru cümlesiyse soru tonunda miyavlar
-            if let lesson = viewModel.puzzle.lesson, game.status == .playing {
-                let isQuestion = String(localized: lesson.message).trimmingCharacters(in: .whitespaces).hasSuffix("?")
-                Task {
-                    try? await Task.sleep(for: .milliseconds(450))
-                    audio.play(isQuestion ? .muffinQuestion : .muffinTalk)
-                }
-            }
         }
         .onChange(of: isHardMode) { _, hard in
+            guard !isEasyLocked else { return }
             viewModel.autoCrosses = !hard
             Haptics.selection()
             withAnimation(.snappy) { difficultyNote = hard }
@@ -322,7 +310,6 @@ struct GameView: View {
             guard newValue > 0 else { return }
             flashMistake()
             if viewModel.puzzle.lesson != nil {
-                audio.play(.muffinOops)
                 muffinReaction = .oops
                 Task {
                     try? await Task.sleep(for: .seconds(1.5))
@@ -375,35 +362,35 @@ struct GameView: View {
         return muffinReaction ?? lesson.muffinPose
     }
 
-    /// Eğitimin ilk 9 dersinde: mantıkla kesinleşen bir satır/sütun vurgulanır ve pati o
-    /// çizgide doldurulacak kareyi gösterir. Her hamleden sonra bir sonrakine geçer.
-    private static let guidedLessons: Set<TutorialLesson> = [
-        .firstSquare, .tapToFill, .fullLines, .emptyLines, .markWithCross,
-        .multipleBlocks, .overlap, .edges, .crossReference,
-    ]
+    /// İlk derslerin adım adım senaryosu (sonraki derslerde `nil`).
+    private var tutorialScript: TutorialScript? {
+        viewModel.puzzle.lesson.flatMap { TutorialScript.script(for: $0, puzzle: viewModel.puzzle) }
+    }
 
-    private var guidedStep: (hint: HintFinder.Hint, cell: GridPosition)? {
-        let puzzle = viewModel.puzzle
-        guard let lesson = puzzle.lesson, Self.guidedLessons.contains(lesson),
-              game.status == .playing, !viewModel.isPaused,
-              let hint = HintFinder.bestHint(board: game.board, puzzle: puzzle)
-        else { return nil }
-        let length = hint.axis == .row ? puzzle.columns : puzzle.rows
-        let positions = (0..<length).map {
-            hint.axis == .row ? GridPosition(row: hint.index, column: $0) : GridPosition(row: $0, column: hint.index)
-        }
-        let line: [Bool?] = positions.map { position in
-            switch game.board[position] {
-            case .filled: true
-            case .crossed: false
-            case .blank: nil
-            }
-        }
-        let clue = hint.axis == .row ? puzzle.rowClues[hint.index] : puzzle.columnClues[hint.index]
-        guard let solved = LineSolver.solve(line, clue: clue),
-              let index = positions.indices.first(where: { line[$0] == nil && solved[$0] == true })
-        else { return nil }
-        return (hint, positions[index])
+    /// Sıradaki eğitim adımı; oyun bitince ya da duraklatınca gizlenir.
+    private var tutorialStep: TutorialStep? {
+        guard game.status == .playing, !viewModel.isPaused else { return nil }
+        return tutorialScript?.currentStep(on: game.board)
+    }
+
+    /// Adımın aracı seçili değilse önce pati o araç düğmesini gösterir.
+    private var guidedTool: MarkTool? {
+        guard let step = tutorialStep, viewModel.tool != step.tool else { return nil }
+        return step.tool
+    }
+
+    private var guidePointer: PointerPath? {
+        guard guidedTool == nil else { return nil }
+        return tutorialStep?.pointer(on: game.board)
+    }
+
+    private var guideHighlight: HintFinder.Hint? {
+        guidedTool == nil ? tutorialStep?.highlight : nil
+    }
+
+    /// Zorluk dersine kadar zorluk değiştirilemez.
+    private var isEasyLocked: Bool {
+        viewModel.puzzle.lesson?.locksEasyMode ?? false
     }
 
     /// Genişlik / yükseklik: ipucu sütunları dahil kare sayısı oranı.
@@ -622,6 +609,8 @@ struct GameStatusBar: View {
     @Environment(\.appTheme) private var theme
     let game: NonogramGame
     @Binding var isHardMode: Bool
+    /// Eğitimin ilk derslerinde zorluk "Kolay"da sabit.
+    var isDifficultyLocked = false
     let onPause: () -> Void
 
     var body: some View {
@@ -661,6 +650,8 @@ struct GameStatusBar: View {
                     .foregroundStyle(isHardMode ? theme.mistake : theme.accent)
             }
             .buttonStyle(PressableButtonStyle())
+            .disabled(isDifficultyLocked)
+            .opacity(isDifficultyLocked ? 0.55 : 1)
             .padding(.leading, 6)
             .accessibilityLabel(Text("Difficulty"))
             .accessibilityValue(isHardMode ? Text("Hard") : Text("Easy"))
@@ -753,6 +744,8 @@ struct GameControls: View {
     @Environment(\.appTheme) private var theme
     @Binding var tool: MarkTool
     let canUndo: Bool
+    /// Eğitimde seçilmesi gereken araç: düğme parlar, pati onu gösterir.
+    var guidedTool: MarkTool?
     let undo: () -> Void
 
     var body: some View {
@@ -787,6 +780,20 @@ struct GameControls: View {
                 .foregroundStyle(isSelected ? theme.onAccent : theme.textPrimary)
         }
         .buttonStyle(PressableButtonStyle())
+        .overlay {
+            if guidedTool == value {
+                Capsule()
+                    .stroke(theme.accent, lineWidth: 3)
+                    .padding(-5)
+                    .allowsHitTesting(false)
+            }
+        }
+        .overlay(alignment: .bottomTrailing) {
+            if guidedTool == value {
+                PawPointer()
+                    .offset(x: -10, y: 30)
+            }
+        }
         .accessibilityAddTraits(isSelected ? .isSelected : [])
     }
 }

@@ -18,11 +18,6 @@ enum SoundEffect: String, CaseIterable {
     case combo
     /// Dopamin modu: bulmaca çözülünce fanfar.
     case fanfare
-    /// Öğretmen Muffin'in miyavları (gerçek kayıtlardan, perde ve hafif yankıyla)
-    case muffinTalk = "muffin_talk"
-    case muffinQuestion = "muffin_question"
-    case muffinJoy = "muffin_joy"
-    case muffinOops = "muffin_oops"
 }
 
 /// Arka plan müziği ve ses efektleri. Ayarlar (aç/kapa, seviye) kalıcıdır.

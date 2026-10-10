@@ -6,10 +6,10 @@ extension TutorialLesson {
     var title: LocalizedStringResource {
         switch self {
         case .firstSquare: "Your first square"
-        case .tapToFill: "Tap to fill"
+        case .tapToFill: "Zeros and crosses"
         case .fullLines: "Full lines"
-        case .emptyLines: "Empty lines"
-        case .markWithCross: "Mark with X"
+        case .emptyLines: "Blocks side by side"
+        case .markWithCross: "Your turn"
         case .multipleBlocks: "Several blocks"
         case .overlap: "Find the overlap"
         case .edges: "Use the edges"
@@ -25,13 +25,13 @@ extension TutorialLesson {
         case .firstSquare:
             "Hi, I'm Muffin! The 1 next to the row means one square is filled. The 1 above a column shows which one. Tap it!"
         case .tapToFill:
-            "Numbers tell you how many squares in a line are filled. A 3 means three filled squares side by side. Tap a square to fill it."
+            "Numbers show how many squares in a row are filled. A 0 means the row has no filled squares. Tap the X below to add crosses."
         case .fullLines:
-            "When a clue is as long as the line, the whole line is filled. Start there!"
+            "If a clue is as long as the row, the whole row is filled. Starting there makes it easier."
         case .emptyLines:
-            "A 0 means the line has no filled squares at all."
+            "Remember, a 0 means that row has no filled squares? Let's start by placing crosses."
         case .markWithCross:
-            "Switch to the X tool to mark squares you know are empty. It keeps your thinking tidy."
+            "One row is empty and one is completely full. Find those first and you won't get confused. Your turn!"
         case .multipleBlocks:
             "1 1 1 means three separate blocks with at least one empty square between each of them."
         case .overlap:

@@ -96,6 +96,8 @@ struct MuffinView: View {
 struct MuffinLessonBanner: View {
     @Environment(\.appTheme) private var theme
     let lesson: TutorialLesson
+    /// Adım adım derslerde o anki adımın metni; yoksa dersin ana metni.
+    var message: LocalizedStringResource?
     var pose: MuffinView.Pose
     var speechID: Int
     let onSkip: () -> Void
@@ -109,7 +111,7 @@ struct MuffinLessonBanner: View {
                 Text(lesson.title)
                     .font(.headline)
                     .foregroundStyle(theme.accent)
-                Text(lesson.message)
+                Text(message ?? lesson.message)
                     .font(.body.weight(.medium))
                     .foregroundStyle(theme.textPrimary)
                     .fixedSize(horizontal: false, vertical: true)
@@ -162,6 +164,8 @@ struct SpeechBubble: Shape {
 struct PawPointer: View {
     @Environment(\.appTheme) private var theme
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    /// Yerinde zıplasın mı? Kaydırma gösterirken hareketi `GuidePaw` verir.
+    var bobs = true
     @State private var isUp = false
 
     var body: some View {
@@ -169,7 +173,7 @@ struct PawPointer: View {
             .font(.system(size: 40))
             .foregroundStyle(theme.accent)
             .shadow(color: .black.opacity(0.2), radius: 3, y: 2)
-            .offset(y: isUp ? -8 : 6)
+            .offset(y: bobs ? (isUp ? -8 : 6) : 0)
             .onAppear {
                 guard !reduceMotion else { return }
                 withAnimation(.easeInOut(duration: 0.6).repeatForever(autoreverses: true)) { isUp = true }

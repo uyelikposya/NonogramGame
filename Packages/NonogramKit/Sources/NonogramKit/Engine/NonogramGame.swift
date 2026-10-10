@@ -42,6 +42,9 @@ public struct NonogramGame: Sendable {
     /// Tamamlanan satır/sütuna otomatik X konur mu? Kurallardan başlar; oyuncu "Zor" moda
     /// geçince oyun sırasında kapatılabilir (yalnızca sonraki hamleleri etkiler).
     public var autoCrossesCompletedLines: Bool
+    /// "Kolay" modda: satırdaki X'lerin hepsi konunca kalan kareler kendiliğinden dolar.
+    /// Yalnızca `autoCrossesCompletedLines` açıkken çalışır; eğitimin bazı derslerinde kapatılır.
+    public var autoFillsCrossedLines = true
 
     public init(puzzle: Puzzle, rules: GameRules) {
         self.puzzle = puzzle
@@ -108,7 +111,7 @@ public struct NonogramGame: Sendable {
 
         var changes: [CellChange] = []
         set(target, at: position, recordingInto: &changes)
-        if target == .filled { autoCrossLines(through: position, recordingInto: &changes) }
+        if target != .blank { autoResolveLines(through: position, recordingInto: &changes) }
         undoStack.append(changes)
         return evaluateCompletion() ? .solved : .changed
     }
@@ -154,7 +157,7 @@ public struct NonogramGame: Sendable {
         let correct: CellState = puzzle.solution[position] ? .filled : .crossed
         set(correct, at: position, recordingInto: &changes)
         lockedCells.insert(position)
-        if correct == .filled { autoCrossLines(through: position, recordingInto: &changes) }
+        autoResolveLines(through: position, recordingInto: &changes)
 
         if let limit = rules.mistakeLimit, mistakes >= limit {
             status = .lost(.outOfMistakes)
@@ -168,8 +171,48 @@ public struct NonogramGame: Sendable {
         board[position] = state
     }
 
-    private mutating func autoCrossLines(through position: GridPosition, recordingInto changes: inout [CellChange]) {
+    /// "Kolay" mod yardımları (tek geri alma grubunda):
+    /// - Dolu kare konunca ipucu sağlanan satır/sütunun boş karelerine X konur.
+    /// - X konunca, satır/sütundaki X'lerin hepsi doğru ve sayısı boş kalması gereken kare
+    ///   sayısına eşitse kalan boş kareler doldurulur; bu dolu kareler de ilk kuralı tetikler.
+    ///   Otomatik X'ler doldurmayı tetiklemez (oyunu oyuncunun yerine çözmesin diye).
+    private mutating func autoResolveLines(through position: GridPosition, recordingInto changes: inout [CellChange]) {
         guard autoCrossesCompletedLines else { return }
+        switch board[position] {
+        case .filled:
+            crossSatisfiedLines(through: position, recordingInto: &changes)
+        case .crossed:
+            guard autoFillsCrossedLines else { return }
+            let lines = [
+                (rowCells(position.row), puzzle.rowClues[position.row]),
+                (columnCells(position.column), puzzle.columnClues[position.column]),
+            ]
+            for (cells, clue) in lines {
+                let blanks = cells.filter { board[$0] == .blank }
+                let crosses = cells.filter { board[$0] == .crossed }.count
+                let allCorrect = cells.allSatisfy {
+                    board[$0] == .blank || (board[$0] == .filled) == puzzle.solution[$0]
+                }
+                guard !blanks.isEmpty, allCorrect, crosses == cells.count - clue.reduce(0, +) else { continue }
+                for cell in blanks {
+                    set(.filled, at: cell, recordingInto: &changes)
+                    crossSatisfiedLines(through: cell, recordingInto: &changes)
+                }
+            }
+        case .blank:
+            break
+        }
+    }
+
+    private func rowCells(_ row: Int) -> [GridPosition] {
+        (0..<board.columns).map { GridPosition(row: row, column: $0) }
+    }
+
+    private func columnCells(_ column: Int) -> [GridPosition] {
+        (0..<board.rows).map { GridPosition(row: $0, column: column) }
+    }
+
+    private mutating func crossSatisfiedLines(through position: GridPosition, recordingInto changes: inout [CellChange]) {
         if isRowSatisfied(position.row) {
             for column in 0..<board.columns where board[position.row, column] == .blank {
                 set(.crossed, at: GridPosition(row: position.row, column: column), recordingInto: &changes)

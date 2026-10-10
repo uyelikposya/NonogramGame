@@ -113,6 +113,11 @@ final class GameViewModel {
         didSet { game.autoCrossesCompletedLines = autoCrosses }
     }
 
+    /// "Kolay" modda X'ler tamamlanınca dolu karelerin kendiliğinden gelmesi (eğitimde kapatılabilir).
+    var autoFills = true {
+        didSet { game.autoFillsCrossedLines = autoFills }
+    }
+
     /// Ödüllü reklam karşılığı bir kez devam hakkı (bulmaca başına).
     private(set) var hasRevived = false
 
@@ -135,6 +140,7 @@ final class GameViewModel {
         stop()
         game = NonogramGame(puzzle: puzzle, rules: rules)
         game.autoCrossesCompletedLines = autoCrosses
+        game.autoFillsCrossedLines = autoFills
         lastMistake = nil
         hasRevived = false
         activeCell = nil
