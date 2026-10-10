@@ -6,7 +6,13 @@
       "id": "russian-blue-001",
       "title": {
         "en": "Leftovers",
-        "tr": "Artıklar"
+        "tr": "Artıklar",
+        "ja": "食べ残し",
+        "de": "Reste",
+        "fr": "Restes",
+        "es": "Sobras",
+        "pt-BR": "Restinho",
+        "ko": "남은 음식"
       },
       "palette": {
         "p": "#B8C4CF"
@@ -22,7 +28,13 @@
       "id": "russian-blue-002",
       "title": {
         "en": "Toe Beans",
-        "tr": "Pati Yastıkları"
+        "tr": "Pati Yastıkları",
+        "ja": "肉球",
+        "de": "Pfotenballen",
+        "fr": "Coussinets",
+        "es": "Almohadillas",
+        "pt-BR": "Almofadinhas",
+        "ko": "말랑 젤리"
       },
       "palette": {
         "b": "#8FA3B5",
@@ -41,7 +53,13 @@
       "id": "russian-blue-003",
       "title": {
         "en": "Purr Love",
-        "tr": "Mırıl Sevgi"
+        "tr": "Mırıl Sevgi",
+        "ja": "ゴロゴロ大好き",
+        "de": "Schnurrliebe",
+        "fr": "Ronron d'amour",
+        "es": "Amor ronroneante",
+        "pt-BR": "Amor Ronronado",
+        "ko": "골골송 사랑"
       },
       "palette": {
         "n": "#6E8090"
@@ -58,7 +76,13 @@
       "id": "russian-blue-004",
       "title": {
         "en": "Fish Snack",
-        "tr": "Balık Atıştırması"
+        "tr": "Balık Atıştırması",
+        "ja": "おさかなおやつ",
+        "de": "Fischsnack",
+        "fr": "Goûter poisson",
+        "es": "Tentempié de pescado",
+        "pt-BR": "Petisco de Peixe",
+        "ko": "생선 간식"
       },
       "palette": {
         "o": "#5C6B7A"
@@ -76,7 +100,13 @@
       "id": "russian-blue-005",
       "title": {
         "en": "Yarn Ball",
-        "tr": "Yün Yumak"
+        "tr": "Yün Yumak",
+        "ja": "毛糸玉",
+        "de": "Wollknäuel",
+        "fr": "Pelote de laine",
+        "es": "Ovillo de lana",
+        "pt-BR": "Novelo de Lã",
+        "ko": "털실 뭉치"
       },
       "palette": {
         "o": "#5C6B7A"
@@ -95,7 +125,13 @@
       "id": "russian-blue-006",
       "title": {
         "en": "Yarn Ball",
-        "tr": "Yün Yumak"
+        "tr": "Yün Yumak",
+        "ja": "毛糸玉",
+        "de": "Wollknäuel",
+        "fr": "Pelote de laine",
+        "es": "Ovillo de lana",
+        "pt-BR": "Novelo de Lã",
+        "ko": "털실 뭉치"
       },
       "palette": {
         "o": "#5C6B7A"
@@ -113,7 +149,13 @@
       "id": "russian-blue-007",
       "title": {
         "en": "Dinner Bowl",
-        "tr": "Mama Kabı"
+        "tr": "Mama Kabı",
+        "ja": "ごはん皿",
+        "de": "Futternapf",
+        "fr": "Gamelle",
+        "es": "Cuenco de comida",
+        "pt-BR": "Potinho de Ração",
+        "ko": "밥그릇"
       },
       "palette": {
         "o": "#5C6B7A",
@@ -133,7 +175,13 @@
       "id": "russian-blue-008",
       "title": {
         "en": "Dinner Bowl",
-        "tr": "Mama Kabı"
+        "tr": "Mama Kabı",
+        "ja": "ごはん皿",
+        "de": "Futternapf",
+        "fr": "Gamelle",
+        "es": "Cuenco de comida",
+        "pt-BR": "Potinho de Ração",
+        "ko": "밥그릇"
       },
       "palette": {
         "o": "#5C6B7A",
@@ -153,7 +201,13 @@
       "id": "russian-blue-009",
       "title": {
         "en": "Purr Love",
-        "tr": "Mırıl Sevgi"
+        "tr": "Mırıl Sevgi",
+        "ja": "ゴロゴロ大好き",
+        "de": "Schnurrliebe",
+        "fr": "Ronron d'amour",
+        "es": "Amor ronroneante",
+        "pt-BR": "Amor Ronronado",
+        "ko": "골골송 사랑"
       },
       "palette": {
         "n": "#6E8090",
@@ -173,7 +227,13 @@
       "id": "russian-blue-010",
       "title": {
         "en": "Portrait",
-        "tr": "Portre"
+        "tr": "Portre",
+        "ja": "肖像画",
+        "de": "Porträt",
+        "fr": "Portrait",
+        "es": "Retrato",
+        "pt-BR": "Retrato",
+        "ko": "초상화"
       },
       "palette": {
         "b": "#8FA3B5",
@@ -194,7 +254,13 @@
       "id": "russian-blue-011",
       "title": {
         "en": "If I Fits",
-        "tr": "Kutu Sevdası"
+        "tr": "Kutu Sevdası",
+        "ja": "入れるなら入る",
+        "de": "Passt, sitzt",
+        "fr": "Si ça rentre…",
+        "es": "Si quepo, me siento",
+        "pt-BR": "Se Cabe, Eu Entro",
+        "ko": "들어가면 내 자리"
       },
       "palette": {
         "b": "#8FA3B5",
@@ -216,7 +282,13 @@
       "id": "russian-blue-012",
       "title": {
         "en": "Nap Time",
-        "tr": "Şekerleme"
+        "tr": "Şekerleme",
+        "ja": "お昼寝タイム",
+        "de": "Nickerchen",
+        "fr": "L'heure de la sieste",
+        "es": "Hora de la siesta",
+        "pt-BR": "Hora da Soneca",
+        "ko": "낮잠 시간"
       },
       "palette": {
         "b": "#8FA3B5"
@@ -236,7 +308,13 @@
       "id": "russian-blue-013",
       "title": {
         "en": "If I Fits",
-        "tr": "Kutu Sevdası"
+        "tr": "Kutu Sevdası",
+        "ja": "入れるなら入る",
+        "de": "Passt, sitzt",
+        "fr": "Si ça rentre…",
+        "es": "Si quepo, me siento",
+        "pt-BR": "Se Cabe, Eu Entro",
+        "ko": "들어가면 내 자리"
       },
       "palette": {
         "b": "#8FA3B5",
@@ -259,7 +337,13 @@
       "id": "russian-blue-014",
       "title": {
         "en": "Cozy Sweater",
-        "tr": "Sıcak Kazak"
+        "tr": "Sıcak Kazak",
+        "ja": "ぬくぬくセーター",
+        "de": "Kuschelpulli",
+        "fr": "Pull douillet",
+        "es": "Jersey calentito",
+        "pt-BR": "Suéter Quentinho",
+        "ko": "포근한 스웨터"
       },
       "palette": {
         "b": "#8FA3B5",
@@ -282,7 +366,13 @@
       "id": "russian-blue-015",
       "title": {
         "en": "Teacup Cat",
-        "tr": "Fincandaki Kedi"
+        "tr": "Fincandaki Kedi",
+        "ja": "ティーカップ猫",
+        "de": "Teetassenkatze",
+        "fr": "Chat dans une tasse",
+        "es": "Gato en una taza",
+        "pt-BR": "Gato na Xícara",
+        "ko": "찻잔 고양이"
       },
       "palette": {
         "b": "#8FA3B5",
@@ -307,7 +397,13 @@
       "id": "russian-blue-016",
       "title": {
         "en": "Silver Night",
-        "tr": "Gümüş Gece"
+        "tr": "Gümüş Gece",
+        "ja": "銀色の夜",
+        "de": "Silbernacht",
+        "fr": "Nuit argentée",
+        "es": "Noche plateada",
+        "pt-BR": "Noite Prateada",
+        "ko": "은빛 밤"
       },
       "palette": {
         "b": "#8FA3B5",

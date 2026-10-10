@@ -6,7 +6,13 @@
       "id": "british-shorthair-001",
       "title": {
         "en": "Fish Snack",
-        "tr": "Balık Atıştırması"
+        "tr": "Balık Atıştırması",
+        "ja": "おさかなおやつ",
+        "de": "Fischsnack",
+        "fr": "Goûter poisson",
+        "es": "Tentempié de pescado",
+        "pt-BR": "Petisco de Peixe",
+        "ko": "생선 간식"
       },
       "palette": {
         "o": "#F2E8DC"
@@ -22,7 +28,13 @@
       "id": "british-shorthair-002",
       "title": {
         "en": "Yarn Ball",
-        "tr": "Yün Yumak"
+        "tr": "Yün Yumak",
+        "ja": "毛糸玉",
+        "de": "Wollknäuel",
+        "fr": "Pelote de laine",
+        "es": "Ovillo de lana",
+        "pt-BR": "Novelo de Lã",
+        "ko": "털실 뭉치"
       },
       "palette": {
         "o": "#F2E8DC"
@@ -39,7 +51,13 @@
       "id": "british-shorthair-003",
       "title": {
         "en": "Dinner Bowl",
-        "tr": "Mama Kabı"
+        "tr": "Mama Kabı",
+        "ja": "ごはん皿",
+        "de": "Futternapf",
+        "fr": "Gamelle",
+        "es": "Cuenco de comida",
+        "pt-BR": "Potinho de Ração",
+        "ko": "밥그릇"
       },
       "palette": {
         "o": "#F2E8DC",
@@ -58,7 +76,13 @@
       "id": "british-shorthair-004",
       "title": {
         "en": "Toy Mouse",
-        "tr": "Oyuncak Fare"
+        "tr": "Oyuncak Fare",
+        "ja": "ネズミのおもちゃ",
+        "de": "Spielmaus",
+        "fr": "Souris jouet",
+        "es": "Ratón de juguete",
+        "pt-BR": "Ratinho de Brinquedo",
+        "ko": "장난감 쥐"
       },
       "palette": {
         "n": "#6E7A86",
@@ -77,7 +101,13 @@
       "id": "british-shorthair-005",
       "title": {
         "en": "Purr Love",
-        "tr": "Mırıl Sevgi"
+        "tr": "Mırıl Sevgi",
+        "ja": "ゴロゴロ大好き",
+        "de": "Schnurrliebe",
+        "fr": "Ronron d'amour",
+        "es": "Amor ronroneante",
+        "pt-BR": "Amor Ronronado",
+        "ko": "골골송 사랑"
       },
       "palette": {
         "n": "#6E7A86",
@@ -97,7 +127,13 @@
       "id": "british-shorthair-006",
       "title": {
         "en": "Toe Beans",
-        "tr": "Pati Yastıkları"
+        "tr": "Pati Yastıkları",
+        "ja": "肉球",
+        "de": "Pfotenballen",
+        "fr": "Coussinets",
+        "es": "Almohadillas",
+        "pt-BR": "Almofadinhas",
+        "ko": "말랑 젤리"
       },
       "palette": {
         "b": "#8E9AA6",
@@ -116,7 +152,13 @@
       "id": "british-shorthair-007",
       "title": {
         "en": "Portrait",
-        "tr": "Portre"
+        "tr": "Portre",
+        "ja": "肖像画",
+        "de": "Porträt",
+        "fr": "Portrait",
+        "es": "Retrato",
+        "pt-BR": "Retrato",
+        "ko": "초상화"
       },
       "palette": {
         "b": "#8E9AA6",
@@ -135,7 +177,13 @@
       "id": "british-shorthair-008",
       "title": {
         "en": "Dinner Bowl",
-        "tr": "Mama Kabı"
+        "tr": "Mama Kabı",
+        "ja": "ごはん皿",
+        "de": "Futternapf",
+        "fr": "Gamelle",
+        "es": "Cuenco de comida",
+        "pt-BR": "Potinho de Ração",
+        "ko": "밥그릇"
       },
       "palette": {
         "o": "#F2E8DC",
@@ -155,7 +203,13 @@
       "id": "british-shorthair-009",
       "title": {
         "en": "Purr Love",
-        "tr": "Mırıl Sevgi"
+        "tr": "Mırıl Sevgi",
+        "ja": "ゴロゴロ大好き",
+        "de": "Schnurrliebe",
+        "fr": "Ronron d'amour",
+        "es": "Amor ronroneante",
+        "pt-BR": "Amor Ronronado",
+        "ko": "골골송 사랑"
       },
       "palette": {
         "n": "#6E7A86",
@@ -175,7 +229,13 @@
       "id": "british-shorthair-010",
       "title": {
         "en": "Yarn Ball",
-        "tr": "Yün Yumak"
+        "tr": "Yün Yumak",
+        "ja": "毛糸玉",
+        "de": "Wollknäuel",
+        "fr": "Pelote de laine",
+        "es": "Ovillo de lana",
+        "pt-BR": "Novelo de Lã",
+        "ko": "털실 뭉치"
       },
       "palette": {
         "o": "#F2E8DC"
@@ -195,7 +255,13 @@
       "id": "british-shorthair-011",
       "title": {
         "en": "Toy Mouse",
-        "tr": "Oyuncak Fare"
+        "tr": "Oyuncak Fare",
+        "ja": "ネズミのおもちゃ",
+        "de": "Spielmaus",
+        "fr": "Souris jouet",
+        "es": "Ratón de juguete",
+        "pt-BR": "Ratinho de Brinquedo",
+        "ko": "장난감 쥐"
       },
       "palette": {
         "n": "#6E7A86",
@@ -216,7 +282,13 @@
       "id": "british-shorthair-012",
       "title": {
         "en": "Dinner Bowl",
-        "tr": "Mama Kabı"
+        "tr": "Mama Kabı",
+        "ja": "ごはん皿",
+        "de": "Futternapf",
+        "fr": "Gamelle",
+        "es": "Cuenco de comida",
+        "pt-BR": "Potinho de Ração",
+        "ko": "밥그릇"
       },
       "palette": {
         "o": "#F2E8DC",
@@ -238,7 +310,13 @@
       "id": "british-shorthair-013",
       "title": {
         "en": "Owl Pose",
-        "tr": "Baykuş Duruşu"
+        "tr": "Baykuş Duruşu",
+        "ja": "フクロウのポーズ",
+        "de": "Eulenpose",
+        "fr": "Pose de chouette",
+        "es": "Pose de búho",
+        "pt-BR": "Pose de Coruja",
+        "ko": "부엉이 포즈"
       },
       "palette": {
         "b": "#8E9AA6",
@@ -260,7 +338,13 @@
       "id": "british-shorthair-014",
       "title": {
         "en": "White Gloves",
-        "tr": "Beyaz Eldivenler"
+        "tr": "Beyaz Eldivenler",
+        "ja": "白い手袋",
+        "de": "Weiße Handschuhe",
+        "fr": "Gants blancs",
+        "es": "Guantes blancos",
+        "pt-BR": "Luvas Brancas",
+        "ko": "하얀 장갑"
       },
       "palette": {
         "b": "#8E9AA6",
@@ -282,7 +366,13 @@
       "id": "british-shorthair-015",
       "title": {
         "en": "Floppy Hug",
-        "tr": "Gevşek Kucaklama"
+        "tr": "Gevşek Kucaklama",
+        "ja": "ぐにゃっとハグ",
+        "de": "Schlappe Umarmung",
+        "fr": "Câlin tout mou",
+        "es": "Abrazo blandito",
+        "pt-BR": "Abraço Molinho",
+        "ko": "축 늘어진 포옹"
       },
       "palette": {
         "b": "#8E9AA6",
@@ -306,7 +396,13 @@
       "id": "british-shorthair-016",
       "title": {
         "en": "Mighty Tail",
-        "tr": "Görkemli Kuyruk"
+        "tr": "Görkemli Kuyruk",
+        "ja": "立派なしっぽ",
+        "de": "Prachtschwanz",
+        "fr": "Queue majestueuse",
+        "es": "Gran cola",
+        "pt-BR": "Cauda Poderosa",
+        "ko": "늠름한 꼬리"
       },
       "palette": {
         "b": "#8E9AA6",
