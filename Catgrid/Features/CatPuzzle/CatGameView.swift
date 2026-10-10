@@ -43,78 +43,21 @@ struct CatGameView: View {
     private var isTutorial: Bool { number == 1 }
 
     var body: some View {
-        VStack(spacing: 12) {
-            if isTutorial, game.status == .playing {
-                CatTutorialBanner(step: tutorialStep)
-                    .transition(.opacity)
-            }
-            scoreHeader
-            CatStrip(level: viewModel.level, found: game.foundRegions, cats: cats)
-            RulesStrip()
-            board
-            bottomBar
-        }
-        .padding(.horizontal, 16)
-        .padding(.vertical, 12)
-        .frame(maxHeight: .infinity, alignment: .top)
-        .overlay {
-            if let result {
-                CatResultOverlay(
-                    result: result,
-                    next: cats.level(after: viewModel.level),
-                    onNext: { next in leave(to: .catGame(levelID: next.id)) },
-                    onLevels: { leave(to: nil) }
-                )
-                .transition(.opacity)
-            } else if game.status == .lost {
-                CatFailedOverlay(
-                    canRevive: store.isPremium || ads.isRewardedReady,
-                    isPremium: store.isPremium,
-                    onRevive: revive,
-                    onRetry: {
-                        audio.play(.tap)
-                        withAnimation(.snappy) { viewModel.restart() }
-                    }
-                )
-                .transition(.opacity)
-            }
-        }
-        .animation(.spring(duration: 0.4), value: result != nil)
-        .animation(.spring(duration: 0.4), value: game.status)
-        .themedScreen()
-        .screenTitle(Text("Level \(number)"), subtitle: Text("\(viewModel.level.size)×\(viewModel.level.size)"))
-        .toolbar {
-            ToolbarItem(placement: .topBarTrailing) {
-                Menu {
-                    Button {
-                        isConfirmingRestart = true
-                    } label: {
-                        Label("Start Over", systemImage: "arrow.counterclockwise")
-                    }
-                } label: {
-                    Image(systemName: "ellipsis.circle")
-                        .foregroundStyle(theme.textPrimary)
+        content
+            .themedScreen()
+            .screenTitle(Text("Level \(number)"), subtitle: sizeText)
+            .toolbar { toolbarMenu }
+            .confirmationDialog("Start over?", isPresented: $isConfirmingRestart, titleVisibility: .visible) {
+                Button("Start Over", role: .destructive) {
+                    withAnimation(.snappy) { viewModel.restart() }
                 }
-                .accessibilityLabel(Text("More"))
             }
-        }
-        .confirmationDialog("Start over?", isPresented: $isConfirmingRestart, titleVisibility: .visible) {
-            Button("Start Over", role: .destructive) {
-                withAnimation(.snappy) { viewModel.restart() }
+            .alert(adOfferTitle, isPresented: isOfferingAd, presenting: adOffer) { helper in
+                Button("Watch Video") { watchAd(for: helper) }
+                Button("Not Now", role: .cancel) {}
+            } message: { _ in
+                adOfferMessage
             }
-        }
-        .alert(
-            adOffer == .find ? Text("No Cat Finders Left") : Text("No Hints Left"),
-            isPresented: Binding(get: { adOffer != nil }, set: { if !$0 { adOffer = nil } }),
-            presenting: adOffer
-        ) { helper in
-            Button("Watch Video") { watchAd(for: helper) }
-            Button("Not Now", role: .cancel) {}
-        } message: { _ in
-            Text(store.isPremium
-                ? "Watch a short video for one more. Premium refills to 6 every day at midnight."
-                : "Watch a short video for one more. With Premium you get 6 every day.")
-        }
         .onAppear(perform: setUp)
         .onDisappear {
             viewModel.stop()
@@ -129,6 +72,88 @@ struct CatGameView: View {
                 persist()
             }
         }
+    }
+
+    private var content: some View {
+        VStack(spacing: 12) {
+            if isTutorial, game.status == .playing {
+                CatTutorialBanner(step: tutorialStep)
+                    .transition(.opacity)
+            }
+            scoreHeader
+            CatStrip(level: viewModel.level, found: game.foundRegions, cats: cats)
+            RulesStrip()
+            board
+            bottomBar
+        }
+        .padding(.horizontal, 16)
+        .padding(.vertical, 12)
+        .frame(maxHeight: .infinity, alignment: .top)
+        .overlay { endOverlay }
+        .animation(.spring(duration: 0.4), value: result != nil)
+        .animation(.spring(duration: 0.4), value: game.status)
+    }
+
+    @ViewBuilder
+    private var endOverlay: some View {
+        if let result {
+            CatResultOverlay(
+                result: result,
+                next: cats.level(after: viewModel.level),
+                onNext: { next in leave(to: .catGame(levelID: next.id)) },
+                onLevels: { leave(to: nil) }
+            )
+            .transition(.opacity)
+        } else if game.status == .lost {
+            CatFailedOverlay(
+                canRevive: store.isPremium || ads.isRewardedReady,
+                isPremium: store.isPremium,
+                onRevive: revive,
+                onRetry: retry
+            )
+            .transition(.opacity)
+        }
+    }
+
+    private var sizeText: Text {
+        let size = viewModel.level.size
+        return Text("\(size)×\(size)")
+    }
+
+    private var toolbarMenu: some ToolbarContent {
+        ToolbarItem(placement: .topBarTrailing) {
+            Menu {
+                Button {
+                    isConfirmingRestart = true
+                } label: {
+                    Label("Start Over", systemImage: "arrow.counterclockwise")
+                }
+            } label: {
+                Image(systemName: "ellipsis.circle")
+                    .foregroundStyle(theme.textPrimary)
+            }
+            .accessibilityLabel(Text("More"))
+        }
+    }
+
+    private var isOfferingAd: Binding<Bool> {
+        Binding(get: { adOffer != nil }, set: { if !$0 { adOffer = nil } })
+    }
+
+    private var adOfferTitle: Text {
+        adOffer == .find ? Text("No Cat Finders Left") : Text("No Hints Left")
+    }
+
+    private var adOfferMessage: Text {
+        if store.isPremium {
+            return Text("Watch a short video for one more. Premium refills to 6 every day at midnight.")
+        }
+        return Text("Watch a short video for one more. With Premium you get 6 every day.")
+    }
+
+    private func retry() {
+        audio.play(.tap)
+        withAnimation(.snappy) { viewModel.restart() }
     }
 
     // MARK: - Parçalar
