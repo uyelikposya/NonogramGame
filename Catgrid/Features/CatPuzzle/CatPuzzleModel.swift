@@ -90,6 +90,8 @@ final class CatPuzzleModel {
 
     func level(withID id: String) -> CatLevel? { pack.level(withID: id) }
 
+    func level(after level: CatLevel) -> CatLevel? { pack.level(after: level) }
+
     // MARK: - İlerleme
 
     func isSolved(_ level: CatLevel) -> Bool { results[level.id] != nil }
