@@ -467,7 +467,15 @@
   "Solve a 10×10 level.": "Resolva um nível 10×10.",
   "Solve a 15×15 level.": "Resolva um nível 15×15.",
   "Score 100,000 points in total.": "Some 100.000 pontos no total.",
-  "Solve a level in under a minute.": "Resolva um nível em menos de um minuto."
+  "Solve a level in under a minute.": "Resolva um nível em menos de um minuto.",
+  "Clear!": "Feito!",
+  "The cats didn't even have time to hide!": "Os gatos nem tiveram tempo de se esconder!",
+  "Every cat is found. Nothing gets past you!": "Todos os gatos encontrados. Nada escapa de você!",
+  "Hide and seek is over. You win!": "O esconde-esconde acabou. Você venceu!",
+  "You found a cat! No other cat can be in its row, column or color, or right next to it. Tap ? below and then Apply: I'll cross those squares out for you.": "Você achou um gato! Nenhum outro gato pode estar na linha, coluna ou cor dele, nem logo ao lado. Toque em ? lá embaixo e depois em Aplicar: eu marco esses quadrados para você.",
+  "Now this color has only one free square left. Find its cat!": "Agora esta cor só tem um quadrado livre. Ache o gato dela!",
+  "Stuck? The cat button below shows where a cat is hiding. You get 6 Cat Finders and 6 hints; watch a short video for more.": "Travou? O botão do gato lá embaixo mostra onde um gato está escondido. Você tem 6 localizadores e 6 dicas; assista a um vídeo curto para ganhar mais.",
+  "Solve %lld levels of %lld×%lld to unlock.": "Resolva %lld níveis de %lld×%lld para desbloquear."
  },
  "infoplist": {
   "CFBundleDisplayName": "Catgrid",

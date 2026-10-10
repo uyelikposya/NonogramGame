@@ -52,24 +52,32 @@ final class CatPuzzleTests: XCTestCase {
         }
     }
 
-    func testProgressUnlocksSequentiallyAndRecordsStats() {
+    func testProgressUnlocksBySizeAndRecordsStats() throws {
         let cats = CatPuzzleModel.inMemory(pack: pack)
         let first = pack.levels[0]
         let second = pack.levels[1]
+        let fives = pack.levels.filter { $0.size == 5 }
+        let firstSix = try XCTUnwrap(pack.levels.first { $0.size == 6 })
+        // Aynı boyuttaki bölümler istenen sırada oynanır; sonraki boyut 10 çözümle açılır
         XCTAssertTrue(cats.isUnlocked(first))
-        XCTAssertFalse(cats.isUnlocked(second))
+        XCTAssertTrue(cats.isUnlocked(second))
+        XCTAssertFalse(cats.isUnlocked(firstSix))
         XCTAssertEqual(cats.resumableLevel?.id, first.id)
 
         let isFirst = cats.record(.init(level: first, score: 2000, mistakes: 0, usedHints: false, elapsed: 40, bestCombo: 3, perfectlyMarked: 1))
         XCTAssertTrue(isFirst)
-        XCTAssertTrue(cats.isUnlocked(second))
         XCTAssertEqual(cats.nextLevel?.id, second.id)
+        for level in fives[2..<CatPuzzleModel.unlockThreshold] {
+            cats.record(.init(level: level, score: 100, mistakes: 0, usedHints: false, elapsed: 30, bestCombo: 1, perfectlyMarked: 0))
+        }
+        XCTAssertFalse(cats.isUnlocked(firstSix), "9 bölüm yetmez")
         XCTAssertEqual(cats.stats.flawlessRun, 1)
         XCTAssertEqual(cats.results[first.id]?.flawless, true)
 
         cats.record(.init(level: second, score: 500, mistakes: 1, usedHints: true, elapsed: 90, bestCombo: 1, perfectlyMarked: 0))
+        XCTAssertTrue(cats.isUnlocked(firstSix), "10. çözümle 6x6 açılır")
         XCTAssertEqual(cats.stats.flawlessRun, 0)
-        XCTAssertEqual(cats.stats.bestFlawlessRun, 1)
+        XCTAssertEqual(cats.stats.bestFlawlessRun, 9)
     }
 
     /// Herkese 6 hak; bitince reklamla +1; Premium'da her gün 6'ya tamamlanır.

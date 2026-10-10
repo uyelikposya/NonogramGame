@@ -5,14 +5,18 @@ import SwiftUI
 enum CatTutorialStep: Equatable {
     /// İlk kedi: tek kareli renk.
     case first(GridPosition)
-    /// İkinci kedi: ilk kediden sonra tek seçeneğe inen renk.
+    /// "?" ipucuyla ilk kedinin etki alanını X'le.
+    case useHint
+    /// İkinci kedi: X'lerden sonra tek seçeneğe inen renk.
     case second(GridPosition)
+    /// Kedi bulucuyu tanıt.
+    case finder
     case freePlay
 
     var pointer: GridPosition? {
         switch self {
         case .first(let position), .second(let position): position
-        case .freePlay: nil
+        case .useHint, .finder, .freePlay: nil
         }
     }
 
@@ -20,8 +24,12 @@ enum CatTutorialStep: Equatable {
         switch self {
         case .first:
             "Every color hides one cat. Each row and column has one cat too, and cats never touch, not even diagonally. This color is a single square, so its cat is there. Tap it twice: once for X, once for the cat!"
+        case .useHint:
+            "You found a cat! No other cat can be in its row, column or color, or right next to it. Tap ? below and then Apply: I'll cross those squares out for you."
         case .second:
-            "Well done! Squares where no cat can be were crossed out for you. Now this color has only one free square. Find its cat!"
+            "Now this color has only one free square left. Find its cat!"
+        case .finder:
+            "Stuck? The cat button below shows where a cat is hiding. You get 6 Cat Finders and 6 hints; watch a short video for more."
         case .freePlay:
             "You've got it! Tap once for X, twice for a cat, and swipe to place many X's. Find the rest of the cats!"
         }

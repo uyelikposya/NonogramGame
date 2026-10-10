@@ -82,7 +82,7 @@ struct CatGameView: View {
             }
             scoreHeader
             CatStrip(level: viewModel.level, found: game.foundRegions, cats: cats)
-            RulesStrip()
+            RulesStrip(violated: violatedRule)
             board
             bottomBar
         }
@@ -195,6 +195,9 @@ struct CatGameView: View {
             hint: viewModel.pendingHint,
             pointer: isTutorial && game.status == .playing ? tutorialStep.pointer : nil,
             effects: viewModel.effects,
+            banner: viewModel.banner,
+            animations: viewModel.animations,
+            conflict: viewModel.lastConflict,
             onBegan: { viewModel.touchBegan(at: $0) },
             onMoved: { viewModel.touchMoved(to: $0) },
             onEnded: { viewModel.touchEnded() }
@@ -233,6 +236,7 @@ struct CatGameView: View {
                     title: "Find a Cat",
                     count: cats.findCharges,
                     tint: theme.accent,
+                    isGuided: isTutorial && tutorialStep == .finder,
                     action: findCat
                 )
                 .accessibilityIdentifier("cat.find")
@@ -241,6 +245,7 @@ struct CatGameView: View {
                     title: "Hint",
                     count: cats.markCharges,
                     tint: Color(red: 0.55, green: 0.42, blue: 0.82),
+                    isGuided: isTutorial && tutorialStep == .useHint,
                     action: showHint
                 )
                 .accessibilityIdentifier("cat.hint")
@@ -306,7 +311,8 @@ struct CatGameView: View {
     }
 
     private func findCat() {
-        guard cats.useFindCharge() else {
+        // Eğitim bölümünde ipuçları hak harcamaz
+        guard isTutorial || cats.useFindCharge() else {
             adOffer = .find
             return
         }
@@ -315,7 +321,7 @@ struct CatGameView: View {
     }
 
     private func showHint() {
-        guard cats.markCharges > 0 else {
+        guard isTutorial || cats.markCharges > 0 else {
             adOffer = .mark
             return
         }
@@ -331,7 +337,7 @@ struct CatGameView: View {
     }
 
     private func applyHint() {
-        guard cats.useMarkCharge() else {
+        guard isTutorial || cats.useMarkCharge() else {
             viewModel.dismissHint()
             adOffer = .mark
             return
@@ -379,11 +385,28 @@ struct CatGameView: View {
     private var tutorialStep: CatTutorialStep {
         let level = viewModel.level
         switch game.foundCount {
-        case 0: return .first(level.catPosition(ofRegion: level.region(at: GridPosition(row: 0, column: 0))))
+        case 0:
+            return .first(level.catPosition(ofRegion: level.region(at: GridPosition(row: 0, column: 0))))
         case 1:
-            let second = GridPosition(row: 1, column: level.solution[1])
-            return game[second] == .cat ? .freePlay : .second(second)
-        default: return .freePlay
+            // Önce "?" ile ilk kedinin etki alanı X'lenir, sonra ikinci kedi
+            let first = level.catPosition(ofRegion: level.region(at: GridPosition(row: 0, column: 0)))
+            let index = first.row * level.size + first.column
+            let hasBlanks = CatRules.attacked(by: index, in: level).contains { game.marks[$0] == .blank }
+            return hasBlanks ? .useHint : .second(GridPosition(row: 1, column: level.solution[1]))
+        case 2:
+            return .finder
+        default:
+            return .freePlay
+        }
+    }
+
+    /// Yanlış kedinin bozduğu kural (kural şeridinde kırmızı yanar).
+    private var violatedRule: RulesStrip.Rule? {
+        guard let conflict = viewModel.lastConflict else { return nil }
+        switch conflict {
+        case .color: return .color
+        case .line: return .line
+        case .touching: return .touching
         }
     }
 }
@@ -416,6 +439,8 @@ struct CatHelperButton: View {
     let title: LocalizedStringKey
     let count: Int
     let tint: Color
+    /// Eğitimde: düğme parlar, pati onu gösterir.
+    var isGuided = false
     let action: () -> Void
 
     var body: some View {
@@ -430,6 +455,17 @@ struct CatHelperButton: View {
                             Image(systemName: systemImage)
                                 .font(.system(size: 26, weight: .bold))
                                 .foregroundStyle(tint)
+                        }
+                        .overlay {
+                            Circle()
+                                .stroke(theme.accent, lineWidth: 3)
+                                .padding(-5)
+                                .opacity(isGuided ? 1 : 0)
+                        }
+                        .overlay(alignment: .bottomTrailing) {
+                            PawPointer()
+                                .offset(x: 18, y: 26)
+                                .opacity(isGuided ? 1 : 0)
                         }
                     Group {
                         if count > 0 {
@@ -462,30 +498,41 @@ struct CatHelperButton: View {
 
 @MainActor
 struct RulesStrip: View {
+    enum Rule {
+        case color
+        case line
+        case touching
+    }
+
     @Environment(\.appTheme) private var theme
+    /// Yanlış kedinin bozduğu kural kırmızı yanar.
+    var violated: Rule?
 
     var body: some View {
         HStack(spacing: 8) {
-            rule("paintpalette.fill", "1 cat per color")
-            rule("square.grid.3x3.fill", "1 per row & column")
-            rule("hand.raised.fill", "Cats can't touch")
+            rule(.color, "paintpalette.fill", "1 cat per color")
+            rule(.line, "square.grid.3x3.fill", "1 per row & column")
+            rule(.touching, "hand.raised.fill", "Cats can't touch")
         }
+        .animation(.easeOut(duration: 0.25), value: violated)
     }
 
-    private func rule(_ icon: String, _ text: LocalizedStringKey) -> some View {
-        HStack(spacing: 5) {
+    private func rule(_ kind: Rule, _ icon: String, _ text: LocalizedStringKey) -> some View {
+        let isViolated = violated == kind
+        return HStack(spacing: 5) {
             Image(systemName: icon)
                 .font(.caption.weight(.bold))
-                .foregroundStyle(theme.accent)
+                .foregroundStyle(isViolated ? .white : theme.accent)
             Text(text)
                 .font(.caption2.weight(.semibold))
-                .foregroundStyle(theme.textSecondary)
+                .foregroundStyle(isViolated ? .white : theme.textSecondary)
                 .lineLimit(2)
                 .minimumScaleFactor(0.8)
         }
         .frame(maxWidth: .infinity, minHeight: 34)
         .padding(.horizontal, 6)
-        .background(RoundedRectangle(cornerRadius: 10).fill(theme.surface))
+        .background(RoundedRectangle(cornerRadius: 10).fill(isViolated ? theme.mistake : theme.surface))
+        .scaleEffect(isViolated ? 1.06 : 1)
     }
 }
 

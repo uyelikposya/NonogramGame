@@ -79,6 +79,16 @@ public enum CatRules {
         return cand
     }
 
+    /// Grubun kareleri (satır öncelikli dizinler).
+    public static func cells(of group: CatGroup, in level: CatLevel) -> [Int] {
+        let n = level.size
+        switch group.axis {
+        case .row: return (0..<n).map { group.index * n + $0 }
+        case .column: return (0..<n).map { $0 * n + group.index }
+        case .region: return level.regionCells[group.index]
+        }
+    }
+
     static func groups(of level: CatLevel) -> [(CatGroup, [Int])] {
         let n = level.size
         var result: [(CatGroup, [Int])] = []

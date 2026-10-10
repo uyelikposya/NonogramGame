@@ -464,7 +464,15 @@
   "Solve a 10×10 level.": "10×10 레벨을 풀어요.",
   "Solve a 15×15 level.": "15×15 레벨을 풀어요.",
   "Score 100,000 points in total.": "총 100,000점을 모아요.",
-  "Solve a level in under a minute.": "1분 안에 한 레벨을 풀어요."
+  "Solve a level in under a minute.": "1분 안에 한 레벨을 풀어요.",
+  "Clear!": "완료!",
+  "The cats didn't even have time to hide!": "고양이들이 숨을 틈도 없었어요!",
+  "Every cat is found. Nothing gets past you!": "고양이를 모두 찾았어요. 아무것도 놓치지 않네요!",
+  "Hide and seek is over. You win!": "숨바꼭질 끝! 당신이 이겼어요!",
+  "You found a cat! No other cat can be in its row, column or color, or right next to it. Tap ? below and then Apply: I'll cross those squares out for you.": "고양이를 찾았어요! 같은 행, 열, 색, 그리고 바로 옆에는 다른 고양이가 없어요. 아래 ?를 누르고 적용을 누르면 그 칸에 X를 표시해 줄게요.",
+  "Now this color has only one free square left. Find its cat!": "이제 이 색에는 빈칸이 하나뿐이에요. 고양이를 찾아요!",
+  "Stuck? The cat button below shows where a cat is hiding. You get 6 Cat Finders and 6 hints; watch a short video for more.": "막혔나요? 아래 고양이 버튼은 고양이가 숨은 곳을 알려 줘요. 고양이 찾기 6번, 힌트 6번이 있고, 짧은 영상을 보면 더 받을 수 있어요.",
+  "Solve %lld levels of %lld×%lld to unlock.": "%2$lld×%3$lld 레벨 %1$lld개를 풀면 열려요."
  },
  "infoplist": {
   "CFBundleDisplayName": "Catgrid",

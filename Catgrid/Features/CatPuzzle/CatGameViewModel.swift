@@ -11,18 +11,43 @@ enum CatEvent: Equatable {
     case failed
 }
 
-/// Tahtanın üstünde kısa süre uçuşan yazılar: "+576", "Bulundu!", "Harika".
+/// Karenin yanında kısa süre uçuşan küçük yazılar: "+576", "Tamam!" (biten satır).
 struct CatEffect: Identifiable, Equatable {
     enum Kind: Equatable {
         case points(Int)
-        case found
-        case perfectlyMarked
-        case combo(Int)
+        case clear
     }
 
     let id = UUID()
     let kind: Kind
     let position: GridPosition
+}
+
+/// Tahtanın ortasında büyük çıkan motivasyon yazısı.
+struct CatBanner: Identifiable, Equatable {
+    enum Kind: Equatable {
+        case found
+        case combo(Int)
+        case perfectlyMarked
+        /// Son kedi bulununca.
+        case allFound(Int)
+    }
+
+    let id = UUID()
+    let kind: Kind
+}
+
+/// Bir karenin son değişimi: X'ler çizilerek, kediler zıplayarak, hatalar sallanarak gelir.
+struct CatMarkAnimation: Equatable {
+    enum Kind: Equatable {
+        case cross
+        case cat
+        case wrong
+    }
+
+    let kind: Kind
+    let start: Date
+    static let duration: TimeInterval = 0.45
 }
 
 /// Kedi Bulmaca ekranının durumu: dokunma/sürükleme, puan ve seri, ipucu önizlemesi, zamanlayıcı.
@@ -37,6 +62,12 @@ final class CatGameViewModel {
     private(set) var perfectlyMarkedCount = 0
     private(set) var usedHints = false
     private(set) var effects: [CatEffect] = []
+    /// Ortadaki büyük yazı (bir süre sonra kaybolur).
+    private(set) var banner: CatBanner?
+    /// Son değişen karelerin animasyonları.
+    private(set) var animations: [GridPosition: CatMarkAnimation] = [:]
+    /// Son yanlış kedinin bozduğu kural (kural şeridi ve tahta bunu vurgular).
+    private(set) var lastConflict: CatConflict?
     /// "?" ipucunun önizlemesi; oyuncu "Uygula"ya basınca tahtaya işlenir.
     private(set) var pendingHint: CatHint?
     /// Son yanlış kedi denemesi (kısa sallanma için).
@@ -60,6 +91,16 @@ final class CatGameViewModel {
     init(level: CatLevel, saved: CatSnapshot? = nil, now: @escaping () -> Date = { Date() }) {
         game = saved.map { CatGame(level: level, restoring: $0) } ?? CatGame(level: level)
         self.now = now
+        completedGroups = Self.completeGroups(in: game)
+    }
+
+    /// Zaten bitmiş gruplar (kayıttan dönülünce "Tamam!" yeniden çıkmasın).
+    private static func completeGroups(in game: CatGame) -> Set<CatGroup> {
+        let n = game.size
+        let all = (0..<n).flatMap { i in
+            [CatGroup(axis: .row, index: i), CatGroup(axis: .column, index: i), CatGroup(axis: .region, index: i)]
+        }
+        return Set(all.filter { game.isComplete($0) })
     }
 
     var level: CatLevel { game.level }
@@ -103,12 +144,12 @@ final class CatGameViewModel {
             activeCell = nil
         }
         guard let start = touchStart, paintCross == nil, !isFinished else { return }
-        handle(game.tap(at: start))
+        handle(game.tap(at: start), at: start)
     }
 
     private func paint(at position: GridPosition) {
         guard let cross = paintCross else { return }
-        handle(game.paint(cross: cross, at: position))
+        handle(game.paint(cross: cross, at: position), at: position)
     }
 
     // MARK: - İpuçları
@@ -125,7 +166,15 @@ final class CatGameViewModel {
         guard let hint = pendingHint else { return }
         pendingHint = nil
         usedHints = true
+        let before = game.marks
         handle(game.apply(hint))
+        // İpucunun X'leri de çizilerek gelsin
+        let time = now()
+        for i in before.indices where before[i] == .blank && game.marks[i] == .cross {
+            animations[GridPosition(row: i / level.size, column: i % level.size)] = CatMarkAnimation(kind: .cross, start: time)
+        }
+        checkCompletedGroups(around: hint.cells)
+        scheduleAnimationCleanup()
     }
 
     func dismissHint() {
@@ -155,6 +204,10 @@ final class CatGameViewModel {
         perfectlyMarkedCount = 0
         usedHints = false
         effects = []
+        banner = nil
+        animations = [:]
+        lastConflict = nil
+        completedGroups = []
         pendingHint = nil
         lastWrong = nil
         lastFindAt = nil
@@ -164,19 +217,28 @@ final class CatGameViewModel {
 
     // MARK: - Sonuçlar
 
-    private func handle(_ move: CatMove) {
+    private func handle(_ move: CatMove, at touched: GridPosition? = nil) {
         switch move {
         case .ignored:
             break
         case .crossed:
+            if let touched {
+                animate(.cross, at: touched)
+                checkCompletedGroups(around: [touched])
+            }
             onEvent?(.crossed)
         case .cleared:
+            if let touched { animations[touched] = nil }
             onEvent?(.cleared)
         case .found(let find):
+            animate(.cat, at: find.position)
             celebrate(find)
+            checkCompletedGroups(around: [find.position])
             onEvent?(.found(combo: find.revealed ? 0 : combo))
         case .solved(let find):
+            animate(.cat, at: find.position)
             celebrate(find)
+            showBanner(.allFound(Int.random(in: 0..<3)), duration: 1.6)
             stop()
             onEvent?(.solved)
             onSolved?(CatPuzzleModel.Completion(
@@ -198,43 +260,110 @@ final class CatGameViewModel {
         }
     }
 
+    private func animate(_ kind: CatMarkAnimation.Kind, at position: GridPosition) {
+        animations[position] = CatMarkAnimation(kind: kind, start: now())
+        scheduleAnimationCleanup()
+    }
+
+    private var cleanupTask: Task<Void, Never>?
+
+    /// Biten animasyonlar silinir; tahta yeniden durgun çizime döner.
+    private func scheduleAnimationCleanup() {
+        cleanupTask?.cancel()
+        cleanupTask = Task { [weak self] in
+            try? await Task.sleep(for: .seconds(CatMarkAnimation.duration + 0.6))
+            guard let self, !Task.isCancelled else { return }
+            let time = self.now()
+            self.animations = self.animations.filter { time.timeIntervalSince($0.value.start) < CatMarkAnimation.duration + 0.5 }
+        }
+    }
+
+    /// Kedisi bulunmuş ve tüm diğer kareleri X'li satır/sütun/renk: "Tamam!" yazısı.
+    private func checkCompletedGroups(around cells: [GridPosition]) {
+        var seen = Set<CatGroup>()
+        var shown: [CatEffect] = []
+        for cell in cells {
+            let groups = [
+                CatGroup(axis: .row, index: cell.row),
+                CatGroup(axis: .column, index: cell.column),
+                CatGroup(axis: .region, index: level.region(at: cell)),
+            ]
+            for group in groups where !seen.contains(group) && !completedGroups.contains(group) {
+                seen.insert(group)
+                if game.isComplete(group) {
+                    completedGroups.insert(group)
+                    shown.append(CatEffect(kind: .clear, position: cell))
+                }
+            }
+        }
+        guard !shown.isEmpty else { return }
+        // Aynı karede birden çok grup bittiyse tek yazı yeter
+        let unique = Dictionary(shown.map { ($0.position, $0) }, uniquingKeysWith: { first, _ in first }).values
+        addEffects(Array(unique))
+    }
+
+    private var completedGroups = Set<CatGroup>()
+
     private func wrong(at position: GridPosition) {
         lastWrong = position
         combo = 0
+        animate(.wrong, at: position)
+        lastConflict = game.conflict(at: position)
         Task {
-            try? await Task.sleep(for: .seconds(0.5))
-            if lastWrong == position { lastWrong = nil }
+            try? await Task.sleep(for: .seconds(1.4))
+            if lastWrong == position {
+                lastWrong = nil
+                lastConflict = nil
+            }
         }
     }
 
     private func celebrate(_ find: CatFind) {
-        var shown: [CatEffect] = [CatEffect(kind: .found, position: find.position)]
-        if !find.revealed {
-            let time = now()
-            if let last = lastFindAt, time.timeIntervalSince(last) <= Self.comboWindow {
-                combo += 1
-            } else {
-                combo = 1
-            }
-            lastFindAt = time
-            bestCombo = max(bestCombo, combo)
-            var points = 480 + 96 * (combo - 1)
-            if find.perfectlyMarked {
-                points += 192
-                perfectlyMarkedCount += 1
-                shown.append(CatEffect(kind: .perfectlyMarked, position: find.position))
-            }
-            score += points
-            shown.append(CatEffect(kind: .points(points), position: find.position))
-            if combo >= 2 {
-                shown.append(CatEffect(kind: .combo(combo), position: find.position))
-            }
+        var shown: [CatEffect] = []
+        guard !find.revealed else {
+            showBanner(.found)
+            return
         }
+        let time = now()
+        if let last = lastFindAt, time.timeIntervalSince(last) <= Self.comboWindow {
+            combo += 1
+        } else {
+            combo = 1
+        }
+        lastFindAt = time
+        bestCombo = max(bestCombo, combo)
+        var points = 480 + 96 * (combo - 1)
+        if find.perfectlyMarked {
+            points += 192
+            perfectlyMarkedCount += 1
+        }
+        score += points
+        shown.append(CatEffect(kind: .points(points), position: find.position))
+        addEffects(shown)
+        if combo >= 2 {
+            showBanner(.combo(combo))
+        } else if find.perfectlyMarked {
+            showBanner(.perfectlyMarked)
+        } else {
+            showBanner(.found)
+        }
+    }
+
+    private func addEffects(_ shown: [CatEffect]) {
         effects.append(contentsOf: shown)
         let ids = Set(shown.map(\.id))
         Task {
             try? await Task.sleep(for: .seconds(1.4))
             effects.removeAll { ids.contains($0.id) }
+        }
+    }
+
+    private func showBanner(_ kind: CatBanner.Kind, duration: TimeInterval = 1.2) {
+        let new = CatBanner(kind: kind)
+        banner = new
+        Task {
+            try? await Task.sleep(for: .seconds(duration))
+            if banner?.id == new.id { banner = nil }
         }
     }
 

@@ -14,6 +14,9 @@ struct CatBoardView: View {
     /// Eğitimde dokunulacak kare.
     var pointer: GridPosition?
     var effects: [CatEffect] = []
+    var banner: CatBanner?
+    var animations: [GridPosition: CatMarkAnimation] = [:]
+    var conflict: CatConflict?
     let onBegan: (GridPosition) -> Void
     let onMoved: (GridPosition) -> Void
     let onEnded: () -> Void
@@ -48,13 +51,11 @@ struct CatBoardView: View {
                     .frame(width: side, height: side, alignment: .topLeading)
                     .allowsHitTesting(false)
                 }
-                .overlay(alignment: .top) {
-                    // Seri sözü tahtanın üstünde büyük
-                    if let combo = effects.last(where: { if case .combo = $0.kind { true } else { false } }),
-                       case .combo(let count) = combo.kind {
-                        ComboWord(count: count)
-                            .id(combo.id)
-                            .offset(y: -18)
+                .overlay {
+                    // Motivasyon yazısı tahtanın ortasında büyük
+                    if let banner {
+                        CatBannerView(banner: banner)
+                            .id(banner.id)
                             .allowsHitTesting(false)
                     }
                 }
@@ -94,79 +95,170 @@ struct CatBoardView: View {
     }
 
     private func canvas(cell: CGFloat) -> some View {
-        let game = game
         let level = game.level
-        let theme = theme
-        let activeCell = activeCell
-        let wrongCell = wrongCell
-        let hint = hint
-        let focus = Set(hint?.focus ?? [])
-        let targets = Set(hint?.cells ?? [])
         let portraits = Dictionary(uniqueKeysWithValues: (0..<level.size).compactMap { region -> (Int, Image)? in
             guard let chapter = cats.breed(level.breeds[region]), let image = PortraitImages.image(for: chapter) else { return nil }
             return (region, image)
         })
-        return Canvas { context, size in
-            context.fill(Path(roundedRect: CGRect(origin: .zero, size: size), cornerRadius: 12), with: .color(theme.surface))
-            let gap = max(cell * 0.06, 1.5)
-            for row in 0..<level.size {
-                for column in 0..<level.size {
-                    let position = GridPosition(row: row, column: column)
-                    let region = level.region(at: position)
-                    let rect = CGRect(x: CGFloat(column) * cell, y: CGFloat(row) * cell, width: cell, height: cell)
-                        .insetBy(dx: gap / 2, dy: gap / 2)
-                    let tile = Path(roundedRect: rect, cornerRadius: cell * 0.14)
-                    let mark = game[position]
-                    var color = CatPalette.color(region)
-                    if mark == .wrong { color = theme.mistake }
-                    context.fill(tile, with: .color(color))
-                    if position == activeCell {
-                        context.fill(tile, with: .color(.white.opacity(0.25)))
-                    }
-                    switch mark {
-                    case .cross, .wrong:
-                        var cross = Path()
-                        let inset = rect.insetBy(dx: cell * 0.27, dy: cell * 0.27)
-                        cross.move(to: inset.origin)
-                        cross.addLine(to: CGPoint(x: inset.maxX, y: inset.maxY))
-                        cross.move(to: CGPoint(x: inset.maxX, y: inset.minY))
-                        cross.addLine(to: CGPoint(x: inset.minX, y: inset.maxY))
-                        context.stroke(cross, with: .color(.white), style: StrokeStyle(lineWidth: max(cell * 0.1, 2), lineCap: .round))
-                    case .cat:
-                        context.fill(tile, with: .color(.white.opacity(0.35)))
-                        if let image = portraits[region] {
-                            context.draw(image, in: rect.insetBy(dx: cell * 0.08, dy: cell * 0.08))
-                        }
-                    case .blank:
-                        break
-                    }
-                    if position == wrongCell {
-                        context.stroke(tile, with: .color(.white), lineWidth: 3)
-                    }
-                    // İpucu önizlemesi: nedeni gösteren kareler aydınlık, diğerleri karartılır;
-                    // X konacak kareler kesik çizgili çerçeve ve soluk X ile
-                    if hint != nil {
-                        if !focus.contains(position), !targets.contains(position) {
-                            context.fill(tile, with: .color(.black.opacity(0.45)))
-                        }
-                        if targets.contains(position) {
-                            context.stroke(tile, with: .color(.white), style: StrokeStyle(lineWidth: 2.5, dash: [5, 4]))
-                            if case .onlySpot = hint?.kind {
-                                context.fill(Path(ellipseIn: rect.insetBy(dx: cell * 0.3, dy: cell * 0.3)), with: .color(.white.opacity(0.85)))
-                            } else if mark == .blank {
-                                var cross = Path()
-                                let inset = rect.insetBy(dx: cell * 0.3, dy: cell * 0.3)
-                                cross.move(to: inset.origin)
-                                cross.addLine(to: CGPoint(x: inset.maxX, y: inset.maxY))
-                                cross.move(to: CGPoint(x: inset.maxX, y: inset.minY))
-                                cross.addLine(to: CGPoint(x: inset.minX, y: inset.maxY))
-                                context.stroke(cross, with: .color(.white.opacity(0.6)), style: StrokeStyle(lineWidth: max(cell * 0.08, 1.5), lineCap: .round))
-                            }
-                        }
-                    }
-                }
+        let painter = CatBoardPainter(
+            game: game,
+            cell: cell,
+            theme: theme,
+            activeCell: activeCell,
+            wrongCell: wrongCell,
+            hint: hint,
+            focus: Set(hint?.focus ?? []),
+            targets: Set(hint?.cells ?? []),
+            animations: animations,
+            conflictCells: Set(conflictCells(in: level)),
+            portraits: portraits
+        )
+        // Animasyon varken zaman çizelgesi işler; yoksa durur
+        return TimelineView(.animation(paused: painter.isStill)) { timeline in
+            Canvas { context, size in
+                painter.draw(in: context, size: size, now: timeline.date)
             }
         }
+    }
+
+    /// Yanlış kedinin çeliştiği satır/sütun/renk ya da değdiği kedi.
+    private func conflictCells(in level: CatLevel) -> [GridPosition] {
+        guard let conflict else { return [] }
+        let n = level.size
+        switch conflict {
+        case .line(let group):
+            return CatRules.cells(of: group, in: level).map { GridPosition(row: $0 / n, column: $0 % n) }
+        case .color(let region):
+            return level.cells(ofRegion: region)
+        case .touching(let position):
+            return [position]
+        }
+    }
+
+}
+
+/// Tahtanın çizimi (Canvas içinde); her kare ayrı fonksiyonda, derleyiciyi yormaz.
+struct CatBoardPainter {
+    let game: CatGame
+    let cell: CGFloat
+    let theme: AppTheme
+    let activeCell: GridPosition?
+    let wrongCell: GridPosition?
+    let hint: CatHint?
+    let focus: Set<GridPosition>
+    let targets: Set<GridPosition>
+    let animations: [GridPosition: CatMarkAnimation]
+    let conflictCells: Set<GridPosition>
+    let portraits: [Int: Image]
+
+    var isStill: Bool { animations.isEmpty && conflictCells.isEmpty }
+
+    func draw(in context: GraphicsContext, size: CGSize, now: Date) {
+        context.fill(Path(roundedRect: CGRect(origin: .zero, size: size), cornerRadius: 12), with: .color(theme.surface))
+        for row in 0..<game.size {
+            for column in 0..<game.size {
+                drawCell(GridPosition(row: row, column: column), in: context, now: now)
+            }
+        }
+    }
+
+    private func progress(of animation: CatMarkAnimation?, now: Date) -> Double {
+        guard let animation else { return 1 }
+        return min(max(now.timeIntervalSince(animation.start) / CatMarkAnimation.duration, 0), 1)
+    }
+
+    private func drawCell(_ position: GridPosition, in context: GraphicsContext, now: Date) {
+        let animation = animations[position]
+        let progress = progress(of: animation, now: now)
+        let mark = game[position]
+        let gap = max(cell * 0.06, 1.5)
+        var rect = CGRect(x: CGFloat(position.column) * cell, y: CGFloat(position.row) * cell, width: cell, height: cell)
+            .insetBy(dx: gap / 2, dy: gap / 2)
+        // Yanlış kedi: kare kısa süre sallanır
+        if animation?.kind == .wrong, progress < 1 {
+            rect = rect.offsetBy(dx: sin(progress * .pi * 6) * cell * 0.1 * (1 - progress), dy: 0)
+        }
+        let tile = Path(roundedRect: rect, cornerRadius: cell * 0.14)
+        let region = game.level.region(at: position)
+        context.fill(tile, with: .color(mark == .wrong ? theme.mistake : CatPalette.color(region)))
+        if position == activeCell {
+            context.fill(tile, with: .color(.white.opacity(0.25)))
+        }
+        switch mark {
+        case .cross, .wrong:
+            // X iki çizgiyle çizilerek gelir
+            let drawn = animation == nil ? 1 : min(progress / 0.6, 1)
+            context.stroke(
+                Self.crossPath(in: rect.insetBy(dx: cell * 0.27, dy: cell * 0.27), progress: drawn),
+                with: .color(.white),
+                style: StrokeStyle(lineWidth: max(cell * 0.1, 2), lineCap: .round)
+            )
+        case .cat:
+            drawCat(in: rect, tile: tile, region: region, scale: animation?.kind == .cat ? Self.popScale(progress) : 1, context: context)
+        case .blank:
+            break
+        }
+        if position == wrongCell {
+            context.stroke(tile, with: .color(.white), lineWidth: 3)
+        }
+        // Yanlış kedinin bozduğu kuralın kareleri kırmızı çerçeveyle yanıp söner
+        if conflictCells.contains(position) {
+            let pulse = 0.55 + 0.45 * sin(now.timeIntervalSinceReferenceDate * 8)
+            context.stroke(tile, with: .color(theme.mistake.opacity(pulse)), lineWidth: max(cell * 0.09, 2.5))
+        }
+        if hint != nil {
+            drawHint(at: position, rect: rect, tile: tile, mark: mark, context: context)
+        }
+    }
+
+    private func drawCat(in rect: CGRect, tile: Path, region: Int, scale: Double, context: GraphicsContext) {
+        context.fill(tile, with: .color(.white.opacity(0.35)))
+        guard let image = portraits[region] else { return }
+        let inner = rect.insetBy(dx: cell * 0.08, dy: cell * 0.08)
+        let width = inner.width * scale
+        let height = inner.height * scale
+        context.draw(image, in: CGRect(x: inner.midX - width / 2, y: inner.midY - height / 2, width: width, height: height))
+    }
+
+    /// İpucu önizlemesi: nedeni gösteren kareler aydınlık, diğerleri karartılır;
+    /// X konacak kareler kesik çizgili çerçeve ve soluk X ile.
+    private func drawHint(at position: GridPosition, rect: CGRect, tile: Path, mark: CatMark, context: GraphicsContext) {
+        if !focus.contains(position), !targets.contains(position) {
+            context.fill(tile, with: .color(.black.opacity(0.45)))
+        }
+        guard targets.contains(position) else { return }
+        context.stroke(tile, with: .color(.white), style: StrokeStyle(lineWidth: 2.5, dash: [5, 4]))
+        if case .onlySpot = hint?.kind {
+            context.fill(Path(ellipseIn: rect.insetBy(dx: cell * 0.3, dy: cell * 0.3)), with: .color(.white.opacity(0.85)))
+        } else if mark == .blank {
+            context.stroke(
+                Self.crossPath(in: rect.insetBy(dx: cell * 0.3, dy: cell * 0.3), progress: 1),
+                with: .color(.white.opacity(0.6)),
+                style: StrokeStyle(lineWidth: max(cell * 0.08, 1.5), lineCap: .round)
+            )
+        }
+    }
+
+    /// X: ilk yarıda bir çizgi, ikinci yarıda diğeri.
+    static func crossPath(in rect: CGRect, progress: Double) -> Path {
+        var path = Path()
+        let first = min(progress * 2, 1)
+        let second = max(progress * 2 - 1, 0)
+        path.move(to: rect.origin)
+        path.addLine(to: CGPoint(x: rect.minX + rect.width * first, y: rect.minY + rect.height * first))
+        if second > 0 {
+            path.move(to: CGPoint(x: rect.maxX, y: rect.minY))
+            path.addLine(to: CGPoint(x: rect.maxX - rect.width * second, y: rect.minY + rect.height * second))
+        }
+        return path
+    }
+
+    /// Hafifçe taşan büyüme (0.3 → ~1.1 → 1).
+    static func popScale(_ t: Double) -> Double {
+        let c1 = 1.70158
+        let c3 = c1 + 1
+        let x = t - 1
+        return 0.3 + 0.7 * (1 + c3 * x * x * x + c1 * x * x)
     }
 }
 
@@ -209,10 +301,8 @@ struct CatEffectView: View {
 
     private var offset: CGFloat {
         switch effect.kind {
-        case .points: -16
-        case .found: 14
-        case .perfectlyMarked: 34
-        case .combo: 0
+        case .points: -18
+        case .clear: 14
         }
     }
 
@@ -222,58 +312,97 @@ struct CatEffectView: View {
         case .points(let points):
             Text(verbatim: "+\(points)")
                 .foregroundStyle(Color(red: 1, green: 0.78, blue: 0.3))
-        case .found:
-            Text("Found!")
-        case .perfectlyMarked:
-            Text("Perfectly marked!")
+        case .clear:
+            Text("Clear!")
                 .foregroundStyle(Color(red: 1, green: 0.9, blue: 0.4))
-        case .combo:
-            EmptyView()
         }
     }
 }
 
-/// Seri sözü: "Güzel", "Harika", "Mükemmel"…
+/// Tahtanın ortasındaki büyük motivasyon yazısı: "Bulundu!", "Harika!", "Tam isabet!"…
 @MainActor
-struct ComboWord: View {
-    let count: Int
+struct CatBannerView: View {
+    @Environment(\.appTheme) private var theme
+    let banner: CatBanner
     @State private var shown = false
 
     var body: some View {
-        word
-            .font(.system(size: 30, weight: .black, design: .rounded))
-            .foregroundStyle(
-                LinearGradient(colors: colors, startPoint: .top, endPoint: .bottom)
-            )
-            .shadow(color: .black.opacity(0.3), radius: 3, y: 2)
-            .scaleEffect(shown ? 1 : 0.4)
-            .opacity(shown ? 1 : 0)
-            .task {
-                withAnimation(.spring(response: 0.3, dampingFraction: 0.5)) { shown = true }
-                try? await Task.sleep(for: .seconds(1.0))
-                withAnimation(.easeIn(duration: 0.3)) { shown = false }
+        Group {
+            if case .allFound(let variant) = banner.kind {
+                HStack(spacing: 10) {
+                    Image(systemName: "pawprint.fill")
+                        .foregroundStyle(theme.accent)
+                    allFoundText(variant)
+                        .font(.headline)
+                        .foregroundStyle(.white)
+                        .multilineTextAlignment(.center)
+                }
+                .padding(.horizontal, 18)
+                .padding(.vertical, 14)
+                .background(RoundedRectangle(cornerRadius: 18).fill(.black.opacity(0.72)))
+                .padding(24)
+            } else {
+                word
+                    .font(.system(size: 40, weight: .black, design: .rounded))
+                    .foregroundStyle(LinearGradient(colors: colors, startPoint: .top, endPoint: .bottom))
+                    .shadow(color: .black.opacity(0.35), radius: 4, y: 2)
+                    .multilineTextAlignment(.center)
+                    .minimumScaleFactor(0.5)
+                    .padding(.horizontal, 12)
             }
+        }
+        .scaleEffect(shown ? 1 : 0.4)
+        .opacity(shown ? 1 : 0)
+        .task {
+            withAnimation(.spring(response: 0.32, dampingFraction: 0.55)) { shown = true }
+            try? await Task.sleep(for: .seconds(0.9))
+            withAnimation(.easeIn(duration: 0.3)) { shown = false }
+        }
     }
 
-    private var colors: [Color] {
-        switch count {
-        case 2: [Color(red: 0.5, green: 0.85, blue: 1), Color(red: 0.2, green: 0.55, blue: 0.95)]
-        case 3: [Color(red: 0.6, green: 0.95, blue: 0.6), Color(red: 0.2, green: 0.7, blue: 0.35)]
-        case 4: [Color(red: 0.4, green: 0.9, blue: 1), Color(red: 0.1, green: 0.5, blue: 0.9)]
-        case 5: [Color(red: 1, green: 0.85, blue: 0.4), Color(red: 1, green: 0.55, blue: 0.1)]
-        default: [Color(red: 1, green: 0.6, blue: 0.9), Color(red: 0.75, green: 0.3, blue: 0.95)]
+    @ViewBuilder
+    private func allFoundText(_ variant: Int) -> some View {
+        switch variant {
+        case 0: Text("The cats didn't even have time to hide!")
+        case 1: Text("Every cat is found. Nothing gets past you!")
+        default: Text("Hide and seek is over. You win!")
         }
     }
 
     @ViewBuilder
     private var word: some View {
-        switch count {
-        case 2: Text("Nice!")
-        case 3: Text("Great!")
-        case 4: Text("Perfect!")
-        case 5: Text("Excellent!")
-        case 6: Text("Amazing!")
-        default: Text("Unstoppable!")
+        switch banner.kind {
+        case .found: Text("Found!")
+        case .perfectlyMarked: Text("Perfectly marked!")
+        case .combo(let count):
+            switch count {
+            case 2: Text("Nice!")
+            case 3: Text("Great!")
+            case 4: Text("Perfect!")
+            case 5: Text("Excellent!")
+            case 6: Text("Amazing!")
+            default: Text("Unstoppable!")
+            }
+        case .allFound: EmptyView()
+        }
+    }
+
+    private var colors: [Color] {
+        switch banner.kind {
+        case .found:
+            return [Color(red: 1, green: 0.88, blue: 0.45), Color(red: 1, green: 0.55, blue: 0.15)]
+        case .perfectlyMarked:
+            return [Color(red: 1, green: 0.95, blue: 0.5), Color(red: 0.95, green: 0.7, blue: 0.1)]
+        case .allFound:
+            return [.white, .white]
+        case .combo(let count):
+            switch count {
+            case 2: return [Color(red: 0.5, green: 0.85, blue: 1), Color(red: 0.2, green: 0.55, blue: 0.95)]
+            case 3: return [Color(red: 0.6, green: 0.95, blue: 0.6), Color(red: 0.2, green: 0.7, blue: 0.35)]
+            case 4: return [Color(red: 0.4, green: 0.9, blue: 1), Color(red: 0.1, green: 0.5, blue: 0.9)]
+            case 5: return [Color(red: 1, green: 0.85, blue: 0.4), Color(red: 1, green: 0.55, blue: 0.1)]
+            default: return [Color(red: 1, green: 0.6, blue: 0.9), Color(red: 0.75, green: 0.3, blue: 0.95)]
+            }
         }
     }
 }

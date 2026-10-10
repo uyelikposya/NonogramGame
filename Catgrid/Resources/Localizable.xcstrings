@@ -21348,6 +21348,374 @@
           }
         }
       }
+    },
+    "Clear!": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tamam!"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "クリア!"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Geschafft!"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Terminé !"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "¡Listo!"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Feito!"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "완료!"
+          }
+        }
+      }
+    },
+    "The cats didn't even have time to hide!": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Kediler saklanmaya zaman bile bulamadı!"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "猫たちは隠れるひまもなかった!"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Die Katzen hatten nicht mal Zeit, sich zu verstecken!"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Les chats n'ont même pas eu le temps de se cacher !"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "¡Los gatos ni tuvieron tiempo de esconderse!"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Os gatos nem tiveram tempo de se esconder!"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "고양이들이 숨을 틈도 없었어요!"
+          }
+        }
+      }
+    },
+    "Every cat is found. Nothing gets past you!": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bütün kediler bulundu. Senden hiçbir şey kaçmıyor!"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "猫を全部見つけた。あなたの目はごまかせない!"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Alle Katzen gefunden. Dir entgeht nichts!"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tous les chats sont trouvés. Rien ne t'échappe !"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Todos los gatos encontrados. ¡No se te escapa nada!"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Todos os gatos encontrados. Nada escapa de você!"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "고양이를 모두 찾았어요. 아무것도 놓치지 않네요!"
+          }
+        }
+      }
+    },
+    "Hide and seek is over. You win!": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Saklambaç bitti. Sen kazandın!"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "かくれんぼはおしまい。あなたの勝ち!"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Das Versteckspiel ist vorbei. Du gewinnst!"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "La partie de cache-cache est finie. Tu as gagné !"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Se acabó el escondite. ¡Ganaste!"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O esconde-esconde acabou. Você venceu!"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "숨바꼭질 끝! 당신이 이겼어요!"
+          }
+        }
+      }
+    },
+    "You found a cat! No other cat can be in its row, column or color, or right next to it. Tap ? below and then Apply: I'll cross those squares out for you.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bir kedi buldun! Onun satırında, sütununda, renginde ve hemen yanında başka kedi olamaz. Alttaki ?'ye dokun, sonra Uygula'ya bas: o kareleri senin için X'leyeyim."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "猫を見つけた!同じ行・列・色、そしてすぐ隣にはほかの猫はいません。下の「?」をタップして「適用」を押すと、そのマスに×をつけてあげるよ。"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Du hast eine Katze gefunden! In ihrer Zeile, Spalte und Farbe und direkt neben ihr kann keine andere Katze sein. Tippe unten auf ? und dann auf Anwenden: Ich streiche diese Felder für dich durch."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tu as trouvé un chat ! Aucun autre chat ne peut être sur sa ligne, sa colonne, sa couleur ni juste à côté. Touche ? en bas puis Appliquer : je barre ces cases pour toi."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "¡Encontraste un gato! No puede haber otro en su fila, columna o color, ni justo a su lado. Toca ? abajo y luego Aplicar: tacharé esas casillas por ti."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Você achou um gato! Nenhum outro gato pode estar na linha, coluna ou cor dele, nem logo ao lado. Toque em ? lá embaixo e depois em Aplicar: eu marco esses quadrados para você."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "고양이를 찾았어요! 같은 행, 열, 색, 그리고 바로 옆에는 다른 고양이가 없어요. 아래 ?를 누르고 적용을 누르면 그 칸에 X를 표시해 줄게요."
+          }
+        }
+      }
+    },
+    "Now this color has only one free square left. Find its cat!": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Şimdi bu renkte tek bir boş kare kaldı. Kedisini bul!"
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "この色の空きマスは1つだけになったよ。猫を見つけて!"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Jetzt hat diese Farbe nur noch ein freies Feld. Finde ihre Katze!"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Cette couleur n'a plus qu'une case libre. Trouve son chat !"
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Ahora este color solo tiene una casilla libre. ¡Encuentra su gato!"
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Agora esta cor só tem um quadrado livre. Ache o gato dela!"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "이제 이 색에는 빈칸이 하나뿐이에요. 고양이를 찾아요!"
+          }
+        }
+      }
+    },
+    "Stuck? The cat button below shows where a cat is hiding. You get 6 Cat Finders and 6 hints; watch a short video for more.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Takıldın mı? Alttaki kedi düğmesi bir kedinin saklandığı yeri gösterir. 6 kedi bulucu ve 6 ipucu hakkın var; daha fazlası için kısa bir video izleyebilirsin."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "行き詰まったら?下の猫ボタンで猫のかくれ場所がわかります。猫さがし6回とヒント6回つき。短い動画を見るともっと使えます。"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Hängst du fest? Der Katzenknopf unten zeigt, wo sich eine Katze versteckt. Du hast 6 Katzenfinder und 6 Tipps; für mehr schau ein kurzes Video."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Bloqué ? Le bouton chat en bas montre où se cache un chat. Tu as 6 détecteurs et 6 indices ; regarde une courte vidéo pour en avoir plus."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "¿Atascado? El botón del gato de abajo muestra dónde se esconde un gato. Tienes 6 buscagatos y 6 pistas; mira un video corto para conseguir más."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Travou? O botão do gato lá embaixo mostra onde um gato está escondido. Você tem 6 localizadores e 6 dicas; assista a um vídeo curto para ganhar mais."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "막혔나요? 아래 고양이 버튼은 고양이가 숨은 곳을 알려 줘요. 고양이 찾기 6번, 힌트 6번이 있고, 짧은 영상을 보면 더 받을 수 있어요."
+          }
+        }
+      }
+    },
+    "Solve %lld levels of %lld×%lld to unlock.": {
+      "localizations": {
+        "tr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Açmak için %lld adet %lld×%lld bölüm çöz."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%2$lld×%3$lldのレベルを%1$lld個クリアすると解放。"
+          }
+        },
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Löse %lld Levels mit %lld×%lld zum Freischalten."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Résous %lld niveaux de %lld×%lld pour débloquer."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Resuelve %lld niveles de %lld×%lld para desbloquear."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Resolva %lld níveis de %lld×%lld para desbloquear."
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "%2$lld×%3$lld 레벨 %1$lld개를 풀면 열려요."
+          }
+        }
+      }
     }
   },
   "version": "1.0"

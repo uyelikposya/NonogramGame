@@ -98,15 +98,44 @@ final class CatPuzzleModel {
 
     var solvedCount: Int { results.count }
 
-    /// İlk çözülmemiş bölüm (hepsi bittiyse `nil`).
-    var nextLevel: CatLevel? {
-        levels.first { results[$0.id] == nil }
+    /// Bir boyutta bu kadar bölüm çözülünce bir sonraki boyut açılır (5x5'te 10 → 6x6).
+    static let unlockThreshold = 10
+
+    /// Tahta boyutları (küçükten büyüğe).
+    var sizes: [Int] { Array(Set(levels.map(\.size))).sorted() }
+
+    func levels(ofSize size: Int) -> [CatLevel] { levels.filter { $0.size == size } }
+
+    func solvedCount(ofSize size: Int) -> Int { levels(ofSize: size).filter { results[$0.id] != nil }.count }
+
+    /// En küçük boyut hep açık; diğerleri bir önceki boyutta 10 bölüm (ya da hepsi) çözülünce.
+    var unlockedSizes: Set<Int> {
+        var unlocked: Set<Int> = []
+        for size in sizes {
+            guard let previous = sizes.last(where: { $0 < size }) else {
+                unlocked.insert(size)
+                continue
+            }
+            let needed = min(Self.unlockThreshold, levels(ofSize: previous).count)
+            guard unlocked.contains(previous), solvedCount(ofSize: previous) >= needed else { break }
+            unlocked.insert(size)
+        }
+        return unlocked
     }
 
-    /// Bölümler sırayla açılır: çözülenler ve ilk çözülmemiş bölüm oynanabilir.
+    func isSizeUnlocked(_ size: Int) -> Bool {
+        unlockedSizes.contains(size)
+    }
+
+    /// Açık boyutların bölümleri istenen sırada oynanabilir.
     func isUnlocked(_ level: CatLevel) -> Bool {
-        if results[level.id] != nil { return true }
-        return level.id == nextLevel?.id
+        isSizeUnlocked(level.size)
+    }
+
+    /// Açık bölümler içinde sıradaki ilk çözülmemiş bölüm (hepsi bittiyse `nil`).
+    var nextLevel: CatLevel? {
+        let unlocked = unlockedSizes
+        return levels.first { results[$0.id] == nil && unlocked.contains($0.size) }
     }
 
     /// "Kaldığın yerden devam et": en son yarım bırakılan bölüm, yoksa sıradaki.

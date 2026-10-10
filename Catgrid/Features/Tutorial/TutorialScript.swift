@@ -81,6 +81,14 @@ struct TutorialScript {
     /// kapalı ki oyuncu gösterilen kareleri kendisi doldursun.
     var autoFills = true
 
+    /// Otomatik doldurma yalnızca son adımda: ders, gösterilen bütün adımlar bitmeden
+    /// kendiliğinden tamamlanmasın.
+    func autoFills(on board: Matrix<CellState>) -> Bool {
+        guard autoFills else { return false }
+        guard let index = steps.firstIndex(where: { !$0.isDone(on: board) }) else { return true }
+        return index == steps.count - 1
+    }
+
     /// Sıradaki (bitmemiş) adım; ders bitince `nil`.
     func currentStep(on board: Matrix<CellState>) -> TutorialStep? {
         steps.first { !$0.isDone(on: board) }

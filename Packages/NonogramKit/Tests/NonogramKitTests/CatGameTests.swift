@@ -32,11 +32,9 @@ final class CatGameTests: XCTestCase {
         XCTAssertEqual(find.region, 0)
         XCTAssertTrue(find.perfectlyMarked, "tek kareli renkte başka kare yok")
         XCTAssertEqual(game[position(0, 0)], .cat)
-        // Satır, sütun ve komşular X'lendi
-        XCTAssertEqual(game[position(0, 4)], .cross)
-        XCTAssertEqual(game[position(4, 0)], .cross)
-        XCTAssertEqual(game[position(1, 1)], .cross)
-        XCTAssertEqual(game[position(2, 2)], .blank)
+        // X'ler kendiliğinden gelmez; "?" ipucu kedinin etki alanını gösterir
+        XCTAssertEqual(game[position(0, 4)], .blank)
+        XCTAssertEqual(game.hint()?.kind, .placedCat)
         XCTAssertEqual(game.tap(at: position(0, 0)), .ignored, "kedi kilitli")
     }
 
@@ -117,5 +115,23 @@ final class CatGameTests: XCTestCase {
         let pack = try JSONDecoder().decode(CatLevelPack.self, from: Data(json.utf8))
         XCTAssertEqual(pack.levels.first?.regionMap, tutorial.regionMap)
         XCTAssertEqual(pack.number(of: tutorial), 1)
+    }
+
+    func testConflictNamesTheBrokenRule() {
+        var game = CatGame(level: tutorial)
+        game.placeCat(at: position(0, 0))
+        XCTAssertEqual(game.conflict(at: position(0, 3)), .line(CatGroup(axis: .row, index: 0)))
+        XCTAssertEqual(game.conflict(at: position(3, 0)), .line(CatGroup(axis: .column, index: 0)))
+        XCTAssertEqual(game.conflict(at: position(1, 1)), .touching(position(0, 0)))
+        XCTAssertNil(game.conflict(at: position(3, 3)))
+    }
+
+    func testGroupCompletes() {
+        var game = CatGame(level: tutorial)
+        let row = CatGroup(axis: .row, index: 0)
+        game.placeCat(at: position(0, 0))
+        XCTAssertFalse(game.isComplete(row))
+        for column in 1..<5 { game.paint(cross: true, at: position(0, column)) }
+        XCTAssertTrue(game.isComplete(row))
     }
 }

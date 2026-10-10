@@ -15,7 +15,7 @@ public enum CatMark: String, Codable, Sendable {
 public struct CatFind: Equatable, Sendable {
     public let position: GridPosition
     public let region: Int
-    /// Kedinin satırı, sütunu, rengi ve komşularına otomatik konan X'ler.
+    /// Otomatik konan X'ler (şimdilik hep boş: X'ler oyuncudan ya da ipucundan gelir).
     public let autoCrossed: [GridPosition]
     /// Kediden önce rengin diğer bütün kareleri zaten X'liydi ("Tam isabet!").
     public let perfectlyMarked: Bool
@@ -108,8 +108,7 @@ public struct CatGame: Sendable {
         return .ignored
     }
 
-    /// Kedi koyma. Doğruysa kedi kilitlenir ve satırı, sütunu, rengi ve komşuları X'lenir;
-    /// yanlışsa kare kırmızı X olur ve bir can gider.
+    /// Kedi koyma. Doğruysa kedi kilitlenir; yanlışsa kare kırmızı X olur ve bir can gider.
     @discardableResult
     public mutating func placeCat(at position: GridPosition, revealed: Bool = false) -> CatMove {
         guard status == .playing, contains(position) else { return .ignored }
@@ -130,13 +129,9 @@ public struct CatGame: Sendable {
         let perfectly = !revealed && level.regionMap.indices.allSatisfy {
             $0 == i || level.regionMap[$0] != region || marks[$0] == .cross || marks[$0] == .wrong
         }
+        // Kedi bulununca X'ler kendiliğinden konmaz: oyuncu koyar ya da "?" ipucu gösterir
         marks[i] = .cat
-        var crossed: [GridPosition] = []
-        for target in CatRules.attacked(by: i, in: level) where marks[target] == .blank {
-            marks[target] = .cross
-            crossed.append(GridPosition(row: target / size, column: target % size))
-        }
-        let find = CatFind(position: position, region: region, autoCrossed: crossed, perfectlyMarked: perfectly, revealed: revealed)
+        let find = CatFind(position: position, region: region, autoCrossed: [], perfectlyMarked: perfectly, revealed: revealed)
         if foundCount == size {
             status = .won
             return .solved(find)
@@ -175,6 +170,30 @@ public struct CatGame: Sendable {
         return changed ? .crossed : .ignored
     }
 
+    /// Yanlış kedinin hangi kuralı bozduğu (bulunan bir kediyle aynı satır/sütun/renkte ya da
+    /// komşu). Görünür bir çelişki yoksa `nil`: kare yalnızca çözümde kedi değil.
+    public func conflict(at position: GridPosition) -> CatConflict? {
+        for i in marks.indices where marks[i] == .cat {
+            let other = GridPosition(row: i / size, column: i % size)
+            if other.row == position.row { return .line(CatGroup(axis: .row, index: other.row)) }
+            if other.column == position.column { return .line(CatGroup(axis: .column, index: other.column)) }
+        }
+        for i in marks.indices where marks[i] == .cat {
+            if level.regionMap[i] == level.region(at: position) { return .color(level.regionMap[i]) }
+        }
+        for i in marks.indices where marks[i] == .cat {
+            let other = GridPosition(row: i / size, column: i % size)
+            if abs(other.row - position.row) <= 1 && abs(other.column - position.column) <= 1 { return .touching(other) }
+        }
+        return nil
+    }
+
+    /// Satırı/sütunu/rengi bitmiş mi: kedisi bulunmuş ve diğer bütün kareleri X'li.
+    public func isComplete(_ group: CatGroup) -> Bool {
+        let cells = CatRules.cells(of: group, in: level)
+        return cells.contains { marks[$0] == .cat } && cells.allSatisfy { marks[$0] != .blank }
+    }
+
     /// Kaybedince ödüllü reklamla: bir can geri gelir.
     public mutating func revive() {
         guard status == .lost else { return }
@@ -210,6 +229,16 @@ public struct CatGame: Sendable {
     private func index(_ position: GridPosition) -> Int {
         position.row * size + position.column
     }
+}
+
+/// Yanlış kedinin bozduğu kural.
+public enum CatConflict: Equatable, Sendable {
+    /// Aynı satır ya da sütunda başka kedi var.
+    case line(CatGroup)
+    /// Aynı renkte başka kedi var.
+    case color(Int)
+    /// Bir kediye değiyor.
+    case touching(GridPosition)
 }
 
 /// Yarım kalan Kedi Bulmaca oyunu.

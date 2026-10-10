@@ -12,7 +12,8 @@ struct CatLevelsView: View {
 
     var body: some View {
         let cats = model.cats
-        let sizes = Array(Set(cats.levels.map(\.size))).sorted()
+        let sizes = cats.sizes
+        let unlocked = cats.unlockedSizes
         ScrollViewReader { proxy in
             ScrollView {
                 LazyVStack(alignment: .leading, spacing: 18) {
@@ -20,12 +21,21 @@ struct CatLevelsView: View {
                         let levels = cats.levels.filter { $0.size == size }
                         VStack(alignment: .leading, spacing: 10) {
                             HStack {
+                                if !unlocked.contains(size) {
+                                    Image(systemName: "lock.fill")
+                                        .foregroundStyle(theme.textSecondary)
+                                }
                                 Text(verbatim: "\(size)×\(size)")
                                     .font(.title3.bold())
                                     .foregroundStyle(theme.textPrimary)
                                 Spacer()
                                 Text(verbatim: "\(levels.filter { cats.isSolved($0) }.count)/\(levels.count)")
                                     .font(.subheadline.monospacedDigit())
+                                    .foregroundStyle(theme.textSecondary)
+                            }
+                            if !unlocked.contains(size), let previous = sizes.last(where: { $0 < size }) {
+                                Text("Solve \(CatPuzzleModel.unlockThreshold) levels of \(previous)×\(previous) to unlock.")
+                                    .font(.footnote)
                                     .foregroundStyle(theme.textSecondary)
                             }
                             LazyVGrid(columns: columns, spacing: 10) {

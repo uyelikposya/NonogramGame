@@ -255,7 +255,7 @@ struct GameView: View {
                 Haptics.play(event)
             }
             viewModel.autoCrosses = !isHardMode || isEasyLocked
-            viewModel.autoFills = tutorialScript?.autoFills ?? true
+            viewModel.autoFills = tutorialAutoFills
             viewModel.start()
         }
         .onChange(of: isHardMode) { _, hard in
@@ -292,6 +292,9 @@ struct GameView: View {
         }
         .onChange(of: game.status) { _, status in
             if case .lost = status { persistProgress() }
+        }
+        .onChange(of: tutorialAutoFills) { _, fills in
+            viewModel.autoFills = fills
         }
         .onChange(of: viewModel.cursor) { _, _ in
             if usesCursor { Haptics.selection() }
@@ -372,6 +375,11 @@ struct GameView: View {
     /// İlk derslerin adım adım senaryosu (sonraki derslerde `nil`).
     private var tutorialScript: TutorialScript? {
         viewModel.puzzle.lesson.flatMap { TutorialScript.script(for: $0, puzzle: viewModel.puzzle) }
+    }
+
+    /// Eğitimde otomatik doldurma yalnızca son adımda açılır.
+    private var tutorialAutoFills: Bool {
+        tutorialScript?.autoFills(on: game.board) ?? true
     }
 
     /// Sıradaki eğitim adımı; oyun bitince ya da duraklatınca gizlenir.

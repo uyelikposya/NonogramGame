@@ -1819,6 +1819,38 @@
   "Solve a level in under a minute.": {
    "en": "Solve a level in under a minute.",
    "tr": "Bir bölümü bir dakikadan kısa sürede çöz."
+  },
+  "Clear!": {
+   "en": "Clear!",
+   "tr": "Tamam!"
+  },
+  "The cats didn't even have time to hide!": {
+   "en": "The cats didn't even have time to hide!",
+   "tr": "Kediler saklanmaya zaman bile bulamadı!"
+  },
+  "Every cat is found. Nothing gets past you!": {
+   "en": "Every cat is found. Nothing gets past you!",
+   "tr": "Bütün kediler bulundu. Senden hiçbir şey kaçmıyor!"
+  },
+  "Hide and seek is over. You win!": {
+   "en": "Hide and seek is over. You win!",
+   "tr": "Saklambaç bitti. Sen kazandın!"
+  },
+  "You found a cat! No other cat can be in its row, column or color, or right next to it. Tap ? below and then Apply: I'll cross those squares out for you.": {
+   "en": "You found a cat! No other cat can be in its row, column or color, or right next to it. Tap ? below and then Apply: I'll cross those squares out for you.",
+   "tr": "Bir kedi buldun! Onun satırında, sütununda, renginde ve hemen yanında başka kedi olamaz. Alttaki ?'ye dokun, sonra Uygula'ya bas: o kareleri senin için X'leyeyim."
+  },
+  "Now this color has only one free square left. Find its cat!": {
+   "en": "Now this color has only one free square left. Find its cat!",
+   "tr": "Şimdi bu renkte tek bir boş kare kaldı. Kedisini bul!"
+  },
+  "Stuck? The cat button below shows where a cat is hiding. You get 6 Cat Finders and 6 hints; watch a short video for more.": {
+   "en": "Stuck? The cat button below shows where a cat is hiding. You get 6 Cat Finders and 6 hints; watch a short video for more.",
+   "tr": "Takıldın mı? Alttaki kedi düğmesi bir kedinin saklandığı yeri gösterir. 6 kedi bulucu ve 6 ipucu hakkın var; daha fazlası için kısa bir video izleyebilirsin."
+  },
+  "Solve %lld levels of %lld×%lld to unlock.": {
+   "en": "Solve %lld levels of %lld×%lld to unlock.",
+   "tr": "Açmak için %lld adet %lld×%lld bölüm çöz."
   }
  },
  "infoplist": {
