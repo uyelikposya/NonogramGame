@@ -22,11 +22,14 @@ final class ScreenshotTests: XCTestCase {
         app.launchArguments += ["-AppleLanguages", "(\(language))", "-AppleLocale", locale, "-screenshots", "-disableAds"]
         app.launch()
 
-        // 1. Ana sayfa: logo, devam kartı, koleksiyon rafı
-        let start = app.buttons["home.continue"]
-        XCTAssertTrue(start.waitForExistence(timeout: 20))
+        // 1. Ana sayfa: günlük bulmaca, modlar, koleksiyon rafı
+        let mode = app.buttons["home.mode.collection"]
+        XCTAssertTrue(mode.waitForExistence(timeout: 20))
         settle()
         capture("01_home")
+        mode.tap()
+        let start = app.buttons["hub.continue"]
+        XCTAssertTrue(start.waitForExistence(timeout: 20))
 
         // 2. Oyun: yarısı çözülmüş zor bölüm, yardımcı kedi
         // İlk açılışta soğuk simülatör yavaş olabilir: bekle, dokunuş kaçtıysa bir kez daha dokun
@@ -41,7 +44,7 @@ final class ScreenshotTests: XCTestCase {
         goBack(app)
 
         // 3. Bir türün bölümleri: çözülen bulmacaların resimleri
-        let levels = app.buttons["home.levels"]
+        let levels = app.buttons["hub.levels"]
         XCTAssertTrue(levels.waitForExistence(timeout: 20))
         levels.tap()
         let chapter = app.buttons["chapter.siamese"]
@@ -49,6 +52,7 @@ final class ScreenshotTests: XCTestCase {
         chapter.tap()
         settle()
         capture("03_chapter")
+        goBack(app)
         goBack(app)
         goBack(app)
 

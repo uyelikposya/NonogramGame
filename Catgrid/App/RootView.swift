@@ -20,14 +20,19 @@ struct RootView: View {
             HomeView()
                 .navigationDestination(for: Route.self) { route in
                     switch route {
+                    case .collectionHub: CollectionHubView()
                     case .chapters: ChaptersView()
                     case .chapter(let id): ChapterView(chapterID: id)
                     case .game(let puzzleID): GameScreen(puzzleID: puzzleID)
-                    case .daily: DailyScreen()
+                    case .daily: DailyHubView()
                     case .settings: SettingsView()
                     case .stats: StatsView()
-                    case .badges: BadgesView()
+                    case .badges(let mode): BadgesView(mode: mode)
                     case .collection: CollectionView()
+                    case .catHub: CatHubView()
+                    case .catLevels: CatLevelsView()
+                    case .catGame(let levelID): CatGameScreen(levelID: levelID)
+                    case .catStats: CatStatsView()
                     }
                 }
         }

@@ -2,26 +2,6 @@ import NonogramKit
 import StoreKit
 import SwiftUI
 
-/// Günlük bulmaca: o günün bulmacası, kendi kaydıyla.
-@MainActor
-struct DailyScreen: View {
-    @Environment(AppModel.self) private var model
-
-    var body: some View {
-        if let puzzle = model.todaysPuzzle {
-            GameView(
-                puzzle: puzzle,
-                rules: model.rules(for: puzzle),
-                savedGame: model.progress.savedGame(for: puzzle.id)
-            )
-            .id(puzzle.id)
-        } else {
-            ContentUnavailableView("Puzzle not found", systemImage: "questionmark.circle")
-                .themedScreen()
-        }
-    }
-}
-
 /// Rota hedefi: kimliğe göre bulmacayı bulur. `.id` sayesinde "Sonraki Bulmaca"da
 /// ViewModel sıfırdan oluşur.
 @MainActor
@@ -41,10 +21,14 @@ struct GameScreen: View {
                 description: Text("Golden puzzles are part of Catgrid Premium.")
             )
             .themedScreen()
-        } else if let puzzle = model.catalog.puzzle(withID: puzzleID) {
+        } else if let day = DayKey(puzzleID: puzzleID), !model.isDailyPlayable(day) {
+            // Günlük bulmacada en fazla 10 gün geriye gidilebilir
+            ContentUnavailableView("Puzzle not found", systemImage: "calendar.badge.exclamationmark")
+                .themedScreen()
+        } else if let puzzle = model.puzzle(withID: puzzleID) {
             GameView(
                 puzzle: puzzle,
-                rules: model.catalog.rules(for: puzzle),
+                rules: model.rules(for: puzzle),
                 savedGame: model.progress.savedGame(for: puzzle.id)
             )
             .id(puzzle.id)
@@ -553,7 +537,7 @@ struct GameView: View {
                     Text("A new puzzle is waiting tomorrow.")
                         .font(.subheadline)
                         .foregroundStyle(theme.textSecondary)
-                    Button("Home") { router.popToRoot() }
+                    Button("Daily Puzzles") { router.pop() }
                         .buttonStyle(PrimaryButtonStyle())
                 } else {
                     let next = model.nextPuzzle(after: viewModel.puzzle)
@@ -612,7 +596,7 @@ struct GameView: View {
                         .buttonStyle(PrimaryButtonStyle())
                 }
                 if isDaily {
-                    Button("Home") { router.popToRoot() }
+                    Button("Daily Puzzles") { router.pop() }
                         .buttonStyle(SecondaryButtonStyle())
                 } else {
                     Button("Back to Levels") { router.pop() }

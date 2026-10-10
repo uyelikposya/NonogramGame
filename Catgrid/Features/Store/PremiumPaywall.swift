@@ -50,6 +50,7 @@ struct PremiumPaywall: View {
                     benefit("No ads between puzzles", icon: "nosign")
                     benefit("9 golden puzzles for every breed", icon: "crown.fill")
                     benefit("Collect shiny Golden Cards", icon: "rectangle.stack.fill")
+                    benefit("Cat Puzzle: 6 Cat Finders and 6 hints every day", icon: "cat.fill")
                     benefit("Support new cat breeds and puzzles", icon: "heart.fill")
                 }
                 .padding(.horizontal, 8)

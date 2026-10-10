@@ -1,14 +1,22 @@
 import SwiftUI
 
 enum Route: Hashable {
+    /// Kedi Kart Koleksiyonu (resimli bulmacalar) modunun giriş ekranı.
+    case collectionHub
     case chapters
     case chapter(id: String)
     case game(puzzleID: String)
+    /// Günlük bulmaca: bugün ve önceki 10 gün.
     case daily
     case settings
     case stats
-    case badges
+    case badges(BadgeMode)
     case collection
+    /// Kedi Bulmaca modu.
+    case catHub
+    case catLevels
+    case catGame(levelID: String)
+    case catStats
 }
 
 /// Uygulama içi gezinme yığını. Ekranlar doğrudan `NavigationLink` yerine bunu kullanır

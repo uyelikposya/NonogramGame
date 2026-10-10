@@ -12,35 +12,58 @@ struct HomeView: View {
     @State private var isOfferingReminder = false
 
     var body: some View {
-        // Tek ekrana sığacak kadar sıkı; çok küçük ekranlarda (iPhone SE) yine kaydırılabilir
+        // Üstte günlük bulmaca, altında iki mod; altında kart koleksiyonu, en altta ayarlar
         ScrollView {
-            VStack(spacing: 18) {
+            VStack(spacing: 16) {
                 header
                 if !store.isPremium {
                     PremiumBanner { isShowingPaywall = true }
                 }
-                continueCard
                 if model.todaysPuzzle != nil {
-                    DailyCard()
+                    DailyBanner()
                 }
+                ModeBanner(
+                    title: BadgeMode.collection.title,
+                    subtitle: Text("Solve picture puzzles, collect cat cards"),
+                    detail: Text("\(model.collectedBreeds.count)/\(model.breeds.count) breeds"),
+                    progress: model.breeds.isEmpty ? 0 : Double(model.collectedBreeds.count) / Double(model.breeds.count),
+                    colors: [Color(red: 0.98, green: 0.62, blue: 0.45), Color(red: 0.86, green: 0.36, blue: 0.48)]
+                ) {
+                    if let chapter = model.collectedBreeds.last ?? model.breeds.first {
+                        ChapterBadge(chapter: chapter, size: 72)
+                    }
+                } action: {
+                    router.push(.collectionHub)
+                }
+                .accessibilityIdentifier("home.mode.collection")
+
+                ModeBanner(
+                    title: BadgeMode.cats.title,
+                    subtitle: Text("One cat per color, row and column"),
+                    detail: Text("Level \(min(model.cats.solvedCount + 1, max(model.cats.levels.count, 1)))"),
+                    progress: model.cats.levels.isEmpty ? 0 : Double(model.cats.solvedCount) / Double(model.cats.levels.count),
+                    colors: [Color(red: 0.36, green: 0.72, blue: 0.70), Color(red: 0.45, green: 0.38, blue: 0.80)]
+                ) {
+                    CatGridArt()
+                        .frame(width: 72, height: 72)
+                } action: {
+                    router.push(.catHub)
+                }
+                .accessibilityIdentifier("home.mode.cats")
+
                 CollectionShelf()
-                HStack(spacing: 12) {
-                    Button {
-                        router.push(.chapters)
-                    } label: {
-                        Label("All Levels", systemImage: "square.grid.2x2")
-                    }
-                    .accessibilityIdentifier("home.levels")
-                    Button {
-                        router.push(.stats)
-                    } label: {
-                        Label("Statistics", systemImage: "chart.bar.fill")
-                    }
+                    .padding(.top, 4)
+
+                Button {
+                    router.push(.settings)
+                } label: {
+                    Label("Settings", systemImage: "gearshape.fill")
                 }
                 .buttonStyle(SecondaryButtonStyle())
+                .accessibilityIdentifier("home.settings")
             }
             .padding(.horizontal, 20)
-            .padding(.bottom, 12)
+            .padding(.bottom, 16)
         }
         .scrollBounceBehavior(.basedOnSize)
         .themedScreen()
@@ -60,17 +83,6 @@ struct HomeView: View {
             Button("Not Now", role: .cancel) { reminders.markAsked() }
         } message: {
             Text("We'll send one gentle reminder a day, only on days you haven't played. You can change this in Settings.")
-        }
-        .toolbar {
-            ToolbarItem(placement: .topBarTrailing) {
-                Button {
-                    router.push(.settings)
-                } label: {
-                    Image(systemName: "gearshape")
-                        .foregroundStyle(theme.textPrimary)
-                }
-                .accessibilityLabel(Text("Settings"))
-            }
         }
     }
 
@@ -107,62 +119,13 @@ struct HomeView: View {
         }
     }
 
-    @ViewBuilder
-    private var continueCard: some View {
-        if let puzzle = model.resumablePuzzle,
-           let chapter = model.catalog.chapter(containing: puzzle.id) {
-            VStack(alignment: .leading, spacing: 14) {
-                HStack(spacing: 14) {
-                    ChapterBadge(chapter: chapter, size: 48)
-                    VStack(alignment: .leading, spacing: 4) {
-                        Text(verbatim: chapter.title.resolved)
-                            .font(.headline)
-                            .foregroundStyle(theme.textPrimary)
-                        Text("Puzzle \(model.number(of: puzzle)) · \(puzzle.columns)×\(puzzle.rows)")
-                            .font(.subheadline)
-                            .foregroundStyle(theme.textSecondary)
-                    }
-                    Spacer()
-                }
-                Button {
-                    router.push(.game(puzzleID: puzzle.id))
-                } label: {
-                    let isResuming = model.progress.hasSavedGame(for: puzzle.id)
-                    let title: LocalizedStringKey = isResuming
-                        ? "Resume"
-                        : (model.completedCount == 0 ? "Start Playing" : "Continue")
-                    Label(title, systemImage: isResuming ? "arrow.clockwise" : "play.fill")
-                }
-                .buttonStyle(PrimaryButtonStyle())
-                .accessibilityIdentifier("home.continue")
-            }
-            .padding(16)
-            .card()
-        } else {
-            VStack(spacing: 8) {
-                Image(systemName: "trophy.fill")
-                    .font(.largeTitle)
-                    .foregroundStyle(theme.success)
-                Text("You solved every puzzle!")
-                    .font(.headline)
-                    .foregroundStyle(theme.textPrimary)
-                Text("New breeds are on their way.")
-                    .font(.subheadline)
-                    .foregroundStyle(theme.textSecondary)
-            }
-            .frame(maxWidth: .infinity)
-            .padding(24)
-            .card()
-        }
-    }
 }
 
-/// Ana ekranda günün bulmacası ve seri.
+/// Ana ekranın en üstündeki günlük bulmaca kartı: bugünün durumu ve seri.
 @MainActor
-struct DailyCard: View {
+struct DailyBanner: View {
     @Environment(AppModel.self) private var model
     @Environment(Router.self) private var router
-    @Environment(\.appTheme) private var theme
 
     var body: some View {
         let isSolved = model.isTodaysPuzzleSolved
@@ -172,16 +135,20 @@ struct DailyCard: View {
         } label: {
             HStack(spacing: 14) {
                 ZStack {
-                    Circle().fill(theme.accent.opacity(0.18).gradient)
-                    Image(systemName: isSolved ? "checkmark.seal.fill" : "calendar")
-                        .font(.title2)
-                        .foregroundStyle(isSolved ? theme.success : theme.accent)
+                    RoundedRectangle(cornerRadius: 14, style: .continuous)
+                        .fill(.white.opacity(0.22))
+                    VStack(spacing: 0) {
+                        Text(Date(), format: .dateTime.month(.abbreviated))
+                            .font(.caption2.weight(.bold))
+                            .textCase(.uppercase)
+                        Text(Date(), format: .dateTime.day())
+                            .font(.title2.bold().monospacedDigit())
+                    }
                 }
-                .frame(width: 48, height: 48)
-                VStack(alignment: .leading, spacing: 4) {
+                .frame(width: 56, height: 56)
+                VStack(alignment: .leading, spacing: 3) {
                     Text("Daily Puzzle")
-                        .font(.headline)
-                        .foregroundStyle(theme.textPrimary)
+                        .font(.title3.bold())
                     Group {
                         if isSolved {
                             Text("Solved! A new one tomorrow.")
@@ -189,8 +156,8 @@ struct DailyCard: View {
                             Text("Expert · \(puzzle.columns)×\(puzzle.rows)")
                         }
                     }
-                    .font(.subheadline)
-                    .foregroundStyle(theme.textSecondary)
+                    .font(.subheadline.weight(.medium))
+                    .opacity(0.9)
                 }
                 Spacer(minLength: 4)
                 if streak > 0 {
@@ -200,19 +167,76 @@ struct DailyCard: View {
                         Image(systemName: "flame.fill")
                     }
                     .font(.headline.monospacedDigit())
-                    .foregroundStyle(theme.accent)
+                    .padding(.horizontal, 10)
+                    .padding(.vertical, 6)
+                    .background(Capsule().fill(.white.opacity(0.22)))
                     .accessibilityElement()
                     .accessibilityLabel(Text("\(streak)-day streak"))
                 }
-                Image(systemName: "chevron.right")
-                    .font(.footnote.weight(.bold))
-                    .foregroundStyle(theme.textSecondary)
+                Image(systemName: isSolved ? "checkmark.circle.fill" : "chevron.right")
+                    .font(isSolved ? .title3 : .footnote.weight(.bold))
             }
+            .foregroundStyle(.white)
             .padding(16)
-            .card()
+            .background(
+                RoundedRectangle(cornerRadius: 24, style: .continuous)
+                    .fill(LinearGradient(colors: [Color(red: 0.42, green: 0.55, blue: 0.95), Color(red: 0.55, green: 0.35, blue: 0.85)], startPoint: .topLeading, endPoint: .bottomTrailing))
+            )
+            .shadow(color: Color(red: 0.45, green: 0.4, blue: 0.9).opacity(0.3), radius: 10, y: 5)
         }
         .buttonStyle(PressableButtonStyle())
         .accessibilityIdentifier("home.daily")
+    }
+}
+
+/// Mod kartı: renkli zemin, başlık, kısa açıklama, ilerleme ve küçük bir resim.
+@MainActor
+struct ModeBanner<Art: View>: View {
+    let title: LocalizedStringResource
+    let subtitle: Text
+    let detail: Text
+    let progress: Double
+    let colors: [Color]
+    @ViewBuilder let art: () -> Art
+    let action: () -> Void
+
+    var body: some View {
+        Button(action: action) {
+            HStack(spacing: 14) {
+                VStack(alignment: .leading, spacing: 6) {
+                    Text(title)
+                        .font(.title3.bold())
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.8)
+                    subtitle
+                        .font(.subheadline)
+                        .opacity(0.9)
+                        .fixedSize(horizontal: false, vertical: true)
+                    HStack(spacing: 8) {
+                        ProgressView(value: min(max(progress, 0), 1))
+                            .tint(.white)
+                            .background(Capsule().fill(.white.opacity(0.25)))
+                        detail
+                            .font(.caption.weight(.bold).monospacedDigit())
+                    }
+                    .padding(.top, 2)
+                }
+                Spacer(minLength: 0)
+                art()
+                Image(systemName: "chevron.right")
+                    .font(.footnote.weight(.bold))
+                    .opacity(0.8)
+            }
+            .foregroundStyle(.white)
+            .padding(18)
+            .frame(maxWidth: .infinity, minHeight: 120, alignment: .leading)
+            .background(
+                RoundedRectangle(cornerRadius: 24, style: .continuous)
+                    .fill(LinearGradient(colors: colors, startPoint: .topLeading, endPoint: .bottomTrailing))
+            )
+            .shadow(color: colors.last?.opacity(0.3) ?? .clear, radius: 10, y: 5)
+        }
+        .buttonStyle(PressableButtonStyle())
     }
 }
 

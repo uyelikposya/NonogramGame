@@ -5,18 +5,29 @@ import SwiftUI
 struct BadgesView: View {
     @Environment(AppModel.self) private var model
     @Environment(\.appTheme) private var theme
+    let mode: BadgeMode
 
     private let columns = [GridItem(.flexible(), spacing: 12), GridItem(.flexible(), spacing: 12)]
 
     var body: some View {
         let badges = model.badges
+        let list = Badge.all(in: mode)
+        // Kazanılanlar önce (kazanma sırasıyla), sonra kalanlar
+        let earned = list.filter { badges.earned[$0] != nil }
+        let locked = list.filter { badges.earned[$0] == nil }
         ScrollView {
             VStack(alignment: .leading, spacing: 16) {
-                Text(verbatim: "\(badges.earned.count)/\(Badge.allCases.count)")
-                    .font(.title2.bold().monospacedDigit())
-                    .foregroundStyle(theme.textPrimary)
+                VStack(alignment: .leading, spacing: 6) {
+                    Text(mode.title)
+                        .font(.headline)
+                        .foregroundStyle(theme.textSecondary)
+                    Text(verbatim: "\(earned.count)/\(list.count)")
+                        .font(.title.bold().monospacedDigit())
+                        .foregroundStyle(theme.textPrimary)
+                    ProgressBar(value: list.isEmpty ? 0 : Double(earned.count) / Double(list.count), tint: Gold.deep)
+                }
                 LazyVGrid(columns: columns, spacing: 12) {
-                    ForEach(Badge.allCases) { badge in
+                    ForEach(earned + locked) { badge in
                         BadgeTile(badge: badge, earnedAt: badges.earned[badge])
                     }
                 }
@@ -24,7 +35,7 @@ struct BadgesView: View {
             .padding(20)
         }
         .themedScreen()
-        .screenTitle("Badges")
+        .screenTitle("My Badges")
     }
 }
 

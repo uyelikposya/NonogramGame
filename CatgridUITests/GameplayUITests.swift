@@ -13,8 +13,11 @@ final class GameplayUITests: XCTestCase {
         app.launchArguments += ["-AppleLanguages", "(en)", "-AppleLocale", "en_US", "-disableAds"]
         app.launch()
 
-        let start = app.buttons["home.continue"]
-        XCTAssertTrue(start.waitForExistence(timeout: 15), "Ana ekrandaki oyna düğmesi görünmedi")
+        let mode = app.buttons["home.mode.collection"]
+        XCTAssertTrue(mode.waitForExistence(timeout: 15), "Ana ekrandaki mod kartı görünmedi")
+        mode.tap()
+        let start = app.buttons["hub.continue"]
+        XCTAssertTrue(start.waitForExistence(timeout: 15), "Devam düğmesi görünmedi")
         start.tap()
 
         let board = app.descendants(matching: .any)["game.board"]
@@ -40,7 +43,10 @@ final class GameplayUITests: XCTestCase {
         app.launchArguments += ["-AppleLanguages", "(en)", "-AppleLocale", "en_US", "-disableAds"]
         app.launch()
 
-        let start = app.buttons["home.continue"]
+        let mode = app.buttons["home.mode.collection"]
+        XCTAssertTrue(mode.waitForExistence(timeout: 15))
+        mode.tap()
+        let start = app.buttons["hub.continue"]
         XCTAssertTrue(start.waitForExistence(timeout: 15))
         start.tap()
 
@@ -70,6 +76,36 @@ final class GameplayUITests: XCTestCase {
         cell(1, 2).tap()        // sönme animasyonu sırasında
         Thread.sleep(forTimeInterval: 1.0)
         cell(1, 3).tap()        // animasyon bittikten sonra
+
+        XCTAssertEqual(app.state, .runningForeground, "Uygulama çöktü")
+        XCTAssertTrue(board.exists)
+    }
+
+    /// Kedi Bulmaca: ilk bölüme dokunma ve sürükleme çökmeden çalışmalı.
+    func testCatPuzzleTapAndDrag() {
+        let app = XCUIApplication()
+        app.launchArguments += ["-AppleLanguages", "(en)", "-AppleLocale", "en_US", "-disableAds"]
+        app.launch()
+
+        let mode = app.buttons["home.mode.cats"]
+        XCTAssertTrue(mode.waitForExistence(timeout: 15))
+        mode.tap()
+        let start = app.buttons["hub.continue"]
+        XCTAssertTrue(start.waitForExistence(timeout: 15))
+        start.tap()
+
+        let board = app.descendants(matching: .any)["cat.board"]
+        XCTAssertTrue(board.waitForExistence(timeout: 10), "Tahta görünmedi")
+        func cell(_ row: Int, _ column: Int) -> XCUICoordinate {
+            board.coordinate(withNormalizedOffset: CGVector(dx: (Double(column) + 0.5) / 5, dy: (Double(row) + 0.5) / 5))
+        }
+        // Eğitim bölümü: sol üst tek kareli renk; iki dokunuş = kedi
+        cell(0, 0).tap()
+        cell(0, 0).tap()
+        cell(3, 3).tap()
+        cell(4, 0).press(forDuration: 0.1, thenDragTo: cell(4, 4))
+        let hint = app.buttons["cat.hint"]
+        if hint.exists { hint.tap() }
 
         XCTAssertEqual(app.state, .runningForeground, "Uygulama çöktü")
         XCTAssertTrue(board.exists)

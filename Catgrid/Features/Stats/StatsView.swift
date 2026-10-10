@@ -14,30 +14,6 @@ struct StatsView: View {
         let stats = model.progress.stats
         ScrollView {
             VStack(alignment: .leading, spacing: 24) {
-                Button {
-                    router.push(.badges)
-                } label: {
-                    HStack(spacing: 12) {
-                        Image(systemName: "medal.fill")
-                            .font(.title2)
-                            .foregroundStyle(Gold.deep)
-                        Text("Badges")
-                            .font(.headline)
-                            .foregroundStyle(theme.textPrimary)
-                        Spacer()
-                        Text(verbatim: "\(model.badges.earned.count)/\(Badge.allCases.count)")
-                            .font(.headline.monospacedDigit())
-                            .foregroundStyle(theme.textSecondary)
-                        Image(systemName: "chevron.right")
-                            .font(.footnote.weight(.bold))
-                            .foregroundStyle(theme.textSecondary)
-                    }
-                    .padding(16)
-                    .card(cornerRadius: 20)
-                }
-                .buttonStyle(PressableButtonStyle())
-                .accessibilityIdentifier("stats.badges")
-
                 LazyVGrid(columns: columns, spacing: 12) {
                     StatTile(icon: "checkmark.seal.fill", title: "Solved", value: Text(verbatim: "\(stats.solvedCount)"))
                     StatTile(icon: "cat.fill", title: "Breeds Collected", value: Text(verbatim: "\(model.collectedBreeds.count)"))

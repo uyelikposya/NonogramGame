@@ -18,6 +18,13 @@ enum SoundEffect: String, CaseIterable {
     case combo
     /// Dopamin modu: bulmaca çözülünce fanfar.
     case fanfare
+    // Kedi Bulmaca
+    case catX = "cat_x"
+    case catFound = "cat_found"
+    case catWrong = "cat_wrong"
+    case catHint = "cat_hint"
+    case catCombo = "cat_combo"
+    case catWin = "cat_win"
 }
 
 /// Arka plan müziği ve ses efektleri. Ayarlar (aç/kapa, seviye) kalıcıdır.

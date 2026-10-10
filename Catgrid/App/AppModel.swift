@@ -10,6 +10,8 @@ final class AppModel {
     /// Günlük bulmaca havuzu (kedi dışı desenler).
     let daily: DailyPuzzles
     let badges: BadgeStore
+    /// Kedi Bulmaca modu.
+    let cats: CatPuzzleModel
     /// Testlerde "bugün" sabitlenebilsin diye.
     private let now: () -> Date
 
@@ -18,6 +20,7 @@ final class AppModel {
         progress: ProgressStore,
         daily: DailyPuzzles = .empty,
         badges: BadgeStore? = nil,
+        cats: CatPuzzleModel? = nil,
         now: @escaping () -> Date = { Date() }
     ) {
         self.catalog = catalog
@@ -25,6 +28,7 @@ final class AppModel {
         self.daily = daily
         // Varsayılan bağımsız değişken ana aktörde çalışmadığı için kayıt burada oluşturulur
         self.badges = badges ?? .inMemory()
+        self.cats = cats ?? .inMemory()
         self.now = now
         // 1.0'dan gelen oyuncunun hak ettiği rozetler sessizce verilir
         self.badges.update(with: badgeProgress)
@@ -34,12 +38,16 @@ final class AppModel {
         do {
             #if DEBUG
             if DemoContent.isEnabled {
-                let model = AppModel(catalog: try CatalogLoader.load(from: .main), progress: .inMemory(), daily: loadDaily(), badges: .inMemory())
+                let catalog = try CatalogLoader.load(from: .main)
+                let cats = CatPuzzleModel.inMemory(pack: CatPuzzleModel.loadPack(), breeds: catalog.chapters.filter { $0.kind == .breed })
+                let model = AppModel(catalog: catalog, progress: .inMemory(), daily: loadDaily(), badges: .inMemory(), cats: cats)
                 DemoContent.seed(model)
                 return model
             }
             #endif
-            return AppModel(catalog: try CatalogLoader.load(from: .main), progress: ProgressStore.live(), daily: loadDaily(), badges: BadgeStore(defaults: .standard))
+            let catalog = try CatalogLoader.load(from: .main)
+            let cats = CatPuzzleModel(pack: CatPuzzleModel.loadPack(), breeds: catalog.chapters.filter { $0.kind == .breed }, defaults: .standard)
+            return AppModel(catalog: catalog, progress: ProgressStore.live(), daily: loadDaily(), badges: BadgeStore(defaults: .standard), cats: cats)
         } catch {
             // Paketlenmiş içerik hatalıysa: testler (ContentValidationTests) bunu yayından önce yakalar
             fatalError("Bölüm içeriği yüklenemedi: \(error)")
@@ -72,7 +80,28 @@ final class AppModel {
     var todaysPuzzle: Puzzle? { daily.puzzle(for: today) }
 
     var isTodaysPuzzleSolved: Bool {
-        progress.record(for: today.puzzleID)?.isCompleted ?? false
+        isDailySolved(today)
+    }
+
+    func isDailySolved(_ day: DayKey) -> Bool {
+        progress.record(for: day.puzzleID)?.isCompleted ?? false
+    }
+
+    /// Günlük bulmacada geriye gidilebilecek gün sayısı.
+    static let dailyHistoryDays = 10
+
+    /// Bugün ve önceki 10 gün (en yeni başta).
+    var recentDays: [DayKey] {
+        let calendar = Calendar.current
+        let date = now()
+        return (0...Self.dailyHistoryDays).compactMap { offset in
+            calendar.date(byAdding: .day, value: -offset, to: date).map { DayKey($0, calendar: calendar) }
+        }
+    }
+
+    /// Geçmiş gün bulmacası oynanabilir mi (en fazla 10 gün geriye).
+    func isDailyPlayable(_ day: DayKey) -> Bool {
+        recentDays.contains(day)
     }
 
     /// Kesintisiz günlük bulmaca serisi.
@@ -97,6 +126,12 @@ final class AppModel {
         UserDefaults.standard.set(true, forKey: Self.tutorialSkippedKey)
     }
 
+    /// Mod dışı bir olaydan (Kedi Bulmaca) sonra yeni kazanılan rozetler.
+    @discardableResult
+    func refreshBadges() -> [Badge] {
+        badges.update(with: badgeProgress)
+    }
+
     @discardableResult
     func record(_ completion: PuzzleCompletion) -> CompletionResult {
         let stars = puzzle(withID: completion.puzzleID).map {
@@ -113,18 +148,49 @@ final class AppModel {
     var badgeProgress: BadgeProgress {
         let completed = progress.completedIDs
         let tutorial = catalog.chapters.first { $0.kind == .tutorial }
-        let solvedStars = catalog.chapters.flatMap { $0.puzzles + $0.premiumPuzzles }.compactMap { stars(for: $0) }
+        let catalogPuzzles = catalog.chapters.flatMap { $0.puzzles + $0.premiumPuzzles }
+        let solvedStars = catalogPuzzles.compactMap { stars(for: $0) }
+        let dailyRecords = progress.records.values.filter { DailyPuzzles.isDaily($0.puzzleID) && $0.isCompleted }
+        let dailyDays = Set(dailyRecords.compactMap { DayKey(puzzleID: $0.puzzleID) })
+        let calendar = Calendar(identifier: .gregorian)
+        let hasWeekend = dailyDays.contains { day in
+            calendar.component(.weekday, from: day.date) == 7
+                && dailyDays.contains { $0.dayNumber == day.dayNumber + 1 }
+        }
+        let catLevels = cats.levels
+        let solvedCatLevels = catLevels.filter { cats.isSolved($0) }
         return BadgeProgress(
             isTutorialDone: tutorial.map { !$0.puzzles.isEmpty && $0.puzzles.allSatisfy { completed.contains($0.id) } } ?? false,
             collectedBreeds: collectedBreeds.count,
             totalBreeds: breeds.count,
             goldenCards: goldenBreeds.count,
             hasFourStars: solvedStars.contains(StarRating.maximum)
-                || completed.compactMap(DayKey.init(puzzleID:)).contains { progress.record(for: $0.puzzleID)?.bestStars == StarRating.maximum },
+                || dailyRecords.contains { $0.bestStars == StarRating.maximum },
+            fourStarCount: solvedStars.filter { $0 == StarRating.maximum }.count,
             perfectRun: badges.perfectRun,
-            dailyStreak: dailyStreak,
             solvedCount: progress.stats.solvedCount,
-            totalStars: solvedStars.reduce(0, +)
+            totalStars: solvedStars.reduce(0, +),
+            largestSolvedSide: catalogPuzzles.filter { completed.contains($0.id) }.map { max($0.rows, $0.columns) }.max() ?? 0,
+            dailyStreak: dailyStreak,
+            dailySolved: dailyRecords.count,
+            dailyPerfect: dailyRecords.filter { $0.fewestMistakes == 0 }.count,
+            dailyFourStars: dailyRecords.filter { $0.bestStars == StarRating.maximum }.count,
+            dailyCatchUps: dailyRecords.filter { record in
+                guard let day = DayKey(puzzleID: record.puzzleID), let solvedAt = record.firstCompletedAt else { return false }
+                return DayKey(solvedAt) != day
+            }.count,
+            hasDailyWeekend: hasWeekend,
+            fastestDaily: dailyRecords.compactMap(\.bestTime).min(),
+            catsFound: cats.stats.catsFound,
+            catLevelsSolved: solvedCatLevels.count,
+            catLevelsTotal: catLevels.count,
+            catFlawless: cats.results.values.filter(\.flawless).count,
+            catFlawlessRun: cats.stats.bestFlawlessRun,
+            catBestCombo: cats.stats.bestCombo,
+            catPerfectlyMarked: cats.stats.perfectlyMarked,
+            catLargestSolved: solvedCatLevels.map(\.size).max() ?? 0,
+            catTotalScore: cats.stats.totalScore,
+            catFastest: cats.stats.fastestSolve
         )
     }
 
@@ -239,6 +305,7 @@ final class AppModel {
     func resetProgress() {
         progress.resetAll()
         badges.reset()
+        cats.reset()
         isTutorialSkipped = false
         UserDefaults.standard.removeObject(forKey: Self.tutorialSkippedKey)
     }
