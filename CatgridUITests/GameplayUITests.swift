@@ -33,7 +33,8 @@ final class GameplayUITests: XCTestCase {
         from.press(forDuration: 0.1, thenDragTo: to)
 
         XCTAssertEqual(app.state, .runningForeground, "Uygulama çöktü")
-        XCTAssertTrue(board.exists)
+        // İlk ders (2x1) dokunuşlarla bitebilir: o zaman tahtanın yerinde sonuç kartı olur
+        XCTAssertTrue(board.exists || app.buttons["result.next"].waitForExistence(timeout: 5), "Tahta da sonuç kartı da yok")
     }
 
     /// Kullanıcı bildirimi: eğitimde yanlış hamleden hemen sonra tahtaya tekrar dokununca
