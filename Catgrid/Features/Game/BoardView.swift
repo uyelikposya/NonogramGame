@@ -25,6 +25,8 @@ struct BoardView: View {
     var pointer: PointerPath?
     /// Dopamin modu: az önce tamamlanan satır/sütunun kısa parıltısı.
     var lineGlow: LineGlow?
+    /// Büyük tahtalarda imleç ve paneli (`nil`: doğrudan dokunarak oynanır).
+    var cursor: BoardCursorControls?
     let onDragBegan: (GridPosition) -> Void
     let onDragMoved: (GridPosition) -> Void
     let onDragEnded: () -> Void
@@ -80,6 +82,12 @@ struct BoardView: View {
                     } else {
                         rowClues(width: cell, height: cell, slots: rowClueSlots)
                         canvas(cell: cell)
+                            // İmleç paneli tahtanın üstünde, tahtanın dokunma alanının dışında bir katman
+                            .overlay(alignment: .topLeading) {
+                                if let cursor, !isSolved, game.status == .playing {
+                                    CursorPad(controls: cursor, cell: cell, rows: puzzle.rows, columns: puzzle.columns)
+                                }
+                            }
                     }
                 }
             }
@@ -102,6 +110,7 @@ struct BoardView: View {
             hint: hint,
             pointer: pointer,
             lineGlow: lineGlow,
+            cursorCell: cursor?.position,
             onDragBegan: onDragBegan,
             onDragMoved: onDragMoved,
             onDragEnded: onDragEnded
@@ -180,6 +189,7 @@ struct BoardCanvas: View {
     var hint: HintFinder.Hint?
     var pointer: PointerPath?
     var lineGlow: LineGlow?
+    var cursorCell: GridPosition?
     let onDragBegan: (GridPosition) -> Void
     let onDragMoved: (GridPosition) -> Void
     let onDragEnded: () -> Void
@@ -203,6 +213,7 @@ struct BoardCanvas: View {
         let flashingCell = flashingCell
         let hint = hint
         let lineGlow = lineGlow
+        let cursorCell = cursorCell
 
         // Parıltı yalnızca varken zaman çizelgesi işler; yoksa duraklar
         return TimelineView(.animation(paused: lineGlow == nil)) { timeline in
@@ -262,6 +273,18 @@ struct BoardCanvas: View {
                 let frame = Path(roundedRect: rect.insetBy(dx: 1.5, dy: 1.5), cornerRadius: cell * 0.2)
                 context.fill(frame, with: .color(theme.accent.opacity(0.12)))
                 context.stroke(frame, with: .color(theme.accent), lineWidth: 3)
+            }
+            // İmleç: kalın, belirgin çerçeve
+            if let cursorCell {
+                let rect = CGRect(
+                    x: CGFloat(cursorCell.column) * cell,
+                    y: CGFloat(cursorCell.row) * cell,
+                    width: cell,
+                    height: cell
+                ).insetBy(dx: 1, dy: 1)
+                let frame = Path(roundedRect: rect, cornerRadius: cell * 0.18)
+                context.fill(frame, with: .color(theme.accent.opacity(0.18)))
+                context.stroke(frame, with: .color(theme.textPrimary), lineWidth: max(cell * 0.12, 2.5))
             }
             if let glow = lineGlow {
                 let age = timeline.date.timeIntervalSince(glow.start)

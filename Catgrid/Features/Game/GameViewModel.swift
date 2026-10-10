@@ -107,6 +107,70 @@ final class GameViewModel {
         game.undo()
     }
 
+    // MARK: - İmleç (10x10'dan büyük tahtalar)
+
+    /// İmlecin bulunduğu kare. Küçük karelere parmakla isabet etmek zor olduğundan büyük
+    /// bulmacalarda oyuncu kareyi seçer, sonra imleç panelindeki Doldur/X ile işaretler.
+    private(set) var cursor = GridPosition(row: 0, column: 0)
+    /// Kilitli araç: imleç hareket ettikçe geçtiği karelere bu işaret konur.
+    private(set) var cursorLock: MarkTool?
+    /// Kilitliyken imleç yalnızca tek satırda ya da sütunda ilerler (ilk harekette belirlenir).
+    private var cursorAxis: HintFinder.Axis?
+
+    /// Kareye dokunma ya da imleç panelindeki taşıma: imleç oraya gider. Kilitliyse
+    /// aradaki tüm kareler sırayla işaretlenir.
+    func moveCursor(to target: GridPosition) {
+        guard !isFinished else { return }
+        var target = GridPosition(
+            row: min(max(target.row, 0), puzzle.rows - 1),
+            column: min(max(target.column, 0), puzzle.columns - 1)
+        )
+        guard target != cursor else { return }
+        guard cursorLock != nil else {
+            cursor = target
+            return
+        }
+        if cursorAxis == nil {
+            cursorAxis = abs(target.row - cursor.row) > abs(target.column - cursor.column) ? .column : .row
+        }
+        // Kilitli eksende kal
+        if cursorAxis == .row {
+            target = GridPosition(row: cursor.row, column: target.column)
+        } else {
+            target = GridPosition(row: target.row, column: cursor.column)
+        }
+        while cursor != target, !isFinished {
+            cursor = GridPosition(
+                row: cursor.row + (target.row - cursor.row).signum(),
+                column: cursor.column + (target.column - cursor.column).signum()
+            )
+            dragMoved(to: cursor)
+        }
+    }
+
+    /// İmleç panelindeki Doldur/X'e dokunma: imlecin karesini işaretler ya da siler.
+    func markAtCursor(with markTool: MarkTool) {
+        if cursorLock != nil { unlockCursor() }
+        tool = markTool
+        tap(cursor)
+    }
+
+    /// Doldur/X'e basılı tutup sağa kaydırınca: araç kilitlenir, imlecin karesi hemen işaretlenir.
+    func lockCursor(with markTool: MarkTool) {
+        guard !isFinished else { return }
+        if cursorLock != nil { dragEnded() }
+        tool = markTool
+        cursorLock = markTool
+        cursorAxis = nil
+        dragBegan(at: cursor)
+    }
+
+    func unlockCursor() {
+        cursorLock = nil
+        cursorAxis = nil
+        dragEnded()
+    }
+
     /// "Kolay": tamamlanan satır/sütuna X otomatik gelir. "Zor": oyuncu X'leri kendisi koyar.
     /// "Tekrar Dene" ile yeni oyun açılınca da korunur.
     var autoCrosses = true {
@@ -145,6 +209,8 @@ final class GameViewModel {
         hasRevived = false
         activeCell = nil
         isPaused = false
+        cursorLock = nil
+        cursorAxis = nil
         start()
     }
 

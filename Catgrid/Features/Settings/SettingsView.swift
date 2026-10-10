@@ -8,6 +8,8 @@ enum SettingsKeys {
     static let hardMode = "settings.hardMode"
     /// Rahat ya da Dopamin modu.
     static let playMode = "settings.playMode"
+    /// 10x10'dan büyük bulmacalarda imleçle oynama.
+    static let largeBoardCursor = "settings.largeBoardCursor"
 }
 
 /// Sakin: sade oyun. Enerjik (varsayılan): satır parıltıları, kutlamalar, hareketli müzik.
@@ -45,6 +47,7 @@ struct SettingsView: View {
     @Environment(\.openURL) private var openURL
     @Environment(\.requestReview) private var requestReview
     @AppStorage(SettingsKeys.haptics) private var hapticsEnabled = true
+    @AppStorage(SettingsKeys.largeBoardCursor) private var usesLargeBoardCursor = true
     @AppStorage(SettingsKeys.playMode) private var playMode = PlayMode.dopamine
     @State private var isConfirmingReset = false
     @State private var isShowingPaywall = false
@@ -177,9 +180,19 @@ struct SettingsView: View {
                 }
 
                 section("Gameplay") {
-                    Toggle(isOn: $hapticsEnabled) {
-                        Label("Haptics", systemImage: "iphone.radiowaves.left.and.right")
-                            .foregroundStyle(theme.textPrimary)
+                    VStack(alignment: .leading, spacing: 14) {
+                        Toggle(isOn: $hapticsEnabled) {
+                            Label("Haptics", systemImage: "iphone.radiowaves.left.and.right")
+                                .foregroundStyle(theme.textPrimary)
+                        }
+                        Divider()
+                        Toggle(isOn: $usesLargeBoardCursor) {
+                            Label("Cursor on Large Puzzles", systemImage: "scope")
+                                .foregroundStyle(theme.textPrimary)
+                        }
+                        Text("Puzzles bigger than 10×10 are played with a cursor: pick a square, then Fill or X.")
+                            .font(.footnote)
+                            .foregroundStyle(theme.textSecondary)
                     }
                     .padding(16)
                     .card(cornerRadius: 16)

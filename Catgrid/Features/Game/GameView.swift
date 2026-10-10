@@ -80,6 +80,7 @@ struct GameView: View {
     @State private var newlyUnlockedChapter: Chapter?
     @AppStorage(SettingsKeys.hardMode) private var isHardMode = false
     @AppStorage(SettingsKeys.playMode) private var playMode = PlayMode.dopamine
+    @AppStorage(SettingsKeys.largeBoardCursor) private var largeBoardCursor = true
     /// Dopamin modu: satır parıltısı ve bitişte konfeti.
     @State private var lineGlow: LineGlow?
     @State private var confettiStart: Date?
@@ -136,14 +137,16 @@ struct GameView: View {
 
             BoardView(
                 game: game,
-                activeCell: viewModel.activeCell,
+                activeCell: viewModel.activeCell ?? (usesCursor && game.status == .playing ? viewModel.cursor : nil),
                 flashingCell: flashingCell,
                 hint: companionHint ?? guideHighlight,
                 pointer: guidePointer,
                 lineGlow: lineGlow,
-                onDragBegan: { viewModel.dragBegan(at: $0) },
-                onDragMoved: { viewModel.dragMoved(to: $0) },
-                onDragEnded: { viewModel.dragEnded() }
+                cursor: cursorControls,
+                // İmleç modunda tahtaya dokunmak yalnızca imleci taşır
+                onDragBegan: { usesCursor ? viewModel.moveCursor(to: $0) : viewModel.dragBegan(at: $0) },
+                onDragMoved: { usesCursor ? viewModel.moveCursor(to: $0) : viewModel.dragMoved(to: $0) },
+                onDragEnded: { if !usesCursor { viewModel.dragEnded() } }
             )
             // Tahta bulmacanın kendi oranında (ipuçlarıyla birlikte): uzun bulmacalar (10x20 gibi)
             // kare bir alana sıkışmaz, ekranın boş yüksekliğini kullanır
@@ -158,7 +161,7 @@ struct GameView: View {
             .layoutPriority(-1)
 
             if game.status == .playing {
-                GameControls(tool: $viewModel.tool, canUndo: game.canUndo, guidedTool: guidedTool) { viewModel.undo() }
+                GameControls(tool: $viewModel.tool, canUndo: game.canUndo, guidedTool: guidedTool, showsTools: !usesCursor) { viewModel.undo() }
             }
         }
         // Büyük tahtalarda kenar boşluğu daralır, kareler büyür
@@ -306,6 +309,9 @@ struct GameView: View {
         .onChange(of: game.status) { _, status in
             if case .lost = status { persistProgress() }
         }
+        .onChange(of: viewModel.cursor) { _, _ in
+            if usesCursor { Haptics.selection() }
+        }
         .onChange(of: game.mistakes) { _, newValue in
             guard newValue > 0 else { return }
             flashMistake()
@@ -360,6 +366,23 @@ struct GameView: View {
     private func muffinPose(for lesson: TutorialLesson) -> MuffinView.Pose {
         if game.status == .won { return .cheer }
         return muffinReaction ?? lesson.muffinPose
+    }
+
+    /// 10x10'dan büyük bulmacalarda kareler küçük: imleçle oynanır (Ayarlar'dan kapatılabilir).
+    private var usesCursor: Bool {
+        largeBoardCursor && max(viewModel.puzzle.rows, viewModel.puzzle.columns) > 10
+    }
+
+    private var cursorControls: BoardCursorControls? {
+        guard usesCursor else { return nil }
+        return BoardCursorControls(
+            position: viewModel.cursor,
+            lockedTool: viewModel.cursorLock,
+            onMark: { viewModel.markAtCursor(with: $0) },
+            onLock: { viewModel.lockCursor(with: $0) },
+            onUnlock: { viewModel.unlockCursor() },
+            onMove: { viewModel.moveCursor(to: $0) }
+        )
     }
 
     /// İlk derslerin adım adım senaryosu (sonraki derslerde `nil`).
@@ -746,12 +769,22 @@ struct GameControls: View {
     let canUndo: Bool
     /// Eğitimde seçilmesi gereken araç: düğme parlar, pati onu gösterir.
     var guidedTool: MarkTool?
+    /// İmleç modunda Doldur/X imleç panelinde; burada yalnızca geri al kalır.
+    var showsTools = true
     let undo: () -> Void
 
     var body: some View {
         HStack(spacing: 14) {
-            toolButton(.fill, title: "Fill", systemImage: "square.fill")
-            toolButton(.cross, title: "Cross", systemImage: "xmark")
+            if showsTools {
+                toolButton(.fill, title: "Fill", systemImage: "square.fill")
+                toolButton(.cross, title: "Cross", systemImage: "xmark")
+            } else {
+                Text("Tap a square to move the cursor. Hold Fill or X and slide right to lock it.")
+                    .font(.footnote)
+                    .foregroundStyle(theme.textSecondary)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .fixedSize(horizontal: false, vertical: true)
+            }
 
             Button(action: undo) {
                 Image(systemName: "arrow.uturn.backward")
