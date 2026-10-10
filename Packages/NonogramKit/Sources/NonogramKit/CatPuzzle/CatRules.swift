@@ -34,6 +34,11 @@ public struct CatGroup: Hashable, Sendable {
 
     public let axis: Axis
     public let index: Int
+
+    public init(axis: Axis, index: Int) {
+        self.axis = axis
+        self.index = index
+    }
 }
 
 /// Kedi Bulmaca kuralları ve mantık adımları. `Tools/generate_cat_levels.py` içindeki
