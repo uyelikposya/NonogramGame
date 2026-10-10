@@ -150,6 +150,11 @@ final class AudioManagerTests: XCTestCase {
         for effect in SoundEffect.allCases {
             XCTAssertNotNil(Bundle.main.url(forResource: effect.rawValue, withExtension: "wav"), effect.rawValue)
         }
-        XCTAssertNotNil(Bundle.main.url(forResource: "music_cozy", withExtension: "m4a"))
+        // Her oyun modunun listesindeki tüm parçalar pakette olmalı
+        for mode in PlayMode.allCases {
+            for track in mode.playlist.tracks {
+                XCTAssertNotNil(Bundle.main.url(forResource: track.name, withExtension: track.fileExtension), track.name)
+            }
+        }
     }
 }

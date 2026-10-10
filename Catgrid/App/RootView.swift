@@ -42,11 +42,11 @@ struct RootView: View {
         .onAppear {
             themeManager.applyInterfaceStyle()
             audio.prepare()
-            audio.setMusicTrack(playMode.musicTrack)
+            audio.setPlaylist(playMode.playlist)
             audio.startMusic()
         }
         .onChange(of: playMode) { _, mode in
-            audio.setMusicTrack(mode.musicTrack)
+            audio.setPlaylist(mode.playlist)
         }
         // Onay formu, izleme izni ve reklam SDK'sı; ekran çizildikten sonra
         .task { await ads.start() }

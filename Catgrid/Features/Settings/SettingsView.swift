@@ -27,10 +27,26 @@ enum PlayMode: String, CaseIterable, Identifiable {
         }
     }
 
-    var musicTrack: String {
+    /// Sakin: iki sakin parça 5'er dakika sırayla (her biri kendi içinde döner).
+    /// Enerjik: iki hareketli parça arka arkaya, sonsuz döngü.
+    var playlist: MusicPlaylist {
         switch self {
-        case .relax: "music_cozy"
-        case .dopamine: "music_upbeat"
+        case .relax:
+            MusicPlaylist(
+                tracks: [
+                    MusicTrack(name: "music_cozy", fileExtension: "m4a", gain: 1.5),
+                    MusicTrack(name: "music_upbeat", fileExtension: "m4a", gain: 1.6),
+                ],
+                segmentDuration: 5 * 60
+            )
+        case .dopamine:
+            MusicPlaylist(
+                tracks: [
+                    MusicTrack(name: "music_quest_1", fileExtension: "mp3", gain: 0.75),
+                    MusicTrack(name: "music_quest_2", fileExtension: "mp3", gain: 0.75),
+                ],
+                segmentDuration: nil
+            )
         }
     }
 }

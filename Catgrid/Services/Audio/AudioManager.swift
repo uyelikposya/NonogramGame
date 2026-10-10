@@ -27,6 +27,21 @@ enum SoundEffect: String, CaseIterable {
     case catWin = "cat_win"
 }
 
+/// Bir müzik parçası. `gain`: parçalar arası ses farkını dengeler (ses ayarıyla çarpılır).
+struct MusicTrack: Equatable {
+    let name: String
+    let fileExtension: String
+    var gain: Float = 1
+}
+
+/// Oyun modunun müzik listesi.
+struct MusicPlaylist: Equatable {
+    let tracks: [MusicTrack]
+    /// Doluysa her parça bu süre boyunca kendi içinde döner, sonra sıradakine geçilir;
+    /// boşsa her parça bir kez çalar ve sıradakine geçilir (liste sonsuz döner).
+    let segmentDuration: TimeInterval?
+}
+
 /// Arka plan müziği ve ses efektleri. Ayarlar (aç/kapa, seviye) kalıcıdır.
 ///
 /// Ses oturumu `.ambient`: telefonun sessiz anahtarına uyar ve oyuncunun kendi
@@ -56,7 +71,7 @@ final class AudioManager {
     var musicVolume: Double {
         didSet {
             defaults.set(musicVolume, forKey: Keys.musicVolume)
-            musicPlayer?.volume = Float(musicVolume) * Self.musicHeadroom
+            musicPlayer?.volume = musicLevel
         }
     }
 
@@ -80,14 +95,20 @@ final class AudioManager {
     private var effectPlayers: [SoundEffect: [AVAudioPlayer]] = [:]
     private var lastPlayed: [SoundEffect: Date] = [:]
     private var isMusicRequested = false
-    /// Çalan müzik: Rahat modda sakin, Dopamin modunda hareketli döngü.
-    private var musicTrack = "music_cozy"
+    /// Çalan liste ve sıradaki parça.
+    private var playlist = MusicPlaylist(tracks: [MusicTrack(name: "music_cozy", fileExtension: "m4a")], segmentDuration: nil)
+    private var trackIndex = 0
+    /// Süreli listelerde (Sakin) parçanın çaldığı süre.
+    private var segmentElapsed: TimeInterval = 0
+    private var segmentTask: Task<Void, Never>?
+    private let finishObserver = MusicFinishObserver()
 
     init(defaults: UserDefaults = .standard, bundle: Bundle = .main) {
         self.defaults = defaults
         self.bundle = bundle
         musicEnabled = defaults.object(forKey: Keys.musicEnabled) as? Bool ?? true
-        musicVolume = defaults.object(forKey: Keys.musicVolume) as? Double ?? 0.6
+        // Varsayılan %40: hareketli parçalar çok yüksek başlamasın; oyuncu Ayarlar'dan değiştirebilir
+        musicVolume = defaults.object(forKey: Keys.musicVolume) as? Double ?? 0.4
         effectsEnabled = defaults.object(forKey: Keys.effectsEnabled) as? Bool ?? true
         effectsVolume = defaults.object(forKey: Keys.effectsVolume) as? Double ?? 0.8
     }
@@ -114,23 +135,68 @@ final class AudioManager {
         musicPlayer?.pause()
     }
 
-    /// Oyun moduna göre müziği değiştirir; aynıysa bir şey yapmaz.
-    func setMusicTrack(_ name: String) {
-        guard name != musicTrack else { return }
-        musicTrack = name
-        musicPlayer?.stop()
-        musicPlayer = nil
-        resumeMusic()
+    /// Oyun moduna göre müzik listesini değiştirir; aynıysa bir şey yapmaz.
+    func setPlaylist(_ newPlaylist: MusicPlaylist) {
+        guard newPlaylist != playlist else { return }
+        playlist = newPlaylist
+        trackIndex = 0
+        restartTrack()
     }
 
     func resumeMusic() {
-        guard isMusicRequested, musicEnabled else { return }
+        guard isMusicRequested, musicEnabled, !playlist.tracks.isEmpty else { return }
         if musicPlayer == nil {
-            musicPlayer = makePlayer(musicTrack, extension: "m4a")
-            musicPlayer?.numberOfLoops = -1
+            let track = playlist.tracks[trackIndex % playlist.tracks.count]
+            musicPlayer = makePlayer(track.name, extension: track.fileExtension)
+            // Süreli listede parça kendi içinde döner; süresizde bitince sıradakine geçilir
+            musicPlayer?.numberOfLoops = playlist.segmentDuration == nil ? 0 : -1
+            finishObserver.onFinish = { [weak self] in
+                Task { @MainActor in self?.advanceTrack() }
+            }
+            musicPlayer?.delegate = finishObserver
+            segmentElapsed = 0
+            startSegmentClock()
         }
-        musicPlayer?.volume = Float(musicVolume) * Self.musicHeadroom
+        musicPlayer?.volume = musicLevel
         if musicPlayer?.isPlaying == false { musicPlayer?.play() }
+    }
+
+    private var musicLevel: Float {
+        let gain = playlist.tracks.isEmpty ? 1 : playlist.tracks[trackIndex % playlist.tracks.count].gain
+        return min(Float(musicVolume) * Self.musicHeadroom * gain, 1)
+    }
+
+    private func advanceTrack() {
+        guard !playlist.tracks.isEmpty else { return }
+        trackIndex = (trackIndex + 1) % playlist.tracks.count
+        restartTrack()
+    }
+
+    private func restartTrack() {
+        musicPlayer?.stop()
+        musicPlayer = nil
+        segmentTask?.cancel()
+        segmentTask = nil
+        resumeMusic()
+    }
+
+    /// Sakin modda parçanın çaldığı süreyi sayar (duraklamalar sayılmaz); süre dolunca sıradaki.
+    private func startSegmentClock() {
+        segmentTask?.cancel()
+        guard let duration = playlist.segmentDuration, playlist.tracks.count > 1 else { return }
+        segmentTask = Task { [weak self] in
+            while !Task.isCancelled {
+                try? await Task.sleep(for: .seconds(5))
+                guard let self, !Task.isCancelled else { return }
+                if self.musicPlayer?.isPlaying == true {
+                    self.segmentElapsed += 5
+                }
+                if self.segmentElapsed >= duration {
+                    self.advanceTrack()
+                    return
+                }
+            }
+        }
     }
 
     // MARK: - Efektler
@@ -151,5 +217,14 @@ final class AudioManager {
         let player = try? AVAudioPlayer(contentsOf: url)
         player?.prepareToPlay()
         return player
+    }
+}
+
+/// AVAudioPlayer bitince haber verir (parça listesinde sıradakine geçmek için).
+final class MusicFinishObserver: NSObject, AVAudioPlayerDelegate {
+    var onFinish: (() -> Void)?
+
+    func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
+        onFinish?()
     }
 }
